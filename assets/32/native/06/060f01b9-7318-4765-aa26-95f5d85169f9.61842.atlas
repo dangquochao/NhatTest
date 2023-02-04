@@ -1,0 +1,847 @@
+
+CaLongDenDieBones.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_cuc_da/01
+  rotate: false
+  xy: 2, 748
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/02
+  rotate: false
+  xy: 2, 474
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/03
+  rotate: false
+  xy: 2, 200
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/04
+  rotate: true
+  xy: 274, 750
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/05
+  rotate: false
+  xy: 274, 476
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/06
+  rotate: false
+  xy: 274, 202
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/07
+  rotate: true
+  xy: 546, 478
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/08
+  rotate: true
+  xy: 548, 750
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/09
+  rotate: false
+  xy: 546, 204
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0000
+  rotate: false
+  xy: 688, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0001
+  rotate: false
+  xy: 818, 276
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0002
+  rotate: false
+  xy: 820, 548
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0003
+  rotate: false
+  xy: 822, 820
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_vong
+  rotate: false
+  xy: 890, 146
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dan_tim/dan (1)
+  rotate: false
+  xy: 2, 39
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (2)
+  rotate: false
+  xy: 345, 41
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_cuc_da/10
+  rotate: false
+  xy: 2, 748
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/11
+  rotate: false
+  xy: 2, 474
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/12
+  rotate: false
+  xy: 2, 200
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/13
+  rotate: true
+  xy: 274, 750
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/14
+  rotate: false
+  xy: 274, 476
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/15
+  rotate: false
+  xy: 274, 202
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/16
+  rotate: true
+  xy: 546, 478
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/17
+  rotate: true
+  xy: 548, 750
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/18
+  rotate: false
+  xy: 546, 204
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0004
+  rotate: false
+  xy: 688, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0005
+  rotate: false
+  xy: 818, 276
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0006
+  rotate: false
+  xy: 820, 548
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0007
+  rotate: false
+  xy: 822, 820
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+dan_tim/dan (3)
+  rotate: false
+  xy: 2, 39
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (4)
+  rotate: false
+  xy: 345, 41
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_cuc_da/19
+  rotate: false
+  xy: 2, 745
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/20
+  rotate: false
+  xy: 2, 471
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/21
+  rotate: false
+  xy: 2, 197
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/22
+  rotate: true
+  xy: 274, 747
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/23
+  rotate: false
+  xy: 274, 473
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/24
+  rotate: false
+  xy: 274, 199
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da/25
+  rotate: true
+  xy: 546, 475
+  size: 270, 272
+  orig: 270, 272
+  offset: 0, 0
+  index: -1
+as_cuc_da_2/as_tim0008
+  rotate: false
+  xy: 820, 588
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+cuc_da/01
+  rotate: false
+  xy: 548, 775
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/02
+  rotate: true
+  xy: 777, 790
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/03
+  rotate: false
+  xy: 546, 231
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/04
+  rotate: true
+  xy: 688, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/05
+  rotate: false
+  xy: 775, 231
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+dan_tim/dan (5)
+  rotate: false
+  xy: 2, 36
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (6)
+  rotate: false
+  xy: 345, 38
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_cuc_da_2/as_tim0009
+  rotate: false
+  xy: 688, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0000
+  rotate: false
+  xy: 688, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0001
+  rotate: false
+  xy: 688, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0002
+  rotate: false
+  xy: 688, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0003
+  rotate: false
+  xy: 2, 5
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0004
+  rotate: false
+  xy: 204, 5
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0005
+  rotate: false
+  xy: 406, 5
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0006
+  rotate: false
+  xy: 608, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0007
+  rotate: false
+  xy: 810, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+dan_tim/dan (10)
+  rotate: false
+  xy: 345, 690
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (11)
+  rotate: false
+  xy: 2, 529
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (12)
+  rotate: false
+  xy: 345, 529
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (13)
+  rotate: false
+  xy: 2, 368
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (14)
+  rotate: false
+  xy: 345, 368
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (15)
+  rotate: false
+  xy: 2, 207
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (16)
+  rotate: false
+  xy: 345, 207
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (7)
+  rotate: false
+  xy: 2, 851
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (8)
+  rotate: false
+  xy: 345, 851
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+dan_tim/dan (9)
+  rotate: false
+  xy: 2, 690
+  size: 341, 159
+  orig: 341, 159
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_cuc_da_3/as_khoi_cuc_da0008
+  rotate: false
+  xy: 2, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_cuc_da_3/as_khoi_cuc_da0009
+  rotate: false
+  xy: 204, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0000
+  rotate: false
+  xy: 406, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0002
+  rotate: false
+  xy: 608, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0004
+  rotate: false
+  xy: 810, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0006
+  rotate: false
+  xy: 2, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0008
+  rotate: false
+  xy: 204, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0010
+  rotate: false
+  xy: 406, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0012
+  rotate: false
+  xy: 608, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0014
+  rotate: false
+  xy: 810, 608
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0016
+  rotate: false
+  xy: 2, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0018
+  rotate: false
+  xy: 204, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0020
+  rotate: false
+  xy: 406, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0022
+  rotate: false
+  xy: 608, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0024
+  rotate: false
+  xy: 810, 406
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0026
+  rotate: false
+  xy: 2, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0028
+  rotate: false
+  xy: 204, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0030
+  rotate: false
+  xy: 406, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0032
+  rotate: false
+  xy: 608, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_no/as_no0034
+  rotate: false
+  xy: 810, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0000
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0001
+  rotate: false
+  xy: 204, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0002
+  rotate: false
+  xy: 406, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0003
+  rotate: false
+  xy: 608, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0004
+  rotate: false
+  xy: 810, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cuc_da/06
+  rotate: false
+  xy: 2, 734
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/07
+  rotate: false
+  xy: 2, 490
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/08
+  rotate: false
+  xy: 231, 734
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/09
+  rotate: false
+  xy: 2, 246
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/10
+  rotate: false
+  xy: 231, 490
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/11
+  rotate: false
+  xy: 460, 734
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/12
+  rotate: false
+  xy: 2, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/13
+  rotate: false
+  xy: 231, 246
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/14
+  rotate: false
+  xy: 460, 490
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/15
+  rotate: false
+  xy: 689, 734
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/16
+  rotate: false
+  xy: 231, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/17
+  rotate: false
+  xy: 460, 246
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/18
+  rotate: false
+  xy: 689, 490
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/19
+  rotate: false
+  xy: 460, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/20
+  rotate: false
+  xy: 689, 246
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/21
+  rotate: false
+  xy: 689, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+
+CaLongDenDieBones7.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as_trung_tam/as_trung_tam0005
+  rotate: false
+  xy: 2, 231
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0006
+  rotate: false
+  xy: 204, 231
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0007
+  rotate: false
+  xy: 406, 231
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0008
+  rotate: false
+  xy: 608, 231
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+as_trung_tam/as_trung_tam0009
+  rotate: false
+  xy: 810, 231
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+cuc_da/22
+  rotate: true
+  xy: 2, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/23
+  rotate: true
+  xy: 246, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/24
+  rotate: true
+  xy: 490, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1
+cuc_da/25
+  rotate: true
+  xy: 734, 2
+  size: 227, 242
+  orig: 227, 242
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,111 @@
+
+animation_cathantai.png
+size: 761,216
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aa
+  rotate: false
+  xy: 216, 2
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+ao
+  rotate: true
+  xy: 495, 63
+  size: 60, 100
+  orig: 60, 100
+  offset: 0, 0
+  index: -1
+khungjackpot
+  rotate: false
+  xy: 495, 125
+  size: 261, 89
+  orig: 261, 89
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 360, 8
+  size: 144, 46
+  orig: 144, 46
+  offset: 0, 0
+  index: -1
+lighttrai
+  rotate: false
+  xy: 537, 19
+  size: 144, 42
+  orig: 144, 42
+  offset: 0, 0
+  index: -1
+rau
+  rotate: false
+  xy: 683, 39
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+ribbon
+  rotate: true
+  xy: 132, 30
+  size: 184, 82
+  orig: 184, 82
+  offset: 0, 0
+  index: -1
+ribbon1
+  rotate: false
+  xy: 725, 47
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+tai1
+  rotate: true
+  xy: 506, 8
+  size: 53, 29
+  orig: 53, 29
+  offset: 0, 0
+  index: -1
+tai2
+  rotate: false
+  xy: 725, 15
+  size: 34, 30
+  orig: 34, 30
+  offset: 0, 0
+  index: -1
+tay
+  rotate: true
+  xy: 284, 3
+  size: 51, 74
+  orig: 51, 74
+  offset: 0, 0
+  index: -1
+text
+  rotate: true
+  xy: 447, 70
+  size: 144, 46
+  orig: 144, 46
+  offset: 0, 0
+  index: -1
+texttrai
+  rotate: false
+  xy: 597, 81
+  size: 144, 42
+  orig: 144, 42
+  offset: 0, 0
+  index: -1
+thantai
+  rotate: false
+  xy: 2, 21
+  size: 128, 193
+  orig: 128, 193
+  offset: 0, 0
+  index: -1
+thuyen
+  rotate: false
+  xy: 216, 56
+  size: 229, 158
+  orig: 229, 158
+  offset: 0, 0
+  index: -1

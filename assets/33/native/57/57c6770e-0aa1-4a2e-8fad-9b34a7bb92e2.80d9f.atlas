@@ -1,0 +1,118 @@
+
+symbol_2_spine.png
+size: 843,173
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 46
+  rotate: true
+  xy: 546, 95
+  size: 76, 124
+  orig: 76, 124
+  offset: 0, 0
+  index: -1
+Layer 47
+  rotate: false
+  xy: 788, 77
+  size: 51, 94
+  orig: 53, 96
+  offset: 1, 1
+  index: -1
+bg
+  rotate: false
+  xy: 284, 52
+  size: 119, 119
+  orig: 121, 121
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 573, 22
+  size: 122, 71
+  orig: 124, 73
+  offset: 1, 1
+  index: -1
+day
+  rotate: true
+  xy: 405, 52
+  size: 32, 25
+  orig: 32, 25
+  offset: 0, 0
+  index: -1
+ef
+  rotate: true
+  xy: 781, 17
+  size: 58, 60
+  orig: 65, 74
+  offset: 1, 10
+  index: -1
+eye1
+  rotate: true
+  xy: 390, 5
+  size: 45, 18
+  orig: 46, 19
+  offset: 1, 1
+  index: -1
+eye2
+  rotate: false
+  xy: 143, 4
+  size: 34, 9
+  orig: 36, 11
+  offset: 1, 1
+  index: -1
+frame
+  rotate: false
+  xy: 2, 8
+  size: 139, 163
+  orig: 141, 165
+  offset: 1, 1
+  index: -1
+frame copy
+  rotate: false
+  xy: 405, 86
+  size: 139, 85
+  orig: 141, 87
+  offset: 1, 1
+  index: -1
+frame copya
+  rotate: false
+  xy: 432, 2
+  size: 139, 82
+  orig: 141, 88
+  offset: 1, 5
+  index: -1
+framea
+  rotate: false
+  xy: 143, 15
+  size: 139, 156
+  orig: 141, 165
+  offset: 1, 5
+  index: -1
+head
+  rotate: true
+  xy: 672, 103
+  size: 68, 114
+  orig: 68, 114
+  offset: 0, 0
+  index: -1
+mieng2
+  rotate: true
+  xy: 410, 26
+  size: 24, 16
+  orig: 25, 17
+  offset: 0, 1
+  index: -1
+toc1
+  rotate: true
+  xy: 697, 23
+  size: 78, 82
+  orig: 79, 82
+  offset: 1, 0
+  index: -1
+toc2
+  rotate: true
+  xy: 284, 5
+  size: 45, 104
+  orig: 45, 105
+  offset: 0, 1
+  index: -1
