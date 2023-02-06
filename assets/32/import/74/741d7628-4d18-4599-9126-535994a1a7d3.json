@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "f4kFcPKuZGn7vf4KvesKep"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "fxLaser",
+      "rect": [
+        3,
+        4,
+        489,
+        450
+      ],
+      "offset": [
+        -1,
+        -1
+      ],
+      "originalSize": [
+        497,
+        456
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

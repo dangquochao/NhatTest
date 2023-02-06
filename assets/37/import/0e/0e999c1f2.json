@@ -1,0 +1,859 @@
+[
+  1,
+  [
+    "5a/Szl/F5K36KBZ/BHY9ah"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_13",
+          "rect": [
+            0,
+            1340,
+            329,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_12",
+          "rect": [
+            989,
+            1673,
+            329,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            333
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_02",
+          "rect": [
+            333,
+            331,
+            331,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            329
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_15",
+          "rect": [
+            0,
+            0,
+            333,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            333,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_09",
+          "rect": [
+            664,
+            329,
+            329,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_01",
+          "rect": [
+            660,
+            1673,
+            333,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            333,
+            329
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_06",
+          "rect": [
+            329,
+            1673,
+            333,
+            331
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            333,
+            331
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_14",
+          "rect": [
+            0,
+            1675,
+            329,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_11",
+          "rect": [
+            1318,
+            329,
+            329,
+            331
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            331
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_19",
+          "rect": [
+            329,
+            1340,
+            333,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            333,
+            333
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_10",
+          "rect": [
+            1318,
+            658,
+            329,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_04",
+          "rect": [
+            1649,
+            0,
+            331,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_07",
+          "rect": [
+            664,
+            0,
+            331,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_00",
+          "rect": [
+            331,
+            670,
+            331,
+            331
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            331
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_20",
+          "rect": [
+            333,
+            0,
+            331,
+            331
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            331
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_05",
+          "rect": [
+            331,
+            1001,
+            331,
+            331
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            331
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_08",
+          "rect": [
+            1649,
+            329,
+            329,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_16",
+          "rect": [
+            0,
+            670,
+            331,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_18",
+          "rect": [
+            0,
+            335,
+            333,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            333,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_03",
+          "rect": [
+            1318,
+            0,
+            331,
+            329
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            329
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats43-scatter_vfx_b_add_loop_17",
+          "rect": [
+            0,
+            1005,
+            331,
+            335
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            331,
+            335
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

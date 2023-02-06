@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ddOC7nWZdH5KOg6AeHq0Yt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Tai_Effect_Mini_Lobby",
+      "rect": [
+        2,
+        10,
+        188,
+        178
+      ],
+      "offset": [
+        0,
+        -4
+      ],
+      "originalSize": [
+        192,
+        190
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

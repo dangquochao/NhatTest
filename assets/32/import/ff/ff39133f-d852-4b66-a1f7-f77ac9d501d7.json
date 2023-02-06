@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "783BOu4xZObJndnGNWm/f/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "vongtron",
+      "rect": [
+        0,
+        1,
+        155,
+        156
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        156,
+        158
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "964LOMswNHnYGZzMJEnmpK"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ui_06a",
+      "rect": [
+        0,
+        0,
+        1095,
+        512
+      ],
+      "offset": [
+        -12.5,
+        0
+      ],
+      "originalSize": [
+        1120,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,52 @@
+[
+  1,
+  [
+    "bdRpPbTjtLNLkf63xzcs8A"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "LeftMonster",
+      "rect": [
+        461,
+        2,
+        462,
+        481
+      ],
+      "offset": [
+        11,
+        3
+      ],
+      "originalSize": [
+        473,
+        484
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

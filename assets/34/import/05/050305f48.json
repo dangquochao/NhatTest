@@ -1,0 +1,256 @@
+[
+  1,
+  [
+    "60Kgw48S5Ck7XEHkidVRo1"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "dz_feature_wording_b",
+          "rect": [
+            82,
+            813,
+            525,
+            77
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            525,
+            77
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "dz_feature_wording_a",
+          "rect": [
+            82,
+            261,
+            535,
+            174
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            535,
+            174
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lb_feature_wording_b",
+          "rect": [
+            82,
+            890,
+            462,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            462,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lb_feature_wording_a",
+          "rect": [
+            607,
+            435,
+            384,
+            167
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            384,
+            167
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "dc_feature_wording_b",
+          "rect": [
+            82,
+            736,
+            525,
+            77
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            525,
+            77
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "dc_feature_wording_a",
+          "rect": [
+            82,
+            435,
+            511,
+            180
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            511,
+            180
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

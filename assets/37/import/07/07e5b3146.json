@@ -1,0 +1,580 @@
+[
+  1,
+  [
+    "120C26Hz1CJZ9BLGmaR9jV"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_08",
+          "rect": [
+            0,
+            1768,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_05",
+          "rect": [
+            0,
+            1105,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_10",
+          "rect": [
+            309,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_11",
+          "rect": [
+            530,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_03",
+          "rect": [
+            0,
+            663,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_06",
+          "rect": [
+            0,
+            1326,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_07",
+          "rect": [
+            0,
+            1547,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_09",
+          "rect": [
+            88,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_12",
+          "rect": [
+            751,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_02",
+          "rect": [
+            0,
+            442,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_00",
+          "rect": [
+            0,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_01",
+          "rect": [
+            0,
+            221,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_04",
+          "rect": [
+            0,
+            884,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats35-shuffle_vfx_a_normal_1x3_13",
+          "rect": [
+            972,
+            0,
+            88,
+            221
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            88,
+            221
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

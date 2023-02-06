@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "28Kaki7KVOR41Iys6ehR0j"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "dz_header_money",
+      "rect": [
+        2,
+        2,
+        989,
+        417
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        993,
+        421
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

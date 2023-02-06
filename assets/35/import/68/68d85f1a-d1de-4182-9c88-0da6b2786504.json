@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "15cdab10b"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ui_bg_02_screen",
+      "rect": [
+        1,
+        1,
+        756,
+        689
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        756,
+        689
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

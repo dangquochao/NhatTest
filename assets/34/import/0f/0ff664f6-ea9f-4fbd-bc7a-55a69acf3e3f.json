@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "6dZCiLCi9HfrcOp11d8g8w"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "lb_idle",
+      "rect": [
+        17,
+        10,
+        990,
+        932
+      ],
+      "offset": [
+        7.5,
+        -3
+      ],
+      "originalSize": [
+        1009,
+        946
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

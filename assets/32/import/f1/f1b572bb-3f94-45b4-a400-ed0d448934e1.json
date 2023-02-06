@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "7e89ZG9ndKRLnioBdlLCbr"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ItemMiniBoss4",
+      "rect": [
+        0,
+        1,
+        372,
+        123
+      ],
+      "offset": [
+        -1,
+        0.5
+      ],
+      "originalSize": [
+        374,
+        126
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

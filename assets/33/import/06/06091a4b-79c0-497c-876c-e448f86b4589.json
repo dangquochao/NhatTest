@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "f6X1MeTN1Dc6SeU/0xYOzj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "menupopup-btn-highlight-normal2",
+      "rect": [
+        0,
+        0,
+        273,
+        86
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        273,
+        86
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

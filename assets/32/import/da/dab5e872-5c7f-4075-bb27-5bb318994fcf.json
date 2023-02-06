@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "22pknGr05PhacBn6bNvmgB"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "1999_Fish2",
+      "rect": [
+        1,
+        2,
+        678,
+        521
+      ],
+      "offset": [
+        -0.5,
+        -1
+      ],
+      "originalSize": [
+        681,
+        523
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

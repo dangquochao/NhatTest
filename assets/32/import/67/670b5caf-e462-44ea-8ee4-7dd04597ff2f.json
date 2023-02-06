@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "bfWSAE641IMpXncSsWo55j"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "CaLongDenDieBones7",
+      "rect": [
+        10,
+        14,
+        994,
+        411
+      ],
+      "offset": [
+        -5,
+        36.5
+      ],
+      "originalSize": [
+        1024,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,599 @@
+[
+  1,
+  [
+    "aft5BYngFB+IzItp3aW4OX",
+    "fcND0SLz9P0qfS3vCVqBic",
+    "9arETDXURMpr/bUXEWLJnu",
+    "aajKG6+nNJh4/vem3iTyHN",
+    "5256AelfpDY5y3PjhgBLFD",
+    "2d5P53d1VEILnAjSqV240a",
+    "43XYjfkdFHAI6LD+sZlvSy",
+    "1aq5jAv6JCYLURKdWdVT2B",
+    "ce8hf2pnFG+IOyOWx3sBcS",
+    "5dpk8kimlLM5KNZhIEfL2T",
+    "1dZu8DbEhJ0a5EHaYmRpbV",
+    "aaWJj7hJpDha88mniUJQhn",
+    "2fuUFuqu9ECZmoHX3HQ/Ry",
+    "93GqHtAjtHGKplrncTvqcD",
+    "c2UTa4JNZO7qLENo1wxVSs",
+    "d2HAOrFpNA5qdtOa7nIvty",
+    "07XsxlTUFOYY3L8qDClhZl",
+    "5fUoVv4nNNzJRJwugrdRJ1",
+    "4csBB81l1NcZByE18k8O/N",
+    "63AuNBpw1ES593IpjGcYx7",
+    "d7LrWsYd9MCqghG6Vw8qA/",
+    "c6MhgmzVZFHZ9wYp2mXewd",
+    "9dhp+oSWFCk4AbPgGbR1Gy",
+    "a0pHuRxidFMqsljud2dVzX",
+    "1dBrwtnTxC+bvrpnsPBdgu",
+    "3flWfBF71Iv7dPs5gL6W+0",
+    "15sebeBZpKjrkKRxMZ1PjF",
+    "0dY/40VKFGzqxXaYGBBePv",
+    "ed+QTK7LxFGK5c7N1xhkpP"
+  ],
+  [
+    "value"
+  ],
+  [
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "sample",
+        "curveData"
+      ],
+      0,
+      11
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  ],
+  [
+    [
+      0,
+      "EndTakeItem3",
+      1.5,
+      20,
+      [
+        {},
+        "paths",
+        11,
+        [
+          {
+            "Alats28-wh_vfx_b_screen_1x1_00": {
+              "props": {
+                "active": [
+                  {
+                    "frame": 0,
+                    "value": false
+                  }
+                ]
+              }
+            },
+            "Alats10-wh_vfx_c_normal_1x1": {
+              "props": {
+                "active": [
+                  {
+                    "frame": 0,
+                    "value": true
+                  }
+                ],
+                "opacity": [
+                  {
+                    "frame": 0,
+                    "value": 0
+                  },
+                  {
+                    "frame": 0.1,
+                    "value": 255
+                  },
+                  {
+                    "frame": 0.5,
+                    "value": 255
+                  },
+                  {
+                    "frame": 0.8,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Alats27-wh_vfx_e_add_01_03": {
+              "comps": {
+                "cc.Sprite": {
+                  "spriteFrame": [
+                    {
+                      "frame": 0,
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            },
+            "Alats8-wh_vfx_d_add_1x2": {
+              "props": {
+                "opacity": [
+                  {
+                    "frame": 0,
+                    "value": 255
+                  },
+                  {
+                    "frame": 0.35,
+                    "value": 255
+                  },
+                  {
+                    "frame": 0.65,
+                    "value": 0
+                  }
+                ]
+              }
+            }
+          },
+          "Alats8-wh_vfx_g_add",
+          11,
+          [
+            {},
+            "props",
+            11,
+            [
+              {
+                "active": [
+                  {
+                    "frame": 0.1,
+                    "value": true
+                  }
+                ],
+                "opacity": [
+                  {
+                    "frame": 0.1,
+                    "value": 150
+                  },
+                  {
+                    "frame": 0.2,
+                    "value": 140
+                  },
+                  {
+                    "frame": 0.4,
+                    "value": 0
+                  }
+                ]
+              },
+              "scale",
+              12,
+              [
+                [
+                  [
+                    {
+                      "frame": 0.1
+                    },
+                    "value",
+                    8,
+                    [
+                      0,
+                      1.4,
+                      1.4
+                    ]
+                  ],
+                  [
+                    {
+                      "frame": 0.2
+                    },
+                    "value",
+                    8,
+                    [
+                      0,
+                      1.6,
+                      1.6
+                    ]
+                  ]
+                ],
+                11,
+                11
+              ]
+            ]
+          ],
+          "Alats31-wh_vfx_f_normal_01_01",
+          11,
+          [
+            {
+              "props": {
+                "active": [
+                  {
+                    "frame": 0,
+                    "value": true
+                  }
+                ]
+              }
+            },
+            "comps",
+            11,
+            [
+              {},
+              "cc.Sprite",
+              11,
+              [
+                {},
+                "spriteFrame",
+                12,
+                [
+                  [
+                    [
+                      {
+                        "frame": 0
+                      },
+                      "value",
+                      6,
+                      0
+                    ],
+                    [
+                      {
+                        "frame": 0.05
+                      },
+                      "value",
+                      6,
+                      1
+                    ],
+                    [
+                      {
+                        "frame": 0.1
+                      },
+                      "value",
+                      6,
+                      2
+                    ],
+                    [
+                      {
+                        "frame": 0.15
+                      },
+                      "value",
+                      6,
+                      3
+                    ],
+                    [
+                      {
+                        "frame": 0.2
+                      },
+                      "value",
+                      6,
+                      4
+                    ],
+                    [
+                      {
+                        "frame": 0.25
+                      },
+                      "value",
+                      6,
+                      5
+                    ],
+                    [
+                      {
+                        "frame": 0.3
+                      },
+                      "value",
+                      6,
+                      6
+                    ],
+                    [
+                      {
+                        "frame": 0.35
+                      },
+                      "value",
+                      6,
+                      7
+                    ],
+                    [
+                      {
+                        "frame": 0.4
+                      },
+                      "value",
+                      6,
+                      8
+                    ],
+                    [
+                      {
+                        "frame": 0.45
+                      },
+                      "value",
+                      6,
+                      9
+                    ],
+                    [
+                      {
+                        "frame": 0.5
+                      },
+                      "value",
+                      6,
+                      10
+                    ],
+                    [
+                      {
+                        "frame": 0.55
+                      },
+                      "value",
+                      6,
+                      11
+                    ],
+                    [
+                      {
+                        "frame": 0.6
+                      },
+                      "value",
+                      6,
+                      12
+                    ],
+                    [
+                      {
+                        "frame": 0.65
+                      },
+                      "value",
+                      6,
+                      13
+                    ],
+                    [
+                      {
+                        "frame": 0.7
+                      },
+                      "value",
+                      6,
+                      14
+                    ],
+                    [
+                      {
+                        "frame": 0.75
+                      },
+                      "value",
+                      6,
+                      15
+                    ],
+                    [
+                      {
+                        "frame": 0.8
+                      },
+                      "value",
+                      6,
+                      16
+                    ],
+                    [
+                      {
+                        "frame": 0.85
+                      },
+                      "value",
+                      6,
+                      17
+                    ],
+                    [
+                      {
+                        "frame": 0.9
+                      },
+                      "value",
+                      6,
+                      18
+                    ],
+                    [
+                      {
+                        "frame": 0.95
+                      },
+                      "value",
+                      6,
+                      19
+                    ],
+                    [
+                      {
+                        "frame": 1
+                      },
+                      "value",
+                      6,
+                      20
+                    ],
+                    [
+                      {
+                        "frame": 1.05
+                      },
+                      "value",
+                      6,
+                      21
+                    ],
+                    [
+                      {
+                        "frame": 1.1
+                      },
+                      "value",
+                      6,
+                      22
+                    ],
+                    [
+                      {
+                        "frame": 1.15
+                      },
+                      "value",
+                      6,
+                      23
+                    ],
+                    [
+                      {
+                        "frame": 1.2
+                      },
+                      "value",
+                      6,
+                      24
+                    ],
+                    [
+                      {
+                        "frame": 1.25
+                      },
+                      "value",
+                      6,
+                      25
+                    ],
+                    [
+                      {
+                        "frame": 1.3
+                      },
+                      "value",
+                      6,
+                      26
+                    ],
+                    [
+                      {
+                        "frame": 1.35
+                      },
+                      "value",
+                      6,
+                      27
+                    ],
+                    [
+                      {
+                        "frame": 1.4
+                      },
+                      "value",
+                      6,
+                      28
+                    ],
+                    {
+                      "frame": 1.45,
+                      "value": null
+                    }
+                  ],
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ]
+]

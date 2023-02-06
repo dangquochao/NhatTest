@@ -1,0 +1,196 @@
+[
+  1,
+  [
+    "92hsYO4UxGPqa5AsfdY5Xh",
+    "c1MTcL6vFD+6nTOMeUg5bD",
+    "b8XGG66Q9I/KxmPNvtyBbZ",
+    "50j5SNottJfoYCfTjS3ePl"
+  ],
+  [
+    "_textureSetter",
+    "win_big",
+    "win_mega",
+    "win_super_mega"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Alats10.plist",
+          [
+            {},
+            "win_big",
+            6,
+            0,
+            "win_mega",
+            6,
+            1,
+            "win_super_mega",
+            6,
+            2
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "win_super_mega",
+          "rect": [
+            1,
+            188,
+            647,
+            333
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            647,
+            333
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "win_mega",
+          "rect": [
+            336,
+            188,
+            576,
+            329
+          ],
+          "offset": [
+            -1,
+            0
+          ],
+          "originalSize": [
+            578,
+            329
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "win_big",
+          "rect": [
+            1,
+            1,
+            781,
+            185
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            781,
+            185
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

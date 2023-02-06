@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "d2qKz5FfNDAb6sNRU91OKJ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "CaSauDie2",
+      "rect": [
+        9,
+        5,
+        884,
+        897
+      ],
+      "offset": [
+        -61,
+        58.5
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

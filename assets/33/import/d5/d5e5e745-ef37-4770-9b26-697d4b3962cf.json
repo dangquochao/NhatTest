@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "7fNuQJ/AFN46GAG1qMijWq"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "symbol_k_spine",
+      "rect": [
+        2,
+        3,
+        849,
+        148
+      ],
+      "offset": [
+        0,
+        -0.5
+      ],
+      "originalSize": [
+        853,
+        153
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

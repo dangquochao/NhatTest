@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "608kmVi/ZPS4FXVL/TdX0/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "imgRong",
+      "rect": [
+        0,
+        0,
+        597,
+        634
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        597,
+        634
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

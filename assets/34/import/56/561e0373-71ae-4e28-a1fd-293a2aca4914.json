@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "54wc+p7lJIto+blX83ASjN"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "dc_header_dancing",
+      "rect": [
+        2,
+        8,
+        1017,
+        1014
+      ],
+      "offset": [
+        -1.5,
+        -3
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

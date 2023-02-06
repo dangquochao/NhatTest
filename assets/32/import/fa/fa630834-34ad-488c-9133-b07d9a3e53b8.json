@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "57FDecICxPOplXAzO6Igks"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "CaSau1",
+      "rect": [
+        2,
+        71,
+        1003,
+        934
+      ],
+      "offset": [
+        -8.5,
+        -26
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

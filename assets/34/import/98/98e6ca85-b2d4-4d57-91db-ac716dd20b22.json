@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "82ZlVN48JDaY7Sp9y7FEri"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "dc_portrait",
+      "rect": [
+        2,
+        2,
+        965,
+        973
+      ],
+      "offset": [
+        -4,
+        0
+      ],
+      "originalSize": [
+        977,
+        977
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

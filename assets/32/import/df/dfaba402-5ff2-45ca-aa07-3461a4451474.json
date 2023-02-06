@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "aeEk4blFNPApW4lQat6240"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Bulb Yellow",
+      "rect": [
+        3,
+        3,
+        82,
+        83
+      ],
+      "offset": [
+        0.5,
+        -1
+      ],
+      "originalSize": [
+        87,
+        87
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

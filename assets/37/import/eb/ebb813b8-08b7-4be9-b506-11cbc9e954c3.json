@@ -1,0 +1,776 @@
+[
+  1,
+  [
+    "dd9jW8QSRGrp/2Vv9wIb52"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "h_fan_a_atlas_symbols",
+      "\r\nsymbols.png\r\nsize: 1984,461\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nfx_sparkle\r\n  rotate: false\r\n  xy: 576, 210\r\n  size: 26, 28\r\n  orig: 26, 28\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_bell_L\r\n  rotate: true\r\n  xy: 546, 209\r\n  size: 29, 28\r\n  orig: 29, 28\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_bell_R\r\n  rotate: false\r\n  xy: 515, 209\r\n  size: 29, 29\r\n  orig: 29, 29\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_body\r\n  rotate: false\r\n  xy: 356, 8\r\n  size: 156, 187\r\n  orig: 156, 187\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope\r\n  rotate: false\r\n  xy: 1472, 135\r\n  size: 137, 147\r\n  orig: 137, 147\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope01_L\r\n  rotate: true\r\n  xy: 291, 196\r\n  size: 39, 22\r\n  orig: 39, 22\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope01_R\r\n  rotate: true\r\n  xy: 315, 196\r\n  size: 39, 20\r\n  orig: 39, 20\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope02_L\r\n  rotate: false\r\n  xy: 337, 197\r\n  size: 35, 38\r\n  orig: 35, 38\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope02_R\r\n  rotate: true\r\n  xy: 263, 195\r\n  size: 40, 26\r\n  orig: 40, 26\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope03_L\r\n  rotate: true\r\n  xy: 465, 206\r\n  size: 32, 21\r\n  orig: 32, 21\r\n  offset: 0, 0\r\n  index: -1\r\nh_d_rope03_R\r\n  rotate: true\r\n  xy: 488, 207\r\n  size: 31, 25\r\n  orig: 31, 25\r\n  offset: 0, 0\r\n  index: -1\r\nh_drum_sha\r\n  rotate: true\r\n  xy: 584, 245\r\n  size: 214, 211\r\n  orig: 214, 211\r\n  offset: 0, 0\r\n  index: -1\r\nh_drum_shdw\r\n  rotate: false\r\n  xy: 376, 240\r\n  size: 206, 219\r\n  orig: 206, 219\r\n  offset: 0, 0\r\n  index: -1\r\nh_f_sushi_salmon_R\r\n  rotate: false\r\n  xy: 1102, 8\r\n  size: 128, 77\r\n  orig: 128, 77\r\n  offset: 0, 0\r\n  index: -1\r\nh_f_sushi_sha\r\n  rotate: true\r\n  xy: 975, 282\r\n  size: 177, 136\r\n  orig: 177, 136\r\n  offset: 0, 0\r\n  index: -1\r\nh_f_sushi_tuna_L\r\n  rotate: false\r\n  xy: 966, 5\r\n  size: 134, 80\r\n  orig: 134, 80\r\n  offset: 0, 0\r\n  index: -1\r\nh_fan\r\n  rotate: true\r\n  xy: 514, 10\r\n  size: 195, 139\r\n  orig: 195, 139\r\n  offset: 0, 0\r\n  index: -1\r\nh_fan_sha\r\n  rotate: true\r\n  xy: 202, 237\r\n  size: 222, 172\r\n  orig: 222, 172\r\n  offset: 0, 0\r\n  index: -1\r\nh_lantern\r\n  rotate: false\r\n  xy: 2, 6\r\n  size: 173, 179\r\n  orig: 173, 179\r\n  offset: 0, 0\r\n  index: -1\r\nh_lantern_sha\r\n  rotate: false\r\n  xy: 177, 8\r\n  size: 177, 177\r\n  orig: 177, 177\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_bell\r\n  rotate: false\r\n  xy: 713, 5\r\n  size: 49, 49\r\n  orig: 49, 49\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_body\r\n  rotate: false\r\n  xy: 788, 58\r\n  size: 176, 185\r\n  orig: 176, 185\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_bodyx\r\n  rotate: false\r\n  xy: 797, 274\r\n  size: 176, 185\r\n  orig: 176, 185\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_coin\r\n  rotate: false\r\n  xy: 1232, 5\r\n  size: 71, 100\r\n  orig: 71, 100\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_head\r\n  rotate: false\r\n  xy: 1498, 6\r\n  size: 141, 127\r\n  orig: 141, 127\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_headx\r\n  rotate: true\r\n  xy: 408, 206\r\n  size: 32, 55\r\n  orig: 32, 55\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_jaw\r\n  rotate: true\r\n  xy: 231, 195\r\n  size: 40, 30\r\n  orig: 40, 30\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_paw\r\n  rotate: true\r\n  xy: 374, 197\r\n  size: 38, 32\r\n  orig: 38, 32\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_paw_b\r\n  rotate: true\r\n  xy: 655, 2\r\n  size: 52, 56\r\n  orig: 52, 56\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_shdw\r\n  rotate: false\r\n  xy: 655, 56\r\n  size: 131, 187\r\n  orig: 131, 187\r\n  offset: 0, 0\r\n  index: -1\r\nh_n_snout\r\n  rotate: true\r\n  xy: 202, 192\r\n  size: 43, 27\r\n  orig: 43, 27\r\n  offset: 0, 0\r\n  index: -1\r\nh_neko_sha\r\n  rotate: false\r\n  xy: 2, 187\r\n  size: 198, 272\r\n  orig: 198, 272\r\n  offset: 0, 0\r\n  index: -1\r\nh_salmon_R\r\n  rotate: true\r\n  xy: 1641, 35\r\n  size: 120, 71\r\n  orig: 120, 71\r\n  offset: 0, 0\r\n  index: -1\r\nh_sushi_salmon_R\r\n  rotate: false\r\n  xy: 1402, 10\r\n  size: 94, 95\r\n  orig: 94, 95\r\n  offset: 0, 0\r\n  index: -1\r\nh_sushi_sha\r\n  rotate: true\r\n  xy: 966, 87\r\n  size: 185, 150\r\n  orig: 185, 150\r\n  offset: 0, 0\r\n  index: -1\r\nh_sushi_tuna_L\r\n  rotate: true\r\n  xy: 1305, 7\r\n  size: 98, 95\r\n  orig: 98, 95\r\n  offset: 0, 0\r\n  index: -1\r\nh_tuna_L\r\n  rotate: true\r\n  xy: 1611, 157\r\n  size: 125, 71\r\n  orig: 125, 71\r\n  offset: 0, 0\r\n  index: -1\r\nl_10\r\n  rotate: false\r\n  xy: 1113, 284\r\n  size: 175, 175\r\n  orig: 175, 175\r\n  offset: 0, 0\r\n  index: -1\r\nl_10_fx01\r\n  rotate: false\r\n  xy: 1644, 371\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_10_fx02\r\n  rotate: false\r\n  xy: 1684, 281\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_10_fx03\r\n  rotate: false\r\n  xy: 1734, 371\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_a\r\n  rotate: false\r\n  xy: 1118, 107\r\n  size: 175, 175\r\n  orig: 175, 175\r\n  offset: 0, 0\r\n  index: -1\r\nl_a_fx01\r\n  rotate: false\r\n  xy: 1684, 191\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_a_fx02\r\n  rotate: false\r\n  xy: 1824, 371\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_a_fx03\r\n  rotate: false\r\n  xy: 1714, 101\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_j\r\n  rotate: false\r\n  xy: 1290, 284\r\n  size: 175, 175\r\n  orig: 175, 175\r\n  offset: 0, 0\r\n  index: -1\r\nl_j_fx01\r\n  rotate: false\r\n  xy: 1714, 11\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_j_fx02\r\n  rotate: false\r\n  xy: 1774, 281\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_j_fx03\r\n  rotate: false\r\n  xy: 1774, 191\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_k\r\n  rotate: false\r\n  xy: 1295, 107\r\n  size: 175, 175\r\n  orig: 175, 175\r\n  offset: 0, 0\r\n  index: -1\r\nl_k_fx01\r\n  rotate: false\r\n  xy: 1864, 281\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_k_fx02\r\n  rotate: false\r\n  xy: 1864, 191\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_k_fx03\r\n  rotate: false\r\n  xy: 1804, 101\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_q\r\n  rotate: false\r\n  xy: 1467, 284\r\n  size: 175, 175\r\n  orig: 175, 175\r\n  offset: 0, 0\r\n  index: -1\r\nl_q_fx01\r\n  rotate: false\r\n  xy: 1894, 101\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_q_fx02\r\n  rotate: false\r\n  xy: 1804, 11\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\nl_q_fx03\r\n  rotate: false\r\n  xy: 1894, 11\r\n  size: 88, 88\r\n  orig: 88, 88\r\n  offset: 0, 0\r\n  index: -1\r\n",
+      [
+        "symbols.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "NHW6X+YVZMOGK9k4BHYMZuXU0Pw",
+          "spine": "3.8.99",
+          "x": -96.99,
+          "y": -84.91,
+          "width": 194.92,
+          "height": 150.92,
+          "images": "../images/",
+          "audio": "D:/000b_dropbox/Dropbox/000_ONEW_WORKING/2009/200902_luckycat_symbols/_SPINE"
+        },
+        "bones": [
+          {
+            "name": "root",
+            "scaleX": 0.5,
+            "scaleY": 0.5
+          },
+          {
+            "name": "_subroot",
+            "parent": "root",
+            "rotation": 27.49,
+            "x": 27.48,
+            "y": -83.95,
+            "scaleX": 0.8793,
+            "scaleY": 0.8793
+          },
+          {
+            "name": "bone",
+            "parent": "root"
+          },
+          {
+            "name": "bone2",
+            "parent": "root"
+          },
+          {
+            "name": "bone3",
+            "parent": "root"
+          },
+          {
+            "name": "bone4",
+            "parent": "root"
+          },
+          {
+            "name": "bone5",
+            "parent": "root"
+          },
+          {
+            "name": "bone6",
+            "parent": "root"
+          },
+          {
+            "name": "bone7",
+            "parent": "root"
+          },
+          {
+            "name": "bone8",
+            "parent": "root"
+          },
+          {
+            "name": "bone9",
+            "parent": "root"
+          },
+          {
+            "name": "bone10",
+            "parent": "root"
+          },
+          {
+            "name": "bone11",
+            "parent": "root"
+          },
+          {
+            "name": "scale",
+            "parent": "root",
+            "x": 8,
+            "y": -28,
+            "scaleX": 0.88,
+            "scaleY": 0.88
+          },
+          {
+            "name": "fan",
+            "parent": "scale",
+            "length": 140.67,
+            "rotation": 111.36,
+            "x": 23.27,
+            "y": -62.43
+          }
+        ],
+        "slots": [
+          {
+            "name": "h_fan_sha",
+            "bone": "scale",
+            "attachment": "h_fan_sha"
+          },
+          {
+            "name": "h_fan",
+            "bone": "fan",
+            "attachment": "h_fan"
+          },
+          {
+            "name": "fan",
+            "bone": "_subroot",
+            "attachment": "fan"
+          }
+        ],
+        "path": [
+          {
+            "name": "fan",
+            "target": "fan",
+            "spacingMode": "percent",
+            "spacing": 0.1,
+            "bones": [
+              "bone11",
+              "bone10",
+              "bone9",
+              "bone8",
+              "bone7",
+              "bone6",
+              "bone5",
+              "bone4",
+              "bone3",
+              "bone2",
+              "bone"
+            ]
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "fan": {
+                "fan": {
+                  "type": "path",
+                  "vertexCount": 6,
+                  "lengths": [
+                    214.01,
+                    429.23
+                  ],
+                  "vertices": [
+                    -252.78,
+                    -50.31,
+                    -183.04,
+                    100.48,
+                    -107.44,
+                    263.92,
+                    151.79,
+                    250.48,
+                    186.19,
+                    52.72,
+                    214.79,
+                    -111.67
+                  ]
+                }
+              },
+              "h_fan": {
+                "h_fan": {
+                  "type": "mesh",
+                  "hull": 17,
+                  "width": 389,
+                  "height": 277,
+                  "uvs": [
+                    0.63925,
+                    0.03054,
+                    0.75626,
+                    0.07225,
+                    0.87771,
+                    0.15759,
+                    0.99661,
+                    0.33094,
+                    0.75472,
+                    0.77157,
+                    0.66457,
+                    0.93483,
+                    0.63257,
+                    0.99277,
+                    0.56659,
+                    0.97517,
+                    0.51464,
+                    0.96131,
+                    0.47651,
+                    0.95114,
+                    0.03342,
+                    0.83293,
+                    0.04111,
+                    0.62299,
+                    0.08924,
+                    0.43855,
+                    0.15032,
+                    0.29512,
+                    0.2568,
+                    0.16654,
+                    0.38201,
+                    0.08053,
+                    0.51185,
+                    0.03459,
+                    0.58246,
+                    0.81175,
+                    0.59669,
+                    0.83177,
+                    0.63751,
+                    0.78038,
+                    0.61034,
+                    0.81458
+                  ],
+                  "triangles": [
+                    16,
+                    0,
+                    17,
+                    1,
+                    2,
+                    17,
+                    3,
+                    19,
+                    2,
+                    17,
+                    0,
+                    1,
+                    19,
+                    3,
+                    4,
+                    17,
+                    15,
+                    16,
+                    17,
+                    14,
+                    15,
+                    17,
+                    13,
+                    14,
+                    17,
+                    12,
+                    13,
+                    17,
+                    11,
+                    12,
+                    19,
+                    17,
+                    2,
+                    20,
+                    17,
+                    19,
+                    18,
+                    17,
+                    20,
+                    10,
+                    11,
+                    17,
+                    5,
+                    19,
+                    4,
+                    20,
+                    19,
+                    5,
+                    18,
+                    20,
+                    5,
+                    9,
+                    10,
+                    17,
+                    8,
+                    9,
+                    17,
+                    18,
+                    8,
+                    17,
+                    18,
+                    7,
+                    8,
+                    5,
+                    7,
+                    18,
+                    6,
+                    7,
+                    5
+                  ],
+                  "vertices": [
+                    1,
+                    5,
+                    -0.44,
+                    11.26,
+                    1,
+                    1,
+                    4,
+                    -5.9,
+                    11.89,
+                    1,
+                    1,
+                    3,
+                    -6.07,
+                    15.04,
+                    1,
+                    1,
+                    2,
+                    7.61,
+                    15.09,
+                    1,
+                    1,
+                    1,
+                    62.41,
+                    -16.11,
+                    1,
+                    1,
+                    1,
+                    10.43,
+                    -40.04,
+                    1,
+                    1,
+                    1,
+                    -8.02,
+                    -48.53,
+                    1,
+                    1,
+                    1,
+                    -28.54,
+                    -32.36,
+                    1,
+                    1,
+                    1,
+                    -44.69,
+                    -19.63,
+                    1,
+                    1,
+                    1,
+                    -56.55,
+                    -10.28,
+                    1,
+                    1,
+                    12,
+                    -6.74,
+                    9.32,
+                    1,
+                    1,
+                    11,
+                    -0.32,
+                    10.14,
+                    1,
+                    1,
+                    10,
+                    2.25,
+                    9.79,
+                    1,
+                    1,
+                    9,
+                    -3.64,
+                    12.37,
+                    1,
+                    1,
+                    8,
+                    -1.08,
+                    10.87,
+                    1,
+                    1,
+                    7,
+                    1.47,
+                    9.07,
+                    1,
+                    1,
+                    6,
+                    1.99,
+                    9.48,
+                    1,
+                    1,
+                    1,
+                    -2.16,
+                    4.95,
+                    1,
+                    1,
+                    1,
+                    0.18,
+                    -2.53,
+                    1,
+                    1,
+                    1,
+                    20.84,
+                    2.77,
+                    1,
+                    1,
+                    1,
+                    7.09,
+                    -0.76,
+                    1
+                  ],
+                  "edges": [
+                    26,
+                    28,
+                    20,
+                    22,
+                    32,
+                    0,
+                    4,
+                    6,
+                    28,
+                    30,
+                    30,
+                    32,
+                    0,
+                    2,
+                    2,
+                    4,
+                    22,
+                    24,
+                    24,
+                    26,
+                    18,
+                    20,
+                    34,
+                    18,
+                    16,
+                    18,
+                    16,
+                    36,
+                    6,
+                    8,
+                    38,
+                    8,
+                    36,
+                    40,
+                    40,
+                    38,
+                    8,
+                    10,
+                    10,
+                    12,
+                    40,
+                    10,
+                    12,
+                    14,
+                    14,
+                    16,
+                    36,
+                    14,
+                    34,
+                    20,
+                    34,
+                    26,
+                    34,
+                    32,
+                    34,
+                    4,
+                    0,
+                    34,
+                    34,
+                    22,
+                    24,
+                    34,
+                    34,
+                    28,
+                    30,
+                    34,
+                    2,
+                    34,
+                    38,
+                    6
+                  ]
+                }
+              },
+              "h_fan_sha": {
+                "h_fan_sha": {
+                  "x": -8.02,
+                  "y": 10.33,
+                  "width": 443,
+                  "height": 343
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "win": {
+            "slots": {
+              "h_fan_sha": {
+                "color": [
+                  {
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffff00",
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.8333,
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffffff"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "_subroot": {
+                "rotate": [
+                  {
+                    "curve": 0.188,
+                    "c2": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1,
+                    "angle": -1.32,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.2667,
+                    "angle": 0.6,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.4333,
+                    "angle": 0.28,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6,
+                    "angle": -0.27,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.7667
+                  }
+                ],
+                "translate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 1.37,
+                    "y": -7.67,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": -0.93,
+                    "y": 2.77,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5333,
+                    "x": 1.84,
+                    "y": -3.55,
+                    "curve": 0.25,
+                    "c3": 0.497
+                  },
+                  {
+                    "time": 0.7333,
+                    "x": -0.46,
+                    "y": 0.89,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.9333
+                  }
+                ],
+                "scale": [
+                  {
+                    "curve": 0.171,
+                    "c2": 0.22,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1333,
+                    "y": 1.02,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3,
+                    "y": 0.9,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "y": 1.03,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "y": 0.96,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.8333,
+                    "y": 1.01,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1
+                  }
+                ]
+              },
+              "root": {
+                "rotate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1333,
+                    "angle": -1.32,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.4,
+                    "angle": -4.85,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1
+                  }
+                ],
+                "translate": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.401
+                  },
+                  {
+                    "time": 0.3667,
+                    "x": 2.97,
+                    "y": -0.73,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1
+                  }
+                ]
+              }
+            },
+            "path": {
+              "fan": {
+                "spacing": [
+                  {
+                    "spacing": 0.1
+                  },
+                  {
+                    "time": 0.1333,
+                    "spacing": 0.099,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.2667,
+                    "spacing": 0.1
+                  }
+                ]
+              }
+            },
+            "deform": {
+              "default": {
+                "h_fan": {
+                  "h_fan": [
+                    {},
+                    {
+                      "time": 0.1667,
+                      "offset": 8,
+                      "vertices": [
+                        -2.92469,
+                        -1.21835,
+                        -0.5478,
+                        -0.17276,
+                        0,
+                        0,
+                        0.71547,
+                        -1.2534,
+                        0.8921,
+                        -1.78932,
+                        0.8921,
+                        -1.78932,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        -0.54784,
+                        -0.17279
+                      ]
+                    },
+                    {
+                      "time": 0.3333
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

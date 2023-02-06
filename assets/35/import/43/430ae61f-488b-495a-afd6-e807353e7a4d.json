@@ -1,0 +1,52 @@
+[
+  1,
+  [
+    "1af120f1d"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bw_vfx_f_02_normal",
+      "rect": [
+        1,
+        1,
+        324,
+        351
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        324,
+        351
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

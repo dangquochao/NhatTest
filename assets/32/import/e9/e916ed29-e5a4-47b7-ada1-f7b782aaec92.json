@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "12J+cclrxGUIZg97j9sLdE"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Explosion",
+      "rect": [
+        5,
+        9,
+        447,
+        543
+      ],
+      "offset": [
+        -0.5,
+        -3.5
+      ],
+      "originalSize": [
+        458,
+        554
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

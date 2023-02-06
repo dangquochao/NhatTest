@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "21qu9z/6BAc7nmmgBFqw2r"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ef_symbol_jp",
+      "rect": [
+        0,
+        0,
+        595,
+        353
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        595,
+        353
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

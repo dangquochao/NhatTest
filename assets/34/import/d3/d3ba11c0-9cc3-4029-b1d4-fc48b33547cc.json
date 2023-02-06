@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "bdfG1772lOH4Dfif2MKEUL"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "dc_expanding",
+      "rect": [
+        2,
+        2,
+        431,
+        452
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        435,
+        456
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

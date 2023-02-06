@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "26OJ/LCsZOQr7zO+Q5UctS"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bkgPopupBig",
+      "rect": [
+        0,
+        0,
+        114,
+        132
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        114,
+        132
+      ],
+      "capInsets": [
+        45,
+        57,
+        45,
+        59
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

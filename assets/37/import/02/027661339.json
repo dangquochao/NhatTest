@@ -1,0 +1,95 @@
+[
+  1,
+  [
+    "dbkrUF5tFIxIfp9lLuAmWK"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_30",
+          "rect": [
+            848,
+            0,
+            808,
+            1806
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            808,
+            1806
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_29",
+          "rect": [
+            0,
+            0,
+            848,
+            1858
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            848,
+            1858
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

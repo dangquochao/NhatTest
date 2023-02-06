@@ -1,0 +1,52 @@
+[
+  1,
+  [
+    "1fcbd9170"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "tw_vfx_j_04_normal",
+      "rect": [
+        543,
+        595,
+        281,
+        242
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        281,
+        242
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

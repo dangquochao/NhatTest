@@ -1,0 +1,377 @@
+[
+  1,
+  [
+    "7bmPBvX5ZHP6ny2XImaDbR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "spin_button_blur_icon",
+          "rect": [
+            989,
+            749,
+            230,
+            233
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            230,
+            233
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_medium_win_frame",
+          "rect": [
+            624,
+            389,
+            354,
+            227
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            354,
+            227
+          ],
+          "capInsets": [
+            121,
+            0,
+            120,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_feature_frame_1",
+          "rect": [
+            1123,
+            1,
+            420,
+            131
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            420,
+            131
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "spin_button_icon",
+          "rect": [
+            1221,
+            749,
+            230,
+            233
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            230,
+            233
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_feature_x4",
+          "rect": [
+            1247,
+            433,
+            190,
+            148
+          ],
+          "offset": [
+            -1,
+            1
+          ],
+          "originalSize": [
+            192,
+            150
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "click_effect-click_a",
+          "rect": [
+            980,
+            389,
+            100,
+            100
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            100,
+            100
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_feature_x2",
+          "rect": [
+            440,
+            836,
+            174,
+            136
+          ],
+          "offset": [
+            -1,
+            1
+          ],
+          "originalSize": [
+            176,
+            138
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "frame_highlight_comp",
+          "rect": [
+            624,
+            1,
+            497,
+            386
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            497,
+            386
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "symbol_fast_spin_effect",
+          "rect": [
+            1082,
+            389,
+            24,
+            87
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            24,
+            87
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,379 @@
+[
+  1,
+  [
+    "bfqTO0ONtFa5+nmA+h9LW3"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "symbol_motion_line_effect",
+          "rect": [
+            809,
+            786,
+            70,
+            46
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            70,
+            46
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bigwin-win_lightning_03",
+          "rect": [
+            376,
+            209,
+            450,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "five_kind_light",
+          "rect": [
+            1,
+            1,
+            707,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            707,
+            206
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_win_glow",
+          "rect": [
+            710,
+            105,
+            127,
+            57
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            127,
+            57
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "body_background",
+          "rect": [
+            1,
+            209,
+            373,
+            351
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            373,
+            351
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bigwin-win_lightning_01",
+          "rect": [
+            1,
+            562,
+            450,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            200
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bigwin-win_lightning_02",
+          "rect": [
+            203,
+            562,
+            450,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            200
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bigwin-win_lightning_04",
+          "rect": [
+            405,
+            411,
+            450,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            200
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bigwin-win_lightning_05",
+          "rect": [
+            607,
+            411,
+            450,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            200
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

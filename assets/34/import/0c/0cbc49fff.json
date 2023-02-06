@@ -1,0 +1,95 @@
+[
+  1,
+  [
+    "662Flv1Q9KuZqwWLQJjIBG"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "remaining_spin",
+          "rect": [
+            1,
+            1,
+            986,
+            102
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            986,
+            102
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "last_spin",
+          "rect": [
+            1,
+            105,
+            772,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            772,
+            206
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]
