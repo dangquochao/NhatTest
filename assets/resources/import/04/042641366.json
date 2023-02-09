@@ -55,20 +55,20 @@
     [
       [
         {
-          "name": "boxx",
+          "name": "box_chip",
           "rect": [
             0,
             0,
-            752,
-            64
+            223,
+            45
           ],
           "offset": [
             0,
             0
           ],
           "originalSize": [
-            752,
-            64
+            223,
+            45
           ],
           "capInsets": [
             126,

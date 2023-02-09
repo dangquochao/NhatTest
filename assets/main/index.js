@@ -8953,10 +8953,10 @@ window.__require = function e(t, n, r) {
         this.spRank.spriteFrame = this.listSpRank[SFSObject.getInt("index")];
         if (0 == SFSObject.getInt("type")) {
           this.lbType.string = "TOP WIN TU\u1ea6N";
-          this.lbType.fontSize = 13;
+          this.lbType.fontSize = 27;
         } else {
           this.lbType.string = "TOP LEVEL TH\xc1NG";
-          this.lbType.fontSize = 10.5;
+          this.lbType.fontSize = 24;
         }
         this.node.x = this.node.width - this.cacheX;
         Windown_1.Windown.updateAvatar(SFSObject, this.spAva);
