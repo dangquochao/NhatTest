@@ -1,0 +1,669 @@
+
+RuaDieBones.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 372, 658
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 518, 465
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+03
+  rotate: true
+  xy: 686, 467
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+04
+  rotate: true
+  xy: 705, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+as_rua/01
+  rotate: false
+  xy: 2, 3
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/02
+  rotate: false
+  xy: 198, 3
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/03
+  rotate: true
+  xy: 260, 452
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/04
+  rotate: true
+  xy: 260, 256
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/05
+  rotate: true
+  xy: 372, 826
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/06
+  rotate: true
+  xy: 501, 826
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/07
+  rotate: false
+  xy: 630, 893
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/08
+  rotate: false
+  xy: 826, 893
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/09
+  rotate: false
+  xy: 630, 764
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/10
+  rotate: false
+  xy: 826, 764
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/11
+  rotate: true
+  xy: 389, 462
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/12
+  rotate: true
+  xy: 389, 266
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+as_rua/13
+  rotate: false
+  xy: 705, 635
+  size: 194, 127
+  orig: 194, 127
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_000
+  rotate: false
+  xy: 394, 5
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_001
+  rotate: true
+  xy: 556, 2
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+lua/lua0000
+  rotate: false
+  xy: 260, 154
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0001
+  rotate: false
+  xy: 362, 154
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0002
+  rotate: false
+  xy: 464, 164
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0003
+  rotate: false
+  xy: 565, 662
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0004
+  rotate: false
+  xy: 566, 170
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0005
+  rotate: false
+  xy: 668, 170
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0006
+  rotate: false
+  xy: 770, 172
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0007
+  rotate: false
+  xy: 872, 172
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0008
+  rotate: false
+  xy: 904, 662
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0009
+  rotate: false
+  xy: 904, 560
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0010
+  rotate: false
+  xy: 904, 458
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0011
+  rotate: false
+  xy: 904, 356
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0012
+  rotate: false
+  xy: 898, 70
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+nut_dat
+  rotate: false
+  xy: 2, 390
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+nut_dat_2
+  rotate: false
+  xy: 2, 132
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+rua
+  rotate: false
+  xy: 2, 648
+  size: 368, 372
+  orig: 368, 372
+  offset: 0, 0
+  index: -1
+xu/01
+  rotate: false
+  xy: 518, 272
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/02
+  rotate: false
+  xy: 711, 274
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+
+RuaDieBones2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+05
+  rotate: false
+  xy: 2, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+06
+  rotate: false
+  xy: 195, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+07
+  rotate: false
+  xy: 388, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+08
+  rotate: false
+  xy: 581, 581
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+09
+  rotate: false
+  xy: 774, 774
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 170, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 363, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+12
+  rotate: false
+  xy: 556, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 749, 581
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+14
+  rotate: false
+  xy: 338, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 531, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 724, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+17
+  rotate: false
+  xy: 506, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 699, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 674, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 842, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_002
+  rotate: true
+  xy: 867, 226
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_003
+  rotate: true
+  xy: 867, 226
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+lua/lua0013
+  rotate: false
+  xy: 917, 672
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+lua/lua0014
+  rotate: false
+  xy: 917, 570
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+xu/03
+  rotate: false
+  xy: 2, 774
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/04
+  rotate: false
+  xy: 2, 581
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/05
+  rotate: false
+  xy: 195, 774
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/06
+  rotate: false
+  xy: 2, 388
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/07
+  rotate: false
+  xy: 195, 581
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/08
+  rotate: false
+  xy: 388, 774
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/09
+  rotate: false
+  xy: 2, 195
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/10
+  rotate: false
+  xy: 195, 388
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/11
+  rotate: false
+  xy: 388, 581
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+xu/12
+  rotate: false
+  xy: 581, 774
+  size: 191, 191
+  orig: 191, 191
+  offset: 0, 0
+  index: -1
+
+RuaDieBones3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+21
+  rotate: false
+  xy: 2, 774
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+22
+  rotate: false
+  xy: 2, 581
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 170, 774
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+24
+  rotate: false
+  xy: 2, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+25
+  rotate: false
+  xy: 170, 581
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+26
+  rotate: false
+  xy: 338, 774
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+27
+  rotate: false
+  xy: 2, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+28
+  rotate: false
+  xy: 170, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+29
+  rotate: false
+  xy: 338, 581
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+30
+  rotate: false
+  xy: 506, 774
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+31
+  rotate: false
+  xy: 2, 2
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+32
+  rotate: false
+  xy: 170, 195
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+33
+  rotate: false
+  xy: 338, 388
+  size: 166, 191
+  orig: 166, 191
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_004
+  rotate: false
+  xy: 506, 625
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_005
+  rotate: false
+  xy: 674, 818
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_006
+  rotate: false
+  xy: 170, 46
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_007
+  rotate: false
+  xy: 338, 239
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_008
+  rotate: false
+  xy: 506, 476
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_009
+  rotate: false
+  xy: 506, 476
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_010
+  rotate: false
+  xy: 836, 818
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_011
+  rotate: false
+  xy: 506, 327
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_012
+  rotate: false
+  xy: 500, 178
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_013
+  rotate: false
+  xy: 338, 90
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_014
+  rotate: false
+  xy: 500, 29
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_015
+  rotate: false
+  xy: 500, 29
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
+fire_step/fire_step_016
+  rotate: false
+  xy: 674, 669
+  size: 160, 147
+  orig: 160, 147
+  offset: 0, 0
+  index: -1
