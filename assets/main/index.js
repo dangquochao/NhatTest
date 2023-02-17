@@ -6052,17 +6052,20 @@ window.__require = function e(t, n, r) {
           }
           node.active = true;
           var listLb = node.getComponentsInChildren(cc.Label);
-          listLb[0].string = Windown_1.Windown.formatNumber(sfsObj.getInt("requireVnd")) + "vnd";
+          listLb[0].string = Windown_1.Windown.formatNumber(sfsObj.getInt("requireVnd")) + " VN\u0110";
           listLb[1].string = Windown_1.Windown.formatNumber(sfsObj.getInt("gold"));
           node.getComponent(cc.Button).clickEvents[0].customEventData = sfsObj.getInt("requireVnd").toString();
-          node.scaleX = 0;
-          node.opacity = 0;
           cc.Tween.stopAllByTarget(node);
-          cc.tween(node).delay(.1 * i).to(.3, {
+          cc.tween(node).set({
+            skewY: -15,
+            scaleX: 0,
+            scaleY: 1
+          }).delay(.1 * i).to(.2, {
             scale: 1,
-            opacity: 255
+            skewX: 0,
+            skewY: 0
           }, {
-            easing: "backOut"
+            easing: cc.easing.cubicOut
           }).start();
         }
         for (var i = listInfoNap.length, l = children.length; i < l; i++) children[i].active = false;
@@ -6078,15 +6081,25 @@ window.__require = function e(t, n, r) {
         var menhGia = Number(data);
         this.currentMenhGia = menhGia;
         cc.Tween.stopAllByTarget(this.lbMenhGiaMomo.node);
-        this.lbMenhGiaMomo.node.scale = 2;
-        cc.tween(this.lbMenhGiaMomo.node).to(.2, {
-          scale: 1
+        null == this.lbMenhGiaMomo.node["initPosY"] && (this.lbMenhGiaMomo.node["initPosY"] = this.lbMenhGiaMomo.node.y);
+        cc.tween(this.lbMenhGiaMomo.node).set({
+          opacity: 0,
+          y: this.lbMenhGiaMomo.node["initPosY"] + 50
+        }).to(.2, {
+          opacity: 255,
+          y: this.lbMenhGiaMomo.node["initPosY"]
+        }, {
+          easing: cc.easing.sineIn
         }).start();
         this.lbMenhGiaMomo.string = Windown_1.Windown.formatNumber(menhGia) + " VN\u0110";
         this.lbNoteMenhGiaMomo.active = false;
+        cc.find("active", event.target).active = true;
       };
       DoiTab.prototype.offAllActive = function() {
         this.lastMenhGiaCardNode && (cc.find("active", this.lastMenhGiaCardNode).active = false);
+        this.content.children.forEach(function(nodeItem) {
+          cc.find("active", nodeItem).active = false;
+        });
       };
       DoiTab.prototype.nodeMenhGiaActive = function(node) {
         cc.find("active", node).active = true;
@@ -6094,6 +6107,10 @@ window.__require = function e(t, n, r) {
       };
       DoiTab.prototype.offAllActiveMomo = function() {
         this.lastMenhGiaMomoNode && (cc.find("active", this.lastMenhGiaMomoNode).active = false);
+        this.contentMomo.children.forEach(function(nodeItem) {
+          cc.log("Chay vao d\xe2y");
+          cc.find("active", nodeItem).active = false;
+        });
       };
       DoiTab.prototype.nodeMenhGiaActiveMomo = function(node) {
         cc.find("active", node).active = true;
