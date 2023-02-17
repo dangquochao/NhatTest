@@ -1,1 +1,96 @@
-[1,["85VH9SdgFM+rtIFm8UCPA6"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"IconWinBoss","rect":[2,581,313,141],"offset":[0,0],"originalSize":[329,141],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"moster","rect":[546,2,466,351],"offset":[0,6],"originalSize":[466,357],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "85VH9SdgFM+rtIFm8UCPA6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "IconWinBoss",
+          "rect": [
+            2,
+            581,
+            313,
+            141
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            329,
+            141
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "moster",
+          "rect": [
+            546,
+            2,
+            466,
+            351
+          ],
+          "offset": [
+            0,
+            6
+          ],
+          "originalSize": [
+            466,
+            357
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

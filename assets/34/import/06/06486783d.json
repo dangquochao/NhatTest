@@ -1,1 +1,257 @@
-[1,["f4+zhkYptOIojHkmCCWctP"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"lv_bu_run_ground_compressed","rect":[1,544,337,138],"offset":[0,0],"originalSize":[337,138],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lv_bu_run_soldier_03_compressed","rect":[396,241,185,267],"offset":[0,0],"originalSize":[185,267],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lv_bu_run_soldier_01_compressed","rect":[141,544,298,313],"offset":[0,0],"originalSize":[298,313],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lv_bu_run_soldier_04_compressed","rect":[441,510,135,256],"offset":[0,0],"originalSize":[135,256],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lv_bu_run_speed_lines","rect":[1,1,238,528],"offset":[0,0],"originalSize":[238,528],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lv_bu_run_soldier_02_compressed","rect":[1,241,393,301],"offset":[0,0],"originalSize":[393,301],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "f4+zhkYptOIojHkmCCWctP"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "lv_bu_run_ground_compressed",
+          "rect": [
+            1,
+            544,
+            337,
+            138
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            337,
+            138
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lv_bu_run_soldier_03_compressed",
+          "rect": [
+            396,
+            241,
+            185,
+            267
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            185,
+            267
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lv_bu_run_soldier_01_compressed",
+          "rect": [
+            141,
+            544,
+            298,
+            313
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            298,
+            313
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lv_bu_run_soldier_04_compressed",
+          "rect": [
+            441,
+            510,
+            135,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            135,
+            256
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lv_bu_run_speed_lines",
+          "rect": [
+            1,
+            1,
+            238,
+            528
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            238,
+            528
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lv_bu_run_soldier_02_compressed",
+          "rect": [
+            1,
+            241,
+            393,
+            301
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            393,
+            301
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

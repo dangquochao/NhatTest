@@ -1,1 +1,52 @@
-[1,["1d592d604"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"effectWin11","rect":[373,299,117,191],"offset":[0,0.5],"originalSize":[119,194],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "1d592d604"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "effectWin11",
+      "rect": [
+        373,
+        299,
+        117,
+        191
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        119,
+        194
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

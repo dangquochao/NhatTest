@@ -1,1 +1,51 @@
-[1,["dfvHrq/T9Knr8sBsC4TVTt"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"Alats7_33","rect":[0,0,672,428],"offset":[0,0],"originalSize":[672,428],"capInsets":[226,0,211,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "dfvHrq/T9Knr8sBsC4TVTt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Alats7_33",
+      "rect": [
+        0,
+        0,
+        672,
+        428
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        672,
+        428
+      ],
+      "capInsets": [
+        226,
+        0,
+        211,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

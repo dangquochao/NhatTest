@@ -1,1 +1,97 @@
-[1,["482Ljm3GhEGYqD0swt/xUA"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"IconWinBoss","rect":[340,568,321,147],"offset":[0,0],"originalSize":[321,147],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"TextComming","rect":[0,0,568,505],"offset":[0,0],"originalSize":[600,505],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "482Ljm3GhEGYqD0swt/xUA"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "IconWinBoss",
+          "rect": [
+            340,
+            568,
+            321,
+            147
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            321,
+            147
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "TextComming",
+          "rect": [
+            0,
+            0,
+            568,
+            505
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            600,
+            505
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

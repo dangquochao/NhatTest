@@ -1,1 +1,51 @@
-[1,["5b/mCCHphPgoc98Uav+mhk"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"hoTroTucTiep","rect":[0,0,77,90],"offset":[0,0.5],"originalSize":[77,91],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "5b/mCCHphPgoc98Uav+mhk"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "hoTroTucTiep",
+      "rect": [
+        0,
+        0,
+        77,
+        90
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        77,
+        91
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

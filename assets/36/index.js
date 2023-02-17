@@ -1,1 +1,2063 @@
-window.__require=function t(e,n,o){function i(c,s){if(!n[c]){if(!e[c]){var a=c.split("/");if(a=a[a.length-1],!e[a]){var u="function"==typeof __require&&__require;if(!s&&u)return u(a,!0);if(r)return r(a,!0);throw new Error("Cannot find module '"+c+"'")}c=a}var p=n[c]={exports:{}};e[c][0].call(p.exports,function(t){return i(e[c][1][t]||t)},p,p.exports,t,e,n,o)}return n[c].exports}for(var r="function"==typeof __require&&__require,c=0;c<o.length;c++)i(o[c]);return i}({BanPhimTaiXiu:[function(t,e,n){"use strict";cc._RF.push(e,"f28a6gGsthGSbAU837Uux9B","BanPhimTaiXiu");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/DefineTs/REQUEST_CODE"),s=t("../../../Scritps/Network/ConectManager"),a=t("../../../Scritps/Windown"),u=cc._decorator,p=u.ccclass,l=(u.property,function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e._infoBet=null,e.totalBet=0,e}return i(e,t),e.prototype.init=function(t){a.Windown.TaiXiu.sound.playClick(),this.node.active=!0,this._infoBet=t,this.totalBet=0},e.prototype.onClickNum=function(t,e,n){if(void 0===n&&(n=!0),cc.log("data: "+e),this._infoBet){n&&a.Windown.TaiXiu.sound.playClick();var o=parseInt(e);this.totalBet+=o,a.Windown.User.userAg<1e3?a.Windown.TaiXiu.showLog("M\u1ee9c c\u01b0\u1ee3c t\u1ed1i ti\u1ec3u l\xe0 1.000"):(this.totalBet=cc.misc.clampf(this.totalBet,0,a.Windown.User.userAg),this._infoBet.setMoneyTempBet(this.totalBet))}},e.prototype.onClickHuy=function(){this.totalBet=0,this.node.active=!1,this._infoBet&&this._infoBet.onHuyBet(),a.Windown.TaiXiu.sound.playClick()},e.prototype.onClickDongY=function(){if(0!=this.totalBet&&null!=this._infoBet){var t=s.ConectManager.getIns().getSFSObj();t.putInt("type",this._infoBet.type),t.putLong("bet",this.totalBet),a.Windown.TaiXiu.sendRequest(c.REQUEST_CODE.TXbet,t),a.Windown.TaiXiu.sound.playClick()}},e.prototype.reset=function(){this.totalBet=0,this.onClickNum(null,"0",!1)},e.prototype.onClickX2=function(){this.onClickNum(null,this._infoBet.lastBet),a.Windown.TaiXiu.sound.playClick()},r([p],e)}(cc.Component));n.default=l,cc._RF.pop()},{"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Windown":void 0}],BatDrag:[function(t,e,n){"use strict";cc._RF.push(e,"3821fZWQd1CqISYlOJC1cC9","BatDrag");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=(s.property,function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e._isTouch=!1,e._v2OffsetChange=null,e._isOpenBat=!1,e.updateTimer=0,e.updateInterval=0,e.isNan=!0,e.vecStart=null,e}return i(e,t),e.prototype.onLoad=function(){this.updateInterval=.2,this.updateTimer=0,this.vecStart=this.node.getPosition()},e.prototype.startGame=function(){this.reset(),this.getComponent(cc.Animation).play("EffectDongBat")},e.prototype.reset=function(){this.node.opacity=255,this.node.setPosition(this.vecStart),this.getComponent(cc.Animation).stop()},e.prototype.setIsNan=function(t){this.isNan=t},e.prototype.handleFinish=function(){this.isNan?this.canDrag():(this._isTouch=!1,this.openBat())},e.prototype.checkOpenBat=function(){this._isOpenBat||(this.offDrag(),this.node.getPosition().subSelf(this.vecStart).mag()<5?(this.openBat(),cc.log("nhay vao openBat")):(cc.log("nhay vao forceOpenbat"),this.forceOpenbat()))},e.prototype.canDrag=function(){this.node.on(cc.Node.EventType.TOUCH_START,this.touchStart,this),this.node.on(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this),this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this),this.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this),this._isOpenBat=!1},e.prototype.touchStart=function(t){var e=cc.v2(t.getLocation()),n=this.node.parent.convertToNodeSpaceAR(e);this._v2OffsetChange=this.node.getPosition().subSelf(n),this._isTouch=!0,t.stopPropagation()},e.prototype.touchMove=function(t){if(this._isTouch){var e=cc.v2(t.getLocation()),n=this.node.parent.convertToNodeSpaceAR(e);this.node.setPosition(n.add(this._v2OffsetChange))}t.stopPropagation()},e.prototype.touchEnd=function(t){this._isTouch=!1,t.stopPropagation()},e.prototype.update=function(t){this._isOpenBat||(this.updateTimer+=t,this.updateTimer<this.updateInterval||(this.updateTimer=0,this.node.getPosition().subSelf(this.vecStart).mag()>150&&(this._isOpenBat=!0,this.offDrag(),c.Windown.TaiXiu.handleFinish())))},e.prototype.offDrag=function(){this.node.off(cc.Node.EventType.TOUCH_START,this.touchStart,this),this.node.off(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this),this.node.off(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this),this.node.off(cc.Node.EventType.TOUCH_END,this.touchEnd,this),this.node.runAction(cc.fadeOut(.4)),this._isOpenBat=!0},e.prototype.openBat=function(){this._isTouch||this.node.runAction(cc.moveTo(1,cc.v2(-7,-486))),c.Windown.TaiXiu&&c.Windown.TaiXiu.handleFinish(),this._isOpenBat=!0},e.prototype.forceOpenbat=function(){if(c.Windown.TaiXiu){c.Windown.TaiXiu.handleFinish();var t=this.node.getPosition().subSelf(this.vecStart);t.normalizeSelf().mulSelf(300),this.node.runAction(cc.moveTo(.3,t))}},r([a],e)}(cc.Component));n.default=u,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],ChiTietPhien:[function(t,e,n){"use strict";cc._RF.push(e,"0bf8dPlDgtLH4DJxMXhdRAS","ChiTietPhien");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/DefineTs/REQUEST_CODE"),s=t("../../../Scritps/Parent/BaseScrollView"),a=t("../../../Scritps/Popup/PageData/PageData"),u=t("../../../Scritps/Windown"),p=cc._decorator,l=p.ccclass,h=p.property,d=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.scrTai=null,e.scrXiu=null,e.parentResult=null,e.lbPhien=null,e.lbSumTai=null,e.lbSumXiu=null,e.lbMd5=null,e.lbMd5Raw=null,e.skeWin=null,e.pageDate=null,e.iconTai=null,e.iconXiu=null,e.arrHistory=null,e.xTai=-287.397,e.xXiu=303.528,e}return i(e,t),e.prototype.start=function(){u.Windown.TaiXiu&&u.Windown.TaiXiu.sendRequest(c.REQUEST_CODE.TXinfoRoundBetOld,null)},e.prototype.responseServer=function(t){var e=t.getSFSArray("data");this.arrHistory=e,this.pageDate.setTotalPage(e.size(),!0),u.Windown.UIManager.hideLoading()},e.prototype.onChangePage=function(t){for(var e=this.arrHistory.getSFSObject(t-1),n=JSON.parse(e.get("view")),o=e.get("result"),i=e.get("rounds"),r=e.get("MD5"),c=e.get("MD5finish"),s=e.getSFSArray("dataTai"),a=e.getSFSArray("dataXiu"),p=[],l=[],h=0,d=0,f=0,y=s.size();f<y;f++){var g=s.getSFSObject(f);p.push(g),h+=g.get("agBet")}for(f=0,y=a.size();f<y;f++)g=a.getSFSObject(f),l.push(g),d+=g.get("agBet");this.scrTai.resetScr(),this.scrXiu.resetScr(),this.scrTai.init(p),this.scrXiu.init(l),this.parentResult.children.forEach(function(t,e){t.getComponent(sp.Skeleton).setAnimation(0,n[e].toString(),!1)}),this.lbPhien.string="#"+i,this.setInfoSkeWin(o),this.lbMd5.string=r,this.lbMd5Raw.string=c,this.lbSumTai.string=u.Windown.formatNumber(h),this.lbSumXiu.string=u.Windown.formatNumber(d)},e.prototype.setInfoSkeWin=function(t){t>10?(this.skeWin.node.x=this.xTai,this.skeWin.setAnimation(0,"tai",!0),this.iconTai.active=!1,this.iconXiu.active=!0):(this.skeWin.node.x=this.xXiu,this.skeWin.setAnimation(0,"xiu",!0),this.iconTai.active=!0,this.iconXiu.active=!1)},e.prototype.onClickClose=function(){u.Windown.TaiXiu&&(u.Windown.TaiXiu.chiTietPhien=null),this.node.destroy()},e.prototype.onClickCopyMd5=function(){u.Windown.coppyToClip(this.lbMd5.string)},e.prototype.onClickCopyMd5Raw=function(){u.Windown.coppyToClip(this.lbMd5Raw.string)},r([h(s.default)],e.prototype,"scrTai",void 0),r([h(s.default)],e.prototype,"scrXiu",void 0),r([h(cc.Node)],e.prototype,"parentResult",void 0),r([h(cc.Label)],e.prototype,"lbPhien",void 0),r([h(cc.Label)],e.prototype,"lbSumTai",void 0),r([h(cc.Label)],e.prototype,"lbSumXiu",void 0),r([h(cc.Label)],e.prototype,"lbMd5",void 0),r([h(cc.Label)],e.prototype,"lbMd5Raw",void 0),r([h(sp.Skeleton)],e.prototype,"skeWin",void 0),r([h(a.default)],e.prototype,"pageDate",void 0),r([h(cc.Node)],e.prototype,"iconTai",void 0),r([h(cc.Node)],e.prototype,"iconXiu",void 0),r([l],e)}(cc.Component);n.default=d,cc._RF.pop()},{"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/Parent/BaseScrollView":void 0,"../../../Scritps/Popup/PageData/PageData":void 0,"../../../Scritps/Windown":void 0}],HistoryTaiXiu:[function(t,e,n){"use strict";cc._RF.push(e,"ff4fcF+IXRDPIdqd6qFPT61","HistoryTaiXiu");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=cc._decorator,s=c.ccclass,a=c.property,u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.parentItem=null,e.itemTemp=null,e.listSp=[],e.xStart=-1,e.listHistory=[],e}return i(e,t),e.prototype.onLoad=function(){this.xStart=this.itemTemp.x},e.prototype.init=function(t){this.listHistory=t;for(var e=cc.misc.clampf(t.length-19,0,t.length-1),n=this.itemTemp.width,o=this.xStart,i=e,r=t.length;i<r;i++){var c=this.parentItem.children[i-e];null==c&&((c=cc.instantiate(this.itemTemp)).parent=this.parentItem),c.stopAllActions(),c.x=o,c.getComponent(cc.Sprite).spriteFrame=this.listSp[t[i].result>10?0:1],o+=n+5.3}var s=this.parentItem.children[this.parentItem.childrenCount-1];s&&(s.scale=1.2,s.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(.3,.8),cc.scaleTo(.3,1.2)))))},e.prototype.addResult=function(t,e){var n=Object.create(null);n.result=t,n.view=e,this.listHistory.shift(),this.listHistory.push(n),this.init(this.listHistory,!0)},r([a(cc.Node)],e.prototype,"parentItem",void 0),r([a(cc.Node)],e.prototype,"itemTemp",void 0),r([a([cc.SpriteFrame])],e.prototype,"listSp",void 0),r([s],e)}(cc.Component);n.default=u,cc._RF.pop()},{}],HuongDan:[function(t,e,n){"use strict";cc._RF.push(e,"1063alBA/dIzqKPqymR44h3","HuongDan");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=cc._decorator,s=c.ccclass,a=(c.property,function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.onClickClose=function(){this.node.destroy()},e.prototype.onClickOpenLink=function(){cc.sys.openURL("https://md5.services/")},r([s],e)}(cc.Component));n.default=a,cc._RF.pop()},{}],InfoBetTX:[function(t,e,n){"use strict";cc._RF.push(e,"57cdbGQJOZM/ZhTcBUF9U9Z","InfoBetTX");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbBetTotal=null,e.lbCountUser=null,e.lbMeBet=null,e.lbMeTempBet=null,e.btnActiveBet=null,e.type=0,e.spineWin=null,e.icon=null,e.totalBet=0,e.lastBet=0,e}return i(e,t),e.prototype.setMoneyMeBet=function(t){this.lbMeBet.string=c.Windown.formatNumber(t),0==t&&(this.lbMeBet.string="",this.lastBet=this.totalBet,this.spineWin.node.active=!1,this.icon.active=!0),this.totalBet=t},e.prototype.setMoneyTempBet=function(t){this.lbMeTempBet.string=c.Windown.formatNumber(t)},e.prototype.setMoneyTotalUserBet=function(t){var e=c.Windown.formatNumber(t);this.lbBetTotal.string!=e&&this.lbBetTotal.node.runAction(cc.sequence(cc.scaleTo(.05,1.3),cc.scaleTo(.3,1))),this.lbBetTotal.string=e},e.prototype.setCountTotaluser=function(t){this.lbCountUser.string=c.Windown.formatNumber(t)},e.prototype.onWin=function(){this.spineWin.node.active=!0,this.icon.active=!1,this.spineWin.setAnimation(0,this.spineWin.animation,!0)},e.prototype.onClickBet=function(){c.Windown.TaiXiu.listInfo.forEach(function(t){t.onHuyBet()}),this.lbMeTempBet.node.parent.active=!0,this.lbMeTempBet.string="0",this.btnActiveBet.active=!1,c.Windown.TaiXiu.banPhim.init(this)},e.prototype.onHuyBet=function(){this.lbMeTempBet.node.parent.active=!1,this.btnActiveBet.active=!0},r([u(cc.Label)],e.prototype,"lbBetTotal",void 0),r([u(cc.Label)],e.prototype,"lbCountUser",void 0),r([u(cc.Label)],e.prototype,"lbMeBet",void 0),r([u(cc.Label)],e.prototype,"lbMeTempBet",void 0),r([u(cc.Node)],e.prototype,"btnActiveBet",void 0),r([u(cc.Integer)],e.prototype,"type",void 0),r([u(sp.Skeleton)],e.prototype,"spineWin",void 0),r([u(cc.Node)],e.prototype,"icon",void 0),r([a],e)}(cc.Component);n.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],ItemChiTietPhien:[function(t,e,n){"use strict";cc._RF.push(e,"46d3cmoSNRJKYxA2We3DXFS","ItemChiTietPhien");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbTime=null,e.lbName=null,e.lbBet=null,e}return i(e,t),e.prototype.initItem=function(t){this.lbTime.string=c.Windown.formatDate(new Date(t.get("timeBet")),"HH:mm:ss"),this.lbName.string=t.get("name"),this.lbBet.string=c.Windown.formatNumber(t.get("agBet"))},r([u(cc.Label)],e.prototype,"lbTime",void 0),r([u(cc.Label)],e.prototype,"lbName",void 0),r([u(cc.Label)],e.prototype,"lbBet",void 0),r([a],e)}(cc.Component);n.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],ItemTopTx:[function(t,e,n){"use strict";cc._RF.push(e,"b276c7Z0cpB2resRj2n2r/Y","ItemTopTx");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0}),t("../../../Scritps/DefineTs/REQUEST_CODE"),t("../../../Scritps/Network/ConectManager");var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=(s.property,function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.idPlayer=null,e}return i(e,t),e.prototype.initItem=function(t){var e=this.getComponentsInChildren(cc.Label);e[1].string=t.get("nickname"),e[2].string=c.Windown.formatNumber(t.get("agWin"),!1);var n=cc.find("ava",this.node).getComponent(cc.Sprite);this.idPlayer=t.get("iduser"),c.Windown.updateAvatar(t,n)},e.prototype.start=function(){},e.prototype.onDestroy=function(){},e.prototype.onClick=function(){},r([a],e)}(cc.Component));n.default=u,cc._RF.pop()},{"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Windown":void 0}],LichSuCuoc:[function(t,e,n){"use strict";cc._RF.push(e,"541b7z2VoZHNbTFPrmHaAaU","LichSuCuoc");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/DefineTs/REQUEST_CODE"),s=t("../../../Scritps/Popup/PageData/PageData"),a=t("../../../Scritps/Windown"),u=cc._decorator,p=u.ccclass,l=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.pageDate=null,e.parentItem=null,e.maxRow=7,e.listData=null,e}return i(e,t),e.prototype.start=function(){a.Windown.TaiXiu.sendRequest(c.REQUEST_CODE.TXhistoryBet,null)},e.prototype.response=function(t){cc.log(a.Windown.SFSObjToJson(t));var e=t.getSFSArray("history");e._dataHolder.reverse();var n=e.size(),o=parseInt(n/this.maxRow);n%this.maxRow>0&&o++,0==o&&(o=1),this.listData=e,this.pageDate.setTotalPage(o),this.onChangePage(1)},e.prototype.onChangePage=function(t){for(var e=this.parentItem,n=e.children,o=n[0],i=(t-1)*this.maxRow,r=0,c=this.maxRow;r<c;r++){var s=n[r];if(i<this.listData.size()){null==s&&(s=cc.instantiate(o),e.addChild(s),s.y=-(r+1)*s.height+s.height/2);var a=this.listData.getSFSObject(i);this.initItem(s,a),s.active=!0,i++}else{if(!s)break;s.active=!1}}},e.prototype.initItem=function(t,e){var n=t.getComponentsInChildren(cc.Label),o=e.get("info");n[0].string="#"+e.get("round"),n[1].string=a.Windown.formatDate(new Date(e.get("time")),"dd/MM\nHH:mm:ss"),n[2].string=a.Windown.formatNumber(e.get("bet"),!1);var i="";e.get("agWin")<=0?(n[3].string="-"+a.Windown.formatNumber(e.get("bet"),!1),n[3].node.color=cc.Color.RED,i="T\xe0i"==o?"X\u1ec9u":"T\xe0i"):(n[3].string="+"+a.Windown.formatNumber(e.get("agWin"),!1),n[3].node.color=cc.Color.GREEN,i="T\xe0i"==o?"T\xe0i":"X\u1ec9u"),n[4].string="K\u1ebft qu\u1ea3: "+o+".\u0110\u1eb7t "+i+": "+a.Windown.formatNumber(e.get("bet"))+" Nh\u1eadn: "+a.Windown.formatNumber(e.get("agWin"))},e.prototype.onClickClose=function(){a.Windown.TaiXiu&&(a.Windown.TaiXiu.lichSuCuoc=null),this.node.destroy()},r([l(s.default)],e.prototype,"pageDate",void 0),r([l(cc.Node)],e.prototype,"parentItem",void 0),r([p],e)}(cc.Component);n.default=h,cc._RF.pop()},{"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/Popup/PageData/PageData":void 0,"../../../Scritps/Windown":void 0}],SoiCau:[function(t,e,n){"use strict";cc._RF.push(e,"f9f47ytNz5MwZ4VNOHL7XKi","SoiCau");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.listSpKetQua=[],e.listSpTaiXiu=[],e.Cau1=null,e.Cau2=null,e.Cau3=null,e.Cau4=null,e.index=0,e}return i(e,t),e.prototype.start=function(){this.emitAllCau()},e.prototype.emitAllCau=function(){this.initCau1(),this.initCau2(),this.initCau3(),this.initCau4()},e.prototype.initCau1=function(){var t=this,e=cc.find("parentItem",this.Cau1),n=-451.117,o=63.783,i=c.Windown.TaiXiu.history.listHistory,r=e.children,s=r[0],a=0,u=-1,p=0,l=0;i.forEach(function(i,c){var h=i.result;h>10?p++:l++;var d=t.getSpTaiXiu(h),f=r[c];null==f&&((f=cc.instantiate(s)).parent=e),f.setPosition(cc.v2(n,o)),f.getComponent(cc.Sprite).spriteFrame=d,++a>=5?(n+=46.45,u*=-1,a=0):o+=33.8*u}),cc.find("tai",this.Cau1).getComponentInChildren(cc.Label).string="Tai: "+p,cc.find("xiu",this.Cau1).getComponentInChildren(cc.Label).string="X\u1ec9u: "+l},e.prototype.initCau2=function(){var t=this,e=cc.find("parentItem",this.Cau2),n=-418.167,o=28.06,i=o,r=c.Windown.TaiXiu.history.listHistory.slice(),s=[],a=0,u=[];r.forEach(function(t,e){var n=t.result,o=n>10,i=!!(r[e+1]&&r[e+1].result>10);u.push(n),(++a>=5||o!=i)&&(a=0,s.push(u.slice()),u.length=0)}),u.length>0&&s.push(u.slice()),cc.log(JSON.stringify(s)),s=s.slice(cc.misc.clampf(s.length-20,0,s.length),s.length),cc.log(JSON.stringify(s));var p=0,l=e.children,h=l[0];l.forEach(function(t){return t.active=!1}),s.forEach(function(r){r.reverse(),r.forEach(function(i){var r=t.getSpResult(i),c=l[p];null==c&&((c=cc.instantiate(h)).parent=e),c.active=!0,c.setPosition(cc.v2(n,o)),c.getComponent(cc.Sprite).spriteFrame=r,o-=27.5,p++}),o=i,n+=44.1})},e.prototype.initCau3=function(){var t=this,e=cc.find("parentItem",this.Cau3),n=cc.find("Line",this.Cau3).getComponent(cc.Graphics);n.clear(!0);var o=-414.419,i=c.Windown.TaiXiu.history.listHistory.length,r=c.Windown.TaiXiu.history.listHistory.slice(cc.misc.clampf(i-21,0,i),i),s=e.children,a=s[0];n.lineWidth=5,r.forEach(function(i,r){var c=i.result,u=t.getSpResult(c),p=s[r];null==p&&((p=cc.instantiate(a)).parent=e),p.setPosition(cc.v2(o,14.775+8*(c-3))),0==r?n.moveTo(p.x,p.y):n.lineTo(p.x,p.y),p.getComponent(cc.Sprite).spriteFrame=u,o+=41.5}),n.stroke();var u=cc.find("Title",this.Cau3).getComponent(cc.Label),p=r[r.length-1],l=p.result,h=JSON.parse(p.view),d="Phi\xean g\u1ea7n nh\u1ea5t: "+(l>10?"T\xe0i":"X\u1ec9u")+"("+h[0]+"-"+h[1]+"-"+h[2]+")";u.string=d},e.prototype.initCau4=function(){for(var t=c.Windown.TaiXiu.history.listHistory.length,e=c.Windown.TaiXiu.history.listHistory.slice(cc.misc.clampf(t-21,0,t),t),n=function(t){var n=cc.find("parentItem"+t,o.Cau4),i=cc.find("parentItem",n),r=cc.find("Line",n).getComponent(cc.Graphics);r.clear(!0);var c=-414.419,s=i.children,a=s[0];r.lineWidth=4,e.forEach(function(e,n){var o=JSON.parse(e.view)[t-1],u=s[n];null==u&&((u=cc.instantiate(a)).parent=i),u.setPosition(cc.v2(c,26*(o-1)-157.713)),0==n?r.moveTo(u.x,u.y):r.lineTo(u.x,u.y),c+=41.5}),r.stroke()},o=this,i=1;i<4;i++)n(i)},e.prototype.onClickChangePage=function(t,e){"0"==e?(this.Cau1.active=!0,this.Cau2.active=!0,this.Cau3.active=!1,this.Cau4.active=!1):(this.Cau1.active=!1,this.Cau2.active=!1,this.Cau3.active=!0,this.Cau4.active=!0)},e.prototype.onToggleXiNgau=function(t,e){var n=JSON.parse(e);cc.find("parentItem"+n,this.Cau4).active=t.isChecked},e.prototype.getSpTaiXiu=function(t){return t>10?this.listSpTaiXiu[1]:this.listSpTaiXiu[0]},e.prototype.getSpResult=function(t){return this.listSpKetQua[t-3]},e.prototype.onClickClose=function(){c.Windown.TaiXiu&&(c.Windown.TaiXiu.soiCau=null),this.node.destroy()},r([u([cc.SpriteFrame])],e.prototype,"listSpKetQua",void 0),r([u([cc.SpriteFrame])],e.prototype,"listSpTaiXiu",void 0),r([u(cc.Node)],e.prototype,"Cau1",void 0),r([u(cc.Node)],e.prototype,"Cau2",void 0),r([u(cc.Node)],e.prototype,"Cau3",void 0),r([u(cc.Node)],e.prototype,"Cau4",void 0),r([a],e)}(cc.Component);n.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],SoundTaiXiu:[function(t,e,n){"use strict";cc._RF.push(e,"46b169IDq5IRaHLV2Hj8z/l","SoundTaiXiu");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),s=cc._decorator,a=s.ccclass,u=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.click=null,e.ketQua=null,e.lacxiNgau=null,e}return i(e,t),e.prototype.playClick=function(){c.Windown.AudioManager&&c.Windown.AudioManager.isActiveSound&&this.click.play()},e.prototype.playKetQua=function(){c.Windown.AudioManager&&c.Windown.AudioManager.isActiveSound&&this.ketQua.play()},e.prototype.playTungXucXac=function(){c.Windown.AudioManager&&c.Windown.AudioManager.isActiveSound&&this.lacxiNgau.play()},r([u(cc.AudioSource)],e.prototype,"click",void 0),r([u(cc.AudioSource)],e.prototype,"ketQua",void 0),r([u(cc.AudioSource)],e.prototype,"lacxiNgau",void 0),r([a],e)}(cc.Component);n.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],TaiXiu:[function(t,e,n){"use strict";cc._RF.push(e,"857dbIExzlDg4uSgzwEaILu","TaiXiu");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c},c=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function c(t){try{a(o.next(t))}catch(e){r(e)}}function s(t){try{a(o.throw(t))}catch(e){r(e)}}function a(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(c,s)}a((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,c={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function s(t){return function(e){return a([t,e])}}function a(r){if(n)throw new TypeError("Generator is already executing.");for(;c;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return c.label++,{value:r[1],done:!1};case 5:c.label++,o=r[1],r=[0];continue;case 7:r=c.ops.pop(),c.trys.pop();continue;default:if(!(i=(i=c.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){c=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){c.label=r[1];break}if(6===r[0]&&c.label<i[1]){c.label=i[1],i=r;break}if(i&&c.label<i[2]){c.label=i[2],c.ops.push(r);break}i[2]&&c.ops.pop(),c.trys.pop();continue}r=e.call(t,c)}catch(s){r=[6,s],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../Scritps/DefineTs/EVENT_MANAGER"),u=t("../../../Scritps/DefineTs/REQUEST_CODE"),p=t("../../../Scritps/DefineTs/TextDefine"),l=t("../../../Scritps/Game/GAME_TYPE"),h=t("../../../Scritps/Network/ConectManager"),d=t("../../../Scritps/Other/DragMiniGame"),f=t("../../../Scritps/Other/OffMiniGame"),y=t("../../../Scritps/Windown"),g=t("./BanPhimTaiXiu"),v=t("./BatDrag"),m=t("./ChiTietPhien"),T=t("./HistoryTaiXiu"),b=t("./InfoBetTX"),_=t("./LichSuCuoc"),S=t("./SoiCau"),w=t("./SoundTaiXiu"),C=t("./TopTaiXiu"),O=cc._decorator,R=O.ccclass,E=O.property,W=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbMd5=null,e.lbMd5Raw=null,e.lbPhien=null,e.lbThongBao=null,e.nodeTimeGame=null,e.lbTimeEnd=null,e.listInfo=[],e.banPhim=null,e.history=null,e.lichSuCuoc=null,e.top=null,e.soiCau=null,e.parentResult=null,e.batDrag=null,e.lbAgWin=null,e.spineTungXucXac=null,e.sound=null,e.gameType=0,e.sfs=null,e.roomSFS=null,e.objFinish=null,e.chiTietPhien=null,e.funCountDown=null,e.funDelayUpBat=null,e.funDelayUpBat2=null,e.funAutoBet=null,e.isDelayLeave=!1,e}return i(e,t),e.prototype.start=function(){y.Windown.TaiXiu=this,this.gameType=l.default.TaiXiu,this.sfs=h.ConectManager.getIns().sfs,this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr,this),this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse,this),cc.systemEvent.on(a.EVENT_MANAGER.onDisconnect,this.onDisconnect,this),cc.systemEvent.on(a.EVENT_MANAGER.CHANG_ROTATION,this.onChangRotate,this),cc.systemEvent.on(cc.game.EVENT_SHOW,this.eventShow,this),this.getComponent(d.default).nomalSize(),this.sendJoinRoom(),this.listInfo.forEach(function(t){t.onHuyBet(),t.setMoneyMeBet(0),t.setMoneyTotalUserBet(0)}),this.lbAgWin.node.active=!1,this.spineTungXucXac.node.active=!1,y.Windown.BtnMiniGame.onActiveTx(),this.onChangRotate(y.Windown.UIManager.isVertical),cc.sys.isNative&&jsb.Device.setKeepScreenOn(!0)},e.prototype.onDestroy=function(){y.Windown.TaiXiu=null},e.prototype.eventShow=function(){this.sendGetInfoRoom()},e.prototype.onChangRotate=function(t){t?(this.node.rotation=-90,this.node.scale=.9):(this.node.rotation=0,this.node.scale=1)},e.prototype.onClickTest=function(){var t=this.batDrag.node.getPosition();this.batDrag.node.setPosition(80,80);var e=this.batDrag.node.getPosition().subSelf(t);cc.log("trc do"+e.toString()),e.normalizeSelf().mulSelf(300),cc.log(e.toString()),this.batDrag.node.runAction(cc.moveTo(.3,e))},e.prototype.sendJoinRoom=function(){y.Windown.UIManager.showLoading();var t=this.sfs.roomManager.getRoomListFromGroup("MD5").find(function(t){return cc.log("value"+t.getVariable("cj").value),t.containsVariable("cj")&&t.getVariable("cj").value});t?(this.roomSFS=t,t.isJoined?this.sendGetInfoRoom():(cc.log("nhay vao send join rom: "+t),this.sfs.send(new SFS2X.JoinRoomRequest(t,null,-1)))):this.scheduleOnce(this.sendJoinRoom,3)},e.prototype.sendGetInfoRoom=function(){this.sendRequest(u.REQUEST_CODE.TXinfoRoom,h.ConectManager.getIns().getSFSObj())},e.prototype.userExitRoom=function(t){if("MD5"==t.room.groupId&&(cc.log("user exit room tx"),t.user.isItMe))return this.clear(),void this.node.destroy()},e.prototype.onJoinRoom=function(t){var e=t.room;"MD5"==e.groupId&&(cc.log("r\xf4m lak "+e.id),y.Windown.UIManager.hideLoading())},e.prototype.sendRequest=function(t,e){h.ConectManager.getIns().sendRequest(t,e,this.roomSFS)},e.prototype.showLog=function(t,e){void 0===e&&(e=2),this.lbThongBao.string=t;var n=this.lbThongBao.node.parent.parent;n.stopAllActions(),n.opacity=0,n.y=150,n.runAction(cc.sequence(cc.spawn(cc.moveTo(.3,0,120).easing(cc.easeQuarticActionOut()),cc.fadeIn(.3).easing(cc.easeQuarticActionOut())),cc.delayTime(e),cc.spawn(cc.moveTo(.3,0,150).easing(cc.easeQuarticActionIn()),cc.fadeOut(.3).easing(cc.easeQuarticActionIn()))))},e.prototype.onJoinRoomErr=function(){cc.log("onJoinRoomErr "),y.Windown.UIManager.hideLoading(),y.Windown.Dialog.showLog(p.TextDefine.ERR_JOIN_ROOM)},e.prototype.extResponse=function(t){var e=t.cmd,n=t.params;switch(e){case u.REQUEST_CODE.TXstartGame:this.startGameTaiXiu(n);break;case u.REQUEST_CODE.TXendGame:this.endGameTaiXiu(n);break;case u.REQUEST_CODE.TXbet:this.responseBet(n);break;case u.REQUEST_CODE.TXinfoRoundBetOld:this.chiTietPhien&&this.chiTietPhien.responseServer(n);break;case u.REQUEST_CODE.TXhistoryGame:break;case u.REQUEST_CODE.TXhistoryBet:this.lichSuCuoc&&this.lichSuCuoc.response(n);break;case u.REQUEST_CODE.TXtopGame:this.top&&this.top.responseServer(n);break;case u.REQUEST_CODE.TXinfoCurrentRoom:this.handleUpdateAllBet(n);break;case u.REQUEST_CODE.TXinfoRoom:this.initGame(n)}},e.prototype.miniSize=function(){cc.isValid(this.node,!0)&&(this.parentResult.opacity=0)},e.prototype.normalSize=function(){this.node&&this.parentResult&&(this.parentResult.opacity=255)},e.prototype.initGame=function(t){cc.log(y.Windown.SFSObjToJson(t)),this.parentResult.children.forEach(function(t){t.getComponent(sp.Skeleton).setAnimation(0,null,!1)}),this.listInfo[1].setCountTotaluser(t.get("sizeT")),this.listInfo[1].setMoneyTotalUserBet(t.get("agBetT")),this.listInfo[1].setMoneyMeBet(t.get("UagBetT")),this.listInfo[0].setCountTotaluser(t.get("sizeX")),this.listInfo[0].setMoneyTotalUserBet(t.get("agBetX")),this.listInfo[0].setMoneyMeBet(t.get("UagBetX"));var e=t.get("isGame"),n=t.get("time"),o=t.get("rounds");if(this.setHistory(t.get("history"),e),this.batDrag.reset(),this.parentResult.active=!1,e){this.botAutoBet(n);var i=t.get("MD5");this.setLbMd5Raw(i)}else{var r=JSON.parse(t.get("view"));if(this.batDrag.handleFinish(),this.parentResult.active=!0,this.parentResult.children.forEach(function(t,e){t.getComponent(sp.Skeleton).setAnimation(0,r[e].toString(),!1)}),i=t.get("MD5"),this.setLbMd5(i),t.containsKey("MD5raw")){var c=t.get("MD5raw");this.setLbMd5Raw(c)}}this.setupByStatusGame(e,n),this.lbPhien.string="#"+o,this.lbAgWin.node.active=!1,this.unschedule(this.funDelayUpBat),this.unschedule(this.funDelayUpBat2),this.spineTungXucXac.node.active=!1;var s=this.lbThongBao.node.parent.parent;s.stopAllActions(),s.opacity=0},e.prototype.setHistory=function(t,e){var n=JSON.parse(LZString.decompressFromBase64(t));this.history.init(n,e)},e.prototype.botAutoBet=function(t){var e=this;y.Windown.BotController&&y.Windown.RandomNumber(0,100)<60&&(this.unschedule(this.funAutoBet),this.scheduleOnce(this.funAutoBet=function(){var n=[1e3,1e4,5e4,1e5,5e5,1e6],o=n.filter(function(t){return t<y.Windown.User.userAg});if(o.length>0){var i=y.Windown.RandomNumber(0,2),r=h.ConectManager.getIns().getSFSObj();r.putInt("type",i),r.putLong("bet",o[y.Windown.RandomNumber(0,o.length)]),y.Windown.TaiXiu.sendRequest(u.REQUEST_CODE.TXbet,r),y.Windown.RandomNumber(0,100)<20&&e.scheduleOnce(function(){if((o=n.filter(function(t){return t<y.Windown.User.userAg})).length>0){var t=h.ConectManager.getIns().getSFSObj();t.putInt("type",i),t.putLong("bet",o[y.Windown.RandomNumber(0,o.length)]),y.Windown.TaiXiu.sendRequest(u.REQUEST_CODE.TXbet,t)}},y.Windown.RandomNumber(1,cc.misc.clampf(5,0,t-2)))}else y.Windown.restartGame()},y.Windown.RandomNumber(1,t-3)))},e.prototype.startGameTaiXiu=function(t){var e,n=this,o=t.get("round"),i=t.get("MD5"),r=t.get("time");this.setLbMd5("-"),this.setLbMd5Raw(i),this.listInfo.forEach(function(t){t.onHuyBet(),t.setMoneyMeBet(0),t.setMoneyTotalUserBet(0)}),this.lbPhien.string="#"+o,this.setupByStatusGame(!0,r),this.nodeTimeGame.active=!1,this.spineTungXucXac.node.active=!0,this.spineTungXucXac.setAnimation(0,"effect",!1),this.parentResult.children.forEach(function(t){t.getComponent(sp.Skeleton).setAnimation(0,"xi ngau bay "+y.Windown.RandomNumber(1,7),!1)}),this.scheduleOnce(this.funDelayUpBat=function(){n.scheduleOnce(n.funDelayUpBat2=function(){n.parentResult.active=!1},.5),n.batDrag.startGame(),n.scheduleOnce(function(){n.nodeTimeGame.active=!0},1)},1.8),this.objFinish=null,this.lbAgWin.node.active=!1,null===(e=this.sound)||void 0===e||e.playTungXucXac(),this.botAutoBet(r),this.isDelayLeave&&this.onClickClose()},e.prototype.endGameTaiXiu=function(t){cc.log(y.Windown.SFSObjToJson(t));var e=JSON.parse(t.get("view")),n=t.get("agWin"),o=(t.get("MD5"),t.get("time")),i=t.get("agUser");this.unschedule(this.funDelayUpBat),this.unschedule(this.funDelayUpBat2),this.parentResult.active=!0,this.parentResult.children.forEach(function(t,n){t.getComponent(sp.Skeleton).setAnimation(0,e[n].toString(),!1)}),this.setupByStatusGame(!1,o),this.objFinish=t,y.Windown.MoneyUser.pushDelayMoney(this.gameType,i,n),this.batDrag.handleFinish(),this.batDrag.isNan&&this.showLog("Xin m\u1eddi n\u1eb7n!",.5)},e.prototype.handleFinish=function(){var t=this.objFinish;if(null!=t){var e=JSON.parse(t.get("view")),n=t.get("agWin"),o=t.get("MD5");this.setLbMd5(o);var i=0;e.forEach(function(t){i+=t}),i>10?this.listInfo[1].onWin():this.listInfo[0].onWin(),this.history.addResult(i,t.get("view")),this.soiCau&&this.soiCau.emitAllCau(),n>0&&(this.lbAgWin.string="+"+y.Windown.formatNumber(n,!1),this.lbAgWin.node.active=!0,this.lbAgWin.node.opacity=255,this.lbAgWin.node.stopAllActions(),this.lbAgWin.node.y=-18,this.lbAgWin.node.runAction(cc.sequence(cc.moveTo(2,0,50).easing(cc.easeQuadraticActionOut()),cc.delayTime(2),cc.fadeOut(1)))),y.Windown.MoneyUser.removeDelay(this.gameType),y.Windown.TaiXiu.sound.playKetQua(),this.objFinish=null}},e.prototype.responseBet=function(t){y.Windown.Dialog.checkAndShowLog(t);var e=t.getInt("type"),n=t.getLong("bet"),o=t.getLong("ttBet"),i=t.get("ag");y.Windown.MoneyUser.subMoney(n,i),this.getInfoBetByType(e).setMoneyMeBet(o),this.banPhim.reset(),this.listInfo.forEach(function(t){return t.setMoneyTempBet(0)}),this.showLog("\u0110\u1eb7t c\u01b0\u1ee3c th\xe0nh c\xf4ng")},e.prototype.setLbMd5=function(t){var e=this;cc.Tween.stopAllByTarget(this.lbMd5),this.lbMd5.time=0,cc.tween(this.lbMd5).to(.3,{time:{value:1,progress:function(n,o,i,r){var c=n+(o-n)*r,s=cc.misc.lerp(0,t.length,c);return e.lbMd5.string=t.substring(0,s),c}}}).start()},e.prototype.setLbMd5Raw=function(t){var e=this;cc.Tween.stopAllByTarget(this.lbMd5Raw),this.lbMd5Raw.time=0,cc.tween(this.lbMd5Raw).to(.3,{time:{value:1,progress:function(n,o,i,r){var c=n+(o-n)*r,s=cc.misc.lerp(0,t.length,c);return e.lbMd5Raw.string=t.substring(0,s),c}}}).start()},e.prototype.onClickCoppyMd5=function(){y.Windown.coppyToClip(this.lbMd5.string)},e.prototype.onClickCoppyMd5Raw=function(){y.Windown.coppyToClip(this.lbMd5Raw.string)},e.prototype.setupByStatusGame=function(t,e){var n=this;if(this.unschedule(this.funCountDown),e=parseInt(e),(e-=2)<0&&(e=0),t){this.nodeTimeGame.active=!0,this.lbTimeEnd.node.parent.active=!1;var o=this.nodeTimeGame.getComponentsInChildren(cc.Label);this.schedule(this.funCountDown=function(){e<10?(o[0].string="0",o[1].string=e):(o[0].string=e.toString()[0],o[1].string=e.toString()[1]),e--},1,e,.01)}else this.lbTimeEnd.string=e,this.nodeTimeGame.active=!1,this.lbTimeEnd.node.parent.active=!0,this.schedule(this.funCountDown=function(){n.lbTimeEnd.string=(e<10?"0":"")+e,--e<5&&n.batDrag.checkOpenBat()},1,e,.01)},e.prototype.handleUpdateAllBet=function(t){this.listInfo[1].setCountTotaluser(t.get("sizeT")),this.listInfo[1].setMoneyTotalUserBet(t.get("agBetT")),this.listInfo[0].setCountTotaluser(t.get("sizeX")),this.listInfo[0].setMoneyTotalUserBet(t.get("agBetX"))},e.prototype.clear=function(){cc.systemEvent.targetOff(this),this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr),this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse),this.objFinish&&(this.objFinish.get("agWin"),y.Windown.MoneyUser.removeDelay(this.gameType)),y.Windown.MoneyUser.endGameMOney(this.gameType)},e.prototype.getInfoBetByType=function(t){return 0==t?this.listInfo[0]:this.listInfo[1]},e.prototype.onDisconnect=function(){this.clear(),this.node.destroy()},e.prototype.onToggleBat=function(t){var e=t.isChecked;this.batDrag.setIsNan(e)},e.prototype.onClickClose=function(){if(y.Windown.BtnMiniGame.onDeActiveTx(),y.Windown.UIManager.parentMiniGame.getComponentInChildren(f.default)._touchStart(null),this.checkIsBet())this.node.setPosition(1e4,1e4),this.node.opacity=0,this.isDelayLeave=!0;else{this.node.active=!1;try{h.ConectManager.getIns().sendLeaveRoom(this.roomSFS)}catch(t){this.clear(),this.node.destroy()}}},e.prototype.checkIsBet=function(){for(var t=0,e=this.listInfo;t<e.length;t++)if(e[t].totalBet>0)return!0;return!1},e.prototype.onClickChiTietPhien=function(){return c(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return y.Windown.UIManager.showLoading(),[4,y.Windown.loadRes(this.gameType.toString(),"Prefabs/ChiTietPhien",cc.Prefab)];case 1:return t=n.sent(),(e=cc.instantiate(t)).parent=y.Windown.UIManager.parentPopup,this.chiTietPhien=e.getComponent(m.default),[2]}})})},e.prototype.onClickHuongDan=function(){return c(this,void 0,void 0,function(){var t;return s(this,function(e){switch(e.label){case 0:return y.Windown.UIManager.showLoading(),[4,y.Windown.loadRes(this.gameType.toString(),"Prefabs/HuongDan",cc.Prefab)];case 1:return t=e.sent(),cc.instantiate(t).parent=y.Windown.UIManager.parentPopup,y.Windown.UIManager.hideLoading(),[2]}})})},e.prototype.onClickSoiCau=function(){return c(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return y.Windown.UIManager.showLoading(),[4,y.Windown.loadRes(this.gameType.toString(),"Prefabs/SoiCau",cc.Prefab)];case 1:return t=n.sent(),(e=cc.instantiate(t)).parent=y.Windown.UIManager.parentPopup,this.soiCau=e.getComponent(S.default),y.Windown.UIManager.hideLoading(),[2]}})})},e.prototype.onClickLichSuCuoc=function(){return c(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return y.Windown.UIManager.showLoading(),[4,y.Windown.loadRes(this.gameType.toString(),"Prefabs/LichSuCuoc",cc.Prefab)];case 1:return t=n.sent(),(e=cc.instantiate(t)).parent=y.Windown.UIManager.parentPopup,this.lichSuCuoc=e.getComponent(_.default),y.Windown.UIManager.hideLoading(),[2]}})})},e.prototype.onClickTop=function(){return c(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return y.Windown.UIManager.showLoading(),[4,y.Windown.loadRes(this.gameType.toString(),"Prefabs/TopTaiXiu",cc.Prefab)];case 1:return t=n.sent(),(e=cc.instantiate(t)).parent=y.Windown.UIManager.parentPopup,this.top=e.getComponent(C.default),y.Windown.UIManager.hideLoading(),[2]}})})},r([E(cc.Label)],e.prototype,"lbMd5",void 0),r([E(cc.Label)],e.prototype,"lbMd5Raw",void 0),r([E(cc.Label)],e.prototype,"lbPhien",void 0),r([E(cc.Label)],e.prototype,"lbThongBao",void 0),r([E(cc.Node)],e.prototype,"nodeTimeGame",void 0),r([E(cc.Label)],e.prototype,"lbTimeEnd",void 0),r([E(b.default)],e.prototype,"listInfo",void 0),r([E(g.default)],e.prototype,"banPhim",void 0),r([E(T.default)],e.prototype,"history",void 0),r([E(cc.Node)],e.prototype,"parentResult",void 0),r([E(v.default)],e.prototype,"batDrag",void 0),r([E(cc.Label)],e.prototype,"lbAgWin",void 0),r([E(sp.Skeleton)],e.prototype,"spineTungXucXac",void 0),r([E(w.default)],e.prototype,"sound",void 0),r([R],e)}(cc.Component);n.default=W,cc._RF.pop()},{"../../../Scritps/DefineTs/EVENT_MANAGER":void 0,"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/DefineTs/TextDefine":void 0,"../../../Scritps/Game/GAME_TYPE":void 0,"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Other/DragMiniGame":void 0,"../../../Scritps/Other/OffMiniGame":void 0,"../../../Scritps/Windown":void 0,"./BanPhimTaiXiu":"BanPhimTaiXiu","./BatDrag":"BatDrag","./ChiTietPhien":"ChiTietPhien","./HistoryTaiXiu":"HistoryTaiXiu","./InfoBetTX":"InfoBetTX","./LichSuCuoc":"LichSuCuoc","./SoiCau":"SoiCau","./SoundTaiXiu":"SoundTaiXiu","./TopTaiXiu":"TopTaiXiu"}],TopTaiXiu:[function(t,e,n){"use strict";cc._RF.push(e,"c1c17E3ypRP6bi2UeaRmXpr","TopTaiXiu");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,c=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)c=Reflect.decorate(t,e,n,o);else for(var s=t.length-1;s>=0;s--)(i=t[s])&&(c=(r<3?i(c):r>3?i(e,n,c):i(e,n))||c);return r>3&&c&&Object.defineProperty(e,n,c),c};Object.defineProperty(n,"__esModule",{value:!0});var c=t("../../../Scritps/DefineTs/REQUEST_CODE"),s=t("../../../Scritps/Windown"),a=t("./ItemTopTx"),u=cc._decorator,p=u.ccclass,l=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.parentItem=null,e}return i(e,t),e.prototype.start=function(){s.Windown.TaiXiu.sendRequest(c.REQUEST_CODE.TXtopGame,null)},e.prototype.responseServer=function(t){for(var e=t.getSFSArray("data"),n=this.parentItem.children,o=0,i=cc.misc.clampf(e.size(),0,this.parentItem.childrenCount);o<i;o++){var r=e.getSFSObject(o),c=n[o];c.active=!0,c.getComponent(a.default).initItem(r)}for(o=cc.misc.clampf(e.size(),0,this.parentItem.childrenCount);o<n.length;o++)n[o].active=!1},e.prototype.onClickClose=function(){s.Windown.TaiXiu&&(s.Windown.TaiXiu.top=null),this.node.destroy()},r([l(cc.Node)],e.prototype,"parentItem",void 0),r([p],e)}(cc.Component);n.default=h,cc._RF.pop()},{"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/Windown":void 0,"./ItemTopTx":"ItemTopTx"}]},{},["BanPhimTaiXiu","BatDrag","ChiTietPhien","HistoryTaiXiu","HuongDan","InfoBetTX","ItemChiTietPhien","ItemTopTx","LichSuCuoc","SoiCau","SoundTaiXiu","TaiXiu","TopTaiXiu"]);
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+        o = b;
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  BanPhimTaiXiu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "f28a6gGsthGSbAU837Uux9B", "BanPhimTaiXiu");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this._infoBet = null;
+        _this.totalBet = 0;
+        return _this;
+      }
+      NewClass.prototype.init = function(info) {
+        Windown_1.Windown.TaiXiu.sound.playClick();
+        this.node.active = true;
+        this._infoBet = info;
+        this.totalBet = 0;
+      };
+      NewClass.prototype.onClickNum = function(event, data, isPlayMusic) {
+        void 0 === isPlayMusic && (isPlayMusic = true);
+        cc.log("data: " + data);
+        if (!this._infoBet) return;
+        isPlayMusic && Windown_1.Windown.TaiXiu.sound.playClick();
+        var number = parseInt(data);
+        this.totalBet += number;
+        if (Windown_1.Windown.User.userAg < 1e3) {
+          Windown_1.Windown.TaiXiu.showLog("M\u1ee9c c\u01b0\u1ee3c t\u1ed1i ti\u1ec3u l\xe0 1.000");
+          return;
+        }
+        this.totalBet = cc.misc.clampf(this.totalBet, 0, Windown_1.Windown.User.userAg);
+        this._infoBet.setMoneyTempBet(this.totalBet);
+      };
+      NewClass.prototype.onClickHuy = function() {
+        this.totalBet = 0;
+        this.node.active = false;
+        this._infoBet && this._infoBet.onHuyBet();
+        Windown_1.Windown.TaiXiu.sound.playClick();
+      };
+      NewClass.prototype.onClickDongY = function() {
+        if (0 == this.totalBet || null == this._infoBet) return;
+        var sfsObj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        sfsObj.putInt("type", this._infoBet.type);
+        sfsObj.putLong("bet", this.totalBet);
+        Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXbet, sfsObj);
+        Windown_1.Windown.TaiXiu.sound.playClick();
+      };
+      NewClass.prototype.reset = function() {
+        this.totalBet = 0;
+        this.onClickNum(null, "0", false);
+      };
+      NewClass.prototype.onClickX2 = function() {
+        this.onClickNum(null, this._infoBet.lastBet);
+        Windown_1.Windown.TaiXiu.sound.playClick();
+      };
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  BatDrag: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "3821fZWQd1CqISYlOJC1cC9", "BatDrag");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this._isTouch = false;
+        _this._v2OffsetChange = null;
+        _this._isOpenBat = false;
+        _this.updateTimer = 0;
+        _this.updateInterval = 0;
+        _this.isNan = true;
+        _this.vecStart = null;
+        return _this;
+      }
+      NewClass.prototype.onLoad = function() {
+        this.updateInterval = .2;
+        this.updateTimer = 0;
+        this.vecStart = this.node.getPosition();
+      };
+      NewClass.prototype.startGame = function() {
+        this.reset();
+        this.getComponent(cc.Animation).play("EffectDongBat");
+      };
+      NewClass.prototype.reset = function() {
+        this.node.opacity = 255;
+        this.node.setPosition(this.vecStart);
+        this.getComponent(cc.Animation).stop();
+      };
+      NewClass.prototype.setIsNan = function(isNan) {
+        this.isNan = isNan;
+      };
+      NewClass.prototype.handleFinish = function() {
+        if (this.isNan) this.canDrag(); else {
+          this._isTouch = false;
+          this.openBat();
+        }
+      };
+      NewClass.prototype.checkOpenBat = function() {
+        if (!this._isOpenBat) {
+          this.offDrag();
+          if (this.node.getPosition().subSelf(this.vecStart).mag() < 5) {
+            this.openBat();
+            cc.log("nhay vao openBat");
+          } else {
+            cc.log("nhay vao forceOpenbat");
+            this.forceOpenbat();
+          }
+        }
+      };
+      NewClass.prototype.canDrag = function() {
+        this.node.on(cc.Node.EventType.TOUCH_START, this.touchStart, this);
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.touchMove, this);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.touchEnd, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.touchEnd, this);
+        this._isOpenBat = false;
+      };
+      NewClass.prototype.touchStart = function(touch) {
+        var v2Touch = cc.v2(touch.getLocation());
+        var target = this.node.parent.convertToNodeSpaceAR(v2Touch);
+        this._v2OffsetChange = this.node.getPosition().subSelf(target);
+        this._isTouch = true;
+        touch.stopPropagation();
+      };
+      NewClass.prototype.touchMove = function(touch) {
+        if (this._isTouch) {
+          var v2Touch = cc.v2(touch.getLocation());
+          var target = this.node.parent.convertToNodeSpaceAR(v2Touch);
+          this.node.setPosition(target.add(this._v2OffsetChange));
+        }
+        touch.stopPropagation();
+      };
+      NewClass.prototype.touchEnd = function(touch) {
+        this._isTouch = false;
+        touch.stopPropagation();
+      };
+      NewClass.prototype.update = function(dt) {
+        if (this._isOpenBat) return;
+        this.updateTimer += dt;
+        if (this.updateTimer < this.updateInterval) return;
+        this.updateTimer = 0;
+        var vec = this.node.getPosition().subSelf(this.vecStart).mag();
+        if (vec > 150) {
+          this._isOpenBat = true;
+          this.offDrag();
+          Windown_1.Windown.TaiXiu.handleFinish();
+        }
+      };
+      NewClass.prototype.offDrag = function() {
+        this.node.off(cc.Node.EventType.TOUCH_START, this.touchStart, this);
+        this.node.off(cc.Node.EventType.TOUCH_MOVE, this.touchMove, this);
+        this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.touchEnd, this);
+        this.node.off(cc.Node.EventType.TOUCH_END, this.touchEnd, this);
+        this.node.runAction(cc.fadeOut(.4));
+        this._isOpenBat = true;
+      };
+      NewClass.prototype.openBat = function() {
+        this._isTouch || this.node.runAction(cc.moveTo(1, cc.v2(-7, -486)));
+        Windown_1.Windown.TaiXiu && Windown_1.Windown.TaiXiu.handleFinish();
+        this._isOpenBat = true;
+      };
+      NewClass.prototype.forceOpenbat = function() {
+        if (!Windown_1.Windown.TaiXiu) return;
+        Windown_1.Windown.TaiXiu.handleFinish();
+        var vecChiPhuong = this.node.getPosition().subSelf(this.vecStart);
+        vecChiPhuong.normalizeSelf().mulSelf(300);
+        this.node.runAction(cc.moveTo(.3, vecChiPhuong));
+      };
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  ChiTietPhien: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0bf8dPlDgtLH4DJxMXhdRAS", "ChiTietPhien");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var BaseScrollView_1 = require("../../../Scritps/Parent/BaseScrollView");
+    var PageData_1 = require("../../../Scritps/Popup/PageData/PageData");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.scrTai = null;
+        _this.scrXiu = null;
+        _this.parentResult = null;
+        _this.lbPhien = null;
+        _this.lbSumTai = null;
+        _this.lbSumXiu = null;
+        _this.lbMd5 = null;
+        _this.lbMd5Raw = null;
+        _this.skeWin = null;
+        _this.pageDate = null;
+        _this.iconTai = null;
+        _this.iconXiu = null;
+        _this.arrHistory = null;
+        _this.xTai = -287.397;
+        _this.xXiu = 303.528;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        Windown_1.Windown.TaiXiu && Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXinfoRoundBetOld, null);
+      };
+      NewClass.prototype.responseServer = function(SFSObject) {
+        var arr = SFSObject.getSFSArray("data");
+        this.arrHistory = arr;
+        this.pageDate.setTotalPage(arr.size(), true);
+        Windown_1.Windown.UIManager.hideLoading();
+      };
+      NewClass.prototype.onChangePage = function(index) {
+        var object = this.arrHistory.getSFSObject(index - 1);
+        var arrResult = JSON.parse(object.get("view"));
+        var totalRrsult = object.get("result");
+        var phien = object.get("rounds");
+        var md5 = object.get("MD5");
+        var md5Raw = object.get("MD5finish");
+        var arrBetTai = object.getSFSArray("dataTai");
+        var arrBetXiu = object.getSFSArray("dataXiu");
+        var arrTai = [];
+        var arrXiu = [];
+        var sumTai = 0;
+        var sumXiu = 0;
+        for (var i = 0, l = arrBetTai.size(); i < l; i++) {
+          var obj = arrBetTai.getSFSObject(i);
+          arrTai.push(obj);
+          sumTai += obj.get("agBet");
+        }
+        for (var i = 0, l = arrBetXiu.size(); i < l; i++) {
+          var obj = arrBetXiu.getSFSObject(i);
+          arrXiu.push(obj);
+          sumXiu += obj.get("agBet");
+        }
+        this.scrTai.resetScr();
+        this.scrXiu.resetScr();
+        this.scrTai.init(arrTai);
+        this.scrXiu.init(arrXiu);
+        this.parentResult.children.forEach(function(v, index) {
+          var ske = v.getComponent(sp.Skeleton);
+          ske.setAnimation(0, arrResult[index].toString(), false);
+        });
+        this.lbPhien.string = "#" + phien;
+        this.setInfoSkeWin(totalRrsult);
+        this.lbMd5.string = md5;
+        this.lbMd5Raw.string = md5Raw;
+        this.lbSumTai.string = Windown_1.Windown.formatNumber(sumTai);
+        this.lbSumXiu.string = Windown_1.Windown.formatNumber(sumXiu);
+      };
+      NewClass.prototype.setInfoSkeWin = function(result) {
+        if (result > 10) {
+          this.skeWin.node.x = this.xTai;
+          this.skeWin.setAnimation(0, "tai", true);
+          this.iconTai.active = false;
+          this.iconXiu.active = true;
+        } else {
+          this.skeWin.node.x = this.xXiu;
+          this.skeWin.setAnimation(0, "xiu", true);
+          this.iconTai.active = true;
+          this.iconXiu.active = false;
+        }
+      };
+      NewClass.prototype.onClickClose = function() {
+        Windown_1.Windown.TaiXiu && (Windown_1.Windown.TaiXiu.chiTietPhien = null);
+        this.node.destroy();
+      };
+      NewClass.prototype.onClickCopyMd5 = function() {
+        Windown_1.Windown.coppyToClip(this.lbMd5.string);
+      };
+      NewClass.prototype.onClickCopyMd5Raw = function() {
+        Windown_1.Windown.coppyToClip(this.lbMd5Raw.string);
+      };
+      __decorate([ property(BaseScrollView_1.default) ], NewClass.prototype, "scrTai", void 0);
+      __decorate([ property(BaseScrollView_1.default) ], NewClass.prototype, "scrXiu", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentResult", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbPhien", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbSumTai", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbSumXiu", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbMd5", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbMd5Raw", void 0);
+      __decorate([ property(sp.Skeleton) ], NewClass.prototype, "skeWin", void 0);
+      __decorate([ property(PageData_1.default) ], NewClass.prototype, "pageDate", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "iconTai", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "iconXiu", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Parent/BaseScrollView": void 0,
+    "../../../Scritps/Popup/PageData/PageData": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  HistoryTaiXiu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ff4fcF+IXRDPIdqd6qFPT61", "HistoryTaiXiu");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.parentItem = null;
+        _this.itemTemp = null;
+        _this.listSp = [];
+        _this.xStart = -1;
+        _this.listHistory = [];
+        return _this;
+      }
+      NewClass.prototype.onLoad = function() {
+        this.xStart = this.itemTemp.x;
+      };
+      NewClass.prototype.init = function(listHistory, isGame) {
+        this.listHistory = listHistory;
+        var statr = cc.misc.clampf(listHistory.length - 19, 0, listHistory.length - 1);
+        var width = this.itemTemp.width;
+        var xStart = this.xStart;
+        for (var i = statr, l = listHistory.length; i < l; i++) {
+          var node = this.parentItem.children[i - statr];
+          if (null == node) {
+            node = cc.instantiate(this.itemTemp);
+            node.parent = this.parentItem;
+          }
+          node.stopAllActions();
+          node.x = xStart;
+          node.getComponent(cc.Sprite).spriteFrame = this.listSp[listHistory[i].result > 10 ? 0 : 1];
+          xStart += width + 5.3;
+        }
+        var lastNode = this.parentItem.children[this.parentItem.childrenCount - 1];
+        if (lastNode) {
+          lastNode.scale = 1.2;
+          lastNode.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(.3, .8), cc.scaleTo(.3, 1.2))));
+        }
+      };
+      NewClass.prototype.addResult = function(result, listView) {
+        var obj = Object.create(null);
+        obj.result = result;
+        obj.view = listView;
+        this.listHistory.shift();
+        this.listHistory.push(obj);
+        this.init(this.listHistory, true);
+      };
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentItem", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "itemTemp", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], NewClass.prototype, "listSp", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {} ],
+  HuongDan: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "1063alBA/dIzqKPqymR44h3", "HuongDan");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      NewClass.prototype.onClickClose = function() {
+        this.node.destroy();
+      };
+      NewClass.prototype.onClickOpenLink = function() {
+        cc.sys.openURL("https://md5.services/");
+      };
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {} ],
+  InfoBetTX: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "57cdbGQJOZM/ZhTcBUF9U9Z", "InfoBetTX");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var InfoBetTX = function(_super) {
+      __extends(InfoBetTX, _super);
+      function InfoBetTX() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbBetTotal = null;
+        _this.lbCountUser = null;
+        _this.lbMeBet = null;
+        _this.lbMeTempBet = null;
+        _this.btnActiveBet = null;
+        _this.type = 0;
+        _this.spineWin = null;
+        _this.icon = null;
+        _this.totalBet = 0;
+        _this.lastBet = 0;
+        return _this;
+      }
+      InfoBetTX.prototype.setMoneyMeBet = function(money) {
+        this.lbMeBet.string = Windown_1.Windown.formatNumber(money);
+        if (0 == money) {
+          this.lbMeBet.string = "";
+          this.lastBet = this.totalBet;
+          this.spineWin.node.active = false;
+          this.icon.active = true;
+        }
+        this.totalBet = money;
+      };
+      InfoBetTX.prototype.setMoneyTempBet = function(money) {
+        this.lbMeTempBet.string = Windown_1.Windown.formatNumber(money);
+      };
+      InfoBetTX.prototype.setMoneyTotalUserBet = function(money) {
+        var stringTemp = Windown_1.Windown.formatNumber(money);
+        this.lbBetTotal.string != stringTemp && this.lbBetTotal.node.runAction(cc.sequence(cc.scaleTo(.05, 1.3), cc.scaleTo(.3, 1)));
+        this.lbBetTotal.string = stringTemp;
+      };
+      InfoBetTX.prototype.setCountTotaluser = function(count) {
+        this.lbCountUser.string = Windown_1.Windown.formatNumber(count);
+      };
+      InfoBetTX.prototype.onWin = function() {
+        this.spineWin.node.active = true;
+        this.icon.active = false;
+        this.spineWin.setAnimation(0, this.spineWin.animation, true);
+      };
+      InfoBetTX.prototype.onClickBet = function() {
+        Windown_1.Windown.TaiXiu.listInfo.forEach(function(v) {
+          v.onHuyBet();
+        });
+        this.lbMeTempBet.node.parent.active = true;
+        this.lbMeTempBet.string = "0";
+        this.btnActiveBet.active = false;
+        Windown_1.Windown.TaiXiu.banPhim.init(this);
+      };
+      InfoBetTX.prototype.onHuyBet = function() {
+        this.lbMeTempBet.node.parent.active = false;
+        this.btnActiveBet.active = true;
+      };
+      __decorate([ property(cc.Label) ], InfoBetTX.prototype, "lbBetTotal", void 0);
+      __decorate([ property(cc.Label) ], InfoBetTX.prototype, "lbCountUser", void 0);
+      __decorate([ property(cc.Label) ], InfoBetTX.prototype, "lbMeBet", void 0);
+      __decorate([ property(cc.Label) ], InfoBetTX.prototype, "lbMeTempBet", void 0);
+      __decorate([ property(cc.Node) ], InfoBetTX.prototype, "btnActiveBet", void 0);
+      __decorate([ property(cc.Integer) ], InfoBetTX.prototype, "type", void 0);
+      __decorate([ property(sp.Skeleton) ], InfoBetTX.prototype, "spineWin", void 0);
+      __decorate([ property(cc.Node) ], InfoBetTX.prototype, "icon", void 0);
+      InfoBetTX = __decorate([ ccclass ], InfoBetTX);
+      return InfoBetTX;
+    }(cc.Component);
+    exports.default = InfoBetTX;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  ItemChiTietPhien: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "46d3cmoSNRJKYxA2We3DXFS", "ItemChiTietPhien");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbTime = null;
+        _this.lbName = null;
+        _this.lbBet = null;
+        return _this;
+      }
+      NewClass.prototype.initItem = function(SFSObject) {
+        this.lbTime.string = Windown_1.Windown.formatDate(new Date(SFSObject.get("timeBet")), "HH:mm:ss");
+        this.lbName.string = SFSObject.get("name");
+        this.lbBet.string = Windown_1.Windown.formatNumber(SFSObject.get("agBet"));
+      };
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbTime", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbName", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbBet", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  ItemTopTx: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b276c7Z0cpB2resRj2n2r/Y", "ItemTopTx");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.idPlayer = null;
+        return _this;
+      }
+      NewClass.prototype.initItem = function(SFSObject) {
+        var listLable = this.getComponentsInChildren(cc.Label);
+        listLable[1].string = SFSObject.get("nickname");
+        listLable[2].string = Windown_1.Windown.formatNumber(SFSObject.get("agWin"), false);
+        var spAva = cc.find("ava", this.node).getComponent(cc.Sprite);
+        this.idPlayer = SFSObject.get("iduser");
+        Windown_1.Windown.updateAvatar(SFSObject, spAva);
+      };
+      NewClass.prototype.start = function() {};
+      NewClass.prototype.onDestroy = function() {};
+      NewClass.prototype.onClick = function() {
+        return;
+        var SFSObject;
+      };
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  LichSuCuoc: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "541b7z2VoZHNbTFPrmHaAaU", "LichSuCuoc");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var PageData_1 = require("../../../Scritps/Popup/PageData/PageData");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.pageDate = null;
+        _this.parentItem = null;
+        _this.maxRow = 7;
+        _this.listData = null;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXhistoryBet, null);
+      };
+      NewClass.prototype.response = function(SFSObject) {
+        cc.log(Windown_1.Windown.SFSObjToJson(SFSObject));
+        var sfsArry = SFSObject.getSFSArray("history");
+        sfsArry._dataHolder.reverse();
+        var lengthRows = sfsArry.size();
+        var totalPage = parseInt(lengthRows / this.maxRow);
+        lengthRows % this.maxRow > 0 && totalPage++;
+        0 == totalPage && (totalPage = 1);
+        this.listData = sfsArry;
+        this.pageDate.setTotalPage(totalPage);
+        this.onChangePage(1);
+      };
+      NewClass.prototype.onChangePage = function(index) {
+        var parent = this.parentItem;
+        var child = parent.children;
+        var itemTemplate = child[0];
+        var start = (index - 1) * this.maxRow;
+        for (var i = 0, l = this.maxRow; i < l; i++) {
+          var node = child[i];
+          if (start < this.listData.size()) {
+            if (null == node) {
+              node = cc.instantiate(itemTemplate);
+              parent.addChild(node);
+              node.y = -(i + 1) * node.height + node.height / 2;
+            }
+            var sfsObj = this.listData.getSFSObject(start);
+            this.initItem(node, sfsObj);
+            node.active = true;
+            start++;
+          } else {
+            if (!node) break;
+            node.active = false;
+          }
+        }
+      };
+      NewClass.prototype.initItem = function(node, data) {
+        var listLb = node.getComponentsInChildren(cc.Label);
+        var result = data.get("info");
+        listLb[0].string = "#" + data.get("round");
+        listLb[1].string = Windown_1.Windown.formatDate(new Date(data.get("time")), "dd/MM\nHH:mm:ss");
+        listLb[2].string = Windown_1.Windown.formatNumber(data.get("bet"), false);
+        var stringBet = "";
+        if (data.get("agWin") <= 0) {
+          listLb[3].string = "-" + Windown_1.Windown.formatNumber(data.get("bet"), false);
+          listLb[3].node.color = cc.Color.RED;
+          stringBet = "T\xe0i" == result ? "X\u1ec9u" : "T\xe0i";
+        } else {
+          listLb[3].string = "+" + Windown_1.Windown.formatNumber(data.get("agWin"), false);
+          listLb[3].node.color = cc.Color.GREEN;
+          stringBet = "T\xe0i" == result ? "T\xe0i" : "X\u1ec9u";
+        }
+        listLb[4].string = "K\u1ebft qu\u1ea3: " + result + ".\u0110\u1eb7t " + stringBet + ": " + Windown_1.Windown.formatNumber(data.get("bet")) + " Nh\u1eadn: " + Windown_1.Windown.formatNumber(data.get("agWin"));
+      };
+      NewClass.prototype.onClickClose = function() {
+        Windown_1.Windown.TaiXiu && (Windown_1.Windown.TaiXiu.lichSuCuoc = null);
+        this.node.destroy();
+      };
+      __decorate([ property(PageData_1.default) ], NewClass.prototype, "pageDate", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentItem", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Popup/PageData/PageData": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  SoiCau: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "f9f47ytNz5MwZ4VNOHL7XKi", "SoiCau");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.listSpKetQua = [];
+        _this.listSpTaiXiu = [];
+        _this.Cau1 = null;
+        _this.Cau2 = null;
+        _this.Cau3 = null;
+        _this.Cau4 = null;
+        _this.index = 0;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        this.emitAllCau();
+      };
+      NewClass.prototype.emitAllCau = function() {
+        this.initCau1();
+        this.initCau2();
+        this.initCau3();
+        this.initCau4();
+      };
+      NewClass.prototype.initCau1 = function() {
+        var _this = this;
+        var parent = cc.find("parentItem", this.Cau1);
+        var startX = -451.117;
+        var startY = 63.783;
+        var offSetX = 46.45;
+        var offSetY = 33.8;
+        var listResult = Windown_1.Windown.TaiXiu.history.listHistory;
+        var children = parent.children;
+        var itemTemplate = children[0];
+        var count = 0;
+        var heSo = -1;
+        var countT = 0;
+        var countX = 0;
+        listResult.forEach(function(v, i) {
+          var sum = v.result;
+          sum > 10 ? countT++ : countX++;
+          var spF = _this.getSpTaiXiu(sum);
+          var node = children[i];
+          if (null == node) {
+            node = cc.instantiate(itemTemplate);
+            node.parent = parent;
+          }
+          node.setPosition(cc.v2(startX, startY));
+          node.getComponent(cc.Sprite).spriteFrame = spF;
+          count++;
+          if (count >= 5) {
+            startX += offSetX;
+            heSo *= -1;
+            count = 0;
+          } else startY += offSetY * heSo;
+        });
+        cc.find("tai", this.Cau1).getComponentInChildren(cc.Label).string = "Tai: " + countT;
+        cc.find("xiu", this.Cau1).getComponentInChildren(cc.Label).string = "X\u1ec9u: " + countX;
+      };
+      NewClass.prototype.initCau2 = function() {
+        var _this = this;
+        var parent = cc.find("parentItem", this.Cau2);
+        var startX = -418.167;
+        var startY = 28.06;
+        var tempY = startY;
+        var offSetX = 44.1;
+        var offSetY = 27.5;
+        var listResult = Windown_1.Windown.TaiXiu.history.listHistory.slice();
+        var listTemp = [];
+        var count = 0;
+        var listChild = [];
+        listResult.forEach(function(v, i) {
+          var sum = v.result;
+          var current = sum > 10;
+          var next = !!(listResult[i + 1] && listResult[i + 1].result > 10);
+          listChild.push(sum);
+          count++;
+          if (count >= 5 || current != next) {
+            count = 0;
+            listTemp.push(listChild.slice());
+            listChild.length = 0;
+          }
+        });
+        listChild.length > 0 && listTemp.push(listChild.slice());
+        cc.log(JSON.stringify(listTemp));
+        listTemp = listTemp.slice(cc.misc.clampf(listTemp.length - 20, 0, listTemp.length), listTemp.length);
+        cc.log(JSON.stringify(listTemp));
+        var countChild = 0;
+        var children = parent.children;
+        var itemTemplate = children[0];
+        children.forEach(function(v) {
+          return v.active = false;
+        });
+        listTemp.forEach(function(v) {
+          v.reverse();
+          v.forEach(function(c) {
+            var spF = _this.getSpResult(c);
+            var node = children[countChild];
+            if (null == node) {
+              node = cc.instantiate(itemTemplate);
+              node.parent = parent;
+            }
+            node.active = true;
+            node.setPosition(cc.v2(startX, startY));
+            node.getComponent(cc.Sprite).spriteFrame = spF;
+            startY -= offSetY;
+            countChild++;
+          });
+          startY = tempY;
+          startX += offSetX;
+        });
+      };
+      NewClass.prototype.initCau3 = function() {
+        var _this = this;
+        var parent = cc.find("parentItem", this.Cau3);
+        var line = cc.find("Line", this.Cau3).getComponent(cc.Graphics);
+        line.clear(true);
+        var startX = -414.419;
+        var startY = 14.775;
+        var offSetX = 41.5;
+        var offSetY = 8;
+        var length = Windown_1.Windown.TaiXiu.history.listHistory.length;
+        var listResult = Windown_1.Windown.TaiXiu.history.listHistory.slice(cc.misc.clampf(length - 21, 0, length), length);
+        var children = parent.children;
+        var itemTemplate = children[0];
+        line.lineWidth = 5;
+        listResult.forEach(function(v, i) {
+          var sum = v.result;
+          var spF = _this.getSpResult(sum);
+          var node = children[i];
+          if (null == node) {
+            node = cc.instantiate(itemTemplate);
+            node.parent = parent;
+          }
+          node.setPosition(cc.v2(startX, startY + (sum - 3) * offSetY));
+          0 == i ? line.moveTo(node.x, node.y) : line.lineTo(node.x, node.y);
+          node.getComponent(cc.Sprite).spriteFrame = spF;
+          startX += offSetX;
+        });
+        line.stroke();
+        var lable = cc.find("Title", this.Cau3).getComponent(cc.Label);
+        var infoLast = listResult[listResult.length - 1];
+        var sum = infoLast.result;
+        var listView = JSON.parse(infoLast.view);
+        var stringTemp = "Phi\xean g\u1ea7n nh\u1ea5t: " + (sum > 10 ? "T\xe0i" : "X\u1ec9u") + "(" + listView[0] + "-" + listView[1] + "-" + listView[2] + ")";
+        lable.string = stringTemp;
+      };
+      NewClass.prototype.initCau4 = function() {
+        var length = Windown_1.Windown.TaiXiu.history.listHistory.length;
+        var listResult = Windown_1.Windown.TaiXiu.history.listHistory.slice(cc.misc.clampf(length - 21, 0, length), length);
+        var _loop_1 = function(z) {
+          var Cau4 = cc.find("parentItem" + z, this_1.Cau4);
+          var parent = cc.find("parentItem", Cau4);
+          var line = cc.find("Line", Cau4).getComponent(cc.Graphics);
+          line.clear(true);
+          var startX = -414.419;
+          var startY = -157.713;
+          var offSetX = 41.5;
+          var offSetY = 26;
+          var children = parent.children;
+          var itemTemplate = children[0];
+          line.lineWidth = 4;
+          listResult.forEach(function(v, i) {
+            var sum = JSON.parse(v.view)[z - 1];
+            var node = children[i];
+            if (null == node) {
+              node = cc.instantiate(itemTemplate);
+              node.parent = parent;
+            }
+            node.setPosition(cc.v2(startX, startY + (sum - 1) * offSetY));
+            0 == i ? line.moveTo(node.x, node.y) : line.lineTo(node.x, node.y);
+            startX += offSetX;
+          });
+          line.stroke();
+        };
+        var this_1 = this;
+        for (var z = 1; z < 4; z++) _loop_1(z);
+      };
+      NewClass.prototype.onClickChangePage = function(event, data) {
+        if ("0" == data) {
+          this.Cau1.active = true;
+          this.Cau2.active = true;
+          this.Cau3.active = false;
+          this.Cau4.active = false;
+        } else {
+          this.Cau1.active = false;
+          this.Cau2.active = false;
+          this.Cau3.active = true;
+          this.Cau4.active = true;
+        }
+      };
+      NewClass.prototype.onToggleXiNgau = function(event, data) {
+        var index = JSON.parse(data);
+        var parent = cc.find("parentItem" + index, this.Cau4);
+        parent.active = event.isChecked;
+      };
+      NewClass.prototype.getSpTaiXiu = function(sum) {
+        if (sum > 10) return this.listSpTaiXiu[1];
+        return this.listSpTaiXiu[0];
+      };
+      NewClass.prototype.getSpResult = function(sum) {
+        return this.listSpKetQua[sum - 3];
+      };
+      NewClass.prototype.onClickClose = function() {
+        Windown_1.Windown.TaiXiu && (Windown_1.Windown.TaiXiu.soiCau = null);
+        this.node.destroy();
+      };
+      __decorate([ property([ cc.SpriteFrame ]) ], NewClass.prototype, "listSpKetQua", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], NewClass.prototype, "listSpTaiXiu", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "Cau1", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "Cau2", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "Cau3", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "Cau4", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  SoundTaiXiu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "46b169IDq5IRaHLV2Hj8z/l", "SoundTaiXiu");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.click = null;
+        _this.ketQua = null;
+        _this.lacxiNgau = null;
+        return _this;
+      }
+      NewClass.prototype.playClick = function() {
+        Windown_1.Windown.AudioManager && Windown_1.Windown.AudioManager.isActiveSound && this.click.play();
+      };
+      NewClass.prototype.playKetQua = function() {
+        Windown_1.Windown.AudioManager && Windown_1.Windown.AudioManager.isActiveSound && this.ketQua.play();
+      };
+      NewClass.prototype.playTungXucXac = function() {
+        Windown_1.Windown.AudioManager && Windown_1.Windown.AudioManager.isActiveSound && this.lacxiNgau.play();
+      };
+      __decorate([ property(cc.AudioSource) ], NewClass.prototype, "click", void 0);
+      __decorate([ property(cc.AudioSource) ], NewClass.prototype, "ketQua", void 0);
+      __decorate([ property(cc.AudioSource) ], NewClass.prototype, "lacxiNgau", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  TaiXiu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "857dbIExzlDg4uSgzwEaILu", "TaiXiu");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var EVENT_MANAGER_1 = require("../../../Scritps/DefineTs/EVENT_MANAGER");
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var TextDefine_1 = require("../../../Scritps/DefineTs/TextDefine");
+    var GAME_TYPE_1 = require("../../../Scritps/Game/GAME_TYPE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var DragMiniGame_1 = require("../../../Scritps/Other/DragMiniGame");
+    var OffMiniGame_1 = require("../../../Scritps/Other/OffMiniGame");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var BanPhimTaiXiu_1 = require("./BanPhimTaiXiu");
+    var BatDrag_1 = require("./BatDrag");
+    var ChiTietPhien_1 = require("./ChiTietPhien");
+    var HistoryTaiXiu_1 = require("./HistoryTaiXiu");
+    var InfoBetTX_1 = require("./InfoBetTX");
+    var LichSuCuoc_1 = require("./LichSuCuoc");
+    var SoiCau_1 = require("./SoiCau");
+    var SoundTaiXiu_1 = require("./SoundTaiXiu");
+    var TopTaiXiu_1 = require("./TopTaiXiu");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbMd5 = null;
+        _this.lbMd5Raw = null;
+        _this.lbPhien = null;
+        _this.lbThongBao = null;
+        _this.nodeTimeGame = null;
+        _this.lbTimeEnd = null;
+        _this.listInfo = [];
+        _this.banPhim = null;
+        _this.history = null;
+        _this.lichSuCuoc = null;
+        _this.top = null;
+        _this.soiCau = null;
+        _this.parentResult = null;
+        _this.batDrag = null;
+        _this.lbAgWin = null;
+        _this.spineTungXucXac = null;
+        _this.sound = null;
+        _this.gameType = 0;
+        _this.sfs = null;
+        _this.roomSFS = null;
+        _this.objFinish = null;
+        _this.chiTietPhien = null;
+        _this.funCountDown = null;
+        _this.funDelayUpBat = null;
+        _this.funDelayUpBat2 = null;
+        _this.funAutoBet = null;
+        _this.isDelayLeave = false;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        Windown_1.Windown.TaiXiu = this;
+        this.gameType = GAME_TYPE_1.default.TaiXiu;
+        this.sfs = ConectManager_1.ConectManager.getIns().sfs;
+        this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse, this);
+        cc.systemEvent.on(EVENT_MANAGER_1.EVENT_MANAGER.onDisconnect, this.onDisconnect, this);
+        cc.systemEvent.on(EVENT_MANAGER_1.EVENT_MANAGER.CHANG_ROTATION, this.onChangRotate, this);
+        cc.systemEvent.on(cc.game.EVENT_SHOW, this.eventShow, this);
+        this.getComponent(DragMiniGame_1.default).nomalSize();
+        this.sendJoinRoom();
+        this.listInfo.forEach(function(v) {
+          v.onHuyBet();
+          v.setMoneyMeBet(0);
+          v.setMoneyTotalUserBet(0);
+        });
+        this.lbAgWin.node.active = false;
+        this.spineTungXucXac.node.active = false;
+        Windown_1.Windown.BtnMiniGame.onActiveTx();
+        this.onChangRotate(Windown_1.Windown.UIManager.isVertical);
+        cc.sys.isNative && jsb.Device.setKeepScreenOn(true);
+      };
+      NewClass.prototype.onDestroy = function() {
+        Windown_1.Windown.TaiXiu = null;
+      };
+      NewClass.prototype.eventShow = function() {
+        this.sendGetInfoRoom();
+      };
+      NewClass.prototype.onChangRotate = function(isVertical) {
+        if (isVertical) {
+          this.node.rotation = -90;
+          this.node.scale = .9;
+        } else {
+          this.node.rotation = 0;
+          this.node.scale = 1;
+        }
+      };
+      NewClass.prototype.onClickTest = function() {
+        var vecStart = this.batDrag.node.getPosition();
+        this.batDrag.node.setPosition(80, 80);
+        var vecChiPhuong = this.batDrag.node.getPosition().subSelf(vecStart);
+        cc.log("trc do" + vecChiPhuong.toString());
+        vecChiPhuong.normalizeSelf().mulSelf(300);
+        cc.log(vecChiPhuong.toString());
+        this.batDrag.node.runAction(cc.moveTo(.3, vecChiPhuong));
+      };
+      NewClass.prototype.sendJoinRoom = function() {
+        Windown_1.Windown.UIManager.showLoading();
+        var rooms = this.sfs.roomManager.getRoomListFromGroup("MD5");
+        var room = rooms.find(function(roomTemp) {
+          cc.log("value" + roomTemp.getVariable("cj").value);
+          return roomTemp.containsVariable("cj") && roomTemp.getVariable("cj").value;
+        });
+        if (room) {
+          this.roomSFS = room;
+          if (room.isJoined) this.sendGetInfoRoom(); else {
+            cc.log("nhay vao send join rom: " + room);
+            this.sfs.send(new SFS2X.JoinRoomRequest(room, null, -1));
+          }
+        } else this.scheduleOnce(this.sendJoinRoom, 3);
+      };
+      NewClass.prototype.sendGetInfoRoom = function() {
+        this.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXinfoRoom, ConectManager_1.ConectManager.getIns().getSFSObj());
+      };
+      NewClass.prototype.userExitRoom = function(event) {
+        var room = event.room;
+        if ("MD5" == room.groupId) {
+          cc.log("user exit room tx");
+          var user = event.user;
+          if (user.isItMe) {
+            this.clear();
+            this.node.destroy();
+            return;
+          }
+        }
+      };
+      NewClass.prototype.onJoinRoom = function(event) {
+        var room = event.room;
+        if ("MD5" == room.groupId) {
+          cc.log("r\xf4m lak " + room.id);
+          Windown_1.Windown.UIManager.hideLoading();
+        }
+      };
+      NewClass.prototype.sendRequest = function(code, sfsObj) {
+        ConectManager_1.ConectManager.getIns().sendRequest(code, sfsObj, this.roomSFS);
+      };
+      NewClass.prototype.showLog = function(string, time) {
+        void 0 === time && (time = 2);
+        this.lbThongBao.string = string;
+        var node = this.lbThongBao.node.parent.parent;
+        node.stopAllActions();
+        node.opacity = 0;
+        node.y = 150;
+        node.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, 0, 120).easing(cc.easeQuarticActionOut()), cc.fadeIn(.3).easing(cc.easeQuarticActionOut())), cc.delayTime(time), cc.spawn(cc.moveTo(.3, 0, 150).easing(cc.easeQuarticActionIn()), cc.fadeOut(.3).easing(cc.easeQuarticActionIn()))));
+      };
+      NewClass.prototype.onJoinRoomErr = function(event) {
+        cc.log("onJoinRoomErr ");
+        Windown_1.Windown.UIManager.hideLoading();
+        Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.ERR_JOIN_ROOM);
+      };
+      NewClass.prototype.extResponse = function(packet) {
+        var code = packet.cmd;
+        var SFSObject = packet.params;
+        switch (code) {
+         case REQUEST_CODE_1.REQUEST_CODE.TXstartGame:
+          this.startGameTaiXiu(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXendGame:
+          this.endGameTaiXiu(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXbet:
+          this.responseBet(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXinfoRoundBetOld:
+          this.chiTietPhien && this.chiTietPhien.responseServer(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXhistoryGame:
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXhistoryBet:
+          this.lichSuCuoc && this.lichSuCuoc.response(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXtopGame:
+          this.top && this.top.responseServer(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXinfoCurrentRoom:
+          this.handleUpdateAllBet(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.TXinfoRoom:
+          this.initGame(SFSObject);
+        }
+      };
+      NewClass.prototype.miniSize = function() {
+        cc.isValid(this.node, true) && (this.parentResult.opacity = 0);
+      };
+      NewClass.prototype.normalSize = function() {
+        this.node && this.parentResult && (this.parentResult.opacity = 255);
+      };
+      NewClass.prototype.initGame = function(SFSObject) {
+        cc.log(Windown_1.Windown.SFSObjToJson(SFSObject));
+        this.parentResult.children.forEach(function(v, index) {
+          v.getComponent(sp.Skeleton).setAnimation(0, null, false);
+        });
+        this.listInfo[1].setCountTotaluser(SFSObject.get("sizeT"));
+        this.listInfo[1].setMoneyTotalUserBet(SFSObject.get("agBetT"));
+        this.listInfo[1].setMoneyMeBet(SFSObject.get("UagBetT"));
+        this.listInfo[0].setCountTotaluser(SFSObject.get("sizeX"));
+        this.listInfo[0].setMoneyTotalUserBet(SFSObject.get("agBetX"));
+        this.listInfo[0].setMoneyMeBet(SFSObject.get("UagBetX"));
+        var isGame = SFSObject.get("isGame");
+        var time = SFSObject.get("time");
+        var phien = SFSObject.get("rounds");
+        this.setHistory(SFSObject.get("history"), isGame);
+        this.batDrag.reset();
+        this.parentResult.active = false;
+        if (isGame) {
+          this.botAutoBet(time);
+          var md5 = SFSObject.get("MD5");
+          this.setLbMd5Raw(md5);
+        } else {
+          var view_1 = JSON.parse(SFSObject.get("view"));
+          this.batDrag.handleFinish();
+          this.parentResult.active = true;
+          this.parentResult.children.forEach(function(v, index) {
+            v.getComponent(sp.Skeleton).setAnimation(0, view_1[index].toString(), false);
+          });
+          var md5 = SFSObject.get("MD5");
+          this.setLbMd5(md5);
+          if (SFSObject.containsKey("MD5raw")) {
+            var md52 = SFSObject.get("MD5raw");
+            this.setLbMd5Raw(md52);
+          }
+        }
+        this.setupByStatusGame(isGame, time);
+        this.lbPhien.string = "#" + phien;
+        this.lbAgWin.node.active = false;
+        this.unschedule(this.funDelayUpBat);
+        this.unschedule(this.funDelayUpBat2);
+        this.spineTungXucXac.node.active = false;
+        var node = this.lbThongBao.node.parent.parent;
+        node.stopAllActions();
+        node.opacity = 0;
+      };
+      NewClass.prototype.setHistory = function(string, isGame) {
+        var obj = JSON.parse(LZString.decompressFromBase64(string));
+        this.history.init(obj, isGame);
+      };
+      NewClass.prototype.botAutoBet = function(time) {
+        var _this = this;
+        if (Windown_1.Windown.BotController && Windown_1.Windown.RandomNumber(0, 100) < 60) {
+          this.unschedule(this.funAutoBet);
+          this.scheduleOnce(this.funAutoBet = function() {
+            var listBet = [ 1e3, 1e4, 5e4, 1e5, 5e5, 1e6 ];
+            var listCanBet = listBet.filter(function(v, i) {
+              return v < Windown_1.Windown.User.userAg;
+            });
+            if (listCanBet.length > 0) {
+              var type_1 = Windown_1.Windown.RandomNumber(0, 2);
+              var sfsObj = ConectManager_1.ConectManager.getIns().getSFSObj();
+              sfsObj.putInt("type", type_1);
+              sfsObj.putLong("bet", listCanBet[Windown_1.Windown.RandomNumber(0, listCanBet.length)]);
+              Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXbet, sfsObj);
+              Windown_1.Windown.RandomNumber(0, 100) < 20 && _this.scheduleOnce(function() {
+                listCanBet = listBet.filter(function(v, i) {
+                  return v < Windown_1.Windown.User.userAg;
+                });
+                if (listCanBet.length > 0) {
+                  var sfsObj_1 = ConectManager_1.ConectManager.getIns().getSFSObj();
+                  sfsObj_1.putInt("type", type_1);
+                  sfsObj_1.putLong("bet", listCanBet[Windown_1.Windown.RandomNumber(0, listCanBet.length)]);
+                  Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXbet, sfsObj_1);
+                }
+              }, Windown_1.Windown.RandomNumber(1, cc.misc.clampf(5, 0, time - 2)));
+            } else Windown_1.Windown.restartGame();
+          }, Windown_1.Windown.RandomNumber(1, time - 3));
+        }
+      };
+      NewClass.prototype.startGameTaiXiu = function(SFSObject) {
+        var _this = this;
+        var _a;
+        var phien = SFSObject.get("round");
+        var MD5 = SFSObject.get("MD5");
+        var time = SFSObject.get("time");
+        this.setLbMd5("-");
+        this.setLbMd5Raw(MD5);
+        this.listInfo.forEach(function(v) {
+          v.onHuyBet();
+          v.setMoneyMeBet(0);
+          v.setMoneyTotalUserBet(0);
+        });
+        this.lbPhien.string = "#" + phien;
+        this.setupByStatusGame(true, time);
+        this.nodeTimeGame.active = false;
+        this.spineTungXucXac.node.active = true;
+        this.spineTungXucXac.setAnimation(0, "effect", false);
+        this.parentResult.children.forEach(function(v, index) {
+          v.getComponent(sp.Skeleton).setAnimation(0, "xi ngau bay " + Windown_1.Windown.RandomNumber(1, 7), false);
+        });
+        this.scheduleOnce(this.funDelayUpBat = function() {
+          _this.scheduleOnce(_this.funDelayUpBat2 = function() {
+            _this.parentResult.active = false;
+          }, .5);
+          _this.batDrag.startGame();
+          _this.scheduleOnce(function() {
+            _this.nodeTimeGame.active = true;
+          }, 1);
+        }, 1.8);
+        this.objFinish = null;
+        this.lbAgWin.node.active = false;
+        null === (_a = this.sound) || void 0 === _a ? void 0 : _a.playTungXucXac();
+        this.botAutoBet(time);
+        this.isDelayLeave && this.onClickClose();
+      };
+      NewClass.prototype.endGameTaiXiu = function(SFSObject) {
+        cc.log(Windown_1.Windown.SFSObjToJson(SFSObject));
+        var views = JSON.parse(SFSObject.get("view"));
+        var agWin = SFSObject.get("agWin");
+        var md5 = SFSObject.get("MD5");
+        var time = SFSObject.get("time");
+        var moneyUser = SFSObject.get("agUser");
+        this.unschedule(this.funDelayUpBat);
+        this.unschedule(this.funDelayUpBat2);
+        this.parentResult.active = true;
+        this.parentResult.children.forEach(function(v, index) {
+          v.getComponent(sp.Skeleton).setAnimation(0, views[index].toString(), false);
+        });
+        this.setupByStatusGame(false, time);
+        this.objFinish = SFSObject;
+        Windown_1.Windown.MoneyUser.pushDelayMoney(this.gameType, moneyUser, agWin);
+        this.batDrag.handleFinish();
+        this.batDrag.isNan && this.showLog("Xin m\u1eddi n\u1eb7n!", .5);
+      };
+      NewClass.prototype.handleFinish = function() {
+        var SFSObject = this.objFinish;
+        if (null == SFSObject) return;
+        var views = JSON.parse(SFSObject.get("view"));
+        var agWin = SFSObject.get("agWin");
+        var md5 = SFSObject.get("MD5");
+        this.setLbMd5(md5);
+        var sum = 0;
+        views.forEach(function(v) {
+          sum += v;
+        });
+        sum > 10 ? this.listInfo[1].onWin() : this.listInfo[0].onWin();
+        this.history.addResult(sum, SFSObject.get("view"));
+        this.soiCau && this.soiCau.emitAllCau();
+        if (agWin > 0) {
+          this.lbAgWin.string = "+" + Windown_1.Windown.formatNumber(agWin, false);
+          this.lbAgWin.node.active = true;
+          this.lbAgWin.node.opacity = 255;
+          this.lbAgWin.node.stopAllActions();
+          this.lbAgWin.node.y = -18;
+          this.lbAgWin.node.runAction(cc.sequence(cc.moveTo(2, 0, 50).easing(cc.easeQuadraticActionOut()), cc.delayTime(2), cc.fadeOut(1)));
+        }
+        Windown_1.Windown.MoneyUser.removeDelay(this.gameType);
+        Windown_1.Windown.TaiXiu.sound.playKetQua();
+        this.objFinish = null;
+      };
+      NewClass.prototype.responseBet = function(SFSObject) {
+        Windown_1.Windown.Dialog.checkAndShowLog(SFSObject);
+        var type = SFSObject.getInt("type");
+        var moneyBet = SFSObject.getLong("bet");
+        var moneyTotalBet = SFSObject.getLong("ttBet");
+        var moneyUser = SFSObject.get("ag");
+        Windown_1.Windown.MoneyUser.subMoney(moneyBet, moneyUser);
+        this.getInfoBetByType(type).setMoneyMeBet(moneyTotalBet);
+        this.banPhim.reset();
+        this.listInfo.forEach(function(v) {
+          return v.setMoneyTempBet(0);
+        });
+        this.showLog("\u0110\u1eb7t c\u01b0\u1ee3c th\xe0nh c\xf4ng");
+      };
+      NewClass.prototype.setLbMd5 = function(string) {
+        var _this = this;
+        cc.Tween.stopAllByTarget(this.lbMd5);
+        this.lbMd5.time = 0;
+        cc.tween(this.lbMd5).to(.3, {
+          time: {
+            value: 1,
+            progress: function(start, end, current, ratio) {
+              var _current = start + (end - start) * ratio;
+              var num = cc.misc.lerp(0, string.length, _current);
+              _this.lbMd5.string = string.substring(0, num);
+              return _current;
+            }
+          }
+        }).start();
+      };
+      NewClass.prototype.setLbMd5Raw = function(string) {
+        var _this = this;
+        cc.Tween.stopAllByTarget(this.lbMd5Raw);
+        this.lbMd5Raw.time = 0;
+        cc.tween(this.lbMd5Raw).to(.3, {
+          time: {
+            value: 1,
+            progress: function(start, end, current, ratio) {
+              var _current = start + (end - start) * ratio;
+              var num = cc.misc.lerp(0, string.length, _current);
+              _this.lbMd5Raw.string = string.substring(0, num);
+              return _current;
+            }
+          }
+        }).start();
+      };
+      NewClass.prototype.onClickCoppyMd5 = function() {
+        Windown_1.Windown.coppyToClip(this.lbMd5.string);
+      };
+      NewClass.prototype.onClickCoppyMd5Raw = function() {
+        Windown_1.Windown.coppyToClip(this.lbMd5Raw.string);
+      };
+      NewClass.prototype.setupByStatusGame = function(status, time) {
+        var _this = this;
+        this.unschedule(this.funCountDown);
+        time = parseInt(time);
+        time -= 2;
+        time < 0 && (time = 0);
+        if (status) {
+          this.nodeTimeGame.active = true;
+          this.lbTimeEnd.node.parent.active = false;
+          var listLabel_1 = this.nodeTimeGame.getComponentsInChildren(cc.Label);
+          this.schedule(this.funCountDown = function() {
+            if (time < 10) {
+              listLabel_1[0].string = "0";
+              listLabel_1[1].string = time;
+            } else {
+              listLabel_1[0].string = time.toString()[0];
+              listLabel_1[1].string = time.toString()[1];
+            }
+            time--;
+          }, 1, time, .01);
+        } else {
+          this.lbTimeEnd.string = time;
+          this.nodeTimeGame.active = false;
+          this.lbTimeEnd.node.parent.active = true;
+          this.schedule(this.funCountDown = function() {
+            _this.lbTimeEnd.string = (time < 10 ? "0" : "") + time;
+            time--;
+            time < 5 && _this.batDrag.checkOpenBat();
+          }, 1, time, .01);
+        }
+      };
+      NewClass.prototype.handleUpdateAllBet = function(SFSObject) {
+        this.listInfo[1].setCountTotaluser(SFSObject.get("sizeT"));
+        this.listInfo[1].setMoneyTotalUserBet(SFSObject.get("agBetT"));
+        this.listInfo[0].setCountTotaluser(SFSObject.get("sizeX"));
+        this.listInfo[0].setMoneyTotalUserBet(SFSObject.get("agBetX"));
+      };
+      NewClass.prototype.clear = function() {
+        cc.systemEvent.targetOff(this);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse);
+        if (this.objFinish) {
+          var agWin = this.objFinish.get("agWin");
+          Windown_1.Windown.MoneyUser.removeDelay(this.gameType);
+        }
+        Windown_1.Windown.MoneyUser.endGameMOney(this.gameType);
+      };
+      NewClass.prototype.getInfoBetByType = function(type) {
+        if (0 == type) return this.listInfo[0];
+        return this.listInfo[1];
+      };
+      NewClass.prototype.onDisconnect = function() {
+        this.clear();
+        this.node.destroy();
+      };
+      NewClass.prototype.onToggleBat = function(event, data) {
+        var isCheck = event.isChecked;
+        this.batDrag.setIsNan(isCheck);
+      };
+      NewClass.prototype.onClickClose = function() {
+        Windown_1.Windown.BtnMiniGame.onDeActiveTx();
+        Windown_1.Windown.UIManager.parentMiniGame.getComponentInChildren(OffMiniGame_1.default)._touchStart(null);
+        if (this.checkIsBet()) {
+          this.node.setPosition(1e4, 1e4);
+          this.node.opacity = 0;
+          this.isDelayLeave = true;
+        } else {
+          this.node.active = false;
+          try {
+            ConectManager_1.ConectManager.getIns().sendLeaveRoom(this.roomSFS);
+          } catch (error) {
+            this.clear();
+            this.node.destroy();
+          }
+        }
+      };
+      NewClass.prototype.checkIsBet = function() {
+        for (var _i = 0, _a = this.listInfo; _i < _a.length; _i++) {
+          var temp = _a[_i];
+          if (temp.totalBet > 0) return true;
+        }
+        return false;
+      };
+      NewClass.prototype.onClickChiTietPhien = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var pre, node;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.loadRes(this.gameType.toString(), "Prefabs/ChiTietPhien", cc.Prefab) ];
+
+             case 1:
+              pre = _a.sent();
+              node = cc.instantiate(pre);
+              node.parent = Windown_1.Windown.UIManager.parentPopup;
+              this.chiTietPhien = node.getComponent(ChiTietPhien_1.default);
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      NewClass.prototype.onClickHuongDan = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var pre, node;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.loadRes(this.gameType.toString(), "Prefabs/HuongDan", cc.Prefab) ];
+
+             case 1:
+              pre = _a.sent();
+              node = cc.instantiate(pre);
+              node.parent = Windown_1.Windown.UIManager.parentPopup;
+              Windown_1.Windown.UIManager.hideLoading();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      NewClass.prototype.onClickSoiCau = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var pre, node;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.loadRes(this.gameType.toString(), "Prefabs/SoiCau", cc.Prefab) ];
+
+             case 1:
+              pre = _a.sent();
+              node = cc.instantiate(pre);
+              node.parent = Windown_1.Windown.UIManager.parentPopup;
+              this.soiCau = node.getComponent(SoiCau_1.default);
+              Windown_1.Windown.UIManager.hideLoading();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      NewClass.prototype.onClickLichSuCuoc = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var pre, node;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.loadRes(this.gameType.toString(), "Prefabs/LichSuCuoc", cc.Prefab) ];
+
+             case 1:
+              pre = _a.sent();
+              node = cc.instantiate(pre);
+              node.parent = Windown_1.Windown.UIManager.parentPopup;
+              this.lichSuCuoc = node.getComponent(LichSuCuoc_1.default);
+              Windown_1.Windown.UIManager.hideLoading();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      NewClass.prototype.onClickTop = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var pre, node;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.loadRes(this.gameType.toString(), "Prefabs/TopTaiXiu", cc.Prefab) ];
+
+             case 1:
+              pre = _a.sent();
+              node = cc.instantiate(pre);
+              node.parent = Windown_1.Windown.UIManager.parentPopup;
+              this.top = node.getComponent(TopTaiXiu_1.default);
+              Windown_1.Windown.UIManager.hideLoading();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbMd5", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbMd5Raw", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbPhien", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbThongBao", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "nodeTimeGame", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbTimeEnd", void 0);
+      __decorate([ property(InfoBetTX_1.default) ], NewClass.prototype, "listInfo", void 0);
+      __decorate([ property(BanPhimTaiXiu_1.default) ], NewClass.prototype, "banPhim", void 0);
+      __decorate([ property(HistoryTaiXiu_1.default) ], NewClass.prototype, "history", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentResult", void 0);
+      __decorate([ property(BatDrag_1.default) ], NewClass.prototype, "batDrag", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbAgWin", void 0);
+      __decorate([ property(sp.Skeleton) ], NewClass.prototype, "spineTungXucXac", void 0);
+      __decorate([ property(SoundTaiXiu_1.default) ], NewClass.prototype, "sound", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/EVENT_MANAGER": void 0,
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/DefineTs/TextDefine": void 0,
+    "../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Other/DragMiniGame": void 0,
+    "../../../Scritps/Other/OffMiniGame": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./BanPhimTaiXiu": "BanPhimTaiXiu",
+    "./BatDrag": "BatDrag",
+    "./ChiTietPhien": "ChiTietPhien",
+    "./HistoryTaiXiu": "HistoryTaiXiu",
+    "./InfoBetTX": "InfoBetTX",
+    "./LichSuCuoc": "LichSuCuoc",
+    "./SoiCau": "SoiCau",
+    "./SoundTaiXiu": "SoundTaiXiu",
+    "./TopTaiXiu": "TopTaiXiu"
+  } ],
+  TopTaiXiu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c1c17E3ypRP6bi2UeaRmXpr", "TopTaiXiu");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var ItemTopTx_1 = require("./ItemTopTx");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.parentItem = null;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        Windown_1.Windown.TaiXiu.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXtopGame, null);
+      };
+      NewClass.prototype.responseServer = function(SFSObject) {
+        var sfsArr = SFSObject.getSFSArray("data");
+        var listChild = this.parentItem.children;
+        for (var i = 0, l = cc.misc.clampf(sfsArr.size(), 0, this.parentItem.childrenCount); i < l; i++) {
+          var SFSObject_1 = sfsArr.getSFSObject(i);
+          var node = listChild[i];
+          node.active = true;
+          node.getComponent(ItemTopTx_1.default).initItem(SFSObject_1);
+        }
+        for (var i = cc.misc.clampf(sfsArr.size(), 0, this.parentItem.childrenCount); i < listChild.length; i++) listChild[i].active = false;
+      };
+      NewClass.prototype.onClickClose = function() {
+        Windown_1.Windown.TaiXiu && (Windown_1.Windown.TaiXiu.top = null);
+        this.node.destroy();
+      };
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentItem", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./ItemTopTx": "ItemTopTx"
+  } ]
+}, {}, [ "BanPhimTaiXiu", "BatDrag", "ChiTietPhien", "HistoryTaiXiu", "HuongDan", "InfoBetTX", "ItemChiTietPhien", "ItemTopTx", "LichSuCuoc", "SoiCau", "SoundTaiXiu", "TaiXiu", "TopTaiXiu" ]);

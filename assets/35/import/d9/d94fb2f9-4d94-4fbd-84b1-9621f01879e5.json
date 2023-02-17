@@ -1,1 +1,51 @@
-[1,["1649072b6"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"leave_c","rect":[529,798,347,88],"offset":[16.5,8.5],"originalSize":[406,105],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "1649072b6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "leave_c",
+      "rect": [
+        529,
+        798,
+        347,
+        88
+      ],
+      "offset": [
+        16.5,
+        8.5
+      ],
+      "originalSize": [
+        406,
+        105
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

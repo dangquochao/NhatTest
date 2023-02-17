@@ -1,1 +1,51 @@
-[1,["1b3a3055b"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"ui_darken","rect":[1,1,756,461],"offset":[0,0],"originalSize":[756,461],"capInsets":[0,322,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "1b3a3055b"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ui_darken",
+      "rect": [
+        1,
+        1,
+        756,
+        461
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        756,
+        461
+      ],
+      "capInsets": [
+        0,
+        322,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

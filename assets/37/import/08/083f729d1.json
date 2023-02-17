@@ -1,1 +1,778 @@
-[1,["07LhzhakFCyKzf0sojqnlM"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats32-wh_vfx_i_normal_1x2_03","rect":[197,1317,201,202],"offset":[0,0],"originalSize":[201,202],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_06","rect":[409,598,199,202],"offset":[0,0],"originalSize":[199,202],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_12","rect":[606,0,195,210],"offset":[0,0],"originalSize":[195,210],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_04","rect":[199,1111,199,202],"offset":[0,0],"originalSize":[199,202],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_17","rect":[0,380,245,266],"offset":[0,0],"originalSize":[245,266],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_18","rect":[0,0,321,380],"offset":[0,0],"originalSize":[321,380],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_15","rect":[206,646,203,220],"offset":[0,0],"originalSize":[203,220],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_02","rect":[0,1729,205,204],"offset":[0,0],"originalSize":[205,204],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_16","rect":[0,879,221,232],"offset":[0,0],"originalSize":[221,232],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_14","rect":[409,0,197,214],"offset":[0,0],"originalSize":[197,214],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_07","rect":[204,1727,197,202],"offset":[0,0],"originalSize":[197,202],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_05","rect":[221,866,199,202],"offset":[0,0],"originalSize":[199,202],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_10","rect":[0,1317,197,206],"offset":[0,0],"originalSize":[197,206],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_00","rect":[0,646,233,206],"offset":[0,0],"originalSize":[233,206],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_13","rect":[245,380,197,218],"offset":[0,0],"originalSize":[197,218],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_08","rect":[195,1523,197,204],"offset":[0,0],"originalSize":[197,204],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_01","rect":[442,214,213,204],"offset":[0,0],"originalSize":[213,204],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_11","rect":[0,1523,195,206],"offset":[0,0],"originalSize":[195,206],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats32-wh_vfx_i_normal_1x2_09","rect":[0,1111,199,206],"offset":[0,0],"originalSize":[199,206],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "07LhzhakFCyKzf0sojqnlM"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_03",
+          "rect": [
+            197,
+            1317,
+            201,
+            202
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            201,
+            202
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_06",
+          "rect": [
+            409,
+            598,
+            199,
+            202
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            199,
+            202
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_12",
+          "rect": [
+            606,
+            0,
+            195,
+            210
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            195,
+            210
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_04",
+          "rect": [
+            199,
+            1111,
+            199,
+            202
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            199,
+            202
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_17",
+          "rect": [
+            0,
+            380,
+            245,
+            266
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            245,
+            266
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_18",
+          "rect": [
+            0,
+            0,
+            321,
+            380
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            321,
+            380
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_15",
+          "rect": [
+            206,
+            646,
+            203,
+            220
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            203,
+            220
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_02",
+          "rect": [
+            0,
+            1729,
+            205,
+            204
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            205,
+            204
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_16",
+          "rect": [
+            0,
+            879,
+            221,
+            232
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            221,
+            232
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_14",
+          "rect": [
+            409,
+            0,
+            197,
+            214
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            214
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_07",
+          "rect": [
+            204,
+            1727,
+            197,
+            202
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            202
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_05",
+          "rect": [
+            221,
+            866,
+            199,
+            202
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            199,
+            202
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_10",
+          "rect": [
+            0,
+            1317,
+            197,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            206
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_00",
+          "rect": [
+            0,
+            646,
+            233,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            233,
+            206
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_13",
+          "rect": [
+            245,
+            380,
+            197,
+            218
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            218
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_08",
+          "rect": [
+            195,
+            1523,
+            197,
+            204
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            204
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_01",
+          "rect": [
+            442,
+            214,
+            213,
+            204
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            213,
+            204
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_11",
+          "rect": [
+            0,
+            1523,
+            195,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            195,
+            206
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats32-wh_vfx_i_normal_1x2_09",
+          "rect": [
+            0,
+            1111,
+            199,
+            206
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            199,
+            206
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

@@ -1,1 +1,178 @@
-[1,["beweawPzlNh41WlureONQW","13cF6W0TBHx4qQPLx9TcoU","1dEDHbw8RNuLh62UspkkkB","30qQ2M3n1PJLpqK5ZtA7C8"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Ic_aim_normal","rect":[0,0,82,83],"offset":[-2,1.5],"originalSize":[86,86],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Ic_all_normal","rect":[0,0,82,83],"offset":[-2,1.5],"originalSize":[86,86],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[1]],[[{"name":"khungItem","rect":[0,0,142,142],"offset":[0,0],"originalSize":[142,142],"capInsets":[29,29,26,30]}],[0],0,[0],[0],[2]],[[{"name":"Ic_Ice","rect":[2,2,82,82],"offset":[0,0],"originalSize":[86,86],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[3]]]]
+[
+  1,
+  [
+    "beweawPzlNh41WlureONQW",
+    "13cF6W0TBHx4qQPLx9TcoU",
+    "1dEDHbw8RNuLh62UspkkkB",
+    "30qQ2M3n1PJLpqK5ZtA7C8"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Ic_aim_normal",
+          "rect": [
+            0,
+            0,
+            82,
+            83
+          ],
+          "offset": [
+            -2,
+            1.5
+          ],
+          "originalSize": [
+            86,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Ic_all_normal",
+          "rect": [
+            0,
+            0,
+            82,
+            83
+          ],
+          "offset": [
+            -2,
+            1.5
+          ],
+          "originalSize": [
+            86,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "khungItem",
+          "rect": [
+            0,
+            0,
+            142,
+            142
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            142,
+            142
+          ],
+          "capInsets": [
+            29,
+            29,
+            26,
+            30
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Ic_Ice",
+          "rect": [
+            2,
+            2,
+            82,
+            82
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            86,
+            86
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ]
+  ]
+]

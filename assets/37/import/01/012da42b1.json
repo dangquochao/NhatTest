@@ -1,1 +1,500 @@
-[1,["7e3pp44VdHw5M9IGv1768X"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats9-sb_button_extra_a","rect":[0,440,42,87],"offset":[0,0],"originalSize":[42,87],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-sb_button","rect":[1857,0,181,171],"offset":[0,0],"originalSize":[181,171],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_b_mask","rect":[232,309,72,99],"offset":[0,0],"originalSize":[72,99],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-sb_arrow","rect":[528,101,131,131],"offset":[0,0],"originalSize":[131,131],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_c_mask","rect":[131,309,92,101],"offset":[0,0],"originalSize":[92,101],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_b","rect":[661,0,623,99],"offset":[0,0],"originalSize":[623,99],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_a_mask","rect":[232,381,64,99],"offset":[0,0],"originalSize":[64,99],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-sb_arrow_blur","rect":[528,232,131,131],"offset":[0,0],"originalSize":[131,131],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-sb_button_extra_b","rect":[131,401,46,89],"offset":[0,0],"originalSize":[46,89],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_a","rect":[1284,0,573,99],"offset":[0,0],"originalSize":[573,99],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-ib_bar_c","rect":[0,0,661,101],"offset":[0,0],"originalSize":[661,101],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats9-sb_auto","rect":[363,101,165,162],"offset":[0,0],"originalSize":[165,162],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "7e3pp44VdHw5M9IGv1768X"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats9-sb_button_extra_a",
+          "rect": [
+            0,
+            440,
+            42,
+            87
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            42,
+            87
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-sb_button",
+          "rect": [
+            1857,
+            0,
+            181,
+            171
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            181,
+            171
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_b_mask",
+          "rect": [
+            232,
+            309,
+            72,
+            99
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            72,
+            99
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-sb_arrow",
+          "rect": [
+            528,
+            101,
+            131,
+            131
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            131,
+            131
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_c_mask",
+          "rect": [
+            131,
+            309,
+            92,
+            101
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            92,
+            101
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_b",
+          "rect": [
+            661,
+            0,
+            623,
+            99
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            623,
+            99
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_a_mask",
+          "rect": [
+            232,
+            381,
+            64,
+            99
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            64,
+            99
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-sb_arrow_blur",
+          "rect": [
+            528,
+            232,
+            131,
+            131
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            131,
+            131
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-sb_button_extra_b",
+          "rect": [
+            131,
+            401,
+            46,
+            89
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            46,
+            89
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_a",
+          "rect": [
+            1284,
+            0,
+            573,
+            99
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            573,
+            99
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-ib_bar_c",
+          "rect": [
+            0,
+            0,
+            661,
+            101
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            661,
+            101
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats9-sb_auto",
+          "rect": [
+            363,
+            101,
+            165,
+            162
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            165,
+            162
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

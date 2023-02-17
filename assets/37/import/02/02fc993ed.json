@@ -1,1 +1,146 @@
-[1,["72SSaG5+pLY5Yrea2+5ktw","ffTFTG30xM94e11tsZZLxn","017lxe3phKvJggiSga55es"],["_textureSetter","Alats39-wh_vfx_e_add_02_20","Alats39-wh_vfx_e_add_02_12"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[{"name":"Alats39-wh_vfx_e_add_02_12","rect":[0,394,292,392],"offset":[0,0],"originalSize":[292,392],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"wh_vfx_e_add_02-1.plist",[{},"Alats39-wh_vfx_e_add_02_20",6,0,"Alats39-wh_vfx_e_add_02_12",6,1]]],0,0,[0,0],[1,2],[1,2]],[[{"name":"Alats39-wh_vfx_e_add_02_20","rect":[0,0,308,394],"offset":[0,0],"originalSize":[308,394],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "72SSaG5+pLY5Yrea2+5ktw",
+    "ffTFTG30xM94e11tsZZLxn",
+    "017lxe3phKvJggiSga55es"
+  ],
+  [
+    "_textureSetter",
+    "Alats39-wh_vfx_e_add_02_20",
+    "Alats39-wh_vfx_e_add_02_12"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "Alats39-wh_vfx_e_add_02_12",
+          "rect": [
+            0,
+            394,
+            292,
+            392
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            292,
+            392
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "wh_vfx_e_add_02-1.plist",
+          [
+            {},
+            "Alats39-wh_vfx_e_add_02_20",
+            6,
+            0,
+            "Alats39-wh_vfx_e_add_02_12",
+            6,
+            1
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats39-wh_vfx_e_add_02_20",
+          "rect": [
+            0,
+            0,
+            308,
+            394
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            308,
+            394
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]
