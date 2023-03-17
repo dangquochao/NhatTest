@@ -1,0 +1,45 @@
+[
+  1,
+  [
+    "25q1220GBNY7k9DPVmAuDM"
+  ],
+  [
+    "_texture"
+  ],
+  [
+    [
+      "dragonBones.DragonBonesAtlasAsset",
+      [
+        "_name",
+        "_atlasJson"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "Symbol_1_tex_1",
+      "{\"width\":1240,\"height\":1024,\"name\":\"Symbol_1\",\"imagePath\":\"Symbol_1_tex_1.png\",\"SubTexture\":[{\"width\":196,\"y\":2,\"height\":196,\"name\":\"Symbol_1/disc\",\"x\":2},{\"frameY\":-20,\"y\":228,\"frameWidth\":272,\"frameX\":-25,\"frameHeight\":128,\"width\":224,\"height\":82,\"name\":\"Symbol_1/Bonus\",\"x\":491},{\"frameY\":-82,\"y\":521,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00072\",\"x\":781},{\"frameY\":-82,\"y\":803,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00080\",\"x\":595},{\"frameY\":-64,\"y\":312,\"frameWidth\":350,\"frameX\":-29,\"frameHeight\":250,\"width\":294,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00032\",\"x\":489},{\"frameY\":-64,\"y\":806,\"frameWidth\":350,\"frameX\":-13,\"frameHeight\":250,\"width\":294,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00020\",\"x\":299},{\"frameY\":-65,\"y\":2,\"frameWidth\":350,\"frameX\":-5,\"frameHeight\":250,\"width\":291,\"height\":109,\"name\":\"Symbol_1/Light Burst/Comp 1_00012\",\"x\":492},{\"frameY\":-64,\"y\":391,\"frameWidth\":350,\"frameX\":-7,\"frameHeight\":250,\"width\":295,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00016\",\"x\":192},{\"frameY\":-64,\"y\":878,\"frameWidth\":350,\"frameX\":-34,\"frameHeight\":250,\"width\":295,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00036\",\"x\":2},{\"frameY\":-82,\"y\":615,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00089\",\"x\":595},{\"frameY\":-64,\"y\":200,\"frameWidth\":350,\"frameX\":-45,\"frameHeight\":250,\"width\":294,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00044\",\"x\":195},{\"frameY\":-64,\"y\":582,\"frameWidth\":350,\"frameX\":-23,\"frameHeight\":250,\"width\":295,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00028\",\"x\":188},{\"frameY\":-69,\"y\":2,\"frameWidth\":350,\"frameX\":-10,\"frameHeight\":250,\"width\":280,\"height\":105,\"name\":\"Symbol_1/Light Burst/Comp 1_00008\",\"x\":785},{\"frameY\":-73,\"y\":918,\"frameWidth\":350,\"frameX\":-16,\"frameHeight\":250,\"width\":271,\"height\":101,\"name\":\"Symbol_1/Light Burst/Comp 1_00004\",\"x\":585},{\"frameY\":-77,\"y\":615,\"frameWidth\":350,\"frameX\":-24,\"frameHeight\":250,\"width\":262,\"height\":97,\"name\":\"Symbol_1/Light Burst/Comp 1_00000\",\"x\":858},{\"frameY\":-79,\"y\":424,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":266,\"height\":95,\"name\":\"Symbol_1/Light Burst/Comp 1_00068\",\"x\":781},{\"frameY\":-82,\"y\":709,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00084\",\"x\":595},{\"frameY\":-82,\"y\":170,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00088\",\"x\":959},{\"frameY\":-64,\"y\":2,\"frameWidth\":350,\"frameX\":-60,\"frameHeight\":250,\"width\":290,\"height\":111,\"name\":\"Symbol_1/Light Burst/Comp 1_00056\",\"x\":200},{\"frameY\":-82,\"y\":288,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":256,\"height\":92,\"name\":\"Symbol_1/Light Burst/Comp 1_00076\",\"x\":785},{\"frameY\":-72,\"y\":918,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":284,\"height\":102,\"name\":\"Symbol_1/Light Burst/Comp 1_00064\",\"x\":299},{\"frameY\":-64,\"y\":503,\"frameWidth\":350,\"frameX\":-18,\"frameHeight\":250,\"width\":294,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00024\",\"x\":485},{\"frameY\":-64,\"y\":115,\"frameWidth\":350,\"frameX\":-62,\"frameHeight\":250,\"width\":288,\"height\":111,\"name\":\"Symbol_1/Light Burst/Comp 1_00060\",\"x\":491},{\"frameY\":-64,\"y\":765,\"frameWidth\":350,\"frameX\":-56,\"frameHeight\":250,\"width\":294,\"height\":111,\"name\":\"Symbol_1/Light Burst/Comp 1_00052\",\"x\":2},{\"frameY\":-64,\"y\":694,\"frameWidth\":350,\"frameX\":-39,\"frameHeight\":250,\"width\":295,\"height\":110,\"name\":\"Symbol_1/Light Burst/Comp 1_00040\",\"x\":298},{\"frameY\":-13,\"y\":200,\"frameWidth\":320,\"frameX\":-37,\"frameHeight\":240,\"width\":191,\"height\":189,\"name\":\"Symbol_1/brake/Comp 1_000050017\",\"x\":2},{\"frameY\":-19,\"y\":2,\"frameWidth\":320,\"frameX\":-47,\"frameHeight\":240,\"width\":168,\"height\":166,\"name\":\"Symbol_1/brake/Comp 1_000050011\",\"x\":1067},{\"frameY\":-40,\"y\":391,\"frameWidth\":320,\"frameX\":-55,\"frameHeight\":240,\"width\":188,\"height\":189,\"name\":\"Symbol_1/brake/Comp 1_000050047\",\"x\":2},{\"frameY\":-29,\"y\":714,\"frameWidth\":320,\"frameX\":-58,\"frameHeight\":240,\"width\":137,\"height\":143,\"name\":\"Symbol_1/brake/Comp 1_000050005\",\"x\":853},{\"frameY\":-25,\"y\":448,\"frameWidth\":320,\"frameX\":-54,\"frameHeight\":240,\"width\":152,\"height\":150,\"name\":\"Symbol_1/brake/Comp 1_000050007\",\"x\":1049},{\"frameY\":-17,\"y\":113,\"frameWidth\":320,\"frameX\":-43,\"frameHeight\":240,\"width\":176,\"height\":173,\"name\":\"Symbol_1/brake/Comp 1_000050013\",\"x\":781},{\"frameY\":-15,\"y\":582,\"frameWidth\":320,\"frameX\":-40,\"frameHeight\":240,\"width\":184,\"height\":181,\"name\":\"Symbol_1/brake/Comp 1_000050015\",\"x\":2},{\"frameY\":-22,\"y\":288,\"frameWidth\":320,\"frameX\":-50,\"frameHeight\":240,\"width\":160,\"height\":158,\"name\":\"Symbol_1/brake/Comp 1_000050009\",\"x\":1049}]}"
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

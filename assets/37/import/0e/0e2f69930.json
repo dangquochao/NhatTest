@@ -1,1 +1,136 @@
-[1,["99RwJTG4dG9atPJY6ij2xa"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats12-bw_vfx_j_add_22","rect":[0,0,550,1450],"offset":[0,0],"originalSize":[550,1450],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_16","rect":[0,1450,542,1424],"offset":[0,0],"originalSize":[542,1424],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_18","rect":[550,0,518,1426],"offset":[0,0],"originalSize":[518,1426],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "99RwJTG4dG9atPJY6ij2xa"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_22",
+          "rect": [
+            0,
+            0,
+            550,
+            1450
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            550,
+            1450
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_16",
+          "rect": [
+            0,
+            1450,
+            542,
+            1424
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            542,
+            1424
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_18",
+          "rect": [
+            550,
+            0,
+            518,
+            1426
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            518,
+            1426
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

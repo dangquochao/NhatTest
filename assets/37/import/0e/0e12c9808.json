@@ -1,1 +1,420 @@
-[1,["8cglebuAFGVZoZbbQm/wJv"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats41-fs_vfx_a_add_03","rect":[0,0,166,438],"offset":[0,0],"originalSize":[166,438],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_01","rect":[0,876,168,436],"offset":[0,0],"originalSize":[168,436],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_08","rect":[1738,0,166,432],"offset":[0,0],"originalSize":[166,432],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_05","rect":[434,1748,166,436],"offset":[0,0],"originalSize":[166,436],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_00","rect":[0,1748,168,434],"offset":[0,0],"originalSize":[168,434],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_04","rect":[0,438,166,438],"offset":[0,0],"originalSize":[166,438],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_07","rect":[1304,0,166,434],"offset":[0,0],"originalSize":[166,434],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_09","rect":[1304,166,166,432],"offset":[0,0],"originalSize":[166,432],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_02","rect":[0,1312,168,436],"offset":[0,0],"originalSize":[168,436],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats41-fs_vfx_a_add_06","rect":[870,1748,166,434],"offset":[0,0],"originalSize":[166,434],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "8cglebuAFGVZoZbbQm/wJv"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_03",
+          "rect": [
+            0,
+            0,
+            166,
+            438
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            438
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_01",
+          "rect": [
+            0,
+            876,
+            168,
+            436
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            168,
+            436
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_08",
+          "rect": [
+            1738,
+            0,
+            166,
+            432
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            432
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_05",
+          "rect": [
+            434,
+            1748,
+            166,
+            436
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            436
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_00",
+          "rect": [
+            0,
+            1748,
+            168,
+            434
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            168,
+            434
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_04",
+          "rect": [
+            0,
+            438,
+            166,
+            438
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            438
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_07",
+          "rect": [
+            1304,
+            0,
+            166,
+            434
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            434
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_09",
+          "rect": [
+            1304,
+            166,
+            166,
+            432
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            432
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_02",
+          "rect": [
+            0,
+            1312,
+            168,
+            436
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            168,
+            436
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats41-fs_vfx_a_add_06",
+          "rect": [
+            870,
+            1748,
+            166,
+            434
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            166,
+            434
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

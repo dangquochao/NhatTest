@@ -1,1 +1,51 @@
-[1,["13R/dwsXRCEbBMmyGWDpKl"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"CaLongDenDieBones4","rect":[5,6,999,996],"offset":[-7.5,8],"originalSize":[1024,1024],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "13R/dwsXRCEbBMmyGWDpKl"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "CaLongDenDieBones4",
+      "rect": [
+        5,
+        6,
+        999,
+        996
+      ],
+      "offset": [
+        -7.5,
+        8
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

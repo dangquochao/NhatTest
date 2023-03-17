@@ -1,1 +1,243 @@
-[1,["d9F2akze9GF7nvnzg/OWxI","90E2VtWnVIDJ2WxinQqCcR","27mFsplBZEV6X0KAs1qcp5","aaUzkJR55JA5LT3eKiS07c","b7ksQ/lq9MC7N7/mkv/m32"],["_textureSetter","checkbox_selected","checkbox_outline","teach_hand","teach_narrow_left"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[[0,"Alats13.plist",[{},"checkbox_selected",6,0,"checkbox_outline",6,1,"teach_hand",6,2,"teach_narrow_left",6,3]]],0,0,[0,0,0,0],[1,2,3,4],[1,2,3,4]],[[{"name":"checkbox_outline","rect":[48,1,54,54],"offset":[0,0],"originalSize":[54,54],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"checkbox_selected","rect":[1,1,45,32],"offset":[0,0],"originalSize":[45,32],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"teach_hand","rect":[1,70,185,262],"offset":[0,0],"originalSize":[185,262],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"teach_narrow_left","rect":[104,1,150,67],"offset":[0,0],"originalSize":[150,67],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "d9F2akze9GF7nvnzg/OWxI",
+    "90E2VtWnVIDJ2WxinQqCcR",
+    "27mFsplBZEV6X0KAs1qcp5",
+    "aaUzkJR55JA5LT3eKiS07c",
+    "b7ksQ/lq9MC7N7/mkv/m32"
+  ],
+  [
+    "_textureSetter",
+    "checkbox_selected",
+    "checkbox_outline",
+    "teach_hand",
+    "teach_narrow_left"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Alats13.plist",
+          [
+            {},
+            "checkbox_selected",
+            6,
+            0,
+            "checkbox_outline",
+            6,
+            1,
+            "teach_hand",
+            6,
+            2,
+            "teach_narrow_left",
+            6,
+            3
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "checkbox_outline",
+          "rect": [
+            48,
+            1,
+            54,
+            54
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            54,
+            54
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "checkbox_selected",
+          "rect": [
+            1,
+            1,
+            45,
+            32
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            45,
+            32
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "teach_hand",
+          "rect": [
+            1,
+            70,
+            185,
+            262
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            185,
+            262
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "teach_narrow_left",
+          "rect": [
+            104,
+            1,
+            150,
+            67
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            150,
+            67
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

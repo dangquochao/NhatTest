@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "76XLFupFdFTIB14kylRetk"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "4",
+      "rect": [
+        0,
+        0,
+        283,
+        710
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        284,
+        710
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

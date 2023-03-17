@@ -1,1 +1,51 @@
-[1,["82R9UMcXJIxLnWKBF6Kd1V"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"Lớp 1 (4)","rect":[0,0,69,68],"offset":[0,0],"originalSize":[69,68],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "82R9UMcXJIxLnWKBF6Kd1V"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Lớp 1 (4)",
+      "rect": [
+        0,
+        0,
+        69,
+        68
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        69,
+        68
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

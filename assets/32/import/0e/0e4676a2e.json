@@ -1,1 +1,96 @@
-[1,["2eXNemmDpN/q9WbBmpn+50","ab7OaL9b1G5Y+ozTdp5J6K"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"auraMain","rect":[1,1,219,219],"offset":[0,0],"originalSize":[221,221],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"auraTemp","rect":[0,0,120,120],"offset":[0,0],"originalSize":[120,120],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[1]]]]
+[
+  1,
+  [
+    "2eXNemmDpN/q9WbBmpn+50",
+    "ab7OaL9b1G5Y+ozTdp5J6K"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "auraMain",
+          "rect": [
+            1,
+            1,
+            219,
+            219
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            221,
+            221
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "auraTemp",
+          "rect": [
+            0,
+            0,
+            120,
+            120
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            120,
+            120
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "983ipBkL9NmoRAtg9Ayai+"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Symbol_2_tex",
+      "rect": [
+        1,
+        1,
+        507,
+        508
+      ],
+      "offset": [
+        -1.5,
+        1
+      ],
+      "originalSize": [
+        512,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

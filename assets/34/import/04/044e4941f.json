@@ -1,1 +1,975 @@
-[1,["8ePlUK1IpD1Ixir/PITzQo"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Symbol win effect_20","rect":[607,405,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_23","rect":[607,809,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_24","rect":[809,607,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_11","rect":[203,405,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_07","rect":[405,1,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_15","rect":[607,203,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_16","rect":[809,203,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_13","rect":[203,809,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_19","rect":[405,809,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_14","rect":[405,203,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_09","rect":[809,1,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_02","rect":[1,203,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_18","rect":[405,607,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_03","rect":[1,405,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_06","rect":[203,1,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_10","rect":[203,203,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_17","rect":[405,405,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_05","rect":[1,809,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_04","rect":[1,607,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_08","rect":[607,1,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_01","rect":[1,1,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_21","rect":[809,405,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_12","rect":[203,607,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Symbol win effect_22","rect":[607,607,200,200],"offset":[0,0],"originalSize":[200,200],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "8ePlUK1IpD1Ixir/PITzQo"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Symbol win effect_20",
+          "rect": [
+            607,
+            405,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_23",
+          "rect": [
+            607,
+            809,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_24",
+          "rect": [
+            809,
+            607,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_11",
+          "rect": [
+            203,
+            405,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_07",
+          "rect": [
+            405,
+            1,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_15",
+          "rect": [
+            607,
+            203,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_16",
+          "rect": [
+            809,
+            203,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_13",
+          "rect": [
+            203,
+            809,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_19",
+          "rect": [
+            405,
+            809,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_14",
+          "rect": [
+            405,
+            203,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_09",
+          "rect": [
+            809,
+            1,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_02",
+          "rect": [
+            1,
+            203,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_18",
+          "rect": [
+            405,
+            607,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_03",
+          "rect": [
+            1,
+            405,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_06",
+          "rect": [
+            203,
+            1,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_10",
+          "rect": [
+            203,
+            203,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_17",
+          "rect": [
+            405,
+            405,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_05",
+          "rect": [
+            1,
+            809,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_04",
+          "rect": [
+            1,
+            607,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_08",
+          "rect": [
+            607,
+            1,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_01",
+          "rect": [
+            1,
+            1,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_21",
+          "rect": [
+            809,
+            405,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_12",
+          "rect": [
+            203,
+            607,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Symbol win effect_22",
+          "rect": [
+            607,
+            607,
+            200,
+            200
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            200,
+            200
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

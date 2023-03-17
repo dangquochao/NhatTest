@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "89n9Y5q8xOuqMzMnJ+mX9W"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "EventBall_tex_1",
+      "rect": [
+        2,
+        2,
+        559,
+        596
+      ],
+      "offset": [
+        -18.5,
+        0
+      ],
+      "originalSize": [
+        600,
+        600
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "fdwO7YMRVLi4lGCrdYt0XD"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "TS_MSG01_vn_png",
+      "rect": [
+        107,
+        25,
+        765,
+        476
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        980,
+        526
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

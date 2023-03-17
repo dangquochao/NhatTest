@@ -1,1 +1,51 @@
-[1,["76Zxt0s+VGY5Yjcm6xlcEj"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"anhSang","rect":[0,0,81,71],"offset":[0,0],"originalSize":[81,71],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "76Zxt0s+VGY5Yjcm6xlcEj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "anhSang",
+      "rect": [
+        0,
+        0,
+        81,
+        71
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        81,
+        71
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

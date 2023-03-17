@@ -1,1 +1,135 @@
-[1,["523NtPsN5GlrCgr5boOBfS"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"icXingau2","rect":[355,1728,27,27],"offset":[0,0],"originalSize":[27,27],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"icXingau1","rect":[517,986,27,27],"offset":[0,0],"originalSize":[27,27],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"icXingau3","rect":[327,1728,27,27],"offset":[0,0],"originalSize":[27,27],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "523NtPsN5GlrCgr5boOBfS"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "icXingau2",
+          "rect": [
+            355,
+            1728,
+            27,
+            27
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            27,
+            27
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "icXingau1",
+          "rect": [
+            517,
+            986,
+            27,
+            27
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            27,
+            27
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "icXingau3",
+          "rect": [
+            327,
+            1728,
+            27,
+            27
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            27,
+            27
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

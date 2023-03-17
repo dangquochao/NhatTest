@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "122Mig4AlJXKGb8wN83oSB"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Free_Reel_png",
+      "rect": [
+        0,
+        0,
+        900,
+        814
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        900,
+        814
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

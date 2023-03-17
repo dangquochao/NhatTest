@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "8dse6GweBO7JEiDUVt0vIz"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "UI_Menu_BTN_MSG_4_vn_png",
+      "rect": [
+        26,
+        30,
+        208,
+        49
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        260,
+        109
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

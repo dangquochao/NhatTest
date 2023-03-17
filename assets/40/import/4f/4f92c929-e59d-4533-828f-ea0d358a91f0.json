@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "54wiCIJWZDebgqzJetU1lU"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "BigWin_MSG02_FX_vn_png",
+      "rect": [
+        178,
+        83,
+        1564,
+        463
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        1920,
+        630
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

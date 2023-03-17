@@ -1,1 +1,987 @@
-[1,["fa7qZCGaZBFonOJzuqPqfL"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"LBAttackAnimation_15","rect":[727,875,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_17","rect":[438,1238,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_06","rect":[1164,1,435,357],"offset":[0,-4],"originalSize":[435,357],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_05","rect":[1,364,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_13","rect":[1,801,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_00","rect":[1910,1577,271,137],"offset":[94,-60],"originalSize":[271,137],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_19","rect":[1312,1156,435,349],"offset":[0,-12],"originalSize":[435,349],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_21","rect":[1601,797,435,341],"offset":[0,-20],"originalSize":[435,341],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_03","rect":[1,1,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_08","rect":[364,438,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_09","rect":[1523,1,435,357],"offset":[0,-4],"originalSize":[435,357],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_07","rect":[1164,438,435,357],"offset":[0,-4],"originalSize":[435,357],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_11","rect":[801,1,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_23","rect":[1663,1140,435,341],"offset":[0,-20],"originalSize":[435,341],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_02","rect":[1,1601,435,333],"offset":[0,-28],"originalSize":[435,333],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_16","rect":[1,1238,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_22","rect":[1312,1593,435,347],"offset":[0,-14],"originalSize":[435,347],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_14","rect":[364,801,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_20","rect":[1601,360,435,341],"offset":[0,-20],"originalSize":[435,341],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_10","rect":[1164,797,435,357],"offset":[0,-4],"originalSize":[435,357],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_04","rect":[438,1,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_12","rect":[801,438,435,361],"offset":[0,0],"originalSize":[435,361],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_01","rect":[1749,1577,343,159],"offset":[0,-52],"originalSize":[343,159],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"LBAttackAnimation_18","rect":[875,1238,435,361],"offset":[0,0],"originalSize":[435,361],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "fa7qZCGaZBFonOJzuqPqfL"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "LBAttackAnimation_15",
+          "rect": [
+            727,
+            875,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_17",
+          "rect": [
+            438,
+            1238,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_06",
+          "rect": [
+            1164,
+            1,
+            435,
+            357
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            435,
+            357
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_05",
+          "rect": [
+            1,
+            364,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_13",
+          "rect": [
+            1,
+            801,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_00",
+          "rect": [
+            1910,
+            1577,
+            271,
+            137
+          ],
+          "offset": [
+            94,
+            -60
+          ],
+          "originalSize": [
+            271,
+            137
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_19",
+          "rect": [
+            1312,
+            1156,
+            435,
+            349
+          ],
+          "offset": [
+            0,
+            -12
+          ],
+          "originalSize": [
+            435,
+            349
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_21",
+          "rect": [
+            1601,
+            797,
+            435,
+            341
+          ],
+          "offset": [
+            0,
+            -20
+          ],
+          "originalSize": [
+            435,
+            341
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_03",
+          "rect": [
+            1,
+            1,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_08",
+          "rect": [
+            364,
+            438,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_09",
+          "rect": [
+            1523,
+            1,
+            435,
+            357
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            435,
+            357
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_07",
+          "rect": [
+            1164,
+            438,
+            435,
+            357
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            435,
+            357
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_11",
+          "rect": [
+            801,
+            1,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_23",
+          "rect": [
+            1663,
+            1140,
+            435,
+            341
+          ],
+          "offset": [
+            0,
+            -20
+          ],
+          "originalSize": [
+            435,
+            341
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_02",
+          "rect": [
+            1,
+            1601,
+            435,
+            333
+          ],
+          "offset": [
+            0,
+            -28
+          ],
+          "originalSize": [
+            435,
+            333
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_16",
+          "rect": [
+            1,
+            1238,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_22",
+          "rect": [
+            1312,
+            1593,
+            435,
+            347
+          ],
+          "offset": [
+            0,
+            -14
+          ],
+          "originalSize": [
+            435,
+            347
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_14",
+          "rect": [
+            364,
+            801,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_20",
+          "rect": [
+            1601,
+            360,
+            435,
+            341
+          ],
+          "offset": [
+            0,
+            -20
+          ],
+          "originalSize": [
+            435,
+            341
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_10",
+          "rect": [
+            1164,
+            797,
+            435,
+            357
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            435,
+            357
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_04",
+          "rect": [
+            438,
+            1,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_12",
+          "rect": [
+            801,
+            438,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_01",
+          "rect": [
+            1749,
+            1577,
+            343,
+            159
+          ],
+          "offset": [
+            0,
+            -52
+          ],
+          "originalSize": [
+            343,
+            159
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "LBAttackAnimation_18",
+          "rect": [
+            875,
+            1238,
+            435,
+            361
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            435,
+            361
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]
