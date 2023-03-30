@@ -11226,6 +11226,7 @@ window.__require = function e(t, n, r) {
         _this._currentMonney = 0;
         _this._monney = 0;
         _this.formatMoney = false;
+        _this.cb = null;
         return _this;
       }
       LbMonneyChange.prototype.onLoad = function() {
@@ -11257,17 +11258,21 @@ window.__require = function e(t, n, r) {
         this.formatMoney = isFormatMoney;
         this._monney = monney;
         cc.tween(this).to(this.time, {
-          _currentMonney: {
-            value: this._monney,
-            progress: function(start, end, current, ratio) {
-              var _current = start + (end - start) * ratio;
-              if (isFormatMoney) _this.lb.string = frontString + Windown_1.Windown.formatMoney(parseInt(_current), 1, 1e6); else {
-                var str = frontString + Windown_1.Windown.formatNumber(parseInt(_current));
-                isDot || (str = str.replace(/[.]/g, ""));
-                _this.lb && (_this.lb.string = str);
-              }
-              return _current;
+          _currentMonney: this._monney
+        }, {
+          progress: function(start, end, current, ratio) {
+            var _current = start + (end - start) * ratio;
+            if (isFormatMoney) _this.lb.string = frontString + Windown_1.Windown.formatMoney(parseInt(_current), 1, 1e6); else {
+              var str = frontString + Windown_1.Windown.formatNumber(parseInt(_current));
+              isDot || (str = str.replace(/[.]/g, ""));
+              _this.lb && (_this.lb.string = str);
             }
+            if (parseInt(_current)) return _current;
+          }
+        }).call(function() {
+          if (null != _this.cb) {
+            _this.cb();
+            _this.cb = null;
           }
         }).start();
       };
@@ -11335,6 +11340,7 @@ window.__require = function e(t, n, r) {
         _this._offYChar = -10;
         _this._scale = 1;
         _this.time = .5;
+        _this.callBack = null;
         _this.objEasing = null;
         _this._currentMonney = 0;
         _this._monney = 0;
@@ -11450,6 +11456,10 @@ window.__require = function e(t, n, r) {
                 isDot || (str = str.replace(/[.]/g, ""));
                 _this.string = str;
               }
+              if (null != _this.callBack && _current == _this._monney) {
+                _this.callBack();
+                _this.callBack = null;
+              }
               return _current;
             }
           }
@@ -11510,7 +11520,6 @@ window.__require = function e(t, n, r) {
       LbMonoSpace.prototype._updateString = function() {
         var children = this.node.children;
         while (this.node.childrenCount > 0) this.putLb(children[0]);
-        cc.log("type=" + typeof this._string);
         var listChar = this._string.split("");
         for (var i = 0, l = listChar.length; i < l; i++) {
           var char = listChar[i];

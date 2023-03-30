@@ -65,6 +65,11 @@ window.__require = function e(t, n, r) {
         var _this = null !== _super && _super.apply(this, arguments) || this;
         _this.symbol = null;
         _this.symbolAtlas = null;
+        _this.paylineAtlas = null;
+        _this.nodeNFS = null;
+        _this.symbolScatter = null;
+        _this.evenBall = null;
+        _this.assetParent = null;
         return _this;
       }
       KingKongAssets_1 = KingKongAssets;
@@ -79,6 +84,11 @@ window.__require = function e(t, n, r) {
       KingKongAssets.instance = null;
       __decorate([ property(KingKongSymbol_1.default) ], KingKongAssets.prototype, "symbol", void 0);
       __decorate([ property(cc.SpriteAtlas) ], KingKongAssets.prototype, "symbolAtlas", void 0);
+      __decorate([ property(cc.SpriteAtlas) ], KingKongAssets.prototype, "paylineAtlas", void 0);
+      __decorate([ property(cc.Node) ], KingKongAssets.prototype, "nodeNFS", void 0);
+      __decorate([ property(cc.Node) ], KingKongAssets.prototype, "symbolScatter", void 0);
+      __decorate([ property(cc.Node) ], KingKongAssets.prototype, "evenBall", void 0);
+      __decorate([ property(cc.Node) ], KingKongAssets.prototype, "assetParent", void 0);
       KingKongAssets = KingKongAssets_1 = __decorate([ ccclass ], KingKongAssets);
       return KingKongAssets;
     }(cc.Component);
@@ -86,6 +96,92 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "./KingKongSymbol": "KingKongSymbol"
+  } ],
+  KingKongAudio: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "04779T1u/ZBiIwn/wZl2yft", "KingKongAudio");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var AudioManager_1 = require("../../../Scritps/Parent/AudioManager");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var KingKongAudio = function(_super) {
+      __extends(KingKongAudio, _super);
+      function KingKongAudio() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.click = null;
+        _this.fsSpin = null;
+        _this.bgm_fs = null;
+        _this.SE_BigWin = null;
+        _this.SE_FreeSpinEnd = null;
+        _this.SE_ReelSpeedUp = null;
+        _this.SE_Scoring_01 = null;
+        _this.SE_ScoringEnd = null;
+        _this.SE_Base_Hit = [];
+        return _this;
+      }
+      KingKongAudio.prototype.start = function() {};
+      KingKongAudio.prototype.playClick = function() {
+        this.playEffect(this.click);
+      };
+      KingKongAudio.prototype.playMusic = function() {
+        if (this.isActiveMusic && this.backgroundMusicAudio) {
+          cc.audioEngine.playMusic(this.backgroundMusicAudio, true);
+          cc.audioEngine.setMusicVolume(.6);
+        }
+      };
+      KingKongAudio.prototype.playIndexTakeLine = function() {};
+      KingKongAudio.prototype.playSmalWin = function() {};
+      KingKongAudio.prototype.playBkgfs = function() {
+        this.stopMusic();
+        this.playEffect(this.fsSpin);
+        this.playEffect(this.bgm_fs, .6, true);
+      };
+      KingKongAudio.prototype.stopBkgFs = function() {
+        this.stopEffect(this.bgm_fs, true);
+        this.playMusic();
+      };
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "click", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "fsSpin", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "bgm_fs", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "SE_BigWin", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "SE_FreeSpinEnd", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "SE_ReelSpeedUp", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "SE_Scoring_01", void 0);
+      __decorate([ property(cc.AudioClip) ], KingKongAudio.prototype, "SE_ScoringEnd", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], KingKongAudio.prototype, "SE_Base_Hit", void 0);
+      KingKongAudio = __decorate([ ccclass ], KingKongAudio);
+      return KingKongAudio;
+    }(AudioManager_1.default);
+    exports.default = KingKongAudio;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Parent/AudioManager": void 0
   } ],
   KingKongCollum: [ function(require, module, exports) {
     "use strict";
@@ -234,11 +330,12 @@ window.__require = function e(t, n, r) {
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
+    var Windown_1 = require("../../../Scritps/Windown");
     var KingKongSymbol_1 = require("./KingKongSymbol");
     var KingKongView_1 = require("./KingKongView");
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
     var SPEED_TYPE = {
-      NORMAL: .1,
+      NORMAL: .08,
       TURBO: .05
     };
     var KingKongCollum = function(_super) {
@@ -258,7 +355,9 @@ window.__require = function e(t, n, r) {
         _this.spineNFS = null;
         _this.isNeerSpin = false;
         _this.isChangeSpeedNFS = false;
-        _this.speedNFS = SPEED_TYPE.NORMAL;
+        _this.speedNFS = .05;
+        _this.nodeNFS = null;
+        _this.resolveStop = null;
         return _this;
       }
       KingKongCollum.prototype.onLoad = function() {
@@ -290,6 +389,11 @@ window.__require = function e(t, n, r) {
           this.kingKongView.activeAllSymbol();
           this.kingKongView.allCollumStopCompleted();
         }
+        null != this.nodeNFS && (this.nodeNFS.active = false);
+        if (null != this.resolveStop) {
+          this.resolveStop();
+          this.resolveStop = null;
+        }
       };
       KingKongCollum.prototype.activeAllSymbol = function() {
         this.listSymbols.forEach(function(symbol) {
@@ -298,6 +402,7 @@ window.__require = function e(t, n, r) {
       };
       KingKongCollum.prototype.prepareStop = function() {
         this.hideNFS();
+        cc.log("prepareStop---");
       };
       KingKongCollum.prototype.Stop = function(listID) {
         return __awaiter(this, void 0, void 0, function() {
@@ -306,36 +411,64 @@ window.__require = function e(t, n, r) {
             return [ 2, new Promise(function(re, je) {
               _this.listIDResult = listID;
               if (_this.isNeerSpin) {
-                _this.listSymbols.forEach(function(sym) {
-                  sym.speed = SPEED_TYPE["TURBO"];
-                });
                 _this.isChangeSpeedNFS = true;
                 _this.showNFS();
+                _this.kingKongView.hideAllSymbol(12);
                 _this.listSymbols.forEach(function(sym) {
                   sym.sprite.node.color = cc.Color.WHITE;
                 });
                 _this.scheduleOnce(function() {
-                  _this.listSymbols.forEach(function(sym) {
-                    sym.speed = _this.speedNFS;
-                  });
                   _this.isChangeSpeedNFS = false;
                   _this.isStop = true;
-                  re(null);
-                }, 5);
+                  _this.resolveStop = re;
+                }, 3.5);
+                _this.slowDownSpeed();
               } else {
                 _this.isStop = true;
                 _this.scheduleOnce(function() {
                   re(null);
+                  Windown_1.Windown.KingKong.audio.playEffect(Windown_1.Windown.KingKong.audio.SE_Base_Hit[_this.collumIndex]);
                 }, .2);
               }
             }) ];
           });
         });
       };
+      KingKongCollum.prototype.showScatter = function() {
+        for (var i = 0; i < this.listSymbols.length; i++) 12 == this.listSymbols[i].id && this.listSymbols[i].showScatter();
+      };
+      KingKongCollum.prototype.slowDownSpeed = function(speedEnd) {
+        var _this = this;
+        void 0 === speedEnd && (speedEnd = .5);
+        Windown_1.Windown.KingKong.audio.playEffect(Windown_1.Windown.KingKong.audio.SE_ReelSpeedUp);
+        var obj = {
+          a: SPEED_TYPE["TURBO"]
+        };
+        cc.tween(obj).to(3.5, {
+          a: speedEnd
+        }, {
+          progress: function(start, end, current, ratio) {
+            _this.speedNFS = start + (end - start) * ratio;
+          },
+          easing: cc.easing.quadIn
+        }).start();
+      };
       KingKongCollum.prototype.showSymbolWin = function(index) {
         this.listSymbols[index].showEffectWin();
       };
-      KingKongCollum.prototype.showNFS = function() {};
+      KingKongCollum.prototype.getSpeedNFS = function() {
+        return this.speedNFS;
+      };
+      KingKongCollum.prototype.showNFS = function() {
+        if (null == this.nodeNFS) {
+          this.nodeNFS = cc.instantiate(Windown_1.Windown.KingKong.AssetsKingKong.nodeNFS);
+          this.nodeNFS.parent = this.node.parent;
+          this.nodeNFS.x = this.node.x;
+          this.nodeNFS.y = this.node.y;
+          Windown_1.Windown.KingKong.isFreeSpin ? this.nodeNFS.getComponent(cc.Animation).play("NearFreeSpin2") : this.nodeNFS.getComponent(cc.Animation).play("NearFreeSpin");
+        }
+        this.nodeNFS.active = true;
+      };
       KingKongCollum.prototype.hideNFS = function() {
         this.spineNFS && (this.spineNFS.active = false);
       };
@@ -343,6 +476,7 @@ window.__require = function e(t, n, r) {
         void 0 === ignoreID && (ignoreID = -1);
         this.listSymbols.forEach(function(symbol) {
           symbol.id != ignoreID ? symbol.sprite.node.color = cc.Color.GRAY : symbol.sprite.node.color = cc.Color.WHITE;
+          symbol.hideSpine();
         });
       };
       KingKongCollum.prototype.Reset = function() {
@@ -351,6 +485,9 @@ window.__require = function e(t, n, r) {
         this.listSymbols.forEach(function(symbol) {
           symbol.Reset();
         });
+        this.isNeerSpin = false;
+        this.speedNFS = .05;
+        this.isChangeSpeedNFS = false;
       };
       __decorate([ property ], KingKongCollum.prototype, "collumIndex", void 0);
       __decorate([ property ], KingKongCollum.prototype, "numberSymbol", void 0);
@@ -364,8 +501,504 @@ window.__require = function e(t, n, r) {
     exports.default = KingKongCollum;
     cc._RF.pop();
   }, {
+    "../../../Scritps/Windown": void 0,
     "./KingKongSymbol": "KingKongSymbol",
     "./KingKongView": "KingKongView"
+  } ],
+  KingKongEffect: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "41482Sn7CNPf6wQwGNTd1jq", "KingKongEffect");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var LbMonoSpace_1 = require("../../../Scritps/Other/LbMonoSpace");
+    var Util_1 = require("../../../Scritps/Util");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var KingKongEffect = function(_super) {
+      __extends(KingKongEffect, _super);
+      function KingKongEffect() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.effectContainer = null;
+        _this.animBigWin = null;
+        _this.lbBgWin = null;
+        _this.btnConfirm = null;
+        return _this;
+      }
+      KingKongEffect.prototype.start = function() {};
+      KingKongEffect.prototype.showBigWin = function(agWin) {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, rejects) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var boneKong, BigWin_FX;
+                var _this = this;
+                return __generator(this, function(_a) {
+                  try {
+                    this.effectContainer.active = true;
+                    boneKong = this.animBigWin.node.parent.getComponentInChildren(dragonBones.ArmatureDisplay);
+                    boneKong.playAnimation("Win_1", 1);
+                    this.animBigWin.node.parent.active = true;
+                    this.animBigWin.setAnimation(0, "Idle", false);
+                    this.lbBgWin.resetLb();
+                    this.lbBgWin.time = 3;
+                    this.lbBgWin.callBack = function() {
+                      _this.btnConfirm.node.active = true;
+                    };
+                    this.lbBgWin.setMoney(agWin, true);
+                    this.btnConfirm.node.active = false;
+                    this.btnConfirm.node.off("click");
+                    this.btnConfirm.node.on("click", function() {
+                      resolve(null);
+                      _this.animBigWin.node.parent.active = false;
+                      _this.effectContainer.active = false;
+                    });
+                    BigWin_FX = this.animBigWin.node.parent.getChildByName("BigWin_FX");
+                    cc.tween(BigWin_FX).by(2, {
+                      angle: -360
+                    }).repeatForever().start();
+                    cc.tween(BigWin_FX).set({
+                      opacity: 150
+                    }).to(.5, {
+                      opacity: 255
+                    }).start();
+                  } catch (e) {
+                    Util_1.Util.ThrowErrProsime(e);
+                  }
+                  return [ 2 ];
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      __decorate([ property(cc.Node) ], KingKongEffect.prototype, "effectContainer", void 0);
+      __decorate([ property(sp.Skeleton) ], KingKongEffect.prototype, "animBigWin", void 0);
+      __decorate([ property(LbMonoSpace_1.default) ], KingKongEffect.prototype, "lbBgWin", void 0);
+      __decorate([ property(cc.Button) ], KingKongEffect.prototype, "btnConfirm", void 0);
+      KingKongEffect = __decorate([ ccclass ], KingKongEffect);
+      return KingKongEffect;
+    }(cc.Component);
+    exports.default = KingKongEffect;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Other/LbMonoSpace": void 0,
+    "../../../Scritps/Util": void 0
+  } ],
+  KingKongHistoryDetail: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "80698mIAQJMvIKQ0wUsF36G", "KingKongHistoryDetail");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var KingKongHistoryDetail = function(_super) {
+      __extends(KingKongHistoryDetail, _super);
+      function KingKongHistoryDetail() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbTitle = null;
+        _this.lbTime = null;
+        _this.lbBet = null;
+        _this.lbWin = null;
+        _this.lbMNUser = null;
+        _this.parentItem = null;
+        _this.itemPayline = null;
+        _this.scrItemPayline = null;
+        _this.listItem = [];
+        _this.isFreeSpin = false;
+        _this.payLine = [];
+        return _this;
+      }
+      KingKongHistoryDetail.prototype.onLoad = function() {
+        for (var i = 0; i < this.parentItem.childrenCount; i++) {
+          var itemCol = this.parentItem.children[i];
+          this.listItem.push(itemCol.children);
+        }
+        this.payLine = Windown_1.Windown.KingKong.payLine;
+      };
+      KingKongHistoryDetail.prototype.show = function(SFSObject) {
+        this.node.active = true;
+        this.node.x = 721.812;
+        cc.Tween.stopAllByTarget(this.node);
+        this.node.opacity = 0;
+        cc.tween(this.node).to(.2, {
+          x: 0,
+          opacity: 255
+        }, {
+          easing: cc.easing.quadIn
+        }).start();
+        var date = SFSObject.get("date");
+        var jsonResult = SFSObject.get("infolog");
+        var obj = JSON.parse(jsonResult);
+        this.isFreeSpin = obj.freeSpin;
+        this.lbTitle.string = this.isFreeSpin ? "QUAY MI\u1ec4N PH\xcd" : "QUAY TH\u01af\u1edcNG";
+        this.lbTime.string = Windown_1.Windown.formatDate(new Date(date), "dd/MM HH:mm:ss");
+        var listResult = JSON.parse(obj.views);
+        for (var i = 0; i < 5; i++) for (var j = 0; j < 3; j++) {
+          var id = listResult[i][j];
+          this.listItem[i][j].getComponent(cc.Sprite).spriteFrame = Windown_1.Windown.KingKong.AssetsKingKong.symbolAtlas.getSpriteFrame(id.toString());
+          this.listItem[i][j].color = cc.Color.GRAY;
+        }
+        this.lbBet.string = Windown_1.Windown.formatNumber(20 * obj.agBet);
+        this.lbWin.string = Windown_1.Windown.formatNumber(obj.agWin);
+        this.lbMNUser.string = Windown_1.Windown.formatNumber(obj.agUser);
+        this.setLineAn(obj.listLineWin, listResult);
+      };
+      KingKongHistoryDetail.prototype.onClickClose = function() {
+        var _this = this;
+        Windown_1.Windown.KingKong.audio.playClick();
+        cc.Tween.stopAllByTarget(this.node);
+        cc.tween(this.node).to(.2, {
+          x: 720,
+          opacity: 0
+        }, {
+          easing: cc.easing.quadOut
+        }).call(function() {
+          _this.node.active = false;
+        }).start();
+      };
+      KingKongHistoryDetail.prototype.setLineAn = function(listLineWin, views) {
+        this.scrItemPayline.content.children.forEach(function(item) {
+          item.active = false;
+        });
+        for (var i = 0, l = listLineWin.length; i < l; i++) {
+          var symbol = listLineWin[i].symbol;
+          var stack = listLineWin[i].stack;
+          var payLine = Windown_1.Windown.KingKong.payLine[listLineWin[i].id - 1];
+          for (var j = 0; j < stack + 1; j++) this.listItem[j][payLine[j]].color = cc.Color.WHITE;
+          var itemPayline = this.scrItemPayline.content.children[i];
+          if (!cc.isValid(itemPayline)) {
+            itemPayline = cc.instantiate(this.scrItemPayline.content.children[0]);
+            itemPayline.parent = this.scrItemPayline.content;
+          }
+          itemPayline.active = true;
+          itemPayline.getComponentInChildren(cc.Sprite).spriteFrame = Windown_1.Windown.KingKong.AssetsKingKong.paylineAtlas.getSpriteFrame("line_" + listLineWin[i].id);
+          itemPayline.getChildByName("lbWin").getComponent(cc.Label).string = "W: " + Windown_1.Windown.formatMoney(listLineWin[i].agWinLine);
+          itemPayline.getChildByName("lbIdLine").getComponent(cc.Label).string = listLineWin[i].id + "";
+        }
+      };
+      __decorate([ property(cc.Label) ], KingKongHistoryDetail.prototype, "lbTitle", void 0);
+      __decorate([ property(cc.Label) ], KingKongHistoryDetail.prototype, "lbTime", void 0);
+      __decorate([ property(cc.Label) ], KingKongHistoryDetail.prototype, "lbBet", void 0);
+      __decorate([ property(cc.Label) ], KingKongHistoryDetail.prototype, "lbWin", void 0);
+      __decorate([ property(cc.Label) ], KingKongHistoryDetail.prototype, "lbMNUser", void 0);
+      __decorate([ property(cc.Node) ], KingKongHistoryDetail.prototype, "parentItem", void 0);
+      __decorate([ property(cc.Node) ], KingKongHistoryDetail.prototype, "itemPayline", void 0);
+      __decorate([ property(cc.ScrollView) ], KingKongHistoryDetail.prototype, "scrItemPayline", void 0);
+      KingKongHistoryDetail = __decorate([ ccclass ], KingKongHistoryDetail);
+      return KingKongHistoryDetail;
+    }(cc.Component);
+    exports.default = KingKongHistoryDetail;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  KingKongHistory: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "6c88flrUh5CK4nF9b9ArS5J", "KingKongHistory");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var PageData_1 = require("../../../Scritps/Popup/PageData/PageData");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var KingKongHistoryDetail_1 = require("./KingKongHistoryDetail");
+    var KingKongItemHistory_1 = require("./KingKongItemHistory");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var KingKongHistory = function(_super) {
+      __extends(KingKongHistory, _super);
+      function KingKongHistory() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.pageDate = null;
+        _this.detail = null;
+        _this.listData = null;
+        _this.maxRow = 11;
+        return _this;
+      }
+      KingKongHistory.prototype.show = function() {
+        this.node.active = true;
+        this.reset();
+        this.node.y = -1280;
+        cc.Tween.stopAllByTarget(this.node);
+        cc.tween(this.node).to(.3, {
+          y: 0
+        }, {
+          easing: cc.easing.quadOut
+        }).start();
+        ConectManager_1.ConectManager.getIns().sendRequest(REQUEST_CODE_1.REQUEST_CODE.HistoryInCa, null, Windown_1.Windown.KingKong.roomSFS);
+        Windown_1.Windown.UIManager.showLoading();
+      };
+      KingKongHistory.prototype.start = function() {};
+      KingKongHistory.prototype.reset = function() {
+        this.pageDate.setTotalPage(1);
+        this.pageDate.reset();
+        this.resetContent();
+      };
+      KingKongHistory.prototype.resetContent = function() {
+        var child = this.pageDate.content.children;
+        for (var i = 0, l = child.length; i < l; i++) child[i].active = false;
+      };
+      KingKongHistory.prototype.responseServer = function(sfsObj) {
+        Windown_1.Windown.UIManager.hideLoading();
+        var sfsArr = sfsObj.getSFSArray("history");
+        this.initWithListData(sfsArr);
+      };
+      KingKongHistory.prototype.initWithListData = function(listData) {
+        cc.log("history:" + Windown_1.Windown.SFSArrToJson(listData));
+        var child = this.pageDate.content.children;
+        var lengthRows = listData.size();
+        var totalPage = Math.floor(lengthRows / this.maxRow);
+        lengthRows % this.maxRow > 0 && totalPage++;
+        0 == totalPage && (totalPage = 1);
+        this.pageDate.setTotalPage(totalPage);
+        this.listData = listData;
+        this.onChangePage(1);
+      };
+      KingKongHistory.prototype.onChangePage = function(index) {
+        var parent = this.pageDate.content;
+        var child = parent.children;
+        var itemTemplate = child[0];
+        var start = (index - 1) * this.maxRow;
+        for (var i = 0, l = this.maxRow; i < l; i++) {
+          var node = child[i];
+          if (start < this.listData.size()) {
+            if (null == node) {
+              node = cc.instantiate(itemTemplate);
+              parent.addChild(node);
+              node.y = -(i + 1) * node.height + node.height / 2;
+            }
+            var sfsObj = this.listData.getSFSObject(start);
+            node.getComponent(KingKongItemHistory_1.default).initItem(sfsObj);
+            node.active = true;
+            start++;
+          } else {
+            if (!node) break;
+            node.active = false;
+          }
+        }
+      };
+      KingKongHistory.prototype.onClickClose = function() {
+        var _this = this;
+        Windown_1.Windown.KingKong.audio.playClick();
+        cc.Tween.stopAllByTarget(this.node);
+        cc.tween(this.node).to(.2, {
+          y: -1280
+        }, {
+          easing: cc.easing.quadIn
+        }).call(function() {
+          _this.node.active = false;
+        }).start();
+      };
+      KingKongHistory.prototype.showDetail = function(SFSObject) {
+        this.detail.show(SFSObject);
+      };
+      __decorate([ property(PageData_1.default) ], KingKongHistory.prototype, "pageDate", void 0);
+      __decorate([ property(KingKongHistoryDetail_1.default) ], KingKongHistory.prototype, "detail", void 0);
+      KingKongHistory = __decorate([ ccclass ], KingKongHistory);
+      return KingKongHistory;
+    }(cc.Component);
+    exports.default = KingKongHistory;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Popup/PageData/PageData": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./KingKongHistoryDetail": "KingKongHistoryDetail",
+    "./KingKongItemHistory": "KingKongItemHistory"
   } ],
   KingKongInfoBar: [ function(require, module, exports) {
     "use strict";
@@ -398,25 +1031,118 @@ window.__require = function e(t, n, r) {
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
+    var LbMoneyChange_1 = require("../../../Scritps/Obs/LbMoneyChange");
+    var Windown_1 = require("../../../Scritps/Windown");
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
     var KingKongInfoBar = function(_super) {
       __extends(KingKongInfoBar, _super);
       function KingKongInfoBar() {
         var _this = null !== _super && _super.apply(this, arguments) || this;
-        _this.label = null;
-        _this.text = "hello";
+        _this.lbTotalWin = null;
+        _this.lbInfo = null;
         return _this;
       }
       KingKongInfoBar.prototype.start = function() {};
       KingKongInfoBar.prototype.prepareSpin = function() {};
-      __decorate([ property(cc.Label) ], KingKongInfoBar.prototype, "label", void 0);
-      __decorate([ property ], KingKongInfoBar.prototype, "text", void 0);
+      KingKongInfoBar.prototype.updateTotalWin = function(agWin) {
+        var soundScore = Windown_1.Windown.KingKong.audio.playEffect(Windown_1.Windown.KingKong.audio.SE_Scoring_01);
+        this.lbTotalWin.resetLb();
+        this.lbTotalWin.time = 1.5;
+        this.lbTotalWin.setMoney(agWin);
+        this.lbTotalWin.cb = function() {
+          Windown_1.Windown.KingKong.audio.stopEffect(Windown_1.Windown.KingKong.audio.SE_Scoring_01);
+          Windown_1.Windown.KingKong.audio.playEffect(Windown_1.Windown.KingKong.audio.SE_ScoringEnd);
+        };
+        this.lbInfo.node.active = false;
+        this.lbTotalWin.node.parent.active = true;
+      };
+      KingKongInfoBar.prototype.updateInfoText = function(msg) {
+        this.lbInfo.node.active = true;
+        this.lbInfo.string = msg;
+        this.lbTotalWin.node.parent.active = false;
+      };
+      __decorate([ property(LbMoneyChange_1.default) ], KingKongInfoBar.prototype, "lbTotalWin", void 0);
+      __decorate([ property(cc.Label) ], KingKongInfoBar.prototype, "lbInfo", void 0);
       KingKongInfoBar = __decorate([ ccclass ], KingKongInfoBar);
       return KingKongInfoBar;
     }(cc.Component);
     exports.default = KingKongInfoBar;
     cc._RF.pop();
-  }, {} ],
+  }, {
+    "../../../Scritps/Obs/LbMoneyChange": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  KingKongItemHistory: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "9b00ddOoqRBj5E/WTaHQQlK", "KingKongItemHistory");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var KingKongItemHistory = function(_super) {
+      __extends(KingKongItemHistory, _super);
+      function KingKongItemHistory() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbTime = null;
+        _this.lbBet = null;
+        _this.lbWin = null;
+        _this.data = null;
+        return _this;
+      }
+      KingKongItemHistory.prototype.initItem = function(info) {
+        try {
+          this.data = info;
+          var date = this.data.get("date");
+          this.lbTime.string = Windown_1.Windown.formatDate(new Date(date), "dd/MM\nHH:mm:ss");
+          var jsonResult = this.data.get("infolog");
+          var obj = JSON.parse(jsonResult);
+          this.lbBet.string = Windown_1.Windown.formatNumber(50 * obj.agBet);
+          this.lbWin.string = Windown_1.Windown.formatNumber(obj.agWin);
+        } catch (e) {
+          console.error(e);
+        }
+      };
+      KingKongItemHistory.prototype.onClick = function() {
+        Windown_1.Windown.KingKong.audio.playClick();
+        Windown_1.Windown.KingKong.popupLichSu.showDetail(this.data);
+      };
+      __decorate([ property(cc.Label) ], KingKongItemHistory.prototype, "lbTime", void 0);
+      __decorate([ property(cc.Label) ], KingKongItemHistory.prototype, "lbBet", void 0);
+      __decorate([ property(cc.Label) ], KingKongItemHistory.prototype, "lbWin", void 0);
+      KingKongItemHistory = __decorate([ ccclass ], KingKongItemHistory);
+      return KingKongItemHistory;
+    }(cc.Component);
+    exports.default = KingKongItemHistory;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
   KingKongSettingAuto: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "48a94xzn2xAZ6ygRVAH5fFu", "KingKongSettingAuto");
@@ -542,7 +1268,7 @@ window.__require = function e(t, n, r) {
         }
         if (this.loseLimited < 1e3) {
           this.lbLoseLitmitedValue.node.active = true;
-          this.lbLoseLitmitedValue.string = "[-" + Windown_1.Windown.formatNumber(this.loseLimited * Windown_1.Windown.KingKong.batValue) + "]";
+          this.lbLoseLitmitedValue.string = "[-" + Windown_1.Windown.formatNumber(this.loseLimited * Windown_1.Windown.KingKong.betValue) + "]";
         } else this.lbLoseLitmitedValue.node.active = false;
       };
       KingKongSettingAuto.prototype.onClickTurbo = function() {
@@ -644,18 +1370,38 @@ window.__require = function e(t, n, r) {
           tgl.node.getComponentInChildren(cc.Label).string = Windown_1.Windown.formatNumber(listBet[i]) + "";
         }
       };
-      KingKongSetting.prototype.onClickHome = function() {};
+      KingKongSetting.prototype.onClickHome = function() {
+        Windown_1.Windown.KingKong.onClickBackToLobby();
+      };
       KingKongSetting.prototype.onClickSound = function() {
         this.soundOn = !this.soundOn;
         this.spriteSound.spriteFrame = this.sprSoundState[this.soundOn ? 0 : 1];
       };
       KingKongSetting.prototype.onClickRule = function() {
         this.nodeRule.active = true;
+        cc.Tween.stopAllByTarget(this.nodeRule);
+        cc.tween(this.nodeRule).set({
+          y: -1280,
+          opacity: 0
+        }).to(.3, {
+          y: 0,
+          opacity: 255
+        }, {
+          easing: cc.easing.quadIn
+        }).start();
         this.NodeFunction.active = false;
       };
       KingKongSetting.prototype.onHideRule = function() {
+        var _this = this;
         this.NodeFunction.active = true;
-        this.nodeRule.active = false;
+        cc.Tween.stopAllByTarget(this.nodeRule);
+        cc.tween(this.nodeRule).to(.2, {
+          y: -1280
+        }, {
+          easing: cc.easing.quadOut
+        }).call(function() {
+          _this.nodeRule.active = false;
+        }).start();
         this.scrRule.scrollToTop();
       };
       KingKongSetting.prototype.onHideSetting = function() {
@@ -667,6 +1413,10 @@ window.__require = function e(t, n, r) {
         }).call(function() {
           _this.node.active = false;
         }).start();
+      };
+      KingKongSetting.prototype.onClickHistory = function() {
+        Windown_1.Windown.KingKong.audio.playClick();
+        Windown_1.Windown.KingKong.onShowPopupHistory();
       };
       KingKongSetting.prototype.onClickSelectBet = function(even, data) {
         Windown_1.Windown.KingKong.setBetValue(parseInt(data));
@@ -733,8 +1483,13 @@ window.__require = function e(t, n, r) {
         _this.collumCtrl = null;
         _this.spriteAnim = null;
         _this.initSpriteScale = 1;
+        _this.animScatter = null;
+        _this.animWild = null;
         return _this;
       }
+      SymbolKingKong.prototype.update = function() {
+        this.collumCtrl.isChangeSpeedNFS && (this.speed = this.collumCtrl.speedNFS);
+      };
       SymbolKingKong.prototype.onLoad = function() {
         this.spriteAnim = this.sprite.node.getComponent(cc.Animation);
         this.symbolAtlas = KingKongAssets_1.default.instance.symbolAtlas;
@@ -747,7 +1502,7 @@ window.__require = function e(t, n, r) {
         this.sprite.spriteFrame = this.symbolAtlas.getSpriteFrame(idSprite + "");
         this.spine && (this.spine.active = false);
       };
-      SymbolKingKong.prototype.setSpine = function() {};
+      SymbolKingKong.prototype.setSpine = function(id) {};
       SymbolKingKong.prototype.setRandomSprite = function() {
         var randomId = Windown_1.Windown.RandomNumber(0, 10);
         this.sprite.spriteFrame = this.symbolAtlas.getSpriteFrame(randomId.toString());
@@ -772,13 +1527,10 @@ window.__require = function e(t, n, r) {
           this.setSprite(Windown_1.Windown.RandomNumber(0, 8), true);
         }
         this.indexSymbol++;
-        cc.tween(this.node).to(this.speed, {
-          y: this.node.y - this.collumCtrl.stepMove
+        cc.tween(this.node).by(this.speed, {
+          y: -this.collumCtrl.stepMove
         }).call(function() {
-          if (_this.collumCtrl.isStop) {
-            cc.log("Thang Nay Stop:" + _this.collumCtrl.node.name);
-            _this.stopMove();
-          } else _this.loopMove();
+          _this.collumCtrl.isStop ? _this.stopMove() : _this.loopMove();
         }).start();
       };
       SymbolKingKong.prototype.stopMove = function() {
@@ -793,19 +1545,24 @@ window.__require = function e(t, n, r) {
             this.stopMove();
           } else {
             this.node.y = this.collumCtrl.positionReset + this.collumCtrl.stepMove;
+            var easingg = (this.indexSymbol = 0) ? cc.easing.backOut : null;
             cc.tween(this.node).to(this.speed, {
               y: this.node.y - this.collumCtrl.stepMove
             }, {
-              easing: cc.easing.backOut
+              easing: easingg
             }).start();
             this.setSprite(Windown_1.Windown.RandomNumber(0, 9));
           }
         } else {
-          var easingg = this.indexSymbol + 1 == this.indexStop ? cc.easing.backOut : cc.easing.smooth;
+          var easingg = this.indexSymbol + 1 == this.indexStop ? cc.easing.backOut : null;
           var speedMove = this.indexSymbol + 1 == this.indexStop ? 3 * this.speed : this.speed;
+          if (this.collumCtrl.isNeerSpin) {
+            easingg = null;
+            speedMove = this.speed;
+          }
           this.indexSymbol++;
-          cc.tween(this.node).to(speedMove, {
-            y: this.node.y - this.collumCtrl.stepMove
+          cc.tween(this.node).by(speedMove, {
+            y: -this.collumCtrl.stepMove
           }, {
             easing: easingg
           }).call(function() {
@@ -814,13 +1571,25 @@ window.__require = function e(t, n, r) {
           3 == this.indexSymbol && this.scheduleOnce(function() {
             _this.collumCtrl.prepareStop();
           }, .85 * speedMove);
-          cc.tween(this.node).delay(.85 * speedMove).call(function() {
-            _this.collumCtrl.prepareStop();
-          });
         }
       };
       SymbolKingKong.prototype.showEffectWin = function() {
-        if (11 == this.id) ; else if (12 == this.id) ; else {
+        switch (this.id) {
+         case 11:
+          this.spine.active = true;
+          this.sprite.node.active = false;
+          this.spine.destroyAllChildren();
+          var symbol = cc.instantiate(Windown_1.Windown.KingKong.AssetsKingKong.assetParent.getChildByName("Symbol_" + this.id));
+          this.spine.addChild(symbol);
+          symbol.active = true;
+          break;
+
+         case 12:
+          this.spine.active = true;
+          this.sprite.node.active = false;
+          break;
+
+         default:
           this.spine.active = false;
           this.sprite.node.active = true;
           this.sprite.node.color = cc.Color.WHITE;
@@ -833,6 +1602,51 @@ window.__require = function e(t, n, r) {
         this.indexStop = -1;
         this.spriteAnim.stop();
         this.sprite.node.scale = this.initSpriteScale;
+        this.sprite.node.active = true;
+        this.spine.active = false;
+        this.hideSpine();
+      };
+      SymbolKingKong.prototype.showScatter = function() {
+        var _this = this;
+        this.sprite.node.active = false;
+        if (null == this.animScatter) {
+          this.animScatter = cc.instantiate(Windown_1.Windown.KingKong.AssetsKingKong.symbolScatter);
+          this.animScatter.parent = this.node;
+        }
+        this.scheduleOnce(function() {
+          _this.sprite.node.active = true;
+        }, 2);
+        this.scheduleOnce(function() {
+          var ball = cc.instantiate(Windown_1.Windown.KingKong.AssetsKingKong.evenBall);
+          var parentMid = Windown_1.Windown.KingKong.animKong.node.parent;
+          ball.active = true;
+          ball.parent = parentMid;
+          ball.setPosition(parentMid.convertToNodeSpaceAR(_this.node.parent.convertToWorldSpaceAR(_this.node.position)));
+          var posAnimKong = Windown_1.Windown.KingKong.animKong.node.position;
+          cc.tween(ball).to(.5, {
+            position: posAnimKong
+          }, {
+            easing: cc.easing.sineIn
+          }).call(function() {
+            if (3 == _this.collumCtrl.collumIndex) {
+              Windown_1.Windown.KingKong.animKong.playAnimation("Collect", 1);
+              Windown_1.Windown.KingKong.animKong.once("complete", function() {
+                Windown_1.Windown.KingKong.animKong.playAnimation("Idle_2", 1);
+                Windown_1.Windown.KingKong.animKong.once("complete", function() {
+                  Windown_1.Windown.KingKong.animKong.playAnimation("Win_2", 1);
+                });
+              });
+            }
+            ball.destroy();
+          }).start();
+        }, 1.5);
+        this.animScatter.active = true;
+        this.animScatter.getChildByName("Symbol_1_ske_0").getComponent(dragonBones.ArmatureDisplay).playAnimation("Symbol_1", 1);
+        this.animScatter.getChildByName("Symbol_1_ske_1").getComponent(dragonBones.ArmatureDisplay).playAnimation("Symbol_1", 1);
+      };
+      SymbolKingKong.prototype.hideSpine = function() {
+        null != this.animScatter && (this.animScatter.active = false);
+        null != this.animWild && (this.animWild.active = false);
       };
       __decorate([ property(cc.Sprite) ], SymbolKingKong.prototype, "sprite", void 0);
       __decorate([ property(cc.Node) ], SymbolKingKong.prototype, "spine", void 0);
@@ -993,7 +1807,7 @@ window.__require = function e(t, n, r) {
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
-    exports.GAME_STATE = exports.SPINE_TYPE = void 0;
+    exports.WIN_TYPE = exports.GAME_STATE = exports.SPINE_TYPE = void 0;
     var EVENT_MANAGER_1 = require("../../../Scritps/DefineTs/EVENT_MANAGER");
     var PlayerPP_1 = require("../../../Scritps/DefineTs/PlayerPP");
     var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
@@ -1005,7 +1819,10 @@ window.__require = function e(t, n, r) {
     var Util_1 = require("../../../Scritps/Util");
     var Windown_1 = require("../../../Scritps/Windown");
     var KingKongAssets_1 = require("./KingKongAssets");
+    var KingKongAudio_1 = require("./KingKongAudio");
     var KingKongCollum_1 = require("./KingKongCollum");
+    var KingKongEffect_1 = require("./KingKongEffect");
+    var KingKongHistory_1 = require("./KingKongHistory");
     var KingKongInfoBar_1 = require("./KingKongInfoBar");
     var KingKongSetting_1 = require("./KingKongSetting");
     var KingKongSettingAuto_1 = require("./KingKongSettingAuto");
@@ -1022,12 +1839,26 @@ window.__require = function e(t, n, r) {
       GAME_STATE[GAME_STATE["SHOWING_RESULT"] = 2] = "SHOWING_RESULT";
       GAME_STATE[GAME_STATE["JOIN_GAME"] = 3] = "JOIN_GAME";
     })(GAME_STATE = exports.GAME_STATE || (exports.GAME_STATE = {}));
+    var WIN_TYPE;
+    (function(WIN_TYPE) {
+      WIN_TYPE[WIN_TYPE["NORMAL"] = 0] = "NORMAL";
+      WIN_TYPE[WIN_TYPE["BIGWIN"] = 1] = "BIGWIN";
+    })(WIN_TYPE = exports.WIN_TYPE || (exports.WIN_TYPE = {}));
     var KingKongView = function(_super) {
       __extends(KingKongView, _super);
       function KingKongView() {
         var _this = null !== _super && _super.apply(this, arguments) || this;
         _this.bkgSprite = null;
         _this.collumContainer = null;
+        _this.sprGameName = null;
+        _this.maskFS = null;
+        _this.nodeFSLeft = null;
+        _this.nodeBottomNormal = null;
+        _this.nodePopupClickToFS = null;
+        _this.maskEndFS = null;
+        _this.maskGetFS = null;
+        _this.baseBgSpin = null;
+        _this.listSfBGSpin = [];
         _this.btnSpin = null;
         _this.btnAuto = null;
         _this.btnStopAuto = null;
@@ -1036,10 +1867,20 @@ window.__require = function e(t, n, r) {
         _this.lbBetValue = null;
         _this.lbBalance = null;
         _this.lbTotalWin = null;
+        _this.lbFSGet = null;
+        _this.lbFSRemain = null;
+        _this.lbFSTotal = null;
+        _this.lbFSTotalWin = null;
+        _this.animKong = null;
+        _this.animBaseBGVolcano = null;
+        _this.animBaseBGFront = null;
         _this.AssetsKingKong = null;
         _this.infoBar = null;
         _this.settingView = null;
         _this.settingAuto = null;
+        _this.effectController = null;
+        _this.popupLichSu = null;
+        _this.audio = null;
         _this.makeDelay = null;
         _this.listCol = [];
         _this.listCollum = [];
@@ -1047,14 +1888,22 @@ window.__require = function e(t, n, r) {
         _this.spinReelView = [];
         _this.isAutoSpin = false;
         _this.isTurbo = false;
+        _this.isScatter = false;
+        _this.isFreeSpin = false;
         _this.autoSpinRemain = 0;
         _this.limitLoseValue = 0;
         _this.betValue = 1e3;
         _this.gameType = -1;
+        _this.winType = 0;
         _this.curRoomBet = 100;
         _this.totalLineBet = 20;
-        _this.totalAgWin = 0;
+        _this.agWin = 0;
         _this.agUser = 0;
+        _this.freeSpinLeft = 0;
+        _this.currentFSTurn = 0;
+        _this.totalFreeSpin = 0;
+        _this.totalWinFS = 0;
+        _this.limitAgUserLose = 0;
         _this.dataFinish = null;
         _this.sfs = null;
         _this.roomSFS = null;
@@ -1064,6 +1913,7 @@ window.__require = function e(t, n, r) {
         _this.spinType = SPINE_TYPE.NORMAL;
         _this.gameState = GAME_STATE.JOIN_GAME;
         _this.payLine = [ [ 1, 1, 1, 1, 1 ], [ 0, 0, 0, 0, 0 ], [ 2, 2, 2, 2, 2 ], [ 0, 1, 2, 1, 0 ], [ 2, 1, 0, 1, 2 ], [ 0, 0, 1, 2, 2 ], [ 2, 2, 1, 0, 0 ], [ 1, 0, 1, 2, 1 ], [ 1, 2, 1, 0, 1 ], [ 1, 0, 0, 1, 0 ], [ 1, 2, 2, 1, 2 ], [ 0, 1, 0, 0, 1 ], [ 2, 1, 2, 2, 1 ], [ 0, 2, 0, 2, 0 ], [ 2, 0, 2, 0, 2 ], [ 1, 0, 2, 0, 1 ], [ 1, 2, 0, 2, 1 ], [ 0, 1, 1, 1, 0 ], [ 2, 1, 1, 1, 2 ], [ 0, 2, 2, 2, 0 ] ];
+        _this.indexSpin = 0;
         return _this;
       }
       KingKongView.prototype.onLoad = function() {
@@ -1081,6 +1931,7 @@ window.__require = function e(t, n, r) {
         this.setupView();
         this.gameState = GAME_STATE.JOIN_GAME;
         this.sendJoinRoom();
+        this.agUser = Windown_1.Windown.User.userAg;
       };
       KingKongView.prototype.sendJoinRoom = function() {
         cc.log("send creat room");
@@ -1098,6 +1949,23 @@ window.__require = function e(t, n, r) {
           this.onDisconnect();
         }
       };
+      KingKongView.prototype.onDestroy = function() {
+        Windown_1.Windown.KingKong = null;
+        if (this.dataFinish) {
+          Windown_1.Windown.MoneyUser.removeDelay(this.gameType);
+          this.dataFinish = null;
+        }
+        Windown_1.Windown.MoneyUser.endGameMOney(this.gameType);
+        cc.systemEvent.removeAll(this);
+        this.roomSFS = null;
+        this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR, this.onCreateError);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse);
+        Windown_1.Windown.UIManager.changeRotation();
+        this.makeDelay.clear();
+      };
       KingKongView.prototype.onDisconnect = function() {
         cc.log("disconnect");
         Windown_1.Windown.UIManager.hideLoading();
@@ -1113,8 +1981,11 @@ window.__require = function e(t, n, r) {
           this.handleFinish(SFSObject);
           break;
 
-         case REQUEST_CODE_1.REQUEST_CODE.HistoryNeko:
-         case REQUEST_CODE_1.REQUEST_CODE.HistoryChiTietNeko:
+         case REQUEST_CODE_1.REQUEST_CODE.HistoryInCa:
+          this.popupLichSu.responseServer(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.HistoryChiTietInCa:
           break;
 
          default:
@@ -1181,6 +2052,9 @@ window.__require = function e(t, n, r) {
           var col = this.listCol[i].getComponent(KingKongCollum_1.default);
           this.listCollum.push(col);
         }
+        this.animBaseBGFront.armatureName = "Volcano";
+        this.animBaseBGFront.playAnimation("Base_BG", -1);
+        this.animBaseBGVolcano.playAnimation("Base_BG", -1);
       };
       KingKongView.prototype.setBetValue = function(value) {
         this.betValue = value;
@@ -1208,23 +2082,52 @@ window.__require = function e(t, n, r) {
         Windown_1.Windown.UIManager.changeRotation(true);
       };
       KingKongView.prototype.onClickSpin = function() {
+        this.audio.playClick();
         cc.log("onClickSpin:", this.gameState);
         if (this.gameState == GAME_STATE.SHOWING_RESULT) return;
+        cc.log("totaFreeSPin=" + this.totalFreeSpin);
+        if (this.totalFreeSpin > 0) {
+          this.currentFSTurn++;
+          this.lbFSRemain.string = this.currentFSTurn + "";
+        }
         this.startSpin();
         this.setStateBtn();
         this.effectButtonSpin();
         this.sendClickSpin();
       };
+      KingKongView.prototype.onClickSpinTest = function() {
+        this.audio.playClick();
+        if (this.gameState == GAME_STATE.SHOWING_RESULT) return;
+        if (this.totalFreeSpin > 0) {
+          this.currentFSTurn++;
+          this.lbFSRemain.string = this.currentFSTurn + "";
+        }
+        this.startSpin();
+        this.setStateBtn();
+        this.effectButtonSpin();
+        this.sendClickSpinTest("[[1,2,3],[12,3,4],[12,5,6],[12,7,8],[9,10,11]]");
+      };
+      KingKongView.prototype.sendClickSpinTest = function(arr) {
+        this.lbBalance.setMoney(this.agUser - this.betValue);
+        var sfsObj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        sfsObj.putInt("bet", this.curRoomBet);
+        sfsObj.putUtfString("arr", arr);
+        ConectManager_1.ConectManager.getIns().sendRequest("testSpinInCa", sfsObj, this.roomSFS);
+      };
       KingKongView.prototype.sendClickSpin = function() {
+        this.lbBalance.setMoney(this.agUser - this.betValue);
         var sfsObj = ConectManager_1.ConectManager.getIns().getSFSObj();
         sfsObj.putInt("bet", this.curRoomBet);
         ConectManager_1.ConectManager.getIns().sendRequest(REQUEST_CODE_1.REQUEST_CODE.SpinInCa, sfsObj, this.roomSFS);
       };
       KingKongView.prototype.startSpin = function() {
-        if (this.autoSpinRemain > 0) {
+        if (this.autoSpinRemain > 0 && this.isAutoSpin) {
           this.autoSpinRemain--;
           this.lbAutoSpinRemain.node.active = true;
           this.lbAutoSpinRemain.string = this.autoSpinRemain + "";
+        } else {
+          this.autoSpinRemain = 0;
+          this.lbAutoSpinRemain.node.active = false;
         }
         this.setStateSpin(GAME_STATE.SPINNING);
         this.listCollum.forEach(function(col, index) {
@@ -1243,14 +2146,23 @@ window.__require = function e(t, n, r) {
           return;
         }
         this.dataFinish = data;
-        this.spinReelView = [ [ 8, 0, 5 ], [ 8, 0, 4 ], [ 8, 7, 1 ], [ 12, 2, 4 ], [ 7, 0, 11 ] ];
-        this.listLineWin = JSON.parse('[{"symbol":8,"stack":2,"id":2,"agWinLine":2000}]');
-        this.totalAgWin = this.dataFinish.getLong("agWin");
+        this.agWin = this.dataFinish.getLong("agWin");
         this.agUser = this.dataFinish.getLong("agUser");
+        this.spinReelView = JSON.parse(data.get("views"));
+        this.isScatter = data.getBool("isScarter");
+        this.listLineWin = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("listLineWin")));
+        this.isFreeSpin = data.getBool("freeSpin");
+        if (this.isScatter) {
+          this.totalFreeSpin += 15;
+          this.lbFSTotal.string = this.totalFreeSpin.toString();
+        }
+        this.isFreeSpin && (this.totalWinFS += this.agWin);
+        this.agWin > 10 * this.betValue ? this.winType = WIN_TYPE.BIGWIN : this.winType = WIN_TYPE.NORMAL;
         cc.log("listLineWin=", this.listLineWin);
+        this.setNearSpinEffect();
         this.scheduleOnce(function() {
           _this.handleStopSpin();
-        }, 1);
+        }, this.isAutoSpin ? .5 : 1);
       };
       KingKongView.prototype.getMakeDelay = function(time) {
         return this.makeDelay.getDelay(time);
@@ -1261,33 +2173,44 @@ window.__require = function e(t, n, r) {
           return __generator(this, function(_a) {
             switch (_a.label) {
              case 0:
-              _a.trys.push([ 0, 5, , 6 ]);
+              _a.trys.push([ 0, 8, , 9 ]);
               i = 0, l = this.listCollum.length;
               _a.label = 1;
 
              case 1:
-              if (!(i < l)) return [ 3, 4 ];
+              if (!(i < l)) return [ 3, 7 ];
               col = this.listCollum[i];
-              col.Stop(this.spinReelView[i]);
-              return [ 4, Windown_1.Windown.KingKong.getMakeDelay(.2).prosime ];
+              if (!col.isNeerSpin) return [ 3, 3 ];
+              return [ 4, col.Stop(this.spinReelView[i]) ];
 
              case 2:
               _a.sent();
-              _a.label = 3;
+              return [ 3, 4 ];
 
              case 3:
+              col.Stop(this.spinReelView[i]);
+              _a.label = 4;
+
+             case 4:
+              return [ 4, Windown_1.Windown.KingKong.getMakeDelay(this.isAutoSpin ? .1 : .25).prosime ];
+
+             case 5:
+              _a.sent();
+              _a.label = 6;
+
+             case 6:
               i++;
               return [ 3, 1 ];
 
-             case 4:
-              return [ 3, 6 ];
+             case 7:
+              return [ 3, 9 ];
 
-             case 5:
+             case 8:
               e_1 = _a.sent();
               Util_1.Util.ThrowErrProsime(e_1);
-              return [ 3, 6 ];
+              return [ 3, 9 ];
 
-             case 6:
+             case 9:
               return [ 2 ];
             }
           });
@@ -1301,21 +2224,130 @@ window.__require = function e(t, n, r) {
               this.setStateSpin(GAME_STATE.SHOWING_RESULT);
               this.setStateBtn();
               this.effectButtonSpin();
-              if (!(this.listLineWin.length > 0)) return [ 3, 2 ];
-              return [ 4, this.showAllWinLine() ];
+              if (!(this.currentFSTurn == this.totalFreeSpin && this.isFreeSpin)) return [ 3, 2 ];
+              return [ 4, this.showTotalWinFreeSPin() ];
 
              case 1:
               _a.sent();
               _a.label = 2;
 
              case 2:
-              return [ 4, Windown_1.Windown.KingKong.getMakeDelay(.2).prosime ];
+              if (!this.isScatter) return [ 3, 4 ];
+              return [ 4, this.showScatterSymbol() ];
 
              case 3:
+              _a.sent();
+              _a.label = 4;
+
+             case 4:
+              if (!(this.listLineWin.length > 0)) return [ 3, 6 ];
+              return [ 4, this.showAllWinLine() ];
+
+             case 5:
+              _a.sent();
+              _a.label = 6;
+
+             case 6:
+              if (!this.isScatter) return [ 3, 8 ];
+              return [ 4, this.showBgFS() ];
+
+             case 7:
+              _a.sent();
+              _a.label = 8;
+
+             case 8:
+              if (!(this.winType == WIN_TYPE.BIGWIN)) return [ 3, 10 ];
+              return [ 4, this.effectController.showBigWin(this.agWin) ];
+
+             case 9:
+              _a.sent();
+              _a.label = 10;
+
+             case 10:
+              return [ 4, Windown_1.Windown.KingKong.getMakeDelay(.2).prosime ];
+
+             case 11:
               _a.sent();
               this.resetSlotView();
               return [ 2 ];
             }
+          });
+        });
+      };
+      KingKongView.prototype.showScatterSymbol = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var i, e_2;
+                return __generator(this, function(_a) {
+                  switch (_a.label) {
+                   case 0:
+                    _a.trys.push([ 0, 2, , 3 ]);
+                    for (i = 0; i < this.listCollum.length; i++) this.listCollum[i].showScatter();
+                    return [ 4, Windown_1.Windown.KingKong.getMakeDelay(3).prosime ];
+
+                   case 1:
+                    _a.sent();
+                    resolve(null);
+                    return [ 3, 3 ];
+
+                   case 2:
+                    e_2 = _a.sent();
+                    Util_1.Util.ThrowErrProsime(e_2);
+                    return [ 3, 3 ];
+
+                   case 3:
+                    return [ 2 ];
+                  }
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      KingKongView.prototype.showBgFS = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var _this = this;
+                return __generator(this, function(_a) {
+                  try {
+                    this.sprGameName.active = false;
+                    this.animKong.node.active = false;
+                    this.animBaseBGVolcano.playAnimation("TS", 1);
+                    this.animBaseBGFront.playAnimation("TS", 1);
+                    this.maskFS.active = true;
+                    this.maskGetFS.active = true;
+                    this.nodeBottomNormal.active = false;
+                    this.nodeFSLeft.active = true;
+                    this.baseBgSpin.spriteFrame = this.listSfBGSpin[1];
+                    this.animBaseBGVolcano.once("complete", function() {
+                      _this.animBaseBGFront.playAnimation("Free_BG", -1);
+                      _this.animBaseBGVolcano.playAnimation("Free_BG", -1);
+                      _this.maskEndFS.active = false;
+                      cc.tween(_this.maskGetFS).delay(.5).to(.5, {
+                        scale: 2,
+                        opacity: 0
+                      }, {
+                        easing: cc.easing.sineIn
+                      }).call(function() {
+                        _this.maskGetFS.scale = 1;
+                        _this.maskGetFS.opacity = 255;
+                        _this.maskFS.active = false;
+                        resolve(null);
+                      }).start();
+                    });
+                  } catch (e) {
+                    Util_1.Util.ThrowErrProsime(e);
+                  }
+                  return [ 2 ];
+                });
+              });
+            }) ];
           });
         });
       };
@@ -1326,10 +2358,13 @@ window.__require = function e(t, n, r) {
             cc.log("showAllWinLine");
             return [ 2, new Promise(function(resolve, rejects) {
               return __awaiter(_this, void 0, void 0, function() {
-                var i, l, data;
+                var i, l, data, e_3;
                 return __generator(this, function(_a) {
-                  try {
+                  switch (_a.label) {
+                   case 0:
+                    _a.trys.push([ 0, 3, , 4 ]);
                     this.hideAllSymbol();
+                    this.infoBar.updateTotalWin(this.agWin);
                     this.lbBalance.setMoney(this.agUser);
                     for (i = 0, l = this.listLineWin.length; i < l; i++) {
                       data = this.listLineWin[i];
@@ -1340,10 +2375,25 @@ window.__require = function e(t, n, r) {
                       cc.log("OnCLickBtnSpin");
                       resolve(null);
                     });
-                  } catch (e) {
-                    Util_1.Util.ThrowErrProsime(e);
+                    if (!(this.isScatter || this.isFreeSpin || this.isAutoSpin)) return [ 3, 2 ];
+                    return [ 4, Windown_1.Windown.KingKong.getMakeDelay(1.5).prosime ];
+
+                   case 1:
+                    _a.sent();
+                    resolve(null);
+                    _a.label = 2;
+
+                   case 2:
+                    return [ 3, 4 ];
+
+                   case 3:
+                    e_3 = _a.sent();
+                    Util_1.Util.ThrowErrProsime(e_3);
+                    return [ 3, 4 ];
+
+                   case 4:
+                    return [ 2 ];
                   }
-                  return [ 2 ];
                 });
               });
             }) ];
@@ -1358,16 +2408,38 @@ window.__require = function e(t, n, r) {
         for (var i = 0; i < stack + 1; i++) this.listCollum[i].showSymbolWin(payLineID[i] + 1);
       };
       KingKongView.prototype.resetSlotView = function() {
-        cc.log("ResetSlotView");
+        cc.log("ResetSlotViewL Limit Lose=" + this.limitLoseValue);
+        cc.log("ResetSlotViewL Limit AGUser=" + this.limitAgUserLose);
         this.setStateSpin(GAME_STATE.PREPARE);
         this.infoBar.prepareSpin();
         this.listCollum.forEach(function(col) {
           col.Reset();
         });
+        if (this.agUser < this.limitAgUserLose) {
+          this.limitAgUserLose = 0;
+          false == this.isAutoSpin;
+          this.autoSpinRemain = 0;
+          this.infoBar.updateInfoText("Ch\u1ea1m h\u1ea1n m\u1ee9c d\u1eebng l\u1ed7!");
+        }
         if (this.isAutoSpin && this.autoSpinRemain > 0) this.onClickSpin(); else {
           this.lbAutoSpinRemain.node.active = false;
           this.btnStopAuto.node.active = false;
         }
+        if (this.isScatter) {
+          this.nodePopupClickToFS.active = true;
+          this.isAutoSpin = true;
+        }
+        this.isFreeSpin && (this.totalWinFS += this.agWin);
+        if (this.isFreeSpin && this.currentFSTurn == this.totalFreeSpin) {
+          this.isFreeSpin = false;
+          this.currentFSTurn = 0;
+          this.totalFreeSpin = 0;
+        }
+      };
+      KingKongView.prototype.hidePopupClickToFS = function() {
+        cc.log("clmmm");
+        this.nodePopupClickToFS.active = false;
+        this.onClickSpin();
       };
       KingKongView.prototype.hideAllSymbol = function(ignoredId) {
         void 0 === ignoredId && (ignoredId = -1);
@@ -1408,14 +2480,18 @@ window.__require = function e(t, n, r) {
         }).start();
       };
       KingKongView.prototype.onClickMenu = function() {
+        this.audio.playClick();
         this.settingView.node.active = true;
         this.settingView.show(1);
       };
       KingKongView.prototype.onClickChangeBet = function() {
+        this.audio.playClick();
+        if (this.isAutoSpin) return;
         this.settingView.node.active = true;
         this.settingView.show(2);
       };
       KingKongView.prototype.onClickAuto = function() {
+        this.audio.playClick();
         this.settingAuto.node.active = true;
         cc.tween(this.settingAuto.node).set({
           y: -this.settingAuto.node.height,
@@ -1428,6 +2504,7 @@ window.__require = function e(t, n, r) {
         }).start();
       };
       KingKongView.prototype.onClickStopAuto = function() {
+        this.audio.playClick();
         this.btnStopAuto.node.active = false;
         this.isAutoSpin = false;
         this.lbAutoSpinRemain.node.active = false;
@@ -1437,11 +2514,122 @@ window.__require = function e(t, n, r) {
         this.autoSpinRemain = numberSession;
         this.limitLoseValue = litmitValue * this.betValue;
         this.btnStopAuto.node.active = true;
+        this.lbAutoSpinRemain.string = this.autoSpinRemain + "";
+        this.lbAutoSpinRemain.node.active = true;
+        this.limitAgUserLose = this.agUser - this.limitLoseValue;
         this.onClickSpin();
+      };
+      KingKongView.prototype.setNearSpinEffect = function() {
+        var _this = this;
+        var scatterInCol = 0;
+        this.spinReelView.forEach(function(colView) {
+          scatterInCol >= 2 && 3 == _this.listCollum[_this.spinReelView.indexOf(colView)].collumIndex && (_this.listCollum[_this.spinReelView.indexOf(colView)].isNeerSpin = true);
+          colView.includes(12) && scatterInCol++;
+        });
+      };
+      KingKongView.prototype.showTotalWinFreeSPin = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var Volcano_text_1, Volcano_text_0, TS_MSG03_vn_png, e_4;
+                var _this = this;
+                return __generator(this, function(_a) {
+                  switch (_a.label) {
+                   case 0:
+                    _a.trys.push([ 0, 2, , 3 ]);
+                    this.maskEndFS.active = true;
+                    this.maskFS.active = true;
+                    this.maskGetFS.active = false;
+                    Volcano_text_1 = this.maskEndFS.getChildByName("Volcano_text_1").getComponent(dragonBones.ArmatureDisplay);
+                    Volcano_text_0 = this.maskEndFS.getChildByName("Volcano_text_0").getComponent(dragonBones.ArmatureDisplay);
+                    Volcano_text_1.playAnimation("FreeSpin_nd_1_fnt", 1);
+                    Volcano_text_0.playAnimation("FreeSpin_nd_1_fnt", 1);
+                    this.animBaseBGFront.playAnimation("FreeSpinEnd_1", 1);
+                    this.animBaseBGVolcano.playAnimation("FreeSpinEnd_1", 1);
+                    TS_MSG03_vn_png = this.maskEndFS.getChildByName("TS_MSG03_vn_png");
+                    TS_MSG03_vn_png.y = 400;
+                    TS_MSG03_vn_png.scaleY = .5;
+                    TS_MSG03_vn_png.opacity = 0;
+                    this.totalWinFS > 10 * this.betValue ? this.winType = WIN_TYPE.BIGWIN : this.winType = WIN_TYPE.NORMAL;
+                    cc.tween(TS_MSG03_vn_png).delay(2).call(function() {
+                      _this.lbFSTotalWin.setMoney(_this.totalWinFS);
+                    }).to(.3, {
+                      scaleY: 1,
+                      opacity: 255,
+                      y: 165
+                    }).to(.1, {
+                      scaleY: .8
+                    }).to(.1, {
+                      scaleY: 1
+                    }).delay(2.5).call(function() {
+                      _this.lbFSTotal.resetLb();
+                      _this.maskEndFS.active = false;
+                      _this.animBaseBGFront.playAnimation("Base_BG", -1);
+                      _this.animBaseBGVolcano.playAnimation("Base_BG", -1);
+                      _this.maskFS.active = false;
+                      _this.nodeFSLeft.active = false;
+                      _this.nodeBottomNormal.active = true;
+                      _this.baseBgSpin.spriteFrame = _this.listSfBGSpin[0];
+                      _this.animKong.node.active = true;
+                      _this.animKong.playAnimation("Idle_1", -1);
+                      _this.sprGameName.active = true;
+                      resolve(null);
+                    }).start();
+                    return [ 4, Windown_1.Windown.KingKong.getMakeDelay(3).prosime ];
+
+                   case 1:
+                    _a.sent();
+                    return [ 3, 3 ];
+
+                   case 2:
+                    e_4 = _a.sent();
+                    Util_1.Util.ThrowErrProsime(e_4);
+                    return [ 3, 3 ];
+
+                   case 3:
+                    return [ 2 ];
+                  }
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      KingKongView.prototype.showBigWin = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, rejects) {
+              return __awaiter(_this, void 0, void 0, function() {
+                return __generator(this, function(_a) {
+                  return [ 2 ];
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      KingKongView.prototype.onClickBackToLobby = function() {
+        Windown_1.Windown.KingKong.audio.playClick();
+        this.roomSFS ? ConectManager_1.ConectManager.getIns().sendLeaveRoom(this.roomSFS) : cc.director.loadScene("main");
+      };
+      KingKongView.prototype.onShowPopupHistory = function() {
+        this.popupLichSu.show();
       };
       KingKongView.instance = null;
       __decorate([ property(cc.Node) ], KingKongView.prototype, "bkgSprite", void 0);
       __decorate([ property(cc.Node) ], KingKongView.prototype, "collumContainer", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "sprGameName", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "maskFS", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "nodeFSLeft", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "nodeBottomNormal", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "nodePopupClickToFS", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "maskEndFS", void 0);
+      __decorate([ property(cc.Node) ], KingKongView.prototype, "maskGetFS", void 0);
+      __decorate([ property(cc.Sprite) ], KingKongView.prototype, "baseBgSpin", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], KingKongView.prototype, "listSfBGSpin", void 0);
       __decorate([ property(cc.Button) ], KingKongView.prototype, "btnSpin", void 0);
       __decorate([ property(cc.Button) ], KingKongView.prototype, "btnAuto", void 0);
       __decorate([ property(cc.Button) ], KingKongView.prototype, "btnStopAuto", void 0);
@@ -1450,10 +2638,20 @@ window.__require = function e(t, n, r) {
       __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbBetValue", void 0);
       __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbBalance", void 0);
       __decorate([ property(cc.Label) ], KingKongView.prototype, "lbTotalWin", void 0);
+      __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbFSGet", void 0);
+      __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbFSRemain", void 0);
+      __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbFSTotal", void 0);
+      __decorate([ property(LbMonoSpace_1.default) ], KingKongView.prototype, "lbFSTotalWin", void 0);
+      __decorate([ property(dragonBones.ArmatureDisplay) ], KingKongView.prototype, "animKong", void 0);
+      __decorate([ property(dragonBones.ArmatureDisplay) ], KingKongView.prototype, "animBaseBGVolcano", void 0);
+      __decorate([ property(dragonBones.ArmatureDisplay) ], KingKongView.prototype, "animBaseBGFront", void 0);
       __decorate([ property(KingKongAssets_1.default) ], KingKongView.prototype, "AssetsKingKong", void 0);
       __decorate([ property(KingKongInfoBar_1.default) ], KingKongView.prototype, "infoBar", void 0);
       __decorate([ property(KingKongSetting_1.default) ], KingKongView.prototype, "settingView", void 0);
       __decorate([ property(KingKongSettingAuto_1.default) ], KingKongView.prototype, "settingAuto", void 0);
+      __decorate([ property(KingKongEffect_1.default) ], KingKongView.prototype, "effectController", void 0);
+      __decorate([ property(KingKongHistory_1.default) ], KingKongView.prototype, "popupLichSu", void 0);
+      __decorate([ property(KingKongAudio_1.default) ], KingKongView.prototype, "audio", void 0);
       __decorate([ property([ cc.Node ]) ], KingKongView.prototype, "listCol", void 0);
       KingKongView = __decorate([ ccclass ], KingKongView);
       return KingKongView;
@@ -1472,9 +2670,12 @@ window.__require = function e(t, n, r) {
     "../../../Scritps/Util": void 0,
     "../../../Scritps/Windown": void 0,
     "./KingKongAssets": "KingKongAssets",
+    "./KingKongAudio": "KingKongAudio",
     "./KingKongCollum": "KingKongCollum",
+    "./KingKongEffect": "KingKongEffect",
+    "./KingKongHistory": "KingKongHistory",
     "./KingKongInfoBar": "KingKongInfoBar",
     "./KingKongSetting": "KingKongSetting",
     "./KingKongSettingAuto": "KingKongSettingAuto"
   } ]
-}, {}, [ "KingKongAssets", "KingKongCollum", "KingKongInfoBar", "KingKongSetting", "KingKongSettingAuto", "KingKongSymbol", "KingKongView" ]);
+}, {}, [ "KingKongAssets", "KingKongAudio", "KingKongCollum", "KingKongEffect", "KingKongHistory", "KingKongHistoryDetail", "KingKongInfoBar", "KingKongItemHistory", "KingKongSetting", "KingKongSettingAuto", "KingKongSymbol", "KingKongView" ]);

@@ -1,7 +1,7 @@
 [
   1,
   [
-    "edliMjdHxGdrnEi0vu3hGQ"
+    "f0F+pswABAgraMRdGINY0S"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "12",
+      "name": "mayathanglon",
       "rect": [
-        0,
-        0,
-        155,
-        202
+        3,
+        3,
+        2028,
+        1006
       ],
       "offset": [
-        0,
-        0
+        -7,
+        6
       ],
       "originalSize": [
-        155,
-        202
+        2048,
+        1024
       ],
       "capInsets": [
         0,

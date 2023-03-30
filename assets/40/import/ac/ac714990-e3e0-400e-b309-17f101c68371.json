@@ -1,7 +1,7 @@
 [
   1,
   [
-    "edliMjdHxGdrnEi0vu3hGQ"
+    "22G2xewcBEY6HBBf8sO37C"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "12",
+      "name": "mayanohu",
       "rect": [
-        0,
-        0,
-        155,
-        202
+        3,
+        11,
+        1931,
+        494
       ],
       "offset": [
-        0,
-        0
+        -55.5,
+        -2
       ],
       "originalSize": [
-        155,
-        202
+        2048,
+        512
       ],
       "capInsets": [
         0,

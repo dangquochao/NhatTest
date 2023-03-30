@@ -1,0 +1,62 @@
+
+mayanohu.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bush
+  rotate: false
+  xy: 2, 265
+  size: 715, 241
+  orig: 715, 241
+  offset: 0, 0
+  index: -1
+Feather
+  rotate: false
+  xy: 1242, 278
+  size: 361, 228
+  orig: 361, 228
+  offset: 0, 0
+  index: -1
+Flare
+  rotate: true
+  xy: 1869, 321
+  size: 185, 67
+  orig: 185, 67
+  offset: 0, 0
+  index: -1
+Hu
+  rotate: false
+  xy: 1605, 280
+  size: 262, 226
+  orig: 262, 226
+  offset: 0, 0
+  index: -1
+No
+  rotate: false
+  xy: 417, 36
+  size: 291, 227
+  orig: 291, 227
+  offset: 0, 0
+  index: -1
+Red feather
+  rotate: false
+  xy: 719, 148
+  size: 521, 358
+  orig: 521, 358
+  offset: 0, 0
+  index: -1
+Totem
+  rotate: true
+  xy: 2, 2
+  size: 261, 413
+  orig: 261, 413
+  offset: 0, 0
+  index: -1
+flames_flash_green
+  rotate: false
+  xy: 1242, 148
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

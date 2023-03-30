@@ -1,7 +1,7 @@
 [
   1,
   [
-    "edliMjdHxGdrnEi0vu3hGQ"
+    "ca1z9cdX9LZZHVGx1g8qvI"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "12",
+      "name": "line_15",
       "rect": [
         0,
         0,
-        155,
-        202
+        117,
+        71
       ],
       "offset": [
         0,
         0
       ],
       "originalSize": [
-        155,
-        202
+        117,
+        71
       ],
       "capInsets": [
         0,

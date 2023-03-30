@@ -1,7 +1,7 @@
 [
   1,
   [
-    "edliMjdHxGdrnEi0vu3hGQ"
+    "0124E96elKcZc7EQ/N3rWw"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "12",
+      "name": "Symbol_0_tex_1",
       "rect": [
-        0,
-        0,
-        155,
-        202
+        3,
+        3,
+        894,
+        816
       ],
       "offset": [
         0,
-        0
+        39
       ],
       "originalSize": [
-        155,
-        202
+        900,
+        900
       ],
       "capInsets": [
         0,
