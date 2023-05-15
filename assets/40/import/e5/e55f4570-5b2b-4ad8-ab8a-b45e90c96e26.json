@@ -1,1 +1,51 @@
-[1,["f5SWwlYwlBn5n3Z6eXuDI/"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"LoadingBar_02_png","rect":[0,0,503,23],"offset":[0,0],"originalSize":[503,23],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "f5SWwlYwlBn5n3Z6eXuDI/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "LoadingBar_02_png",
+      "rect": [
+        0,
+        0,
+        503,
+        23
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        503,
+        23
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

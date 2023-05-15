@@ -1,1 +1,1017 @@
-[1,["7a3UIhAeJKO4eWZYj/fE8g","d4gTOLyRhOJLyR3iVr9NYT","43ldunHv9O56YkTtZ87Flz","5abxnQOUFHpa9iGuGvrB+7","b8Hu1cr2hOFaFf9raPUBYQ","bb3OujRvRKhpHAUtxyrhy8","aeul59uStJZYhBpXiggqhG","fcwMg4FJ9Ka7egnAhXBI84","88+x7y0WpFCptoX2PGyP6B","b7fWHo0DVIJ6aKW5xMps/L","cdPlzYQ81FZ7bQnWq8+iSs","b425NupgRDjaT1fji5WGN5","5dJowR2ZZLNZwfFD7AWq7i","f1f2lZvFBNQoHECn04IpGw","4fg31Y1qxP563z6mVHNgLL","03L9ElC6FOEoBJ61Ho65/5","a9bUKy8JNGvbvUyqUq0bZd","b3f6AUCYhI0oTjxYWhrTSl","aa53LrHt1Jt6TWHufu4fp3","1acLg3zopK6pVHg5pB2jmC","14TI3S77lNVqC0Coyqknl4"],["_textureSetter","turbo_lightning_01","turbo_lightning_04","turbo_lightning_03","turbo_lightning_00","turbo_lightning_02","turbo_lightning_11","turbo_lightning_10","turbo_lightning_09","turbo_lightning_08","turbo_trans_04","turbo_lightning_07","turbo_lightning_06","turbo_lightning_05","turbo_lightning_13","turbo_lightning_14","turbo_lightning_12","turbo_trans_00","turbo_trans_01","turbo_trans_02","turbo_trans_03"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[{"name":"turbo_lightning_14","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_trans_03","rect":[1,43,36,44],"offset":[0,0],"originalSize":[50,50],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_trans_02","rect":[47,41,36,44],"offset":[0,0],"originalSize":[50,50],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_04","rect":[93,31,16,30],"offset":[-1,-4],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_13","rect":[53,91,22,34],"offset":[-2,9],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_03","rect":[93,1,12,20],"offset":[2,1],"originalSize":[60,60],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_06","rect":[53,79,10,38],"offset":[-5,-7],"originalSize":[60,60],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_09","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_12","rect":[77,93,28,30],"offset":[-7,9],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_trans_01","rect":[47,1,38,44],"offset":[-1,0],"originalSize":[50,50],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_11","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_trans_00","rect":[1,1,40,44],"offset":[-1,0],"originalSize":[50,50],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_07","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"Alats1.plist",[{},"turbo_lightning_01",6,0,"turbo_lightning_04",6,1,"turbo_lightning_03",6,2,"turbo_lightning_00",6,3,"turbo_lightning_02",6,4,"turbo_lightning_11",6,5,"turbo_lightning_10",6,6,"turbo_lightning_09",6,7,"turbo_lightning_08",6,8,"turbo_trans_04",6,9,"turbo_lightning_07",6,10,"turbo_lightning_06",6,11,"turbo_lightning_05",6,12,"turbo_lightning_13",6,13,"turbo_lightning_14",6,14,"turbo_lightning_12",6,15,"turbo_trans_00",6,16,"turbo_trans_01",6,17,"turbo_trans_02",6,18,"turbo_trans_03",6,19]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]],[[{"name":"turbo_lightning_08","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_00","rect":[93,63,16,28],"offset":[12,14],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_02","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_trans_04","rect":[1,81,34,44],"offset":[0,0],"originalSize":[50,50],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_01","rect":[93,15,14,18],"offset":[5,9],"originalSize":[60,60],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_05","rect":[37,81,14,40],"offset":[-5,-8],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"turbo_lightning_10","rect":[111,31,3,3],"offset":[-28.5,28.5],"originalSize":[60,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "7a3UIhAeJKO4eWZYj/fE8g",
+    "d4gTOLyRhOJLyR3iVr9NYT",
+    "43ldunHv9O56YkTtZ87Flz",
+    "5abxnQOUFHpa9iGuGvrB+7",
+    "b8Hu1cr2hOFaFf9raPUBYQ",
+    "bb3OujRvRKhpHAUtxyrhy8",
+    "aeul59uStJZYhBpXiggqhG",
+    "fcwMg4FJ9Ka7egnAhXBI84",
+    "88+x7y0WpFCptoX2PGyP6B",
+    "b7fWHo0DVIJ6aKW5xMps/L",
+    "cdPlzYQ81FZ7bQnWq8+iSs",
+    "b425NupgRDjaT1fji5WGN5",
+    "5dJowR2ZZLNZwfFD7AWq7i",
+    "f1f2lZvFBNQoHECn04IpGw",
+    "4fg31Y1qxP563z6mVHNgLL",
+    "03L9ElC6FOEoBJ61Ho65/5",
+    "a9bUKy8JNGvbvUyqUq0bZd",
+    "b3f6AUCYhI0oTjxYWhrTSl",
+    "aa53LrHt1Jt6TWHufu4fp3",
+    "1acLg3zopK6pVHg5pB2jmC",
+    "14TI3S77lNVqC0Coyqknl4"
+  ],
+  [
+    "_textureSetter",
+    "turbo_lightning_01",
+    "turbo_lightning_04",
+    "turbo_lightning_03",
+    "turbo_lightning_00",
+    "turbo_lightning_02",
+    "turbo_lightning_11",
+    "turbo_lightning_10",
+    "turbo_lightning_09",
+    "turbo_lightning_08",
+    "turbo_trans_04",
+    "turbo_lightning_07",
+    "turbo_lightning_06",
+    "turbo_lightning_05",
+    "turbo_lightning_13",
+    "turbo_lightning_14",
+    "turbo_lightning_12",
+    "turbo_trans_00",
+    "turbo_trans_01",
+    "turbo_trans_02",
+    "turbo_trans_03"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "turbo_lightning_14",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_trans_03",
+          "rect": [
+            1,
+            43,
+            36,
+            44
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            50
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_trans_02",
+          "rect": [
+            47,
+            41,
+            36,
+            44
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            50
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_04",
+          "rect": [
+            93,
+            31,
+            16,
+            30
+          ],
+          "offset": [
+            -1,
+            -4
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_13",
+          "rect": [
+            53,
+            91,
+            22,
+            34
+          ],
+          "offset": [
+            -2,
+            9
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_03",
+          "rect": [
+            93,
+            1,
+            12,
+            20
+          ],
+          "offset": [
+            2,
+            1
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_06",
+          "rect": [
+            53,
+            79,
+            10,
+            38
+          ],
+          "offset": [
+            -5,
+            -7
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_09",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_12",
+          "rect": [
+            77,
+            93,
+            28,
+            30
+          ],
+          "offset": [
+            -7,
+            9
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_trans_01",
+          "rect": [
+            47,
+            1,
+            38,
+            44
+          ],
+          "offset": [
+            -1,
+            0
+          ],
+          "originalSize": [
+            50,
+            50
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_11",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_trans_00",
+          "rect": [
+            1,
+            1,
+            40,
+            44
+          ],
+          "offset": [
+            -1,
+            0
+          ],
+          "originalSize": [
+            50,
+            50
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_07",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Alats1.plist",
+          [
+            {},
+            "turbo_lightning_01",
+            6,
+            0,
+            "turbo_lightning_04",
+            6,
+            1,
+            "turbo_lightning_03",
+            6,
+            2,
+            "turbo_lightning_00",
+            6,
+            3,
+            "turbo_lightning_02",
+            6,
+            4,
+            "turbo_lightning_11",
+            6,
+            5,
+            "turbo_lightning_10",
+            6,
+            6,
+            "turbo_lightning_09",
+            6,
+            7,
+            "turbo_lightning_08",
+            6,
+            8,
+            "turbo_trans_04",
+            6,
+            9,
+            "turbo_lightning_07",
+            6,
+            10,
+            "turbo_lightning_06",
+            6,
+            11,
+            "turbo_lightning_05",
+            6,
+            12,
+            "turbo_lightning_13",
+            6,
+            13,
+            "turbo_lightning_14",
+            6,
+            14,
+            "turbo_lightning_12",
+            6,
+            15,
+            "turbo_trans_00",
+            6,
+            16,
+            "turbo_trans_01",
+            6,
+            17,
+            "turbo_trans_02",
+            6,
+            18,
+            "turbo_trans_03",
+            6,
+            19
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_08",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_00",
+          "rect": [
+            93,
+            63,
+            16,
+            28
+          ],
+          "offset": [
+            12,
+            14
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_02",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_trans_04",
+          "rect": [
+            1,
+            81,
+            34,
+            44
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            50,
+            50
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_01",
+          "rect": [
+            93,
+            15,
+            14,
+            18
+          ],
+          "offset": [
+            5,
+            9
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_05",
+          "rect": [
+            37,
+            81,
+            14,
+            40
+          ],
+          "offset": [
+            -5,
+            -8
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "turbo_lightning_10",
+          "rect": [
+            111,
+            31,
+            3,
+            3
+          ],
+          "offset": [
+            -28.5,
+            28.5
+          ],
+          "originalSize": [
+            60,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

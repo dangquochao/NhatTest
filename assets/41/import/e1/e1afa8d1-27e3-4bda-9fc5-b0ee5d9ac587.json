@@ -1,1 +1,51 @@
-[1,["9es4HQCJ9Okadb/MnwFugv"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"anim_dealer","rect":[2,3,1839,519],"offset":[-0.5,-0.5],"originalSize":[1844,524],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "9es4HQCJ9Okadb/MnwFugv"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "anim_dealer",
+      "rect": [
+        2,
+        3,
+        1839,
+        519
+      ],
+      "offset": [
+        -0.5,
+        -0.5
+      ],
+      "originalSize": [
+        1844,
+        524
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,1 +1,52 @@
-[1,["afA1UAHGRMLaXWrYtl8Cxg"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"fish_1307_01","rect":[1289,502,477,436],"offset":[0,0],"originalSize":[477,436],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "afA1UAHGRMLaXWrYtl8Cxg"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "fish_1307_01",
+      "rect": [
+        1289,
+        502,
+        477,
+        436
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        477,
+        436
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

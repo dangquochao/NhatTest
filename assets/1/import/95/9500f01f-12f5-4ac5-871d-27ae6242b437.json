@@ -1,1 +1,51 @@
-[1,["a4aLJY/6BD9rzaNo6O9t+y"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"light_1","rect":[0,0,126,127],"offset":[0,0],"originalSize":[126,127],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "a4aLJY/6BD9rzaNo6O9t+y"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "light_1",
+      "rect": [
+        0,
+        0,
+        126,
+        127
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        126,
+        127
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

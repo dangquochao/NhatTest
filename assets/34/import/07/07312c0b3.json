@@ -1,1 +1,462 @@
-[1,["89K2dDWG9N/6Opv6osKaWd"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"fyt_cloud_03","rect":[1697,1026,519,321],"offset":[0,0],"originalSize":[519,321],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_lily_02_compressed","rect":[1,943,669,216],"offset":[0,0],"originalSize":[669,216],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"peach_flower01","rect":[1579,1,403,418],"offset":[0,3],"originalSize":[403,426],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_tingzi","rect":[1547,406,480,343],"offset":[0,0],"originalSize":[480,343],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_xiang_lu","rect":[1378,1026,317,338],"offset":[0,0],"originalSize":[317,338],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_cloud_01","rect":[1331,1,404,214],"offset":[0,0],"originalSize":[404,214],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_bridge_compressed","rect":[1378,407,519,150],"offset":[0,0],"originalSize":[519,150],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_cloud_02","rect":[1183,1425,394,180],"offset":[1,0],"originalSize":[396,180],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_peach_flower_02_compressed","rect":[1579,751,395,273],"offset":[0,-1],"originalSize":[395,275],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_cloud_04","rect":[1086,868,555,290],"offset":[0,0],"originalSize":[555,290],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fyt_lily_01_compressed","rect":[931,929,594,153],"offset":[0,0],"originalSize":[594,153],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "89K2dDWG9N/6Opv6osKaWd"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "fyt_cloud_03",
+          "rect": [
+            1697,
+            1026,
+            519,
+            321
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            519,
+            321
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_lily_02_compressed",
+          "rect": [
+            1,
+            943,
+            669,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            669,
+            216
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "peach_flower01",
+          "rect": [
+            1579,
+            1,
+            403,
+            418
+          ],
+          "offset": [
+            0,
+            3
+          ],
+          "originalSize": [
+            403,
+            426
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_tingzi",
+          "rect": [
+            1547,
+            406,
+            480,
+            343
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            480,
+            343
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_xiang_lu",
+          "rect": [
+            1378,
+            1026,
+            317,
+            338
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            317,
+            338
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_cloud_01",
+          "rect": [
+            1331,
+            1,
+            404,
+            214
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            404,
+            214
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_bridge_compressed",
+          "rect": [
+            1378,
+            407,
+            519,
+            150
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            519,
+            150
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_cloud_02",
+          "rect": [
+            1183,
+            1425,
+            394,
+            180
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "originalSize": [
+            396,
+            180
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_peach_flower_02_compressed",
+          "rect": [
+            1579,
+            751,
+            395,
+            273
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "originalSize": [
+            395,
+            275
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_cloud_04",
+          "rect": [
+            1086,
+            868,
+            555,
+            290
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            555,
+            290
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fyt_lily_01_compressed",
+          "rect": [
+            931,
+            929,
+            594,
+            153
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            594,
+            153
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

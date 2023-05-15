@@ -1,1 +1,51 @@
-[1,["2fzIybkG5IGrbkOj9eKYMP"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"ef_near_win_spine","rect":[0,0,1826,587],"offset":[0,0],"originalSize":[1826,587],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "2fzIybkG5IGrbkOj9eKYMP"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ef_near_win_spine",
+      "rect": [
+        0,
+        0,
+        1826,
+        587
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1826,
+        587
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
