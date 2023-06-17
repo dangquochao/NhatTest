@@ -1,1 +1,137 @@
-[1,["0f2rV7EuVCVJzUtQ7TCpiN"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"fs","rect":[0,63,439,231],"offset":[0,0],"originalSize":[439,231],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"btn_start","rect":[0,0,184,63],"offset":[0,0],"originalSize":[184,63],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"bns_desc","rect":[0,502,605,186],"offset":[0,0],"originalSize":[605,186],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "0f2rV7EuVCVJzUtQ7TCpiN"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "fs",
+          "rect": [
+            0,
+            63,
+            439,
+            231
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            439,
+            231
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "btn_start",
+          "rect": [
+            0,
+            0,
+            184,
+            63
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            184,
+            63
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bns_desc",
+          "rect": [
+            0,
+            502,
+            605,
+            186
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            605,
+            186
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

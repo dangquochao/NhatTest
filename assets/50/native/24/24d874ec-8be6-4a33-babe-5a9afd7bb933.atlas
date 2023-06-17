@@ -13,8 +13,8 @@ bg
   index: -1
 finish
   rotate: false
-  xy: 2, 122
-  size: 145, 46
+  xy: 0, 120
+  size: 152, 46
   orig: 145, 46
   offset: 0, 0
   index: -1
@@ -27,8 +27,8 @@ finish2
   index: -1
 startgame
   rotate: false
-  xy: 539, 756
-  size: 263, 44
+  xy: 539, 746
+  size: 263, 53
   orig: 263, 44
   offset: 0, 0
   index: -1

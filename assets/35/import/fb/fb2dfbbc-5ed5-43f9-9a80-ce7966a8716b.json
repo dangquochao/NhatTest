@@ -1,1 +1,51 @@
-[1,["1fd612cb4"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"bw_vfx_l_03_screen","rect":[1,851,162,108],"offset":[0,0],"originalSize":[162,108],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "1fd612cb4"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bw_vfx_l_03_screen",
+      "rect": [
+        1,
+        851,
+        162,
+        108
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        162,
+        108
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

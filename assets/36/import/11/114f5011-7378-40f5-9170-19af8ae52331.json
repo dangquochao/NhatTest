@@ -1,1 +1,35 @@
-[1,0,0,[["cc.TextAsset",["_name","text"],1]],[[0,0,1,3]],[[0,"title_tx.atlas","\r\ntitle_tx.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ncoin\r\n  rotate: false\r\n  xy: 2, 236\r\n  size: 399, 78\r\n  orig: 399, 78\r\n  offset: 0, 0\r\n  index: -1\r\ntaixiu\r\n  rotate: false\r\n  xy: 2, 146\r\n  size: 259, 88\r\n  orig: 259, 88\r\n  offset: 0, 0\r\n  index: -1\r\ntubu\r\n  rotate: false\r\n  xy: 403, 252\r\n  size: 59, 62\r\n  orig: 59, 62\r\n  offset: 0, 0\r\n  index: -1\r\nxx\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 165, 142\r\n  orig: 165, 142\r\n  offset: 0, 0\r\n  index: -1\r\n"]],0,0,[],[],[]]
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.TextAsset",
+      [
+        "_name",
+        "text"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "title_tx.atlas",
+      "\r\ntitle_tx.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ncoin\r\n  rotate: false\r\n  xy: 2, 236\r\n  size: 399, 78\r\n  orig: 399, 78\r\n  offset: 0, 0\r\n  index: -1\r\ntaixiu\r\n  rotate: false\r\n  xy: 2, 146\r\n  size: 259, 88\r\n  orig: 259, 88\r\n  offset: 0, 0\r\n  index: -1\r\ntubu\r\n  rotate: false\r\n  xy: 403, 252\r\n  size: 59, 62\r\n  orig: 59, 62\r\n  offset: 0, 0\r\n  index: -1\r\nxx\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 165, 142\r\n  orig: 165, 142\r\n  offset: 0, 0\r\n  index: -1\r\n"
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

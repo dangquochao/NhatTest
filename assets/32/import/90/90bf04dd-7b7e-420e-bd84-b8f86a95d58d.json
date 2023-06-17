@@ -1,1 +1,51 @@
-[1,["7aiMaB/spEzqXnc1ahLKN1"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"gun9","rect":[0,0,159,106],"offset":[0,0],"originalSize":[159,106],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "7aiMaB/spEzqXnc1ahLKN1"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "gun9",
+      "rect": [
+        0,
+        0,
+        159,
+        106
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        159,
+        106
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

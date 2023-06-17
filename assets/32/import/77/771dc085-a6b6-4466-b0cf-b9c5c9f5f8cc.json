@@ -1,1 +1,51 @@
-[1,["44xj+WrNFIJaXnQiy9d89d"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"EFFECT_ELECTRI","rect":[4,7,248,93],"offset":[-3,-0.5],"originalSize":[262,106],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "44xj+WrNFIJaXnQiy9d89d"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "EFFECT_ELECTRI",
+      "rect": [
+        4,
+        7,
+        248,
+        93
+      ],
+      "offset": [
+        -3,
+        -0.5
+      ],
+      "originalSize": [
+        262,
+        106
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

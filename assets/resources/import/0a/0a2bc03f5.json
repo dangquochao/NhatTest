@@ -1,1 +1,424 @@
-[1,["f4sDXgjnZD5Kucw12zUDVP","17yTNJq1tPF6Eo+Sn+0XPT","93bjfwwpNKk5avJbEE7rWS","4967GIbm1EVbIuXvL6Kqdu","63k+IzP8pL3LFDytimLD9C","14d9zxDeZCYpx96JqMcjLG","9cUQRs6FFPvpZmhExHh2ah","cdwIalOWREfJezYdz13RGA","9dLhsoxvpMzrPmxFeKU0f4","77ZSHrCTVFQ6ji2oJg++Ik"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"mang_mobi_normal","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mang_vina_normal","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[1]],[[{"name":"mang_vietteli_normal","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[2]],[[{"name":"mang_vietteli_press","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[3]],[[{"name":"btn_gold","rect":[0,0,150,59],"offset":[0,0],"originalSize":[150,59],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[4]],[[{"name":"tab_off","rect":[0,0,222,83],"offset":[0,0],"originalSize":[222,83],"capInsets":[22,19,22,28]}],[0],0,[0],[0],[5]],[[{"name":"text_shop_copy_01","rect":[0,0,78,25],"offset":[0,0],"originalSize":[78,25],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[6]],[[{"name":"text_shop_dianhuaka_02","rect":[0,0,58,32],"offset":[0,0],"originalSize":[58,32],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[7]],[[{"name":"mang_vina_press","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[8]],[[{"name":"mang_mobi_press","rect":[0,0,124,92],"offset":[0,0],"originalSize":[124,92],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[9]]]]
+[
+  1,
+  [
+    "f4sDXgjnZD5Kucw12zUDVP",
+    "17yTNJq1tPF6Eo+Sn+0XPT",
+    "93bjfwwpNKk5avJbEE7rWS",
+    "4967GIbm1EVbIuXvL6Kqdu",
+    "63k+IzP8pL3LFDytimLD9C",
+    "14d9zxDeZCYpx96JqMcjLG",
+    "9cUQRs6FFPvpZmhExHh2ah",
+    "cdwIalOWREfJezYdz13RGA",
+    "9dLhsoxvpMzrPmxFeKU0f4",
+    "77ZSHrCTVFQ6ji2oJg++Ik"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "mang_mobi_normal",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mang_vina_normal",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mang_vietteli_normal",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mang_vietteli_press",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "btn_gold",
+          "rect": [
+            0,
+            0,
+            150,
+            59
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            150,
+            59
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tab_off",
+          "rect": [
+            0,
+            0,
+            222,
+            83
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            222,
+            83
+          ],
+          "capInsets": [
+            22,
+            19,
+            22,
+            28
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        {
+          "name": "text_shop_copy_01",
+          "rect": [
+            0,
+            0,
+            78,
+            25
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            78,
+            25
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    [
+      [
+        {
+          "name": "text_shop_dianhuaka_02",
+          "rect": [
+            0,
+            0,
+            58,
+            32
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            58,
+            32
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mang_vina_press",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mang_mobi_press",
+          "rect": [
+            0,
+            0,
+            124,
+            92
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            124,
+            92
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ]
+    ]
+  ]
+]

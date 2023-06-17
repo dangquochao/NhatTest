@@ -1,1 +1,219 @@
-[1,["56NVaC2KRM67iS1dqNvl20"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats12-bw_vfx_j_add_25","rect":[0,0,658,1650],"offset":[0,0],"originalSize":[658,1650],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_04","rect":[658,1516,480,1380],"offset":[0,0],"originalSize":[480,1380],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_13","rect":[658,514,506,1390],"offset":[0,0],"originalSize":[506,1390],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_11","rect":[658,1020,496,1388],"offset":[0,0],"originalSize":[496,1388],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats12-bw_vfx_j_add_15","rect":[658,0,514,1390],"offset":[0,0],"originalSize":[514,1390],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "56NVaC2KRM67iS1dqNvl20"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_25",
+          "rect": [
+            0,
+            0,
+            658,
+            1650
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            658,
+            1650
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_04",
+          "rect": [
+            658,
+            1516,
+            480,
+            1380
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            480,
+            1380
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_13",
+          "rect": [
+            658,
+            514,
+            506,
+            1390
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            506,
+            1390
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_11",
+          "rect": [
+            658,
+            1020,
+            496,
+            1388
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            496,
+            1388
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats12-bw_vfx_j_add_15",
+          "rect": [
+            658,
+            0,
+            514,
+            1390
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            514,
+            1390
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

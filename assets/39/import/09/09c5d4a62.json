@@ -1,1 +1,95 @@
-[1,["debViEMKBPELDkIuthL4nJ"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"rfs","rect":[450,0,365,149],"offset":[0,0],"originalSize":[365,149],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"lfs","rect":[0,0,450,173],"offset":[0,0],"originalSize":[450,173],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "debViEMKBPELDkIuthL4nJ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "rfs",
+          "rect": [
+            450,
+            0,
+            365,
+            149
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            365,
+            149
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "lfs",
+          "rect": [
+            0,
+            0,
+            450,
+            173
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            450,
+            173
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

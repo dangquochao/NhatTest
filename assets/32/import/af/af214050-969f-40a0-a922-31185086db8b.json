@@ -1,1 +1,51 @@
-[1,["25WDw1KHdIvLEIAQFeIe91"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"huogndan6","rect":[0,0,789,374],"offset":[0,0],"originalSize":[789,374],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "25WDw1KHdIvLEIAQFeIe91"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "huogndan6",
+      "rect": [
+        0,
+        0,
+        789,
+        374
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        789,
+        374
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

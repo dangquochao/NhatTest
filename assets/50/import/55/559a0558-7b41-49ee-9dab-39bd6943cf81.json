@@ -1,1 +1,51 @@
-[1,["908c5KGvpBwZj43r89qD35"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"lose3","rect":[111,59,715,744],"offset":[-43.5,81],"originalSize":[1024,1024],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "908c5KGvpBwZj43r89qD35"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "lose3",
+      "rect": [
+        111,
+        59,
+        715,
+        744
+      ],
+      "offset": [
+        -43.5,
+        81
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

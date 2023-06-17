@@ -1,1 +1,51 @@
-[1,["3a4uKB/C1IvqOUCcy+n9zX"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"Alats8-bl_vfx_d_screen","rect":[625,1673,270,318],"offset":[0,0],"originalSize":[270,318],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "3a4uKB/C1IvqOUCcy+n9zX"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Alats8-bl_vfx_d_screen",
+      "rect": [
+        625,
+        1673,
+        270,
+        318
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        270,
+        318
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

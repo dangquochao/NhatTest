@@ -1,1 +1,51 @@
-[1,["ceC6HK5C5CgZ28wVyX00ms"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"JP_MSG_vn_png","rect":[0,0,540,154],"offset":[0,0],"originalSize":[540,154],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "ceC6HK5C5CgZ28wVyX00ms"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "JP_MSG_vn_png",
+      "rect": [
+        0,
+        0,
+        540,
+        154
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        540,
+        154
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

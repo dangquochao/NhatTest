@@ -1,1 +1,51 @@
-[1,["6468Kljk5KfbzekFkek7KZ"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"JP_FX02_png","rect":[60,15,861,550],"offset":[-0.5,0],"originalSize":[982,580],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "6468Kljk5KfbzekFkek7KZ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "JP_FX02_png",
+      "rect": [
+        60,
+        15,
+        861,
+        550
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        982,
+        580
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

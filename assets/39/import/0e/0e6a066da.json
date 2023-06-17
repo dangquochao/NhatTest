@@ -1,1 +1,422 @@
-[1,["14gT+MW/hMWrH7OBdWSd6/"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"info_scatter","rect":[0,1132,230,66],"offset":[1,0],"originalSize":[238,70],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main6","rect":[124,419,655,52],"offset":[1,2],"originalSize":[665,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main4","rect":[62,612,415,62],"offset":[0,0],"originalSize":[427,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_win","rect":[0,1232,97,56],"offset":[0,1],"originalSize":[105,70],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main5","rect":[176,415,637,50],"offset":[-2,1],"originalSize":[651,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_ways","rect":[0,1198,168,34],"offset":[0,2],"originalSize":[168,70],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_tw","rect":[168,1198,70,68],"offset":[0,0],"originalSize":[70,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main3","rect":[174,0,415,60],"offset":[0,0],"originalSize":[427,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main2","rect":[0,0,713,48],"offset":[0,1],"originalSize":[721,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_main1","rect":[48,0,612,66],"offset":[1,0],"originalSize":[616,70],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "14gT+MW/hMWrH7OBdWSd6/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "info_scatter",
+          "rect": [
+            0,
+            1132,
+            230,
+            66
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "originalSize": [
+            238,
+            70
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main6",
+          "rect": [
+            124,
+            419,
+            655,
+            52
+          ],
+          "offset": [
+            1,
+            2
+          ],
+          "originalSize": [
+            665,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main4",
+          "rect": [
+            62,
+            612,
+            415,
+            62
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            427,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_win",
+          "rect": [
+            0,
+            1232,
+            97,
+            56
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "originalSize": [
+            105,
+            70
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main5",
+          "rect": [
+            176,
+            415,
+            637,
+            50
+          ],
+          "offset": [
+            -2,
+            1
+          ],
+          "originalSize": [
+            651,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_ways",
+          "rect": [
+            0,
+            1198,
+            168,
+            34
+          ],
+          "offset": [
+            0,
+            2
+          ],
+          "originalSize": [
+            168,
+            70
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_tw",
+          "rect": [
+            168,
+            1198,
+            70,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            70,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main3",
+          "rect": [
+            174,
+            0,
+            415,
+            60
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            427,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main2",
+          "rect": [
+            0,
+            0,
+            713,
+            48
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "originalSize": [
+            721,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_main1",
+          "rect": [
+            48,
+            0,
+            612,
+            66
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "originalSize": [
+            616,
+            70
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

@@ -1,1 +1,914 @@
-[1,["d2lXZcNhxG7IEwOuyTzvfb","f8F6lK3clGX4iAnp+ObYlU","73iJMqgS9PvpaEYIpQuklq","d1BoltuwFHyqNYM+ZnRhVA","05d97L3WtHCajVUhw09v/s","54CLpxaT1Gt4Cj+VRYFcQY","ffMPkzbuBNJozqLq/uYBtu","68wCMKDQ9B+ozfMRGyZrrB","e91Oz3Lv1Fa6QkK8KanvU7","e54z+jVddN8YCD12pc9s51","c9KuNLe9lI4KwMCKRHNg6I","4aWhd3wxJGS7BJVRjBxPg+","094QkXng9HDLbCY6a/e223","82lEvHMqpMiKK/fQltWM/D","62kpm/BIVGhLMa4Lrdb++o","61zD1/gZ5Cdr2YST+bHflE","13W2OiIfxMSq2UzooKXzJP","88b3FYQUVMj6z5fCKqEGio","35MvYWATlG0qDhncTwdsbD"],["_textureSetter","FireBG_S_00","FireBG_S_15","FireBG_S_03","FireBG_S_16","FireBG_S_02","FireBG_S_06","FireBG_S_01","FireBG_S_17","FireBG_S_07","FireBG_S_11","FireBG_S_08","FireBG_S_14","FireBG_S_13","FireBG_S_12","FireBG_S_04","FireBG_S_10","FireBG_S_09","FireBG_S_05"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[{"name":"FireBG_S_16","rect":[1,653,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_14","rect":[369,490,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_10","rect":[369,327,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_05","rect":[185,164,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"Alats20.plist",[{},"FireBG_S_00",6,0,"FireBG_S_15",6,1,"FireBG_S_03",6,2,"FireBG_S_16",6,3,"FireBG_S_02",6,4,"FireBG_S_06",6,5,"FireBG_S_01",6,6,"FireBG_S_17",6,7,"FireBG_S_07",6,8,"FireBG_S_11",6,9,"FireBG_S_08",6,10,"FireBG_S_14",6,11,"FireBG_S_13",6,12,"FireBG_S_12",6,13,"FireBG_S_04",6,14,"FireBG_S_10",6,15,"FireBG_S_09",6,16,"FireBG_S_05",6,17]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]],[[{"name":"FireBG_S_08","rect":[1,327,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_02","rect":[369,1,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_04","rect":[1,164,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_12","rect":[1,490,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_01","rect":[185,1,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_15","rect":[553,490,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_13","rect":[185,490,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_09","rect":[185,327,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_11","rect":[553,327,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_03","rect":[553,1,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_07","rect":[553,164,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_17","rect":[185,653,182,161],"offset":[3,0],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_00","rect":[1,1,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireBG_S_06","rect":[369,164,182,161],"offset":[3,-1],"originalSize":[182,161],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "d2lXZcNhxG7IEwOuyTzvfb",
+    "f8F6lK3clGX4iAnp+ObYlU",
+    "73iJMqgS9PvpaEYIpQuklq",
+    "d1BoltuwFHyqNYM+ZnRhVA",
+    "05d97L3WtHCajVUhw09v/s",
+    "54CLpxaT1Gt4Cj+VRYFcQY",
+    "ffMPkzbuBNJozqLq/uYBtu",
+    "68wCMKDQ9B+ozfMRGyZrrB",
+    "e91Oz3Lv1Fa6QkK8KanvU7",
+    "e54z+jVddN8YCD12pc9s51",
+    "c9KuNLe9lI4KwMCKRHNg6I",
+    "4aWhd3wxJGS7BJVRjBxPg+",
+    "094QkXng9HDLbCY6a/e223",
+    "82lEvHMqpMiKK/fQltWM/D",
+    "62kpm/BIVGhLMa4Lrdb++o",
+    "61zD1/gZ5Cdr2YST+bHflE",
+    "13W2OiIfxMSq2UzooKXzJP",
+    "88b3FYQUVMj6z5fCKqEGio",
+    "35MvYWATlG0qDhncTwdsbD"
+  ],
+  [
+    "_textureSetter",
+    "FireBG_S_00",
+    "FireBG_S_15",
+    "FireBG_S_03",
+    "FireBG_S_16",
+    "FireBG_S_02",
+    "FireBG_S_06",
+    "FireBG_S_01",
+    "FireBG_S_17",
+    "FireBG_S_07",
+    "FireBG_S_11",
+    "FireBG_S_08",
+    "FireBG_S_14",
+    "FireBG_S_13",
+    "FireBG_S_12",
+    "FireBG_S_04",
+    "FireBG_S_10",
+    "FireBG_S_09",
+    "FireBG_S_05"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "FireBG_S_16",
+          "rect": [
+            1,
+            653,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_14",
+          "rect": [
+            369,
+            490,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_10",
+          "rect": [
+            369,
+            327,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_05",
+          "rect": [
+            185,
+            164,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Alats20.plist",
+          [
+            {},
+            "FireBG_S_00",
+            6,
+            0,
+            "FireBG_S_15",
+            6,
+            1,
+            "FireBG_S_03",
+            6,
+            2,
+            "FireBG_S_16",
+            6,
+            3,
+            "FireBG_S_02",
+            6,
+            4,
+            "FireBG_S_06",
+            6,
+            5,
+            "FireBG_S_01",
+            6,
+            6,
+            "FireBG_S_17",
+            6,
+            7,
+            "FireBG_S_07",
+            6,
+            8,
+            "FireBG_S_11",
+            6,
+            9,
+            "FireBG_S_08",
+            6,
+            10,
+            "FireBG_S_14",
+            6,
+            11,
+            "FireBG_S_13",
+            6,
+            12,
+            "FireBG_S_12",
+            6,
+            13,
+            "FireBG_S_04",
+            6,
+            14,
+            "FireBG_S_10",
+            6,
+            15,
+            "FireBG_S_09",
+            6,
+            16,
+            "FireBG_S_05",
+            6,
+            17
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_08",
+          "rect": [
+            1,
+            327,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_02",
+          "rect": [
+            369,
+            1,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_04",
+          "rect": [
+            1,
+            164,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_12",
+          "rect": [
+            1,
+            490,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_01",
+          "rect": [
+            185,
+            1,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_15",
+          "rect": [
+            553,
+            490,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_13",
+          "rect": [
+            185,
+            490,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_09",
+          "rect": [
+            185,
+            327,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_11",
+          "rect": [
+            553,
+            327,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_03",
+          "rect": [
+            553,
+            1,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_07",
+          "rect": [
+            553,
+            164,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_17",
+          "rect": [
+            185,
+            653,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            0
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_00",
+          "rect": [
+            1,
+            1,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireBG_S_06",
+          "rect": [
+            369,
+            164,
+            182,
+            161
+          ],
+          "offset": [
+            3,
+            -1
+          ],
+          "originalSize": [
+            182,
+            161
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

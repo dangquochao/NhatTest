@@ -1,1 +1,496 @@
-[1,["2a5oTmMIVHgboe4lIrWg58","aaG4fXg5VHzoaAt+zMCMX5","908c5KGvpBwZj43r89qD35","51h13tFFpE6ZoDbDOm5qXl","97hnLmaHdPUJ6iKTzC0Qhz","d9k94k8y1Ctr5OOl+6K3TN","efzhaS0z5J8KIUVZRQujL1"],0,[["sp.SkeletonData",["_name","_atlasText","textureNames","_skeletonJson","textures"],-1,3]],[[0,0,1,2,3,4,5]],[[0,"lose","\r\nlose.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n-100K copy 3\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 116, 42\r\n  orig: 116, 42\r\n  offset: 0, 0\r\n  index: -1\r\n-100K copy 666\r\n  rotate: false\r\n  xy: 864, 814\r\n  size: 104, 76\r\n  orig: 104, 76\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_1\r\n  rotate: false\r\n  xy: 2, 610\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_2\r\n  rotate: false\r\n  xy: 2, 328\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_3\r\n  rotate: false\r\n  xy: 2, 46\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose2.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_4\r\n  rotate: false\r\n  xy: 2, 566\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_5\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_6\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose3.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_7\r\n  rotate: false\r\n  xy: 2, 566\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_8\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_9\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose4.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_10\r\n  rotate: false\r\n  xy: 2, 566\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_11\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_12\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose5.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_13\r\n  rotate: false\r\n  xy: 2, 566\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_14\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_15\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose6.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_16\r\n  rotate: false\r\n  xy: 2, 566\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_17\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_18\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nlose7.png\r\nsize: 1024,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_19\r\n  rotate: false\r\n  xy: 2, 284\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_20\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 860, 280\r\n  orig: 860, 280\r\n  offset: 0, 0\r\n  index: -1\r\n",["lose.png","lose2.png","lose3.png","lose4.png","lose5.png","lose6.png","lose7.png"],{"skeleton":{"hash":"MkeoNJBfRGpFJUyRW6PIbRO3b94","spine":"3.6.46","width":430,"height":112,"images":""},"bones":[{"name":"root"},{"name":"00","parent":"root","y":12.52},{"name":"bone","parent":"root","scaleX":0.5,"scaleY":0.4}],"slots":[{"name":"anim_lost_leaf_1","bone":"bone","attachment":"anim_lost_leaf_20"},{"name":"-100K copy 3","bone":"00","attachment":"-100K copy 666"}],"skins":{"default":{"-100K copy 3":{"-100K copy 3":{"width":116,"height":42},"-100K copy 666":{"y":3.16,"width":104,"height":76}},"anim_lost_leaf_1":{"anim_lost_leaf_1":{"width":860,"height":280},"anim_lost_leaf_2":{"width":860,"height":280},"anim_lost_leaf_3":{"width":860,"height":280},"anim_lost_leaf_4":{"width":860,"height":280},"anim_lost_leaf_5":{"width":860,"height":280},"anim_lost_leaf_6":{"width":860,"height":280},"anim_lost_leaf_7":{"width":860,"height":280},"anim_lost_leaf_8":{"width":860,"height":280},"anim_lost_leaf_9":{"width":860,"height":280},"anim_lost_leaf_10":{"width":860,"height":280},"anim_lost_leaf_11":{"width":860,"height":280},"anim_lost_leaf_12":{"width":860,"height":280},"anim_lost_leaf_13":{"width":860,"height":280},"anim_lost_leaf_14":{"width":860,"height":280},"anim_lost_leaf_15":{"width":860,"height":280},"anim_lost_leaf_16":{"width":860,"height":280},"anim_lost_leaf_17":{"width":860,"height":280},"anim_lost_leaf_18":{"width":860,"height":280},"anim_lost_leaf_19":{"width":860,"height":280},"anim_lost_leaf_20":{"width":860,"height":280}}}},"animations":{"lose":{"slots":{"-100K copy 3":{"color":[{"time":0,"color":"ffffff00"},{"time":0.1667,"color":"ffffffff"}],"attachment":[{"time":0,"name":"-100K copy 3"}]},"anim_lost_leaf_1":{"attachment":[{"time":0,"name":"anim_lost_leaf_1"},{"time":0.0333,"name":"anim_lost_leaf_2"},{"time":0.0667,"name":"anim_lost_leaf_3"},{"time":0.1,"name":"anim_lost_leaf_4"},{"time":0.1333,"name":"anim_lost_leaf_5"},{"time":0.1667,"name":"anim_lost_leaf_6"},{"time":0.2,"name":"anim_lost_leaf_7"},{"time":0.2333,"name":"anim_lost_leaf_8"},{"time":0.2667,"name":"anim_lost_leaf_9"},{"time":0.3,"name":"anim_lost_leaf_10"},{"time":0.3333,"name":"anim_lost_leaf_11"},{"time":0.3667,"name":"anim_lost_leaf_12"},{"time":0.4,"name":"anim_lost_leaf_13"},{"time":0.4333,"name":"anim_lost_leaf_14"},{"time":0.4667,"name":"anim_lost_leaf_15"},{"time":0.5,"name":"anim_lost_leaf_16"},{"time":0.5333,"name":"anim_lost_leaf_17"},{"time":0.5667,"name":"anim_lost_leaf_18"},{"time":0.6,"name":"anim_lost_leaf_19"},{"time":0.6333,"name":"anim_lost_leaf_20"}]}},"bones":{"bone":{"translate":[{"time":0.1333,"x":-2.69,"y":0}]},"00":{"translate":[{"time":0,"x":0,"y":58,"curve":[0,0.2,0.631,1]},{"time":0.1667,"x":0,"y":0}]}}},"losecam":{"slots":{"-100K copy 3":{"color":[{"time":0,"color":"ffffff00"},{"time":0.1667,"color":"ffffffff"}]},"anim_lost_leaf_1":{"attachment":[{"time":0,"name":"anim_lost_leaf_1"},{"time":0.0333,"name":"anim_lost_leaf_2"},{"time":0.0667,"name":"anim_lost_leaf_3"},{"time":0.1,"name":"anim_lost_leaf_4"},{"time":0.1333,"name":"anim_lost_leaf_5"},{"time":0.1667,"name":"anim_lost_leaf_6"},{"time":0.2,"name":"anim_lost_leaf_7"},{"time":0.2333,"name":"anim_lost_leaf_8"},{"time":0.2667,"name":"anim_lost_leaf_9"},{"time":0.3,"name":"anim_lost_leaf_10"},{"time":0.3333,"name":"anim_lost_leaf_11"},{"time":0.3667,"name":"anim_lost_leaf_12"},{"time":0.4,"name":"anim_lost_leaf_13"},{"time":0.4333,"name":"anim_lost_leaf_14"},{"time":0.4667,"name":"anim_lost_leaf_15"},{"time":0.5,"name":"anim_lost_leaf_16"},{"time":0.5333,"name":"anim_lost_leaf_17"},{"time":0.5667,"name":"anim_lost_leaf_18"},{"time":0.6,"name":"anim_lost_leaf_19"},{"time":0.6333,"name":"anim_lost_leaf_20"}]}},"bones":{"bone":{"translate":[{"time":0.1333,"x":-2.69,"y":0}]},"00":{"translate":[{"time":0,"x":0,"y":58,"curve":[0,0.2,0.631,1]},{"time":0.1667,"x":0,"y":0}]}}}}},[0,1,2,3,4,5,6]]],0,0,[0,0,0,0,0,0,0],[-1,-2,-3,-4,-5,-6,-7],[0,1,2,3,4,5,6]]
+[
+  1,
+  [
+    "2a5oTmMIVHgboe4lIrWg58",
+    "aaG4fXg5VHzoaAt+zMCMX5",
+    "908c5KGvpBwZj43r89qD35",
+    "51h13tFFpE6ZoDbDOm5qXl",
+    "97hnLmaHdPUJ6iKTzC0Qhz",
+    "d9k94k8y1Ctr5OOl+6K3TN",
+    "efzhaS0z5J8KIUVZRQujL1"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "lose",
+      "\nlose.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n-100K copy 3\n  rotate: false\n  xy: 2, 2\n  size: 116, 42\n  orig: 116, 42\n  offset: 0, 0\n  index: -1\n-100K copy 666\n  rotate: false\n  xy: 864, 814\n  size: 104, 76\n  orig: 104, 76\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_1\n  rotate: false\n  xy: 2, 610\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_2\n  rotate: false\n  xy: 2, 328\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_3\n  rotate: false\n  xy: 2, 46\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose2.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_4\n  rotate: false\n  xy: 2, 566\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_5\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_6\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose3.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_7\n  rotate: false\n  xy: 2, 566\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_8\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_9\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose4.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_10\n  rotate: false\n  xy: 2, 566\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_11\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_12\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose5.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_13\n  rotate: false\n  xy: 2, 566\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_14\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_15\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose6.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_16\n  rotate: false\n  xy: 2, 566\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_17\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_18\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n\nlose7.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_19\n  rotate: false\n  xy: 2, 284\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_20\n  rotate: false\n  xy: 2, 2\n  size: 860, 280\n  orig: 860, 280\n  offset: 0, 0\n  index: -1\n",
+      [
+        "lose.png",
+        "lose2.png",
+        "lose3.png",
+        "lose4.png",
+        "lose5.png",
+        "lose6.png",
+        "lose7.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "MkeoNJBfRGpFJUyRW6PIbRO3b94",
+          "spine": "3.6.46",
+          "width": 430,
+          "height": 112,
+          "images": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "00",
+            "parent": "root",
+            "y": 12.52
+          },
+          {
+            "name": "bone",
+            "parent": "root",
+            "scaleX": 0.5,
+            "scaleY": 0.4
+          }
+        ],
+        "slots": [
+          {
+            "name": "anim_lost_leaf_1",
+            "bone": "bone",
+            "attachment": "anim_lost_leaf_20"
+          },
+          {
+            "name": "-100K copy 3",
+            "bone": "00",
+            "attachment": "-100K copy 666"
+          }
+        ],
+        "skins": {
+          "default": {
+            "-100K copy 3": {
+              "-100K copy 3": {
+                "width": 116,
+                "height": 42
+              },
+              "-100K copy 666": {
+                "y": 3.16,
+                "width": 104,
+                "height": 76
+              }
+            },
+            "anim_lost_leaf_1": {
+              "anim_lost_leaf_1": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_2": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_3": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_4": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_5": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_6": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_7": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_8": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_9": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_10": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_11": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_12": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_13": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_14": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_15": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_16": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_17": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_18": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_19": {
+                "width": 860,
+                "height": 280
+              },
+              "anim_lost_leaf_20": {
+                "width": 860,
+                "height": 280
+              }
+            }
+          }
+        },
+        "animations": {
+          "lose": {
+            "slots": {
+              "-100K copy 3": {
+                "color": [
+                  {
+                    "time": 0,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffffff"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": "-100K copy 3"
+                  }
+                ]
+              },
+              "anim_lost_leaf_1": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": "anim_lost_leaf_1"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "anim_lost_leaf_2"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "anim_lost_leaf_3"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "anim_lost_leaf_4"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "anim_lost_leaf_5"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "anim_lost_leaf_6"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "anim_lost_leaf_7"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "anim_lost_leaf_8"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "anim_lost_leaf_9"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "anim_lost_leaf_10"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "anim_lost_leaf_11"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "anim_lost_leaf_12"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "anim_lost_leaf_13"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "anim_lost_leaf_14"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "anim_lost_leaf_15"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "anim_lost_leaf_16"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "anim_lost_leaf_17"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "anim_lost_leaf_18"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "anim_lost_leaf_19"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "anim_lost_leaf_20"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone": {
+                "translate": [
+                  {
+                    "time": 0.1333,
+                    "x": -2.69,
+                    "y": 0
+                  }
+                ]
+              },
+              "00": {
+                "translate": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 58,
+                    "curve": [
+                      0,
+                      0.2,
+                      0.631,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            }
+          },
+          "losecam": {
+            "slots": {
+              "-100K copy 3": {
+                "color": [
+                  {
+                    "time": 0,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffffff"
+                  }
+                ]
+              },
+              "anim_lost_leaf_1": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": "anim_lost_leaf_1"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "anim_lost_leaf_2"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "anim_lost_leaf_3"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "anim_lost_leaf_4"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "anim_lost_leaf_5"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "anim_lost_leaf_6"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "anim_lost_leaf_7"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "anim_lost_leaf_8"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "anim_lost_leaf_9"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "anim_lost_leaf_10"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "anim_lost_leaf_11"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "anim_lost_leaf_12"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "anim_lost_leaf_13"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "anim_lost_leaf_14"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "anim_lost_leaf_15"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "anim_lost_leaf_16"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "anim_lost_leaf_17"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "anim_lost_leaf_18"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "anim_lost_leaf_19"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "anim_lost_leaf_20"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone": {
+                "translate": [
+                  {
+                    "time": 0.1333,
+                    "x": -2.69,
+                    "y": 0
+                  }
+                ]
+              },
+              "00": {
+                "translate": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 58,
+                    "curve": [
+                      0,
+                      0.2,
+                      0.631,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7
+  ],
+  [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+]

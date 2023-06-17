@@ -1,1 +1,781 @@
-[1,["0dyYqiOLNO4JFnrcKwlHMM"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"mf_elec_moon_b_add_06","rect":[415,1,202,657],"offset":[4,-1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_16","rect":[1329,1,196,663],"offset":[-7,1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_07","rect":[205,662,202,659],"offset":[4,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_11","rect":[619,199,196,659],"offset":[1,0],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_02","rect":[613,660,198,659],"offset":[-6,-1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_13","rect":[1527,664,190,661],"offset":[-4,1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_18","rect":[619,1,196,663],"offset":[-7,0],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_12","rect":[1527,1,190,661],"offset":[-3,1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_00","rect":[813,595,194,663],"offset":[-8,1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_15","rect":[664,1519,196,663],"offset":[-7,1],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_01","rect":[1009,595,192,661],"offset":[-9,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_09","rect":[1,662,202,661],"offset":[4,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_17","rect":[1329,666,196,663],"offset":[-7,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_04","rect":[409,662,202,657],"offset":[-4,-1],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_14","rect":[664,1321,196,663],"offset":[-7,1],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_10","rect":[1,1325,202,661],"offset":[4,0],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_08","rect":[211,1,202,659],"offset":[4,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_05","rect":[619,397,196,657],"offset":[-2,-1],"originalSize":[210,665],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"mf_elec_moon_b_add_03","rect":[1,1,208,659],"offset":[-1,0],"originalSize":[210,665],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "0dyYqiOLNO4JFnrcKwlHMM"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_06",
+          "rect": [
+            415,
+            1,
+            202,
+            657
+          ],
+          "offset": [
+            4,
+            -1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_16",
+          "rect": [
+            1329,
+            1,
+            196,
+            663
+          ],
+          "offset": [
+            -7,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_07",
+          "rect": [
+            205,
+            662,
+            202,
+            659
+          ],
+          "offset": [
+            4,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_11",
+          "rect": [
+            619,
+            199,
+            196,
+            659
+          ],
+          "offset": [
+            1,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_02",
+          "rect": [
+            613,
+            660,
+            198,
+            659
+          ],
+          "offset": [
+            -6,
+            -1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_13",
+          "rect": [
+            1527,
+            664,
+            190,
+            661
+          ],
+          "offset": [
+            -4,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_18",
+          "rect": [
+            619,
+            1,
+            196,
+            663
+          ],
+          "offset": [
+            -7,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_12",
+          "rect": [
+            1527,
+            1,
+            190,
+            661
+          ],
+          "offset": [
+            -3,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_00",
+          "rect": [
+            813,
+            595,
+            194,
+            663
+          ],
+          "offset": [
+            -8,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_15",
+          "rect": [
+            664,
+            1519,
+            196,
+            663
+          ],
+          "offset": [
+            -7,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_01",
+          "rect": [
+            1009,
+            595,
+            192,
+            661
+          ],
+          "offset": [
+            -9,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_09",
+          "rect": [
+            1,
+            662,
+            202,
+            661
+          ],
+          "offset": [
+            4,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_17",
+          "rect": [
+            1329,
+            666,
+            196,
+            663
+          ],
+          "offset": [
+            -7,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_04",
+          "rect": [
+            409,
+            662,
+            202,
+            657
+          ],
+          "offset": [
+            -4,
+            -1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_14",
+          "rect": [
+            664,
+            1321,
+            196,
+            663
+          ],
+          "offset": [
+            -7,
+            1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_10",
+          "rect": [
+            1,
+            1325,
+            202,
+            661
+          ],
+          "offset": [
+            4,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_08",
+          "rect": [
+            211,
+            1,
+            202,
+            659
+          ],
+          "offset": [
+            4,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_05",
+          "rect": [
+            619,
+            397,
+            196,
+            657
+          ],
+          "offset": [
+            -2,
+            -1
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mf_elec_moon_b_add_03",
+          "rect": [
+            1,
+            1,
+            208,
+            659
+          ],
+          "offset": [
+            -1,
+            0
+          ],
+          "originalSize": [
+            210,
+            665
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

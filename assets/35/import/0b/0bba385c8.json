@@ -1,1 +1,454 @@
-[1,["80ASef2WpPJopf9C3PpzXS","153c55007"],["value","_textureSetter"],["cc.SpriteFrame",["cc.AnimationClip",["_name","_duration","curveData"],1,11]],[[1,0,1,2,3]],[[[[0,"ShowBigWin",0.5333333333333333,[{},"paths",11,[{"coinRotate":{"props":{"x":[{"frame":0,"value":-695.113},{"frame":0.23333333333333334,"value":-533}]}},"coinRotate copy":{"props":{"x":[{"frame":0,"value":691.309},{"frame":0.23333333333333334,"value":538}]}},"bw_coin_03":{"props":{"x":[{"frame":0,"value":533.071},{"frame":0.23333333333333334,"value":321.138}]}},"bw_coin_03 copy":{"props":{"x":[{"frame":0,"value":-545.017},{"frame":0.23333333333333334,"value":-313.04}]}},"bw_coin_03 copy2":{"props":{"x":[{"frame":0,"value":-545.017},{"frame":0.23333333333333334,"value":-313.04}]}},"bw_coin_04":{"props":{"opacity":[{"frame":0,"value":0},{"frame":0.23333333333333334,"value":255}]}},"bw_vfx_d_add":{"props":{"opacity":[{"frame":0,"value":0},{"frame":0.23333333333333334,"value":255}]}},"bw_vfx_n_01_add":{"props":{"opacity":[{"frame":0,"value":0},{"frame":0.31666666666666665,"value":150}]}}},"ParentMoney",11,[{},"props",11,[{},"scale",12,[[[{"frame":0},"value",8,[0,0,0]],[{"frame":0.2,"curve":[0.18,0.89,0.31,1.21]},"value",8,[0,0,0]],[{"frame":0.5333333333333333},"value",8,[0,1,1]]],11,11,11]]],"ParentRong",11,[{},"props",11,[{},"scale",12,[[[{"frame":0,"curve":[0.18,0.89,0.31,1.21]},"value",8,[0,0,0]],[{"frame":0.31666666666666665},"value",8,[0,1,1]]],11,11]]],"tiasang",11,[{},"props",11,[{},"scale",12,[[[{"frame":0},"value",8,[0,0,0]],[{"frame":0.23333333333333334},"value",8,[0,1.8,1.8]]],11,11]]],"nodeShow",11,[{},"props",11,[{"opacity":[{"frame":0,"value":255},{"frame":0.2,"value":255},{"frame":0.4,"value":0}]},"scale",12,[[[{"frame":0},"value",8,[0,1,1]],[{"frame":0.4},"value",8,[0,10,10]]],11,11]]],"ParentMoney/bw",11,[{},"comps",11,[{},"cc.Sprite",11,[{},"spriteFrame",12,[[[{"frame":0},"value",6,0]],11]]]]]]]],0,0,[0],[0],[0]],[[{"name":"bw","rect":[1,450,511,164],"offset":[0,0],"originalSize":[511,164],"capInsets":[0,0,0,0]}],[0],0,[0],[1],[1]]]]
+[
+  1,
+  [
+    "80ASef2WpPJopf9C3PpzXS",
+    "153c55007"
+  ],
+  [
+    "value",
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "curveData"
+      ],
+      1,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "ShowBigWin",
+          0.5333333333333333,
+          [
+            {},
+            "paths",
+            11,
+            [
+              {
+                "coinRotate": {
+                  "props": {
+                    "x": [
+                      {
+                        "frame": 0,
+                        "value": -695.113
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": -533
+                      }
+                    ]
+                  }
+                },
+                "coinRotate copy": {
+                  "props": {
+                    "x": [
+                      {
+                        "frame": 0,
+                        "value": 691.309
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": 538
+                      }
+                    ]
+                  }
+                },
+                "bw_coin_03": {
+                  "props": {
+                    "x": [
+                      {
+                        "frame": 0,
+                        "value": 533.071
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": 321.138
+                      }
+                    ]
+                  }
+                },
+                "bw_coin_03 copy": {
+                  "props": {
+                    "x": [
+                      {
+                        "frame": 0,
+                        "value": -545.017
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": -313.04
+                      }
+                    ]
+                  }
+                },
+                "bw_coin_03 copy2": {
+                  "props": {
+                    "x": [
+                      {
+                        "frame": 0,
+                        "value": -545.017
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": -313.04
+                      }
+                    ]
+                  }
+                },
+                "bw_coin_04": {
+                  "props": {
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "bw_vfx_d_add": {
+                  "props": {
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.23333333333333334,
+                        "value": 255
+                      }
+                    ]
+                  }
+                },
+                "bw_vfx_n_01_add": {
+                  "props": {
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 0
+                      },
+                      {
+                        "frame": 0.31666666666666665,
+                        "value": 150
+                      }
+                    ]
+                  }
+                }
+              },
+              "ParentMoney",
+              11,
+              [
+                {},
+                "props",
+                11,
+                [
+                  {},
+                  "scale",
+                  12,
+                  [
+                    [
+                      [
+                        {
+                          "frame": 0
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          0,
+                          0
+                        ]
+                      ],
+                      [
+                        {
+                          "frame": 0.2,
+                          "curve": [
+                            0.18,
+                            0.89,
+                            0.31,
+                            1.21
+                          ]
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          0,
+                          0
+                        ]
+                      ],
+                      [
+                        {
+                          "frame": 0.5333333333333333
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          1,
+                          1
+                        ]
+                      ]
+                    ],
+                    11,
+                    11,
+                    11
+                  ]
+                ]
+              ],
+              "ParentRong",
+              11,
+              [
+                {},
+                "props",
+                11,
+                [
+                  {},
+                  "scale",
+                  12,
+                  [
+                    [
+                      [
+                        {
+                          "frame": 0,
+                          "curve": [
+                            0.18,
+                            0.89,
+                            0.31,
+                            1.21
+                          ]
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          0,
+                          0
+                        ]
+                      ],
+                      [
+                        {
+                          "frame": 0.31666666666666665
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          1,
+                          1
+                        ]
+                      ]
+                    ],
+                    11,
+                    11
+                  ]
+                ]
+              ],
+              "tiasang",
+              11,
+              [
+                {},
+                "props",
+                11,
+                [
+                  {},
+                  "scale",
+                  12,
+                  [
+                    [
+                      [
+                        {
+                          "frame": 0
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          0,
+                          0
+                        ]
+                      ],
+                      [
+                        {
+                          "frame": 0.23333333333333334
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          1.8,
+                          1.8
+                        ]
+                      ]
+                    ],
+                    11,
+                    11
+                  ]
+                ]
+              ],
+              "nodeShow",
+              11,
+              [
+                {},
+                "props",
+                11,
+                [
+                  {
+                    "opacity": [
+                      {
+                        "frame": 0,
+                        "value": 255
+                      },
+                      {
+                        "frame": 0.2,
+                        "value": 255
+                      },
+                      {
+                        "frame": 0.4,
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "scale",
+                  12,
+                  [
+                    [
+                      [
+                        {
+                          "frame": 0
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          1,
+                          1
+                        ]
+                      ],
+                      [
+                        {
+                          "frame": 0.4
+                        },
+                        "value",
+                        8,
+                        [
+                          0,
+                          10,
+                          10
+                        ]
+                      ]
+                    ],
+                    11,
+                    11
+                  ]
+                ]
+              ],
+              "ParentMoney/bw",
+              11,
+              [
+                {},
+                "comps",
+                11,
+                [
+                  {},
+                  "cc.Sprite",
+                  11,
+                  [
+                    {},
+                    "spriteFrame",
+                    12,
+                    [
+                      [
+                        [
+                          {
+                            "frame": 0
+                          },
+                          "value",
+                          6,
+                          0
+                        ]
+                      ],
+                      11
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bw",
+          "rect": [
+            1,
+            450,
+            511,
+            164
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            511,
+            164
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

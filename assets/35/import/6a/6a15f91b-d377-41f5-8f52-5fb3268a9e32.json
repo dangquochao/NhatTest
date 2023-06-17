@@ -1,1 +1,51 @@
-[1,["1d72c63ad"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"scatter_frame_02","rect":[199,1,134,777],"offset":[0,0],"originalSize":[134,777],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "1d72c63ad"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "scatter_frame_02",
+      "rect": [
+        199,
+        1,
+        134,
+        777
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        134,
+        777
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
