@@ -1,7 +1,7 @@
 [
   1,
   [
-    "8azMCgdS5OBJ3l4zlYu89Q"
+    "f2sHNbKYRL55Rdn7yu5ETB"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "ngoKhong",
+      "name": "ic_pass",
       "rect": [
         0,
-        5,
-        95,
-        91
+        0,
+        22,
+        29
       ],
       "offset": [
-        -2.5,
-        -0.5
+        0,
+        0
       ],
       "originalSize": [
-        100,
-        100
+        22,
+        29
       ],
       "capInsets": [
         0,

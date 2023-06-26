@@ -4363,7 +4363,7 @@ window.__require = function e(t, n, r) {
       CheckPass.prototype.init = function(gameId, roomId) {
         this.gameId = gameId;
         this.roomId = roomId;
-        Windown_1.Windown.onPopOn(this.node);
+        Windown_1.Windown.actionEffectOpen(this.node);
       };
       CheckPass.prototype.onClose = function() {
         this.node.removeFromParent(false);
@@ -4970,6 +4970,7 @@ window.__require = function e(t, n, r) {
           this.emitOnDisconnect();
           return;
         }
+        cc.log("sendRequest code=" + code);
         this.sfs.send(new SFS2X.ExtensionRequest(code, SFSObject, SFSRoom));
       };
       ConectManager.prototype.sendRequestToCallback = function(code, SFSObject, callback, SFSRoom) {
@@ -5565,13 +5566,13 @@ window.__require = function e(t, n, r) {
           var itemCreate = cc.instantiate(this.itemMarkCreate);
           0 == i && (itemCreate.getChildByName("outline").active = true);
           itemCreate.getChildByName("lb").getComponent(cc.Label).string = "" + Windown_1.Windown.formatMoney(listMarkLobby[i].mark);
-          listMarkLobby[i].mark >= 1e4 && (itemCreate.getComponent(cc.Sprite).spriteFrame = this.listSprMark[1]);
+          listMarkLobby[i].mark >= 1e4 && (itemCreate.children[1].getComponent(cc.Sprite).spriteFrame = this.listSprMark[1]);
           Windown_1.Windown.User.userAg < listMarkLobby[i].minAg && (itemCreate.getComponent(cc.Button).interactable = false);
           itemCreate.active = true;
           this.scrollViewListMark.content.addChild(itemCreate);
           itemCreate.getComponent(cc.Button).clickEvents[0].customEventData = "" + listMarkLobby[i].mark;
         }
-        Windown_1.Windown.onPopOn(this.node);
+        Windown_1.Windown.actionEffectOpen(this.node);
       };
       CreateTable.prototype.onClickConfirm = function() {
         if (Windown_1.Windown.User.userAg < this.currentMark) return;
@@ -5587,9 +5588,9 @@ window.__require = function e(t, n, r) {
         event.target.getChildByName("outline").active = true;
         for (var i = 0; i < this.listMarkCreate.length; i++) {
           var currentMark = parseInt(data);
-          if (currentMark == this.listMarkCreate[i].mark) {
+          if (currentMark == this.listMarkCreate[i]["mark"]) {
             this.indexCurrentMark = i;
-            this.currentMark = this.listMarkCreate[this.indexCurrentMark].mark;
+            this.currentMark = this.listMarkCreate[this.indexCurrentMark]["mark"];
             return;
           }
         }
@@ -8852,20 +8853,18 @@ window.__require = function e(t, n, r) {
         this.updateStateItem();
       };
       ItemBetRoom.prototype.updateStateItem = function() {
-        Windown_1.Windown.User.userAg < this.minAg ? this.node.getComponent(cc.Button).interactable = false : this.node.getComponent(cc.Button).interactable = true;
+        if (Windown_1.Windown.User.userAg < this.minAg) {
+          this.node.getComponent(cc.Button).interactable = false;
+          this.node.color = this.lbMark.node.color = this.node.getChildByName("item_friend").color = this.lbUser.node.color = cc.Color.GRAY;
+        } else {
+          this.node.getComponent(cc.Button).interactable = true;
+          this.node.color = this.lbMark.node.color = this.lbUser.node.color = this.node.getChildByName("item_friend").color = cc.Color.WHITE;
+        }
       };
       ItemBetRoom.prototype.onClickSelectBetRoom = function(event) {
         switch (this.gameId) {
-         case GAME_TYPE_1.default.Tongits:
-          Windown_1.Windown.MainView.onClickJoinTongits(null, null, false, -1, this.mark, "");
-          break;
-
          case GAME_TYPE_1.default.TienLen:
           Windown_1.Windown.MainView.onClickJoinTienLen(null, null, false, -1, this.mark, "");
-          break;
-
-         case GAME_TYPE_1.default.Binh:
-          Windown_1.Windown.MainView.onClickJoinBinh(null, null, false, -1, this.mark, "");
           break;
 
          default:
@@ -13121,6 +13120,7 @@ window.__require = function e(t, n, r) {
       LobbyView.prototype.setLobbyView = function(strData, gameId) {
         var data = JSON.parse(strData);
         console.log("setLobbyView: ", data);
+        this.node.active = true;
         this.gameId = gameId;
         switch (this.gameId) {
          case 47:
@@ -13132,7 +13132,7 @@ window.__require = function e(t, n, r) {
           break;
 
          case 50:
-          this.lbTitleGameName.string = "TIEN LEN";
+          this.lbTitleGameName.string = "TI\u1ebeN L\xcaN";
         }
         var ListMark = JSON.parse(data.ListMark);
         this.listMarkLobby = ListMark;
@@ -13146,16 +13146,8 @@ window.__require = function e(t, n, r) {
       };
       LobbyView.prototype.onClickJoinPlayNow = function(event, data) {
         switch (this.gameId) {
-         case GAME_TYPE_1.default.Tongits:
-          Windown_1.Windown.MainView.onClickJoinTongits(null, null, false, -1, -1, "");
-          break;
-
          case GAME_TYPE_1.default.TienLen:
           Windown_1.Windown.MainView.onClickJoinTienLen(null, null, false, -1, -1, "");
-          break;
-
-         case GAME_TYPE_1.default.Binh:
-          Windown_1.Windown.MainView.onClickJoinBinh(null, null, false, -1, -1, "");
           break;
 
          default:
@@ -14260,7 +14252,6 @@ window.__require = function e(t, n, r) {
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
-    var GAME_TYPE_1 = require("../../Game/GAME_TYPE");
     var Windown_1 = require("../../Windown");
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
     var MenuInGame = function(_super) {
@@ -14272,11 +14263,6 @@ window.__require = function e(t, n, r) {
       }
       MenuInGame.prototype.onLoad = function() {
         this.onShowAllItem();
-        if (Windown_1.Windown.GameView.gameType == GAME_TYPE_1.default.Sicbo) {
-          cc.log("Hide item sicbo");
-          this.onHideItem(1);
-          this.onHideItem(3);
-        }
       };
       MenuInGame.prototype.start = function() {
         Windown_1.Windown.actionEffectOpen(this.node, function() {});
@@ -14332,7 +14318,6 @@ window.__require = function e(t, n, r) {
     exports.default = MenuInGame;
     cc._RF.pop();
   }, {
-    "../../Game/GAME_TYPE": "GAME_TYPE",
     "../../Windown": "Windown"
   } ],
   ModelLevel: [ function(require, module, exports) {

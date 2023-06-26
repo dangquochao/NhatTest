@@ -3,41 +3,42 @@
   [
     "ecpdLyjvZBwrvm+cedCcQy",
     "7atnkm+vtBk6Mvv8DBz46m",
-    "a2MjXRFdtLlYQ5ouAFv/+R",
     "7a/QZLET9IDreTiBfRn2PD",
+    "a2MjXRFdtLlYQ5ouAFv/+R",
     "5389q45OFIGo8ClaeYTqP9",
     "26iqYtwzlFcLyBtzgZdXkB",
     "1f6g3iOp1Eoa8Rdt1IdCl0",
-    "477F4t2sFPMJQoeJZazBnm",
     "dcY4AxUPhL8YlANudUAGXH",
     "e97GVMl6JHh5Ml5qEDdSGa",
     "f0BIwQ8D5Ml7nTNQbh1YlS",
     "29FYIk+N1GYaeWH/q1NxQO",
-    "cfjoi2xVFKB6tlE/uy7Ade",
     "a5SGqjToNHQIhQo0HVR4xz",
     "ddOC7nWZdH5KOg6AeHq0Yt",
     "56BktJs59D44UGbIfrsVb9",
     "25qBItsQVFQ5wCyRMzNZ47",
+    "6azxWWSb1CqLMMtMHDliQA",
     "5dX+B6txxP/otPMnPIBaZO",
     "6dkXvCqe1JS5Yb8NEGAIAY",
-    "426Hee7fFJM6JLgcMi8oI8",
     "87BrykqPJLKo0l7quxBgBH",
     "9edUgJIXxBt5XsdqyWhm8o",
     "ccOkcI69dA0oCmPA+N1Z7/",
     "46o9Bquy9L8KArLhyFpyAc",
     "23ypeRCtRGxZZ0knYpXI0c",
     "64H6Mif6dM3Ixq8WUvNHzU",
-    "cc2QOKrWNCZbhUrT7j3zGz",
-    "d4F4V53tpNZ4qBbQ9GBIzc",
+    "1flXzsFJ1Mhpm9pBxqg74Q",
+    "76Oo+hdZBIC58PkmtS6Hpa",
+    "565ACflcFNfYQ0weOY3Gxl",
+    "cfjoi2xVFKB6tlE/uy7Ade",
     "f9JZ+9NupG6oPEH1dYJegw",
     "a0WFNZahNBs401rIznB5pg",
     "97AJFOSIdGfJ2mBgXcj+t3",
     "a91Mi5DqlPjYeNWMTnFq96",
     "25eLfF74RJl5Nl29vXdZdB",
-    "57MZffajFEDq1gAY843dlt",
+    "27geQqAD9GYrPzZU0TPMUR",
     "19n5V/O49Jg7c+pi/5KV1s",
     "0duMWvXDNJSrJzPnTTp57W",
     "7f7+rc/OpNHaKUhJ+CZant",
+    "477F4t2sFPMJQoeJZazBnm",
     "748njUhAJGV5AG40jUYRjx",
     "8fdlP6UWtHEpe5DoqOemHN",
     "49hakN2o5E6YWjzaiQhMhs",
@@ -96,8 +97,7 @@
         "_children",
         "_trs",
         "_color",
-        "_anchorPoint",
-        "_eulerAngles"
+        "_anchorPoint"
       ],
       -2,
       1,
@@ -106,30 +106,31 @@
       2,
       7,
       5,
-      5,
       5
     ],
-    "cc.SpriteFrame",
     [
       "cc.Label",
       [
         "_string",
         "_isSystemFontUsed",
         "_fontSize",
-        "_N$verticalAlign",
         "_N$horizontalAlign",
+        "_N$verticalAlign",
         "_N$overflow",
+        "_styleFlags",
+        "_lineHeight",
         "_enableWrapText",
         "_N$cacheMode",
         "node",
         "_materials",
         "_N$file"
       ],
-      -5,
+      -7,
       1,
       3,
       6
     ],
+    "cc.SpriteFrame",
     [
       "cc.Node",
       [
@@ -176,6 +177,24 @@
         "_spriteFrame"
       ],
       1,
+      1,
+      3,
+      6
+    ],
+    [
+      "sp.Skeleton",
+      [
+        "defaultSkin",
+        "defaultAnimation",
+        "_preCacheMode",
+        "_animationName",
+        "premultipliedAlpha",
+        "_cacheMode",
+        "node",
+        "_materials",
+        "_N$skeletonData"
+      ],
+      -3,
       1,
       3,
       6
@@ -241,23 +260,6 @@
         "_defaultClip"
       ],
       2,
-      1,
-      3,
-      6
-    ],
-    [
-      "sp.Skeleton",
-      [
-        "defaultSkin",
-        "_preCacheMode",
-        "_animationName",
-        "defaultAnimation",
-        "_cacheMode",
-        "node",
-        "_materials",
-        "_N$skeletonData"
-      ],
-      -2,
       1,
       3,
       6
@@ -458,6 +460,17 @@
       1
     ],
     [
+      "cc.LabelOutline",
+      [
+        "_width",
+        "node",
+        "_color"
+      ],
+      2,
+      1,
+      5
+    ],
+    [
       "cc.Camera",
       [
         "_clearFlags",
@@ -500,20 +513,20 @@
   ],
   [
     [
+      5,
+      0,
+      2,
+      3,
+      4,
+      2
+    ],
+    [
       0,
       0,
       5,
       6,
       7,
       9,
-      2
-    ],
-    [
-      5,
-      0,
-      2,
-      3,
-      4,
       2
     ],
     [
@@ -545,22 +558,6 @@
       1
     ],
     [
-      5,
-      1,
-      0,
-      2,
-      3,
-      4,
-      3
-    ],
-    [
-      5,
-      2,
-      3,
-      4,
-      1
-    ],
-    [
       22,
       0,
       1,
@@ -568,52 +565,16 @@
       3
     ],
     [
-      2,
+      1,
       0,
       2,
       1,
-      4,
       3,
-      8,
-      9,
+      4,
       10,
+      11,
+      12,
       6
-    ],
-    [
-      0,
-      0,
-      5,
-      8,
-      6,
-      2
-    ],
-    [
-      3,
-      0,
-      4,
-      2,
-      5,
-      3,
-      2
-    ],
-    [
-      2,
-      0,
-      2,
-      1,
-      8,
-      9,
-      10,
-      4
-    ],
-    [
-      2,
-      0,
-      2,
-      1,
-      8,
-      9,
-      4
     ],
     [
       11,
@@ -625,7 +586,52 @@
       5
     ],
     [
+      0,
+      0,
+      5,
+      8,
       6,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      6,
+      10,
+      7,
+      9,
+      2
+    ],
+    [
+      3,
+      0,
+      4,
+      2,
+      5,
+      3,
+      2
+    ],
+    [
+      5,
+      1,
+      0,
+      2,
+      3,
+      4,
+      3
+    ],
+    [
+      1,
+      0,
+      2,
+      1,
+      10,
+      11,
+      4
+    ],
+    [
+      7,
       0,
       1,
       2,
@@ -679,16 +685,6 @@
       3
     ],
     [
-      0,
-      0,
-      5,
-      6,
-      10,
-      7,
-      9,
-      2
-    ],
-    [
       4,
       0,
       1,
@@ -697,14 +693,13 @@
     ],
     [
       5,
-      1,
       2,
       3,
       4,
-      2
+      1
     ],
     [
-      8,
+      9,
       0,
       1,
       2,
@@ -719,50 +714,60 @@
       2
     ],
     [
-      8,
+      9,
       1,
       2,
       1
     ],
     [
-      2,
+      1,
       0,
       2,
-      6,
       1,
-      4,
-      3,
-      5,
-      7,
+      10,
+      11,
+      12,
+      4
+    ],
+    [
+      1,
+      0,
+      2,
       8,
+      1,
+      3,
+      4,
+      5,
       9,
       10,
+      11,
+      12,
       9
     ],
     [
-      2,
+      1,
       0,
       2,
       1,
-      4,
       3,
-      8,
-      9,
+      4,
+      10,
+      11,
       6
     ],
     [
-      10,
+      6,
       0,
-      3,
       1,
       2,
-      5,
+      3,
       6,
       7,
+      8,
       5
     ],
     [
-      6,
+      7,
       0,
       1,
       3,
@@ -843,6 +848,7 @@
       0,
       0,
       8,
+      9,
       2
     ],
     [
@@ -902,16 +908,6 @@
       11,
       9,
       3
-    ],
-    [
-      0,
-      0,
-      5,
-      6,
-      7,
-      9,
-      12,
-      2
     ],
     [
       3,
@@ -1066,7 +1062,7 @@
       2
     ],
     [
-      7,
+      8,
       0,
       1,
       2,
@@ -1076,7 +1072,7 @@
       5
     ],
     [
-      7,
+      8,
       0,
       1,
       4,
@@ -1108,7 +1104,7 @@
       1
     ],
     [
-      9,
+      10,
       0,
       1,
       2,
@@ -1116,7 +1112,7 @@
       2
     ],
     [
-      9,
+      10,
       1,
       2,
       1
@@ -1129,58 +1125,94 @@
       1
     ],
     [
+      1,
+      0,
+      2,
+      7,
+      1,
+      6,
+      3,
+      4,
+      10,
+      11,
+      12,
+      8
+    ],
+    [
+      1,
+      0,
+      2,
+      1,
+      4,
+      10,
+      11,
+      12,
+      5
+    ],
+    [
+      1,
+      0,
+      1,
+      6,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12,
+      7
+    ],
+    [
+      1,
+      0,
+      1,
+      3,
+      5,
+      10,
+      11,
+      5
+    ],
+    [
       27,
+      0,
+      1,
+      2,
+      2
+    ],
+    [
+      28,
       0,
       1,
       2,
       3
     ],
     [
-      2,
-      0,
-      2,
-      1,
-      3,
-      8,
-      9,
-      10,
-      5
-    ],
-    [
-      2,
+      6,
       0,
       1,
+      2,
       4,
       3,
-      5,
+      6,
+      7,
       8,
-      9,
-      10,
       6
     ],
     [
-      2,
+      6,
       0,
       1,
-      4,
-      5,
-      8,
-      9,
-      5
-    ],
-    [
-      10,
-      0,
-      1,
-      4,
       2,
       5,
+      4,
+      3,
       6,
       7,
-      5
+      8,
+      7
     ],
     [
-      28,
+      29,
       0,
       1,
       2,
@@ -1188,13 +1220,13 @@
       1
     ],
     [
-      29,
+      30,
       0,
       1,
       3
     ],
     [
-      30,
+      31,
       0,
       1,
       3
@@ -1204,7 +1236,7 @@
     [
       [
         [
-          14,
+          8,
           "Tai_Effect_Mini_Lobby",
           "\r\nTai_Effect_Mini_Lobby.png\r\nsize: 192,190\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n1\r\n  rotate: false\r\n  xy: 26, 135\r\n  size: 83, 53\r\n  orig: 83, 53\r\n  offset: 0, 0\r\n  index: -1\r\n1 copy\r\n  rotate: false\r\n  xy: 2, 77\r\n  size: 96, 56\r\n  orig: 96, 56\r\n  offset: 0, 0\r\n  index: -1\r\n2\r\n  rotate: true\r\n  xy: 111, 105\r\n  size: 83, 53\r\n  orig: 83, 53\r\n  offset: 0, 0\r\n  index: -1\r\n2 copy\r\n  rotate: false\r\n  xy: 2, 19\r\n  size: 96, 56\r\n  orig: 96, 56\r\n  offset: 0, 0\r\n  index: -1\r\nLighht2\r\n  rotate: false\r\n  xy: 2, 166\r\n  size: 22, 22\r\n  orig: 22, 22\r\n  offset: 0, 0\r\n  index: -1\r\nLight1\r\n  rotate: true\r\n  xy: 100, 10\r\n  size: 93, 90\r\n  orig: 93, 90\r\n  offset: 0, 0\r\n  index: -1\r\n",
           [
@@ -2568,7 +2600,7 @@
         -1
       ],
       [
-        14
+        12
       ]
     ],
     [
@@ -2578,16 +2610,16 @@
           "rect": [
             0,
             0,
-            51,
-            50
+            88,
+            121
           ],
           "offset": [
             0,
             0
           ],
           "originalSize": [
-            51,
-            50
+            88,
+            121
           ],
           "capInsets": [
             0,
@@ -2598,7 +2630,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -2608,13 +2640,13 @@
         3
       ],
       [
-        15
+        13
       ]
     ],
     [
       [
         [
-          29,
+          28,
           "MiniLoading",
           1,
           2,
@@ -2643,7 +2675,7 @@
     [
       [
         [
-          15,
+          14,
           "NotiTopOff",
           0.4166666666666667,
           {
@@ -2713,7 +2745,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -2723,13 +2755,486 @@
         3
       ],
       [
-        16
+        14
       ]
     ],
     [
       [
         [
-          14,
+          8,
+          "MINIGAME_BUTTON",
+          "MINIGAME_BUTTON.png\r\nsize: 304,176\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nbutton\r\n  rotate: false\r\n  xy: 2, 66\r\n  size: 106, 106\r\n  orig: 106, 106\r\n  offset: 0, 0\r\n  index: -1\r\ndice01\r\n  rotate: false\r\n  xy: 216, 7\r\n  size: 85, 80\r\n  orig: 85, 80\r\n  offset: 0, 0\r\n  index: -1\r\ndice02\r\n  rotate: false\r\n  xy: 94, 5\r\n  size: 57, 59\r\n  orig: 57, 59\r\n  offset: 0, 0\r\n  index: -1\r\nlight\r\n  rotate: false\r\n  xy: 216, 89\r\n  size: 85, 83\r\n  orig: 85, 83\r\n  offset: 0, 0\r\n  index: -1\r\nlightBK\r\n  rotate: false\r\n  xy: 110, 68\r\n  size: 104, 104\r\n  orig: 104, 104\r\n  offset: 0, 0\r\n  index: -1\r\nminigame\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 90, 62\r\n  orig: 90, 62\r\n  offset: 0, 0\r\n  index: -1\r\n",
+          [
+            "MINIGAME_BUTTON.png"
+          ],
+          {
+            "skeleton": {
+              "hash": "1gdSTw+Ft7oprtq94gVeE9Tt/Z4",
+              "spine": "3.7.94",
+              "width": 109,
+              "height": 113,
+              "images": "./images/",
+              "audio": ""
+            },
+            "bones": [
+              {
+                "name": "root"
+              },
+              {
+                "name": "dice01",
+                "parent": "root",
+                "x": -21.06,
+                "y": 16.68
+              },
+              {
+                "name": "dice02",
+                "parent": "root",
+                "x": 24.03,
+                "y": 21.98
+              },
+              {
+                "name": "light",
+                "parent": "root",
+                "x": -11.83,
+                "y": 22.93
+              },
+              {
+                "name": "minigame",
+                "parent": "root",
+                "x": 1.37,
+                "y": -14.11
+              }
+            ],
+            "slots": [
+              {
+                "name": "circle",
+                "bone": "root"
+              },
+              {
+                "name": "lightBK",
+                "bone": "root",
+                "attachment": "lightBK"
+              },
+              {
+                "name": "button",
+                "bone": "root",
+                "attachment": "button"
+              },
+              {
+                "name": "dice02",
+                "bone": "dice02",
+                "attachment": "dice02"
+              },
+              {
+                "name": "dice01",
+                "bone": "dice01",
+                "attachment": "dice01"
+              },
+              {
+                "name": "minigame",
+                "bone": "minigame",
+                "attachment": "minigame"
+              },
+              {
+                "name": "light",
+                "bone": "light",
+                "attachment": "light"
+              }
+            ],
+            "skins": {
+              "default": {
+                "button": {
+                  "button": {
+                    "x": 2,
+                    "y": 4,
+                    "width": 106,
+                    "height": 106
+                  }
+                },
+                "dice01": {
+                  "dice01": {
+                    "type": "mesh",
+                    "hull": 6,
+                    "width": 85,
+                    "height": 80,
+                    "uvs": [
+                      0.38795,
+                      0.83323,
+                      0.09359,
+                      0.57256,
+                      0.25048,
+                      0.10291,
+                      0.57294,
+                      0.15746,
+                      0.85708,
+                      0.34507,
+                      0.69732,
+                      0.79324,
+                      0.56682,
+                      0.34321
+                    ],
+                    "triangles": [
+                      6,
+                      2,
+                      3,
+                      6,
+                      3,
+                      4,
+                      1,
+                      2,
+                      6,
+                      5,
+                      6,
+                      4,
+                      0,
+                      1,
+                      6,
+                      5,
+                      0,
+                      6
+                    ],
+                    "vertices": [
+                      1,
+                      1,
+                      -5.97,
+                      -29.33,
+                      1,
+                      1,
+                      1,
+                      -30.99,
+                      -8.48,
+                      1,
+                      1,
+                      1,
+                      -17.65,
+                      29.09,
+                      1,
+                      1,
+                      1,
+                      9.76,
+                      24.73,
+                      1,
+                      1,
+                      1,
+                      33.91,
+                      9.72,
+                      1,
+                      1,
+                      1,
+                      20.33,
+                      -26.13,
+                      1,
+                      1,
+                      1,
+                      9.24,
+                      9.87,
+                      1
+                    ],
+                    "edges": [
+                      2,
+                      4,
+                      4,
+                      6,
+                      6,
+                      8,
+                      8,
+                      10,
+                      10,
+                      0,
+                      0,
+                      2
+                    ]
+                  }
+                },
+                "dice02": {
+                  "dice02": {
+                    "x": 2.47,
+                    "y": -0.48,
+                    "width": 57,
+                    "height": 59
+                  }
+                },
+                "light": {
+                  "light": {
+                    "x": 1.33,
+                    "y": -0.43,
+                    "width": 85,
+                    "height": 83
+                  }
+                },
+                "lightBK": {
+                  "lightBK": {
+                    "x": -2,
+                    "y": 7,
+                    "width": 104,
+                    "height": 104
+                  }
+                },
+                "minigame": {
+                  "minigame": {
+                    "x": 0.63,
+                    "y": 1.11,
+                    "width": 90,
+                    "height": 62
+                  }
+                }
+              }
+            },
+            "animations": {
+              "animation": {
+                "slots": {
+                  "light": {
+                    "color": [
+                      {
+                        "time": 0.3333,
+                        "color": "ffffffff"
+                      },
+                      {
+                        "time": 0.6667,
+                        "color": "ffffff00"
+                      },
+                      {
+                        "time": 1.3333,
+                        "color": "ffffffff"
+                      }
+                    ]
+                  }
+                },
+                "bones": {
+                  "dice01": {
+                    "translate": [
+                      {
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "time": 1.1667,
+                        "x": 0,
+                        "y": 9.33
+                      },
+                      {
+                        "time": 1.4,
+                        "x": 0,
+                        "y": -5.33,
+                        "curve": [
+                          0.407,
+                          0.03,
+                          0.594,
+                          1.05
+                        ]
+                      },
+                      {
+                        "time": 1.5667,
+                        "x": 0,
+                        "y": 0
+                      }
+                    ]
+                  },
+                  "light": {
+                    "scale": [
+                      {
+                        "time": 0,
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "time": 0.3333,
+                        "x": 1.3,
+                        "y": 1.3
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 1,
+                        "y": 1
+                      }
+                    ]
+                  },
+                  "dice02": {
+                    "rotate": [
+                      {
+                        "time": 0,
+                        "angle": 0
+                      },
+                      {
+                        "time": 0.4,
+                        "angle": -18
+                      },
+                      {
+                        "time": 1.2333,
+                        "angle": 18
+                      },
+                      {
+                        "time": 1.6667,
+                        "angle": 0
+                      }
+                    ],
+                    "translate": [
+                      {
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "time": 1.0667,
+                        "x": 0,
+                        "y": 9.33
+                      },
+                      {
+                        "time": 1.3333,
+                        "x": 0,
+                        "y": -5.33,
+                        "curve": [
+                          0.407,
+                          0.03,
+                          0.594,
+                          1.05
+                        ]
+                      },
+                      {
+                        "time": 1.5,
+                        "x": 0,
+                        "y": 0
+                      }
+                    ]
+                  },
+                  "minigame": {
+                    "translate": [
+                      {
+                        "time": 0,
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "time": 1.3667,
+                        "x": 0,
+                        "y": -1.66,
+                        "curve": [
+                          0,
+                          0.89,
+                          1,
+                          1
+                        ]
+                      },
+                      {
+                        "time": 1.4333,
+                        "x": 0,
+                        "y": 3.6,
+                        "curve": [
+                          0.25,
+                          0,
+                          1,
+                          0.06
+                        ]
+                      },
+                      {
+                        "time": 1.5,
+                        "x": 0,
+                        "y": -1.66
+                      },
+                      {
+                        "time": 1.6667,
+                        "x": 0,
+                        "y": 0
+                      }
+                    ]
+                  }
+                },
+                "deform": {
+                  "default": {
+                    "dice01": {
+                      "dice01": [
+                        {
+                          "time": 0
+                        },
+                        {
+                          "time": 0.4,
+                          "vertices": [
+                            3.00999,
+                            -4.72999,
+                            -2.41199,
+                            -4.26399,
+                            -0.33301,
+                            -0.21499,
+                            -3.18599,
+                            -3.86999,
+                            0,
+                            -0.86,
+                            1.93499,
+                            -0.64501,
+                            4.945,
+                            3.655
+                          ]
+                        },
+                        {
+                          "time": 0.8333,
+                          "vertices": [
+                            11.97613,
+                            -3.67424,
+                            1.5448,
+                            -7.61971,
+                            -3.53577,
+                            -2.43875,
+                            -5.45132,
+                            2.30958,
+                            -0.76163,
+                            9.23097,
+                            7.74002,
+                            7.59796,
+                            6.16817,
+                            4.83608
+                          ]
+                        },
+                        {
+                          "time": 1.2333,
+                          "vertices": [
+                            5.04994,
+                            -2.29132,
+                            -0.53546,
+                            -0.98698,
+                            -0.91478,
+                            0.04826,
+                            -3.22483,
+                            3.52753,
+                            0.54156,
+                            2.85703,
+                            2.23146,
+                            5.32735,
+                            4.4525,
+                            -0.77506
+                          ]
+                        },
+                        {
+                          "time": 1.6667
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          [
+            0
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        15
+      ]
+    ],
+    [
+      [
+        [
+          8,
           "loading_rikvip",
           "\r\nloading_rikvip.png\r\nsize: 560,560\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ndomsang\r\n  rotate: false\r\n  xy: 443, 62\r\n  size: 40, 40\r\n  orig: 40, 40\r\n  offset: 0, 0\r\n  index: -1\r\nelight\r\n  rotate: true\r\n  xy: 462, 259\r\n  size: 109, 43\r\n  orig: 109, 43\r\n  offset: 0, 0\r\n  index: -1\r\nflag0\r\n  rotate: false\r\n  xy: 2, 27\r\n  size: 194, 185\r\n  orig: 194, 185\r\n  offset: 0, 0\r\n  index: -1\r\nflag3\r\n  rotate: false\r\n  xy: 198, 41\r\n  size: 138, 171\r\n  orig: 138, 171\r\n  offset: 0, 0\r\n  index: -1\r\nli0\r\n  rotate: false\r\n  xy: 462, 370\r\n  size: 58, 101\r\n  orig: 58, 101\r\n  offset: 0, 0\r\n  index: -1\r\nli1\r\n  rotate: false\r\n  xy: 338, 111\r\n  size: 62, 101\r\n  orig: 62, 101\r\n  offset: 0, 0\r\n  index: -1\r\nlogo3\r\n  rotate: false\r\n  xy: 2, 214\r\n  size: 458, 344\r\n  orig: 458, 344\r\n  offset: 0, 0\r\n  index: -1\r\nlogo4\r\n  rotate: false\r\n  xy: 462, 473\r\n  size: 93, 85\r\n  orig: 93, 85\r\n  offset: 0, 0\r\n  index: -1\r\nlogo5\r\n  rotate: false\r\n  xy: 507, 251\r\n  size: 26, 56\r\n  orig: 26, 56\r\n  offset: 0, 0\r\n  index: -1\r\nlogo6\r\n  rotate: true\r\n  xy: 403, 46\r\n  size: 14, 54\r\n  orig: 14, 54\r\n  offset: 0, 0\r\n  index: -1\r\nlogo7\r\n  rotate: false\r\n  xy: 507, 309\r\n  size: 26, 59\r\n  orig: 26, 59\r\n  offset: 0, 0\r\n  index: -1\r\nlogo8\r\n  rotate: false\r\n  xy: 511, 17\r\n  size: 30, 24\r\n  orig: 30, 24\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn0\r\n  rotate: true\r\n  xy: 338, 2\r\n  size: 42, 50\r\n  orig: 42, 50\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn1\r\n  rotate: false\r\n  xy: 449, 156\r\n  size: 33, 50\r\n  orig: 33, 50\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn10\r\n  rotate: true\r\n  xy: 2, 8\r\n  size: 17, 48\r\n  orig: 17, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn11\r\n  rotate: true\r\n  xy: 52, 8\r\n  size: 17, 48\r\n  orig: 17, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn12\r\n  rotate: false\r\n  xy: 484, 107\r\n  size: 30, 48\r\n  orig: 30, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn13\r\n  rotate: false\r\n  xy: 522, 373\r\n  size: 36, 48\r\n  orig: 36, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn14\r\n  rotate: false\r\n  xy: 402, 163\r\n  size: 45, 49\r\n  orig: 45, 49\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn15\r\n  rotate: false\r\n  xy: 403, 62\r\n  size: 38, 49\r\n  orig: 38, 49\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn16\r\n  rotate: false\r\n  xy: 479, 5\r\n  size: 30, 48\r\n  orig: 30, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn17\r\n  rotate: true\r\n  xy: 198, 24\r\n  size: 15, 48\r\n  orig: 15, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn18\r\n  rotate: true\r\n  xy: 248, 24\r\n  size: 15, 48\r\n  orig: 15, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn19\r\n  rotate: false\r\n  xy: 512, 43\r\n  size: 30, 48\r\n  orig: 30, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn2\r\n  rotate: false\r\n  xy: 533, 155\r\n  size: 25, 50\r\n  orig: 25, 50\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn20\r\n  rotate: false\r\n  xy: 462, 208\r\n  size: 38, 49\r\n  orig: 38, 49\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn21\r\n  rotate: false\r\n  xy: 390, 2\r\n  size: 47, 42\r\n  orig: 47, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn22\r\n  rotate: false\r\n  xy: 439, 2\r\n  size: 38, 42\r\n  orig: 38, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn23\r\n  rotate: true\r\n  xy: 516, 124\r\n  size: 29, 42\r\n  orig: 29, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn24\r\n  rotate: true\r\n  xy: 153, 8\r\n  size: 17, 42\r\n  orig: 17, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn25\r\n  rotate: false\r\n  xy: 535, 329\r\n  size: 17, 42\r\n  orig: 17, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn26\r\n  rotate: true\r\n  xy: 516, 93\r\n  size: 29, 42\r\n  orig: 29, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn27\r\n  rotate: false\r\n  xy: 502, 207\r\n  size: 38, 42\r\n  orig: 38, 42\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn3\r\n  rotate: false\r\n  xy: 484, 157\r\n  size: 15, 49\r\n  orig: 15, 49\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn4\r\n  rotate: true\r\n  xy: 102, 10\r\n  size: 15, 49\r\n  orig: 15, 49\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn5\r\n  rotate: false\r\n  xy: 485, 55\r\n  size: 25, 50\r\n  orig: 25, 50\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn6\r\n  rotate: false\r\n  xy: 449, 104\r\n  size: 33, 50\r\n  orig: 33, 50\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn7\r\n  rotate: false\r\n  xy: 402, 113\r\n  size: 45, 48\r\n  orig: 45, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn8\r\n  rotate: false\r\n  xy: 522, 423\r\n  size: 36, 48\r\n  orig: 36, 48\r\n  offset: 0, 0\r\n  index: -1\r\nrcbn9\r\n  rotate: false\r\n  xy: 501, 157\r\n  size: 30, 48\r\n  orig: 30, 48\r\n  offset: 0, 0\r\n  index: -1\r\nstar1\r\n  rotate: false\r\n  xy: 338, 46\r\n  size: 63, 63\r\n  orig: 63, 63\r\n  offset: 0, 0\r\n  index: -1\r\n",
           [
@@ -14251,7 +14756,7 @@
         -1
       ],
       [
-        17
+        16
       ]
     ],
     [
@@ -14281,7 +14786,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -14291,58 +14796,18 @@
         3
       ],
       [
-        18
-      ]
-    ],
-    [
-      [
-        {
-          "name": "IconMd5",
-          "rect": [
-            0,
-            0,
-            79,
-            69
-          ],
-          "offset": [
-            0,
-            0
-          ],
-          "originalSize": [
-            79,
-            69
-          ],
-          "capInsets": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      ],
-      [
-        1
-      ],
-      0,
-      [
-        0
-      ],
-      [
-        3
-      ],
-      [
-        19
+        17
       ]
     ],
     [
       [
         [
-          30,
+          29,
           "Config",
           null
         ],
         [
-          16,
+          15,
           "UIManager",
           "b6nsvNPAFHR7XRfj5RAvgY",
           [
@@ -14360,7 +14825,7 @@
           ],
           [
             [
-              52,
+              50,
               -11,
               -10,
               -9,
@@ -14372,10 +14837,10 @@
               -3,
               -2,
               -1,
-              89
+              87
             ],
             [
-              53,
+              51,
               45,
               1280,
               720,
@@ -14401,7 +14866,7 @@
           ]
         ],
         [
-          31,
+          30,
           "Dialog",
           false,
           1,
@@ -14410,8 +14875,7 @@
             -30,
             -31,
             -32,
-            -33,
-            -34
+            -33
           ],
           [
             [
@@ -14423,7 +14887,7 @@
               -25
             ],
             [
-              58,
+              56,
               -28,
               -27,
               -26
@@ -14436,24 +14900,24 @@
           ]
         ],
         [
-          32,
+          31,
           "loading",
           1,
           [
+            -36,
             -37,
             -38,
             -39,
-            -40,
-            -41
+            -40
           ],
           [
             [
               5,
-              -35
+              -34
             ],
             [
               4,
-              -36
+              -35
             ]
           ],
           [
@@ -14463,18 +14927,18 @@
           ]
         ],
         [
-          46,
+          44,
           "NodeMesage",
           [
+            -42,
             -43,
             -44,
             -45,
             -46,
-            -47,
-            -48
+            -47
           ],
           [
-            -42
+            -41
           ],
           [
             0,
@@ -14490,17 +14954,17 @@
           ]
         ],
         [
-          16,
+          15,
           "Canvas",
           "a5esZu+45LA5mBpvttspPD",
           [
-            -54,
-            -55
+            -53,
+            -54
           ],
           [
             [
-              59,
-              -49,
+              57,
+              -48,
               [
                 5,
                 1280,
@@ -14508,18 +14972,18 @@
               ]
             ],
             [
-              60,
+              58,
+              -49
+            ],
+            [
+              52,
+              45,
               -50
             ],
             [
-              54,
-              45,
-              -51
-            ],
-            [
-              61,
-              -53,
+              59,
               -52,
+              -51,
               1,
               2,
               3
@@ -14544,33 +15008,33 @@
           ]
         ],
         [
-          33,
+          32,
           "ItemDownload",
           false,
           1,
           [
+            -57,
             -58,
             -59,
-            -60,
-            -61
+            -60
           ],
           [
             [
-              62,
-              -57,
-              -56
+              60,
+              -56,
+              -55
             ]
           ]
         ],
         [
-          34,
+          33,
           "NodeMove",
           false,
           [
+            -61,
             -62,
             -63,
-            -64,
-            -65
+            -64
           ],
           [
             0,
@@ -14586,30 +15050,30 @@
           ]
         ],
         [
-          35,
+          34,
           "AlertMini",
           false,
           [
-            -69
+            -68
           ],
           [
             [
-              6,
+              12,
               1,
               0,
-              -66,
+              -65,
               [
-                60
+                58
               ],
-              61
+              59
             ],
             [
-              65,
+              63,
               1,
               1,
               50,
               50,
-              -67,
+              -66,
               [
                 5,
                 311.63,
@@ -14617,10 +15081,10 @@
               ]
             ],
             [
-              22,
+              20,
               1,
               -424,
-              -68
+              -67
             ]
           ],
           [
@@ -14642,20 +15106,20 @@
           ]
         ],
         [
-          36,
+          35,
           "LoadingPro",
           3,
           [
+            -70,
             -71,
-            -72,
-            -73
+            -72
           ],
           [
             [
-              55,
+              53,
               4,
               35.70999999999998,
-              -70
+              -69
             ]
           ],
           [
@@ -14672,14 +15136,14 @@
           ]
         ],
         [
-          37,
+          36,
           "MiniLoading",
           false,
           1,
           [
+            -73,
             -74,
-            -75,
-            -76
+            -75
           ],
           [
             5,
@@ -14688,26 +15152,26 @@
           ]
         ],
         [
-          47,
+          45,
           "AlertReviceMessage",
           false,
           [
             4
           ],
           [
-            -77
+            -76
           ]
         ],
         [
-          17,
+          16,
           "sprite_splash",
           120,
           10,
           [
             [
-              1,
               0,
-              -78,
+              0,
+              -77,
               [
                 19
               ],
@@ -14715,11 +15179,11 @@
             ],
             [
               5,
-              -79
+              -78
             ],
             [
               4,
-              -80
+              -79
             ]
           ],
           [
@@ -14733,15 +15197,15 @@
           ]
         ],
         [
-          17,
+          16,
           "mask",
           150,
           2,
           [
             [
-              1,
               0,
-              -81,
+              0,
+              -80,
               [
                 27
               ],
@@ -14749,11 +15213,11 @@
             ],
             [
               4,
-              -82
+              -81
             ],
             [
               5,
-              -83
+              -82
             ]
           ],
           [
@@ -14771,16 +15235,16 @@
           "parentButton",
           2,
           [
-            -85,
-            -86
+            -84,
+            -85
           ],
           [
             [
-              66,
+              64,
               1,
               1,
               100,
-              -84,
+              -83,
               [
                 5,
                 400,
@@ -14811,16 +15275,16 @@
           "buttonDongY",
           14,
           [
-            -89
+            -88
           ],
           [
             [
-              24,
+              22,
               3,
-              -88,
+              -87,
               [
                 [
-                  8,
+                  6,
                   "56258jF0npOIIwTyzr0Qs3w",
                   "onClickDongY",
                   2
@@ -14838,11 +15302,11 @@
                 4,
                 3363338360
               ],
-              -87,
+              -86,
+              39,
+              40,
               41,
-              42,
-              43,
-              44
+              42
             ]
           ],
           [
@@ -14864,28 +15328,28 @@
           ]
         ],
         [
-          18,
+          17,
           "Background",
           512,
           15,
           [
-            -91
+            -90
           ],
           [
             [
-              23,
-              1,
-              -90,
+              0,
+              0,
+              -89,
               [
-                39
+                37
               ],
-              40
+              38
             ]
           ],
           [
             5,
-            175,
-            59
+            183.3333333,
+            64.5454545
           ],
           [
             0,
@@ -14905,16 +15369,16 @@
           "buttonHuy",
           14,
           [
-            -94
+            -93
           ],
           [
             [
-              24,
+              22,
               3,
-              -93,
+              -92,
               [
                 [
-                  8,
+                  6,
                   "56258jF0npOIIwTyzr0Qs3w",
                   "onClickHuy",
                   2
@@ -14932,11 +15396,11 @@
                 4,
                 3363338360
               ],
-              -92,
+              -91,
+              47,
+              48,
               49,
-              50,
-              51,
-              52
+              50
             ]
           ],
           [
@@ -14958,28 +15422,28 @@
           ]
         ],
         [
-          18,
+          17,
           "Background",
           512,
           17,
           [
-            -96
+            -95
           ],
           [
             [
-              23,
-              1,
-              -95,
+              0,
+              0,
+              -94,
               [
-                47
+                45
               ],
-              48
+              46
             ]
           ],
           [
             5,
-            175,
-            59
+            183.3333333,
+            69.0909091
           ],
           [
             0,
@@ -14995,7 +15459,7 @@
           ]
         ],
         [
-          10,
+          9,
           "NotyNoHu",
           1,
           [
@@ -15003,22 +15467,34 @@
           ],
           [
             [
-              67,
-              -100,
+              65,
               -99,
               -98,
               -97,
+              -96,
               7
             ]
           ]
         ],
         [
-          38,
+          37,
           "36",
           [
+            -100,
             -101,
-            -102,
-            -103
+            -102
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.9,
+            0.9,
+            1
           ]
         ],
         [
@@ -15026,26 +15502,27 @@
           "TimeMiniGame",
           20,
           [
-            -105
+            -104
           ],
           [
             [
-              7,
-              -104,
+              0,
+              0,
+              -103,
               [
-                85
+                83
               ],
-              86
+              84
             ]
           ],
           [
             5,
-            51,
-            50
+            31.4285714,
+            43.2142857
           ],
           [
-            -33.813,
-            -29.26,
+            -39.171,
+            -36.334,
             0,
             0,
             0,
@@ -15057,7 +15534,7 @@
           ]
         ],
         [
-          68,
+          66,
           "New Node",
           false,
           [
@@ -15083,15 +15560,15 @@
           ]
         ],
         [
-          51,
+          49,
           "BkgBanNgay",
           5,
           [
             [
-              -106,
+              -105,
               [
                 4,
-                -107
+                -106
               ]
             ],
             1,
@@ -15109,9 +15586,9 @@
           3,
           [
             [
-              1,
               0,
-              -108,
+              0,
+              -107,
               [
                 4
               ],
@@ -15119,7 +15596,7 @@
             ],
             [
               4,
-              -109
+              -108
             ]
           ],
           [
@@ -15129,15 +15606,15 @@
           ]
         ],
         [
-          39,
+          38,
           "perSprite",
           9,
           [
             [
-              6,
+              12,
               3,
               0,
-              -110,
+              -109,
               [
                 8
               ],
@@ -15168,23 +15645,23 @@
           ]
         ],
         [
-          0,
+          1,
           "avatar",
           3,
           [
             [
-              63,
-              -111,
+              61,
+              -110,
               [
                 14
               ]
             ],
             [
-              56,
+              54,
               9,
               28.451000000000022,
               30.898000000000025,
-              -112
+              -111
             ]
           ],
           [
@@ -15206,11 +15683,11 @@
           ]
         ],
         [
-          40,
+          39,
           "ParentMiniGame",
           1,
           [
-            -113
+            -112
           ],
           [
             4,
@@ -15223,24 +15700,24 @@
           ]
         ],
         [
-          41,
+          40,
           "default_sprite_splash",
           false,
           150,
           27,
           [
             [
-              1,
               0,
-              -114,
+              0,
+              -113,
               [
                 17
               ],
               18
             ],
             [
-              69,
-              -115
+              67,
+              -114
             ]
           ],
           [
@@ -15254,24 +15731,24 @@
           ]
         ],
         [
-          42,
+          41,
           "refresh",
           false,
           10,
           [
             [
-              1,
               0,
-              -116,
+              0,
+              -115,
               [
                 23
               ],
               24
             ],
             [
-              70,
+              68,
               true,
-              -117,
+              -116,
               [
                 26
               ],
@@ -15285,7 +15762,7 @@
           ]
         ],
         [
-          10,
+          9,
           "ParentAlert",
           1,
           [
@@ -15293,14 +15770,14 @@
           ],
           [
             [
-              57,
+              55,
               360,
-              -118
+              -117
             ]
           ]
         ],
         [
-          10,
+          9,
           "ParentMailDialog",
           1,
           [
@@ -15308,10 +15785,10 @@
           ],
           [
             [
-              22,
+              20,
               1,
               360,
-              -119
+              -118
             ]
           ]
         ],
@@ -15320,15 +15797,15 @@
           "btnDoc",
           4,
           [
-            -121
+            -120
           ],
           [
             [
-              25,
-              -120,
+              23,
+              -119,
               [
                 [
-                  8,
+                  6,
                   "5d6a7hWgplDDal+hTxlnJ1t",
                   "onClickDoc",
                   11
@@ -15359,15 +15836,15 @@
           "btnHuy",
           4,
           [
-            -123
+            -122
           ],
           [
             [
-              25,
-              -122,
+              23,
+              -121,
               [
                 [
-                  8,
+                  6,
                   "5d6a7hWgplDDal+hTxlnJ1t",
                   "onClickClose",
                   11
@@ -15402,10 +15879,10 @@
           ],
           [
             [
-              72,
-              -125,
+              70,
+              -124,
               21,
-              -124
+              -123
             ]
           ],
           [
@@ -15414,8 +15891,8 @@
             100
           ],
           [
-            589.073,
-            170.473,
+            -399.627,
+            207.586,
             0,
             0,
             0,
@@ -15427,23 +15904,71 @@
           ]
         ],
         [
-          43,
-          "Result",
-          20,
+          1,
+          "sans_bold-export",
+          21,
           [
-            -126
+            [
+              71,
+              "50",
+              30,
+              35,
+              false,
+              1,
+              1,
+              1,
+              -125,
+              [
+                81
+              ],
+              82
+            ],
+            [
+              75,
+              2,
+              -126,
+              [
+                4,
+                4278535168
+              ]
+            ]
+          ],
+          [
+            5,
+            39.1,
+            48.1
+          ],
+          [
+            0.025,
+            -7.165,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0.5,
+            0.5,
+            1
           ]
         ],
         [
-          0,
+          42,
+          "Result",
+          20,
+          [
+            -127
+          ]
+        ],
+        [
+          1,
           "Main Camera",
           5,
           [
             [
-              73,
+              76,
               7,
               -1,
-              -127
+              -128
             ]
           ],
           [
@@ -15465,7 +15990,7 @@
           ]
         ],
         [
-          64,
+          62,
           0,
           23,
           [
@@ -15473,18 +15998,18 @@
           ]
         ],
         [
-          19,
+          18,
           "ParentGame",
           1
         ],
         [
-          0,
+          1,
           "BkgProgress",
           9,
           [
             [
-              7,
-              -128,
+              21,
+              -129,
               [
                 6
               ],
@@ -15510,16 +16035,16 @@
           ]
         ],
         [
-          0,
+          1,
           "per",
           9,
           [
             [
-              12,
+              24,
               "0%",
               25,
               false,
-              -129,
+              -130,
               [
                 10
               ],
@@ -15550,12 +16075,12 @@
           3,
           [
             [
-              28,
+              27,
               "default",
               "Animation",
               0,
               "Animation",
-              -130,
+              -131,
               [
                 12
               ],
@@ -15569,18 +16094,18 @@
           ]
         ],
         [
-          44,
+          43,
           "lbVer",
           false,
           3,
           [
             [
-              74,
+              72,
               "1.0.1 -> 1.0.2",
               25,
               false,
               1,
-              -131,
+              -132,
               [
                 15
               ],
@@ -15615,7 +16140,7 @@
           ]
         ],
         [
-          19,
+          18,
           "ParentPopup",
           1
         ],
@@ -15625,12 +16150,12 @@
           10,
           [
             [
-              28,
+              27,
               "default",
               "loading_smallchip",
               0,
               "loading_smallchip",
-              -132,
+              -133,
               [
                 21
               ],
@@ -15649,10 +16174,9 @@
           2,
           [
             [
-              6,
-              2,
               0,
-              -133,
+              0,
+              -134,
               [
                 29
               ],
@@ -15661,18 +16185,23 @@
           ],
           [
             5,
-            640,
-            374
+            704,
+            411.4
           ]
         ],
         [
-          0,
-          "bg-title-2",
+          10,
+          "title",
           2,
           [
             [
               7,
-              -134,
+              "THÔNG BÁO",
+              30,
+              false,
+              1,
+              1,
+              -135,
               [
                 31
               ],
@@ -15680,13 +16209,17 @@
             ]
           ],
           [
+            4,
+            4289196543
+          ],
+          [
             5,
-            477,
-            128
+            186.56,
+            40
           ],
           [
             0,
-            188.877,
+            180.08,
             0,
             0,
             0,
@@ -15698,18 +16231,19 @@
           ]
         ],
         [
-          0,
-          "title",
+          10,
+          "label",
           2,
           [
             [
-              9,
-              "Thông Báo",
-              25,
+              73,
+              "Label",
               false,
               1,
               1,
-              -135,
+              1,
+              3,
+              -136,
               [
                 33
               ],
@@ -15717,46 +16251,13 @@
             ]
           ],
           [
-            5,
-            208.59,
-            40
-          ],
-          [
-            0,
-            172.765,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1
-          ]
-        ],
-        [
-          0,
-          "label",
-          2,
-          [
-            [
-              75,
-              "Label",
-              false,
-              1,
-              1,
-              3,
-              -136,
-              [
-                35
-              ],
-              36
-            ]
+            4,
+            4278197574
           ],
           [
             5,
             500,
-            40
+            50.4
           ],
           [
             0,
@@ -15772,13 +16273,13 @@
           ]
         ],
         [
-          20,
+          19,
           "Label",
           512,
           16,
           [
             [
-              26,
+              25,
               "Đồng ý",
               30,
               false,
@@ -15789,9 +16290,9 @@
               1,
               -137,
               [
-                37
+                35
               ],
-              38
+              36
             ]
           ],
           [
@@ -15813,13 +16314,13 @@
           ]
         ],
         [
-          20,
+          19,
           "Label",
           512,
           18,
           [
             [
-              26,
+              25,
               "Hủy",
               30,
               false,
@@ -15830,9 +16331,9 @@
               1,
               -138,
               [
-                45
+                43
               ],
-              46
+              44
             ]
           ],
           [
@@ -15859,12 +16360,12 @@
           7,
           [
             [
-              7,
+              21,
               -139,
               [
-                53
+                51
               ],
-              54
+              52
             ]
           ],
           [
@@ -15899,14 +16400,14 @@
           ]
         ],
         [
-          76,
+          74,
           "lvd10011212323",
           false,
           1,
           2,
           52,
           [
-            55
+            53
           ]
         ],
         [
@@ -15941,7 +16442,7 @@
           false,
           54,
           [
-            56
+            54
           ]
         ],
         [
@@ -15976,7 +16477,7 @@
           false,
           56,
           [
-            57
+            55
           ]
         ],
         [
@@ -15985,7 +16486,7 @@
           8,
           [
             [
-              9,
+              7,
               "Copy thanh cong",
               30,
               false,
@@ -15993,9 +16494,9 @@
               1,
               -143,
               [
-                58
+                56
               ],
-              59
+              57
             ]
           ],
           [
@@ -16005,19 +16506,19 @@
           ]
         ],
         [
-          0,
+          1,
           "btnOff",
           4,
           [
             [
-              6,
+              12,
               1,
               0,
               -144,
               [
-                62
+                60
               ],
-              63
+              61
             ]
           ],
           [
@@ -16039,7 +16540,7 @@
           ]
         ],
         [
-          48,
+          46,
           "sender",
           4,
           [
@@ -16073,7 +16574,7 @@
           ]
         ],
         [
-          27,
+          26,
           "ADMIN ->Tôi",
           20,
           false,
@@ -16081,11 +16582,11 @@
           1,
           60,
           [
-            64
+            62
           ]
         ],
         [
-          49,
+          47,
           "Header",
           4,
           [
@@ -16115,7 +16616,7 @@
           ]
         ],
         [
-          27,
+          26,
           "chuc mung banasjsndj...",
           20,
           false,
@@ -16123,16 +16624,16 @@
           1,
           62,
           [
-            65
+            63
           ]
         ],
         [
-          0,
+          1,
           "sans_bold-export",
           32,
           [
             [
-              9,
+              7,
               "Đọc",
               20,
               false,
@@ -16140,9 +16641,9 @@
               1,
               -147,
               [
-                66
+                64
               ],
-              67
+              65
             ]
           ],
           [
@@ -16164,18 +16665,18 @@
           ]
         ],
         [
-          21,
+          10,
           "sprite_splash",
           4,
           [
             [
-              1,
+              0,
               0,
               -148,
               [
-                68
+                66
               ],
-              69
+              67
             ]
           ],
           [
@@ -16201,12 +16702,12 @@
           ]
         ],
         [
-          0,
+          1,
           "sans_bold-export",
           33,
           [
             [
-              9,
+              7,
               "Hủy",
               20,
               false,
@@ -16214,9 +16715,9 @@
               1,
               -149,
               [
-                70
+                68
               ],
-              71
+              69
             ]
           ],
           [
@@ -16238,15 +16739,15 @@
           ]
         ],
         [
-          71,
+          69,
           4,
           [
-            72,
-            73
+            70,
+            71
           ]
         ],
         [
-          78,
+          79,
           11,
           67,
           61,
@@ -16258,13 +16759,13 @@
           6,
           [
             [
-              1,
+              0,
               0,
               -150,
               [
-                74
+                72
               ],
-              75
+              73
             ]
           ],
           [
@@ -16279,13 +16780,13 @@
           6,
           [
             [
-              1,
+              0,
               0,
               -151,
               [
-                76
+                74
               ],
-              77
+              75
             ]
           ],
           [
@@ -16295,20 +16796,20 @@
           ]
         ],
         [
-          0,
+          1,
           "sans_bold-export",
           6,
           [
             [
-              12,
+              24,
               "LOADING",
               25,
               false,
               -152,
               [
-                78
+                76
               ],
-              79
+              77
             ]
           ],
           [
@@ -16330,7 +16831,7 @@
           ]
         ],
         [
-          50,
+          48,
           "per",
           6,
           [
@@ -16365,103 +16866,52 @@
           false,
           72,
           [
-            80
+            78
           ]
         ],
         [
-          45,
+          2,
           "IconMd5",
           20,
           [
             [
-              1,
-              0,
-              -154,
-              [
-                81
-              ],
-              82
-            ]
-          ],
-          [
-            5,
-            102.7,
-            89.7
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0.7071067811865475,
-            0.7071067811865476,
-            1,
-            1,
-            1
-          ],
-          [
-            1,
-            0,
-            0,
-            90
-          ]
-        ],
-        [
-          21,
-          "sans_bold-export",
-          21,
-          [
-            [
-              12,
-              "50",
-              25,
-              false,
-              -155,
-              [
-                83
-              ],
-              84
-            ]
-          ],
-          [
-            4,
-            4288149503
-          ],
-          [
-            5,
-            29.25,
-            50.4
-          ],
-          [
-            -0.688,
-            -2.305,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1
-          ]
-        ],
-        [
-          0,
-          "Tai_Effect_Mini_Lobby",
-          35,
-          [
-            [
               77,
               "default",
-              1,
-              1,
-              "AnimXiu",
-              -156,
+              "animation",
+              0,
+              false,
+              "animation",
+              -154,
               [
-                87
+                79
               ],
-              88
+              80
+            ]
+          ],
+          [
+            5,
+            109,
+            113
+          ]
+        ],
+        [
+          1,
+          "Tai_Effect_Mini_Lobby",
+          36,
+          [
+            [
+              78,
+              "default",
+              "AnimXiu",
+              1,
+              1,
+              false,
+              "AnimXiu",
+              -155,
+              [
+                85
+              ],
+              86
             ]
           ],
           [
@@ -16470,8 +16920,8 @@
             301
           ],
           [
-            17.773,
-            -17.772,
+            21.339,
+            50.094,
             0,
             0,
             0,
@@ -16499,13 +16949,13 @@
         19,
         0,
         15,
-        38,
+        39,
         0,
         16,
         27,
         0,
         17,
-        43,
+        44,
         0,
         18,
         25,
@@ -16523,7 +16973,7 @@
         1,
         0,
         -1,
-        38,
+        39,
         0,
         -2,
         3,
@@ -16532,7 +16982,7 @@
         27,
         0,
         -4,
-        43,
+        44,
         0,
         -5,
         10,
@@ -16574,18 +17024,15 @@
         13,
         0,
         -2,
-        45,
-        0,
-        -3,
         46,
         0,
-        -4,
+        -3,
         47,
         0,
-        -5,
+        -4,
         48,
         0,
-        -6,
+        -5,
         14,
         0,
         0,
@@ -16601,13 +17048,13 @@
         9,
         0,
         -3,
-        41,
+        42,
         0,
         -4,
         26,
         0,
         -5,
-        42,
+        43,
         0,
         -1,
         67,
@@ -16640,13 +17087,13 @@
         5,
         0,
         23,
-        37,
+        38,
         0,
         0,
         5,
         0,
         -1,
-        36,
+        37,
         0,
         -2,
         23,
@@ -16697,19 +17144,19 @@
         9,
         0,
         -1,
-        39,
+        40,
         0,
         -2,
         25,
         0,
         -3,
-        40,
+        41,
         0,
         -1,
         12,
         0,
         -2,
-        44,
+        45,
         0,
         -3,
         29,
@@ -16793,16 +17240,16 @@
         21,
         0,
         -3,
-        35,
+        36,
         0,
         0,
         21,
         0,
         -1,
-        75,
+        35,
         0,
         -1,
-        37,
+        38,
         0,
         0,
         23,
@@ -16856,19 +17303,22 @@
         66,
         0,
         28,
-        35,
+        36,
         0,
         0,
         34,
         0,
+        0,
+        35,
+        0,
+        0,
+        35,
+        0,
         -1,
-        76,
+        75,
         0,
         0,
-        36,
-        0,
-        0,
-        39,
+        37,
         0,
         0,
         40,
@@ -16880,7 +17330,7 @@
         42,
         0,
         0,
-        44,
+        43,
         0,
         0,
         45,
@@ -16951,9 +17401,6 @@
         0,
         75,
         0,
-        0,
-        76,
-        0,
         29,
         22,
         1,
@@ -16977,7 +17424,7 @@
         20,
         4,
         34,
-        156
+        155
       ],
       [
         0,
@@ -17068,9 +17515,7 @@
         0,
         0,
         0,
-        0,
-        0,
-        37,
+        38,
         53,
         55,
         57,
@@ -17106,8 +17551,6 @@
         1,
         33,
         -1,
-        -1,
-        1,
         -1,
         1,
         -1,
@@ -17161,7 +17604,7 @@
         2,
         -1,
         -1,
-        1,
+        5,
         -1,
         2,
         -1,
@@ -17181,56 +17624,54 @@
         0,
         4,
         5,
-        20,
+        18,
         0,
         5,
         0,
+        19,
+        0,
+        20,
+        0,
+        1,
+        2,
         21,
         0,
+        0,
+        1,
+        0,
+        3,
+        0,
+        3,
+        2,
         22,
         0,
-        1,
-        3,
         23,
+        6,
+        6,
         0,
-        0,
-        1,
-        0,
-        2,
-        0,
-        2,
         3,
+        0,
         24,
         0,
         25,
-        6,
-        6,
         0,
-        2,
+        1,
         0,
-        26,
-        0,
-        27,
+        1,
         0,
         7,
-        0,
-        1,
-        0,
-        1,
-        0,
-        8,
+        7,
         8,
         9,
         10,
-        11,
         0,
         1,
         0,
-        12,
-        12,
+        26,
+        27,
+        8,
         9,
         10,
-        11,
         0,
         28,
         0,
@@ -17247,31 +17688,31 @@
         0,
         1,
         0,
-        2,
+        3,
         0,
         1,
         31,
         32,
         0,
-        13,
+        11,
         0,
-        13,
+        11,
         0,
         1,
         0,
-        0,
+        2,
         33,
         0,
         1,
         0,
         34,
-        3,
+        2,
         35,
         36,
         4,
         1,
-        7,
         37,
+        38,
         1,
         1,
         1
@@ -17280,7 +17721,7 @@
     [
       [
         [
-          79,
+          80,
           "cacert1",
           ".pem"
         ],
@@ -17295,7 +17736,7 @@
     [
       [
         [
-          80,
+          81,
           "project",
           {
             "packageUrl": "https://bundle.caxeng.com/Full/",
@@ -21301,7 +21742,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -21311,7 +21752,7 @@
         3
       ],
       [
-        38
+        39
       ]
     ],
     [
@@ -21341,7 +21782,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -21351,13 +21792,13 @@
         3
       ],
       [
-        39
+        40
       ]
     ],
     [
       [
         [
-          15,
+          14,
           "NotiTop",
           0.5,
           {
@@ -21433,7 +21874,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -21443,7 +21884,7 @@
         3
       ],
       [
-        40
+        41
       ]
     ],
     [
@@ -21473,7 +21914,7 @@
         }
       ],
       [
-        1
+        2
       ],
       0,
       [
@@ -21483,7 +21924,7 @@
         3
       ],
       [
-        41
+        42
       ]
     ]
   ]

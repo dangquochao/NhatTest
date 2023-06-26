@@ -1173,11 +1173,11 @@ window.__require = function e(t, n, r) {
         }
         if (-1 == data.type) {
           this.thisPlayer.showBackExit();
-          Windown_1.Windown.Dialog.showLog("You are in table!");
+          Windown_1.Windown.Dialog.showLog("B\u1ea1n \u0111ang trong b\xe0n!");
           return;
         }
         this.thisPlayer.showBackExit();
-        Windown_1.Windown.Dialog.showLog("You can exit room when finishGame");
+        Windown_1.Windown.Dialog.showLog("Kh\xf4ng th\u1ec3 chuy\u1ec3n b\xe0n cho t\u1edbi khi v\xe1n ch\u01a1i k\u1ebft th\xfac!");
         return;
       };
       TienLenGameView.prototype.removePlayer = function(id, isInGame) {
