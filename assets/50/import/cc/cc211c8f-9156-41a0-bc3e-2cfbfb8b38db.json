@@ -1,7 +1,7 @@
 [
   1,
   [
-    "35YP3+EQhCrIdzQNVtEKuq"
+    "85thwpmsxHh7Bt/lpsAv5m"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "btn_blue",
+      "name": "ic_menu",
       "rect": [
         0,
         0,
-        169,
-        61
+        68,
+        70
       ],
       "offset": [
         0,
         0
       ],
       "originalSize": [
-        169,
-        61
+        68,
+        70
       ],
       "capInsets": [
         0,

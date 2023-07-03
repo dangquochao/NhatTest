@@ -1,7 +1,7 @@
 [
   1,
   [
-    "6dh9pblo5EcoBTPZv0Ncmo"
+    "f7/jS0jNtBG77VQvBHVB4x"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "bt_reload",
+      "name": "bt_red",
       "rect": [
         0,
         0,
-        80,
-        80
+        163,
+        57
       ],
       "offset": [
         0,
-        0
+        6
       ],
       "originalSize": [
-        80,
-        80
+        163,
+        69
       ],
       "capInsets": [
         0,

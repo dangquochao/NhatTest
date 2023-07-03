@@ -701,23 +701,40 @@ window.__require = function e(t, n, r) {
       PlayerViewTL.prototype.showEffectWinLose = function(isWin) {
         var _this = this;
         cc.log("Chay vao set EffectWinLose");
+        var actionNode;
         if (1 === isWin) {
           this.aniWin.node.active = true;
-          this.aniWin.setAnimation(0, "win", true);
-          var funcEnd = function() {
-            _this.aniWin.node.active = false;
-          };
-          var actionNode = this.aniWin.node;
+          this.aniWin.setSlotsToSetupPose();
+          this.aniWin.setAnimation(0, "appear", false);
+          this.aniWin.setCompleteListener(function() {
+            _this.aniWin.setAnimation(0, "idle", true);
+            _this.aniWin.setCompleteListener(function() {
+              _this.aniWin.setCompleteListener(null);
+            });
+          });
+          actionNode = this.aniWin.node;
         } else {
           this.aniLose.node.active = true;
-          this.aniLose.setAnimation(0, "animation", true);
-          var funcEnd = function() {
-            _this.aniLose.node.active = false;
-          };
-          var actionNode = this.aniLose.node;
+          this.aniLose.node.active = true;
+          this.aniLose.setSlotsToSetupPose();
+          this.aniLose.setAnimation(0, "appear", false);
+          this.aniLose.setCompleteListener(function() {
+            _this.aniLose.setAnimation(0, "idle", true);
+            _this.aniLose.setCompleteListener(function() {
+              _this.aniLose.setCompleteListener(null);
+            });
+          });
+          actionNode = this.aniLose.node;
         }
-        actionNode.stopAllActions();
-        actionNode.runAction(cc.sequence(cc.delayTime(2), cc.callFunc(funcEnd)));
+        cc.Tween.stopAllByTarget(actionNode);
+        actionNode.scaleX = 1;
+        cc.tween(actionNode).delay(2).to(.2, {
+          scaleX: 0
+        }, {
+          easing: cc.easing.backIn
+        }).call(function() {
+          actionNode.active = false;
+        }).start();
       };
       PlayerViewTL.prototype.isTurn = function() {
         return this._isTurn;
@@ -737,7 +754,7 @@ window.__require = function e(t, n, r) {
         this.lbAg.string = "" + this.formatMoney(data.ag);
       };
       PlayerViewTL.prototype.effectFlyMoney = function(money, fontSize, moveTo, posX, posY) {
-        void 0 === fontSize && (fontSize = 20);
+        void 0 === fontSize && (fontSize = 25);
         void 0 === moveTo && (moveTo = 50);
         void 0 === posX && (posX = 0);
         void 0 === posY && (posY = 0);
@@ -758,16 +775,25 @@ window.__require = function e(t, n, r) {
         labelText.string = prefix + this.formatNumber(Math.abs(money));
         labelText.fontSize = fontSize;
         labelText.font = font;
-        labelText.spacingX = -5;
+        labelText.spacingX = -3;
         this.node.addChild(nodeText, 270);
-        var moveUp = cc.moveBy(4, cc.v2(0, moveTo));
-        var del = cc.delayTime(moveUp.getDuration() - .5);
-        var fade = cc.fadeOut(moveUp.getDuration() - del.getDuration());
-        var eff = cc.spawn(moveUp, cc.sequence(del, fade));
-        var act = cc.sequence(eff, cc.callFunc(function() {
+        cc.tween(labelText.node).set({
+          scaleX: 0,
+          opacity: 0,
+          y: 60
+        }).to(.2, {
+          scaleX: 1,
+          opacity: 255
+        }, {
+          easing: cc.easing.backOut
+        }).delay(1.8).to(.2, {
+          scaleX: 0,
+          opacity: 0
+        }, {
+          easing: cc.easing.backIn
+        }).call(function() {
           null !== labelText.node && labelText.node.destroy();
-        }));
-        labelText.node.runAction(act);
+        }).start();
       };
       PlayerViewTL.prototype.formatMoney = function(money) {
         var isNeg = money < 0;
@@ -1362,7 +1388,6 @@ window.__require = function e(t, n, r) {
         this.btnDiscard.node.active = false;
         this.bgHint.node.active = false;
         this.aniCardSpecial.node.active = false;
-        this.aniCardSpecial.animation = "eng";
         this.aniCardSpecial.timeScale = .5;
         this.aniCardSpecial.node.zIndex = GAME_ZORDER.Z_EMO;
         this.aniWinSpecial.node.active = true;
@@ -1689,7 +1714,7 @@ window.__require = function e(t, n, r) {
       };
       TienLenGameView.prototype.readDataPlayer = function(_player, data) {
         _player.id = data.id;
-        _player.displayName = data.nn;
+        _player.displayName = data.nickname;
         _player.info = data;
         _player.idUser = data.id;
         _player.ag = data.ag;
@@ -1895,7 +1920,7 @@ window.__require = function e(t, n, r) {
                 _this.btnDiscard.enabled = true;
                 _this.btnDiscard.interactable = true;
                 _this.btnDiscard.node.setPosition(cc.v2(0, _this.btnDiscard.node.position.y));
-                _this.lbDiscard.string = "Beat";
+                _this.lbDiscard.string = "\u0110\xe1nh B\xe0i";
               }
               _this.btnSort.node.active = true;
               _this.btnSort.enabled = true;
@@ -1924,8 +1949,8 @@ window.__require = function e(t, n, r) {
             if (player === this_3.thisPlayer) {
               posCard = this_3.listPosCard[0].add(cc.v2(this_3.sizeCardW * SCALE_CARD * DIS_CARD * index, 0));
               var move = cc.moveTo(.4, posCard).easing(cc.easeCubicActionOut());
-              var scale = cc.scaleTo(.4, SCALE_CARD);
-              var rota = cc.rotateTo(.3, 0);
+              var scale = cc.scaleTo(.4, SCALE_CARD).easing(cc.easeCubicActionOut());
+              var rota = cc.rotateTo(.4, 0).easing(cc.easeCubicActionOut());
               var ac = cc.callFunc(function() {
                 card.node.zIndex = GAME_ZORDER.Z_CARD + id;
               });
@@ -1943,7 +1968,7 @@ window.__require = function e(t, n, r) {
               var ac = cc.callFunc(function() {
                 card.node.zIndex = GAME_ZORDER.Z_CARD + id;
               });
-              var rota = cc.rotateTo(.3, 0);
+              var rota = cc.rotateTo(.4, 0).easing(cc.easeCubicActionOut());
               var spawn = cc.spawn(move, ac, rota);
               card.node.runAction(cc.sequence(cc.delayTime(timedelay), spawn, cc.callFunc(function() {
                 player.numberCard++;
@@ -2046,11 +2071,11 @@ window.__require = function e(t, n, r) {
               }
               if (data.agc > 0) {
                 playerIdc = this.getPlayerWithId(data.idc);
-                playerIdc.effectFlyMoney(data.agic, 20);
+                playerIdc.effectFlyMoney(data.agic, 25);
                 playerIdc.ag += data.agic;
                 playerIdc.updateAg(playerIdc.ag);
                 playerIdic = this.getPlayerWithId(data.idic);
-                playerIdic.effectFlyMoney(-data.agc, 20);
+                playerIdic.effectFlyMoney(-data.agc, 25);
                 playerIdic.ag -= data.agc;
                 playerIdic.updateAg(playerIdic.ag);
               }
@@ -2105,16 +2130,13 @@ window.__require = function e(t, n, r) {
                   _this.dangPhatBai = false;
                   if (LogicManagerTL_1.default.check3DoiThongTL(player.vectorCardD)) {
                     _this.aniCardSpecial.node.active = true;
-                    _this.aniCardSpecial.setAnimation(0, "3 Consecutive Pairs", false);
+                    _this.aniCardSpecial.setAnimation(0, "3 DOI THONG", false);
                   } else if (LogicManagerTL_1.default.check4DoiThongTL(player.vectorCardD)) {
                     _this.aniCardSpecial.node.active = true;
-                    _this.aniCardSpecial.setAnimation(0, "4 Consecutive Pairs", false);
+                    _this.aniCardSpecial.setAnimation(0, "4 DOI THONG", false);
                   } else if (LogicManagerTL_1.default.checkTuQuy(player.vectorCardD)) {
                     _this.aniCardSpecial.node.active = true;
-                    _this.aniCardSpecial.setAnimation(0, "4 of a kind", false);
-                  } else if (LogicManagerTL_1.default.checkSetOfTwos(player.vectorCardD)) {
-                    _this.aniCardSpecial.node.active = true;
-                    _this.aniCardSpecial.setAnimation(0, "Set of twos", false);
+                    _this.aniCardSpecial.setAnimation(0, "2 TU QUY", false);
                   }
                   if (player === _this.thisPlayer) _this.sortCardView(); else {
                     _this.lbNumberCard[indexPos].string = player.numberCard.toString();
@@ -2139,7 +2161,7 @@ window.__require = function e(t, n, r) {
                     _this.btnPass.interactable = true;
                     _this.btnDiscard.interactable = true;
                     _this.btnDiscard.node.setPosition(cc.v2(140, _this.btnDiscard.node.position.y));
-                    _this.lbDiscard.string = "Beat";
+                    _this.lbDiscard.string = "\u0110\xe1nh B\xe0i";
                     _this.sortCardSelect();
                   }
                   _this.aniCardSpecial.node.active = false;
@@ -2171,7 +2193,7 @@ window.__require = function e(t, n, r) {
                     _this.btnPass.interactable = true;
                     _this.btnDiscard.interactable = true;
                     _this.btnDiscard.node.setPosition(cc.v2(140, _this.btnDiscard.node.position.y));
-                    _this.lbDiscard.string = "Beat";
+                    _this.lbDiscard.string = "\u0110\xe1nh B\xe0i";
                     _this.sortCardSelect();
                   }
                 })));
@@ -2206,7 +2228,7 @@ window.__require = function e(t, n, r) {
                 this.btnDiscard.enabled = true;
                 this.btnDiscard.interactable = true;
                 this.btnDiscard.node.setPosition(cc.v2(0, this.btnDiscard.node.getPosition().y));
-                this.lbDiscard.string = "Beat";
+                this.lbDiscard.string = "\u0110\xe1nh B\xe0i";
               }
               for (i = 0; i < this.players.length; i++) this.players[i].clearVectorCardD();
               this.lastTurnId = 0;
@@ -2222,7 +2244,7 @@ window.__require = function e(t, n, r) {
                 this.btnPass.interactable = true;
                 this.btnDiscard.interactable = true;
                 this.btnDiscard.node.setPosition(cc.v2(140, this.btnDiscard.node.position.y));
-                this.lbDiscard.string = "Beat";
+                this.lbDiscard.string = "\u0110\xe1nh B\xe0i";
               }
               sp = this.listSpritePass[player._indexDynamic];
               sp.node.active = true;
@@ -2264,6 +2286,7 @@ window.__require = function e(t, n, r) {
               arrC = dataPlayer.arr;
               for (id = 0; id < arrC.length; id++) null == player.vectorCard[id] && void 0 == player.vectorCard[id] || player.vectorCard[id].decodeCard(arrC[id]);
               if (dataFinish.tw > 0 && dataFinish.wn && dataFinish.idw == dataPlayer.playerId) {
+                cc.log("Player Spec:", player.displayName);
                 this.playerSpecail = new PlayerViewTL_1.default();
                 this.playerSpecail.name = player.displayName;
                 this.playerSpecail.info = player.info;
@@ -2275,9 +2298,10 @@ window.__require = function e(t, n, r) {
                   card.node.setScale(SCALE_CARD);
                   this.playerSpecail.vectorCard.push(card);
                 }
-                cc.log("-=--==--=-=-==--=-=--=----=-=--=-==-=>>>>>>> Tienlen win special: " + this.playerSpecail.vectorCard);
+                cc.log("-=--==--=-=-==--=-=--=----=-=--=-==-=>>>>>>> Tienlen win special: " + this.playerSpecail.vectorCard.toString());
               }
             }
+            cc.log("this.playerSpecail=:", this.playerSpecail);
             this.playerSpecail && this.node.stopAllActions();
             actions = [];
             actions.push(cc.delayTime(.5));
@@ -3047,7 +3071,7 @@ window.__require = function e(t, n, r) {
             player === this.thisPlayer && this.audio.playEffect(this.audio.Lose);
             this.audio.playEffect(this.audio.nemxu);
             player.showEffectWinLose(-1);
-            player.effectFlyMoney(data[i].ag - player.ag, 20);
+            player.effectFlyMoney(data[i].ag - player.ag, 25);
             player.updateAg(data[i].ag);
             var delayT = 0;
             for (var id = 0; id < 10; id++) {

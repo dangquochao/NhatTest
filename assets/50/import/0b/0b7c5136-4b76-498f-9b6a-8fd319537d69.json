@@ -1,7 +1,7 @@
 [
   1,
   [
-    "eadVE3ubBOsbiDBe5awNED"
+    "a0ILLwUS5JCJdfvHbQze+b"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "btn_Red",
+      "name": "skeleton",
       "rect": [
-        0,
-        0,
-        169,
-        61
+        2,
+        2,
+        1307,
+        268
       ],
       "offset": [
-        0,
+        -0.5,
         0
       ],
       "originalSize": [
-        169,
-        61
+        1312,
+        272
       ],
       "capInsets": [
         0,

@@ -14264,8 +14264,17 @@ window.__require = function e(t, n, r) {
       MenuInGame.prototype.onLoad = function() {
         this.onShowAllItem();
       };
-      MenuInGame.prototype.start = function() {
-        Windown_1.Windown.actionEffectOpen(this.node, function() {});
+      MenuInGame.prototype.onEnable = function() {
+        cc.tween(this.nodeGroup).delay(.2).set({
+          opacity: 0,
+          x: -cc.winSize.width / 2 - this.nodeGroup.width / 2
+        }).to(.2, {
+          opacity: 255,
+          x: -cc.winSize.width / 2 + this.nodeGroup.width / 2
+        }, {
+          easing: cc.easing.sineOut
+        }).start();
+        cc.log("CLMMMM");
       };
       MenuInGame.prototype.onClickCaiDat = function() {
         this.onClickClose();
@@ -14281,14 +14290,19 @@ window.__require = function e(t, n, r) {
       };
       MenuInGame.prototype.onClickClose = function() {
         var _this = this;
-        Windown_1.Windown.actionEffectClose(this.node, function() {
+        cc.tween(this.nodeGroup).to(.2, {
+          opacity: 255,
+          x: -cc.winSize.width / 2 - this.nodeGroup.width / 2
+        }, {
+          easing: cc.easing.sineIn
+        }).call(function() {
           try {
             _this.node.removeFromParent();
             _this.node.destroy();
           } catch (e) {
             console.log(e);
           }
-        });
+        }).start();
       };
       MenuInGame.prototype.onClickChangeTable = function() {
         this.onClickClose();
