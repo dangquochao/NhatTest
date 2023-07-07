@@ -3639,6 +3639,12 @@ window.__require = function e(t, n, r) {
       CaiDat.prototype.onClickLogout = function() {
         Windown_1.Windown.MainView.onClickThoat();
       };
+      CaiDat.prototype.onClickGroupTele = function() {
+        cc.sys.openURL("https://t.me/rongva68");
+      };
+      CaiDat.prototype.onClickFanpage = function() {
+        cc.sys.openURL("https://www.facebook.com/rongva68");
+      };
       __decorate([ property(cc.Toggle) ], CaiDat.prototype, "toggleSound", void 0);
       __decorate([ property(cc.Toggle) ], CaiDat.prototype, "toggleMusic", void 0);
       __decorate([ property(cc.Node) ], CaiDat.prototype, "nodeXoaGame", void 0);
