@@ -1,1 +1,51 @@
-[1,["04lJkFb5RPppUzpcqoFZZ7"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"splash","rect":[0,0,756,1645],"offset":[0,0],"originalSize":[756,1645],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "04lJkFb5RPppUzpcqoFZZ7"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "splash",
+      "rect": [
+        0,
+        0,
+        756,
+        1645
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        756,
+        1645
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

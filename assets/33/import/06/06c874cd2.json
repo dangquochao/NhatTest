@@ -1,1 +1,311 @@
-[1,["69JhoDVHVNJpAoaHiCGouk","5fQe0ksBFN+JSKD6yH/rg9"],["_textureSetter","spriteFrame"],["cc.SpriteFrame",["cc.BitmapFont",["_name","fontSize","_fntConfig"],0]],[[1,0,1,2,4]],[[[{"name":"font_num_yellow","rect":[0,0,112,128],"offset":[-8,0],"originalSize":[128,128],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"font_num_yellow",32,{"commonHeight":40,"fontSize":32,"atlasName":"font_num_yellow.png","fontDefDictionary":{"9":{"xOffset":0,"yOffset":0,"xAdvance":160,"rect":{"x":0,"y":0,"width":0,"height":0}},"32":{"xOffset":0,"yOffset":0,"xAdvance":20,"rect":{"x":0,"y":0,"width":0,"height":0}},"44":{"xOffset":9,"yOffset":66,"xAdvance":13,"rect":{"x":41,"y":0,"width":12,"height":21}},"46":{"xOffset":3,"yOffset":67,"xAdvance":10,"rect":{"x":75,"y":0,"width":10,"height":11}},"47":{"xOffset":6,"yOffset":45,"xAdvance":18,"rect":{"x":94,"y":0,"width":17,"height":36}},"48":{"xOffset":5,"yOffset":49,"xAdvance":20,"rect":{"x":55,"y":0,"width":19,"height":30}},"49":{"xOffset":12,"yOffset":49,"xAdvance":20,"rect":{"x":76,"y":93,"width":15,"height":31}},"50":{"xOffset":4,"yOffset":50,"xAdvance":20,"rect":{"x":0,"y":98,"width":22,"height":29}},"51":{"xOffset":3,"yOffset":49,"xAdvance":20,"rect":{"x":52,"y":92,"width":23,"height":31}},"52":{"xOffset":3,"yOffset":49,"xAdvance":20,"rect":{"x":27,"y":92,"width":24,"height":31}},"53":{"xOffset":2,"yOffset":49,"xAdvance":20,"rect":{"x":27,"y":61,"width":25,"height":30}},"54":{"xOffset":5,"yOffset":50,"xAdvance":20,"rect":{"x":74,"y":31,"width":19,"height":29}},"55":{"xOffset":3,"yOffset":49,"xAdvance":20,"rect":{"x":31,"y":24,"width":23,"height":31}},"56":{"xOffset":5,"yOffset":49,"xAdvance":20,"rect":{"x":76,"y":61,"width":19,"height":31}},"57":{"xOffset":5,"yOffset":48,"xAdvance":20,"rect":{"x":53,"y":56,"width":20,"height":34}},"58":{"xOffset":9,"yOffset":56,"xAdvance":12,"rect":{"x":55,"y":31,"width":11,"height":23}},"75":{"xOffset":0,"yOffset":46,"xAdvance":31,"rect":{"x":0,"y":24,"width":30,"height":36}},"77":{"xOffset":2,"yOffset":46,"xAdvance":27,"rect":{"x":0,"y":61,"width":26,"height":36}},"8734":{"xOffset":0,"yOffset":57,"xAdvance":31,"rect":{"x":0,"y":0,"width":40,"height":23}}},"kerningDict":{}}]],0,0,[0],[1],[1]]]]
+[
+  1,
+  [
+    "69JhoDVHVNJpAoaHiCGouk",
+    "5fQe0ksBFN+JSKD6yH/rg9"
+  ],
+  [
+    "_textureSetter",
+    "spriteFrame"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.BitmapFont",
+      [
+        "_name",
+        "fontSize",
+        "_fntConfig"
+      ],
+      0
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      4
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "font_num_yellow",
+          "rect": [
+            0,
+            0,
+            112,
+            128
+          ],
+          "offset": [
+            -8,
+            0
+          ],
+          "originalSize": [
+            128,
+            128
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "font_num_yellow",
+          32,
+          {
+            "commonHeight": 40,
+            "fontSize": 32,
+            "atlasName": "font_num_yellow.png",
+            "fontDefDictionary": {
+              "9": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 160,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              "32": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              "44": {
+                "xOffset": 9,
+                "yOffset": 66,
+                "xAdvance": 13,
+                "rect": {
+                  "x": 41,
+                  "y": 0,
+                  "width": 12,
+                  "height": 21
+                }
+              },
+              "46": {
+                "xOffset": 3,
+                "yOffset": 67,
+                "xAdvance": 10,
+                "rect": {
+                  "x": 75,
+                  "y": 0,
+                  "width": 10,
+                  "height": 11
+                }
+              },
+              "47": {
+                "xOffset": 6,
+                "yOffset": 45,
+                "xAdvance": 18,
+                "rect": {
+                  "x": 94,
+                  "y": 0,
+                  "width": 17,
+                  "height": 36
+                }
+              },
+              "48": {
+                "xOffset": 5,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 55,
+                  "y": 0,
+                  "width": 19,
+                  "height": 30
+                }
+              },
+              "49": {
+                "xOffset": 12,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 76,
+                  "y": 93,
+                  "width": 15,
+                  "height": 31
+                }
+              },
+              "50": {
+                "xOffset": 4,
+                "yOffset": 50,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 0,
+                  "y": 98,
+                  "width": 22,
+                  "height": 29
+                }
+              },
+              "51": {
+                "xOffset": 3,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 52,
+                  "y": 92,
+                  "width": 23,
+                  "height": 31
+                }
+              },
+              "52": {
+                "xOffset": 3,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 27,
+                  "y": 92,
+                  "width": 24,
+                  "height": 31
+                }
+              },
+              "53": {
+                "xOffset": 2,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 27,
+                  "y": 61,
+                  "width": 25,
+                  "height": 30
+                }
+              },
+              "54": {
+                "xOffset": 5,
+                "yOffset": 50,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 74,
+                  "y": 31,
+                  "width": 19,
+                  "height": 29
+                }
+              },
+              "55": {
+                "xOffset": 3,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 31,
+                  "y": 24,
+                  "width": 23,
+                  "height": 31
+                }
+              },
+              "56": {
+                "xOffset": 5,
+                "yOffset": 49,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 76,
+                  "y": 61,
+                  "width": 19,
+                  "height": 31
+                }
+              },
+              "57": {
+                "xOffset": 5,
+                "yOffset": 48,
+                "xAdvance": 20,
+                "rect": {
+                  "x": 53,
+                  "y": 56,
+                  "width": 20,
+                  "height": 34
+                }
+              },
+              "58": {
+                "xOffset": 9,
+                "yOffset": 56,
+                "xAdvance": 12,
+                "rect": {
+                  "x": 55,
+                  "y": 31,
+                  "width": 11,
+                  "height": 23
+                }
+              },
+              "75": {
+                "xOffset": 0,
+                "yOffset": 46,
+                "xAdvance": 31,
+                "rect": {
+                  "x": 0,
+                  "y": 24,
+                  "width": 30,
+                  "height": 36
+                }
+              },
+              "77": {
+                "xOffset": 2,
+                "yOffset": 46,
+                "xAdvance": 27,
+                "rect": {
+                  "x": 0,
+                  "y": 61,
+                  "width": 26,
+                  "height": 36
+                }
+              },
+              "8734": {
+                "xOffset": 0,
+                "yOffset": 57,
+                "xAdvance": 31,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 40,
+                  "height": 23
+                }
+              }
+            },
+            "kerningDict": {}
+          }
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

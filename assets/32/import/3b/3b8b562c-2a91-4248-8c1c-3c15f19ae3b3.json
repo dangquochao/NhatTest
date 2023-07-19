@@ -1,1 +1,51 @@
-[1,["18zVy/uJNIS7K9tjwiHe0j"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"CaSauDie3","rect":[5,5,625,769],"offset":[-194.5,122.5],"originalSize":[1024,1024],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "18zVy/uJNIS7K9tjwiHe0j"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "CaSauDie3",
+      "rect": [
+        5,
+        5,
+        625,
+        769
+      ],
+      "offset": [
+        -194.5,
+        122.5
+      ],
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

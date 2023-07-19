@@ -1,0 +1,76 @@
+
+tnk_7.png
+size: 1155,1155
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 202, 19
+  size: 198, 1134
+  orig: 198, 1134
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 402, 245
+  size: 352, 908
+  orig: 352, 936
+  offset: 0, 28
+  index: -1
+head
+  rotate: true
+  xy: 924, 569
+  size: 112, 159
+  orig: 114, 162
+  offset: 1, 1
+  index: -1
+khung
+  rotate: false
+  xy: 2, 14
+  size: 198, 1139
+  orig: 198, 1139
+  offset: 0, 0
+  index: -1
+may1
+  rotate: true
+  xy: 756, 532
+  size: 228, 166
+  orig: 231, 169
+  offset: 2, 1
+  index: -1
+may2
+  rotate: true
+  xy: 756, 762
+  size: 391, 242
+  orig: 392, 242
+  offset: 1, 0
+  index: -1
+may3
+  rotate: false
+  xy: 708, 39
+  size: 404, 204
+  orig: 405, 212
+  offset: 1, 8
+  index: -1
+may4
+  rotate: false
+  xy: 402, 2
+  size: 304, 241
+  orig: 307, 243
+  offset: 2, 1
+  index: -1
+rain-clouds-png-27 copy 2
+  rotate: false
+  xy: 756, 401
+  size: 205, 129
+  orig: 208, 169
+  offset: 2, 38
+  index: -1
+wil
+  rotate: false
+  xy: 924, 683
+  size: 173, 77
+  orig: 175, 79
+  offset: 1, 1
+  index: -1

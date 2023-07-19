@@ -1,1 +1,51 @@
-[1,["e5H/iXOpdNs6yt4rPPszKA"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"btn_blue","rect":[0,0,169,61],"offset":[0,0],"originalSize":[169,61],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "e5H/iXOpdNs6yt4rPPszKA"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "btn_blue",
+      "rect": [
+        0,
+        0,
+        169,
+        61
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        169,
+        61
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

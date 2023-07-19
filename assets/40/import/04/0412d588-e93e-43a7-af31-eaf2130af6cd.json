@@ -1,1 +1,51 @@
-[1,["34ELiVg0FNSanOYQ1xl4Bd"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"Volcano_tex_0","rect":[2,2,2037,1789],"offset":[-3.5,3.5],"originalSize":[2048,1800],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "34ELiVg0FNSanOYQ1xl4Bd"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Volcano_tex_0",
+      "rect": [
+        2,
+        2,
+        2037,
+        1789
+      ],
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "originalSize": [
+        2048,
+        1800
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

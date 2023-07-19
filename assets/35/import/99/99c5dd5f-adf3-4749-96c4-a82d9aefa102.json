@@ -1,1 +1,52 @@
-[1,["14c772c2d"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"feature_vfx_i_add","rect":[313,157,540,673],"offset":[0,0],"originalSize":[540,673],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "14c772c2d"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "feature_vfx_i_add",
+      "rect": [
+        313,
+        157,
+        540,
+        673
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        540,
+        673
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

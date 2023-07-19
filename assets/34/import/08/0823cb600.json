@@ -1,1 +1,136 @@
-[1,["7bmPBvX5ZHP6ny2XImaDbR"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"two_scatter_body_bg","rect":[1,1,621,833],"offset":[0,0],"originalSize":[621,833],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"spin_button_bg","rect":[989,491,256,256],"offset":[0,0],"originalSize":[256,256],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"info_board_short","rect":[882,618,280,105],"offset":[0,0],"originalSize":[280,105],"rotated":1,"capInsets":[122,0,122,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "7bmPBvX5ZHP6ny2XImaDbR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "two_scatter_body_bg",
+          "rect": [
+            1,
+            1,
+            621,
+            833
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            621,
+            833
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "spin_button_bg",
+          "rect": [
+            989,
+            491,
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            256,
+            256
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "info_board_short",
+          "rect": [
+            882,
+            618,
+            280,
+            105
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            280,
+            105
+          ],
+          "rotated": 1,
+          "capInsets": [
+            122,
+            0,
+            122,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

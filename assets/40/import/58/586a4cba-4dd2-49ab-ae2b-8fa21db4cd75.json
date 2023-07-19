@@ -1,1 +1,45 @@
-[1,["34ELiVg0FNSanOYQ1xl4Bd"],["_texture"],[["dragonBones.DragonBonesAtlasAsset",["_name","_atlasJson"],1]],[[0,0,1,3]],[[0,"Volcano_tex_0","{\"SubTexture\":[{\"width\":900,\"y\":2,\"height\":930,\"name\":\"BG/BG\",\"x\":2},{\"width\":900,\"y\":2,\"height\":930,\"name\":\"BG/vocano\",\"x\":904},{\"width\":900,\"y\":934,\"height\":449,\"name\":\"BG/fg_vocano\",\"x\":1116},{\"width\":214,\"y\":471,\"height\":297,\"name\":\"BG/L_grass\",\"x\":1806},{\"width\":900,\"y\":1385,\"height\":263,\"name\":\"BG/ROCK\",\"x\":1116},{\"width\":1112,\"y\":934,\"height\":499,\"name\":\"BG/final_coin\",\"x\":2},{\"width\":182,\"y\":770,\"height\":162,\"name\":\"BG/L_TREE_1\",\"x\":1806},{\"frameX\":-14,\"frameHeight\":136,\"y\":1650,\"frameY\":0,\"frameWidth\":600,\"width\":547,\"height\":135,\"name\":\"BG/SMOK_3\",\"x\":1116},{\"frameX\":-165,\"frameHeight\":241,\"y\":1650,\"frameY\":-33,\"frameWidth\":500,\"width\":171,\"height\":142,\"name\":\"BG/final_coin_LIGHT_2\",\"x\":1665},{\"frameX\":0,\"frameHeight\":499,\"y\":1435,\"frameY\":0,\"frameWidth\":1112,\"width\":1112,\"height\":304,\"name\":\"BG/final_coin_1\",\"x\":2},{\"width\":174,\"y\":2,\"height\":467,\"name\":\"BG/FG_END_TREE_L1\",\"x\":1806},{\"frameX\":-48,\"frameHeight\":140,\"y\":2,\"frameY\":0,\"frameWidth\":150,\"width\":63,\"height\":140,\"name\":\"BG/coin_s/coin_0009_money_00009.png\",\"x\":1982},{\"width\":150,\"y\":1650,\"height\":140,\"name\":\"BG/coin_s/coin_0000_money_00000.png\",\"x\":1838},{\"frameX\":-60,\"frameHeight\":140,\"y\":1650,\"frameY\":0,\"frameWidth\":150,\"width\":36,\"height\":140,\"name\":\"BG/coin_s/coin_0008_money_00008.png\",\"x\":1990},{\"frameX\":-43,\"frameHeight\":140,\"y\":144,\"frameY\":-2,\"frameWidth\":150,\"width\":60,\"height\":136,\"name\":\"BG/coin_s/coin_0006_money_00006.png\",\"x\":1982},{\"frameX\":-58,\"frameHeight\":140,\"y\":770,\"frameY\":-2,\"frameWidth\":150,\"width\":34,\"height\":136,\"name\":\"BG/coin_s/coin_0007_money_00007.png\",\"x\":1990}],\"width\":2048,\"height\":1800,\"name\":\"Volcano\",\"imagePath\":\"Volcano_tex_0.png\"}"]],0,0,[0],[0],[0]]
+[
+  1,
+  [
+    "34ELiVg0FNSanOYQ1xl4Bd"
+  ],
+  [
+    "_texture"
+  ],
+  [
+    [
+      "dragonBones.DragonBonesAtlasAsset",
+      [
+        "_name",
+        "_atlasJson"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "Volcano_tex_0",
+      "{\"SubTexture\":[{\"width\":900,\"y\":2,\"height\":930,\"name\":\"BG/BG\",\"x\":2},{\"width\":900,\"y\":2,\"height\":930,\"name\":\"BG/vocano\",\"x\":904},{\"width\":900,\"y\":934,\"height\":449,\"name\":\"BG/fg_vocano\",\"x\":1116},{\"width\":214,\"y\":471,\"height\":297,\"name\":\"BG/L_grass\",\"x\":1806},{\"width\":900,\"y\":1385,\"height\":263,\"name\":\"BG/ROCK\",\"x\":1116},{\"width\":1112,\"y\":934,\"height\":499,\"name\":\"BG/final_coin\",\"x\":2},{\"width\":182,\"y\":770,\"height\":162,\"name\":\"BG/L_TREE_1\",\"x\":1806},{\"frameX\":-14,\"frameHeight\":136,\"y\":1650,\"frameY\":0,\"frameWidth\":600,\"width\":547,\"height\":135,\"name\":\"BG/SMOK_3\",\"x\":1116},{\"frameX\":-165,\"frameHeight\":241,\"y\":1650,\"frameY\":-33,\"frameWidth\":500,\"width\":171,\"height\":142,\"name\":\"BG/final_coin_LIGHT_2\",\"x\":1665},{\"frameX\":0,\"frameHeight\":499,\"y\":1435,\"frameY\":0,\"frameWidth\":1112,\"width\":1112,\"height\":304,\"name\":\"BG/final_coin_1\",\"x\":2},{\"width\":174,\"y\":2,\"height\":467,\"name\":\"BG/FG_END_TREE_L1\",\"x\":1806},{\"frameX\":-48,\"frameHeight\":140,\"y\":2,\"frameY\":0,\"frameWidth\":150,\"width\":63,\"height\":140,\"name\":\"BG/coin_s/coin_0009_money_00009.png\",\"x\":1982},{\"width\":150,\"y\":1650,\"height\":140,\"name\":\"BG/coin_s/coin_0000_money_00000.png\",\"x\":1838},{\"frameX\":-60,\"frameHeight\":140,\"y\":1650,\"frameY\":0,\"frameWidth\":150,\"width\":36,\"height\":140,\"name\":\"BG/coin_s/coin_0008_money_00008.png\",\"x\":1990},{\"frameX\":-43,\"frameHeight\":140,\"y\":144,\"frameY\":-2,\"frameWidth\":150,\"width\":60,\"height\":136,\"name\":\"BG/coin_s/coin_0006_money_00006.png\",\"x\":1982},{\"frameX\":-58,\"frameHeight\":140,\"y\":770,\"frameY\":-2,\"frameWidth\":150,\"width\":34,\"height\":136,\"name\":\"BG/coin_s/coin_0007_money_00007.png\",\"x\":1990}],\"width\":2048,\"height\":1800,\"name\":\"Volcano\",\"imagePath\":\"Volcano_tex_0.png\"}"
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

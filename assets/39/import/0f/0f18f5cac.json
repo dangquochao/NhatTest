@@ -1,1 +1,215 @@
-[1,["f26GVVGRlHL5ZfyUzYwAfn"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"ui_fg_top","rect":[1,1147,756,405],"offset":[0,4],"originalSize":[756,413],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ui_fg_btm","rect":[1,1,756,571],"offset":[0,0],"originalSize":[756,571],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ui_pondium","rect":[759,562,622,391],"offset":[0,0],"originalSize":[622,391],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ui_waybar","rect":[1,1554,403,72],"offset":[0,0],"originalSize":[403,72],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ui_reel_bg","rect":[759,1,744,559],"offset":[-2,1],"originalSize":[756,571],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "f26GVVGRlHL5ZfyUzYwAfn"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "ui_fg_top",
+          "rect": [
+            1,
+            1147,
+            756,
+            405
+          ],
+          "offset": [
+            0,
+            4
+          ],
+          "originalSize": [
+            756,
+            413
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ui_fg_btm",
+          "rect": [
+            1,
+            1,
+            756,
+            571
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            756,
+            571
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ui_pondium",
+          "rect": [
+            759,
+            562,
+            622,
+            391
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            622,
+            391
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ui_waybar",
+          "rect": [
+            1,
+            1554,
+            403,
+            72
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            403,
+            72
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ui_reel_bg",
+          "rect": [
+            759,
+            1,
+            744,
+            559
+          ],
+          "offset": [
+            -2,
+            1
+          ],
+          "originalSize": [
+            756,
+            571
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

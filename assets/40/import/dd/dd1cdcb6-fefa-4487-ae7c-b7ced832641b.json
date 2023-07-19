@@ -1,1 +1,51 @@
-[1,["80KVuhZaBIX6kwiccm4kyI"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"18X","rect":[19,1,292,143],"offset":[0,0.5],"originalSize":[330,146],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "80KVuhZaBIX6kwiccm4kyI"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "18X",
+      "rect": [
+        19,
+        1,
+        292,
+        143
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        330,
+        146
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

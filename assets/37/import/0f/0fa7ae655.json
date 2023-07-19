@@ -1,1 +1,255 @@
-[1,["093hJwDjxF3JjMBN2wFX8U"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats14-bw_vfx_g_normal_01","rect":[720,0,170,170],"offset":[0,0],"originalSize":[170,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats14-bw_vfx_g_normal_02","rect":[190,0,182,170],"offset":[0,0],"originalSize":[182,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats14-bw_vfx_g_normal_05","rect":[890,0,170,170],"offset":[0,0],"originalSize":[170,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats14-bw_vfx_g_normal_03","rect":[0,0,190,170],"offset":[0,0],"originalSize":[190,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats14-bw_vfx_g_normal_00","rect":[550,0,170,170],"offset":[0,0],"originalSize":[170,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats14-bw_vfx_g_normal_04","rect":[372,0,178,170],"offset":[0,0],"originalSize":[178,170],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "093hJwDjxF3JjMBN2wFX8U"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_01",
+          "rect": [
+            720,
+            0,
+            170,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            170,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_02",
+          "rect": [
+            190,
+            0,
+            182,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            182,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_05",
+          "rect": [
+            890,
+            0,
+            170,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            170,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_03",
+          "rect": [
+            0,
+            0,
+            190,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            190,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_00",
+          "rect": [
+            550,
+            0,
+            170,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            170,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats14-bw_vfx_g_normal_04",
+          "rect": [
+            372,
+            0,
+            178,
+            170
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            178,
+            170
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,62 @@
+
+s_scatter.png
+size: 1040,1040
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 609, 871
+  size: 198, 167
+  orig: 200, 169
+  offset: 1, 1
+  index: -1
+bg
+  rotate: false
+  xy: 409, 850
+  size: 198, 188
+  orig: 200, 190
+  offset: 1, 1
+  index: -1
+ef
+  rotate: false
+  xy: 2, 845
+  size: 204, 193
+  orig: 206, 195
+  offset: 1, 1
+  index: -1
+khung
+  rotate: false
+  xy: 208, 850
+  size: 199, 188
+  orig: 201, 190
+  offset: 1, 1
+  index: -1
+light
+  rotate: false
+  xy: 809, 930
+  size: 179, 108
+  orig: 198, 124
+  offset: 10, 6
+  index: -1
+mai1
+  rotate: true
+  xy: 809, 869
+  size: 59, 75
+  orig: 61, 77
+  offset: 1, 1
+  index: -1
+mai2
+  rotate: true
+  xy: 886, 869
+  size: 59, 75
+  orig: 61, 77
+  offset: 1, 1
+  index: -1
+scatter
+  rotate: true
+  xy: 990, 858
+  size: 180, 48
+  orig: 182, 50
+  offset: 1, 1
+  index: -1

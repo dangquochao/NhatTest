@@ -1,1 +1,725 @@
-[1,["c7PqTR1+ZIno1GXwNBeGVA","f1m8IakM9ApIPuuJYW82rp","e1jMRgJD9HBoWkkXgA1dGI","c6vcpCQFVGtKon8+KyzUeJ","90XpNe+qZP4L8ZNRmHZPAn","53wjSJ3wlDjr/I0i+yp0Wz","93TM3P945DsK1D9+a1jEwr","61aOsXLbtCaoWat3a9u1HE","0eaHqoHbFDUYQskOI6uRBe","b7/YqfEr1NNaZeGEXiqFzn","0c3UFjZL9Ap6djLdeyZGDU","75y3ChSWZHKq5SWdeccCt9","ddmBZcCfRHrb2yN4q7omvX","9fZKLzjj5A0plwuuG5qqkc","17KN0L3bFIqIQW46NAvRzX","33toRPaQpJ/bhxUfCX68PH","66g75JnlRGb6/e2gIXOEPI","8dRb3jqSJCEoTWsQaev2+2","b23H5xhRVB7IfBgHrtyZZv","1bxvUcxuBCBoHUXGUkjY5U","b0z+BuFslCKbPnq92yNiIT","3aKwbir+NO4L8Jb5gTLmHW","f1u7dtitlBn5P2Bg02LZdS","11wQtXbSFFrqazqYFs+rrF"],["_textureSetter","value"],["cc.SpriteFrame",["cc.AnimationClip",["_name","_duration","sample","curveData"],0,11]],[[1,0,1,2,3,4]],[[[{"name":"fish_nbomb_explode_08","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"fish_nbomb_explode_06","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[1]],[[{"name":"fish_nbomb_explode_12","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[2]],[[[0,"Exprozer",0.8666666666666667,15,[{},"comps",11,[{},"cc.Sprite",11,[{},"spriteFrame",12,[[[{"frame":0},"value",6,0],[{"frame":0.06666666666666667},"value",6,1],[{"frame":0.13333333333333333},"value",6,2],[{"frame":0.2},"value",6,3],[{"frame":0.26666666666666666},"value",6,4],[{"frame":0.3333333333333333},"value",6,5],[{"frame":0.4},"value",6,6],[{"frame":0.4666666666666667},"value",6,7],[{"frame":0.5333333333333333},"value",6,8],[{"frame":0.6},"value",6,9],[{"frame":0.6666666666666666},"value",6,10],[{"frame":0.7333333333333333},"value",6,11],{"frame":0.8,"value":null}],11,11,11,11,11,11,11,11,11,11,11,11,0]]]]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,1,1,1,1,1,1,1],[3,4,5,6,7,8,9,10,11,12,13,14]],[[{"name":"fish_nbomb_explode_03","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[15]],[[{"name":"fish_nbomb_explode_05","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[16]],[[{"name":"fish_nbomb_explode_09","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[17]],[[{"name":"fish_nbomb_explode_02","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[18]],[[{"name":"fish_nbomb_explode_04","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[19]],[[{"name":"fish_nbomb_explode_11","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[20]],[[{"name":"fish_nbomb_explode_07","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[21]],[[{"name":"fish_nbomb_explode_01","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[22]],[[{"name":"fish_nbomb_explode_10","rect":[0,0,254,223],"offset":[0,0],"originalSize":[254,223],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[23]]]]
+[
+  1,
+  [
+    "c7PqTR1+ZIno1GXwNBeGVA",
+    "f1m8IakM9ApIPuuJYW82rp",
+    "e1jMRgJD9HBoWkkXgA1dGI",
+    "c6vcpCQFVGtKon8+KyzUeJ",
+    "90XpNe+qZP4L8ZNRmHZPAn",
+    "53wjSJ3wlDjr/I0i+yp0Wz",
+    "93TM3P945DsK1D9+a1jEwr",
+    "61aOsXLbtCaoWat3a9u1HE",
+    "0eaHqoHbFDUYQskOI6uRBe",
+    "b7/YqfEr1NNaZeGEXiqFzn",
+    "0c3UFjZL9Ap6djLdeyZGDU",
+    "75y3ChSWZHKq5SWdeccCt9",
+    "ddmBZcCfRHrb2yN4q7omvX",
+    "9fZKLzjj5A0plwuuG5qqkc",
+    "17KN0L3bFIqIQW46NAvRzX",
+    "33toRPaQpJ/bhxUfCX68PH",
+    "66g75JnlRGb6/e2gIXOEPI",
+    "8dRb3jqSJCEoTWsQaev2+2",
+    "b23H5xhRVB7IfBgHrtyZZv",
+    "1bxvUcxuBCBoHUXGUkjY5U",
+    "b0z+BuFslCKbPnq92yNiIT",
+    "3aKwbir+NO4L8Jb5gTLmHW",
+    "f1u7dtitlBn5P2Bg02LZdS",
+    "11wQtXbSFFrqazqYFs+rrF"
+  ],
+  [
+    "_textureSetter",
+    "value"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "sample",
+        "curveData"
+      ],
+      0,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_08",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_06",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_12",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Exprozer",
+          0.8666666666666667,
+          15,
+          [
+            {},
+            "comps",
+            11,
+            [
+              {},
+              "cc.Sprite",
+              11,
+              [
+                {},
+                "spriteFrame",
+                12,
+                [
+                  [
+                    [
+                      {
+                        "frame": 0
+                      },
+                      "value",
+                      6,
+                      0
+                    ],
+                    [
+                      {
+                        "frame": 0.06666666666666667
+                      },
+                      "value",
+                      6,
+                      1
+                    ],
+                    [
+                      {
+                        "frame": 0.13333333333333333
+                      },
+                      "value",
+                      6,
+                      2
+                    ],
+                    [
+                      {
+                        "frame": 0.2
+                      },
+                      "value",
+                      6,
+                      3
+                    ],
+                    [
+                      {
+                        "frame": 0.26666666666666666
+                      },
+                      "value",
+                      6,
+                      4
+                    ],
+                    [
+                      {
+                        "frame": 0.3333333333333333
+                      },
+                      "value",
+                      6,
+                      5
+                    ],
+                    [
+                      {
+                        "frame": 0.4
+                      },
+                      "value",
+                      6,
+                      6
+                    ],
+                    [
+                      {
+                        "frame": 0.4666666666666667
+                      },
+                      "value",
+                      6,
+                      7
+                    ],
+                    [
+                      {
+                        "frame": 0.5333333333333333
+                      },
+                      "value",
+                      6,
+                      8
+                    ],
+                    [
+                      {
+                        "frame": 0.6
+                      },
+                      "value",
+                      6,
+                      9
+                    ],
+                    [
+                      {
+                        "frame": 0.6666666666666666
+                      },
+                      "value",
+                      6,
+                      10
+                    ],
+                    [
+                      {
+                        "frame": 0.7333333333333333
+                      },
+                      "value",
+                      6,
+                      11
+                    ],
+                    {
+                      "frame": 0.8,
+                      "value": null
+                    }
+                  ],
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  11,
+                  0
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_03",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        15
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_05",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        16
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_09",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        17
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_02",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        18
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_04",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        19
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_11",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        20
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_07",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        21
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_01",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        22
+      ]
+    ],
+    [
+      [
+        {
+          "name": "fish_nbomb_explode_10",
+          "rect": [
+            0,
+            0,
+            254,
+            223
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            254,
+            223
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        23
+      ]
+    ]
+  ]
+]

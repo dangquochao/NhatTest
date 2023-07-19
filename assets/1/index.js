@@ -1,1 +1,9868 @@
-window.__require=function t(e,n,o){function i(s,a){if(!n[s]){if(!e[s]){var c=s.split("/");if(c=c[c.length-1],!e[c]){var u="function"==typeof __require&&__require;if(!a&&u)return u(c,!0);if(r)return r(c,!0);throw new Error("Cannot find module '"+s+"'")}s=c}var l=n[s]={exports:{}};e[s][0].call(l.exports,function(t){return i(e[s][1][t]||t)},l,l.exports,t,e,n,o)}return n[s].exports}for(var r="function"==typeof __require&&__require,s=0;s<o.length;s++)i(o[s]);return i}({BaseButton:[function(t,e,n){"use strict";cc._RF.push(e,"3fb0epD9JpOPKJU2XkKBnxh","BaseButton");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../../Scritps/Windown"),a=cc._decorator,c=a.ccclass,u=a.property,l=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.nodePress=null,e.timeDelay=.2,e.timeUpdate=0,e.deltaPlus=10,e.funMaxSpeed=null,e.funMaxSpeed2=null,e.isClick=!1,e.isInitEvent=!1,e.xengController=null,e.soundManager=null,e}return i(e,t),e.prototype.onTouchStart=function(t){var e=this;this.timeDelay=.2,this.isClick=!0,this.nodePress.active=!0,this.deltaPlus=10,this.onPress(this.deltaPlus*s.Windown.XengController.mutil),this.timeUpdate=0,this.scheduleOnce(this.funMaxSpeed=function(){e.timeDelay=0,e.schedule(e.funMaxSpeed2=function(){e.deltaPlus+=10},.7)},.5),t.stopPropagation()},e.prototype.initGameController=function(t){this.xengController=t},e.prototype.onTouchEnd=function(t){this.isClick=!1,this.timeDelay=.2,this.deltaPlus=10,this.unschedule(this.funMaxSpeed),this.unschedule(this.funMaxSpeed2),this.nodePress.active=!1,t.stopPropagation()},e.prototype.onTouchCancel=function(t){this.isClick=!1,this.timeDelay=.2,this.deltaPlus=10,this.unschedule(this.funMaxSpeed),this.unschedule(this.funMaxSpeed2),this.nodePress.active=!1,t.stopPropagation()},e.prototype.initEvent=function(){this.isInitEvent||(this.timeDelay=.2,this.isInitEvent=!0,this.node.on(cc.Node.EventType.TOUCH_START,this.onTouchStart,this),this.node.on(cc.Node.EventType.TOUCH_END,this.onTouchEnd,this),this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.onTouchCancel,this))},e.prototype.offEvent=function(){this.isInitEvent&&(this.timeUpdate=0,this.isInitEvent=!1,this.isClick=!1,this.nodePress.active=!1,this.node.targetOff(this))},e.prototype.onDestroy=function(){this.offEvent()},e.prototype.update=function(t){this.isClick&&(this.timeUpdate+=t,this.timeUpdate<this.timeDelay||(this.onPress(this.deltaPlus*s.Windown.XengController.mutil),this.timeUpdate=0))},e.prototype.start=function(){this.nodePress.active=!1,this.initEvent(),this.xengController&&(this.soundManager=this.xengController.getSoundMng()),this.reset()},r([u(cc.Node)],e.prototype,"nodePress",void 0),r([c],e)}(cc.Component);n.default=l,cc._RF.pop()},{"../../../../Scritps/Windown":void 0}],BaseEffectAnTruoc:[function(t,e,n){"use strict";cc._RF.push(e,"c8a23y/rjpJS6MEeXwJuZZK","BaseEffectAnTruoc");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.dataFinishItemAnTruoc=null,e}return i(e,t),e.prototype.intData=function(t){return this.dataFinishItemAnTruoc=t,this},e}(t("./BaseEffect").default);n.default=r,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],BaseEffectEnd:[function(t,e,n){"use strict";cc._RF.push(e,"e8435fv8hREwo4alW31oc3a","BaseEffectEnd");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.dataFinishiItemNomarl=null,e}return i(e,t),e.prototype.intiData=function(t){return this.dataFinishiItemNomarl=t,this},e}(t("./BaseEffect").default);n.default=r,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],BaseEffectXDVEnd:[function(t,e,n){"use strict";cc._RF.push(e,"9c7b9aL6sRHe7iN+bNoDLQL","BaseEffectXDVEnd");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.dataFinishXDV=null,e}return i(e,t),e.prototype.intiData=function(t){return this.dataFinishXDV=t,this},e}(t("./BaseEffect").default);n.default=r,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],BaseEffect:[function(t,e,n){"use strict";cc._RF.push(e,"2e16beucptECbftQ8r2VhF9","BaseEffect"),Object.defineProperty(n,"__esModule",{value:!0});var o=[22,4,10,16],i=[[21,22,23,0,1,2,3],[9,10,11,12,13,14,15],[15,16,17,18,19,20,21],[3,4,5,6,7,8,9]],r=function(){function t(t){this.xengController=null,this.soundMgn=null,this.currentBtnTrai=null,this.currentBtnPhai=null,this._listRun=null,this.xengController=t,this.soundMgn=t.getSoundMng(),this.currentBtnTrai=t.btnChangePointL,this.currentBtnPhai=t.btnChangePointR}return t.prototype.getBtnItem=function(t){return(null==t||null==t||t<0)&&(t=0),this.xengController.listBtnItem[t]},t.prototype.setColor=function(t){this.xengController.xengView.setColor(t)},t.prototype.getBtnItemXDV=function(t){return this.xengController.getBtnItemXDV(t)},t.prototype.setPointItem=function(t,e){this.getBtnItem(t).setPoint(e)},t.prototype.setStringLbHeSo=function(t){this.xengController.xengView.setStringLbHeSo(t)},t.prototype.getLbBtnItem=function(t){return this.getBtnItem(t).lbPoint},t.prototype.getNodeLbItem=function(t){return this.getBtnItem(t).lbPoint.node},t.prototype.getListNodeLbItem=function(){var t=[];return this.xengController.listBtnItem.forEach(function(e){t.push(e.lbPoint.node)}),t},t.prototype.getNodeLbItemXDV=function(t){return this.getBtnItemXDV(t).lbPoint.node},t.prototype.getNodeLbHeso=function(){return this.xengController.xengView.lbHeso.node},t.prototype.getLbHeso=function(){return this.xengController.xengView.lbHeso},t.prototype.getLbLeft=function(){return this.currentBtnTrai.lbPoint},t.prototype.getNodeLbLeft=function(){return this.getLbLeft().node},t.prototype.getLbRight=function(){return this.currentBtnPhai.lbPoint},t.prototype.getNodeLbRight=function(){return this.getLbRight().node},t.prototype.getIdListLastResutl=function(){return this.xengController.xengView.getIdListLastResutl()},t.prototype.getListRun=function(){var t=this,e=this._listRun;return null==e&&(e=[],i.forEach(function(n){var o=[];n.forEach(function(e){o.push(t.getChildById(e))}),e.push(o)})),e},t.prototype.getChildById=function(t){return this.xengController.xengView.getChildById(t)},t.prototype.getChildXDVById=function(t){return this.xengController.xengView.getChildXDVById(t)},t.prototype.getChildXoSoById=function(t){return this.xengController.xengView.getChildXoSoById(t)},t.prototype.getListLastResult=function(){return this.xengController.xengView.getListLastResult()},t.prototype.getListChildren=function(){return this.xengController.xengView.getListChildren()},t.prototype.getListXDV=function(){return this.xengController.xengView.getListChildXDV()},t.prototype.getListXoSo=function(){return this.xengController.xengView.getListChildXoSo()},t.prototype.getIdIndexRun=function(){return o.slice()},t.prototype.getLightMid=function(t){return this.xengController.xengView.getLightMid(t)},t.prototype.getListLightMid=function(){return this.xengController.xengView.getListLightMid()},t.prototype.randomLbHeSo=function(){this.xengController.xengView.randomLbHeSo()},t.prototype.runEffectNhapNhay1Lan=function(t,e){this.xengController.runEffectNhapNhay1Lan(t,e)},t.prototype.runEffectNhapNhay=function(t,e,n){this.xengController.runEffectNhapNhay(t,e,n)},t.prototype.runEffectRandomLabelHeso=function(t,e){this.xengController.xengView.runEffectRandomLabelHeso(t,e)},t.prototype.runEffectRandomLabelHesoSpecial=function(){this.xengController.xengView.runEffectRandomLabelHesoSpecial()},t.prototype.runEffectActiveAndHideWithTime=function(t,e){this.xengController.runEffectActiveAndHideWithTime(t,e)},t.prototype.offEffect=function(t){this.xengController.offEffect(t)},t.prototype.offEffectRandomLabelHeso=function(t){this.xengController.xengView.offEffectRandomLabelHeso(t)},t.prototype.offItem=function(t){this.xengController.offItem(t)},t.prototype.getNodeJp=function(){return this.xengController.xengView.getNodeJp()},t.prototype.pushIdResult=function(t){this.xengController.xengView.putIdResult(t)},t.prototype.pushIdXDVResult=function(t){var e=this;t.forEach(function(t){return e.xengController.xengView.putIdXDVResult(t)})},t.prototype.resetIdXDVResult=function(){this.xengController.xengView.resetIdXDVResult()},t.prototype.resetIdResult=function(){this.xengController.xengView.resetIdResult()},t.prototype.actionFade=function(t,e){e?(t.stopAllActions(),t.runAction(cc.fadeIn(e))):t.opacity=255},t.prototype.activeIcon=function(t){this.xengController.xengView.activeIcon(t)},t.prototype.actionNhapNhay=function(t,e,n,o){void 0===o&&(o=!1),t.stopAllActions(),t.opacity=255,o?t.runAction(cc.sequence(cc.blink(n,e),cc.callFunc(function(){t.opacity=255}))):t.runAction(cc.sequence(cc.blink(n,e),cc.callFunc(function(){t.opacity=0})))},t.prototype.activeWithTime=function(t,e){this.offItem(t),t.opacity=255,t.runAction(cc.sequence(cc.delayTime(e),cc.fadeOut(0)))},t.prototype.activeWithTimeFadeOut=function(t,e,n){this.offItem(t),t.opacity=255,t.runAction(cc.sequence(cc.delayTime(e),cc.fadeOut(n)))},t.prototype.hideWithTimeFadeIn=function(t,e,n){this.offItem(t),t.opacity=0,t.runAction(cc.sequence(cc.delayTime(e),cc.fadeIn(n)))},t.prototype.makeDelay=function(t){return this.xengController.makeDelay(t)},t}();n.default=r,cc._RF.pop()},{}],BaseState:[function(t,e,n){"use strict";cc._RF.push(e,"4d8a5pxCdVL1o/9t0n6f6Rr","BaseState"),Object.defineProperty(n,"__esModule",{value:!0});var o=function(){function t(t){this.type=t}return t.prototype.initGameController=function(t){this.xengController=t},t}();n.default=o,cc._RF.pop()},{}],"BtnAll+1":[function(t,e,n){"use strict";cc._RF.push(e,"400d4wgb2JE4ZOMWAeIdTlA","BtnAll+1");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../State/StateGame"),a=t("./BaseButton"),c=cc._decorator,u=c.ccclass,l=(c.property,function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.onPress=function(t){this.xengController.stateGame.type!=s.default.PLAYINGMINI&&this.xengController.onClickAllAdd1(t)},e.prototype.reset=function(){},r([u],e)}(a.default));n.default=l,cc._RF.pop()},{"../State/StateGame":"StateGame","./BaseButton":"BaseButton"}],BtnBetItem:[function(t,e,n){"use strict";cc._RF.push(e,"07b52urzBxFS6FM9h79knOF","BtnBetItem");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../../Scritps/Windown"),a=t("../State/StateGame"),c=t("./BaseButton"),u=cc._decorator,l=u.ccclass,f=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbPoint=null,e.point=0,e}return i(e,t),e.prototype.onPress=function(t){if(this.xengController.stateGame.type==a.default.WATINGPLAYGAME)return this.soundManager.playEffect(this.soundManager.Ting),void this.xengController.setCurrentState(a.default.WATING);this.point>=990*s.Windown.XengController.mutil||this.xengController.btnChangePointR.point<1||(this.xengController.btnChangePointR.point<t&&(t=this.xengController.btnChangePointR.point),this.setPointBy(t),this.xengController.btnChangePointR.setPointBy(-t),this.soundManager.playEffect(this.soundManager.Ting),this.xengController.setCurrentState(a.default.PLAYING))},e.prototype.setLbPoint=function(){this.node&&this.lbPoint.node&&(this.lbPoint.string=(this.point/s.Windown.XengController.mutil).toString())},e.prototype.reset=function(){this.point=0,this.setLbPoint()},e.prototype.setPointBy=function(t,e){void 0===e&&(e=!0),this.point+=t,this.point=cc.misc.clampf(this.point,0,990*s.Windown.XengController.mutil),e&&this.setLbPoint()},e.prototype.setPoint=function(t,e){void 0===e&&(e=!0),this.point=t,e&&this.setLbPoint()},r([f(cc.Label)],e.prototype,"lbPoint",void 0),r([l],e)}(c.default);n.default=h,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./BaseButton":"BaseButton"}],BtnBetXDV:[function(t,e,n){"use strict";cc._RF.push(e,"d2606Bla8NMbIeRU0pYLbT6","BtnBetXDV");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../../Scritps/Windown"),a=t("../State/StateGame"),c=t("./BaseButton"),u=cc._decorator,l=u.ccclass,f=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbPoint=null,e.point=0,e}return i(e,t),e.prototype.onPress=function(t){this.point>=9990*s.Windown.XengController.mutil||this.xengController.btnChangePointR.point<1||(this.xengController.btnChangePointR.point<t&&(t=this.xengController.btnChangePointR.point),this.setPointBy(t),this.soundManager.playEffect(this.soundManager.Ting),this.xengController.btnChangePointR.setPointBy(-t),this.xengController.setCurrentState(a.default.PLAYING))},e.prototype.setLbPoint=function(){this.node&&this.lbPoint.node&&(this.lbPoint.string=(this.point/s.Windown.XengController.mutil).toString())},e.prototype.reset=function(){this.point=0,this.setLbPoint()},e.prototype.setPointBy=function(t,e){void 0===e&&(e=!0),this.point+=t,this.point=cc.misc.clampf(this.point,0,9990*s.Windown.XengController.mutil),e&&this.setLbPoint()},e.prototype.setPoint=function(t,e){void 0===e&&(e=!0),this.point=t,e&&this.setLbPoint()},r([f(cc.Label)],e.prototype,"lbPoint",void 0),r([l],e)}(c.default);n.default=h,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./BaseButton":"BaseButton"}],BtnChangePointLeft:[function(t,e,n){"use strict";cc._RF.push(e,"9f2e3Tpzz9CX4wCsu35fqoK","BtnChangePointLeft");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../../Scritps/Windown"),a=t("../State/StateGame"),c=t("./BaseButton"),u=cc._decorator,l=u.ccclass,f=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbPoint=null,e.point=0,e}return i(e,t),e.prototype.onPress=function(t){0!=this.xengController.btnChangePointR.point&&(this.xengController.btnChangePointR.point<t&&(t=this.xengController.btnChangePointR.point),this.setPointBy(t),this.xengController.btnChangePointR.setPointBy(-t),this.soundManager.playEffect(this.soundManager.Ting),this.xengController.setCurrentState(a.default.PLAYINGMINI))},e.prototype.setPointBy=function(t,e){void 0===e&&(e=!0),this.point+=t,e&&this.setLbPoint()},e.prototype.setPoint=function(t,e){void 0===e&&(e=!0),this.point=t,e&&this.setLbPoint()},e.prototype.reset=function(){this.point=0,this.setLbPoint()},e.prototype.setLbPoint=function(){this.node&&this.lbPoint.node&&(this.lbPoint.string=cc.misc.clampf(parseInt(this.point/s.Windown.XengController.mutil),0,999999).toString())},r([f(cc.Label)],e.prototype,"lbPoint",void 0),r([l],e)}(c.default);n.default=h,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./BaseButton":"BaseButton"}],BtnChangePointRight:[function(t,e,n){"use strict";cc._RF.push(e,"22e7eg/USZHh4jZCYWZI6GQ","BtnChangePointRight");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../../Scritps/Game/GAME_TYPE"),a=t("../../../../Scritps/Windown"),c=t("../State/StateGame"),u=t("./BaseButton"),l=cc._decorator,f=l.ccclass,h=l.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbPoint=null,e.point=0,e}return i(e,t),e.prototype.onPress=function(t){0!=this.xengController.btnChangePointL.point&&(this.xengController.btnChangePointL.point<t&&(t=this.xengController.btnChangePointL.point),this.setPointBy(t),this.xengController.btnChangePointL.setPointBy(-t),this.soundManager.playEffect(this.soundManager.Ting),this.xengController.btnChangePointL.point<1&&this.xengController.setCurrentState(c.default.WATING))},e.prototype.reset=function(){},e.prototype.setPointBy=function(t,e){void 0===e&&(e=!0),t<0&&a.Windown.MoneyUser.pushDelayMoney(s.default.Xeng,a.Windown.MoneyUser.moneyCache,-t),this.point=a.Windown.MoneyUser.getMoneyCurrentWhitDelay(),e&&this.setLbPoint()},e.prototype.setPoint=function(t,e){void 0===e&&(e=!0),this.point=t,e&&this.setLbPoint()},e.prototype.setLbPoint=function(){this.node&&this.lbPoint.node&&(this.lbPoint.string=cc.misc.clampf(parseInt(this.point/a.Windown.XengController.mutil),0,999999).toString())},r([h(cc.Label)],e.prototype,"lbPoint",void 0),r([f],e)}(u.default);n.default=p,cc._RF.pop()},{"../../../../Scritps/Game/GAME_TYPE":void 0,"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./BaseButton":"BaseButton"}],BtnClick:[function(t,e,n){"use strict";cc._RF.push(e,"0913fTmuXJLqKoO1wAaD3t3","BtnClick");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("./BaseButton"),a=cc.Enum({BIG:1,SMALL:2,LE:3,CHAN:4}),c=cc._decorator,u=c.ccclass,l=c.property,f=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.type=a.BIG,e}return i(e,t),e.prototype.onPress=function(){switch(cc.log("on press nay"),this.type){case a.BIG:this.xengController.onClick8_13();break;case a.SMALL:this.xengController.onClick1_6();break;case a.CHAN:this.xengController.onClickChan();break;case a.LE:this.xengController.onClickLe()}},e.prototype.reset=function(){},r([l({type:a})],e.prototype,"type",void 0),r([u],e)}(s.default);n.default=f,cc._RF.pop()},{"./BaseButton":"BaseButton"}],BtnGo:[function(t,e,n){"use strict";cc._RF.push(e,"0daa1dePORASKhxJvObZ14u","BtnGo");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("./BaseButton"),a=cc._decorator,c=a.ccclass,u=(a.property,function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.onPress=function(){this.xengController.onClickGo(),this.soundManager.playEffect(this.soundManager.Ting)},e.prototype.reset=function(){},r([c],e)}(s.default));n.default=u,cc._RF.pop()},{"./BaseButton":"BaseButton"}],Effect1CuaTo20:[function(t,e,n){"use strict";cc._RF.push(e,"104bdehi3xBiI8DH/PvW9X5","Effect1CuaTo20");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o=this;return s(this,function(i){switch(i.label){case 0:t=this.getListChildren(),n=0,i.label=1;case 1:return n<5?(this.soundMgn.playEffect(this.soundMgn.TiengNo),t.forEach(function(t){o.activeWithTime(t,.1)}),[4,this.makeDelay(.17)]):[3,4];case 2:i.sent(),i.label=3;case 3:return n++,[3,1];case 4:return t.forEach(function(t){o.activeIcon(t)}),[4,this.makeDelay(1)];case 5:return i.sent(),t.forEach(function(t){o.offItem(t)}),this.getListLastResult().forEach(function(t){o.activeIcon(t)}),e(null),[2]}})})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectAnJP:[function(t,e,n){"use strict";cc._RF.push(e,"c5ea3X+VsZECIbHcnwCjUYg","EffectAnJP");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c;return s(this,function(s){switch(s.label){case 0:return t=this.dataFinishiItemNomarl,n=t.objReviceFirtItem,[4,this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau)];case 1:return s.sent(),o=n.hesoX,this.runEffectRandomLabelHeso(30,100),[4,this.soundMgn.playEffectSync(this.soundMgn.RandomSo)];case 2:return s.sent(),this.offEffectRandomLabelHeso(o),0==t.objReviceFirtItem.moneyRevice?(e(null),[2]):0==(i=this.getBtnItem(8).point)?[3,7]:[4,this.soundMgn.playEffectSync(this.soundMgn.ShowHeSoRandom)];case 3:s.sent(),r=i,a=0,c=o,s.label=4;case 4:return a<c?(o--,this.setStringLbHeSo(o),this.soundMgn.playEffect(this.soundMgn.TiengNo),this.currentBtnTrai.setPointBy(r),[4,this.makeDelay(.45)]):[3,7];case 5:s.sent(),s.label=6;case 6:return a++,[3,4];case 7:return[4,this.makeDelay(1)];case 8:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectAnLuon1Cua:[function(t,e,n){"use strict";cc._RF.push(e,"03158rKBIFBiKuyHGtGw9R3","EffectAnLuon1Cua");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){return r(this,void 0,Promise,function(){var t=this;return s(this,function(){return[2,new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i=this;return s(this,function(r){switch(r.label){case 0:for(t=this.xengController.xengView.getListLastResult(),n=0;n<t.length;n++)this.actionNhapNhay(t[n],50,10,!0);return[4,this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau)];case 1:return r.sent(),(o=this.getListChildren()).forEach(function(t){i.actionNhapNhay(t,30,3,!0)}),[4,this.soundMgn.playEffectSync(this.soundMgn.NoLienTuc)];case 2:return r.sent(),o.forEach(function(t){i.offItem(t)}),t.forEach(function(t){i.activeIcon(t)}),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiAnTruoc1CuaX30)];case 3:return r.sent(),t.forEach(function(t){i.actionNhapNhay(t,40,4)}),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengKen2)];case 4:return r.sent(),t.forEach(function(t){i.offItem(t)}),e(null),[2]}})})})]})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectBassNho:[function(t,e,n){"use strict";cc._RF.push(e,"19877DnWkNPvoFech+Rprnw","EffectBassNho");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../../Scritps/Windown"),c=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,c,u,l,f,h,p,d,y,g,b,v,_,E,m,S,w=this;return s(this,function(s){switch(s.label){case 0:this.soundMgn.playEffect(this.soundMgn.CauNoiVeBass),t=this.dataFinishiItemNomarl.objReviceFirtItem.idResult,n=this.getListChildren(),o=!0,b=0,s.label=1;case 1:if(!(b<20))return[3,4];if(o)for(v in this.offItem(this.getChildById(t)),n)Number(v)!=t&&this.offEffect(n[v]);else for(v in this.offEffect(this.getChildById(t)),n)Number(v)!=t&&this.offItem(n[v]);return o=!o,[4,this.makeDelay(.15)];case 2:s.sent(),s.label=3;case 3:return b++,[3,1];case 4:return[4,this.makeDelay(.5)];case 5:s.sent(),this.dataFinishiItemNomarl.ListObjReviceSub.forEach(function(t){w.pushIdResult(t.idResult)}),i=[3,9,11,14,17,22],r=this.getIdListLastResutl(),a.Windown.shuffle(i),c=0,u=-1,s.label=6;case 6:return c!=i.length?[3,8]:(-1!=u&&this.offItem(this.getChildById(i[u])),this.activeIcon(this.getChildById(r[1])),this.soundMgn.playEffect(this.soundMgn.TiengNo),[4,this.makeDelay(2)]);case 7:return s.sent(),[3,10];case 8:return this.soundMgn.playEffect(this.soundMgn.Hu),-1!=u&&this.offItem(this.getChildById(i[u])),this.activeIcon(this.getChildById(i[c])),u=c,c++,[4,this.makeDelay(.5)];case 9:return s.sent(),[3,6];case 10:return l=this.getChildById(r[0]),f=this.getChildById(r[1]),this.actionNhapNhay(l,30,3,!0),this.actionNhapNhay(f,30,3,!0),[4,this.soundMgn.playEffectSync(this.soundMgn.NoLienTuc)];case 11:s.sent(),h=[6,7,8,9,10,11,12,13],p=[18,19,20,21,22,23,0,1],this.soundMgn.playEffect(this.soundMgn.ChayItem),b=0,s.label=12;case 12:if(!(b<12))return[3,15];for(v in h)y=h[v],this.offEffect(this.getChildById(y)),h[v]--,h[v]<0&&(h[v]=23);for(v in(d=h[h.length-1]+1)>23&&(d=0),this.offItem(this.getChildById(d)),p)y=p[v],this.offEffect(this.getChildById(y)),p[v]--,p[v]<0&&(p[v]=23);return(d=p[p.length-1]+1)>23&&(d=0),this.offItem(this.getChildById(d)),[4,this.makeDelay(1.6/12)];case 13:s.sent(),s.label=14;case 14:return b++,[3,12];case 15:return this.soundMgn.stopEffect(this.soundMgn.ChayItem),n.forEach(function(t){w.offItem(t)}),(g=[r[0],r[1],r[2]]).forEach(function(t){w.offEffect(w.getChildById(t))}),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNo)];case 16:s.sent(),this.soundMgn.playEffect(this.soundMgn.EffectAnRandomItemNhoSau),o=!0,b=0,s.label=17;case 17:if(!(b<20))return[3,20];if(o)for(v in g.forEach(function(t){w.offItem(w.getChildById(t))}),n)g.includes(Number(v))||this.offEffect(n[v]);else for(v in g.forEach(function(t){w.offEffect(w.getChildById(t))}),n)g.includes(Number(v))||this.offItem(n[v]);return o=!o,[4,this.makeDelay(.1)];case 18:s.sent(),s.label=19;case 19:return b++,[3,17];case 20:for(_=r[2],E=r[3],m=_;++m!=E;)m>23&&(m=0);S=-1,s.label=21;case 21:return-1==S||g.includes(S)||this.offItem(this.getChildById(S)),S=_,++_>23&&(_=0),this.soundMgn.playEffect(this.soundMgn.Bip),this.activeIcon(this.getChildById(_)),_==E?(-1==S||g.includes(S)||this.offItem(this.getChildById(S)),this.soundMgn.stopEffect(this.soundMgn.RandomSo),[3,23]):[4,this.makeDelay(.05)];case 22:return s.sent(),[3,21];case 23:return[4,this.makeDelay(1)];case 24:return s.sent(),this.soundMgn.playEffect(this.soundMgn.RandomSo),this.actionNhapNhay(this.getChildById(r[3]),20,2,!0),[4,this.makeDelay(2)];case 25:return s.sent(),this.soundMgn.stopEffect(this.soundMgn.RandomSo),[4,this.soundMgn.playEffectSync(this.soundMgn.Bip)];case 26:return s.sent(),this.offEffect(this.getChildById(r[4])),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNo)];case 27:return s.sent(),[4,this.makeDelay(.5)];case 28:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=c,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"./BaseEffectEnd":"BaseEffectEnd"}],EffectDapChuot:[function(t,e,n){"use strict";cc._RF.push(e,"0de85nK0ntPjYj5NYBF0wxQ","EffectDapChuot");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l=this;return s(this,function(s){switch(s.label){case 0:this.soundMgn.playEffect(this.soundMgn.StartDapChuot),this.setColor(0),t=0,r=0,s.label=1;case 1:return r<13?(this.getListRun()[t].forEach(function(t){l.activeWithTime(t,.25)}),++t>3&&(t=0),[4,this.makeDelay(.27)]):[3,4];case 2:s.sent(),s.label=3;case 3:return r++,[3,1];case 4:n=this.getIdIndexRun(),this.setColor(2),o=0,s.label=5;case 5:if(!(o<16))return[3,8];for(i=n.length,r=0;r<i;r++)a=n[r],c=this.getChildById(a),this.activeWithTime(c,.08),++a>23&&(a=0),n[r]=a;return[4,this.makeDelay(.08)];case 6:s.sent(),s.label=7;case 7:return o++,[3,5];case 8:o=0,s.label=9;case 9:if(!(o<32))return[3,12];for(i=n.length,r=0;r<i;r++)a=n[r],c=this.getChildById(a),this.activeWithTime(c,.08),--a<0&&(a=23),n[r]=a;return[4,this.makeDelay(.08)];case 10:s.sent(),s.label=11;case 11:return o++,[3,9];case 12:return this.setColor(1),(u=this.getListChildren()).forEach(function(t){l.actionNhapNhay(t,10,1.8)}),[4,this.makeDelay(1.9)];case 13:return s.sent(),u.forEach(function(t){l.offItem(t)}),e(null),[2]}})})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectDoiMau:[function(t,e,n){"use strict";cc._RF.push(e,"92151pYUFtBbYwtT60ge3Jo","EffectDoiMau");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.dataXDV=null,e}return i(e,t),e.prototype.initData=function(t){return this.dataXDV=t,this},e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l=this;return s(this,function(s){switch(s.label){case 0:t=this.dataXDV.result,n=0==t?this.dataXDV.reviceXanh:this.dataXDV.reviceDo,o=0==t?this.getNodeLbItemXDV(2):this.getNodeLbItemXDV(0),0==t?this.setColor(2):this.setColor(0),i=this.getIdListLastResutl(),r=this.getListChildren(),a=!1,this.soundMgn.playEffect(this.soundMgn.NhacDoiMau),c=0,s.label=1;case 1:if(!(c<80))return[3,4];if(a)for(u in i.forEach(function(t){l.activeIcon(l.getChildById(t))}),this.activeIcon(o),r)i.includes(Number(u))||this.offItem(r[u]);else for(u in i.forEach(function(t){l.offItem(l.getChildById(t))}),this.offItem(o),r)i.includes(Number(u))||this.activeIcon(r[u]);return a=!a,[4,this.makeDelay(.1)];case 2:s.sent(),s.label=3;case 3:return c++,[3,1];case 4:return[4,this.soundMgn.playEffectSync(this.soundMgn.AtOhh)];case 5:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.NiChieuSangCieu)];case 6:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 7:return s.sent(),0!=t?[3,9]:[4,this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa)];case 8:return s.sent(),[3,11];case 9:return[4,this.soundMgn.playEffectSync(this.soundMgn.MauDo)];case 10:s.sent(),s.label=11;case 11:return this.currentBtnTrai.setPointBy(n),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 12:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XaPe)];case 13:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.EndDoiMau)];case 14:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectEndGame:[function(t,e,n){"use strict";cc._RF.push(e,"d3c209/dW5IebUTdgIeBUJT","EffectEndGame");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../../Scritps/Game/GAME_TYPE"),c=t("../../../../Scritps/Windown"),u=t("../State/StateGame"),l=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.dataNormal=null,e}return i(e,t),e.prototype.intiData=function(t){return this.dataNormal=t,this},e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,l,f=this;return s(this,function(){for(this.xengController.listBtnItem.forEach(function(t){f.offItem(t.lbPoint.node)}),this.xengController.listBtnXDV.forEach(function(t){f.offItem(t.lbPoint.node)}),t=this.dataNormal.makeBetNormal,n=this.dataNormal.makebetXDV,o=0,i=t.ListObjReviceSub.length;o<i;o++)this.actionNhapNhay(this.getNodeLbItem(t.ListObjReviceSub[o].resultType),30,10,!0);return this.actionNhapNhay(this.getNodeLbItem(t.objReviceFirtItem.resultType),30,10,!0),this.currentBtnTrai.setPoint(this.dataNormal.totalRevice),r=n.result,this.currentBtnTrai.point>0&&this.runEffectNhapNhay(this.getNodeLbLeft(),10,30),3==r?(this.runEffectNhapNhay(this.getNodeLbItemXDV(0),10,30),this.runEffectNhapNhay(this.getNodeLbItemXDV(1),10,30),this.runEffectNhapNhay(this.getNodeLbItemXDV(2),10,30),this.pushIdXDVResult([0,1,2,3,4,5])):(this.runEffectNhapNhay(this.getNodeLbItemXDV(r),10,30),(l=this.getListXDVWithType(r)).forEach(function(t){f.actionNhapNhay(f.getChildXDVById(t),30,10,!0)}),this.pushIdXDVResult(l)),c.Windown.MoneyUser.removeDelay(a.default.Xeng,!1),c.Windown.MoneyUser.pushDelayMoney(a.default.Xeng,this.dataNormal.agXeng,this.dataNormal.totalRevice),this.xengController.xengView.addNewHistory(n.result),this.xengController.xengView.randomLbHeSoOGiua(),this.xengController.setCurrentState(u.default.WATINGPLAYGAME),e(null),[2]})})})},e.prototype.getListXDVWithType=function(t){return[[0,1],[2,3],[4,5]][t]},e}(t("./BaseEffect").default);n.default=l,cc._RF.pop()},{"../../../../Scritps/Game/GAME_TYPE":void 0,"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./BaseEffect":"BaseEffect"}],EffectEndNormal:[function(t,e,n){"use strict";cc._RF.push(e,"7bc7efksOVP848xX35RUsxA","EffectEndNormal");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n;return s(this,function(o){switch(o.label){case 0:return t=this.dataFinishiItemNomarl,n=t.objReviceFirtItem,t.typeSpecial,t.ListObjReviceSub,this.actionNhapNhay(this.getListLastResult()[0],10,2,!0),this.runEffectNhapNhay(this.getNodeLbItem(n.resultType),2,10),this.soundMgn.playEffect(this.soundMgn.Item[n.resultType]),[4,this.makeDelay(2.1)];case 1:return o.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectRan8Dot:[function(t,e,n){"use strict";cc._RF.push(e,"1ac19rAVslLkLfOYU38kdOb","EffectRan8Dot");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l,f,h;return s(this,function(s){switch(s.label){case 0:return this.soundMgn.playEffect(this.soundMgn.TiengKen1),(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=this.dataFinishiItemNomarl.mutil,this.actionNhapNhay(this.getChildById(4),20,4,!0),[4,this.makeDelay(4.5)];case 1:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiDapChuot)];case 2:s.sent(),this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong),i=4,r=[4],a=0,s.label=3;case 3:if(!(a<32))return[3,6];for(h in r)u=r[h],this.offEffect(this.getChildById(u)),r[h]++,r[h]>23&&(r[h]=0);return r.length<8?r.unshift(4):((c=r[0]-1)<0&&(c=23),this.offItem(this.getChildById(c))),[4,this.makeDelay(1/30)];case 4:s.sent(),s.label=5;case 5:return a++,[3,3];case 6:for(h in r)u=r[h],this.offEffect(this.getChildById(u)),r[h]++,r[h]>23&&(r[h]=0);return(c=r[0]-1)<0&&(c=23),this.offItem(this.getChildById(c)),r[0]==o?(this.soundMgn.stopEffect(this.soundMgn.ItemChay1Vong),[3,8]):[4,this.makeDelay(1/30)];case 7:return s.sent(),[3,6];case 8:for(h in r)u=r[h],this.offEffect(this.getChildById(u));return[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem)];case 9:return s.sent(),[4,this.makeDelay(1)];case 10:s.sent(),i=0,l=0,f=n,s.label=11;case 11:return l<f.length?(h=f[l],this.pushIdResult(r[i]),this.runEffectNhapNhay1Lan(this.getChildById(r[i]),.3),h.resultType>-1&&this.runEffectNhapNhay1Lan(this.getNodeLbItem(h.resultType),.3),this.currentBtnTrai.setPointBy(h.moneyRevice),++i>23&&(i=0),[4,this.soundMgn.playEffectSync(this.soundMgn.CongTien)]):[3,14];case 12:s.sent(),s.label=13;case 13:return l++,[3,11];case 14:return[4,this.makeDelay(.5)];case 15:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectRunSpin:[function(t,e,n){"use strict";cc._RF.push(e,"8dd78Q911lGm5bCHGMTE88A","EffectRunSpin");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../../Scritps/Windown"),c=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.resultId=10,e.totalRun=0,e.countRun=0,e.currentIdRun=0,e.countOffActive=4,e.lastIdXDV=1,e.hesoNhanRunXDV=1,e.resultIdXDV=10,e.totalRunXDV=0,e.countRunXDV=0,e.idCacheXDV=0,e.currentIdRunXDV=0,e.countSubXDV=0,e.isRuning=!1,e.timeDelay=.15,e.timeUpdate=0,e.funEnd=null,e.idTimeOut=null,e}return i(e,t),e.prototype.executed=function(){throw new Error("Method not implemented.")},e.prototype.spinWithId=function(t,e,n){return r(this,void 0,void 0,function(){var o,i,r,a,c,u,l=this;return s(this,function(s){switch(s.label){case 0:return this.setColor(e),n?this.soundMgn.playEffect(this.soundMgn.SpinSpecial):this.soundMgn.playEffect(this.soundMgn.SpinNormal),o=this.getIdListLastResutl(),null!=(i=o[0])&&null!=i||(i=1),this.timeDelay=.08,this.countRun=0,this.resultId=t,r=24-i+t,this.totalRun=72+r%24,this.currentIdRun=i,this.countOffActive=4,(a=this.getListLastResult()).forEach(function(t){l.actionNhapNhay(t,3,.5)}),this.resultIdXDV=e,c=this.getIdXDVWithTotal(this.totalRun),u=this.getIdResultXDV(e>2?2:e),this.countSubXDV=this.getCountSub(c.id,u,c.heSoNhan),[4,this.makeDelay(.5)];case 1:return s.sent(),a.forEach(function(t){l.offItem(t)}),this.activeIcon(this.getChildById(i)),this.isRuning=!0,this.xengController.xengView.funUpdate=function(t){l.isRuning?l.update(t):l.xengController.xengView.funUpdate=null},[4,this.endSpinFun()];case 2:return s.sent(),[4,this.makeDelay(1)];case 3:return s.sent(),[2]}})})},e.prototype.endSpinFun=function(){var t=this;return new Promise(function(e){t.funEnd=e})},e.prototype.getIdXDVWithTotal=function(t){for(var e=Object.create(null),n=this.hesoNhanRunXDV,o=this.currentIdRunXDV,i=0;i<t;i++)(o+=n)>5&&(o=5,n*=-1),o<0&&(o=0,n*=-1);return e.id=o,e.heSoNhan=n,e},e.prototype.getIdResultXDV=function(t){return this.getListXDVWithType(t)[a.Windown.RandomNumber(0,2)]},e.prototype.getListXDVWithType=function(t){return[[0,1],[2,3],[4,5]][t]},e.prototype.getCountSub=function(t,e,n){for(var o=n,i=0;;){if(t==e)return i;i++,((t-=o)<0||t>5)&&(t<0&&(t=0),t>5&&(t=5),o*=-1)}},e.prototype.checkStateRun=function(){var t=!0;return this.countRun>=this.totalRun&&(t=!1),t},e.prototype.runSpin=function(){this.randomLbHeSo();var t=this.getIdOffWithRun(this.countOffActive);if(this.countRun>3){var e=this.getChildById(t);this.offItem(e)}this.countRun++,this.activeIcon(this.getChildById(this.currentIdRun)),this.countRun==this.totalRun-9&&(this.offItem(this.getChildById(this.getIdOffWithRun(3))),this.offItem(this.getChildById(this.getIdOffWithRun(2))),this.offItem(this.getChildById(this.getIdOffWithRun(1))),this.countOffActive=1),3==this.countRun&&(this.timeDelay=.08),6==this.countRun&&(this.timeDelay=.062),9==this.countRun&&(this.timeDelay=.02),this.countRun==this.totalRun-3&&(this.timeDelay=.08),this.currentIdRun++,this.currentIdRun>23&&(this.currentIdRun=0),this.countRun>9&&this.countSubXDV>0&&this.countRun%6==3?this.countSubXDV--:(this.countRun>0&&this.offItem(this.getChildXDVById(this.idCacheXDV)),this.activeIcon(this.getChildXDVById(this.currentIdRunXDV)),this.currentIdRunXDV>2?(this.offItem(this.getLightMid(0)),this.activeIcon(this.getLightMid(1))):(this.offItem(this.getLightMid(1)),this.activeIcon(this.getLightMid(0))),this.idCacheXDV=this.currentIdRunXDV,this.currentIdRunXDV+=this.hesoNhanRunXDV,this.currentIdRunXDV>5&&(this.currentIdRunXDV=5,this.hesoNhanRunXDV*=-1),this.currentIdRunXDV<0&&(this.currentIdRunXDV=0,this.hesoNhanRunXDV*=-1))},e.prototype.endSpin=function(){return r(this,void 0,void 0,function(){var t=this;return s(this,function(){return this.resetIdResult(),this.resetIdXDVResult(),this.pushIdResult(this.resultId),this.isRuning=!1,this.offItem(this.getChildById(this.getIdOffWithRun(1))),this.activeIcon(this.getChildById(this.currentIdRun)),this.offItem(this.getChildXDVById(this.idCacheXDV)),3==this.resultIdXDV?(this.getListXDV().forEach(function(e){t.actionNhapNhay(e,40,12)}),this.getListLightMid().forEach(function(e){t.actionNhapNhay(e,40,12)})):(this.activeIcon(this.getLightMid(this.currentIdRunXDV>2?1:0)),this.activeIcon(this.getChildXDVById(this.currentIdRunXDV))),this.soundMgn.stopEffect(this.soundMgn.SpinNormal),this.soundMgn.stopEffect(this.soundMgn.SpinSpecial),this.funEnd(),[2]})})},e.prototype.getIdOffWithRun=function(t){var e=this.currentIdRun-t;return e<0&&(e=24+e),e},e.prototype.update=function(t){return r(this,void 0,void 0,function(){return s(this,function(){return this.isRuning?(this.timeUpdate+=t,this.timeUpdate<this.timeDelay?[2]:(this.timeUpdate=0,this.checkStateRun()?this.runSpin():this.endSpin(),[2])):[2]})})},e}(t("./BaseEffect").default);n.default=c,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"./BaseEffect":"BaseEffect"}],EffectSpecial14:[function(t,e,n){"use strict";cc._RF.push(e,"e3fc9nsyiFP9oWDXAn2AVVB","EffectSpecial14");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a=this;return s(this,function(s){switch(s.label){case 0:return this.soundMgn.playEffect(this.soundMgn.TiengKen1),(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,(n=t.ListObjReviceSub)[0],this.actionNhapNhay(this.getChildById(20),20,4,!0),[4,this.makeDelay(4.5)];case 1:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CuocKhungHoang)];case 2:s.sent(),this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong),o=20,r=0,s.label=3;case 3:return r<24?(++o>23&&(o=0),this.offEffect(this.getChildById(o)),[4,this.makeDelay(2.8/24)]):[3,6];case 4:s.sent(),s.label=5;case 5:return r++,[3,3];case 6:return i=0,n.forEach(function(t){i+=t.moneyRevice}),this.currentBtnTrai.setPointBy(i),[4,this.soundMgn.playEffectSync(this.soundMgn.HieuUngAnTatCaCacCua)];case 7:s.sent(),this.getListChildren().forEach(function(t){a.actionNhapNhay(t,5,1,!0)}),r=0,s.label=8;case 8:return r<5?(this.soundMgn.playEffect(this.soundMgn.TiengNo),[4,this.makeDelay(.2)]):[3,11];case 9:s.sent(),s.label=10;case 10:return r++,[3,8];case 11:for(this.resetIdResult(),r=0;r<24;r++)this.pushIdResult(r);return[4,this.makeDelay(1)];case 12:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial2:[function(t,e,n){"use strict";cc._RF.push(e,"6c74c1H8oVClq0RIHmB/fXm","EffectSpecial2");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l;return s(this,function(s){switch(s.label){case 0:return(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=n[0],this.soundMgn.playEffect(this.soundMgn.TiengKen1),i=this.getIdListLastResutl(),r=i[0],this.actionNhapNhay(this.getChildById(r),20,4,!0),[4,this.makeDelay(4.5)];case 1:s.sent(),this.soundMgn.stopEffect(this.soundMgn.TiengKen1),a=o.idResult,this.pushIdResult(a),c=-1,u=6==r?-1:1,l=r,s.label=2;case 2:return this.soundMgn.playEffect(this.soundMgn.Bip),-1!=c&&this.offItem(this.getChildById(c)),this.activeIcon(this.getChildById(l)),l!=a?[3,5]:[4,this.makeDelay(1)];case 3:return s.sent(),cc.log("objSub.result: "+a),this.actionNhapNhay(this.getChildById(a),10,2,!0),this.runEffectNhapNhay(this.getNodeLbItem(o.resultType),2,10),this.soundMgn.playEffect(this.soundMgn.Item[o.resultType]),[4,this.makeDelay(2)];case 4:return s.sent(),e(null),[3,7];case 5:return c=l,l+=u,-1==u?-1==l&&(l=23):24==l&&(l=0),[4,this.makeDelay(.08)];case 6:return s.sent(),[3,2];case 7:return[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial3:[function(t,e,n){"use strict";cc._RF.push(e,"da396oEJxpNiLDbpR2nmWlf","EffectSpecial3");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c;return s(this,function(s){switch(s.label){case 0:(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=n[0],this.soundMgn.playEffect(this.soundMgn.RandomSo),i=!1,r=0,a=o.idResult,this.pushIdResult(a),c=this.getIdListLastResutl()[0],s.label=1;case 1:return 6!=r?[3,5]:(this.soundMgn.stopEffect(this.soundMgn.RandomSo),[4,this.soundMgn.playEffectSync(this.soundMgn.Bip)]);case 2:return s.sent(),this.soundMgn.playEffect(this.soundMgn.TiengNo),this.offItem(this.getNodeJp()),this.activeIcon(this.getChildById(a)),[4,this.makeDelay(2)];case 3:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Item[o.resultType])];case 4:return s.sent(),e(null),[3,7];case 5:return i?(this.offItem(this.getNodeJp()),this.activeIcon(this.getChildById(c))):(this.activeIcon(this.getNodeJp()),this.offItem(this.getChildById(c))),i=!i,r++,[4,this.makeDelay(.1)];case 6:return s.sent(),[3,1];case 7:return[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial4:[function(t,e,n){"use strict";cc._RF.push(e,"eb0cdCraxdEWb2A5VfvK7rI","EffectSpecial4");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../../Scritps/Windown"),c=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,c,u;return s(this,function(s){switch(s.label){case 0:(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=n[0],i=[3,9,11,14,17,22],a.Windown.shuffle(i),r=0,c=-1,u=o.idResult,this.pushIdResult(u),s.label=1;case 1:return r!=i.length?[3,4]:(-1!=c&&this.offItem(this.getChildById(i[c])),this.activeIcon(this.getChildById(u)),this.soundMgn.playEffect(this.soundMgn.TiengNo),[4,this.makeDelay(2)]);case 2:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Item[o.resultType])];case 3:return s.sent(),e(null),[3,6];case 4:return this.soundMgn.playEffect(this.soundMgn.Hu),-1!=c&&this.offItem(this.getChildById(i[c])),this.activeIcon(this.getChildById(i[r])),c=r,r++,[4,this.makeDelay(.5)];case 5:return s.sent(),[3,1];case 6:return[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=c,cc._RF.pop()},{"../../../../Scritps/Windown":void 0,"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial5:[function(t,e,n){"use strict";cc._RF.push(e,"fccb2itoa5I25vSDjMSwOJS","EffectSpecial5");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a;return s(this,function(s){switch(s.label){case 0:return t=this.dataFinishiItemNomarl,n=t.objReviceFirtItem,t.typeSpecial,o=t.ListObjReviceSub,i=o[0],r=i.resultType,a=i.hesoX,this.runEffectNhapNhay(this.getNodeLbItem(n.resultType),6,30),[4,this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau)];case 1:return s.sent(),this.runEffectRandomLabelHesoSpecial(),[4,this.soundMgn.playEffectSync(this.soundMgn.RandomSo)];case 2:return s.sent(),this.offEffectRandomLabelHeso(a),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 3:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 4:return s.sent(),this.runEffectNhapNhay(this.getNodeLbItem(r),3,15),[4,this.soundMgn.playEffectSync(this.soundMgn.Item[r])];case 5:return s.sent(),[4,this.makeDelay(1)];case 6:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial6:[function(t,e,n){"use strict";cc._RF.push(e,"c21fcy1tNdB8qc4G3Nv+0GI","EffectSpecial6");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r;return s(this,function(s){switch(s.label){case 0:return(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,this.actionNhapNhay(this.getListLastResult()[0],50,10,!0),[4,this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau)];case 1:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiTraDiem)];case 2:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem)];case 3:return s.sent(),[4,this.makeDelay(1)];case 4:s.sent(),r=0,o=n.length,s.label=5;case 5:return r<o?(this.runEffectNhapNhay1Lan(this.getNodeLbItem(r),.3),this.currentBtnTrai.setPointBy(n[r].moneyRevice),[4,this.soundMgn.playEffectSync(this.soundMgn.CongTien)]):[3,8];case 6:s.sent(),s.label=7;case 7:return r++,[3,5];case 8:return this.actionNhapNhay(this.getListLastResult()[0],12.5,2.5,!0),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiTraDiemXong)];case 9:return s.sent(),this.setStringLbHeSo(0),[4,this.soundMgn.playEffectSync(this.soundMgn.NhacNenTraDiem)];case 10:return s.sent(),[4,this.makeDelay(10)];case 11:s.sent(),i=t.mutil,r=0,s.label=12;case 12:return r<i?(this.setStringLbHeSo(r+1),this.soundMgn.playEffect(this.soundMgn.TiengNo),this.currentBtnTrai.setPointBy(10),[4,this.makeDelay(.45)]):[3,15];case 13:s.sent(),s.label=14;case 14:return r++,[3,12];case 15:return[4,this.makeDelay(2.5)];case 16:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpecial7:[function(t,e,n){"use strict";cc._RF.push(e,"2d481KQRd5LSpiHzuUPtdmL","EffectSpecial7");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l,f,h,p=this;return s(this,function(s){switch(s.label){case 0:return(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=this.getIdListLastResutl(),this.actionNhapNhay(this.getChildById(o[0]),20,2.5),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem)];case 1:s.sent(),this.offEffect(this.getChildById(o[0])),this.soundMgn.playEffect(this.soundMgn.ChayItem),i=o[0],r=i,a=1,6==i&&(a=-1),6==i?this.pushIdResult(18):this.pushIdResult(6),c=-1*a,u=0,s.label=2;case 2:return u<12?((i+=a)>23?i=0:i<0&&(i=23),(r+=c)>23?r=0:r<0&&(r=23),this.activeIcon(this.getChildById(i)),this.activeIcon(this.getChildById(r)),[4,this.makeDelay(1.7/12)]):[3,5];case 3:s.sent(),s.label=4;case 4:return u++,[3,2];case 5:return this.getListChildren().forEach(function(t){p.offItem(t)}),this.getIdListLastResutl().forEach(function(t){p.activeIcon(p.getChildById(t))}),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNo)];case 6:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiDapChuot)];case 7:s.sent(),this.getListNodeLbItem().forEach(function(t){p.offItem(t)}),u=0,l=n.length,s.label=8;case 8:return u<l?[4,this.soundMgn.playEffectSync(this.soundMgn.RandomSo)]:[3,14];case 9:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Bip)];case 10:return s.sent(),f=n[u].resultType,h=n[u].moneyRevice,this.currentBtnTrai.setPointBy(h),this.activeWithTime(this.getNodeLbItem(f),1),[4,this.makeDelay(1)];case 11:return s.sent(),this.actionNhapNhay(this.getNodeLbItem(f),8,.9,!1),[4,this.soundMgn.playEffectSync(this.soundMgn.TuNaiXa)];case 12:s.sent(),s.label=13;case 13:return u++,[3,8];case 14:return[4,this.soundMgn.playEffectSync(this.soundMgn.MiOLa)];case 15:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi)];case 16:return s.sent(),e(null),[2]}})})})},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectSpineSoXo:[function(t,e,n){"use strict";cc._RF.push(e,"d5a42g4Ms1GC6Em6K/255QA","EffectSpineSoXo");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,c,u,l,f,h,p,d,y;return s(this,function(s){switch(s.label){case 0:return(t=this.dataFinishiItemNomarl).objReviceFirtItem,t.typeSpecial,n=t.ListObjReviceSub,o=n[0],i=o.idResult,r=o.resultType,a=this.getListChildren(),this.actionNhapNhay(a[16],16,4.7),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem)];case 1:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Woa)];case 2:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.ThingKaiSun)];case 3:return s.sent(),c=this.getListXoSo(),this.actionNhapNhay(c[5],15,2.3),[4,this.soundMgn.playEffectSync(this.soundMgn.TingTingDt)];case 4:s.sent(),this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong),u=5,d=0,s.label=5;case 5:return d<8?(this.activeWithTime(this.getChildXoSoById(u),1.2),[4,this.makeDelay(.15)]):[3,8];case 6:s.sent(),++u>7&&(u=0),s.label=7;case 7:return d++,[3,5];case 8:return[4,this.makeDelay(1.2)];case 9:s.sent(),l=this.getCountRunSoXo(5,i),f=5,d=0,y=l+1,s.label=10;case 10:return d<y?(this.soundMgn.playEffect(this.soundMgn.NextSoXo),this.activeWithTime(this.getChildXoSoById(f),1.1),++f>7&&(f=0),[4,this.makeDelay(1.1)]):[3,13];case 11:s.sent(),s.label=12;case 12:return d++,[3,10];case 13:return this.offEffect(this.getChildXoSoById(i)),[4,this.soundMgn.playEffectSync(this.soundMgn.AtOhh)];case 14:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi)];case 15:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 16:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 17:return s.sent(),this.soundMgn.playEffect(this.soundMgn.Item[r]),this.actionNhapNhay(this.getChildXoSoById(i),18,3.8,!0),[4,this.makeDelay(4.1)];case 18:return s.sent(),0==o.moneyRevice?(e(null),[2]):(this.soundMgn.playEffect(this.soundMgn.ShowHeSoRandom),h=o.hesoX,p=o.moneyRevice/h,this.setStringLbHeSo(h),this.runEffectNhapNhay(this.getNodeLbHeso(),7.3,32),this.runEffectNhapNhay(this.getNodeLbLeft(),7.3,32),[4,this.makeDelay(7.3)]);case 19:s.sent(),d=0,y=h,s.label=20;case 20:return d<y?(h--,this.setStringLbHeSo(h),this.soundMgn.playEffect(this.soundMgn.TiengNo),this.currentBtnTrai.setPointBy(p),[4,this.makeDelay(.45)]):[3,23];case 21:s.sent(),s.label=22;case 22:return d++,[3,20];case 23:return[4,this.makeDelay(1)];case 24:return s.sent(),e(null),[2]}})})})},e.prototype.getCountRunSoXo=function(t,e){for(var n=0;;){if(t==e)return n+8;n++,++t>7&&(t=0)}},e}(t("./BaseEffectEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectEnd":"BaseEffectEnd"}],EffectTraDiem:[function(t,e,n){"use strict";cc._RF.push(e,"89a67rxmGZOjLzaQw11ElS+","EffectTraDiem");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r=this;return s(this,function(s){switch(s.label){case 0:return this.soundMgn.playEffect(this.soundMgn.BatDauQuayTraDiem),this.getListLastResult().forEach(function(t){r.actionNhapNhay(t,20,3.2)}),[4,this.makeDelay(3)];case 1:s.sent(),(t=this.getListChildren()).forEach(function(t){r.activeIcon(t)}),n=[0,2,1],o=0,i=0,s.label=2;case 2:return i<18?(this.setColor(n[o]),++o>n.length-1&&(o=0),[4,this.makeDelay(.2)]):[3,5];case 3:s.sent(),s.label=4;case 4:return i++,[3,2];case 5:return[4,this.makeDelay(1)];case 6:return s.sent(),t.forEach(function(t){r.offItem(t)}),this.getListLastResult().forEach(function(t){r.activeIcon(t)}),e(null),[2]}})})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectVe3CuaXDV:[function(t,e,n){"use strict";cc._RF.push(e,"b43ce1f9GRFeLHCLyvkL+0W","EffectVe3CuaXDV");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return this.dataFinishXDV.result,this.dataFinishXDV.typeSpecial,this.dataFinishXDV.mutilVang,[4,this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang)];case 1:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauDo)];case 2:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa)];case 3:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauVang)];case 4:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CuocKhungHoang)];case 5:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.DonDap)];case 6:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 7:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauDo)];case 8:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 9:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XaPe)];case 10:return t.sent(),this.hideWithTimeFadeIn(this.getChildXDVById(0),.3,0),this.hideWithTimeFadeIn(this.getChildXDVById(1),.3,0),this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(0),.3),this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceDo),[4,this.soundMgn.playEffectSync(this.soundMgn.CongTien)];case 11:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa)];case 12:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 13:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XaPe)];case 14:return t.sent(),this.hideWithTimeFadeIn(this.getChildXDVById(4),.3,0),this.hideWithTimeFadeIn(this.getChildXDVById(5),.3,0),this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(2),.3),this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceXanh),[4,this.soundMgn.playEffectSync(this.soundMgn.CongTien)];case 15:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.MauVang)];case 16:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 17:return t.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XiPe)];case 18:return t.sent(),this.hideWithTimeFadeIn(this.getChildXDVById(2),.3,0),this.hideWithTimeFadeIn(this.getChildXDVById(3),.3,0),this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(1),.3),this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceVang),[4,this.soundMgn.playEffectSync(this.soundMgn.CongTien)];case 19:return t.sent(),e(null),[2]}})})})},e}(t("./BaseEffectXDVEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectXDVEnd":"BaseEffectXDVEnd"}],EffectVeBar:[function(t,e,n){"use strict";cc._RF.push(e,"bcf579zIZNB3bDv4p0yaPxG","EffectVeBar");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a=this;return s(this,function(s){switch(s.label){case 0:t=[20,21,22,2,3,4,8,9,10,14,15,16],n=[17,18,19,23,0,1,5,6,7,11,12,13],this.soundMgn.playEffect(this.soundMgn.NhacVeBar),o=this.getListChildren(),i=!0,r=0,s.label=1;case 1:return r<25?(i?(t.forEach(function(t){a.offEffect(o[t])}),n.forEach(function(t){a.offItem(o[t])})):(t.forEach(function(t){a.offItem(o[t])}),n.forEach(function(t){a.offEffect(o[t])})),i=!i,[4,this.makeDelay(.3)]):[3,4];case 2:s.sent(),s.label=3;case 3:return r++,[3,1];case 4:return[4,this.makeDelay(.2)];case 5:return s.sent(),o.forEach(function(t){a.offItem(t)}),e(null),[2]}})})})},e}(t("./BaseEffect").default);n.default=a,cc._RF.pop()},{"./BaseEffect":"BaseEffect"}],EffectVeVang:[function(t,e,n){"use strict";cc._RF.push(e,"ce7a50KFcRHZYb8+kbfoMxD","EffectVeVang");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n;return s(this,function(o){switch(o.label){case 0:return this.dataFinishXDV.result,this.dataFinishXDV.typeSpecial,t=this.dataFinishXDV.mutilVang,[4,this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang)];case 1:return o.sent(),this.runEffectRandomLabelHeso(10,31),[4,this.soundMgn.playEffectSync(this.soundMgn.RandomSo)];case 2:o.sent(),this.offEffectRandomLabelHeso(t),n=0,o.label=3;case 3:return n<3?(this.runEffectActiveAndHideWithTime(this.getNodeLbHeso(),.1),this.soundMgn.playEffect(this.soundMgn.TiengNo),[4,this.makeDelay(.2)]):[3,6];case 4:o.sent(),o.label=5;case 5:return n++,[3,3];case 6:return this.offEffect(this.getNodeLbHeso()),[4,this.makeDelay(1)];case 7:return o.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiKhiVeVang)];case 8:return o.sent(),e(null),[2]}})})})},e}(t("./BaseEffectXDVEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectXDVEnd":"BaseEffectXDVEnd"}],EffectX8ChuyenMau:[function(t,e,n){"use strict";cc._RF.push(e,"b559687TExO4oZcB6rm5Wlx","EffectX8ChuyenMau");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(){return r(t,void 0,void 0,function(){return s(this,function(){return this.dataFinishXDV.result,this.dataFinishXDV.typeSpecial,this.dataFinishXDV.mutilVang,[2]})})})},e}(t("./BaseEffectXDVEnd").default);n.default=a,cc._RF.pop()},{"./BaseEffectXDVEnd":"BaseEffectXDVEnd"}],IDataFinish:[function(t,e,n){"use strict";cc._RF.push(e,"1bde2Gu7V1GHrvpCDs92NiA","IDataFinish"),Object.defineProperty(n,"__esModule",{value:!0}),cc._RF.pop()},{}],IServerResponse:[function(t,e,n){"use strict";cc._RF.push(e,"7e101/DKHhES7RN+6nIlRTy","IServerResponse"),Object.defineProperty(n,"__esModule",{value:!0});var o=t("../../../../Scritps/Windown"),i=function(){function t(){o.Windown.XengController.canSendData(!0)}return t.prototype.getGameController=function(){return o.Windown.XengController},t.prototype.setGameView=function(t){this.xengController=t},t.prototype.sendToServer=function(t,e){this.xengController.sendToServer(t,e)},t}();n.default=i,cc._RF.pop()},{"../../../../Scritps/Windown":void 0}],ResponseBetToNho:[function(t,e,n){"use strict";cc._RF.push(e,"46827RwI3lN3ZbgJ27Qa68X","ResponseBetToNho");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../../../../Scritps/Game/GAME_TYPE"),c=t("../../../../Scritps/Windown"),u=t("../State/StateGame"),l=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.soundMgn=null,e}return i(e,t),e.prototype.handleResponse=function(t){this.soundMgn=this.getSoundMng();var e=null;try{e=JSON.parse(t.getUtfString("data"))}catch(l){}if(null!=e){cc.log(JSON.stringify(e));for(var n=e.result,o=e.listRevice,i=0,r=0,s=o;r<s.length;r++)i+=s[r];if(this.getGameController().moneyCurrent=e.agXeng,c.Windown.MoneyUser.pushDelayMoney(a.default.Xeng,e.agXeng,i),this.getGameController().xengView.offEffectRandomLabelHeso(n),1==e.isSpecial){var u=o[0];1==o.length?this.runEffectXTonho7Lan(u):this.runEffectXTonhoMutil(e.listRevice)}else this.effectNormal(o[0]||0)}},e.prototype.effectNormal=function(t){return r(this,void 0,void 0,function(){return s(this,function(e){switch(e.label){case 0:return[4,this.soundMgn.playEffectSync(this.soundMgn.SangHao)];case 1:return e.sent(),[4,this.getGameController().makeDelay(.5)];case 2:return e.sent(),this.getGameController().btnChangePointL.setPoint(t),t>0?this.getGameController().setCurrentState(u.default.WATINGPLAYGAMEMINI):(this.getGameController().setCurrentState(u.default.WATING),c.Windown.MoneyUser.removeDelay(a.default.Xeng)),[2]}})})},e.prototype.runEffectXTonho7Lan=function(){return r(this,void 0,void 0,function(){var t,e,n,o,i;return s(this,function(r){switch(r.label){case 0:return(t=this.getGameController()).xengView.lbHeso.string="7",e=t.xengView.lbHeso.node,n=t.btnChangePointL.lbPoint.node,t.runEffectNhapNhay(e,8,36),t.runEffectNhapNhay(n,8,36),[4,this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang)];case 1:return r.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.SoundX7ToNho)];case 2:return r.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 3:return r.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 4:return r.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XiPe)];case 5:r.sent(),o=t.btnChangePointL.point,i=0,r.label=6;case 6:return i<6?(this.soundMgn.playEffect(this.soundMgn.TiengNo),t.btnChangePointL.setPointBy(o),t.runEffectNhapNhay1Lan(t.btnChangePointL.lbPoint.node),[4,t.makeDelay(.3)]):[3,9];case 7:r.sent(),r.label=8;case 8:return i++,[3,6];case 9:return[4,t.makeDelay(1)];case 10:return r.sent(),t.setCurrentState(u.default.WATINGPLAYGAMEMINI),[2]}})})},e.prototype.runEffectXTonhoMutil=function(t){return r(this,void 0,void 0,function(){var e,n,o,i,r,a,c;return s(this,function(s){switch(s.label){case 0:return e=this.getGameController(),n=t.length,o=e.btnChangePointL.point,e.runEffectNhapNhay(e.btnChangePointL.lbPoint.node,8,36),[4,this.soundMgn.playEffectSync(this.soundMgn.StartXmutilToNho)];case 1:s.sent(),cc.log(JSON.stringify(t)),i=0,s.label=2;case 2:return i<n?(r=t[i],a=r/o,e.xengView.runEffectRandomLabelHeso(1,10),this.soundMgn.playEffect(this.soundMgn.RandomSo),[4,e.makeDelay(.7)]):[3,12];case 3:return s.sent(),e.xengView.offEffectRandomLabelHeso(a),[4,this.soundMgn.playEffectSync(this.soundMgn.XaPe)];case 4:s.sent(),c=0,s.label=5;case 5:return c<a?(this.soundMgn.playEffect(this.soundMgn.TiengNo),e.btnChangePointL.setPointBy(o),[4,e.makeDelay(.45)]):[3,8];case 6:s.sent(),s.label=7;case 7:return c++,[3,5];case 8:return[4,e.makeDelay(1.5)];case 9:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.TuNaiXa)];case 10:s.sent(),s.label=11;case 11:return i++,[3,2];case 12:return e.xengView.runEffectRandomLabelHeso(1,10),[4,this.soundMgn.playEffectSync(this.soundMgn.RandomSo)];case 13:return s.sent(),e.xengView.offEffectRandomLabelHeso(0),[4,this.soundMgn.playEffectSync(this.soundMgn.MiOLa)];case 14:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi)];case 15:return s.sent(),e.setCurrentState(u.default.WATINGPLAYGAMEMINI),[2]}})})},e.prototype.getSoundMng=function(){return this.getGameController().getSoundMng()},e}(t("./IServerResponse").default);n.default=l,cc._RF.pop()},{"../../../../Scritps/Game/GAME_TYPE":void 0,"../../../../Scritps/Windown":void 0,"../State/StateGame":"StateGame","./IServerResponse":"IServerResponse"}],ResponseLeaveRoom:[function(t,e,n){"use strict";cc._RF.push(e,"ad6d1PY8aVONbWS9gaxxc4j","ResponseLeaveRoom");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.handleResponse=function(){},e}(t("./IServerResponse").default);n.default=r,cc._RF.pop()},{"./IServerResponse":"IServerResponse"}],ResponseMakeBet:[function(t,e,n){"use strict";cc._RF.push(e,"2a451qiKE1C4Jd+B42gqq39","ResponseMakeBet");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("../Effect/Effect1CuaTo20"),c=t("../Effect/EffectAnJP"),u=t("../Effect/EffectBassNho"),l=t("../Effect/EffectDapChuot"),f=t("../Effect/EffectDoiMau"),h=t("../Effect/EffectEndGame"),p=t("../Effect/EffectEndNormal"),d=t("../Effect/EffectRan8Dot"),y=t("../Effect/EffectRunSpin"),g=t("../Effect/EffectSpecial14"),b=t("../Effect/EffectSpecial2"),v=t("../Effect/EffectSpecial3"),_=t("../Effect/EffectSpecial4"),E=t("../Effect/EffectSpecial5"),m=t("../Effect/EffectSpecial6"),S=t("../Effect/EffectSpecial7"),w=t("../Effect/EffectSpineSoXo"),C=t("../Effect/EffectTraDiem"),M=t("../Effect/EffectVe3CuaXDV"),I=t("../Effect/EffectVeBar"),R=t("../Effect/EffectVeVang"),N=t("../Effect/X10_30_1Cua"),P=t("../Effect/X3_1Cua"),B=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.soundMgn=null,e.data=null,e.dataFinishXDV=null,e.dataFinishItemAnTruoc=null,e.dataFinishiItemNomarl=null,e.isStateSpin=!1,e}return i(e,t),e.prototype.handleResponse=function(t){var e=null;try{e=JSON.parse(t.getUtfString("data"))}catch(i){}if(null!=e){cc.log(JSON.stringify(e)),this.soundMgn=this.getSoundMng();var n=e.makebetXDV,o=e.makeBetAnTruoc;e.makeBetNormal,this.data=e,this.dataFinishXDV=n,this.dataFinishItemAnTruoc=o,this.dataFinishiItemNomarl=e.makeBetNormal,n.typeSpecial,n.result,this.execute()}},e.prototype.execute=function(){return r(this,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return[4,this.checkAndShowAnTruoc()];case 1:return t.sent(),[4,this.checkAndShowStartEffectSpecial()];case 2:return t.sent(),[4,this.runSpinWithIdResult()];case 3:return t.sent(),[4,this.checkAndShowEndEffectSpecial()];case 4:return t.sent(),[4,this.checkAndShowXDVSpecil()];case 5:return t.sent(),[4,this.xuLiTienCuoiGameNomarl()];case 6:return t.sent(),cc.log("done"),[2]}})})},e.prototype.checkAndShowAnTruoc=function(){return r(this,void 0,void 0,function(){var t;return s(this,function(e){switch(e.label){case 0:return 1!=(t=this.dataFinishItemAnTruoc.typeSpecialAnTruoc)?[3,1]:[2,new P.default(this.getGameController()).intData(this.dataFinishItemAnTruoc).executed()];case 1:return 2!=t?[3,3]:[4,new N.default(this.getGameController()).intData(this.dataFinishItemAnTruoc).executed()];case 2:e.sent(),e.label=3;case 3:return[2]}})})},e.prototype.checkAndShowStartEffectSpecial=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return t=this.dataFinishXDV.typeSpecial,cc.log("type special XDV "+t),e=this.dataFinishiItemNomarl.typeSpecial,this.isStateSpin=!1,1!=t?[3,2]:(this.isStateSpin=!0,[4,new C.default(this.getGameController()).executed()]);case 1:return n.sent(),[3,15];case 2:return 2!=t?[3,4]:[4,new f.default(this.getGameController()).initData(this.dataFinishXDV).executed()];case 3:return n.sent(),[3,15];case 4:return 2!=e?[3,6]:[4,new a.default(this.getGameController()).executed()];case 5:return n.sent(),[3,15];case 6:return 5!=e?[3,7]:(this.isStateSpin=!0,[3,15]);case 7:return 6!=e?[3,9]:(this.isStateSpin=!0,[4,new C.default(this.getGameController()).executed()]);case 8:return n.sent(),[3,15];case 9:return 7!=e&&13!=e&&14!=e&&9!=e?[3,11]:(13==e&&this.getGameController().xengView.activeIcon(this.getGameController().xengView.getNodeJp()),this.isStateSpin=!0,[4,new l.default(this.getGameController()).executed()]);case 10:return n.sent(),[3,15];case 11:return 10!=e?[3,13]:(this.isStateSpin=!0,[4,new I.default(this.getGameController()).executed()]);case 12:return n.sent(),[3,15];case 13:return 8!=e?[3,15]:[4,new C.default(this.getGameController()).executed()];case 14:n.sent(),n.label=15;case 15:return[2]}})})},e.prototype.runSpinWithIdResult=function(){return r(this,void 0,void 0,function(){var t,e,n;return s(this,function(o){switch(o.label){case 0:return t=this.dataFinishiItemNomarl,e=t.objReviceFirtItem.idResult,n=this.dataFinishXDV.result,[4,new y.default(this.getGameController()).spinWithId(e,n,this.isStateSpin)];case 1:return o.sent(),[2]}})})},e.prototype.checkAndShowEndEffectSpecial=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return(t=this.dataFinishiItemNomarl).objReviceFirtItem,e=t.typeSpecial,t.ListObjReviceSub,2!=e?[3,2]:[4,new b.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 1:return n.sent(),[3,24];case 2:return 4!=e?[3,4]:[4,new _.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 3:return n.sent(),[3,24];case 4:return 3!=e?[3,6]:[4,new v.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 5:return n.sent(),[3,24];case 6:return 5!=e?[3,8]:[4,new E.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 7:return n.sent(),[3,24];case 8:return 6!=e?[3,10]:[4,new m.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 9:return n.sent(),[3,24];case 10:return 7!=e?[3,12]:[4,new S.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 11:return n.sent(),[3,24];case 12:return 8!=e?[3,14]:[4,new w.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 13:return n.sent(),[3,24];case 14:return 9!=e?[3,16]:[4,new d.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 15:return n.sent(),[3,24];case 16:return 10!=e?[3,18]:[4,new u.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 17:return n.sent(),[3,24];case 18:return 13!=e?[3,20]:[4,new c.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 19:return n.sent(),[3,24];case 20:return 14!=e?[3,22]:[4,new g.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 21:return n.sent(),[3,24];case 22:return[4,new p.default(this.getGameController()).intiData(this.dataFinishiItemNomarl).executed()];case 23:n.sent(),n.label=24;case 24:return[2]}})})},e.prototype.checkAndShowXDVSpecil=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(n){switch(n.label){case 0:return t=this.dataFinishXDV.result,e=this.dataFinishXDV.typeSpecial,this.dataFinishXDV.mutilVang,1!=t?[3,2]:[4,new R.default(this.getGameController()).intiData(this.dataFinishXDV).executed()];case 1:return n.sent(),[3,8];case 2:return 1!=e?[3,4]:[4,new M.default(this.getGameController()).intiData(this.dataFinishXDV).executed()];case 3:return n.sent(),[3,8];case 4:return 0!=t?[3,6]:[4,this.soundMgn.playEffectSync(this.soundMgn.MauDo)];case 5:return n.sent(),[3,8];case 6:return 2!=t?[3,8]:[4,this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa)];case 7:n.sent(),n.label=8;case 8:return[2]}})})},e.prototype.xuLiTienCuoiGameNomarl=function(){return r(this,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return[4,new h.default(this.getGameController()).intiData(this.data).executed()];case 1:return t.sent(),[2]}})})},e.prototype.getSoundMng=function(){return this.getGameController().getSoundMng()},e}(t("./IServerResponse").default);n.default=B,cc._RF.pop()},{"../Effect/Effect1CuaTo20":"Effect1CuaTo20","../Effect/EffectAnJP":"EffectAnJP","../Effect/EffectBassNho":"EffectBassNho","../Effect/EffectDapChuot":"EffectDapChuot","../Effect/EffectDoiMau":"EffectDoiMau","../Effect/EffectEndGame":"EffectEndGame","../Effect/EffectEndNormal":"EffectEndNormal","../Effect/EffectRan8Dot":"EffectRan8Dot","../Effect/EffectRunSpin":"EffectRunSpin","../Effect/EffectSpecial14":"EffectSpecial14","../Effect/EffectSpecial2":"EffectSpecial2","../Effect/EffectSpecial3":"EffectSpecial3","../Effect/EffectSpecial4":"EffectSpecial4","../Effect/EffectSpecial5":"EffectSpecial5","../Effect/EffectSpecial6":"EffectSpecial6","../Effect/EffectSpecial7":"EffectSpecial7","../Effect/EffectSpineSoXo":"EffectSpineSoXo","../Effect/EffectTraDiem":"EffectTraDiem","../Effect/EffectVe3CuaXDV":"EffectVe3CuaXDV","../Effect/EffectVeBar":"EffectVeBar","../Effect/EffectVeVang":"EffectVeVang","../Effect/X10_30_1Cua":"X10_30_1Cua","../Effect/X3_1Cua":"X3_1Cua","./IServerResponse":"IServerResponse"}],ResponseSetMutil:[function(t,e,n){"use strict";cc._RF.push(e,"f37fddYhalLd4i3UmekDp8O","ResponseSetMutil");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.soundMgn=null,e}return i(e,t),e.prototype.handleResponse=function(t){var e=t.get("point");this.getGameController().moneyCurrent=e,this.getGameController().btnChangePointR.reset(),this.getGameController().showDoiDiem(!1),this.getSoundMng().playNhacCho()},e.prototype.getSoundMng=function(){return this.getGameController().getSoundMng()},e}(t("./IServerResponse").default);n.default=r,cc._RF.pop()},{"./IServerResponse":"IServerResponse"}],SoundXeng:[function(t,e,n){"use strict";cc._RF.push(e,"0634cDiJDtA35XbjM1Id9SW","SoundXeng");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../Scritps/Parent/AudioManager"),a=t("../../../Scritps/Windown"),c=cc._decorator,u=c.ccclass,l=c.property,f=function(t){function e(){var e=t.call(this)||this;return e.AtOhh=null,e.BatDauQuayTraDiem=null,e.Bip=null,e.BonusKhiBet=null,e.CauNoiAnTruoc1CuaX30=null,e.CauNoiDapChuot=null,e.CauNoiKhiVeVang=null,e.CauNoiShowResultAnTruocX30=null,e.CauNoiTraDiem=null,e.CauNoiVeBass=null,e.CauNoiTraDiemXong=null,e.CauNoiX3Luon=null,e.ChayItem=null,e.CongTien=null,e.CuocKhungHoang=null,e.DonDap=null,e.EffectAnRandomItemNhoSau=null,e.ItemChay1Vong=null,e.Gong=null,e.HieuUngAnTatCaCacCua=null,e.Hu=null,e.MauDo=null,e.MauVang=null,e.MauXanhLa=null,e.MiOLa=null,e.NextSoXo=null,e.NhacNenToNho=null,e.NhacNenTraDiem=null,e.NhacDoiMau=null,e.NiChieuSangCieu=null,e.EndDoiMau=null,e.NhacVeVang=null,e.NhacVeBar=null,e.NoLienTuc=null,e.RandomSo=null,e.SangHao=null,e.ShowHeSoRandom=null,e.SpinNormal=null,e.SpinSpecial=null,e.StartDapChuot=null,e.StartXmutilToNho=null,e.TiengCuoi=null,e.TiengKen1=null,e.TiengKen2=null,e.TiengNo=null,e.TiengNoVaChemKiem=null,e.TiengRandomHesoAnTruocX30=null,e.Ting=null,e.Ting2=null,e.SoundX7ToNho=null,e.TuNaiXa=null,e.VuiMung=null,e.XaPe=null,e.XiPe=null,e.Yabe=null,e.Woa=null,e.ThingKaiSun=null,e.TingTingDt=null,e.Item=[],e.ListNhacCho=[],e.currentCountNhac=0,e.currentCountNhac=a.Windown.RandomNumber(0,e.ListNhacCho.length)-1,e}return i(e,t),e.prototype.playClick=function(){this.playEffect(this.audios[0])},e.prototype.playSoundSync=function(t,e,n){return void 0===e&&(e=1),this.playEffectSync(t,e,n)},e.prototype.playNhacCho=function(){this.stopNhacCho(),this.currentCountNhac++,this.currentCountNhac>this.ListNhacCho.length-1&&(this.currentCountNhac=0),this.playEffect(this.ListNhacCho[this.currentCountNhac])},e.prototype.stopNhacCho=function(){this.stopEffect(this.ListNhacCho[this.currentCountNhac])},r([l(cc.AudioClip)],e.prototype,"AtOhh",void 0),r([l(cc.AudioClip)],e.prototype,"BatDauQuayTraDiem",void 0),r([l(cc.AudioClip)],e.prototype,"Bip",void 0),r([l(cc.AudioClip)],e.prototype,"BonusKhiBet",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiAnTruoc1CuaX30",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiDapChuot",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiKhiVeVang",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiShowResultAnTruocX30",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiTraDiem",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiVeBass",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiTraDiemXong",void 0),r([l(cc.AudioClip)],e.prototype,"CauNoiX3Luon",void 0),r([l(cc.AudioClip)],e.prototype,"ChayItem",void 0),r([l(cc.AudioClip)],e.prototype,"CongTien",void 0),r([l(cc.AudioClip)],e.prototype,"CuocKhungHoang",void 0),r([l(cc.AudioClip)],e.prototype,"DonDap",void 0),r([l(cc.AudioClip)],e.prototype,"EffectAnRandomItemNhoSau",void 0),r([l(cc.AudioClip)],e.prototype,"ItemChay1Vong",void 0),r([l(cc.AudioClip)],e.prototype,"Gong",void 0),r([l(cc.AudioClip)],e.prototype,"HieuUngAnTatCaCacCua",void 0),r([l(cc.AudioClip)],e.prototype,"Hu",void 0),r([l(cc.AudioClip)],e.prototype,"MauDo",void 0),r([l(cc.AudioClip)],e.prototype,"MauVang",void 0),r([l(cc.AudioClip)],e.prototype,"MauXanhLa",void 0),r([l(cc.AudioClip)],e.prototype,"MiOLa",void 0),r([l(cc.AudioClip)],e.prototype,"NextSoXo",void 0),r([l(cc.AudioClip)],e.prototype,"NhacNenToNho",void 0),r([l(cc.AudioClip)],e.prototype,"NhacNenTraDiem",void 0),r([l(cc.AudioClip)],e.prototype,"NhacDoiMau",void 0),r([l(cc.AudioClip)],e.prototype,"NiChieuSangCieu",void 0),r([l(cc.AudioClip)],e.prototype,"EndDoiMau",void 0),r([l(cc.AudioClip)],e.prototype,"NhacVeVang",void 0),r([l(cc.AudioClip)],e.prototype,"NhacVeBar",void 0),r([l(cc.AudioClip)],e.prototype,"NoLienTuc",void 0),r([l(cc.AudioClip)],e.prototype,"RandomSo",void 0),r([l(cc.AudioClip)],e.prototype,"SangHao",void 0),r([l(cc.AudioClip)],e.prototype,"ShowHeSoRandom",void 0),r([l(cc.AudioClip)],e.prototype,"SpinNormal",void 0),r([l(cc.AudioClip)],e.prototype,"SpinSpecial",void 0),r([l(cc.AudioClip)],e.prototype,"StartDapChuot",void 0),r([l(cc.AudioClip)],e.prototype,"StartXmutilToNho",void 0),r([l(cc.AudioClip)],e.prototype,"TiengCuoi",void 0),r([l(cc.AudioClip)],e.prototype,"TiengKen1",void 0),r([l(cc.AudioClip)],e.prototype,"TiengKen2",void 0),r([l(cc.AudioClip)],e.prototype,"TiengNo",void 0),r([l(cc.AudioClip)],e.prototype,"TiengNoVaChemKiem",void 0),r([l(cc.AudioClip)],e.prototype,"TiengRandomHesoAnTruocX30",void 0),r([l(cc.AudioClip)],e.prototype,"Ting",void 0),r([l(cc.AudioClip)],e.prototype,"Ting2",void 0),r([l(cc.AudioClip)],e.prototype,"SoundX7ToNho",void 0),r([l(cc.AudioClip)],e.prototype,"TuNaiXa",void 0),r([l(cc.AudioClip)],e.prototype,"VuiMung",void 0),r([l(cc.AudioClip)],e.prototype,"XaPe",void 0),r([l(cc.AudioClip)],e.prototype,"XiPe",void 0),r([l(cc.AudioClip)],e.prototype,"Yabe",void 0),r([l(cc.AudioClip)],e.prototype,"Woa",void 0),r([l(cc.AudioClip)],e.prototype,"ThingKaiSun",void 0),r([l(cc.AudioClip)],e.prototype,"TingTingDt",void 0),r([l([cc.AudioClip])],e.prototype,"Item",void 0),r([l([cc.AudioClip])],e.prototype,"ListNhacCho",void 0),r([u],e)}(s.default);n.default=f,cc._RF.pop()},{"../../../Scritps/Parent/AudioManager":void 0,"../../../Scritps/Windown":void 0}],StateFinishedMini:[function(t,e,n){"use strict";cc._RF.push(e,"071c3C5539FQKV6DT3hySvO","StateFinishedMini");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){this.xengController.listButton.forEach(function(t){t.offEvent()}),cc.log("off het event nay"),this.xengController.getSoundMng().stopNhacCho()},e}(t("./BaseState").default);n.default=r,cc._RF.pop()},{"./BaseState":"BaseState"}],StateFinished:[function(t,e,n){"use strict";cc._RF.push(e,"8b0f5EuQgtCMau3vDAb9Qyd","StateFinished");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){this.xengController.listButton.forEach(function(t){t.offEvent()})},e}(t("./BaseState").default);n.default=r,cc._RF.pop()},{"./BaseState":"BaseState"}],StateGame:[function(t,e,n){"use strict";cc._RF.push(e,"45b58lbjplOVINoK0SU3agS","StateGame"),Object.defineProperty(n,"__esModule",{value:!0});var o=function(){function t(){}return t.WATING=0,t.PLAYING=1,t.FINISHED=2,t.PLAYINGMINI=3,t.FINISHEDMINI=4,t.WATINGPLAYGAME=5,t.WATINGPLAYGAMEMINI=6,t}();n.default=o,cc._RF.pop()},{}],StatePlayingMini:[function(t,e,n){"use strict";cc._RF.push(e,"a129f3A8jFOk5LPNRRbIZjX","StatePlayingMini");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){var t=this;this.xengController.listBtnXDV.forEach(function(t){t.offEvent()}),this.xengController.listBtnItem.forEach(function(t){t.offEvent()}),this.xengController.btnChangePointL.initEvent(),this.xengController.btnChangePointR.initEvent(),this.xengController.listBtnClick.forEach(function(t){t.initEvent()}),this.xengController.listBtnItem.forEach(function(e){e.reset(),t.xengController.offEffect(e.lbPoint.node)}),this.xengController.listBtnXDV.forEach(function(e){e.reset(),t.xengController.offEffect(e.lbPoint.node)}),this.xengController.xengView.getListChildXDV().forEach(function(e){t.xengController.offItem(e)}),this.xengController.xengView.getListChildren().forEach(function(e){t.xengController.offItem(e)}),this.xengController.xengView.runEffectRandomLabelHesoMiniGame(),this.xengController.getSoundMng().stopNhacCho(),this.xengController.getSoundMng().playEffect(this.xengController.getSoundMng().NhacNenToNho)},e}(t("./BaseState").default);n.default=r,cc._RF.pop()},{"./BaseState":"BaseState"}],StatePlaying:[function(t,e,n){"use strict";cc._RF.push(e,"87eed/6USpPlJc9t0TRnp5j","StatePlaying");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){this.xengController.listBtnClick.forEach(function(t){"all1"!=t.node.name&&t.offEvent()}),this.xengController.btnChangePointL.offEvent(),this.xengController.btnChangePointR.offEvent(),this.xengController.btnGo.initEvent(),this.xengController.getSoundMng().stopNhacCho()},e}(t("./BaseState").default);n.default=r,cc._RF.pop()},{"./BaseState":"BaseState"}],StateWatingPlayGameMini:[function(t,e,n){"use strict";cc._RF.push(e,"d681e4RLF9ErLm/yr6CnEJx","StateWatingPlayGameMini");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){t.prototype.execute.call(this),this.xengController.getSoundMng().stopNhacCho(),this.xengController.xengView.runEffectRandomLabelHesoMiniGame(),this.xengController.getSoundMng().playEffect(this.xengController.getSoundMng().NhacNenToNho)},e}(t("./StateWatingPlayGame").default);n.default=r,cc._RF.pop()},{"./StateWatingPlayGame":"StateWatingPlayGame"}],StateWatingPlayGame:[function(t,e,n){"use strict";cc._RF.push(e,"0c2e3nymtRPfqd0JcmUiRiQ","StateWatingPlayGame");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){this.xengController.listBtnClick.forEach(function(t){t.initEvent()}),this.xengController.listBtnItem.forEach(function(t){t.initEvent()}),this.xengController.btnGo.initEvent(),this.xengController.btnChangePointL.initEvent(),this.xengController.btnChangePointR.initEvent(),this.xengController.getSoundMng().playNhacCho()},e}(t("./BaseState").default);n.default=r,cc._RF.pop()},{"./BaseState":"BaseState"}],StateWating:[function(t,e,n){"use strict";cc._RF.push(e,"0befaq7Go5NKKHpl6lqCkak","StateWating");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)});Object.defineProperty(n,"__esModule",{value:!0});var r=t("../../../../Scritps/Game/GAME_TYPE"),s=t("../../../../Scritps/Windown"),a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.execute=function(){this.xengController.listButton.forEach(function(t){t.initEvent()}),this.xengController.listBtnClick.forEach(function(t){t.offEvent()}),this.xengController.btnGo.initEvent(),this.xengController.btnChangePointL.reset(),this.xengController.btnChangePointR.reset(),this.xengController.resetEffectAll(),this.xengController.xengView.offEffectLabelHeso(),this.xengController.getSoundMng().stopNhacCho(),this.xengController.getSoundMng().stopEffect(this.xengController.getSoundMng().NhacNenToNho),s.Windown.MoneyUser.removeDelay(r.default.Xeng),s.Windown.MoneyUser.updateMoney()},e}(t("./BaseState").default);n.default=a,cc._RF.pop()},{"../../../../Scritps/Game/GAME_TYPE":void 0,"../../../../Scritps/Windown":void 0,"./BaseState":"BaseState"}],Test:[function(t,e,n){"use strict";cc._RF.push(e,"75bf1R0nCdKKZJPT1668HgH","Test");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){return s(this,function(){return e(null),[2]})})})},e}(t("./Effect/BaseEffect").default);n.default=a,cc._RF.pop()},{"./Effect/BaseEffect":"BaseEffect"}],X10_30_1Cua:[function(t,e,n){"use strict";cc._RF.push(e,"a89a1LFTW5ODrjXQJqp/5hl","X10_30_1Cua");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=t("./BaseEffectAnTruoc"),c=t("./EffectAnLuon1Cua"),u=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n,o,i,r,a,u,l,f,h,p,d=this;return s(this,function(s){switch(s.label){case 0:return t=this.dataFinishItemAnTruoc.result,n=this.dataFinishItemAnTruoc.mutil,o=this.dataFinishItemAnTruoc.moneyRevice,[4,new c.default(this.xengController).executed()];case 1:s.sent(),this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong),(i=this.getListChildren()).forEach(function(t){d.offItem(t)}),r=0,a=0,u=1,l=!1,s.label=2;case 2:return this.runEffectActiveAndHideWithTime(this.getNodeLbItem(r),.05),r==t&&a>27?[3,4]:((r+=u)>8&&(u*=-1,r=8),-1==r&&(u*=-1,r=0),a++,l?[3,4]:[4,this.makeDelay(.05)]);case 3:return s.sent(),[3,2];case 4:return this.offEffect(this.getNodeLbItem(t)),this.soundMgn.stopEffect(this.soundMgn.ItemChay1Vong),this.runEffectNhapNhay(this.getNodeLbItem(t),10,70),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiShowResultAnTruocX30)];case 5:return s.sent(),this.offEffect(this.getNodeLbItem(t)),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem)];case 6:return s.sent(),this.runEffectRandomLabelHesoSpecial(),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengRandomHesoAnTruocX30)];case 7:return s.sent(),this.offEffectRandomLabelHeso(n),[4,this.makeDelay(.5)];case 8:return s.sent(),this.runEffectNhapNhay(this.getNodeLbHeso(),10,70),this.runEffectNhapNhay(this.getNodeLbLeft(),10,70),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 9:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Item[t])];case 10:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 11:return s.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XiPe)];case 12:if(s.sent(),this.offEffect(this.getNodeLbHeso()),this.offEffect(this.getNodeLbLeft()),!(o>0))return[3,18];f=this.getBtnItem(t).point,this.currentBtnTrai.setPointBy(f),h=0,p=n,s.label=13;case 13:return h<p?(n--,this.setStringLbHeSo(n),this.soundMgn.playEffect(this.soundMgn.TiengNo),this.currentBtnTrai.setPointBy(f),[4,this.makeDelay(.45)]):[3,16];case 14:s.sent(),s.label=15;case 15:return h++,[3,13];case 16:return[4,this.makeDelay(1)];case 17:return s.sent(),i.forEach(function(t){t.stopAllActions(),t.opacity=255}),e(null),[3,20];case 18:return[4,this.makeDelay(1)];case 19:s.sent(),e(null),s.label=20;case 20:return[2]}})})})},e}(a.default);n.default=u,cc._RF.pop()},{"./BaseEffectAnTruoc":"BaseEffectAnTruoc","./EffectAnLuon1Cua":"EffectAnLuon1Cua"}],X3_1Cua:[function(t,e,n){"use strict";cc._RF.push(e,"f7ca8Ch1HtFPaH/dAGVsUWf","X3_1Cua");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var a=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e.prototype.executed=function(){var t=this;return new Promise(function(e){return r(t,void 0,void 0,function(){var t,n;return s(this,function(o){switch(o.label){case 0:return t=this.dataFinishItemAnTruoc.result,n=this.dataFinishItemAnTruoc.moneyRevice,this.runEffectNhapNhay(this.getNodeLbItem(t),10,40),[4,this.soundMgn.playEffectSync(this.soundMgn.CauNoiX3Luon)];case 1:return o.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.VuiMung)];case 2:return o.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Item[t])];case 3:return o.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.Gong)];case 4:return o.sent(),[4,this.soundMgn.playEffectSync(this.soundMgn.XaPe)];case 5:return o.sent(),0!=n?[3,6]:(this.offEffect(this.getNodeLbItem(t)),e(null),[3,8]);case 6:return this.currentBtnTrai.setPoint(n),this.offEffect(this.getNodeLbItem(t)),[4,this.soundMgn.playEffectSync(this.soundMgn.TiengNo)];case 7:o.sent(),e(null),o.label=8;case 8:return[2]}})})})},e}(t("./BaseEffectAnTruoc").default);n.default=a,cc._RF.pop()},{"./BaseEffectAnTruoc":"BaseEffectAnTruoc"}],XengController:[function(t,e,n){"use strict";cc._RF.push(e,"8952cXBqARBTJ6Eo1zEBJDp","XengController");var o=this&&this.__awaiter||function(t,e,n,o){return new(n||(n=Promise))(function(i,r){function s(t){try{c(o.next(t))}catch(e){r(e)}}function a(t){try{c(o.throw(t))}catch(e){r(e)}}function c(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n(function(t){t(e)})).then(s,a)}c((o=o.apply(t,e||[])).next())})},i=this&&this.__generator||function(t,e){var n,o,i,r,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return r={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function a(t){return function(e){return c([t,e])}}function c(r){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,o&&(i=2&r[0]?o.return:r[0]?o.throw||((i=o.return)&&i.call(o),0):o.next)&&!(i=i.call(o,r[1])).done)return i;switch(o=0,i&&(r=[2&r[0],i.value]),r[0]){case 0:case 1:i=r;break;case 4:return s.label++,{value:r[1],done:!1};case 5:s.label++,o=r[1],r=[0];continue;case 7:r=s.ops.pop(),s.trys.pop();continue;default:if(!(i=(i=s.trys).length>0&&i[i.length-1])&&(6===r[0]||2===r[0])){s=0;continue}if(3===r[0]&&(!i||r[1]>i[0]&&r[1]<i[3])){s.label=r[1];break}if(6===r[0]&&s.label<i[1]){s.label=i[1],i=r;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(r);break}i[2]&&s.ops.pop(),s.trys.pop();continue}r=e.call(t,s)}catch(a){r=[6,a],o=0}finally{n=i=0}if(5&r[0])throw r[1];return{value:r[0]?r[1]:void 0,done:!0}}};Object.defineProperty(n,"__esModule",{value:!0});var r=t("../../../Scritps/DefineTs/EVENT_MANAGER"),s=t("../../../Scritps/DefineTs/REQUEST_CODE"),a=t("../../../Scritps/DefineTs/TextDefine"),c=t("../../../Scritps/Game/GAME_TYPE"),u=t("../../../Scritps/Network/ConectManager"),l=t("../../../Scritps/Windown"),f=t("./Button/BtnBetItem"),h=t("./Button/BtnBetXDV"),p=t("./Button/BtnChangePointLeft"),d=t("./Button/BtnChangePointRight"),y=t("./Button/BtnClick"),g=t("./Button/BtnGo"),b=t("./Event/ResponseBetToNho"),v=t("./Event/ResponseMakeBet"),_=t("./Event/ResponseSetMutil"),E=t("./State/StateFinished"),m=t("./State/StateFinishedMini"),S=t("./State/StateGame"),w=t("./State/StatePlaying"),C=t("./State/StatePlayingMini"),M=t("./State/StateWating"),I=t("./State/StateWatingPlayGame"),R=t("./State/StateWatingPlayGameMini"),N=t("./XengModel"),P=function(){function t(){this.xengModel=new N.default,this.stateGame=null,this.listButton=[],this.listBtnItem=[],this.listBtnXDV=[],this.btnChangePointL=null,this.btnChangePointR=null,this.listBtnClick=[],this.btnGo=null,this.roomSFS=null,this.isCanSendData=!0,this.betCache=null,this.moneyCurrent=0,this.sfs=null,this.listTimeOut=[],this.mutil=1,this.sfs=u.ConectManager.getIns().sfs,this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR,this.onCreateError,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr,this),this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse,this),l.Windown.XengController=this,cc.systemEvent.on(r.EVENT_MANAGER.onDisconnect,this.onDisconnect,this)}return t.prototype.dangKyEventXeng=function(){l.Windown.MoneyUser.dangKyHandle(this.setGold,this)},t.prototype.setGold=function(t){cc.log("money la: "+t),this.moneyCurrent=t,this.btnChangePointR&&this.btnChangePointR.setPoint(t,!0)},t.prototype.onDisconnect=function(){this.onDestroy(),cc.director.loadScene("main")},t.prototype.userExitRoom=function(t){if("Xeng"==t.room.groupId&&t.user.isItMe)return this.onDestroy(),void cc.director.loadScene("main")},t.prototype.onCreateError=function(){cc.log("creat err"),l.Windown.UIManager.hideLoading(),this.onDestroy(),l.Windown.Dialog.showLog(a.TextDefine.ERR_JOIN_ROOM)},t.prototype.onJoinRoom=function(t){return o(this,void 0,void 0,function(){var e;return i(this,function(n){switch(n.label){case 0:return"Xeng"!=(e=t.room).groupId?[3,2]:(this.roomSFS=e,[4,l.Windown.loadBundle(c.default.Xeng.toString())]);case 1:n.sent().loadScene("XengGame",function(t,e){if(t)return l.Windown.Dialog.showLog(a.TextDefine.Error),void l.Windown.UIManager.hideLoadingData();cc.director.runScene(e,null,function(){l.Windown.UIManager.hideLoadingData()})}),n.label=2;case 2:return[2]}})})},t.prototype.onJoinRoomErr=function(){l.Windown.UIManager.hideLoading(),l.Windown.Dialog.showLog(a.TextDefine.ERR_JOIN_ROOM),this.onDestroy()},t.prototype.extResponse=function(t){var e=null,n=t.cmd,o=t.params;switch(n){case s.REQUEST_CODE.BetToNho:e=new b.default;break;case s.REQUEST_CODE.MakeBet:e=new v.default;break;case s.REQUEST_CODE.SetMutiXeng:e=new _.default}e&&e.handleResponse(o)},t.prototype.onDestroy=function(){l.Windown.UIManager.hideLoadingData(),l.Windown.UIManager.hideLoading(),cc.systemEvent.removeAll(this),this.clearAllTimeOut(),this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR,this.onCreateError),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr),this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse),l.Windown.XengController=null,this.roomSFS=null,l.Windown.MoneyUser.targetOff(this),l.Windown.MoneyUser.endGameMOney(c.default.Xeng)},t.prototype.intiGame=function(){return o(this,void 0,void 0,function(){var t,e=this;return i(this,function(n){switch(n.label){case 0:return[4,l.Windown.loadBundle(c.default.Xeng.toString())];case 1:return t=n.sent(),l.Windown.UIManager.showLoadingData(),t.preloadScene("XengGame",{},function(t,e){l.Windown.UIManager.setPerData(t/e)},function(t){t?l.Windown.Dialog.showLog(a.TextDefine.Error):e.sendJoinRoom()}),[2]}})})},t.prototype.initXengView=function(t){this.xengView=t,l.Windown.UIManager.hideLoadingData(),this.dangKyEventXeng()},t.prototype.sendJoinRoom=function(){cc.log("send creat room");var t=u.ConectManager.getIns().getValibleRoomName(),e=new SFS2X.RoomSettings(t),n=new SFS2X.RoomExtension("XengExtension","ext.Room.Xeng.XengGameView");e.extension=n,e.isGame=!0,e.maxUsers=1,e.groupId="Xeng",this.sfs.send(new SFS2X.CreateRoomRequest(e,!0))},t.prototype.initListButton=function(t){var e=this;this.listButton=t,this.listBtnItem=[],this.listBtnXDV=[],this.listButton.forEach(function(t){t instanceof f.default?e.listBtnItem.push(t):t instanceof h.default?e.listBtnXDV.push(t):t instanceof y.default?e.listBtnClick.push(t):t instanceof g.default?e.btnGo=t:t instanceof d.default?e.btnChangePointR=t:t instanceof p.default&&(e.btnChangePointL=t),t.initGameController(e)}),this.setCurrentState(S.default.WATING)},t.prototype.sendToServer=function(t,e){this.isCanSendData&&null!=this.roomSFS&&(this.isCanSendData=!1,u.ConectManager.getIns().sendRequest(t,e,this.roomSFS))},t.prototype.onClickGo=function(){if(this.stateGame.type==S.default.WATINGPLAYGAME||this.stateGame.type==S.default.WATINGPLAYGAMEMINI||this.stateGame.type==S.default.PLAYINGMINI)this.setCurrentState(S.default.WATING);else if(this.stateGame.type==S.default.WATING){if(this.betCache){for(var t in this.getBtnItemXDV(0).onPress(this.betCache.red),this.getBtnItemXDV(1).onPress(this.betCache.yello),this.getBtnItemXDV(2).onPress(this.betCache.green),this.betCache.listBetItem)this.listBtnItem[Number(t)].onPress(this.betCache.listBetItem[t]);this.setCurrentState(S.default.PLAYING)}}else if(this.stateGame.type==S.default.PLAYING){var e=Object.create(null);e.green=this.listBtnXDV[2].point,e.red=this.listBtnXDV[0].point,e.yello=this.listBtnXDV[1].point,e.listBetItem=this.getArryPointItem(),this.betCache=e;var n=u.ConectManager.getIns().getSFSObj();n.putUtfString("data",JSON.stringify(e)),this.sendToServer(s.REQUEST_CODE.MakeBet,n),cc.log("objSend"+JSON.stringify(e)),this.setCurrentState(S.default.FINISHED)}},t.prototype.onClickAllAdd1=function(t){this.listBtnItem.forEach(function(e){e.onPress(t)})},t.prototype.onClick1_6=function(){if(this.resetEffectAll(),!(this.btnChangePointL.point<=0)){cc.log("chay vao click 1_6");var t=u.ConectManager.getIns().getSFSObj();t.putInt("agXengDat",this.btnChangePointL.point),t.putInt("type",1),this.sendToServer("betToNho",t),this.setCurrentState(S.default.FINISHEDMINI),this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho)}},t.prototype.onClick8_13=function(){if(this.resetEffectAll(),!(this.btnChangePointL.point<=0)){var t=u.ConectManager.getIns().getSFSObj();t.putInt("agXengDat",this.btnChangePointL.point),t.putInt("type",2),this.sendToServer("betToNho",t),this.setCurrentState(S.default.FINISHEDMINI),this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho)}},t.prototype.onClickChan=function(){if(this.resetEffectAll(),!(this.btnChangePointL.point<=0)){var t=u.ConectManager.getIns().getSFSObj();t.putInt("agXengDat",this.btnChangePointL.point),t.putInt("type",4),this.sendToServer("betToNho",t),this.setCurrentState(S.default.FINISHEDMINI),this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho)}},t.prototype.onClickLe=function(){if(!(this.btnChangePointL.point<=0)){var t=u.ConectManager.getIns().getSFSObj();t.putInt("agXengDat",this.btnChangePointL.point),t.putInt("type",3),this.sendToServer("betToNho",t),this.setCurrentState(S.default.FINISHEDMINI),this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho)}},t.prototype.canSendData=function(t){void 0===t&&(t=!1),this.isCanSendData=t},t.prototype.setCurrentState=function(t){this.stateGame&&this.stateGame.type==t||(this.stateGame=this.getState(t),this.stateGame.initGameController(this),this.stateGame.execute())},t.prototype.getSoundMng=function(){return l.Windown.AudioManager},t.prototype.getArryPointItem=function(){var t=[];return this.listBtnItem.forEach(function(e){t.push(e.point)}),t},t.prototype.getBtnItemXDV=function(t){return this.listBtnXDV[t]},t.prototype.offEffect=function(t){t.opacity=255,t.stopAllActions()},t.prototype.offItem=function(t){t.stopAllActions(),t.opacity=0},t.prototype.runEffectNhapNhay=function(t,e,n){t.stopAllActions(),t.opacity=255,t.runAction(cc.blink(e,n))},t.prototype.runEffectActiveAndHideWithTime=function(t,e){t.stopAllActions(),t.opacity=255,t.runAction(cc.sequence(cc.delayTime(e),cc.fadeOut(0)))},t.prototype.runEffectNhapNhay1Lan=function(t,e){void 0===e&&(e=.1),t.stopAllActions(),t.opacity=0,t.runAction(cc.sequence(cc.delayTime(e),cc.fadeIn(0)))},t.prototype.actionFade=function(t){t.opacity=255},t.prototype.makeDelay=function(t){var e=this;return new Promise(function(n){var o=setTimeout(function(){e.removeTimeOut(o),n(null)},1e3*t);e.addTimeOut(o)})},t.prototype.handleBetToNho=function(t){l.Windown.Dialog.checkAndShowLog(t,!1),(new b.default).handleResponse(t)},t.prototype.handleMakeBet=function(t){l.Windown.Dialog.checkAndShowLog(t,!1),(new v.default).handleResponse(t)},t.prototype.handleSetMutiXeng=function(t){l.Windown.Dialog.checkAndShowLog(t,!1),(new _.default).handleResponse(t)},t.prototype.handleSetConfig=function(t){this.isCanSendData=!0,l.Windown.Dialog.checkAndShowLog(t,!0)},t.prototype.showDoiDiem=function(t){this.xengView.showDoiDiem(t)},t.prototype.resetEffectAll=function(){var t=this;this.offEffect(this.btnChangePointL.lbPoint.node),this.listBtnItem.forEach(function(e){e.reset(),t.offEffect(e.lbPoint.node)}),this.listBtnXDV.forEach(function(e){e.reset(),t.offEffect(e.lbPoint.node)}),this.xengView.getIdListLastResutl().forEach(function(e){t.offEffect(t.xengView.getChildById(e))}),this.xengView.getIdXDVListLastResutl().forEach(function(e){t.offEffect(t.xengView.getChildXDVById(e))}),this.offItem(this.xengView.getNodeJp())},t.prototype.addTimeOut=function(t){this.listTimeOut.includes(t)||this.listTimeOut.push(t)},t.prototype.removeTimeOut=function(t){var e=this.listTimeOut.indexOf(t);e>-1&&this.listTimeOut.splice(e,1)},t.prototype.clearAllTimeOut=function(){this.listTimeOut.forEach(function(t){clearTimeout(t)})},t.prototype.getState=function(t){switch(t){case S.default.PLAYING:return new w.default(S.default.PLAYING);case S.default.PLAYINGMINI:return new C.default(S.default.PLAYINGMINI);case S.default.WATING:return new M.default(S.default.WATING);case S.default.FINISHED:return new E.default(S.default.FINISHED);case S.default.FINISHEDMINI:return new m.default(S.default.FINISHEDMINI);case S.default.WATINGPLAYGAME:return new I.default(S.default.WATINGPLAYGAME);case S.default.WATINGPLAYGAMEMINI:return new R.default(S.default.WATINGPLAYGAMEMINI)}},t}();n.default=P,cc._RF.pop()},{"../../../Scritps/DefineTs/EVENT_MANAGER":void 0,"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/DefineTs/TextDefine":void 0,"../../../Scritps/Game/GAME_TYPE":void 0,"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Windown":void 0,"./Button/BtnBetItem":"BtnBetItem","./Button/BtnBetXDV":"BtnBetXDV","./Button/BtnChangePointLeft":"BtnChangePointLeft","./Button/BtnChangePointRight":"BtnChangePointRight","./Button/BtnClick":"BtnClick","./Button/BtnGo":"BtnGo","./Event/ResponseBetToNho":"ResponseBetToNho","./Event/ResponseMakeBet":"ResponseMakeBet","./Event/ResponseSetMutil":"ResponseSetMutil","./State/StateFinished":"StateFinished","./State/StateFinishedMini":"StateFinishedMini","./State/StateGame":"StateGame","./State/StatePlaying":"StatePlaying","./State/StatePlayingMini":"StatePlayingMini","./State/StateWating":"StateWating","./State/StateWatingPlayGame":"StateWatingPlayGame","./State/StateWatingPlayGameMini":"StateWatingPlayGameMini","./XengModel":"XengModel"}],XengModel:[function(t,e,n){"use strict";cc._RF.push(e,"db815rfGQlO75Z3et18Soz6","XengModel");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=cc._decorator,a=s.ccclass,c=s.property,u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.label=null,e.text="hello",e}return i(e,t),e.prototype.start=function(){},r([c(cc.Label)],e.prototype,"label",void 0),r([c],e.prototype,"text",void 0),r([a],e)}(cc.Component);n.default=u,cc._RF.pop()},{}],XengView:[function(t,e,n){"use strict";cc._RF.push(e,"1ce64uuPndBJ7yNMewHOgJ6","XengView");var o,i=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])})(t,e)},function(t,e){function n(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}),r=this&&this.__decorate||function(t,e,n,o){var i,r=arguments.length,s=r<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,n):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,n,o);else for(var a=t.length-1;a>=0;a--)(i=t[a])&&(s=(r<3?i(s):r>3?i(e,n,s):i(e,n))||s);return r>3&&s&&Object.defineProperty(e,n,s),s};Object.defineProperty(n,"__esModule",{value:!0});var s=t("../../../Scritps/Network/ConectManager"),a=t("../../../Scritps/Windown"),c=t("./Button/BaseButton"),u=cc._decorator,l=u.ccclass,f=u.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.nodeGame=null,e.lbHeso=null,e.listLbHesoOGiua=[],e.parentItem=null,e.parentHistory=null,e.parentXDV=null,e.parentXoSo=null,e.parentLightMid=null,e.jpNode=null,e.nodeDoiDiem=null,e.funRDHeSo=null,e.handleUpdate=null,e.listIdResult=[0],e.listIdXDVResult=[0,1],e.listHistory=[],e.funUpdate=null,e}return i(e,t),e.prototype.start=function(){if(null!=a.Windown.XengController){a.Windown.XengController.initXengView(this),this.showDoiDiem(!0);var t=cc.find("Game/Bot",this.node).getComponentsInChildren(c.default);a.Windown.XengController.initListButton(t),this.initListHistory(),a.Windown.UIManager.changeRotation(!0),this.setupView(),this.randomLbHeSoOGiua(),cc.log("nhay vao start xeng")}else cc.director.loadScene("main")},e.prototype.setupView=function(){if(!cc.sys.isMobile){var t=cc.winSize.height/1280;this.nodeGame.angle=-90,this.nodeGame.scale=t}},e.prototype.initListHistory=function(){var t=a.Windown.getLocalStorage("historyXDV");if(t)this.listHistory=JSON.parse(t);else{t=[];for(var e=0;e<12;e++){var n=a.Windown.RandomNumber(0,100);n<45?t.push(0):n<90?t.push(2):t.push(1)}this.listHistory=t}this.emitNewHistoryXDV()},e.prototype.showDoiDiem=function(t){this.nodeDoiDiem.active=t},e.prototype.setColor=function(t){var e=this.getColor(t);this.getListChildren().forEach(function(t){t.color=e})},e.prototype.getColor=function(t){return 0==t?cc.Color.RED:2==t?cc.Color.GREEN:cc.Color.ORANGE},e.prototype.initHandleUpdate=function(t){this.handleUpdate=t},e.prototype.getLightMid=function(t){return this.parentLightMid.children[t].children[0]},e.prototype.getListLightMid=function(){var t=[];return this.parentLightMid.children.forEach(function(e){t.push(e.children[0])}),t},e.prototype.getChildById=function(t){return this.parentItem.children[t].children[0]},e.prototype.getChildXDVById=function(t){return this.parentXDV.children[t]},e.prototype.getChildXoSoById=function(t){return this.parentXoSo.children[t].children[0]},e.prototype.getListLastResult=function(){var t=[],e=this.parentItem.children;for(var n in e)this.listIdResult.includes(Number(n))&&t.push(e[n].children[0]);return t},e.prototype.getIdListLastResutl=function(){return this.listIdResult},e.prototype.getIdXDVListLastResutl=function(){return this.listIdXDVResult},e.prototype.getNodeJp=function(){return this.jpNode},e.prototype.getListChildren=function(){var t=[];return this.parentItem.children.forEach(function(e){t.push(e.children[0])}),t},e.prototype.getListChildXDV=function(){var t=[];return this.parentXDV.children.forEach(function(e){t.push(e)}),t},e.prototype.getListChildXoSo=function(){var t=[];return this.parentXoSo.children.forEach(function(e){t.push(e.children[0])}),t},e.prototype.setStringLbHeSo=function(t){var e=t.toString();e.length<2&&(e="0"+e),this.lbHeso.string=e},e.prototype.randomLbHeSoOGiua=function(){this.listLbHesoOGiua.forEach(function(t){var e=a.Windown.RandomNumber(1,100).toString();e.length<1&&(e="0"+e),t.string=e})},e.prototype.randomLbHeSo=function(){var t=a.Windown.RandomNumber(1,100);this.setStringLbHeSo(t)},e.prototype.runEffectRandomLabelHesoMiniGame=function(){var t=this;this.unschedule(this.funRDHeSo),this.schedule(this.funRDHeSo=function(){var e=a.Windown.RandomNumber(1,14);t.setStringLbHeSo(e)},.02)},e.prototype.runEffectRandomLabelHesoSpecial=function(){var t=this,e=11;this.unschedule(this.funRDHeSo),this.schedule(this.funRDHeSo=function(){t.setStringLbHeSo(e),(e+=11)>99&&(e=11)},.07)},e.prototype.runEffectRandomLabelHeso=function(t,e){var n=this;this.unschedule(this.funRDHeSo),this.schedule(this.funRDHeSo=function(){var o=a.Windown.RandomNumber(t,e);n.setStringLbHeSo(o)},.04)},e.prototype.offEffectRandomLabelHeso=function(t){this.unschedule(this.funRDHeSo),this.setStringLbHeSo(t)},e.prototype.offEffectLabelHeso=function(){this.unschedule(this.funRDHeSo)},e.prototype.putIdResult=function(t){this.listIdResult.push(t)},e.prototype.activeIcon=function(t){t.stopAllActions(),t.opacity=255},e.prototype.putIdXDVResult=function(t){this.listIdXDVResult.push(t)},e.prototype.resetIdResult=function(){this.listIdResult.length=0},e.prototype.resetIdXDVResult=function(){this.listIdXDVResult.length=0},e.prototype.onClickBack=function(){s.ConectManager.getIns().sendLeaveRoom(a.Windown.XengController.roomSFS),a.Windown.UIManager.showLoading(30)},e.prototype.onClickSeting=function(){},e.prototype.onClickTest=function(){a.Windown.UIManager.showHomThu()},e.prototype.sendMutilXeng=function(t,e){var n=Number(e);a.Windown.XengController.mutil=n,a.Windown.XengController.btnChangePointR.reset(),a.Windown.XengController.showDoiDiem(!1),a.Windown.XengController.getSoundMng().playNhacCho(),a.Windown.XengController.setGold(a.Windown.User.userAg)},e.prototype.sendConfigBetToNho=function(t,e){var n=parseInt(e);if(null!=n){var o=s.ConectManager.getIns().getSFSObj();o.putInt("dataToNho",n),a.Windown.XengController.sendToServer("setConfig",o)}},e.prototype.sendConfigAnTruoc=function(t,e){var n=parseInt(e);if(null!=n){var o=s.ConectManager.getIns().getSFSObj();o.putInt("dataAnTruoc",n),a.Windown.XengController.sendToServer("setConfig",o)}},e.prototype.sendConfigXDV=function(t,e){var n=parseInt(e);if(null!=n){var o=s.ConectManager.getIns().getSFSObj();o.putInt("dataXDV",n),a.Windown.XengController.sendToServer("setConfig",o)}},e.prototype.addNewHistory=function(t){this.listHistory.unshift(t),this.listHistory.pop(),this.emitNewHistoryXDV()},e.prototype.emitNewHistoryXDV=function(){var t=this,e=JSON.stringify(this.listHistory);a.Windown.setLocalStorage("historyXDV",e);var n=0,o=this.parentHistory.children;this.listHistory.forEach(function(e){o[n].children[0].color=t.getColor(e),n++})},e.prototype.sendConfigBetCua=function(t,e){cc.log("click set config bet cua");var n=parseInt(e);if(null!=n){var o=s.ConectManager.getIns().getSFSObj();o.putInt("dataBetCua",n),a.Windown.XengController.sendToServer("setConfig",o)}},e.prototype.onDestroy=function(){a.Windown.UIManager.changeRotation(),a.Windown.XengController&&a.Windown.XengController.onDestroy()},e.prototype.update=function(t){this.funUpdate&&this.funUpdate(t)},r([f(cc.Node)],e.prototype,"nodeGame",void 0),r([f(cc.Label)],e.prototype,"lbHeso",void 0),r([f([cc.Label])],e.prototype,"listLbHesoOGiua",void 0),r([f(cc.Node)],e.prototype,"parentItem",void 0),r([f(cc.Node)],e.prototype,"parentHistory",void 0),r([f(cc.Node)],e.prototype,"parentXDV",void 0),r([f(cc.Node)],e.prototype,"parentXoSo",void 0),r([f(cc.Node)],e.prototype,"parentLightMid",void 0),r([f(cc.Node)],e.prototype,"jpNode",void 0),r([f(cc.Node)],e.prototype,"nodeDoiDiem",void 0),r([l],e)}(cc.Component);n.default=h,cc._RF.pop()},{"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Windown":void 0,"./Button/BaseButton":"BaseButton"}]},{},["BaseButton","BtnAll+1","BtnBetItem","BtnBetXDV","BtnChangePointLeft","BtnChangePointRight","BtnClick","BtnGo","BaseEffect","BaseEffectAnTruoc","BaseEffectEnd","BaseEffectXDVEnd","Effect1CuaTo20","EffectAnJP","EffectAnLuon1Cua","EffectBassNho","EffectDapChuot","EffectDoiMau","EffectEndGame","EffectEndNormal","EffectRan8Dot","EffectRunSpin","EffectSpecial14","EffectSpecial2","EffectSpecial3","EffectSpecial4","EffectSpecial5","EffectSpecial6","EffectSpecial7","EffectSpineSoXo","EffectTraDiem","EffectVe3CuaXDV","EffectVeBar","EffectVeVang","EffectX8ChuyenMau","IDataFinish","X10_30_1Cua","X3_1Cua","IServerResponse","ResponseBetToNho","ResponseLeaveRoom","ResponseMakeBet","ResponseSetMutil","SoundXeng","BaseState","StateFinished","StateFinishedMini","StateGame","StatePlaying","StatePlayingMini","StateWating","StateWatingPlayGame","StateWatingPlayGameMini","Test","XengController","XengModel","XengView"]);
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+        o = b;
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  BaseButton: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "3fb0epD9JpOPKJU2XkKBnxh", "BaseButton");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaseButton = function(_super) {
+      __extends(BaseButton, _super);
+      function BaseButton() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.nodePress = null;
+        _this.timeDelay = .2;
+        _this.timeUpdate = 0;
+        _this.deltaPlus = 10;
+        _this.funMaxSpeed = null;
+        _this.funMaxSpeed2 = null;
+        _this.isClick = false;
+        _this.isInitEvent = false;
+        _this.xengController = null;
+        _this.soundManager = null;
+        return _this;
+      }
+      BaseButton.prototype.onTouchStart = function(event) {
+        var _this = this;
+        this.timeDelay = .2;
+        this.isClick = true;
+        this.nodePress.active = true;
+        this.deltaPlus = 10;
+        this.onPress(this.deltaPlus * Windown_1.Windown.XengController.mutil);
+        this.timeUpdate = 0;
+        this.scheduleOnce(this.funMaxSpeed = function() {
+          _this.timeDelay = 0;
+          _this.schedule(_this.funMaxSpeed2 = function() {
+            _this.deltaPlus += 10;
+          }, .7);
+        }, .5);
+        event.stopPropagation();
+      };
+      BaseButton.prototype.initGameController = function(gv) {
+        this.xengController = gv;
+      };
+      BaseButton.prototype.onTouchEnd = function(event) {
+        this.isClick = false;
+        this.timeDelay = .2;
+        this.deltaPlus = 10;
+        this.unschedule(this.funMaxSpeed);
+        this.unschedule(this.funMaxSpeed2);
+        this.nodePress.active = false;
+        event.stopPropagation();
+      };
+      BaseButton.prototype.onTouchCancel = function(event) {
+        this.isClick = false;
+        this.timeDelay = .2;
+        this.deltaPlus = 10;
+        this.unschedule(this.funMaxSpeed);
+        this.unschedule(this.funMaxSpeed2);
+        this.nodePress.active = false;
+        event.stopPropagation();
+      };
+      BaseButton.prototype.initEvent = function() {
+        if (this.isInitEvent) return;
+        this.timeDelay = .2;
+        this.isInitEvent = true;
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+      };
+      BaseButton.prototype.offEvent = function() {
+        if (!this.isInitEvent) return;
+        this.timeUpdate = 0;
+        this.isInitEvent = false;
+        this.isClick = false;
+        this.nodePress.active = false;
+        this.node.targetOff(this);
+      };
+      BaseButton.prototype.onDestroy = function() {
+        this.offEvent();
+      };
+      BaseButton.prototype.update = function(dt) {
+        if (!this.isClick) return;
+        this.timeUpdate += dt;
+        if (this.timeUpdate < this.timeDelay) return;
+        this.onPress(this.deltaPlus * Windown_1.Windown.XengController.mutil);
+        this.timeUpdate = 0;
+      };
+      BaseButton.prototype.start = function() {
+        this.nodePress.active = false;
+        this.initEvent();
+        this.xengController && (this.soundManager = this.xengController.getSoundMng());
+        this.reset();
+      };
+      __decorate([ property(cc.Node) ], BaseButton.prototype, "nodePress", void 0);
+      BaseButton = __decorate([ ccclass ], BaseButton);
+      return BaseButton;
+    }(cc.Component);
+    exports.default = BaseButton;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0
+  } ],
+  BaseEffectAnTruoc: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c8a23y/rjpJS6MEeXwJuZZK", "BaseEffectAnTruoc");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var BaseEffectAnTruoc = function(_super) {
+      __extends(BaseEffectAnTruoc, _super);
+      function BaseEffectAnTruoc() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.dataFinishItemAnTruoc = null;
+        return _this;
+      }
+      BaseEffectAnTruoc.prototype.intData = function(dataFinishItemAnTruoc) {
+        this.dataFinishItemAnTruoc = dataFinishItemAnTruoc;
+        return this;
+      };
+      return BaseEffectAnTruoc;
+    }(BaseEffect_1.default);
+    exports.default = BaseEffectAnTruoc;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  BaseEffectEnd: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "e8435fv8hREwo4alW31oc3a", "BaseEffectEnd");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var BaseEffectEnd = function(_super) {
+      __extends(BaseEffectEnd, _super);
+      function BaseEffectEnd() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.dataFinishiItemNomarl = null;
+        return _this;
+      }
+      BaseEffectEnd.prototype.intiData = function(obj) {
+        this.dataFinishiItemNomarl = obj;
+        return this;
+      };
+      return BaseEffectEnd;
+    }(BaseEffect_1.default);
+    exports.default = BaseEffectEnd;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  BaseEffectXDVEnd: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "9c7b9aL6sRHe7iN+bNoDLQL", "BaseEffectXDVEnd");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var BaseEffectXDVEnd = function(_super) {
+      __extends(BaseEffectXDVEnd, _super);
+      function BaseEffectXDVEnd() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.dataFinishXDV = null;
+        return _this;
+      }
+      BaseEffectXDVEnd.prototype.intiData = function(obj) {
+        this.dataFinishXDV = obj;
+        return this;
+      };
+      return BaseEffectXDVEnd;
+    }(BaseEffect_1.default);
+    exports.default = BaseEffectXDVEnd;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  BaseEffect: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "2e16beucptECbftQ8r2VhF9", "BaseEffect");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var listIndexTren = [ 21, 22, 23, 0, 1, 2, 3 ];
+    var listIndexDuoi = [ 9, 10, 11, 12, 13, 14, 15 ];
+    var listIndexTrai = [ 15, 16, 17, 18, 19, 20, 21 ];
+    var listIndexPhai = [ 3, 4, 5, 6, 7, 8, 9 ];
+    var listIndexRun = [ 22, 4, 10, 16 ];
+    var listIndexBassNho1 = [ 20, 21, 22, 2, 3, 4, 8, 9, 10, 14, 15, 16 ];
+    var listIndexBassNho2 = [ 17, 18, 19, 23, 0, 1, 5, 6, 7, 11, 12, 13 ];
+    var listRun = [ listIndexTren, listIndexDuoi, listIndexTrai, listIndexPhai ];
+    var BaseEffect = function() {
+      function BaseEffect(xengController) {
+        this.xengController = null;
+        this.soundMgn = null;
+        this.currentBtnTrai = null;
+        this.currentBtnPhai = null;
+        this._listRun = null;
+        this.xengController = xengController;
+        this.soundMgn = xengController.getSoundMng();
+        this.currentBtnTrai = xengController.btnChangePointL;
+        this.currentBtnPhai = xengController.btnChangePointR;
+      }
+      BaseEffect.prototype.getBtnItem = function(id) {
+        (void 0 == id || null == id || id < 0) && (id = 0);
+        return this.xengController.listBtnItem[id];
+      };
+      BaseEffect.prototype.setColor = function(type) {
+        this.xengController.xengView.setColor(type);
+      };
+      BaseEffect.prototype.getBtnItemXDV = function(id) {
+        return this.xengController.getBtnItemXDV(id);
+      };
+      BaseEffect.prototype.setPointItem = function(id, point) {
+        this.getBtnItem(id).setPoint(point);
+      };
+      BaseEffect.prototype.setStringLbHeSo = function(number) {
+        this.xengController.xengView.setStringLbHeSo(number);
+      };
+      BaseEffect.prototype.getLbBtnItem = function(id) {
+        return this.getBtnItem(id).lbPoint;
+      };
+      BaseEffect.prototype.getNodeLbItem = function(id) {
+        return this.getBtnItem(id).lbPoint.node;
+      };
+      BaseEffect.prototype.getListNodeLbItem = function() {
+        var listReturn = [];
+        this.xengController.listBtnItem.forEach(function(v) {
+          listReturn.push(v.lbPoint.node);
+        });
+        return listReturn;
+      };
+      BaseEffect.prototype.getNodeLbItemXDV = function(id) {
+        return this.getBtnItemXDV(id).lbPoint.node;
+      };
+      BaseEffect.prototype.getNodeLbHeso = function() {
+        return this.xengController.xengView.lbHeso.node;
+      };
+      BaseEffect.prototype.getLbHeso = function() {
+        return this.xengController.xengView.lbHeso;
+      };
+      BaseEffect.prototype.getLbLeft = function() {
+        return this.currentBtnTrai.lbPoint;
+      };
+      BaseEffect.prototype.getNodeLbLeft = function() {
+        return this.getLbLeft().node;
+      };
+      BaseEffect.prototype.getLbRight = function() {
+        return this.currentBtnPhai.lbPoint;
+      };
+      BaseEffect.prototype.getNodeLbRight = function() {
+        return this.getLbRight().node;
+      };
+      BaseEffect.prototype.getIdListLastResutl = function() {
+        return this.xengController.xengView.getIdListLastResutl();
+      };
+      BaseEffect.prototype.getListRun = function() {
+        var _this = this;
+        var arrTemp = this._listRun;
+        if (null == arrTemp) {
+          arrTemp = [];
+          listRun.forEach(function(v) {
+            var listTemp = [];
+            v.forEach(function(j) {
+              listTemp.push(_this.getChildById(j));
+            });
+            arrTemp.push(listTemp);
+          });
+        }
+        return arrTemp;
+      };
+      BaseEffect.prototype.getChildById = function(id) {
+        return this.xengController.xengView.getChildById(id);
+      };
+      BaseEffect.prototype.getChildXDVById = function(id) {
+        return this.xengController.xengView.getChildXDVById(id);
+      };
+      BaseEffect.prototype.getChildXoSoById = function(id) {
+        return this.xengController.xengView.getChildXoSoById(id);
+      };
+      BaseEffect.prototype.getListLastResult = function() {
+        return this.xengController.xengView.getListLastResult();
+      };
+      BaseEffect.prototype.getListChildren = function() {
+        return this.xengController.xengView.getListChildren();
+      };
+      BaseEffect.prototype.getListXDV = function() {
+        return this.xengController.xengView.getListChildXDV();
+      };
+      BaseEffect.prototype.getListXoSo = function() {
+        return this.xengController.xengView.getListChildXoSo();
+      };
+      BaseEffect.prototype.getIdIndexRun = function() {
+        return listIndexRun.slice();
+      };
+      BaseEffect.prototype.getLightMid = function(id) {
+        return this.xengController.xengView.getLightMid(id);
+      };
+      BaseEffect.prototype.getListLightMid = function() {
+        return this.xengController.xengView.getListLightMid();
+      };
+      BaseEffect.prototype.randomLbHeSo = function() {
+        this.xengController.xengView.randomLbHeSo();
+      };
+      BaseEffect.prototype.runEffectNhapNhay1Lan = function(node, time) {
+        this.xengController.runEffectNhapNhay1Lan(node, time);
+      };
+      BaseEffect.prototype.runEffectNhapNhay = function(node, time, repeat) {
+        this.xengController.runEffectNhapNhay(node, time, repeat);
+      };
+      BaseEffect.prototype.runEffectRandomLabelHeso = function(min, max) {
+        this.xengController.xengView.runEffectRandomLabelHeso(min, max);
+      };
+      BaseEffect.prototype.runEffectRandomLabelHesoSpecial = function() {
+        this.xengController.xengView.runEffectRandomLabelHesoSpecial();
+      };
+      BaseEffect.prototype.runEffectActiveAndHideWithTime = function(node, timeHide) {
+        this.xengController.runEffectActiveAndHideWithTime(node, timeHide);
+      };
+      BaseEffect.prototype.offEffect = function(node) {
+        this.xengController.offEffect(node);
+      };
+      BaseEffect.prototype.offEffectRandomLabelHeso = function(number) {
+        this.xengController.xengView.offEffectRandomLabelHeso(number);
+      };
+      BaseEffect.prototype.offItem = function(node) {
+        this.xengController.offItem(node);
+      };
+      BaseEffect.prototype.getNodeJp = function() {
+        return this.xengController.xengView.getNodeJp();
+      };
+      BaseEffect.prototype.pushIdResult = function(id) {
+        this.xengController.xengView.putIdResult(id);
+      };
+      BaseEffect.prototype.pushIdXDVResult = function(ids) {
+        var _this = this;
+        ids.forEach(function(id) {
+          return _this.xengController.xengView.putIdXDVResult(id);
+        });
+      };
+      BaseEffect.prototype.resetIdXDVResult = function() {
+        this.xengController.xengView.resetIdXDVResult();
+      };
+      BaseEffect.prototype.resetIdResult = function() {
+        this.xengController.xengView.resetIdResult();
+      };
+      BaseEffect.prototype.actionFade = function(node, time) {
+        if (time) {
+          node.stopAllActions();
+          node.runAction(cc.fadeIn(time));
+        } else node.opacity = 255;
+      };
+      BaseEffect.prototype.activeIcon = function(node) {
+        this.xengController.xengView.activeIcon(node);
+      };
+      BaseEffect.prototype.actionNhapNhay = function(node, repeat, timeDelay, isActive) {
+        void 0 === isActive && (isActive = false);
+        node.stopAllActions();
+        node.opacity = 255;
+        isActive ? node.runAction(cc.sequence(cc.blink(timeDelay, repeat), cc.callFunc(function() {
+          node.opacity = 255;
+        }))) : node.runAction(cc.sequence(cc.blink(timeDelay, repeat), cc.callFunc(function() {
+          node.opacity = 0;
+        })));
+      };
+      BaseEffect.prototype.activeWithTime = function(node, time) {
+        this.offItem(node);
+        node.opacity = 255;
+        node.runAction(cc.sequence(cc.delayTime(time), cc.fadeOut(0)));
+      };
+      BaseEffect.prototype.activeWithTimeFadeOut = function(node, time, tiemFade) {
+        this.offItem(node);
+        node.opacity = 255;
+        node.runAction(cc.sequence(cc.delayTime(time), cc.fadeOut(tiemFade)));
+      };
+      BaseEffect.prototype.hideWithTimeFadeIn = function(node, time, timeFade) {
+        this.offItem(node);
+        node.opacity = 0;
+        node.runAction(cc.sequence(cc.delayTime(time), cc.fadeIn(timeFade)));
+      };
+      BaseEffect.prototype.makeDelay = function(time) {
+        return this.xengController.makeDelay(time);
+      };
+      return BaseEffect;
+    }();
+    exports.default = BaseEffect;
+    cc._RF.pop();
+  }, {} ],
+  BaseState: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "4d8a5pxCdVL1o/9t0n6f6Rr", "BaseState");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState = function() {
+      function BaseState(number) {
+        this.type = number;
+      }
+      BaseState.prototype.initGameController = function(gv) {
+        this.xengController = gv;
+      };
+      return BaseState;
+    }();
+    exports.default = BaseState;
+    cc._RF.pop();
+  }, {} ],
+  "BtnAll+1": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "400d4wgb2JE4ZOMWAeIdTlA", "BtnAll+1");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var StateGame_1 = require("../State/StateGame");
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      NewClass.prototype.onPress = function(dtPress) {
+        if (this.xengController.stateGame.type == StateGame_1.default.PLAYINGMINI) return;
+        this.xengController.onClickAllAdd1(dtPress);
+      };
+      NewClass.prototype.reset = function() {};
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(BaseButton_1.default);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../State/StateGame": "StateGame",
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnBetItem: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "07b52urzBxFS6FM9h79knOF", "BtnBetItem");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnbetItem = function(_super) {
+      __extends(BtnbetItem, _super);
+      function BtnbetItem() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbPoint = null;
+        _this.point = 0;
+        return _this;
+      }
+      BtnbetItem.prototype.onPress = function(pointAdd) {
+        if (this.xengController.stateGame.type == StateGame_1.default.WATINGPLAYGAME) {
+          this.soundManager.playEffect(this.soundManager.Ting);
+          this.xengController.setCurrentState(StateGame_1.default.WATING);
+          return;
+        }
+        if (this.point >= 990 * Windown_1.Windown.XengController.mutil) return;
+        if (this.xengController.btnChangePointR.point < 1) return;
+        this.xengController.btnChangePointR.point < pointAdd && (pointAdd = this.xengController.btnChangePointR.point);
+        this.setPointBy(pointAdd);
+        this.xengController.btnChangePointR.setPointBy(-pointAdd);
+        this.soundManager.playEffect(this.soundManager.Ting);
+        this.xengController.setCurrentState(StateGame_1.default.PLAYING);
+      };
+      BtnbetItem.prototype.setLbPoint = function() {
+        this.node && this.lbPoint.node && (this.lbPoint.string = (this.point / Windown_1.Windown.XengController.mutil).toString());
+      };
+      BtnbetItem.prototype.reset = function() {
+        this.point = 0;
+        this.setLbPoint();
+      };
+      BtnbetItem.prototype.setPointBy = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point += point;
+        this.point = cc.misc.clampf(this.point, 0, 990 * Windown_1.Windown.XengController.mutil);
+        isUpdate && this.setLbPoint();
+      };
+      BtnbetItem.prototype.setPoint = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point = point;
+        isUpdate && this.setLbPoint();
+      };
+      __decorate([ property(cc.Label) ], BtnbetItem.prototype, "lbPoint", void 0);
+      BtnbetItem = __decorate([ ccclass ], BtnbetItem);
+      return BtnbetItem;
+    }(BaseButton_1.default);
+    exports.default = BtnbetItem;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnBetXDV: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d2606Bla8NMbIeRU0pYLbT6", "BtnBetXDV");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnBetXDV = function(_super) {
+      __extends(BtnBetXDV, _super);
+      function BtnBetXDV() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbPoint = null;
+        _this.point = 0;
+        return _this;
+      }
+      BtnBetXDV.prototype.onPress = function(pointAdd) {
+        if (this.point >= 9990 * Windown_1.Windown.XengController.mutil) return;
+        if (this.xengController.btnChangePointR.point < 1) return;
+        this.xengController.btnChangePointR.point < pointAdd && (pointAdd = this.xengController.btnChangePointR.point);
+        this.setPointBy(pointAdd);
+        this.soundManager.playEffect(this.soundManager.Ting);
+        this.xengController.btnChangePointR.setPointBy(-pointAdd);
+        this.xengController.setCurrentState(StateGame_1.default.PLAYING);
+      };
+      BtnBetXDV.prototype.setLbPoint = function() {
+        this.node && this.lbPoint.node && (this.lbPoint.string = (this.point / Windown_1.Windown.XengController.mutil).toString());
+      };
+      BtnBetXDV.prototype.reset = function() {
+        this.point = 0;
+        this.setLbPoint();
+      };
+      BtnBetXDV.prototype.setPointBy = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point += point;
+        this.point = cc.misc.clampf(this.point, 0, 9990 * Windown_1.Windown.XengController.mutil);
+        isUpdate && this.setLbPoint();
+      };
+      BtnBetXDV.prototype.setPoint = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point = point;
+        isUpdate && this.setLbPoint();
+      };
+      __decorate([ property(cc.Label) ], BtnBetXDV.prototype, "lbPoint", void 0);
+      BtnBetXDV = __decorate([ ccclass ], BtnBetXDV);
+      return BtnBetXDV;
+    }(BaseButton_1.default);
+    exports.default = BtnBetXDV;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnChangePointLeft: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "9f2e3Tpzz9CX4wCsu35fqoK", "BtnChangePointLeft");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnChangePointLeft = function(_super) {
+      __extends(BtnChangePointLeft, _super);
+      function BtnChangePointLeft() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbPoint = null;
+        _this.point = 0;
+        return _this;
+      }
+      BtnChangePointLeft.prototype.onPress = function(dtPress) {
+        if (0 == this.xengController.btnChangePointR.point) return;
+        this.xengController.btnChangePointR.point < dtPress && (dtPress = this.xengController.btnChangePointR.point);
+        this.setPointBy(dtPress);
+        this.xengController.btnChangePointR.setPointBy(-dtPress);
+        this.soundManager.playEffect(this.soundManager.Ting);
+        this.xengController.setCurrentState(StateGame_1.default.PLAYINGMINI);
+      };
+      BtnChangePointLeft.prototype.setPointBy = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point += point;
+        isUpdate && this.setLbPoint();
+      };
+      BtnChangePointLeft.prototype.setPoint = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point = point;
+        isUpdate && this.setLbPoint();
+      };
+      BtnChangePointLeft.prototype.reset = function() {
+        this.point = 0;
+        this.setLbPoint();
+      };
+      BtnChangePointLeft.prototype.setLbPoint = function() {
+        this.node && this.lbPoint.node && (this.lbPoint.string = cc.misc.clampf(parseInt(this.point / Windown_1.Windown.XengController.mutil), 0, 999999).toString());
+      };
+      __decorate([ property(cc.Label) ], BtnChangePointLeft.prototype, "lbPoint", void 0);
+      BtnChangePointLeft = __decorate([ ccclass ], BtnChangePointLeft);
+      return BtnChangePointLeft;
+    }(BaseButton_1.default);
+    exports.default = BtnChangePointLeft;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnChangePointRight: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "22e7eg/USZHh4jZCYWZI6GQ", "BtnChangePointRight");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var GAME_TYPE_1 = require("../../../../Scritps/Game/GAME_TYPE");
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnChangePointRight = function(_super) {
+      __extends(BtnChangePointRight, _super);
+      function BtnChangePointRight() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbPoint = null;
+        _this.point = 0;
+        return _this;
+      }
+      BtnChangePointRight.prototype.onPress = function(dtPress) {
+        if (0 == this.xengController.btnChangePointL.point) return;
+        this.xengController.btnChangePointL.point < dtPress && (dtPress = this.xengController.btnChangePointL.point);
+        this.setPointBy(dtPress);
+        this.xengController.btnChangePointL.setPointBy(-dtPress);
+        this.soundManager.playEffect(this.soundManager.Ting);
+        this.xengController.btnChangePointL.point < 1 && this.xengController.setCurrentState(StateGame_1.default.WATING);
+      };
+      BtnChangePointRight.prototype.reset = function() {};
+      BtnChangePointRight.prototype.setPointBy = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        point < 0 && Windown_1.Windown.MoneyUser.pushDelayMoney(GAME_TYPE_1.default.Xeng, Windown_1.Windown.MoneyUser.moneyCache, -point);
+        this.point = Windown_1.Windown.MoneyUser.getMoneyCurrentWhitDelay();
+        isUpdate && this.setLbPoint();
+      };
+      BtnChangePointRight.prototype.setPoint = function(point, isUpdate) {
+        void 0 === isUpdate && (isUpdate = true);
+        this.point = point;
+        isUpdate && this.setLbPoint();
+      };
+      BtnChangePointRight.prototype.setLbPoint = function() {
+        this.node && this.lbPoint.node && (this.lbPoint.string = cc.misc.clampf(parseInt(this.point / Windown_1.Windown.XengController.mutil), 0, 999999).toString());
+      };
+      __decorate([ property(cc.Label) ], BtnChangePointRight.prototype, "lbPoint", void 0);
+      BtnChangePointRight = __decorate([ ccclass ], BtnChangePointRight);
+      return BtnChangePointRight;
+    }(BaseButton_1.default);
+    exports.default = BtnChangePointRight;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnClick: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0913fTmuXJLqKoO1wAaD3t3", "BtnClick");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseButton_1 = require("./BaseButton");
+    var TYPE = cc.Enum({
+      BIG: 1,
+      SMALL: 2,
+      LE: 3,
+      CHAN: 4
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnClick = function(_super) {
+      __extends(BtnClick, _super);
+      function BtnClick() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.type = TYPE.BIG;
+        return _this;
+      }
+      BtnClick.prototype.onPress = function(dtPress) {
+        cc.log("on press nay");
+        switch (this.type) {
+         case TYPE.BIG:
+          this.xengController.onClick8_13();
+          break;
+
+         case TYPE.SMALL:
+          this.xengController.onClick1_6();
+          break;
+
+         case TYPE.CHAN:
+          this.xengController.onClickChan();
+          break;
+
+         case TYPE.LE:
+          this.xengController.onClickLe();
+        }
+      };
+      BtnClick.prototype.reset = function() {};
+      __decorate([ property({
+        type: TYPE
+      }) ], BtnClick.prototype, "type", void 0);
+      BtnClick = __decorate([ ccclass ], BtnClick);
+      return BtnClick;
+    }(BaseButton_1.default);
+    exports.default = BtnClick;
+    cc._RF.pop();
+  }, {
+    "./BaseButton": "BaseButton"
+  } ],
+  BtnGo: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0daa1dePORASKhxJvObZ14u", "BtnGo");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseButton_1 = require("./BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BtnGo = function(_super) {
+      __extends(BtnGo, _super);
+      function BtnGo() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      BtnGo.prototype.onPress = function(dtPress) {
+        this.xengController.onClickGo();
+        this.soundManager.playEffect(this.soundManager.Ting);
+      };
+      BtnGo.prototype.reset = function() {};
+      BtnGo = __decorate([ ccclass ], BtnGo);
+      return BtnGo;
+    }(BaseButton_1.default);
+    exports.default = BtnGo;
+    cc._RF.pop();
+  }, {
+    "./BaseButton": "BaseButton"
+  } ],
+  Effect1CuaTo20: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "104bdehi3xBiI8DH/PvW9X5", "Effect1CuaTo20");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var Effect1CuaTo20 = function(_super) {
+      __extends(Effect1CuaTo20, _super);
+      function Effect1CuaTo20() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      Effect1CuaTo20.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var listChildren, i;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                listChildren = this.getListChildren();
+                i = 0;
+                _a.label = 1;
+
+               case 1:
+                if (!(i < 5)) return [ 3, 4 ];
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                listChildren.forEach(function(v) {
+                  _this.activeWithTime(v, .1);
+                });
+                return [ 4, this.makeDelay(.17) ];
+
+               case 2:
+                _a.sent();
+                _a.label = 3;
+
+               case 3:
+                i++;
+                return [ 3, 1 ];
+
+               case 4:
+                listChildren.forEach(function(v) {
+                  _this.activeIcon(v);
+                });
+                return [ 4, this.makeDelay(1) ];
+
+               case 5:
+                _a.sent();
+                listChildren.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                this.getListLastResult().forEach(function(v) {
+                  _this.activeIcon(v);
+                });
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return Effect1CuaTo20;
+    }(BaseEffect_1.default);
+    exports.default = Effect1CuaTo20;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectAnJP: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c5ea3X+VsZECIbHcnwCjUYg", "EffectAnJP");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectAnJP = function(_super) {
+      __extends(EffectAnJP, _super);
+      function EffectAnJP() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectAnJP.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, mutil, moneyBet, money, i, l;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau) ];
+
+               case 1:
+                _a.sent();
+                mutil = dataFirt.hesoX;
+                this.runEffectRandomLabelHeso(30, 100);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.RandomSo) ];
+
+               case 2:
+                _a.sent();
+                this.offEffectRandomLabelHeso(mutil);
+                if (0 == data.objReviceFirtItem.moneyRevice) {
+                  resolve(null);
+                  return [ 2 ];
+                }
+                moneyBet = this.getBtnItem(8).point;
+                if (!(0 != moneyBet)) return [ 3, 7 ];
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.ShowHeSoRandom) ];
+
+               case 3:
+                _a.sent();
+                money = moneyBet;
+                i = 0, l = mutil;
+                _a.label = 4;
+
+               case 4:
+                if (!(i < l)) return [ 3, 7 ];
+                mutil--;
+                this.setStringLbHeSo(mutil);
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                this.currentBtnTrai.setPointBy(money);
+                return [ 4, this.makeDelay(.45) ];
+
+               case 5:
+                _a.sent();
+                _a.label = 6;
+
+               case 6:
+                i++;
+                return [ 3, 4 ];
+
+               case 7:
+                return [ 4, this.makeDelay(1) ];
+
+               case 8:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectAnJP;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectAnJP;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectAnLuon1Cua: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "03158rKBIFBiKuyHGtGw9R3", "EffectAnLuon1Cua");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectAnLuon1Cua = function(_super) {
+      __extends(EffectAnLuon1Cua, _super);
+      function EffectAnLuon1Cua() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectAnLuon1Cua.prototype.executed = function() {
+        return __awaiter(this, void 0, Promise, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var listNodeLastResult, i, listChild;
+                var _this = this;
+                return __generator(this, function(_a) {
+                  switch (_a.label) {
+                   case 0:
+                    listNodeLastResult = this.xengController.xengView.getListLastResult();
+                    for (i = 0; i < listNodeLastResult.length; i++) this.actionNhapNhay(listNodeLastResult[i], 50, 10, true);
+                    return [ 4, this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau) ];
+
+                   case 1:
+                    _a.sent();
+                    listChild = this.getListChildren();
+                    listChild.forEach(function(v) {
+                      _this.actionNhapNhay(v, 30, 3, true);
+                    });
+                    return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NoLienTuc) ];
+
+                   case 2:
+                    _a.sent();
+                    listChild.forEach(function(v) {
+                      _this.offItem(v);
+                    });
+                    listNodeLastResult.forEach(function(v) {
+                      _this.activeIcon(v);
+                    });
+                    return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiAnTruoc1CuaX30) ];
+
+                   case 3:
+                    _a.sent();
+                    listNodeLastResult.forEach(function(v) {
+                      _this.actionNhapNhay(v, 40, 4);
+                    });
+                    return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengKen2) ];
+
+                   case 4:
+                    _a.sent();
+                    listNodeLastResult.forEach(function(v) {
+                      _this.offItem(v);
+                    });
+                    resolve(null);
+                    return [ 2 ];
+                  }
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      return EffectAnLuon1Cua;
+    }(BaseEffect_1.default);
+    exports.default = EffectAnLuon1Cua;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectBassNho: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "19877DnWkNPvoFech+Rprnw", "EffectBassNho");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectBassNho = function(_super) {
+      __extends(EffectBassNho, _super);
+      function EffectBassNho() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectBassNho.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var idResult, listItem, isActive, i, temp, temp, listIdResultSub, listIdRandom, listIdResult, currentIdRandom, lastId, nodeNhapNhay1, nodeNhapNhay2, list1, list2, i, temp, v, idPre, temp, v, listResultTemp, i, temp, temp, startIndex, targetIndex, count, tempStart, lastIdActive;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                this.soundMgn.playEffect(this.soundMgn.CauNoiVeBass);
+                idResult = this.dataFinishiItemNomarl.objReviceFirtItem.idResult;
+                listItem = this.getListChildren();
+                isActive = true;
+                i = 0;
+                _a.label = 1;
+
+               case 1:
+                if (!(i < 20)) return [ 3, 4 ];
+                if (isActive) {
+                  this.offItem(this.getChildById(idResult));
+                  for (temp in listItem) Number(temp) != idResult && this.offEffect(listItem[temp]);
+                } else {
+                  this.offEffect(this.getChildById(idResult));
+                  for (temp in listItem) Number(temp) != idResult && this.offItem(listItem[temp]);
+                }
+                isActive = !isActive;
+                return [ 4, this.makeDelay(.15) ];
+
+               case 2:
+                _a.sent();
+                _a.label = 3;
+
+               case 3:
+                i++;
+                return [ 3, 1 ];
+
+               case 4:
+                return [ 4, this.makeDelay(.5) ];
+
+               case 5:
+                _a.sent();
+                listIdResultSub = this.dataFinishiItemNomarl.ListObjReviceSub;
+                listIdResultSub.forEach(function(v) {
+                  _this.pushIdResult(v.idResult);
+                });
+                listIdRandom = [ 3, 9, 11, 14, 17, 22 ];
+                listIdResult = this.getIdListLastResutl();
+                Windown_1.Windown.shuffle(listIdRandom);
+                currentIdRandom = 0;
+                lastId = -1;
+                _a.label = 6;
+
+               case 6:
+                false;
+                if (!(currentIdRandom == listIdRandom.length)) return [ 3, 8 ];
+                -1 != lastId && this.offItem(this.getChildById(listIdRandom[lastId]));
+                this.activeIcon(this.getChildById(listIdResult[1]));
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                return [ 4, this.makeDelay(2) ];
+
+               case 7:
+                _a.sent();
+                return [ 3, 10 ];
+
+               case 8:
+                this.soundMgn.playEffect(this.soundMgn.Hu);
+                -1 != lastId && this.offItem(this.getChildById(listIdRandom[lastId]));
+                this.activeIcon(this.getChildById(listIdRandom[currentIdRandom]));
+                lastId = currentIdRandom;
+                currentIdRandom++;
+                return [ 4, this.makeDelay(.5) ];
+
+               case 9:
+                _a.sent();
+                return [ 3, 6 ];
+
+               case 10:
+                nodeNhapNhay1 = this.getChildById(listIdResult[0]);
+                nodeNhapNhay2 = this.getChildById(listIdResult[1]);
+                this.actionNhapNhay(nodeNhapNhay1, 30, 3, true);
+                this.actionNhapNhay(nodeNhapNhay2, 30, 3, true);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NoLienTuc) ];
+
+               case 11:
+                _a.sent();
+                list1 = [ 6, 7, 8, 9, 10, 11, 12, 13 ];
+                list2 = [ 18, 19, 20, 21, 22, 23, 0, 1 ];
+                this.soundMgn.playEffect(this.soundMgn.ChayItem);
+                i = 0;
+                _a.label = 12;
+
+               case 12:
+                if (!(i < 12)) return [ 3, 15 ];
+                for (temp in list1) {
+                  v = list1[temp];
+                  this.offEffect(this.getChildById(v));
+                  list1[temp]--;
+                  list1[temp] < 0 && (list1[temp] = 23);
+                }
+                idPre = list1[list1.length - 1] + 1;
+                idPre > 23 && (idPre = 0);
+                this.offItem(this.getChildById(idPre));
+                for (temp in list2) {
+                  v = list2[temp];
+                  this.offEffect(this.getChildById(v));
+                  list2[temp]--;
+                  list2[temp] < 0 && (list2[temp] = 23);
+                }
+                idPre = list2[list2.length - 1] + 1;
+                idPre > 23 && (idPre = 0);
+                this.offItem(this.getChildById(idPre));
+                return [ 4, this.makeDelay(1.6 / 12) ];
+
+               case 13:
+                _a.sent();
+                _a.label = 14;
+
+               case 14:
+                i++;
+                return [ 3, 12 ];
+
+               case 15:
+                this.soundMgn.stopEffect(this.soundMgn.ChayItem);
+                listItem.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                listResultTemp = [ listIdResult[0], listIdResult[1], listIdResult[2] ];
+                listResultTemp.forEach(function(v) {
+                  _this.offEffect(_this.getChildById(v));
+                });
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNo) ];
+
+               case 16:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.EffectAnRandomItemNhoSau);
+                isActive = true;
+                i = 0;
+                _a.label = 17;
+
+               case 17:
+                if (!(i < 20)) return [ 3, 20 ];
+                if (isActive) {
+                  listResultTemp.forEach(function(v) {
+                    _this.offItem(_this.getChildById(v));
+                  });
+                  for (temp in listItem) listResultTemp.includes(Number(temp)) || this.offEffect(listItem[temp]);
+                } else {
+                  listResultTemp.forEach(function(v) {
+                    _this.offEffect(_this.getChildById(v));
+                  });
+                  for (temp in listItem) listResultTemp.includes(Number(temp)) || this.offItem(listItem[temp]);
+                }
+                isActive = !isActive;
+                return [ 4, this.makeDelay(.1) ];
+
+               case 18:
+                _a.sent();
+                _a.label = 19;
+
+               case 19:
+                i++;
+                return [ 3, 17 ];
+
+               case 20:
+                startIndex = listIdResult[2];
+                targetIndex = listIdResult[3];
+                count = 0;
+                tempStart = startIndex;
+                while (true) {
+                  tempStart++;
+                  count++;
+                  if (tempStart == targetIndex) break;
+                  tempStart > 23 && (tempStart = 0);
+                }
+                lastIdActive = -1;
+                _a.label = 21;
+
+               case 21:
+                false;
+                -1 == lastIdActive || listResultTemp.includes(lastIdActive) || this.offItem(this.getChildById(lastIdActive));
+                lastIdActive = startIndex;
+                startIndex++;
+                startIndex > 23 && (startIndex = 0);
+                this.soundMgn.playEffect(this.soundMgn.Bip);
+                this.activeIcon(this.getChildById(startIndex));
+                if (startIndex == targetIndex) {
+                  -1 == lastIdActive || listResultTemp.includes(lastIdActive) || this.offItem(this.getChildById(lastIdActive));
+                  this.soundMgn.stopEffect(this.soundMgn.RandomSo);
+                  return [ 3, 23 ];
+                }
+                return [ 4, this.makeDelay(.05) ];
+
+               case 22:
+                _a.sent();
+                return [ 3, 21 ];
+
+               case 23:
+                return [ 4, this.makeDelay(1) ];
+
+               case 24:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.RandomSo);
+                this.actionNhapNhay(this.getChildById(listIdResult[3]), 20, 2, true);
+                return [ 4, this.makeDelay(2) ];
+
+               case 25:
+                _a.sent();
+                this.soundMgn.stopEffect(this.soundMgn.RandomSo);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Bip) ];
+
+               case 26:
+                _a.sent();
+                this.offEffect(this.getChildById(listIdResult[4]));
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNo) ];
+
+               case 27:
+                _a.sent();
+                return [ 4, this.makeDelay(.5) ];
+
+               case 28:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectBassNho;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectBassNho;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectDapChuot: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0de85nK0ntPjYj5NYBF0wxQ", "EffectDapChuot");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectDapChuot = function(_super) {
+      __extends(EffectDapChuot, _super);
+      function EffectDapChuot() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectDapChuot.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var count, i, listItem, listIndexRun, z, length, i, num, nodeChild, z, length, i, num, nodeChild, listChildren;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                this.soundMgn.playEffect(this.soundMgn.StartDapChuot);
+                this.setColor(0);
+                count = 0;
+                i = 0;
+                _a.label = 1;
+
+               case 1:
+                if (!(i < 13)) return [ 3, 4 ];
+                listItem = this.getListRun()[count];
+                listItem.forEach(function(v) {
+                  _this.activeWithTime(v, .25);
+                });
+                count++;
+                count > 3 && (count = 0);
+                return [ 4, this.makeDelay(.27) ];
+
+               case 2:
+                _a.sent();
+                _a.label = 3;
+
+               case 3:
+                i++;
+                return [ 3, 1 ];
+
+               case 4:
+                listIndexRun = this.getIdIndexRun();
+                this.setColor(2);
+                z = 0;
+                _a.label = 5;
+
+               case 5:
+                if (!(z < 16)) return [ 3, 8 ];
+                length = listIndexRun.length;
+                for (i = 0; i < length; i++) {
+                  num = listIndexRun[i];
+                  nodeChild = this.getChildById(num);
+                  this.activeWithTime(nodeChild, .08);
+                  num++;
+                  num > 23 && (num = 0);
+                  listIndexRun[i] = num;
+                }
+                return [ 4, this.makeDelay(.08) ];
+
+               case 6:
+                _a.sent();
+                _a.label = 7;
+
+               case 7:
+                z++;
+                return [ 3, 5 ];
+
+               case 8:
+                z = 0;
+                _a.label = 9;
+
+               case 9:
+                if (!(z < 32)) return [ 3, 12 ];
+                length = listIndexRun.length;
+                for (i = 0; i < length; i++) {
+                  num = listIndexRun[i];
+                  nodeChild = this.getChildById(num);
+                  this.activeWithTime(nodeChild, .08);
+                  num--;
+                  num < 0 && (num = 23);
+                  listIndexRun[i] = num;
+                }
+                return [ 4, this.makeDelay(.08) ];
+
+               case 10:
+                _a.sent();
+                _a.label = 11;
+
+               case 11:
+                z++;
+                return [ 3, 9 ];
+
+               case 12:
+                this.setColor(1);
+                listChildren = this.getListChildren();
+                listChildren.forEach(function(v) {
+                  _this.actionNhapNhay(v, 10, 1.8);
+                });
+                return [ 4, this.makeDelay(1.9) ];
+
+               case 13:
+                _a.sent();
+                listChildren.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectDapChuot;
+    }(BaseEffect_1.default);
+    exports.default = EffectDapChuot;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectDoiMau: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "92151pYUFtBbYwtT60ge3Jo", "EffectDoiMau");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectDoiMau = function(_super) {
+      __extends(EffectDoiMau, _super);
+      function EffectDoiMau() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.dataXDV = null;
+        return _this;
+      }
+      EffectDoiMau.prototype.initData = function(data) {
+        this.dataXDV = data;
+        return this;
+      };
+      EffectDoiMau.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var result, moneyReviceDoiMau, nodeNhapNhayLb, listIdLastResult, listChild, isActive, i, temp, temp;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                result = this.dataXDV.result;
+                moneyReviceDoiMau = 0 == result ? this.dataXDV.reviceXanh : this.dataXDV.reviceDo;
+                nodeNhapNhayLb = 0 == result ? this.getNodeLbItemXDV(2) : this.getNodeLbItemXDV(0);
+                0 == result ? this.setColor(2) : this.setColor(0);
+                listIdLastResult = this.getIdListLastResutl();
+                listChild = this.getListChildren();
+                isActive = false;
+                this.soundMgn.playEffect(this.soundMgn.NhacDoiMau);
+                i = 0;
+                _a.label = 1;
+
+               case 1:
+                if (!(i < 80)) return [ 3, 4 ];
+                if (isActive) {
+                  listIdLastResult.forEach(function(v) {
+                    _this.activeIcon(_this.getChildById(v));
+                  });
+                  this.activeIcon(nodeNhapNhayLb);
+                  for (temp in listChild) listIdLastResult.includes(Number(temp)) || this.offItem(listChild[temp]);
+                } else {
+                  listIdLastResult.forEach(function(v) {
+                    _this.offItem(_this.getChildById(v));
+                  });
+                  this.offItem(nodeNhapNhayLb);
+                  for (temp in listChild) listIdLastResult.includes(Number(temp)) || this.activeIcon(listChild[temp]);
+                }
+                isActive = !isActive;
+                return [ 4, this.makeDelay(.1) ];
+
+               case 2:
+                _a.sent();
+                _a.label = 3;
+
+               case 3:
+                i++;
+                return [ 3, 1 ];
+
+               case 4:
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.AtOhh) ];
+
+               case 5:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NiChieuSangCieu) ];
+
+               case 6:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 7:
+                _a.sent();
+                if (!(0 == result)) return [ 3, 9 ];
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa) ];
+
+               case 8:
+                _a.sent();
+                return [ 3, 11 ];
+
+               case 9:
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauDo) ];
+
+               case 10:
+                _a.sent();
+                _a.label = 11;
+
+               case 11:
+                this.currentBtnTrai.setPointBy(moneyReviceDoiMau);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 12:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XaPe) ];
+
+               case 13:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.EndDoiMau) ];
+
+               case 14:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectDoiMau;
+    }(BaseEffect_1.default);
+    exports.default = EffectDoiMau;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectEndGame: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d3c209/dW5IebUTdgIeBUJT", "EffectEndGame");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var GAME_TYPE_1 = require("../../../../Scritps/Game/GAME_TYPE");
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectEndGame = function(_super) {
+      __extends(EffectEndGame, _super);
+      function EffectEndGame() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.dataNormal = null;
+        return _this;
+      }
+      EffectEndGame.prototype.intiData = function(data) {
+        this.dataNormal = data;
+        return this;
+      };
+      EffectEndGame.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var dataNormal, dataXDV, i, l, typeXDV, list;
+            var _this = this;
+            return __generator(this, function(_a) {
+              this.xengController.listBtnItem.forEach(function(v) {
+                _this.offItem(v.lbPoint.node);
+              });
+              this.xengController.listBtnXDV.forEach(function(v) {
+                _this.offItem(v.lbPoint.node);
+              });
+              dataNormal = this.dataNormal.makeBetNormal;
+              dataXDV = this.dataNormal.makebetXDV;
+              for (i = 0, l = dataNormal.ListObjReviceSub.length; i < l; i++) this.actionNhapNhay(this.getNodeLbItem(dataNormal.ListObjReviceSub[i].resultType), 30, 10, true);
+              this.actionNhapNhay(this.getNodeLbItem(dataNormal.objReviceFirtItem.resultType), 30, 10, true);
+              this.currentBtnTrai.setPoint(this.dataNormal.totalRevice);
+              typeXDV = dataXDV.result;
+              this.currentBtnTrai.point > 0 && this.runEffectNhapNhay(this.getNodeLbLeft(), 10, 30);
+              if (3 == typeXDV) {
+                this.runEffectNhapNhay(this.getNodeLbItemXDV(0), 10, 30);
+                this.runEffectNhapNhay(this.getNodeLbItemXDV(1), 10, 30);
+                this.runEffectNhapNhay(this.getNodeLbItemXDV(2), 10, 30);
+                this.pushIdXDVResult([ 0, 1, 2, 3, 4, 5 ]);
+              } else {
+                this.runEffectNhapNhay(this.getNodeLbItemXDV(typeXDV), 10, 30);
+                list = this.getListXDVWithType(typeXDV);
+                list.forEach(function(v) {
+                  _this.actionNhapNhay(_this.getChildXDVById(v), 30, 10, true);
+                });
+                this.pushIdXDVResult(list);
+              }
+              Windown_1.Windown.MoneyUser.removeDelay(GAME_TYPE_1.default.Xeng, false);
+              Windown_1.Windown.MoneyUser.pushDelayMoney(GAME_TYPE_1.default.Xeng, this.dataNormal.agXeng, this.dataNormal.totalRevice);
+              this.xengController.xengView.addNewHistory(dataXDV.result);
+              this.xengController.xengView.randomLbHeSoOGiua();
+              this.xengController.setCurrentState(StateGame_1.default.WATINGPLAYGAME);
+              resolve(null);
+              return [ 2 ];
+            });
+          });
+        });
+      };
+      EffectEndGame.prototype.getListXDVWithType = function(type) {
+        var list = [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ] ];
+        return list[type];
+      };
+      return EffectEndGame;
+    }(BaseEffect_1.default);
+    exports.default = EffectEndGame;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectEndNormal: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "7bc7efksOVP848xX35RUsxA", "EffectEndNormal");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectEndNormal = function(_super) {
+      __extends(EffectEndNormal, _super);
+      function EffectEndNormal() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectEndNormal.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                this.actionNhapNhay(this.getListLastResult()[0], 10, 2, true);
+                this.runEffectNhapNhay(this.getNodeLbItem(dataFirt.resultType), 2, 10);
+                this.soundMgn.playEffect(this.soundMgn.Item[dataFirt.resultType]);
+                return [ 4, this.makeDelay(2.1) ];
+
+               case 1:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectEndNormal;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectEndNormal;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectRan8Dot: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "1ac19rAVslLkLfOYU38kdOb", "EffectRan8Dot");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectRan8Dot = function(_super) {
+      __extends(EffectRan8Dot, _super);
+      function EffectRan8Dot() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectRan8Dot.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, idDuoiRan, count, listRan, i, temp, v, idPre, temp, v, idPre, temp, v, _i, listIdResultSub_1, temp;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                this.soundMgn.playEffect(this.soundMgn.TiengKen1);
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                idDuoiRan = this.dataFinishiItemNomarl.mutil;
+                this.actionNhapNhay(this.getChildById(4), 20, 4, true);
+                return [ 4, this.makeDelay(4.5) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiDapChuot) ];
+
+               case 2:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong);
+                count = 4;
+                listRan = [ 4 ];
+                i = 0;
+                _a.label = 3;
+
+               case 3:
+                if (!(i < 32)) return [ 3, 6 ];
+                for (temp in listRan) {
+                  v = listRan[temp];
+                  this.offEffect(this.getChildById(v));
+                  listRan[temp]++;
+                  listRan[temp] > 23 && (listRan[temp] = 0);
+                }
+                if (listRan.length < 8) listRan.unshift(4); else {
+                  idPre = listRan[0] - 1;
+                  idPre < 0 && (idPre = 23);
+                  this.offItem(this.getChildById(idPre));
+                }
+                return [ 4, this.makeDelay(1 / 30) ];
+
+               case 4:
+                _a.sent();
+                _a.label = 5;
+
+               case 5:
+                i++;
+                return [ 3, 3 ];
+
+               case 6:
+                false;
+                for (temp in listRan) {
+                  v = listRan[temp];
+                  this.offEffect(this.getChildById(v));
+                  listRan[temp]++;
+                  listRan[temp] > 23 && (listRan[temp] = 0);
+                }
+                idPre = listRan[0] - 1;
+                idPre < 0 && (idPre = 23);
+                this.offItem(this.getChildById(idPre));
+                if (listRan[0] == idDuoiRan) {
+                  this.soundMgn.stopEffect(this.soundMgn.ItemChay1Vong);
+                  return [ 3, 8 ];
+                }
+                return [ 4, this.makeDelay(1 / 30) ];
+
+               case 7:
+                _a.sent();
+                return [ 3, 6 ];
+
+               case 8:
+                for (temp in listRan) {
+                  v = listRan[temp];
+                  this.offEffect(this.getChildById(v));
+                }
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem) ];
+
+               case 9:
+                _a.sent();
+                return [ 4, this.makeDelay(1) ];
+
+               case 10:
+                _a.sent();
+                count = 0;
+                _i = 0, listIdResultSub_1 = listIdResultSub;
+                _a.label = 11;
+
+               case 11:
+                if (!(_i < listIdResultSub_1.length)) return [ 3, 14 ];
+                temp = listIdResultSub_1[_i];
+                this.pushIdResult(listRan[count]);
+                this.runEffectNhapNhay1Lan(this.getChildById(listRan[count]), .3);
+                temp.resultType > -1 && this.runEffectNhapNhay1Lan(this.getNodeLbItem(temp.resultType), .3);
+                this.currentBtnTrai.setPointBy(temp.moneyRevice);
+                count++;
+                count > 23 && (count = 0);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CongTien) ];
+
+               case 12:
+                _a.sent();
+                _a.label = 13;
+
+               case 13:
+                _i++;
+                return [ 3, 11 ];
+
+               case 14:
+                return [ 4, this.makeDelay(.5) ];
+
+               case 15:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectRan8Dot;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectRan8Dot;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectRunSpin: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8dd78Q911lGm5bCHGMTE88A", "EffectRunSpin");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectRunSpin = function(_super) {
+      __extends(EffectRunSpin, _super);
+      function EffectRunSpin() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.resultId = 10;
+        _this.totalRun = 0;
+        _this.countRun = 0;
+        _this.currentIdRun = 0;
+        _this.countOffActive = 4;
+        _this.lastIdXDV = 1;
+        _this.hesoNhanRunXDV = 1;
+        _this.resultIdXDV = 10;
+        _this.totalRunXDV = 0;
+        _this.countRunXDV = 0;
+        _this.idCacheXDV = 0;
+        _this.currentIdRunXDV = 0;
+        _this.countSubXDV = 0;
+        _this.isRuning = false;
+        _this.timeDelay = .15;
+        _this.timeUpdate = 0;
+        _this.funEnd = null;
+        _this.idTimeOut = null;
+        return _this;
+      }
+      EffectRunSpin.prototype.executed = function() {
+        throw new Error("Method not implemented.");
+      };
+      EffectRunSpin.prototype.spinWithId = function(id, typeXDV, isSpecial) {
+        return __awaiter(this, void 0, void 0, function() {
+          var listIdLastResult, lastId, countOffset2, listLastResult, objReturnCheck, idNeed;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              this.setColor(typeXDV);
+              isSpecial ? this.soundMgn.playEffect(this.soundMgn.SpinSpecial) : this.soundMgn.playEffect(this.soundMgn.SpinNormal);
+              listIdLastResult = this.getIdListLastResutl();
+              lastId = listIdLastResult[0];
+              null != lastId && void 0 != lastId || (lastId = 1);
+              this.timeDelay = .08;
+              this.countRun = 0;
+              this.resultId = id;
+              countOffset2 = 24 - lastId + id;
+              this.totalRun = 72 + countOffset2 % 24;
+              this.currentIdRun = lastId;
+              this.countOffActive = 4;
+              listLastResult = this.getListLastResult();
+              listLastResult.forEach(function(v) {
+                _this.actionNhapNhay(v, 3, .5);
+              });
+              this.resultIdXDV = typeXDV;
+              objReturnCheck = this.getIdXDVWithTotal(this.totalRun);
+              idNeed = this.getIdResultXDV(typeXDV > 2 ? 2 : typeXDV);
+              this.countSubXDV = this.getCountSub(objReturnCheck.id, idNeed, objReturnCheck.heSoNhan);
+              return [ 4, this.makeDelay(.5) ];
+
+             case 1:
+              _a.sent();
+              listLastResult.forEach(function(v) {
+                _this.offItem(v);
+              });
+              this.activeIcon(this.getChildById(lastId));
+              this.isRuning = true;
+              this.xengController.xengView.funUpdate = function(dt) {
+                _this.isRuning ? _this.update(dt) : _this.xengController.xengView.funUpdate = null;
+              };
+              return [ 4, this.endSpinFun() ];
+
+             case 2:
+              _a.sent();
+              return [ 4, this.makeDelay(1) ];
+
+             case 3:
+              _a.sent();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      EffectRunSpin.prototype.endSpinFun = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          _this.funEnd = resolve;
+        });
+      };
+      EffectRunSpin.prototype.getIdXDVWithTotal = function(total) {
+        var objReturn = Object.create(null);
+        var cache = this.hesoNhanRunXDV;
+        var id = this.currentIdRunXDV;
+        for (var i = 0; i < total; i++) {
+          id += cache;
+          if (id > 5) {
+            id = 5;
+            cache *= -1;
+          }
+          if (id < 0) {
+            id = 0;
+            cache *= -1;
+          }
+        }
+        objReturn.id = id;
+        objReturn.heSoNhan = cache;
+        return objReturn;
+      };
+      EffectRunSpin.prototype.getIdResultXDV = function(type) {
+        return this.getListXDVWithType(type)[Windown_1.Windown.RandomNumber(0, 2)];
+      };
+      EffectRunSpin.prototype.getListXDVWithType = function(type) {
+        var list = [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ] ];
+        return list[type];
+      };
+      EffectRunSpin.prototype.getCountSub = function(input, need, heso) {
+        var _heso = heso;
+        var count = 0;
+        while (true) {
+          if (input == need) return count;
+          count++;
+          input -= _heso;
+          if (input < 0 || input > 5) {
+            input < 0 && (input = 0);
+            input > 5 && (input = 5);
+            _heso *= -1;
+          }
+        }
+      };
+      EffectRunSpin.prototype.checkStateRun = function() {
+        var isReturn = true;
+        this.countRun >= this.totalRun && (isReturn = false);
+        return isReturn;
+      };
+      EffectRunSpin.prototype.runSpin = function() {
+        this.randomLbHeSo();
+        var indexOff = this.getIdOffWithRun(this.countOffActive);
+        if (this.countRun > 3) {
+          var node1 = this.getChildById(indexOff);
+          this.offItem(node1);
+        }
+        this.countRun++;
+        this.activeIcon(this.getChildById(this.currentIdRun));
+        if (this.countRun == this.totalRun - 9) {
+          this.offItem(this.getChildById(this.getIdOffWithRun(3)));
+          this.offItem(this.getChildById(this.getIdOffWithRun(2)));
+          this.offItem(this.getChildById(this.getIdOffWithRun(1)));
+          this.countOffActive = 1;
+        }
+        3 == this.countRun && (this.timeDelay = .08);
+        6 == this.countRun && (this.timeDelay = .062);
+        9 == this.countRun && (this.timeDelay = .02);
+        this.countRun == this.totalRun - 3 && (this.timeDelay = .08);
+        this.currentIdRun++;
+        this.currentIdRun > 23 && (this.currentIdRun = 0);
+        if (this.countRun > 9 && this.countSubXDV > 0 && this.countRun % 6 == 3) {
+          this.countSubXDV--;
+          return;
+        }
+        this.countRun > 0 && this.offItem(this.getChildXDVById(this.idCacheXDV));
+        this.activeIcon(this.getChildXDVById(this.currentIdRunXDV));
+        if (this.currentIdRunXDV > 2) {
+          this.offItem(this.getLightMid(0));
+          this.activeIcon(this.getLightMid(1));
+        } else {
+          this.offItem(this.getLightMid(1));
+          this.activeIcon(this.getLightMid(0));
+        }
+        this.idCacheXDV = this.currentIdRunXDV;
+        this.currentIdRunXDV += this.hesoNhanRunXDV;
+        if (this.currentIdRunXDV > 5) {
+          this.currentIdRunXDV = 5;
+          this.hesoNhanRunXDV *= -1;
+        }
+        if (this.currentIdRunXDV < 0) {
+          this.currentIdRunXDV = 0;
+          this.hesoNhanRunXDV *= -1;
+        }
+      };
+      EffectRunSpin.prototype.endSpin = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            this.resetIdResult();
+            this.resetIdXDVResult();
+            this.pushIdResult(this.resultId);
+            this.isRuning = false;
+            this.offItem(this.getChildById(this.getIdOffWithRun(1)));
+            this.activeIcon(this.getChildById(this.currentIdRun));
+            this.offItem(this.getChildXDVById(this.idCacheXDV));
+            if (3 == this.resultIdXDV) {
+              this.getListXDV().forEach(function(v) {
+                _this.actionNhapNhay(v, 40, 12);
+              });
+              this.getListLightMid().forEach(function(v) {
+                _this.actionNhapNhay(v, 40, 12);
+              });
+            } else {
+              this.activeIcon(this.getLightMid(this.currentIdRunXDV > 2 ? 1 : 0));
+              this.activeIcon(this.getChildXDVById(this.currentIdRunXDV));
+            }
+            this.soundMgn.stopEffect(this.soundMgn.SpinNormal);
+            this.soundMgn.stopEffect(this.soundMgn.SpinSpecial);
+            this.funEnd();
+            return [ 2 ];
+          });
+        });
+      };
+      EffectRunSpin.prototype.getIdOffWithRun = function(count) {
+        var id = this.currentIdRun - count;
+        id < 0 && (id = 24 + id);
+        return id;
+      };
+      EffectRunSpin.prototype.update = function(dt) {
+        return __awaiter(this, void 0, void 0, function() {
+          return __generator(this, function(_a) {
+            if (!this.isRuning) return [ 2 ];
+            this.timeUpdate += dt;
+            if (this.timeUpdate < this.timeDelay) return [ 2 ];
+            this.timeUpdate = 0;
+            this.checkStateRun() ? this.runSpin() : this.endSpin();
+            return [ 2 ];
+          });
+        });
+      };
+      return EffectRunSpin;
+    }(BaseEffect_1.default);
+    exports.default = EffectRunSpin;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectSpecial14: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "e3fc9nsyiFP9oWDXAn2AVVB", "EffectSpecial14");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial14 = function(_super) {
+      __extends(EffectSpecial14, _super);
+      function EffectSpecial14() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial14.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objSub, count, i, total, i, i;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                this.soundMgn.playEffect(this.soundMgn.TiengKen1);
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objSub = listIdResultSub[0];
+                this.actionNhapNhay(this.getChildById(20), 20, 4, true);
+                return [ 4, this.makeDelay(4.5) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CuocKhungHoang) ];
+
+               case 2:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong);
+                count = 20;
+                i = 0;
+                _a.label = 3;
+
+               case 3:
+                if (!(i < 24)) return [ 3, 6 ];
+                count++;
+                count > 23 && (count = 0);
+                this.offEffect(this.getChildById(count));
+                return [ 4, this.makeDelay(2.8 / 24) ];
+
+               case 4:
+                _a.sent();
+                _a.label = 5;
+
+               case 5:
+                i++;
+                return [ 3, 3 ];
+
+               case 6:
+                total = 0;
+                listIdResultSub.forEach(function(v) {
+                  total += v.moneyRevice;
+                });
+                this.currentBtnTrai.setPointBy(total);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.HieuUngAnTatCaCacCua) ];
+
+               case 7:
+                _a.sent();
+                this.getListChildren().forEach(function(v) {
+                  _this.actionNhapNhay(v, 5, 1, true);
+                });
+                i = 0;
+                _a.label = 8;
+
+               case 8:
+                if (!(i < 5)) return [ 3, 11 ];
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                return [ 4, this.makeDelay(.2) ];
+
+               case 9:
+                _a.sent();
+                _a.label = 10;
+
+               case 10:
+                i++;
+                return [ 3, 8 ];
+
+               case 11:
+                this.resetIdResult();
+                for (i = 0; i < 24; i++) this.pushIdResult(i);
+                return [ 4, this.makeDelay(1) ];
+
+               case 12:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial14;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial14;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial2: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "6c74c1H8oVClq0RIHmB/fXm", "EffectSpecial2");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial2 = function(_super) {
+      __extends(EffectSpecial2, _super);
+      function EffectSpecial2() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial2.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objSub, listIdLastResult, currentIdRun, idResult, lastIdResult, heso, curIdResule;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objSub = listIdResultSub[0];
+                this.soundMgn.playEffect(this.soundMgn.TiengKen1);
+                listIdLastResult = this.getIdListLastResutl();
+                currentIdRun = listIdLastResult[0];
+                this.actionNhapNhay(this.getChildById(currentIdRun), 20, 4, true);
+                return [ 4, this.makeDelay(4.5) ];
+
+               case 1:
+                _a.sent();
+                this.soundMgn.stopEffect(this.soundMgn.TiengKen1);
+                idResult = objSub.idResult;
+                this.pushIdResult(idResult);
+                lastIdResult = -1;
+                heso = 6 == currentIdRun ? -1 : 1;
+                curIdResule = currentIdRun;
+                _a.label = 2;
+
+               case 2:
+                false;
+                this.soundMgn.playEffect(this.soundMgn.Bip);
+                -1 != lastIdResult && this.offItem(this.getChildById(lastIdResult));
+                this.activeIcon(this.getChildById(curIdResule));
+                if (!(curIdResule == idResult)) return [ 3, 5 ];
+                return [ 4, this.makeDelay(1) ];
+
+               case 3:
+                _a.sent();
+                cc.log("objSub.result: " + idResult);
+                this.actionNhapNhay(this.getChildById(idResult), 10, 2, true);
+                this.runEffectNhapNhay(this.getNodeLbItem(objSub.resultType), 2, 10);
+                this.soundMgn.playEffect(this.soundMgn.Item[objSub.resultType]);
+                return [ 4, this.makeDelay(2) ];
+
+               case 4:
+                _a.sent();
+                resolve(null);
+                return [ 3, 7 ];
+
+               case 5:
+                lastIdResult = curIdResule;
+                curIdResule += heso;
+                -1 == heso ? -1 == curIdResule && (curIdResule = 23) : 24 == curIdResule && (curIdResule = 0);
+                return [ 4, this.makeDelay(.08) ];
+
+               case 6:
+                _a.sent();
+                return [ 3, 2 ];
+
+               case 7:
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial2;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial2;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial3: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "da396oEJxpNiLDbpR2nmWlf", "EffectSpecial3");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial3 = function(_super) {
+      __extends(EffectSpecial3, _super);
+      function EffectSpecial3() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial3.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objSub, isJpActive, count, idResult, firtIdResult;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objSub = listIdResultSub[0];
+                this.soundMgn.playEffect(this.soundMgn.RandomSo);
+                isJpActive = false;
+                count = 0;
+                idResult = objSub.idResult;
+                this.pushIdResult(idResult);
+                firtIdResult = this.getIdListLastResutl()[0];
+                _a.label = 1;
+
+               case 1:
+                false;
+                if (!(6 == count)) return [ 3, 5 ];
+                this.soundMgn.stopEffect(this.soundMgn.RandomSo);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Bip) ];
+
+               case 2:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                this.offItem(this.getNodeJp());
+                this.activeIcon(this.getChildById(idResult));
+                return [ 4, this.makeDelay(2) ];
+
+               case 3:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Item[objSub.resultType]) ];
+
+               case 4:
+                _a.sent();
+                resolve(null);
+                return [ 3, 7 ];
+
+               case 5:
+                if (isJpActive) {
+                  this.offItem(this.getNodeJp());
+                  this.activeIcon(this.getChildById(firtIdResult));
+                } else {
+                  this.activeIcon(this.getNodeJp());
+                  this.offItem(this.getChildById(firtIdResult));
+                }
+                isJpActive = !isJpActive;
+                count++;
+                return [ 4, this.makeDelay(.1) ];
+
+               case 6:
+                _a.sent();
+                return [ 3, 1 ];
+
+               case 7:
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial3;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial3;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial4: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "eb0cdCraxdEWb2A5VfvK7rI", "EffectSpecial4");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial4 = function(_super) {
+      __extends(EffectSpecial4, _super);
+      function EffectSpecial4() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial4.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objSub, listIdRandom, currentIdRandom, lastId, idResult;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objSub = listIdResultSub[0];
+                listIdRandom = [ 3, 9, 11, 14, 17, 22 ];
+                Windown_1.Windown.shuffle(listIdRandom);
+                currentIdRandom = 0;
+                lastId = -1;
+                idResult = objSub.idResult;
+                this.pushIdResult(idResult);
+                _a.label = 1;
+
+               case 1:
+                false;
+                if (!(currentIdRandom == listIdRandom.length)) return [ 3, 4 ];
+                -1 != lastId && this.offItem(this.getChildById(listIdRandom[lastId]));
+                this.activeIcon(this.getChildById(idResult));
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                return [ 4, this.makeDelay(2) ];
+
+               case 2:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Item[objSub.resultType]) ];
+
+               case 3:
+                _a.sent();
+                resolve(null);
+                return [ 3, 6 ];
+
+               case 4:
+                this.soundMgn.playEffect(this.soundMgn.Hu);
+                -1 != lastId && this.offItem(this.getChildById(listIdRandom[lastId]));
+                this.activeIcon(this.getChildById(listIdRandom[currentIdRandom]));
+                lastId = currentIdRandom;
+                currentIdRandom++;
+                return [ 4, this.makeDelay(.5) ];
+
+               case 5:
+                _a.sent();
+                return [ 3, 1 ];
+
+               case 6:
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial4;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial4;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0,
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial5: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "fccb2itoa5I25vSDjMSwOJS", "EffectSpecial5");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial5 = function(_super) {
+      __extends(EffectSpecial5, _super);
+      function EffectSpecial5() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial5.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objReviceSub, resultSub, mutil;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objReviceSub = listIdResultSub[0];
+                resultSub = objReviceSub.resultType;
+                mutil = objReviceSub.hesoX;
+                this.runEffectNhapNhay(this.getNodeLbItem(dataFirt.resultType), 6, 30);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau) ];
+
+               case 1:
+                _a.sent();
+                this.runEffectRandomLabelHesoSpecial();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.RandomSo) ];
+
+               case 2:
+                _a.sent();
+                this.offEffectRandomLabelHeso(mutil);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 3:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 4:
+                _a.sent();
+                this.runEffectNhapNhay(this.getNodeLbItem(resultSub), 3, 15);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Item[resultSub]) ];
+
+               case 5:
+                _a.sent();
+                return [ 4, this.makeDelay(1) ];
+
+               case 6:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial5;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial5;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial6: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c21fcy1tNdB8qc4G3Nv+0GI", "EffectSpecial6");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial6 = function(_super) {
+      __extends(EffectSpecial6, _super);
+      function EffectSpecial6() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial6.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, i, l, mutil, i;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                this.actionNhapNhay(this.getListLastResult()[0], 50, 10, true);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.EffectAnRandomItemNhoSau) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiTraDiem) ];
+
+               case 2:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem) ];
+
+               case 3:
+                _a.sent();
+                return [ 4, this.makeDelay(1) ];
+
+               case 4:
+                _a.sent();
+                i = 0, l = listIdResultSub.length;
+                _a.label = 5;
+
+               case 5:
+                if (!(i < l)) return [ 3, 8 ];
+                this.runEffectNhapNhay1Lan(this.getNodeLbItem(i), .3);
+                this.currentBtnTrai.setPointBy(listIdResultSub[i].moneyRevice);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CongTien) ];
+
+               case 6:
+                _a.sent();
+                _a.label = 7;
+
+               case 7:
+                i++;
+                return [ 3, 5 ];
+
+               case 8:
+                this.actionNhapNhay(this.getListLastResult()[0], 12.5, 2.5, true);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiTraDiemXong) ];
+
+               case 9:
+                _a.sent();
+                this.setStringLbHeSo(0);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NhacNenTraDiem) ];
+
+               case 10:
+                _a.sent();
+                return [ 4, this.makeDelay(10) ];
+
+               case 11:
+                _a.sent();
+                mutil = data.mutil;
+                i = 0;
+                _a.label = 12;
+
+               case 12:
+                if (!(i < mutil)) return [ 3, 15 ];
+                this.setStringLbHeSo(i + 1);
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                this.currentBtnTrai.setPointBy(10);
+                return [ 4, this.makeDelay(.45) ];
+
+               case 13:
+                _a.sent();
+                _a.label = 14;
+
+               case 14:
+                i++;
+                return [ 3, 12 ];
+
+               case 15:
+                return [ 4, this.makeDelay(2.5) ];
+
+               case 16:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial6;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial6;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpecial7: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "2d481KQRd5LSpiHzuUPtdmL", "EffectSpecial7");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpecial7 = function(_super) {
+      __extends(EffectSpecial7, _super);
+      function EffectSpecial7() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpecial7.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, listIdLastResult, count1, count2, heso1, heso2, i, listChildren, i, l, type, money;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                listIdLastResult = this.getIdListLastResutl();
+                this.actionNhapNhay(this.getChildById(listIdLastResult[0]), 20, 2.5);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem) ];
+
+               case 1:
+                _a.sent();
+                this.offEffect(this.getChildById(listIdLastResult[0]));
+                this.soundMgn.playEffect(this.soundMgn.ChayItem);
+                count1 = listIdLastResult[0];
+                count2 = count1;
+                heso1 = 1;
+                6 == count1 && (heso1 = -1);
+                6 == count1 ? this.pushIdResult(18) : this.pushIdResult(6);
+                heso2 = -1 * heso1;
+                i = 0;
+                _a.label = 2;
+
+               case 2:
+                if (!(i < 12)) return [ 3, 5 ];
+                count1 += heso1;
+                count2 += heso2;
+                count1 > 23 ? count1 = 0 : count1 < 0 && (count1 = 23);
+                count2 > 23 ? count2 = 0 : count2 < 0 && (count2 = 23);
+                this.activeIcon(this.getChildById(count1));
+                this.activeIcon(this.getChildById(count2));
+                return [ 4, this.makeDelay(1.7 / 12) ];
+
+               case 3:
+                _a.sent();
+                _a.label = 4;
+
+               case 4:
+                i++;
+                return [ 3, 2 ];
+
+               case 5:
+                listChildren = this.getListChildren();
+                listChildren.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                this.getIdListLastResutl().forEach(function(v) {
+                  _this.activeIcon(_this.getChildById(v));
+                });
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNo) ];
+
+               case 6:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiDapChuot) ];
+
+               case 7:
+                _a.sent();
+                this.getListNodeLbItem().forEach(function(v) {
+                  _this.offItem(v);
+                });
+                i = 0, l = listIdResultSub.length;
+                _a.label = 8;
+
+               case 8:
+                if (!(i < l)) return [ 3, 14 ];
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.RandomSo) ];
+
+               case 9:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Bip) ];
+
+               case 10:
+                _a.sent();
+                type = listIdResultSub[i].resultType;
+                money = listIdResultSub[i].moneyRevice;
+                this.currentBtnTrai.setPointBy(money);
+                this.activeWithTime(this.getNodeLbItem(type), 1);
+                return [ 4, this.makeDelay(1) ];
+
+               case 11:
+                _a.sent();
+                this.actionNhapNhay(this.getNodeLbItem(type), 8, .9, false);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TuNaiXa) ];
+
+               case 12:
+                _a.sent();
+                _a.label = 13;
+
+               case 13:
+                i++;
+                return [ 3, 8 ];
+
+               case 14:
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MiOLa) ];
+
+               case 15:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi) ];
+
+               case 16:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectSpecial7;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpecial7;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectSpineSoXo: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d5a42g4Ms1GC6Em6K/255QA", "EffectSpineSoXo");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectEnd_1 = require("./BaseEffectEnd");
+    var EffectSpineSoXo = function(_super) {
+      __extends(EffectSpineSoXo, _super);
+      function EffectSpineSoXo() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectSpineSoXo.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var data, dataFirt, typeSpecial, listIdResultSub, objReviceSub, id, type, listChildren, listChildXoSo, count, i, countRunToIdResult, currentCount, i, l, mutil, money, i, l;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                data = this.dataFinishiItemNomarl;
+                dataFirt = data.objReviceFirtItem;
+                typeSpecial = data.typeSpecial;
+                listIdResultSub = data.ListObjReviceSub;
+                objReviceSub = listIdResultSub[0];
+                id = objReviceSub.idResult;
+                type = objReviceSub.resultType;
+                listChildren = this.getListChildren();
+                this.actionNhapNhay(listChildren[16], 16, 4.7);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Woa) ];
+
+               case 2:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.ThingKaiSun) ];
+
+               case 3:
+                _a.sent();
+                listChildXoSo = this.getListXoSo();
+                this.actionNhapNhay(listChildXoSo[5], 15, 2.3);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TingTingDt) ];
+
+               case 4:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong);
+                count = 5;
+                i = 0;
+                _a.label = 5;
+
+               case 5:
+                if (!(i < 8)) return [ 3, 8 ];
+                this.activeWithTime(this.getChildXoSoById(count), 1.2);
+                return [ 4, this.makeDelay(.15) ];
+
+               case 6:
+                _a.sent();
+                count++;
+                count > 7 && (count = 0);
+                _a.label = 7;
+
+               case 7:
+                i++;
+                return [ 3, 5 ];
+
+               case 8:
+                return [ 4, this.makeDelay(1.2) ];
+
+               case 9:
+                _a.sent();
+                countRunToIdResult = this.getCountRunSoXo(5, id);
+                currentCount = 5;
+                i = 0, l = countRunToIdResult + 1;
+                _a.label = 10;
+
+               case 10:
+                if (!(i < l)) return [ 3, 13 ];
+                this.soundMgn.playEffect(this.soundMgn.NextSoXo);
+                this.activeWithTime(this.getChildXoSoById(currentCount), 1.1);
+                currentCount++;
+                currentCount > 7 && (currentCount = 0);
+                return [ 4, this.makeDelay(1.1) ];
+
+               case 11:
+                _a.sent();
+                _a.label = 12;
+
+               case 12:
+                i++;
+                return [ 3, 10 ];
+
+               case 13:
+                this.offEffect(this.getChildXoSoById(id));
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.AtOhh) ];
+
+               case 14:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi) ];
+
+               case 15:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 16:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 17:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.Item[type]);
+                this.actionNhapNhay(this.getChildXoSoById(id), 18, 3.8, true);
+                return [ 4, this.makeDelay(4.1) ];
+
+               case 18:
+                _a.sent();
+                if (0 == objReviceSub.moneyRevice) {
+                  resolve(null);
+                  return [ 2 ];
+                }
+                this.soundMgn.playEffect(this.soundMgn.ShowHeSoRandom);
+                mutil = objReviceSub.hesoX;
+                money = objReviceSub.moneyRevice / mutil;
+                this.setStringLbHeSo(mutil);
+                this.runEffectNhapNhay(this.getNodeLbHeso(), 7.3, 32);
+                this.runEffectNhapNhay(this.getNodeLbLeft(), 7.3, 32);
+                return [ 4, this.makeDelay(7.3) ];
+
+               case 19:
+                _a.sent();
+                i = 0, l = mutil;
+                _a.label = 20;
+
+               case 20:
+                if (!(i < l)) return [ 3, 23 ];
+                mutil--;
+                this.setStringLbHeSo(mutil);
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                this.currentBtnTrai.setPointBy(money);
+                return [ 4, this.makeDelay(.45) ];
+
+               case 21:
+                _a.sent();
+                _a.label = 22;
+
+               case 22:
+                i++;
+                return [ 3, 20 ];
+
+               case 23:
+                return [ 4, this.makeDelay(1) ];
+
+               case 24:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      EffectSpineSoXo.prototype.getCountRunSoXo = function(idStart, idResult) {
+        var count = 0;
+        while (true) {
+          if (idStart == idResult) return count + 8;
+          count++;
+          idStart++;
+          idStart > 7 && (idStart = 0);
+        }
+      };
+      return EffectSpineSoXo;
+    }(BaseEffectEnd_1.default);
+    exports.default = EffectSpineSoXo;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectEnd": "BaseEffectEnd"
+  } ],
+  EffectTraDiem: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "89a67rxmGZOjLzaQw11ElS+", "EffectTraDiem");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectTraDiem = function(_super) {
+      __extends(EffectTraDiem, _super);
+      function EffectTraDiem() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectTraDiem.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var listLastIdResult, listChildren, listColor, countColor, i;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                this.soundMgn.playEffect(this.soundMgn.BatDauQuayTraDiem);
+                listLastIdResult = this.getListLastResult();
+                listLastIdResult.forEach(function(v) {
+                  _this.actionNhapNhay(v, 20, 3.2);
+                });
+                return [ 4, this.makeDelay(3) ];
+
+               case 1:
+                _a.sent();
+                listChildren = this.getListChildren();
+                listChildren.forEach(function(v) {
+                  _this.activeIcon(v);
+                });
+                listColor = [ 0, 2, 1 ];
+                countColor = 0;
+                i = 0;
+                _a.label = 2;
+
+               case 2:
+                if (!(i < 18)) return [ 3, 5 ];
+                this.setColor(listColor[countColor]);
+                countColor++;
+                countColor > listColor.length - 1 && (countColor = 0);
+                return [ 4, this.makeDelay(.2) ];
+
+               case 3:
+                _a.sent();
+                _a.label = 4;
+
+               case 4:
+                i++;
+                return [ 3, 2 ];
+
+               case 5:
+                return [ 4, this.makeDelay(1) ];
+
+               case 6:
+                _a.sent();
+                listChildren.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                this.getListLastResult().forEach(function(v) {
+                  _this.activeIcon(v);
+                });
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectTraDiem;
+    }(BaseEffect_1.default);
+    exports.default = EffectTraDiem;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectVe3CuaXDV: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b43ce1f9GRFeLHCLyvkL+0W", "EffectVe3CuaXDV");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectXDVEnd_1 = require("./BaseEffectXDVEnd");
+    var EffectVe3CuaXDV = function(_super) {
+      __extends(EffectVe3CuaXDV, _super);
+      function EffectVe3CuaXDV() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectVe3CuaXDV.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var typeXDV, typeSpecialXDV, mutil;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                typeXDV = this.dataFinishXDV.result;
+                typeSpecialXDV = this.dataFinishXDV.typeSpecial;
+                mutil = this.dataFinishXDV.mutilVang;
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauDo) ];
+
+               case 2:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa) ];
+
+               case 3:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauVang) ];
+
+               case 4:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CuocKhungHoang) ];
+
+               case 5:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.DonDap) ];
+
+               case 6:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 7:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauDo) ];
+
+               case 8:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 9:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XaPe) ];
+
+               case 10:
+                _a.sent();
+                this.hideWithTimeFadeIn(this.getChildXDVById(0), .3, 0);
+                this.hideWithTimeFadeIn(this.getChildXDVById(1), .3, 0);
+                this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(0), .3);
+                this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceDo);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CongTien) ];
+
+               case 11:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa) ];
+
+               case 12:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 13:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XaPe) ];
+
+               case 14:
+                _a.sent();
+                this.hideWithTimeFadeIn(this.getChildXDVById(4), .3, 0);
+                this.hideWithTimeFadeIn(this.getChildXDVById(5), .3, 0);
+                this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(2), .3);
+                this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceXanh);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CongTien) ];
+
+               case 15:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauVang) ];
+
+               case 16:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 17:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XiPe) ];
+
+               case 18:
+                _a.sent();
+                this.hideWithTimeFadeIn(this.getChildXDVById(2), .3, 0);
+                this.hideWithTimeFadeIn(this.getChildXDVById(3), .3, 0);
+                this.runEffectNhapNhay1Lan(this.getNodeLbItemXDV(1), .3);
+                this.currentBtnTrai.setPointBy(this.dataFinishXDV.reviceVang);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CongTien) ];
+
+               case 19:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectVe3CuaXDV;
+    }(BaseEffectXDVEnd_1.default);
+    exports.default = EffectVe3CuaXDV;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectXDVEnd": "BaseEffectXDVEnd"
+  } ],
+  EffectVeBar: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "bcf579zIZNB3bDv4p0yaPxG", "EffectVeBar");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./BaseEffect");
+    var EffectVeBar = function(_super) {
+      __extends(EffectVeBar, _super);
+      function EffectVeBar() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectVeBar.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var listIndexBassNho1, listIndexBassNho2, listChild, isActive, i;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                listIndexBassNho1 = [ 20, 21, 22, 2, 3, 4, 8, 9, 10, 14, 15, 16 ];
+                listIndexBassNho2 = [ 17, 18, 19, 23, 0, 1, 5, 6, 7, 11, 12, 13 ];
+                this.soundMgn.playEffect(this.soundMgn.NhacVeBar);
+                listChild = this.getListChildren();
+                isActive = true;
+                i = 0;
+                _a.label = 1;
+
+               case 1:
+                if (!(i < 25)) return [ 3, 4 ];
+                if (isActive) {
+                  listIndexBassNho1.forEach(function(v) {
+                    _this.offEffect(listChild[v]);
+                  });
+                  listIndexBassNho2.forEach(function(v) {
+                    _this.offItem(listChild[v]);
+                  });
+                } else {
+                  listIndexBassNho1.forEach(function(v) {
+                    _this.offItem(listChild[v]);
+                  });
+                  listIndexBassNho2.forEach(function(v) {
+                    _this.offEffect(listChild[v]);
+                  });
+                }
+                isActive = !isActive;
+                return [ 4, this.makeDelay(.3) ];
+
+               case 2:
+                _a.sent();
+                _a.label = 3;
+
+               case 3:
+                i++;
+                return [ 3, 1 ];
+
+               case 4:
+                return [ 4, this.makeDelay(.2) ];
+
+               case 5:
+                _a.sent();
+                listChild.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectVeBar;
+    }(BaseEffect_1.default);
+    exports.default = EffectVeBar;
+    cc._RF.pop();
+  }, {
+    "./BaseEffect": "BaseEffect"
+  } ],
+  EffectVeVang: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ce7a50KFcRHZYb8+kbfoMxD", "EffectVeVang");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectXDVEnd_1 = require("./BaseEffectXDVEnd");
+    var EffectVeVang = function(_super) {
+      __extends(EffectVeVang, _super);
+      function EffectVeVang() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectVeVang.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var typeXDV, typeSpecialXDV, mutil, i;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                typeXDV = this.dataFinishXDV.result;
+                typeSpecialXDV = this.dataFinishXDV.typeSpecial;
+                mutil = this.dataFinishXDV.mutilVang;
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang) ];
+
+               case 1:
+                _a.sent();
+                this.runEffectRandomLabelHeso(10, 31);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.RandomSo) ];
+
+               case 2:
+                _a.sent();
+                this.offEffectRandomLabelHeso(mutil);
+                i = 0;
+                _a.label = 3;
+
+               case 3:
+                if (!(i < 3)) return [ 3, 6 ];
+                this.runEffectActiveAndHideWithTime(this.getNodeLbHeso(), .1);
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                return [ 4, this.makeDelay(.2) ];
+
+               case 4:
+                _a.sent();
+                _a.label = 5;
+
+               case 5:
+                i++;
+                return [ 3, 3 ];
+
+               case 6:
+                this.offEffect(this.getNodeLbHeso());
+                return [ 4, this.makeDelay(1) ];
+
+               case 7:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiKhiVeVang) ];
+
+               case 8:
+                _a.sent();
+                resolve(null);
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return EffectVeVang;
+    }(BaseEffectXDVEnd_1.default);
+    exports.default = EffectVeVang;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectXDVEnd": "BaseEffectXDVEnd"
+  } ],
+  EffectX8ChuyenMau: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b559687TExO4oZcB6rm5Wlx", "EffectX8ChuyenMau");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectXDVEnd_1 = require("./BaseEffectXDVEnd");
+    var EffectX8ChuyenMau = function(_super) {
+      __extends(EffectX8ChuyenMau, _super);
+      function EffectX8ChuyenMau() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      EffectX8ChuyenMau.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var typeXDV, typeSpecialXDV, mutil;
+            return __generator(this, function(_a) {
+              typeXDV = this.dataFinishXDV.result;
+              typeSpecialXDV = this.dataFinishXDV.typeSpecial;
+              mutil = this.dataFinishXDV.mutilVang;
+              return [ 2 ];
+            });
+          });
+        });
+      };
+      return EffectX8ChuyenMau;
+    }(BaseEffectXDVEnd_1.default);
+    exports.default = EffectX8ChuyenMau;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectXDVEnd": "BaseEffectXDVEnd"
+  } ],
+  IDataFinish: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "1bde2Gu7V1GHrvpCDs92NiA", "IDataFinish");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    cc._RF.pop();
+  }, {} ],
+  IServerResponse: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "7e101/DKHhES7RN+6nIlRTy", "IServerResponse");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var IServerResponse = function() {
+      function IServerResponse() {
+        Windown_1.Windown.XengController.canSendData(true);
+      }
+      IServerResponse.prototype.getGameController = function() {
+        return Windown_1.Windown.XengController;
+      };
+      IServerResponse.prototype.setGameView = function(gv) {
+        this.xengController = gv;
+      };
+      IServerResponse.prototype.sendToServer = function(event, SFSObject) {
+        this.xengController.sendToServer(event, SFSObject);
+      };
+      return IServerResponse;
+    }();
+    exports.default = IServerResponse;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Windown": void 0
+  } ],
+  ResponseBetToNho: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "46827RwI3lN3ZbgJ27Qa68X", "ResponseBetToNho");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var GAME_TYPE_1 = require("../../../../Scritps/Game/GAME_TYPE");
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var StateGame_1 = require("../State/StateGame");
+    var IServerResponse_1 = require("./IServerResponse");
+    var ResponseBetToNho = function(_super) {
+      __extends(ResponseBetToNho, _super);
+      function ResponseBetToNho() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.soundMgn = null;
+        return _this;
+      }
+      ResponseBetToNho.prototype.handleResponse = function(SFSObject) {
+        this.soundMgn = this.getSoundMng();
+        var data = null;
+        try {
+          data = JSON.parse(SFSObject.getUtfString("data"));
+        } catch (e) {}
+        if (null == data) return;
+        cc.log(JSON.stringify(data));
+        var result = data.result;
+        var listMoney = data.listRevice;
+        var totalRevice = 0;
+        for (var _i = 0, listMoney_1 = listMoney; _i < listMoney_1.length; _i++) {
+          var money = listMoney_1[_i];
+          totalRevice += money;
+        }
+        this.getGameController().moneyCurrent = data.agXeng;
+        Windown_1.Windown.MoneyUser.pushDelayMoney(GAME_TYPE_1.default.Xeng, data.agXeng, totalRevice);
+        this.getGameController().xengView.offEffectRandomLabelHeso(result);
+        if (true == data.isSpecial) {
+          var count = 0;
+          var moneyTemp = listMoney[count];
+          1 == listMoney.length ? this.runEffectXTonho7Lan(moneyTemp) : this.runEffectXTonhoMutil(data.listRevice);
+        } else this.effectNormal(listMoney[0] || 0);
+      };
+      ResponseBetToNho.prototype.effectNormal = function(money) {
+        return __awaiter(this, void 0, void 0, function() {
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.SangHao) ];
+
+             case 1:
+              _a.sent();
+              return [ 4, this.getGameController().makeDelay(.5) ];
+
+             case 2:
+              _a.sent();
+              this.getGameController().btnChangePointL.setPoint(money);
+              if (money > 0) this.getGameController().setCurrentState(StateGame_1.default.WATINGPLAYGAMEMINI); else {
+                this.getGameController().setCurrentState(StateGame_1.default.WATING);
+                Windown_1.Windown.MoneyUser.removeDelay(GAME_TYPE_1.default.Xeng);
+              }
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseBetToNho.prototype.runEffectXTonho7Lan = function(moneyRevice) {
+        return __awaiter(this, void 0, void 0, function() {
+          var getGameController, count, node, nodeLbTrai, money, i;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              getGameController = this.getGameController();
+              getGameController.xengView.lbHeso.string = "7";
+              count = 0;
+              node = getGameController.xengView.lbHeso.node;
+              nodeLbTrai = getGameController.btnChangePointL.lbPoint.node;
+              getGameController.runEffectNhapNhay(node, 8, 36);
+              getGameController.runEffectNhapNhay(nodeLbTrai, 8, 36);
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.NhacVeVang) ];
+
+             case 1:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.SoundX7ToNho) ];
+
+             case 2:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+             case 3:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+             case 4:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XiPe) ];
+
+             case 5:
+              _a.sent();
+              money = getGameController.btnChangePointL.point;
+              i = 0;
+              _a.label = 6;
+
+             case 6:
+              if (!(i < 6)) return [ 3, 9 ];
+              this.soundMgn.playEffect(this.soundMgn.TiengNo);
+              getGameController.btnChangePointL.setPointBy(money);
+              getGameController.runEffectNhapNhay1Lan(getGameController.btnChangePointL.lbPoint.node);
+              return [ 4, getGameController.makeDelay(.3) ];
+
+             case 7:
+              _a.sent();
+              _a.label = 8;
+
+             case 8:
+              i++;
+              return [ 3, 6 ];
+
+             case 9:
+              return [ 4, getGameController.makeDelay(1) ];
+
+             case 10:
+              _a.sent();
+              getGameController.setCurrentState(StateGame_1.default.WATINGPLAYGAMEMINI);
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseBetToNho.prototype.runEffectXTonhoMutil = function(listMoney) {
+        return __awaiter(this, void 0, void 0, function() {
+          var gameController, listAction, count, length, moneyBet, moneyCurrent, i, moneyRevice, mutil, i_1, audioId;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              gameController = this.getGameController();
+              listAction = [];
+              count = 0;
+              length = listMoney.length;
+              moneyBet = gameController.btnChangePointL.point;
+              moneyCurrent = moneyBet;
+              gameController.runEffectNhapNhay(gameController.btnChangePointL.lbPoint.node, 8, 36);
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.StartXmutilToNho) ];
+
+             case 1:
+              _a.sent();
+              cc.log(JSON.stringify(listMoney));
+              i = 0;
+              _a.label = 2;
+
+             case 2:
+              if (!(i < length)) return [ 3, 12 ];
+              moneyRevice = listMoney[i];
+              mutil = moneyRevice / moneyBet;
+              gameController.xengView.runEffectRandomLabelHeso(1, 10);
+              this.soundMgn.playEffect(this.soundMgn.RandomSo);
+              return [ 4, gameController.makeDelay(.7) ];
+
+             case 3:
+              _a.sent();
+              gameController.xengView.offEffectRandomLabelHeso(mutil);
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XaPe) ];
+
+             case 4:
+              _a.sent();
+              i_1 = 0;
+              _a.label = 5;
+
+             case 5:
+              if (!(i_1 < mutil)) return [ 3, 8 ];
+              audioId = this.soundMgn.playEffect(this.soundMgn.TiengNo);
+              gameController.btnChangePointL.setPointBy(moneyBet);
+              return [ 4, gameController.makeDelay(.45) ];
+
+             case 6:
+              _a.sent();
+              _a.label = 7;
+
+             case 7:
+              i_1++;
+              return [ 3, 5 ];
+
+             case 8:
+              return [ 4, gameController.makeDelay(1.5) ];
+
+             case 9:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TuNaiXa) ];
+
+             case 10:
+              _a.sent();
+              _a.label = 11;
+
+             case 11:
+              i++;
+              return [ 3, 2 ];
+
+             case 12:
+              gameController.xengView.runEffectRandomLabelHeso(1, 10);
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.RandomSo) ];
+
+             case 13:
+              _a.sent();
+              gameController.xengView.offEffectRandomLabelHeso(0);
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MiOLa) ];
+
+             case 14:
+              _a.sent();
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengCuoi) ];
+
+             case 15:
+              _a.sent();
+              gameController.setCurrentState(StateGame_1.default.WATINGPLAYGAMEMINI);
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseBetToNho.prototype.getSoundMng = function() {
+        return this.getGameController().getSoundMng();
+      };
+      return ResponseBetToNho;
+    }(IServerResponse_1.default);
+    exports.default = ResponseBetToNho;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../../Scritps/Windown": void 0,
+    "../State/StateGame": "StateGame",
+    "./IServerResponse": "IServerResponse"
+  } ],
+  ResponseLeaveRoom: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ad6d1PY8aVONbWS9gaxxc4j", "ResponseLeaveRoom");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var IServerResponse_1 = require("./IServerResponse");
+    var ResponseLeaveRoom = function(_super) {
+      __extends(ResponseLeaveRoom, _super);
+      function ResponseLeaveRoom() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      ResponseLeaveRoom.prototype.handleResponse = function(SFSObject) {};
+      return ResponseLeaveRoom;
+    }(IServerResponse_1.default);
+    exports.default = ResponseLeaveRoom;
+    cc._RF.pop();
+  }, {
+    "./IServerResponse": "IServerResponse"
+  } ],
+  ResponseMakeBet: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "2a451qiKE1C4Jd+B42gqq39", "ResponseMakeBet");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Effect1CuaTo20_1 = require("../Effect/Effect1CuaTo20");
+    var EffectAnJP_1 = require("../Effect/EffectAnJP");
+    var EffectBassNho_1 = require("../Effect/EffectBassNho");
+    var EffectDapChuot_1 = require("../Effect/EffectDapChuot");
+    var EffectDoiMau_1 = require("../Effect/EffectDoiMau");
+    var EffectEndGame_1 = require("../Effect/EffectEndGame");
+    var EffectEndNormal_1 = require("../Effect/EffectEndNormal");
+    var EffectRan8Dot_1 = require("../Effect/EffectRan8Dot");
+    var EffectRunSpin_1 = require("../Effect/EffectRunSpin");
+    var EffectSpecial14_1 = require("../Effect/EffectSpecial14");
+    var EffectSpecial2_1 = require("../Effect/EffectSpecial2");
+    var EffectSpecial3_1 = require("../Effect/EffectSpecial3");
+    var EffectSpecial4_1 = require("../Effect/EffectSpecial4");
+    var EffectSpecial5_1 = require("../Effect/EffectSpecial5");
+    var EffectSpecial6_1 = require("../Effect/EffectSpecial6");
+    var EffectSpecial7_1 = require("../Effect/EffectSpecial7");
+    var EffectSpineSoXo_1 = require("../Effect/EffectSpineSoXo");
+    var EffectTraDiem_1 = require("../Effect/EffectTraDiem");
+    var EffectVe3CuaXDV_1 = require("../Effect/EffectVe3CuaXDV");
+    var EffectVeBar_1 = require("../Effect/EffectVeBar");
+    var EffectVeVang_1 = require("../Effect/EffectVeVang");
+    var X10_30_1Cua_1 = require("../Effect/X10_30_1Cua");
+    var X3_1Cua_1 = require("../Effect/X3_1Cua");
+    var IServerResponse_1 = require("./IServerResponse");
+    var ResponseMakeBet = function(_super) {
+      __extends(ResponseMakeBet, _super);
+      function ResponseMakeBet() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.soundMgn = null;
+        _this.data = null;
+        _this.dataFinishXDV = null;
+        _this.dataFinishItemAnTruoc = null;
+        _this.dataFinishiItemNomarl = null;
+        _this.isStateSpin = false;
+        return _this;
+      }
+      ResponseMakeBet.prototype.handleResponse = function(SFSObject) {
+        var data = null;
+        try {
+          data = JSON.parse(SFSObject.getUtfString("data"));
+        } catch (e) {}
+        if (null == data) return;
+        cc.log(JSON.stringify(data));
+        this.soundMgn = this.getSoundMng();
+        var dataXDV = data.makebetXDV;
+        var dataItemAnTruoc = data.makeBetAnTruoc;
+        var makeBetNormal = data.makeBetNormal;
+        this.data = data;
+        this.dataFinishXDV = dataXDV;
+        this.dataFinishItemAnTruoc = dataItemAnTruoc;
+        this.dataFinishiItemNomarl = data.makeBetNormal;
+        var specialType = dataXDV.typeSpecial;
+        var resultXDV = dataXDV.result;
+        this.execute();
+      };
+      ResponseMakeBet.prototype.execute = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              return [ 4, this.checkAndShowAnTruoc() ];
+
+             case 1:
+              _a.sent();
+              return [ 4, this.checkAndShowStartEffectSpecial() ];
+
+             case 2:
+              _a.sent();
+              return [ 4, this.runSpinWithIdResult() ];
+
+             case 3:
+              _a.sent();
+              return [ 4, this.checkAndShowEndEffectSpecial() ];
+
+             case 4:
+              _a.sent();
+              return [ 4, this.checkAndShowXDVSpecil() ];
+
+             case 5:
+              _a.sent();
+              return [ 4, this.xuLiTienCuoiGameNomarl() ];
+
+             case 6:
+              _a.sent();
+              cc.log("done");
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.checkAndShowAnTruoc = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var typeAnLuon, x3_1Cua, x10_30;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              typeAnLuon = this.dataFinishItemAnTruoc.typeSpecialAnTruoc;
+              if (!(1 == typeAnLuon)) return [ 3, 1 ];
+              x3_1Cua = new X3_1Cua_1.default(this.getGameController());
+              return [ 2, x3_1Cua.intData(this.dataFinishItemAnTruoc).executed() ];
+
+             case 1:
+              if (!(2 == typeAnLuon)) return [ 3, 3 ];
+              x10_30 = new X10_30_1Cua_1.default(this.getGameController());
+              return [ 4, x10_30.intData(this.dataFinishItemAnTruoc).executed() ];
+
+             case 2:
+              _a.sent();
+              _a.label = 3;
+
+             case 3:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.checkAndShowStartEffectSpecial = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var typeSpecialXDV, typeSpecialNomal, effect, effect, effect, effect, effect, effect, effect;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              typeSpecialXDV = this.dataFinishXDV.typeSpecial;
+              cc.log("type special XDV " + typeSpecialXDV);
+              typeSpecialNomal = this.dataFinishiItemNomarl.typeSpecial;
+              this.isStateSpin = false;
+              if (!(1 == typeSpecialXDV)) return [ 3, 2 ];
+              this.isStateSpin = true;
+              effect = new EffectTraDiem_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 1:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 2:
+              if (!(2 == typeSpecialXDV)) return [ 3, 4 ];
+              effect = new EffectDoiMau_1.default(this.getGameController());
+              return [ 4, effect.initData(this.dataFinishXDV).executed() ];
+
+             case 3:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 4:
+              if (!(2 == typeSpecialNomal)) return [ 3, 6 ];
+              effect = new Effect1CuaTo20_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 5:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 6:
+              if (!(5 == typeSpecialNomal)) return [ 3, 7 ];
+              this.isStateSpin = true;
+              return [ 3, 15 ];
+
+             case 7:
+              if (!(6 == typeSpecialNomal)) return [ 3, 9 ];
+              this.isStateSpin = true;
+              effect = new EffectTraDiem_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 8:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 9:
+              if (!(7 == typeSpecialNomal || 13 == typeSpecialNomal || 14 == typeSpecialNomal || 9 == typeSpecialNomal)) return [ 3, 11 ];
+              13 == typeSpecialNomal && this.getGameController().xengView.activeIcon(this.getGameController().xengView.getNodeJp());
+              this.isStateSpin = true;
+              effect = new EffectDapChuot_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 10:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 11:
+              if (!(10 == typeSpecialNomal)) return [ 3, 13 ];
+              this.isStateSpin = true;
+              effect = new EffectVeBar_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 12:
+              _a.sent();
+              return [ 3, 15 ];
+
+             case 13:
+              if (!(8 == typeSpecialNomal)) return [ 3, 15 ];
+              effect = new EffectTraDiem_1.default(this.getGameController());
+              return [ 4, effect.executed() ];
+
+             case 14:
+              _a.sent();
+              _a.label = 15;
+
+             case 15:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.runSpinWithIdResult = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var data, idResult, resultXDV, spin;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              data = this.dataFinishiItemNomarl;
+              idResult = data.objReviceFirtItem.idResult;
+              resultXDV = this.dataFinishXDV.result;
+              spin = new EffectRunSpin_1.default(this.getGameController());
+              return [ 4, spin.spinWithId(idResult, resultXDV, this.isStateSpin) ];
+
+             case 1:
+              _a.sent();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.checkAndShowEndEffectSpecial = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var data, dataFirt, typeSpecial, listIdResultSub, effect, effect, effect, effect, effect, effect, effect, effect, effect, effect, effect, effect;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              data = this.dataFinishiItemNomarl;
+              dataFirt = data.objReviceFirtItem;
+              typeSpecial = data.typeSpecial;
+              listIdResultSub = data.ListObjReviceSub;
+              if (!(2 == typeSpecial)) return [ 3, 2 ];
+              effect = new EffectSpecial2_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 1:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 2:
+              if (!(4 == typeSpecial)) return [ 3, 4 ];
+              effect = new EffectSpecial4_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 3:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 4:
+              if (!(3 == typeSpecial)) return [ 3, 6 ];
+              effect = new EffectSpecial3_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 5:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 6:
+              if (!(5 == typeSpecial)) return [ 3, 8 ];
+              effect = new EffectSpecial5_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 7:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 8:
+              if (!(6 == typeSpecial)) return [ 3, 10 ];
+              effect = new EffectSpecial6_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 9:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 10:
+              if (!(7 == typeSpecial)) return [ 3, 12 ];
+              effect = new EffectSpecial7_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 11:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 12:
+              if (!(8 == typeSpecial)) return [ 3, 14 ];
+              effect = new EffectSpineSoXo_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 13:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 14:
+              if (!(9 == typeSpecial)) return [ 3, 16 ];
+              effect = new EffectRan8Dot_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 15:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 16:
+              if (!(10 == typeSpecial)) return [ 3, 18 ];
+              effect = new EffectBassNho_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 17:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 18:
+              if (!(13 == typeSpecial)) return [ 3, 20 ];
+              effect = new EffectAnJP_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 19:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 20:
+              if (!(14 == typeSpecial)) return [ 3, 22 ];
+              effect = new EffectSpecial14_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 21:
+              _a.sent();
+              return [ 3, 24 ];
+
+             case 22:
+              effect = new EffectEndNormal_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishiItemNomarl).executed() ];
+
+             case 23:
+              _a.sent();
+              _a.label = 24;
+
+             case 24:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.checkAndShowXDVSpecil = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var typeXDV, typeSpecialXDV, mutil, effect, effect;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              typeXDV = this.dataFinishXDV.result;
+              typeSpecialXDV = this.dataFinishXDV.typeSpecial;
+              mutil = this.dataFinishXDV.mutilVang;
+              if (!(1 == typeXDV)) return [ 3, 2 ];
+              effect = new EffectVeVang_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishXDV).executed() ];
+
+             case 1:
+              _a.sent();
+              return [ 3, 8 ];
+
+             case 2:
+              if (!(1 == typeSpecialXDV)) return [ 3, 4 ];
+              effect = new EffectVe3CuaXDV_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.dataFinishXDV).executed() ];
+
+             case 3:
+              _a.sent();
+              return [ 3, 8 ];
+
+             case 4:
+              if (!(0 == typeXDV)) return [ 3, 6 ];
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauDo) ];
+
+             case 5:
+              _a.sent();
+              return [ 3, 8 ];
+
+             case 6:
+              if (!(2 == typeXDV)) return [ 3, 8 ];
+              return [ 4, this.soundMgn.playEffectSync(this.soundMgn.MauXanhLa) ];
+
+             case 7:
+              _a.sent();
+              _a.label = 8;
+
+             case 8:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.xuLiTienCuoiGameNomarl = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var effect;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              effect = new EffectEndGame_1.default(this.getGameController());
+              return [ 4, effect.intiData(this.data).executed() ];
+
+             case 1:
+              _a.sent();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      ResponseMakeBet.prototype.getSoundMng = function() {
+        return this.getGameController().getSoundMng();
+      };
+      return ResponseMakeBet;
+    }(IServerResponse_1.default);
+    exports.default = ResponseMakeBet;
+    cc._RF.pop();
+  }, {
+    "../Effect/Effect1CuaTo20": "Effect1CuaTo20",
+    "../Effect/EffectAnJP": "EffectAnJP",
+    "../Effect/EffectBassNho": "EffectBassNho",
+    "../Effect/EffectDapChuot": "EffectDapChuot",
+    "../Effect/EffectDoiMau": "EffectDoiMau",
+    "../Effect/EffectEndGame": "EffectEndGame",
+    "../Effect/EffectEndNormal": "EffectEndNormal",
+    "../Effect/EffectRan8Dot": "EffectRan8Dot",
+    "../Effect/EffectRunSpin": "EffectRunSpin",
+    "../Effect/EffectSpecial14": "EffectSpecial14",
+    "../Effect/EffectSpecial2": "EffectSpecial2",
+    "../Effect/EffectSpecial3": "EffectSpecial3",
+    "../Effect/EffectSpecial4": "EffectSpecial4",
+    "../Effect/EffectSpecial5": "EffectSpecial5",
+    "../Effect/EffectSpecial6": "EffectSpecial6",
+    "../Effect/EffectSpecial7": "EffectSpecial7",
+    "../Effect/EffectSpineSoXo": "EffectSpineSoXo",
+    "../Effect/EffectTraDiem": "EffectTraDiem",
+    "../Effect/EffectVe3CuaXDV": "EffectVe3CuaXDV",
+    "../Effect/EffectVeBar": "EffectVeBar",
+    "../Effect/EffectVeVang": "EffectVeVang",
+    "../Effect/X10_30_1Cua": "X10_30_1Cua",
+    "../Effect/X3_1Cua": "X3_1Cua",
+    "./IServerResponse": "IServerResponse"
+  } ],
+  ResponseSetMutil: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "f37fddYhalLd4i3UmekDp8O", "ResponseSetMutil");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var IServerResponse_1 = require("./IServerResponse");
+    var ResponseSetMutil = function(_super) {
+      __extends(ResponseSetMutil, _super);
+      function ResponseSetMutil() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.soundMgn = null;
+        return _this;
+      }
+      ResponseSetMutil.prototype.handleResponse = function(SFSObject) {
+        var moneyPhai = SFSObject.get("point");
+        this.getGameController().moneyCurrent = moneyPhai;
+        this.getGameController().btnChangePointR.reset();
+        this.getGameController().showDoiDiem(false);
+        this.getSoundMng().playNhacCho();
+      };
+      ResponseSetMutil.prototype.getSoundMng = function() {
+        return this.getGameController().getSoundMng();
+      };
+      return ResponseSetMutil;
+    }(IServerResponse_1.default);
+    exports.default = ResponseSetMutil;
+    cc._RF.pop();
+  }, {
+    "./IServerResponse": "IServerResponse"
+  } ],
+  SoundXeng: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0634cDiJDtA35XbjM1Id9SW", "SoundXeng");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var AudioManager_1 = require("../../../Scritps/Parent/AudioManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = _super.call(this) || this;
+        _this.AtOhh = null;
+        _this.BatDauQuayTraDiem = null;
+        _this.Bip = null;
+        _this.BonusKhiBet = null;
+        _this.CauNoiAnTruoc1CuaX30 = null;
+        _this.CauNoiDapChuot = null;
+        _this.CauNoiKhiVeVang = null;
+        _this.CauNoiShowResultAnTruocX30 = null;
+        _this.CauNoiTraDiem = null;
+        _this.CauNoiVeBass = null;
+        _this.CauNoiTraDiemXong = null;
+        _this.CauNoiX3Luon = null;
+        _this.ChayItem = null;
+        _this.CongTien = null;
+        _this.CuocKhungHoang = null;
+        _this.DonDap = null;
+        _this.EffectAnRandomItemNhoSau = null;
+        _this.ItemChay1Vong = null;
+        _this.Gong = null;
+        _this.HieuUngAnTatCaCacCua = null;
+        _this.Hu = null;
+        _this.MauDo = null;
+        _this.MauVang = null;
+        _this.MauXanhLa = null;
+        _this.MiOLa = null;
+        _this.NextSoXo = null;
+        _this.NhacNenToNho = null;
+        _this.NhacNenTraDiem = null;
+        _this.NhacDoiMau = null;
+        _this.NiChieuSangCieu = null;
+        _this.EndDoiMau = null;
+        _this.NhacVeVang = null;
+        _this.NhacVeBar = null;
+        _this.NoLienTuc = null;
+        _this.RandomSo = null;
+        _this.SangHao = null;
+        _this.ShowHeSoRandom = null;
+        _this.SpinNormal = null;
+        _this.SpinSpecial = null;
+        _this.StartDapChuot = null;
+        _this.StartXmutilToNho = null;
+        _this.TiengCuoi = null;
+        _this.TiengKen1 = null;
+        _this.TiengKen2 = null;
+        _this.TiengNo = null;
+        _this.TiengNoVaChemKiem = null;
+        _this.TiengRandomHesoAnTruocX30 = null;
+        _this.Ting = null;
+        _this.Ting2 = null;
+        _this.SoundX7ToNho = null;
+        _this.TuNaiXa = null;
+        _this.VuiMung = null;
+        _this.XaPe = null;
+        _this.XiPe = null;
+        _this.Yabe = null;
+        _this.Woa = null;
+        _this.ThingKaiSun = null;
+        _this.TingTingDt = null;
+        _this.Item = [];
+        _this.ListNhacCho = [];
+        _this.currentCountNhac = 0;
+        _this.currentCountNhac = Windown_1.Windown.RandomNumber(0, _this.ListNhacCho.length) - 1;
+        return _this;
+      }
+      NewClass.prototype.playClick = function() {
+        this.playEffect(this.audios[0]);
+      };
+      NewClass.prototype.playSoundSync = function(audioclip, volum, timeCall) {
+        void 0 === volum && (volum = 1);
+        return this.playEffectSync(audioclip, volum, timeCall);
+      };
+      NewClass.prototype.playNhacCho = function() {
+        this.stopNhacCho();
+        this.currentCountNhac++;
+        this.currentCountNhac > this.ListNhacCho.length - 1 && (this.currentCountNhac = 0);
+        this.playEffect(this.ListNhacCho[this.currentCountNhac]);
+      };
+      NewClass.prototype.stopNhacCho = function() {
+        this.stopEffect(this.ListNhacCho[this.currentCountNhac]);
+      };
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "AtOhh", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "BatDauQuayTraDiem", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Bip", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "BonusKhiBet", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiAnTruoc1CuaX30", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiDapChuot", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiKhiVeVang", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiShowResultAnTruocX30", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiTraDiem", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiVeBass", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiTraDiemXong", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CauNoiX3Luon", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "ChayItem", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CongTien", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "CuocKhungHoang", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "DonDap", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "EffectAnRandomItemNhoSau", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "ItemChay1Vong", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Gong", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "HieuUngAnTatCaCacCua", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Hu", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "MauDo", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "MauVang", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "MauXanhLa", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "MiOLa", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NextSoXo", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NhacNenToNho", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NhacNenTraDiem", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NhacDoiMau", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NiChieuSangCieu", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "EndDoiMau", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NhacVeVang", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NhacVeBar", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "NoLienTuc", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "RandomSo", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "SangHao", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "ShowHeSoRandom", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "SpinNormal", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "SpinSpecial", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "StartDapChuot", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "StartXmutilToNho", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengCuoi", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengKen1", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengKen2", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengNo", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengNoVaChemKiem", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TiengRandomHesoAnTruocX30", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Ting", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Ting2", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "SoundX7ToNho", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TuNaiXa", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "VuiMung", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "XaPe", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "XiPe", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Yabe", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "Woa", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "ThingKaiSun", void 0);
+      __decorate([ property(cc.AudioClip) ], NewClass.prototype, "TingTingDt", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], NewClass.prototype, "Item", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], NewClass.prototype, "ListNhacCho", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(AudioManager_1.default);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Parent/AudioManager": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  StateFinishedMini: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "071c3C5539FQKV6DT3hySvO", "StateFinishedMini");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState_1 = require("./BaseState");
+    var StateFinishedMini = function(_super) {
+      __extends(StateFinishedMini, _super);
+      function StateFinishedMini() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StateFinishedMini.prototype.execute = function() {
+        this.xengController.listButton.forEach(function(v) {
+          v.offEvent();
+        });
+        cc.log("off het event nay");
+        this.xengController.getSoundMng().stopNhacCho();
+      };
+      return StateFinishedMini;
+    }(BaseState_1.default);
+    exports.default = StateFinishedMini;
+    cc._RF.pop();
+  }, {
+    "./BaseState": "BaseState"
+  } ],
+  StateFinished: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8b0f5EuQgtCMau3vDAb9Qyd", "StateFinished");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState_1 = require("./BaseState");
+    var StateFinished = function(_super) {
+      __extends(StateFinished, _super);
+      function StateFinished() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StateFinished.prototype.execute = function() {
+        this.xengController.listButton.forEach(function(v) {
+          v.offEvent();
+        });
+      };
+      return StateFinished;
+    }(BaseState_1.default);
+    exports.default = StateFinished;
+    cc._RF.pop();
+  }, {
+    "./BaseState": "BaseState"
+  } ],
+  StateGame: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "45b58lbjplOVINoK0SU3agS", "StateGame");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var StateGame = function() {
+      function StateGame() {}
+      StateGame.WATING = 0;
+      StateGame.PLAYING = 1;
+      StateGame.FINISHED = 2;
+      StateGame.PLAYINGMINI = 3;
+      StateGame.FINISHEDMINI = 4;
+      StateGame.WATINGPLAYGAME = 5;
+      StateGame.WATINGPLAYGAMEMINI = 6;
+      return StateGame;
+    }();
+    exports.default = StateGame;
+    cc._RF.pop();
+  }, {} ],
+  StatePlayingMini: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "a129f3A8jFOk5LPNRRbIZjX", "StatePlayingMini");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState_1 = require("./BaseState");
+    var StatePlayingMini = function(_super) {
+      __extends(StatePlayingMini, _super);
+      function StatePlayingMini() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StatePlayingMini.prototype.execute = function() {
+        var _this = this;
+        this.xengController.listBtnXDV.forEach(function(v) {
+          v.offEvent();
+        });
+        this.xengController.listBtnItem.forEach(function(v) {
+          v.offEvent();
+        });
+        this.xengController.btnChangePointL.initEvent();
+        this.xengController.btnChangePointR.initEvent();
+        this.xengController.listBtnClick.forEach(function(v) {
+          v.initEvent();
+        });
+        this.xengController.listBtnItem.forEach(function(v) {
+          v.reset();
+          _this.xengController.offEffect(v.lbPoint.node);
+        });
+        this.xengController.listBtnXDV.forEach(function(v) {
+          v.reset();
+          _this.xengController.offEffect(v.lbPoint.node);
+        });
+        this.xengController.xengView.getListChildXDV().forEach(function(v) {
+          _this.xengController.offItem(v);
+        });
+        this.xengController.xengView.getListChildren().forEach(function(v) {
+          _this.xengController.offItem(v);
+        });
+        this.xengController.xengView.runEffectRandomLabelHesoMiniGame();
+        this.xengController.getSoundMng().stopNhacCho();
+        this.xengController.getSoundMng().playEffect(this.xengController.getSoundMng().NhacNenToNho);
+      };
+      return StatePlayingMini;
+    }(BaseState_1.default);
+    exports.default = StatePlayingMini;
+    cc._RF.pop();
+  }, {
+    "./BaseState": "BaseState"
+  } ],
+  StatePlaying: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "87eed/6USpPlJc9t0TRnp5j", "StatePlaying");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState_1 = require("./BaseState");
+    var StatePlaying = function(_super) {
+      __extends(StatePlaying, _super);
+      function StatePlaying() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StatePlaying.prototype.execute = function() {
+        this.xengController.listBtnClick.forEach(function(v) {
+          "all1" != v.node.name && v.offEvent();
+        });
+        this.xengController.btnChangePointL.offEvent();
+        this.xengController.btnChangePointR.offEvent();
+        this.xengController.btnGo.initEvent();
+        this.xengController.getSoundMng().stopNhacCho();
+      };
+      return StatePlaying;
+    }(BaseState_1.default);
+    exports.default = StatePlaying;
+    cc._RF.pop();
+  }, {
+    "./BaseState": "BaseState"
+  } ],
+  StateWatingPlayGameMini: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d681e4RLF9ErLm/yr6CnEJx", "StateWatingPlayGameMini");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var StateWatingPlayGame_1 = require("./StateWatingPlayGame");
+    var StateWatingPlayGameMini = function(_super) {
+      __extends(StateWatingPlayGameMini, _super);
+      function StateWatingPlayGameMini() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StateWatingPlayGameMini.prototype.execute = function() {
+        _super.prototype.execute.call(this);
+        this.xengController.getSoundMng().stopNhacCho();
+        this.xengController.xengView.runEffectRandomLabelHesoMiniGame();
+        this.xengController.getSoundMng().playEffect(this.xengController.getSoundMng().NhacNenToNho);
+      };
+      return StateWatingPlayGameMini;
+    }(StateWatingPlayGame_1.default);
+    exports.default = StateWatingPlayGameMini;
+    cc._RF.pop();
+  }, {
+    "./StateWatingPlayGame": "StateWatingPlayGame"
+  } ],
+  StateWatingPlayGame: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0c2e3nymtRPfqd0JcmUiRiQ", "StateWatingPlayGame");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseState_1 = require("./BaseState");
+    var StateWatingPlayGame = function(_super) {
+      __extends(StateWatingPlayGame, _super);
+      function StateWatingPlayGame() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StateWatingPlayGame.prototype.execute = function() {
+        this.xengController.listBtnClick.forEach(function(v) {
+          v.initEvent();
+        });
+        this.xengController.listBtnItem.forEach(function(v) {
+          v.initEvent();
+        });
+        this.xengController.btnGo.initEvent();
+        this.xengController.btnChangePointL.initEvent();
+        this.xengController.btnChangePointR.initEvent();
+        this.xengController.getSoundMng().playNhacCho();
+      };
+      return StateWatingPlayGame;
+    }(BaseState_1.default);
+    exports.default = StateWatingPlayGame;
+    cc._RF.pop();
+  }, {
+    "./BaseState": "BaseState"
+  } ],
+  StateWating: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "0befaq7Go5NKKHpl6lqCkak", "StateWating");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var GAME_TYPE_1 = require("../../../../Scritps/Game/GAME_TYPE");
+    var Windown_1 = require("../../../../Scritps/Windown");
+    var BaseState_1 = require("./BaseState");
+    var StateWating = function(_super) {
+      __extends(StateWating, _super);
+      function StateWating() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      StateWating.prototype.execute = function() {
+        this.xengController.listButton.forEach(function(v) {
+          v.initEvent();
+        });
+        this.xengController.listBtnClick.forEach(function(v) {
+          v.offEvent();
+        });
+        this.xengController.btnGo.initEvent();
+        this.xengController.btnChangePointL.reset();
+        this.xengController.btnChangePointR.reset();
+        this.xengController.resetEffectAll();
+        this.xengController.xengView.offEffectLabelHeso();
+        this.xengController.getSoundMng().stopNhacCho();
+        this.xengController.getSoundMng().stopEffect(this.xengController.getSoundMng().NhacNenToNho);
+        Windown_1.Windown.MoneyUser.removeDelay(GAME_TYPE_1.default.Xeng);
+        Windown_1.Windown.MoneyUser.updateMoney();
+      };
+      return StateWating;
+    }(BaseState_1.default);
+    exports.default = StateWating;
+    cc._RF.pop();
+  }, {
+    "../../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../../Scritps/Windown": void 0,
+    "./BaseState": "BaseState"
+  } ],
+  Test: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "75bf1R0nCdKKZJPT1668HgH", "Test");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffect_1 = require("./Effect/BaseEffect");
+    var Test = function(_super) {
+      __extends(Test, _super);
+      function Test() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      Test.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            return __generator(this, function(_a) {
+              resolve(null);
+              return [ 2 ];
+            });
+          });
+        });
+      };
+      return Test;
+    }(BaseEffect_1.default);
+    exports.default = Test;
+    cc._RF.pop();
+  }, {
+    "./Effect/BaseEffect": "BaseEffect"
+  } ],
+  X10_30_1Cua: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "a89a1LFTW5ODrjXQJqp/5hl", "X10_30_1Cua");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectAnTruoc_1 = require("./BaseEffectAnTruoc");
+    var EffectAnLuon1Cua_1 = require("./EffectAnLuon1Cua");
+    var X10_30_1Cua = function(_super) {
+      __extends(X10_30_1Cua, _super);
+      function X10_30_1Cua() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      X10_30_1Cua.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var result, mutil, moneyRevice, effect, listChild, funSchedule, index, count, hesoRun, isBreak, moneyCurrent, money, i, l;
+            var _this = this;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                result = this.dataFinishItemAnTruoc.result;
+                mutil = this.dataFinishItemAnTruoc.mutil;
+                moneyRevice = this.dataFinishItemAnTruoc.moneyRevice;
+                effect = new EffectAnLuon1Cua_1.default(this.xengController);
+                return [ 4, effect.executed() ];
+
+               case 1:
+                _a.sent();
+                this.soundMgn.playEffect(this.soundMgn.ItemChay1Vong);
+                listChild = this.getListChildren();
+                listChild.forEach(function(v) {
+                  _this.offItem(v);
+                });
+                funSchedule = null;
+                index = 0;
+                count = 0;
+                hesoRun = 1;
+                isBreak = false;
+                _a.label = 2;
+
+               case 2:
+                false;
+                this.runEffectActiveAndHideWithTime(this.getNodeLbItem(index), .05);
+                if (index == result && count > 27) return [ 3, 4 ];
+                index += hesoRun;
+                if (index > 8) {
+                  hesoRun *= -1;
+                  index = 8;
+                }
+                if (-1 == index) {
+                  hesoRun *= -1;
+                  index = 0;
+                }
+                count++;
+                if (isBreak) return [ 3, 4 ];
+                return [ 4, this.makeDelay(.05) ];
+
+               case 3:
+                _a.sent();
+                return [ 3, 2 ];
+
+               case 4:
+                this.offEffect(this.getNodeLbItem(result));
+                this.soundMgn.stopEffect(this.soundMgn.ItemChay1Vong);
+                this.runEffectNhapNhay(this.getNodeLbItem(result), 10, 70);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiShowResultAnTruocX30) ];
+
+               case 5:
+                _a.sent();
+                this.offEffect(this.getNodeLbItem(result));
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNoVaChemKiem) ];
+
+               case 6:
+                _a.sent();
+                this.runEffectRandomLabelHesoSpecial();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengRandomHesoAnTruocX30) ];
+
+               case 7:
+                _a.sent();
+                this.offEffectRandomLabelHeso(mutil);
+                return [ 4, this.makeDelay(.5) ];
+
+               case 8:
+                _a.sent();
+                this.runEffectNhapNhay(this.getNodeLbHeso(), 10, 70);
+                this.runEffectNhapNhay(this.getNodeLbLeft(), 10, 70);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 9:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Item[result]) ];
+
+               case 10:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 11:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XiPe) ];
+
+               case 12:
+                _a.sent();
+                this.offEffect(this.getNodeLbHeso());
+                this.offEffect(this.getNodeLbLeft());
+                if (!(moneyRevice > 0)) return [ 3, 18 ];
+                moneyCurrent = this.getBtnItem(result).point;
+                money = moneyCurrent;
+                this.currentBtnTrai.setPointBy(moneyCurrent);
+                i = 0, l = mutil;
+                _a.label = 13;
+
+               case 13:
+                if (!(i < l)) return [ 3, 16 ];
+                mutil--;
+                this.setStringLbHeSo(mutil);
+                this.soundMgn.playEffect(this.soundMgn.TiengNo);
+                this.currentBtnTrai.setPointBy(moneyCurrent);
+                return [ 4, this.makeDelay(.45) ];
+
+               case 14:
+                _a.sent();
+                _a.label = 15;
+
+               case 15:
+                i++;
+                return [ 3, 13 ];
+
+               case 16:
+                return [ 4, this.makeDelay(1) ];
+
+               case 17:
+                _a.sent();
+                listChild.forEach(function(v) {
+                  v.stopAllActions();
+                  v.opacity = 255;
+                });
+                resolve(null);
+                return [ 3, 20 ];
+
+               case 18:
+                return [ 4, this.makeDelay(1) ];
+
+               case 19:
+                _a.sent();
+                resolve(null);
+                _a.label = 20;
+
+               case 20:
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return X10_30_1Cua;
+    }(BaseEffectAnTruoc_1.default);
+    exports.default = X10_30_1Cua;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectAnTruoc": "BaseEffectAnTruoc",
+    "./EffectAnLuon1Cua": "EffectAnLuon1Cua"
+  } ],
+  X3_1Cua: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "f7ca8Ch1HtFPaH/dAGVsUWf", "X3_1Cua");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BaseEffectAnTruoc_1 = require("./BaseEffectAnTruoc");
+    var X3_1Cua = function(_super) {
+      __extends(X3_1Cua, _super);
+      function X3_1Cua() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      X3_1Cua.prototype.executed = function() {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          return __awaiter(_this, void 0, void 0, function() {
+            var result, moneyRevice;
+            return __generator(this, function(_a) {
+              switch (_a.label) {
+               case 0:
+                result = this.dataFinishItemAnTruoc.result;
+                moneyRevice = this.dataFinishItemAnTruoc.moneyRevice;
+                this.runEffectNhapNhay(this.getNodeLbItem(result), 10, 40);
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.CauNoiX3Luon) ];
+
+               case 1:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.VuiMung) ];
+
+               case 2:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Item[result]) ];
+
+               case 3:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.Gong) ];
+
+               case 4:
+                _a.sent();
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.XaPe) ];
+
+               case 5:
+                _a.sent();
+                if (!(0 == moneyRevice)) return [ 3, 6 ];
+                this.offEffect(this.getNodeLbItem(result));
+                resolve(null);
+                return [ 3, 8 ];
+
+               case 6:
+                this.currentBtnTrai.setPoint(moneyRevice);
+                this.offEffect(this.getNodeLbItem(result));
+                return [ 4, this.soundMgn.playEffectSync(this.soundMgn.TiengNo) ];
+
+               case 7:
+                _a.sent();
+                resolve(null);
+                _a.label = 8;
+
+               case 8:
+                return [ 2 ];
+              }
+            });
+          });
+        });
+      };
+      return X3_1Cua;
+    }(BaseEffectAnTruoc_1.default);
+    exports.default = X3_1Cua;
+    cc._RF.pop();
+  }, {
+    "./BaseEffectAnTruoc": "BaseEffectAnTruoc"
+  } ],
+  XengController: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8952cXBqARBTJ6Eo1zEBJDp", "XengController");
+    "use strict";
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var EVENT_MANAGER_1 = require("../../../Scritps/DefineTs/EVENT_MANAGER");
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var TextDefine_1 = require("../../../Scritps/DefineTs/TextDefine");
+    var GAME_TYPE_1 = require("../../../Scritps/Game/GAME_TYPE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var BtnBetItem_1 = require("./Button/BtnBetItem");
+    var BtnBetXDV_1 = require("./Button/BtnBetXDV");
+    var BtnChangePointLeft_1 = require("./Button/BtnChangePointLeft");
+    var BtnChangePointRight_1 = require("./Button/BtnChangePointRight");
+    var BtnClick_1 = require("./Button/BtnClick");
+    var BtnGo_1 = require("./Button/BtnGo");
+    var ResponseBetToNho_1 = require("./Event/ResponseBetToNho");
+    var ResponseMakeBet_1 = require("./Event/ResponseMakeBet");
+    var ResponseSetMutil_1 = require("./Event/ResponseSetMutil");
+    var StateFinished_1 = require("./State/StateFinished");
+    var StateFinishedMini_1 = require("./State/StateFinishedMini");
+    var StateGame_1 = require("./State/StateGame");
+    var StatePlaying_1 = require("./State/StatePlaying");
+    var StatePlayingMini_1 = require("./State/StatePlayingMini");
+    var StateWating_1 = require("./State/StateWating");
+    var StateWatingPlayGame_1 = require("./State/StateWatingPlayGame");
+    var StateWatingPlayGameMini_1 = require("./State/StateWatingPlayGameMini");
+    var XengModel_1 = require("./XengModel");
+    var XengController = function() {
+      function XengController() {
+        this.xengModel = new XengModel_1.default();
+        this.stateGame = null;
+        this.listButton = [];
+        this.listBtnItem = [];
+        this.listBtnXDV = [];
+        this.btnChangePointL = null;
+        this.btnChangePointR = null;
+        this.listBtnClick = [];
+        this.btnGo = null;
+        this.roomSFS = null;
+        this.isCanSendData = true;
+        this.betCache = null;
+        this.moneyCurrent = 0;
+        this.sfs = null;
+        this.listTimeOut = [];
+        this.mutil = 1;
+        this.sfs = ConectManager_1.ConectManager.getIns().sfs;
+        this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR, this.onCreateError, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse, this);
+        Windown_1.Windown.XengController = this;
+        cc.systemEvent.on(EVENT_MANAGER_1.EVENT_MANAGER.onDisconnect, this.onDisconnect, this);
+      }
+      XengController.prototype.dangKyEventXeng = function() {
+        Windown_1.Windown.MoneyUser.dangKyHandle(this.setGold, this);
+      };
+      XengController.prototype.setGold = function(money) {
+        cc.log("money la: " + money);
+        this.moneyCurrent = money;
+        this.btnChangePointR && this.btnChangePointR.setPoint(money, true);
+      };
+      XengController.prototype.onDisconnect = function() {
+        this.onDestroy();
+        cc.director.loadScene("main");
+      };
+      XengController.prototype.userExitRoom = function(event) {
+        var room = event.room;
+        if ("Xeng" == room.groupId) {
+          var user = event.user;
+          if (user.isItMe) {
+            this.onDestroy();
+            cc.director.loadScene("main");
+            return;
+          }
+        }
+      };
+      XengController.prototype.onCreateError = function(event) {
+        cc.log("creat err");
+        Windown_1.Windown.UIManager.hideLoading();
+        this.onDestroy();
+        Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.ERR_JOIN_ROOM);
+      };
+      XengController.prototype.onJoinRoom = function(event) {
+        return __awaiter(this, void 0, void 0, function() {
+          var room, bundle;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              room = event.room;
+              if (!("Xeng" == room.groupId)) return [ 3, 2 ];
+              this.roomSFS = room;
+              return [ 4, Windown_1.Windown.loadBundle(GAME_TYPE_1.default.Xeng.toString()) ];
+
+             case 1:
+              bundle = _a.sent();
+              bundle.loadScene("XengGame", function(err, scence) {
+                if (err) {
+                  Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.Error);
+                  Windown_1.Windown.UIManager.hideLoadingData();
+                  return;
+                }
+                cc.director.runScene(scence, null, function() {
+                  Windown_1.Windown.UIManager.hideLoadingData();
+                });
+              });
+              _a.label = 2;
+
+             case 2:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      XengController.prototype.onJoinRoomErr = function(event) {
+        Windown_1.Windown.UIManager.hideLoading();
+        Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.ERR_JOIN_ROOM);
+        this.onDestroy();
+      };
+      XengController.prototype.extResponse = function(packet) {
+        var handle = null;
+        var code = packet.cmd;
+        var SFSObject = packet.params;
+        switch (code) {
+         case REQUEST_CODE_1.REQUEST_CODE.BetToNho:
+          handle = new ResponseBetToNho_1.default();
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.MakeBet:
+          handle = new ResponseMakeBet_1.default();
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.SetMutiXeng:
+          handle = new ResponseSetMutil_1.default();
+        }
+        handle && handle.handleResponse(SFSObject);
+      };
+      XengController.prototype.onDestroy = function() {
+        Windown_1.Windown.UIManager.hideLoadingData();
+        Windown_1.Windown.UIManager.hideLoading();
+        cc.systemEvent.removeAll(this);
+        this.clearAllTimeOut();
+        this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR, this.onCreateError);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse);
+        Windown_1.Windown.XengController = null;
+        this.roomSFS = null;
+        Windown_1.Windown.MoneyUser.targetOff(this);
+        Windown_1.Windown.MoneyUser.endGameMOney(GAME_TYPE_1.default.Xeng);
+      };
+      XengController.prototype.intiGame = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var bundle;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              return [ 4, Windown_1.Windown.loadBundle(GAME_TYPE_1.default.Xeng.toString()) ];
+
+             case 1:
+              bundle = _a.sent();
+              Windown_1.Windown.UIManager.showLoadingData();
+              bundle.preloadScene("XengGame", {}, function(count, total) {
+                Windown_1.Windown.UIManager.setPerData(count / total);
+              }, function(err) {
+                if (err) {
+                  Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.Error);
+                  return;
+                }
+                _this.sendJoinRoom();
+              });
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      XengController.prototype.initXengView = function(cp) {
+        this.xengView = cp;
+        Windown_1.Windown.UIManager.hideLoadingData();
+        this.dangKyEventXeng();
+      };
+      XengController.prototype.sendJoinRoom = function() {
+        cc.log("send creat room");
+        var nameCreat = ConectManager_1.ConectManager.getIns().getValibleRoomName();
+        var roomSeting = new SFS2X.RoomSettings(nameCreat);
+        var roomExt = new SFS2X.RoomExtension("XengExtension", "ext.Room.Xeng.XengGameView");
+        roomSeting.extension = roomExt;
+        roomSeting.isGame = true;
+        roomSeting.maxUsers = 1;
+        roomSeting.groupId = "Xeng";
+        this.sfs.send(new SFS2X.CreateRoomRequest(roomSeting, true));
+      };
+      XengController.prototype.initListButton = function(list) {
+        var _this = this;
+        this.listButton = list;
+        this.listBtnItem = [];
+        this.listBtnXDV = [];
+        this.listButton.forEach(function(v) {
+          v instanceof BtnBetItem_1.default ? _this.listBtnItem.push(v) : v instanceof BtnBetXDV_1.default ? _this.listBtnXDV.push(v) : v instanceof BtnClick_1.default ? _this.listBtnClick.push(v) : v instanceof BtnGo_1.default ? _this.btnGo = v : v instanceof BtnChangePointRight_1.default ? _this.btnChangePointR = v : v instanceof BtnChangePointLeft_1.default && (_this.btnChangePointL = v);
+          v.initGameController(_this);
+        });
+        this.setCurrentState(StateGame_1.default.WATING);
+      };
+      XengController.prototype.sendToServer = function(event, data) {
+        if (!this.isCanSendData || null == this.roomSFS) return;
+        this.isCanSendData = false;
+        ConectManager_1.ConectManager.getIns().sendRequest(event, data, this.roomSFS);
+      };
+      XengController.prototype.onClickGo = function() {
+        if (this.stateGame.type == StateGame_1.default.WATINGPLAYGAME || this.stateGame.type == StateGame_1.default.WATINGPLAYGAMEMINI || this.stateGame.type == StateGame_1.default.PLAYINGMINI) this.setCurrentState(StateGame_1.default.WATING); else if (this.stateGame.type == StateGame_1.default.WATING) {
+          if (this.betCache) {
+            this.getBtnItemXDV(0).onPress(this.betCache.red);
+            this.getBtnItemXDV(1).onPress(this.betCache.yello);
+            this.getBtnItemXDV(2).onPress(this.betCache.green);
+            for (var temp in this.betCache.listBetItem) this.listBtnItem[Number(temp)].onPress(this.betCache.listBetItem[temp]);
+            this.setCurrentState(StateGame_1.default.PLAYING);
+          }
+        } else if (this.stateGame.type == StateGame_1.default.PLAYING) {
+          var obj = Object.create(null);
+          obj.green = this.listBtnXDV[2].point;
+          obj.red = this.listBtnXDV[0].point;
+          obj.yello = this.listBtnXDV[1].point;
+          obj.listBetItem = this.getArryPointItem();
+          this.betCache = obj;
+          var objSFS = ConectManager_1.ConectManager.getIns().getSFSObj();
+          objSFS.putUtfString("data", JSON.stringify(obj));
+          this.sendToServer(REQUEST_CODE_1.REQUEST_CODE.MakeBet, objSFS);
+          cc.log("objSend" + JSON.stringify(obj));
+          this.setCurrentState(StateGame_1.default.FINISHED);
+        }
+      };
+      XengController.prototype.onClickAllAdd1 = function(dtPress) {
+        this.listBtnItem.forEach(function(v) {
+          v.onPress(dtPress);
+        });
+      };
+      XengController.prototype.onClick1_6 = function() {
+        this.resetEffectAll();
+        if (this.btnChangePointL.point <= 0) return;
+        cc.log("chay vao click 1_6");
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        obj.putInt("agXengDat", this.btnChangePointL.point);
+        obj.putInt("type", 1);
+        this.sendToServer("betToNho", obj);
+        this.setCurrentState(StateGame_1.default.FINISHEDMINI);
+        this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho);
+      };
+      XengController.prototype.onClick8_13 = function() {
+        this.resetEffectAll();
+        if (this.btnChangePointL.point <= 0) return;
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        obj.putInt("agXengDat", this.btnChangePointL.point);
+        obj.putInt("type", 2);
+        this.sendToServer("betToNho", obj);
+        this.setCurrentState(StateGame_1.default.FINISHEDMINI);
+        this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho);
+      };
+      XengController.prototype.onClickChan = function() {
+        this.resetEffectAll();
+        if (this.btnChangePointL.point <= 0) return;
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        obj.putInt("agXengDat", this.btnChangePointL.point);
+        obj.putInt("type", 4);
+        this.sendToServer("betToNho", obj);
+        this.setCurrentState(StateGame_1.default.FINISHEDMINI);
+        this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho);
+      };
+      XengController.prototype.onClickLe = function() {
+        if (this.btnChangePointL.point <= 0) return;
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        obj.putInt("agXengDat", this.btnChangePointL.point);
+        obj.putInt("type", 3);
+        this.sendToServer("betToNho", obj);
+        this.setCurrentState(StateGame_1.default.FINISHEDMINI);
+        this.getSoundMng().stopEffect(this.getSoundMng().NhacNenToNho);
+      };
+      XengController.prototype.canSendData = function(isCanSendDate) {
+        void 0 === isCanSendDate && (isCanSendDate = false);
+        this.isCanSendData = isCanSendDate;
+      };
+      XengController.prototype.setCurrentState = function(typeState) {
+        if (this.stateGame && this.stateGame.type == typeState) return;
+        this.stateGame = this.getState(typeState);
+        this.stateGame.initGameController(this);
+        this.stateGame.execute();
+      };
+      XengController.prototype.getSoundMng = function() {
+        return Windown_1.Windown.AudioManager;
+      };
+      XengController.prototype.getArryPointItem = function() {
+        var arr = [];
+        this.listBtnItem.forEach(function(v) {
+          arr.push(v.point);
+        });
+        return arr;
+      };
+      XengController.prototype.getBtnItemXDV = function(id) {
+        return this.listBtnXDV[id];
+      };
+      XengController.prototype.offEffect = function(node) {
+        node.opacity = 255;
+        node.stopAllActions();
+      };
+      XengController.prototype.offItem = function(node) {
+        node.stopAllActions();
+        node.opacity = 0;
+      };
+      XengController.prototype.runEffectNhapNhay = function(node, time, repeat) {
+        node.stopAllActions();
+        node.opacity = 255;
+        node.runAction(cc.blink(time, repeat));
+      };
+      XengController.prototype.runEffectActiveAndHideWithTime = function(node, timeHide) {
+        node.stopAllActions();
+        node.opacity = 255;
+        node.runAction(cc.sequence(cc.delayTime(timeHide), cc.fadeOut(0)));
+      };
+      XengController.prototype.runEffectNhapNhay1Lan = function(node, timeDelayShow) {
+        void 0 === timeDelayShow && (timeDelayShow = .1);
+        node.stopAllActions();
+        node.opacity = 0;
+        node.runAction(cc.sequence(cc.delayTime(timeDelayShow), cc.fadeIn(0)));
+      };
+      XengController.prototype.actionFade = function(node) {
+        node.opacity = 255;
+      };
+      XengController.prototype.makeDelay = function(time) {
+        var _this = this;
+        return new Promise(function(resolve, reject) {
+          var timeOut = setTimeout(function() {
+            _this.removeTimeOut(timeOut);
+            resolve(null);
+          }, 1e3 * time);
+          _this.addTimeOut(timeOut);
+        });
+      };
+      XengController.prototype.handleBetToNho = function(SFSObject) {
+        Windown_1.Windown.Dialog.checkAndShowLog(SFSObject, false);
+        var temp = new ResponseBetToNho_1.default();
+        temp.handleResponse(SFSObject);
+      };
+      XengController.prototype.handleMakeBet = function(SFSObject) {
+        Windown_1.Windown.Dialog.checkAndShowLog(SFSObject, false);
+        var temp = new ResponseMakeBet_1.default();
+        temp.handleResponse(SFSObject);
+      };
+      XengController.prototype.handleSetMutiXeng = function(SFSObject) {
+        Windown_1.Windown.Dialog.checkAndShowLog(SFSObject, false);
+        var temp = new ResponseSetMutil_1.default();
+        temp.handleResponse(SFSObject);
+      };
+      XengController.prototype.handleSetConfig = function(SFSObject) {
+        this.isCanSendData = true;
+        Windown_1.Windown.Dialog.checkAndShowLog(SFSObject, true);
+      };
+      XengController.prototype.showDoiDiem = function(isShow) {
+        this.xengView.showDoiDiem(isShow);
+      };
+      XengController.prototype.resetEffectAll = function() {
+        var _this = this;
+        this.offEffect(this.btnChangePointL.lbPoint.node);
+        this.listBtnItem.forEach(function(v) {
+          v.reset();
+          _this.offEffect(v.lbPoint.node);
+        });
+        this.listBtnXDV.forEach(function(v) {
+          v.reset();
+          _this.offEffect(v.lbPoint.node);
+        });
+        this.xengView.getIdListLastResutl().forEach(function(v) {
+          _this.offEffect(_this.xengView.getChildById(v));
+        });
+        this.xengView.getIdXDVListLastResutl().forEach(function(v) {
+          _this.offEffect(_this.xengView.getChildXDVById(v));
+        });
+        this.offItem(this.xengView.getNodeJp());
+      };
+      XengController.prototype.addTimeOut = function(number) {
+        this.listTimeOut.includes(number) || this.listTimeOut.push(number);
+      };
+      XengController.prototype.removeTimeOut = function(number) {
+        var index = this.listTimeOut.indexOf(number);
+        index > -1 && this.listTimeOut.splice(index, 1);
+      };
+      XengController.prototype.clearAllTimeOut = function() {
+        this.listTimeOut.forEach(function(v) {
+          clearTimeout(v);
+        });
+      };
+      XengController.prototype.getState = function(typeState) {
+        switch (typeState) {
+         case StateGame_1.default.PLAYING:
+          return new StatePlaying_1.default(StateGame_1.default.PLAYING);
+
+         case StateGame_1.default.PLAYINGMINI:
+          return new StatePlayingMini_1.default(StateGame_1.default.PLAYINGMINI);
+
+         case StateGame_1.default.WATING:
+          return new StateWating_1.default(StateGame_1.default.WATING);
+
+         case StateGame_1.default.FINISHED:
+          return new StateFinished_1.default(StateGame_1.default.FINISHED);
+
+         case StateGame_1.default.FINISHEDMINI:
+          return new StateFinishedMini_1.default(StateGame_1.default.FINISHEDMINI);
+
+         case StateGame_1.default.WATINGPLAYGAME:
+          return new StateWatingPlayGame_1.default(StateGame_1.default.WATINGPLAYGAME);
+
+         case StateGame_1.default.WATINGPLAYGAMEMINI:
+          return new StateWatingPlayGameMini_1.default(StateGame_1.default.WATINGPLAYGAMEMINI);
+        }
+      };
+      return XengController;
+    }();
+    exports.default = XengController;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/EVENT_MANAGER": void 0,
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/DefineTs/TextDefine": void 0,
+    "../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./Button/BtnBetItem": "BtnBetItem",
+    "./Button/BtnBetXDV": "BtnBetXDV",
+    "./Button/BtnChangePointLeft": "BtnChangePointLeft",
+    "./Button/BtnChangePointRight": "BtnChangePointRight",
+    "./Button/BtnClick": "BtnClick",
+    "./Button/BtnGo": "BtnGo",
+    "./Event/ResponseBetToNho": "ResponseBetToNho",
+    "./Event/ResponseMakeBet": "ResponseMakeBet",
+    "./Event/ResponseSetMutil": "ResponseSetMutil",
+    "./State/StateFinished": "StateFinished",
+    "./State/StateFinishedMini": "StateFinishedMini",
+    "./State/StateGame": "StateGame",
+    "./State/StatePlaying": "StatePlaying",
+    "./State/StatePlayingMini": "StatePlayingMini",
+    "./State/StateWating": "StateWating",
+    "./State/StateWatingPlayGame": "StateWatingPlayGame",
+    "./State/StateWatingPlayGameMini": "StateWatingPlayGameMini",
+    "./XengModel": "XengModel"
+  } ],
+  XengModel: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "db815rfGQlO75Z3et18Soz6", "XengModel");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.label = null;
+        _this.text = "hello";
+        return _this;
+      }
+      NewClass.prototype.start = function() {};
+      __decorate([ property(cc.Label) ], NewClass.prototype, "label", void 0);
+      __decorate([ property ], NewClass.prototype, "text", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {} ],
+  XengView: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "1ce64uuPndBJ7yNMewHOgJ6", "XengView");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var BaseButton_1 = require("./Button/BaseButton");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var NewClass = function(_super) {
+      __extends(NewClass, _super);
+      function NewClass() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.nodeGame = null;
+        _this.lbHeso = null;
+        _this.listLbHesoOGiua = [];
+        _this.parentItem = null;
+        _this.parentHistory = null;
+        _this.parentXDV = null;
+        _this.parentXoSo = null;
+        _this.parentLightMid = null;
+        _this.jpNode = null;
+        _this.nodeDoiDiem = null;
+        _this.funRDHeSo = null;
+        _this.handleUpdate = null;
+        _this.listIdResult = [ 0 ];
+        _this.listIdXDVResult = [ 0, 1 ];
+        _this.listHistory = [];
+        _this.funUpdate = null;
+        return _this;
+      }
+      NewClass.prototype.start = function() {
+        if (null == Windown_1.Windown.XengController) {
+          cc.director.loadScene("main");
+          return;
+        }
+        Windown_1.Windown.XengController.initXengView(this);
+        this.showDoiDiem(true);
+        var nodeBot = cc.find("Game/Bot", this.node);
+        var listBtn = nodeBot.getComponentsInChildren(BaseButton_1.default);
+        Windown_1.Windown.XengController.initListButton(listBtn);
+        this.initListHistory();
+        Windown_1.Windown.UIManager.changeRotation(true);
+        this.setupView();
+        this.randomLbHeSoOGiua();
+        cc.log("nhay vao start xeng");
+      };
+      NewClass.prototype.setupView = function() {
+        if (!cc.sys.isMobile) {
+          var scale = cc.winSize.height / 1280;
+          this.nodeGame.angle = -90;
+          this.nodeGame.scale = scale;
+        }
+      };
+      NewClass.prototype.initListHistory = function() {
+        var list = Windown_1.Windown.getLocalStorage("historyXDV");
+        if (list) this.listHistory = JSON.parse(list); else {
+          list = [];
+          for (var i = 0; i < 12; i++) {
+            var rd = Windown_1.Windown.RandomNumber(0, 100);
+            rd < 45 ? list.push(0) : rd < 90 ? list.push(2) : list.push(1);
+          }
+          this.listHistory = list;
+        }
+        this.emitNewHistoryXDV();
+      };
+      NewClass.prototype.showDoiDiem = function(isShow) {
+        this.nodeDoiDiem.active = isShow;
+      };
+      NewClass.prototype.setColor = function(type) {
+        var color = this.getColor(type);
+        this.getListChildren().forEach(function(v) {
+          v.color = color;
+        });
+      };
+      NewClass.prototype.getColor = function(type) {
+        var color = null;
+        color = 0 == type ? cc.Color.RED : 2 == type ? cc.Color.GREEN : cc.Color.ORANGE;
+        return color;
+      };
+      NewClass.prototype.initHandleUpdate = function(fund) {
+        this.handleUpdate = fund;
+      };
+      NewClass.prototype.getLightMid = function(id) {
+        return this.parentLightMid.children[id].children[0];
+      };
+      NewClass.prototype.getListLightMid = function() {
+        var listResult = [];
+        this.parentLightMid.children.forEach(function(v) {
+          listResult.push(v.children[0]);
+        });
+        return listResult;
+      };
+      NewClass.prototype.getChildById = function(id) {
+        return this.parentItem.children[id].children[0];
+      };
+      NewClass.prototype.getChildXDVById = function(id) {
+        return this.parentXDV.children[id];
+      };
+      NewClass.prototype.getChildXoSoById = function(id) {
+        return this.parentXoSo.children[id].children[0];
+      };
+      NewClass.prototype.getListLastResult = function() {
+        var listReturn = [];
+        var children = this.parentItem.children;
+        for (var temp in children) this.listIdResult.includes(Number(temp)) && listReturn.push(children[temp].children[0]);
+        return listReturn;
+      };
+      NewClass.prototype.getIdListLastResutl = function() {
+        return this.listIdResult;
+      };
+      NewClass.prototype.getIdXDVListLastResutl = function() {
+        return this.listIdXDVResult;
+      };
+      NewClass.prototype.getNodeJp = function() {
+        return this.jpNode;
+      };
+      NewClass.prototype.getListChildren = function() {
+        var listReturn = [];
+        var children = this.parentItem.children;
+        children.forEach(function(v) {
+          listReturn.push(v.children[0]);
+        });
+        return listReturn;
+      };
+      NewClass.prototype.getListChildXDV = function() {
+        var listReturn = [];
+        var children = this.parentXDV.children;
+        children.forEach(function(v) {
+          listReturn.push(v);
+        });
+        return listReturn;
+      };
+      NewClass.prototype.getListChildXoSo = function() {
+        var listReturn = [];
+        var children = this.parentXoSo.children;
+        children.forEach(function(v) {
+          listReturn.push(v.children[0]);
+        });
+        return listReturn;
+      };
+      NewClass.prototype.setStringLbHeSo = function(num) {
+        var str = num.toString();
+        str.length < 2 && (str = "0" + str);
+        this.lbHeso.string = str;
+      };
+      NewClass.prototype.randomLbHeSoOGiua = function() {
+        this.listLbHesoOGiua.forEach(function(v) {
+          var rd = Windown_1.Windown.RandomNumber(1, 100);
+          var str = rd.toString();
+          str.length < 1 && (str = "0" + str);
+          v.string = str;
+        });
+      };
+      NewClass.prototype.randomLbHeSo = function() {
+        var rd = Windown_1.Windown.RandomNumber(1, 100);
+        this.setStringLbHeSo(rd);
+      };
+      NewClass.prototype.runEffectRandomLabelHesoMiniGame = function() {
+        var _this = this;
+        this.unschedule(this.funRDHeSo);
+        this.schedule(this.funRDHeSo = function() {
+          var rd = Windown_1.Windown.RandomNumber(1, 14);
+          _this.setStringLbHeSo(rd);
+        }, .02);
+      };
+      NewClass.prototype.runEffectRandomLabelHesoSpecial = function() {
+        var _this = this;
+        var number = 11;
+        this.unschedule(this.funRDHeSo);
+        this.schedule(this.funRDHeSo = function() {
+          _this.setStringLbHeSo(number);
+          number += 11;
+          number > 99 && (number = 11);
+        }, .07);
+      };
+      NewClass.prototype.runEffectRandomLabelHeso = function(min, max) {
+        var _this = this;
+        this.unschedule(this.funRDHeSo);
+        this.schedule(this.funRDHeSo = function() {
+          var rd = Windown_1.Windown.RandomNumber(min, max);
+          _this.setStringLbHeSo(rd);
+        }, .04);
+      };
+      NewClass.prototype.offEffectRandomLabelHeso = function(number) {
+        this.unschedule(this.funRDHeSo);
+        this.setStringLbHeSo(number);
+      };
+      NewClass.prototype.offEffectLabelHeso = function() {
+        this.unschedule(this.funRDHeSo);
+      };
+      NewClass.prototype.putIdResult = function(id) {
+        this.listIdResult.push(id);
+      };
+      NewClass.prototype.activeIcon = function(node) {
+        node.stopAllActions();
+        node.opacity = 255;
+      };
+      NewClass.prototype.putIdXDVResult = function(id) {
+        this.listIdXDVResult.push(id);
+      };
+      NewClass.prototype.resetIdResult = function() {
+        this.listIdResult.length = 0;
+      };
+      NewClass.prototype.resetIdXDVResult = function() {
+        this.listIdXDVResult.length = 0;
+      };
+      NewClass.prototype.onClickBack = function() {
+        ConectManager_1.ConectManager.getIns().sendLeaveRoom(Windown_1.Windown.XengController.roomSFS);
+        Windown_1.Windown.UIManager.showLoading(30);
+      };
+      NewClass.prototype.onClickSeting = function() {};
+      NewClass.prototype.onClickTest = function() {
+        Windown_1.Windown.UIManager.showHomThu();
+      };
+      NewClass.prototype.sendMutilXeng = function(event, data) {
+        var mutil = Number(data);
+        Windown_1.Windown.XengController.mutil = mutil;
+        Windown_1.Windown.XengController.btnChangePointR.reset();
+        Windown_1.Windown.XengController.showDoiDiem(false);
+        Windown_1.Windown.XengController.getSoundMng().playNhacCho();
+        Windown_1.Windown.XengController.setGold(Windown_1.Windown.User.userAg);
+      };
+      NewClass.prototype.sendConfigBetToNho = function(event, data) {
+        var num = parseInt(data);
+        if (null == num) return;
+        var objSFS = ConectManager_1.ConectManager.getIns().getSFSObj();
+        objSFS.putInt("dataToNho", num);
+        Windown_1.Windown.XengController.sendToServer("setConfig", objSFS);
+      };
+      NewClass.prototype.sendConfigAnTruoc = function(event, data) {
+        var num = parseInt(data);
+        if (null == num) return;
+        var objSFS = ConectManager_1.ConectManager.getIns().getSFSObj();
+        objSFS.putInt("dataAnTruoc", num);
+        Windown_1.Windown.XengController.sendToServer("setConfig", objSFS);
+      };
+      NewClass.prototype.sendConfigXDV = function(event, data) {
+        var num = parseInt(data);
+        if (null == num) return;
+        var objSFS = ConectManager_1.ConectManager.getIns().getSFSObj();
+        objSFS.putInt("dataXDV", num);
+        Windown_1.Windown.XengController.sendToServer("setConfig", objSFS);
+      };
+      NewClass.prototype.addNewHistory = function(type) {
+        this.listHistory.unshift(type);
+        this.listHistory.pop();
+        this.emitNewHistoryXDV();
+      };
+      NewClass.prototype.emitNewHistoryXDV = function() {
+        var _this = this;
+        var strStorage = JSON.stringify(this.listHistory);
+        Windown_1.Windown.setLocalStorage("historyXDV", strStorage);
+        var count = 0;
+        var listNode = this.parentHistory.children;
+        this.listHistory.forEach(function(v) {
+          listNode[count].children[0].color = _this.getColor(v);
+          count++;
+        });
+      };
+      NewClass.prototype.sendConfigBetCua = function(event, data) {
+        cc.log("click set config bet cua");
+        var num = parseInt(data);
+        if (null == num) return;
+        var objSFS = ConectManager_1.ConectManager.getIns().getSFSObj();
+        objSFS.putInt("dataBetCua", num);
+        Windown_1.Windown.XengController.sendToServer("setConfig", objSFS);
+      };
+      NewClass.prototype.onDestroy = function() {
+        Windown_1.Windown.UIManager.changeRotation();
+        Windown_1.Windown.XengController && Windown_1.Windown.XengController.onDestroy();
+      };
+      NewClass.prototype.update = function(dt) {
+        this.funUpdate && this.funUpdate(dt);
+      };
+      __decorate([ property(cc.Node) ], NewClass.prototype, "nodeGame", void 0);
+      __decorate([ property(cc.Label) ], NewClass.prototype, "lbHeso", void 0);
+      __decorate([ property([ cc.Label ]) ], NewClass.prototype, "listLbHesoOGiua", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentItem", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentHistory", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentXDV", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentXoSo", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "parentLightMid", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "jpNode", void 0);
+      __decorate([ property(cc.Node) ], NewClass.prototype, "nodeDoiDiem", void 0);
+      NewClass = __decorate([ ccclass ], NewClass);
+      return NewClass;
+    }(cc.Component);
+    exports.default = NewClass;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./Button/BaseButton": "BaseButton"
+  } ]
+}, {}, [ "BaseButton", "BtnAll+1", "BtnBetItem", "BtnBetXDV", "BtnChangePointLeft", "BtnChangePointRight", "BtnClick", "BtnGo", "BaseEffect", "BaseEffectAnTruoc", "BaseEffectEnd", "BaseEffectXDVEnd", "Effect1CuaTo20", "EffectAnJP", "EffectAnLuon1Cua", "EffectBassNho", "EffectDapChuot", "EffectDoiMau", "EffectEndGame", "EffectEndNormal", "EffectRan8Dot", "EffectRunSpin", "EffectSpecial14", "EffectSpecial2", "EffectSpecial3", "EffectSpecial4", "EffectSpecial5", "EffectSpecial6", "EffectSpecial7", "EffectSpineSoXo", "EffectTraDiem", "EffectVe3CuaXDV", "EffectVeBar", "EffectVeVang", "EffectX8ChuyenMau", "IDataFinish", "X10_30_1Cua", "X3_1Cua", "IServerResponse", "ResponseBetToNho", "ResponseLeaveRoom", "ResponseMakeBet", "ResponseSetMutil", "SoundXeng", "BaseState", "StateFinished", "StateFinishedMini", "StateGame", "StatePlaying", "StatePlayingMini", "StateWating", "StateWatingPlayGame", "StateWatingPlayGameMini", "Test", "XengController", "XengModel", "XengView" ]);

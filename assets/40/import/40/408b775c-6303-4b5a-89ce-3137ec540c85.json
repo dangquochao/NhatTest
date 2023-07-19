@@ -1,1 +1,2419 @@
-[1,["f0F+pswABAgraMRdGINY0S"],0,[["sp.SkeletonData",["_name","_atlasText","textureNames","_skeletonJson","textures"],-1,3]],[[0,0,1,2,3,4,5]],[[0,"mayathanglon","\r\nmayathanglon.png\r\nsize: 2048,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBush\r\n  rotate: false\r\n  xy: 2, 695\r\n  size: 775, 315\r\n  orig: 775, 315\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq\r\n  rotate: false\r\n  xy: 2, 315\r\n  size: 650, 176\r\n  orig: 650, 176\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 2\r\n  rotate: false\r\n  xy: 2, 493\r\n  size: 658, 200\r\n  orig: 658, 200\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 3\r\n  rotate: false\r\n  xy: 1417, 798\r\n  size: 556, 212\r\n  orig: 556, 212\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 4\r\n  rotate: false\r\n  xy: 1409, 427\r\n  size: 392, 185\r\n  orig: 392, 185\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 5\r\n  rotate: false\r\n  xy: 779, 809\r\n  size: 636, 201\r\n  orig: 636, 201\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 6\r\n  rotate: false\r\n  xy: 2, 135\r\n  size: 636, 178\r\n  orig: 636, 178\r\n  offset: 0, 0\r\n  index: -1\r\nLeaf\r\n  rotate: false\r\n  xy: 654, 232\r\n  size: 285, 164\r\n  orig: 285, 164\r\n  offset: 0, 0\r\n  index: -1\r\nLeaf 2\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 299, 131\r\n  orig: 299, 131\r\n  offset: 0, 0\r\n  index: -1\r\nLon\r\n  rotate: false\r\n  xy: 640, 39\r\n  size: 279, 191\r\n  orig: 279, 191\r\n  offset: 0, 0\r\n  index: -1\r\nLon Glow\r\n  rotate: true\r\n  xy: 1022, 345\r\n  size: 261, 173\r\n  orig: 261, 173\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 1\r\n  rotate: false\r\n  xy: 1198, 448\r\n  size: 209, 359\r\n  orig: 209, 359\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 2\r\n  rotate: true\r\n  xy: 1811, 546\r\n  size: 250, 221\r\n  orig: 250, 221\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 3\r\n  rotate: true\r\n  xy: 662, 398\r\n  size: 208, 358\r\n  orig: 208, 358\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 4\r\n  rotate: true\r\n  xy: 1803, 293\r\n  size: 251, 222\r\n  orig: 251, 222\r\n  offset: 0, 0\r\n  index: -1\r\nThang\r\n  rotate: false\r\n  xy: 779, 608\r\n  size: 417, 199\r\n  orig: 417, 199\r\n  offset: 0, 0\r\n  index: -1\r\nThang Glow\r\n  rotate: false\r\n  xy: 1409, 614\r\n  size: 400, 182\r\n  orig: 400, 182\r\n  offset: 0, 0\r\n  index: -1\r\n",["mayathanglon.png"],{"skeleton":{"hash":"muyyeLAI20aGxpTOIOSntddYcFs","spine":"3.6.52","width":836,"height":485,"images":"./bigwin/"},"bones":[{"name":"root"},{"name":"bone","parent":"root"},{"name":"bone2","parent":"bone","y":95.32,"scaleX":1.096,"scaleY":1.096},{"name":"bone3","parent":"bone2","x":-125.25,"y":-3.99},{"name":"bone4","parent":"bone2","x":176.58,"y":-3.99},{"name":"bone5","parent":"bone","length":42.41,"rotation":-170.67,"x":17.05,"y":22.76},{"name":"bone6","parent":"bone5","length":47.48,"rotation":10.98,"x":42.41},{"name":"bone7","parent":"bone6","length":43.19,"rotation":12.69,"x":47.48},{"name":"bone8","parent":"bone5","length":50.24,"rotation":-25.83,"x":69.1,"y":-14.06},{"name":"bone9","parent":"bone8","length":54.7,"rotation":-7.55,"x":50.24},{"name":"bone10","parent":"bone9","length":44.79,"rotation":-20.14,"x":54.7},{"name":"bone11","parent":"bone8","length":45.17,"rotation":25.59,"x":40.23,"y":21.22},{"name":"bone12","parent":"bone11","length":40.42,"rotation":12.95,"x":45.17},{"name":"bone13","parent":"bone","length":61.96,"rotation":30.26,"x":67.89,"y":3.13},{"name":"bone14","parent":"bone13","length":67.29,"rotation":-15.67,"x":61.96},{"name":"bone15","parent":"bone14","length":77.85,"rotation":-9.99,"x":67.29},{"name":"bone16","parent":"bone15","length":59.52,"rotation":25.04,"x":77.85},{"name":"bone17","parent":"bone13","length":52.75,"rotation":-26.38,"x":16.5,"y":-10.66},{"name":"bone18","parent":"bone17","length":65.43,"rotation":7.13,"x":52.75},{"name":"bone19","parent":"bone18","length":43.93,"rotation":1.9,"x":65.43},{"name":"bone20","parent":"bone","length":361.14,"rotation":117.65,"x":-142.48,"y":-56.9},{"name":"bone21","parent":"bone","length":362.09,"rotation":62.06,"x":133.46,"y":-58.94},{"name":"bone22","parent":"bone","length":297.33,"rotation":137.65,"x":-185.4,"y":-104.93},{"name":"bone23","parent":"bone","length":293.76,"rotation":42.18,"x":180.48,"y":-104.93}],"slots":[{"name":"Bush","bone":"bone","attachment":"Bush"},{"name":"Leaf 2","bone":"bone13","attachment":"Leaf 2"},{"name":"Leaf","bone":"bone5","attachment":"Leaf"},{"name":"Spear 1","bone":"bone21","attachment":"Spear 1"},{"name":"Spear 2","bone":"bone23","attachment":"Spear 2"},{"name":"Spear 3","bone":"bone20","attachment":"Spear 3"},{"name":"Spear 4","bone":"bone22","attachment":"Spear 4"},{"name":"Thang","bone":"bone3","attachment":"Thang"},{"name":"Lon","bone":"bone4","attachment":"Lon"},{"name":"Thang Glow","bone":"bone3","attachment":"Thang Glow","blend":"additive"},{"name":"Lon Glow","bone":"bone4","attachment":"Lon Glow","blend":"additive"},{"name":"Glow Seq","bone":"bone2","color":"f99469ff","attachment":"Glow Seq","blend":"additive"}],"skins":{"default":{"Bush":{"Bush":{"x":8.42,"y":-43.93,"width":775,"height":315}},"Glow Seq":{"Glow Seq":{"x":-16.08,"y":-4.74,"width":650,"height":176},"Glow Seq 2":{"x":-6.08,"y":-9.74,"width":658,"height":200},"Glow Seq 3":{"x":44.92,"y":-2.74,"width":556,"height":212},"Glow Seq 4":{"x":125.92,"y":-14.24,"width":392,"height":185},"Glow Seq 5":{"x":4.92,"y":-12.24,"width":636,"height":201},"Glow Seq 6":{"x":4.92,"y":-23.74,"width":636,"height":178}},"Leaf":{"Leaf":{"type":"mesh","hull":23,"width":285,"height":164,"uvs":[0.88881,0.37346,0.66526,0.42644,0.45187,0.27634,0.28675,0.08651,0.1267,0,0,0,0,0.13949,0.06573,0.40878,0.21053,0.5942,0.10384,0.62068,0.05811,0.70456,0.11146,0.88115,0.21053,0.85466,0.38836,0.8061,0.35533,0.92088,0.3782,1,0.46457,1,0.57635,0.88115,0.72369,0.80168,0.92437,0.78844,1,0.74871,1,0.64717,0.95994,0.47941,0.70082,0.61185,0.52554,0.73988,0.34009,0.67366,0.4036,0.45293,0.19529,0.26751],"triangles":[11,10,12,12,10,8,10,9,8,12,8,25,12,25,13,25,26,24,25,8,26,7,27,8,8,27,26,7,6,27,27,3,2,6,4,27,27,4,3,6,5,4,26,2,1,26,27,2,13,17,16,16,15,14,16,14,13,13,24,17,17,24,18,13,25,24,24,23,18,18,23,19,23,26,1,23,24,26,20,19,21,19,23,21,23,22,21,23,0,22,23,1,0],"vertices":[2,5,-7.94,-28.66,0.99878,8,-62.98,-46.71,0.00122,3,5,56.34,-30.42,0.16541,6,7.89,-32.51,0.03359,8,-4.36,-20.28,0.80101,3,8,60.94,-26.6,0.13825,9,14.11,-24.97,0.85567,10,-29.52,-37.41,0.00609,2,9,69.77,-34.21,0.11684,10,25.92,-26.93,0.88316,1,10,68.52,-5.31,1,1,10,94.41,19.86,1,2,10,78.46,36.26,0.99059,12,53.34,-109.32,0.00941,3,9,105.75,39.73,0.00021,10,34.25,54.87,0.86202,12,52.54,-61.35,0.13777,4,9,55.67,50.67,0.05417,10,-16.54,47.91,0.13973,11,74.17,-11.48,0.00096,12,25.7,-17.68,0.80514,2,10,2.23,72.22,0.00018,12,55.51,-25.06,0.99982,1,12,72.76,-17.2,1,1,12,69.53,15.35,1,3,7,101.17,-34.7,0.00093,11,80.92,30.7,0.00668,12,41.73,21.91,0.99238,3,7,54.33,-13.78,0.60627,11,29.62,30.85,0.33329,12,-8.24,33.55,0.06044,3,7,72.48,-3.12,0.98676,11,41.89,47.95,0.0129,12,7.55,47.46,0.00034,1,7,74.08,11.31,1,1,7,53.43,24.72,1,2,6,57.54,28.63,0.1893,7,16.1,25.72,0.8107,3,5,49.89,33.01,0.28104,6,13.63,30.98,0.68525,7,-26.22,37.66,0.03371,2,5,-6.91,40.14,0.99527,6,-40.76,48.8,0.00473,1,5,-29.23,37.2,1,1,5,-31.93,20.77,1,1,5,-25.12,-8.23,1,3,5,51.27,1.23,0.00044,6,8.94,-0.48,0.99285,8,-22.72,6,0.00671,3,7,15.63,-1.6,0.97317,8,19.22,40.32,0.00134,11,-10.7,26.3,0.02548,3,7,54.04,-39.49,0.04025,11,39.77,7.23,0.85411,12,-3.64,8.25,0.10564,3,9,14.87,7.09,0.84198,11,16.18,-25.66,0.15785,12,-34,-18.51,0.00016,2,10,23.92,12.52,0.95695,12,9.62,-68.97,0.04305],"edges":[0,2,2,4,4,6,6,8,8,10,10,12,12,14,14,16,16,18,18,20,20,22,22,24,24,26,26,28,28,30,30,32,32,34,34,36,36,38,38,40,40,42,42,44,0,44]}},"Leaf 2":{"Leaf 2":{"type":"mesh","hull":16,"width":299,"height":131,"uvs":[0,0.80467,0.12659,0.3957,0.3082,0.20779,0.50433,0.18568,0.64719,0.12489,0.7949,0.12489,0.94745,0,1,0,1,0.29069,0.95471,0.63887,0.807,0.73835,0.73921,0.92626,0.61571,1,0.40989,1,0.14838,1,0,0.94284,0.19923,0.73835,0.43895,0.57808,0.65445,0.57808,0.86512,0.36806],"triangles":[6,7,8,5,6,8,19,5,8,4,5,19,9,19,8,18,19,9,10,18,9,3,4,19,18,3,19,17,3,18,11,18,10,18,12,17,18,11,12,13,16,17,17,12,13,17,2,3,1,2,17,14,16,13,16,1,17,0,1,16,14,15,0,16,14,0],"vertices":[1,13,-18.17,16.42,1,2,13,41.52,43.63,0.75574,14,-31.46,36.49,0.24426,3,13,100.83,37.53,0.01616,14,27.29,46.63,0.96777,15,-47.48,38.99,0.01608,3,14,84.77,34.66,0.2182,15,11.21,37.17,0.78166,16,-44.65,61.88,0.00014,2,15,54.42,41.68,0.85145,16,-3.59,47.68,0.14855,2,15,98.45,38.14,0.11737,16,34.8,25.84,0.88263,1,16,82.53,17.51,1,1,16,96.19,9.73,1,2,19,147.83,24.8,0.00212,16,77.36,-23.36,0.99788,2,19,124.44,-16.63,0.08095,16,43.03,-56.31,0.91905,3,19,78.48,-19.47,0.52859,15,95.61,-42.25,0.01193,16,-1.8,-45.8,0.45948,3,18,119.92,-37.15,0.00051,19,53.22,-38.94,0.93787,16,-31.59,-57.17,0.06162,2,18,81.83,-39.58,0.16953,19,15.08,-40.1,0.83047,3,17,77.45,-24.96,0.0135,18,21.42,-27.83,0.98269,19,-44.91,-26.36,0.00381,2,13,7.26,-28.04,0.06593,17,-0.56,-19.67,0.93407,2,13,-27.29,0.79,0.99816,17,-44.32,-9.2,0.00184,2,13,37.66,-6.09,0.75894,17,16.93,13.5,0.24106,2,14,52.9,-10.16,0.75264,18,40.5,24.76,0.24736,2,19,38.71,11.18,0.62023,15,51.83,-17.67,0.37977,2,19,106.26,23.93,0.01794,16,37.29,-12.23,0.98206],"edges":[0,2,2,4,4,6,6,8,8,10,10,12,12,14,14,16,16,18,18,20,20,22,22,24,24,26,26,28,28,30,0,30]}},"Lon":{"Lon":{"x":6.84,"y":-13.25,"width":279,"height":191}},"Lon Glow":{"Lon Glow":{"x":6.84,"y":-3.25,"width":261,"height":173}},"Spear 1":{"Spear 1":{"x":185.23,"y":-1.33,"rotation":-62.06,"width":209,"height":359}},"Spear 2":{"Spear 2":{"x":150.41,"y":0.02,"rotation":-42.18,"width":250,"height":221}},"Spear 3":{"Spear 3":{"x":180.44,"y":-3.55,"rotation":-117.65,"width":208,"height":358}},"Spear 4":{"Spear 4":{"x":147.65,"y":-1.4,"rotation":-137.65,"width":251,"height":222}},"Thang":{"Thang":{"x":-7.32,"y":-5.25,"width":417,"height":199}},"Thang Glow":{"Thang Glow":{"x":-6.82,"y":5.25,"width":400,"height":182}}}},"animations":{"Idle":{"slots":{"Glow Seq":{"attachment":[{"time":0,"name":null},{"time":0.8,"name":null},{"time":0.8667,"name":"Glow Seq"},{"time":0.9333,"name":"Glow Seq 2"},{"time":1,"name":"Glow Seq 3"},{"time":1.0667,"name":"Glow Seq 4"},{"time":1.1333,"name":"Glow Seq 5"},{"time":1.2,"name":"Glow Seq 6"},{"time":1.2667,"name":null},{"time":2.6333,"name":null},{"time":2.7,"name":"Glow Seq"},{"time":2.7667,"name":"Glow Seq 2"},{"time":2.8333,"name":"Glow Seq 3"},{"time":2.9,"name":"Glow Seq 4"},{"time":2.9667,"name":"Glow Seq 5"},{"time":3.0333,"name":"Glow Seq 6"},{"time":3.1,"name":null},{"time":4.4333,"name":null},{"time":4.5,"name":"Glow Seq"},{"time":4.5667,"name":"Glow Seq 2"},{"time":4.6333,"name":"Glow Seq 3"},{"time":4.7,"name":"Glow Seq 4"},{"time":4.7667,"name":"Glow Seq 5"},{"time":4.8333,"name":"Glow Seq 6"},{"time":4.9,"name":null},{"time":6,"name":null}]},"Lon Glow":{"color":[{"time":0,"color":"ffffff00"},{"time":0.4333,"color":"ffffff7b"},{"time":1.4333,"color":"ffffff00"},{"time":2.3667,"color":"ffffff7b"},{"time":3.3,"color":"ffffff00"},{"time":4.2333,"color":"ffffff7b"},{"time":5.2,"color":"ffffff00"},{"time":6,"color":"ffffff7b"}]},"Thang Glow":{"color":[{"time":0,"color":"ffffff00"},{"time":0.4333,"color":"ffffff7b"},{"time":1.4333,"color":"ffffff00"},{"time":2.3667,"color":"ffffff7b"},{"time":3.3,"color":"ffffff00"},{"time":4.2333,"color":"ffffff7b"},{"time":5.2,"color":"ffffff00"},{"time":6,"color":"ffffff7b"}]}},"bones":{"bone2":{"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.3333,"x":0,"y":0},{"time":0.4333,"x":0.958,"y":0.912,"curve":[0.25,0,0.75,1]},{"time":1.4,"x":1.137,"y":1.137,"curve":[0.25,0,0.75,1]},{"time":2.3333,"x":1.041,"y":0.99,"curve":[0.25,0,0.75,1]},{"time":3.3,"x":1.137,"y":1.137,"curve":[0.25,0,0.75,1]},{"time":4.2333,"x":1.041,"y":0.99,"curve":[0.25,0,0.75,1]},{"time":5.2,"x":1.137,"y":1.137,"curve":[0.25,0,0.75,1]},{"time":6,"x":1.041,"y":0.99}]},"bone":{"scale":[{"time":0,"x":0,"y":0,"curve":[0.199,0.1,0.541,1.68]},{"time":0.3333,"x":1,"y":1,"curve":[0.25,0,0.75,1]},{"time":0.4333,"x":0.95,"y":0.95,"curve":[0.25,0,0.75,1]},{"time":1.4,"x":1,"y":1,"curve":[0.25,0,0.75,1]},{"time":2.3333,"x":0.95,"y":0.95,"curve":[0.25,0,0.75,1]},{"time":3.3,"x":1,"y":1,"curve":[0.25,0,0.75,1]},{"time":4.2333,"x":0.95,"y":0.95,"curve":[0.25,0,0.75,1]},{"time":5.2,"x":1,"y":1,"curve":[0.25,0,0.75,1]},{"time":6,"x":0.95,"y":0.95}]},"bone3":{"translate":[{"time":0,"x":80.37,"y":0,"curve":"stepped"},{"time":0.1667,"x":80.37,"y":0},{"time":0.3,"x":0,"y":0,"curve":"stepped"},{"time":6,"x":0,"y":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.1667,"x":0,"y":0,"curve":[0.25,0,0.75,1]},{"time":0.3,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone4":{"translate":[{"time":0,"x":-173.04,"y":0,"curve":"stepped"},{"time":0.1667,"x":-173.04,"y":0},{"time":0.3,"x":0,"y":0,"curve":"stepped"},{"time":6,"x":0,"y":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.1667,"x":0,"y":0,"curve":[0.25,0,0.75,1]},{"time":0.3,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone20":{"rotate":[{"time":0,"angle":0,"curve":"stepped"},{"time":0.5,"angle":0},{"time":1.8667,"angle":5.01},{"time":3.2333,"angle":0},{"time":4.6333,"angle":5.01},{"time":6,"angle":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.2333,"x":0,"y":0,"curve":[0.199,0.1,0.541,1.68]},{"time":0.4,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone22":{"rotate":[{"time":0,"angle":0,"curve":"stepped"},{"time":0.5,"angle":0},{"time":1.8667,"angle":5.01},{"time":3.2333,"angle":0},{"time":4.6333,"angle":5.01},{"time":6,"angle":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.3333,"x":0,"y":0,"curve":[0.199,0.1,0.541,1.68]},{"time":0.5,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone21":{"rotate":[{"time":0,"angle":0,"curve":"stepped"},{"time":0.5,"angle":0},{"time":1.8667,"angle":-6.84},{"time":3.2333,"angle":0},{"time":4.6333,"angle":-6.84},{"time":6,"angle":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.2333,"x":0,"y":0,"curve":[0.199,0.1,0.541,1.68]},{"time":0.4,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone23":{"rotate":[{"time":0,"angle":0,"curve":"stepped"},{"time":0.5,"angle":0},{"time":1.8667,"angle":-6.84},{"time":3.2333,"angle":0},{"time":4.6333,"angle":-6.84},{"time":6,"angle":0}],"scale":[{"time":0,"x":0,"y":0,"curve":"stepped"},{"time":0.3333,"x":0,"y":0,"curve":[0.199,0.1,0.541,1.68]},{"time":0.5,"x":1,"y":1,"curve":"stepped"},{"time":6,"x":1,"y":1}]},"bone5":{"rotate":[{"time":0,"angle":3.89,"curve":[0.25,0,0.75,1]},{"time":1.5,"angle":-1.69,"curve":[0.25,0,0.75,1]},{"time":3,"angle":3.89,"curve":[0.25,0,0.75,1]},{"time":4.5,"angle":-1.69,"curve":[0.25,0,0.75,1]},{"time":6,"angle":3.89}]},"bone6":{"rotate":[{"time":0,"angle":3.27},{"time":0.1667,"angle":3.89},{"time":1.6667,"angle":-1.69},{"time":3.1667,"angle":3.89},{"time":4.6667,"angle":-1.69},{"time":6,"angle":3.27}]},"bone7":{"rotate":[{"time":0,"angle":2.65},{"time":0.3333,"angle":3.89},{"time":1.8333,"angle":-1.69},{"time":3.3333,"angle":3.89},{"time":4.8333,"angle":-1.69},{"time":6,"angle":2.65}]},"bone8":{"rotate":[{"time":0,"angle":3.52},{"time":0.1,"angle":3.89},{"time":1.6,"angle":-1.69},{"time":3.1,"angle":3.89},{"time":4.6,"angle":-1.69},{"time":6,"angle":3.52}]},"bone9":{"rotate":[{"time":0,"angle":2.9},{"time":0.2667,"angle":3.89},{"time":1.7667,"angle":-1.69},{"time":3.2667,"angle":3.89},{"time":4.7667,"angle":-1.69},{"time":6,"angle":2.9}]},"bone10":{"rotate":[{"time":0,"angle":2.4},{"time":0.4,"angle":3.89},{"time":1.9,"angle":-1.69},{"time":3.4,"angle":3.89},{"time":4.9,"angle":-1.69},{"time":6,"angle":2.4}]},"bone11":{"rotate":[{"time":0,"angle":3.27},{"time":0.1667,"angle":3.89},{"time":1.6667,"angle":-1.69},{"time":3.1667,"angle":3.89},{"time":4.6667,"angle":-1.69},{"time":6,"angle":3.27}]},"bone12":{"rotate":[{"time":0,"angle":2.65},{"time":0.3333,"angle":3.89},{"time":1.8333,"angle":-1.69},{"time":3.3333,"angle":3.89},{"time":4.8333,"angle":-1.69},{"time":6,"angle":2.65}]},"bone13":{"rotate":[{"time":0,"angle":-2.09,"curve":[0.25,0,0.75,1]},{"time":1.5,"angle":3.21,"curve":[0.25,0,0.75,1]},{"time":3,"angle":-2.09,"curve":[0.25,0,0.75,1]},{"time":4.5,"angle":3.21,"curve":[0.25,0,0.75,1]},{"time":6,"angle":-2.09}]},"bone14":{"rotate":[{"time":0,"angle":-1.5},{"time":0.1667,"angle":-2.09},{"time":1.6667,"angle":3.21},{"time":3.1667,"angle":-2.09},{"time":4.6667,"angle":3.21},{"time":6,"angle":-1.5}]},"bone15":{"rotate":[{"time":0,"angle":-0.91},{"time":0.3333,"angle":-2.09},{"time":1.8333,"angle":3.21},{"time":3.3333,"angle":-2.09},{"time":4.8333,"angle":3.21},{"time":6,"angle":-0.91}]},"bone16":{"rotate":[{"time":0,"angle":-0.32},{"time":0.5,"angle":-2.09},{"time":2,"angle":3.21},{"time":3.5,"angle":-2.09},{"time":5,"angle":3.21},{"time":6,"angle":-0.32}]},"bone17":{"rotate":[{"time":0,"angle":-1.5},{"time":0.1667,"angle":-2.09},{"time":1.6667,"angle":3.21},{"time":3.1667,"angle":-2.09},{"time":4.6667,"angle":3.21},{"time":6,"angle":-1.5}]},"bone18":{"rotate":[{"time":0,"angle":-1.15},{"time":0.2667,"angle":-2.09},{"time":1.7667,"angle":3.21},{"time":3.2667,"angle":-2.09},{"time":4.7667,"angle":3.21},{"time":6,"angle":-1.15}]},"bone19":{"rotate":[{"time":0,"angle":-0.68},{"time":0.4,"angle":-2.09},{"time":1.9,"angle":3.21},{"time":3.4,"angle":-2.09},{"time":4.9,"angle":3.21},{"time":6,"angle":-0.68}]}}}}},[0]]],0,0,[0],[-1],[0]]
+[
+  1,
+  [
+    "f0F+pswABAgraMRdGINY0S"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "mayathanglon",
+      "\r\nmayathanglon.png\r\nsize: 2048,1024\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nBush\r\n  rotate: false\r\n  xy: 2, 695\r\n  size: 775, 315\r\n  orig: 775, 315\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq\r\n  rotate: false\r\n  xy: 2, 315\r\n  size: 650, 176\r\n  orig: 650, 176\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 2\r\n  rotate: false\r\n  xy: 2, 493\r\n  size: 658, 200\r\n  orig: 658, 200\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 3\r\n  rotate: false\r\n  xy: 1417, 798\r\n  size: 556, 212\r\n  orig: 556, 212\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 4\r\n  rotate: false\r\n  xy: 1409, 427\r\n  size: 392, 185\r\n  orig: 392, 185\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 5\r\n  rotate: false\r\n  xy: 779, 809\r\n  size: 636, 201\r\n  orig: 636, 201\r\n  offset: 0, 0\r\n  index: -1\r\nGlow Seq 6\r\n  rotate: false\r\n  xy: 2, 135\r\n  size: 636, 178\r\n  orig: 636, 178\r\n  offset: 0, 0\r\n  index: -1\r\nLeaf\r\n  rotate: false\r\n  xy: 654, 232\r\n  size: 285, 164\r\n  orig: 285, 164\r\n  offset: 0, 0\r\n  index: -1\r\nLeaf 2\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 299, 131\r\n  orig: 299, 131\r\n  offset: 0, 0\r\n  index: -1\r\nLon\r\n  rotate: false\r\n  xy: 640, 39\r\n  size: 279, 191\r\n  orig: 279, 191\r\n  offset: 0, 0\r\n  index: -1\r\nLon Glow\r\n  rotate: true\r\n  xy: 1022, 345\r\n  size: 261, 173\r\n  orig: 261, 173\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 1\r\n  rotate: false\r\n  xy: 1198, 448\r\n  size: 209, 359\r\n  orig: 209, 359\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 2\r\n  rotate: true\r\n  xy: 1811, 546\r\n  size: 250, 221\r\n  orig: 250, 221\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 3\r\n  rotate: true\r\n  xy: 662, 398\r\n  size: 208, 358\r\n  orig: 208, 358\r\n  offset: 0, 0\r\n  index: -1\r\nSpear 4\r\n  rotate: true\r\n  xy: 1803, 293\r\n  size: 251, 222\r\n  orig: 251, 222\r\n  offset: 0, 0\r\n  index: -1\r\nThang\r\n  rotate: false\r\n  xy: 779, 608\r\n  size: 417, 199\r\n  orig: 417, 199\r\n  offset: 0, 0\r\n  index: -1\r\nThang Glow\r\n  rotate: false\r\n  xy: 1409, 614\r\n  size: 400, 182\r\n  orig: 400, 182\r\n  offset: 0, 0\r\n  index: -1\r\n",
+      [
+        "mayathanglon.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "muyyeLAI20aGxpTOIOSntddYcFs",
+          "spine": "3.6.52",
+          "width": 836,
+          "height": 485,
+          "images": "./bigwin/"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "bone",
+            "parent": "root"
+          },
+          {
+            "name": "bone2",
+            "parent": "bone",
+            "y": 95.32,
+            "scaleX": 1.096,
+            "scaleY": 1.096
+          },
+          {
+            "name": "bone3",
+            "parent": "bone2",
+            "x": -125.25,
+            "y": -3.99
+          },
+          {
+            "name": "bone4",
+            "parent": "bone2",
+            "x": 176.58,
+            "y": -3.99
+          },
+          {
+            "name": "bone5",
+            "parent": "bone",
+            "length": 42.41,
+            "rotation": -170.67,
+            "x": 17.05,
+            "y": 22.76
+          },
+          {
+            "name": "bone6",
+            "parent": "bone5",
+            "length": 47.48,
+            "rotation": 10.98,
+            "x": 42.41
+          },
+          {
+            "name": "bone7",
+            "parent": "bone6",
+            "length": 43.19,
+            "rotation": 12.69,
+            "x": 47.48
+          },
+          {
+            "name": "bone8",
+            "parent": "bone5",
+            "length": 50.24,
+            "rotation": -25.83,
+            "x": 69.1,
+            "y": -14.06
+          },
+          {
+            "name": "bone9",
+            "parent": "bone8",
+            "length": 54.7,
+            "rotation": -7.55,
+            "x": 50.24
+          },
+          {
+            "name": "bone10",
+            "parent": "bone9",
+            "length": 44.79,
+            "rotation": -20.14,
+            "x": 54.7
+          },
+          {
+            "name": "bone11",
+            "parent": "bone8",
+            "length": 45.17,
+            "rotation": 25.59,
+            "x": 40.23,
+            "y": 21.22
+          },
+          {
+            "name": "bone12",
+            "parent": "bone11",
+            "length": 40.42,
+            "rotation": 12.95,
+            "x": 45.17
+          },
+          {
+            "name": "bone13",
+            "parent": "bone",
+            "length": 61.96,
+            "rotation": 30.26,
+            "x": 67.89,
+            "y": 3.13
+          },
+          {
+            "name": "bone14",
+            "parent": "bone13",
+            "length": 67.29,
+            "rotation": -15.67,
+            "x": 61.96
+          },
+          {
+            "name": "bone15",
+            "parent": "bone14",
+            "length": 77.85,
+            "rotation": -9.99,
+            "x": 67.29
+          },
+          {
+            "name": "bone16",
+            "parent": "bone15",
+            "length": 59.52,
+            "rotation": 25.04,
+            "x": 77.85
+          },
+          {
+            "name": "bone17",
+            "parent": "bone13",
+            "length": 52.75,
+            "rotation": -26.38,
+            "x": 16.5,
+            "y": -10.66
+          },
+          {
+            "name": "bone18",
+            "parent": "bone17",
+            "length": 65.43,
+            "rotation": 7.13,
+            "x": 52.75
+          },
+          {
+            "name": "bone19",
+            "parent": "bone18",
+            "length": 43.93,
+            "rotation": 1.9,
+            "x": 65.43
+          },
+          {
+            "name": "bone20",
+            "parent": "bone",
+            "length": 361.14,
+            "rotation": 117.65,
+            "x": -142.48,
+            "y": -56.9
+          },
+          {
+            "name": "bone21",
+            "parent": "bone",
+            "length": 362.09,
+            "rotation": 62.06,
+            "x": 133.46,
+            "y": -58.94
+          },
+          {
+            "name": "bone22",
+            "parent": "bone",
+            "length": 297.33,
+            "rotation": 137.65,
+            "x": -185.4,
+            "y": -104.93
+          },
+          {
+            "name": "bone23",
+            "parent": "bone",
+            "length": 293.76,
+            "rotation": 42.18,
+            "x": 180.48,
+            "y": -104.93
+          }
+        ],
+        "slots": [
+          {
+            "name": "Bush",
+            "bone": "bone",
+            "attachment": "Bush"
+          },
+          {
+            "name": "Leaf 2",
+            "bone": "bone13",
+            "attachment": "Leaf 2"
+          },
+          {
+            "name": "Leaf",
+            "bone": "bone5",
+            "attachment": "Leaf"
+          },
+          {
+            "name": "Spear 1",
+            "bone": "bone21",
+            "attachment": "Spear 1"
+          },
+          {
+            "name": "Spear 2",
+            "bone": "bone23",
+            "attachment": "Spear 2"
+          },
+          {
+            "name": "Spear 3",
+            "bone": "bone20",
+            "attachment": "Spear 3"
+          },
+          {
+            "name": "Spear 4",
+            "bone": "bone22",
+            "attachment": "Spear 4"
+          },
+          {
+            "name": "Thang",
+            "bone": "bone3",
+            "attachment": "Thang"
+          },
+          {
+            "name": "Lon",
+            "bone": "bone4",
+            "attachment": "Lon"
+          },
+          {
+            "name": "Thang Glow",
+            "bone": "bone3",
+            "attachment": "Thang Glow",
+            "blend": "additive"
+          },
+          {
+            "name": "Lon Glow",
+            "bone": "bone4",
+            "attachment": "Lon Glow",
+            "blend": "additive"
+          },
+          {
+            "name": "Glow Seq",
+            "bone": "bone2",
+            "color": "f99469ff",
+            "attachment": "Glow Seq",
+            "blend": "additive"
+          }
+        ],
+        "skins": {
+          "default": {
+            "Bush": {
+              "Bush": {
+                "x": 8.42,
+                "y": -43.93,
+                "width": 775,
+                "height": 315
+              }
+            },
+            "Glow Seq": {
+              "Glow Seq": {
+                "x": -16.08,
+                "y": -4.74,
+                "width": 650,
+                "height": 176
+              },
+              "Glow Seq 2": {
+                "x": -6.08,
+                "y": -9.74,
+                "width": 658,
+                "height": 200
+              },
+              "Glow Seq 3": {
+                "x": 44.92,
+                "y": -2.74,
+                "width": 556,
+                "height": 212
+              },
+              "Glow Seq 4": {
+                "x": 125.92,
+                "y": -14.24,
+                "width": 392,
+                "height": 185
+              },
+              "Glow Seq 5": {
+                "x": 4.92,
+                "y": -12.24,
+                "width": 636,
+                "height": 201
+              },
+              "Glow Seq 6": {
+                "x": 4.92,
+                "y": -23.74,
+                "width": 636,
+                "height": 178
+              }
+            },
+            "Leaf": {
+              "Leaf": {
+                "type": "mesh",
+                "hull": 23,
+                "width": 285,
+                "height": 164,
+                "uvs": [
+                  0.88881,
+                  0.37346,
+                  0.66526,
+                  0.42644,
+                  0.45187,
+                  0.27634,
+                  0.28675,
+                  0.08651,
+                  0.1267,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.13949,
+                  0.06573,
+                  0.40878,
+                  0.21053,
+                  0.5942,
+                  0.10384,
+                  0.62068,
+                  0.05811,
+                  0.70456,
+                  0.11146,
+                  0.88115,
+                  0.21053,
+                  0.85466,
+                  0.38836,
+                  0.8061,
+                  0.35533,
+                  0.92088,
+                  0.3782,
+                  1,
+                  0.46457,
+                  1,
+                  0.57635,
+                  0.88115,
+                  0.72369,
+                  0.80168,
+                  0.92437,
+                  0.78844,
+                  1,
+                  0.74871,
+                  1,
+                  0.64717,
+                  0.95994,
+                  0.47941,
+                  0.70082,
+                  0.61185,
+                  0.52554,
+                  0.73988,
+                  0.34009,
+                  0.67366,
+                  0.4036,
+                  0.45293,
+                  0.19529,
+                  0.26751
+                ],
+                "triangles": [
+                  11,
+                  10,
+                  12,
+                  12,
+                  10,
+                  8,
+                  10,
+                  9,
+                  8,
+                  12,
+                  8,
+                  25,
+                  12,
+                  25,
+                  13,
+                  25,
+                  26,
+                  24,
+                  25,
+                  8,
+                  26,
+                  7,
+                  27,
+                  8,
+                  8,
+                  27,
+                  26,
+                  7,
+                  6,
+                  27,
+                  27,
+                  3,
+                  2,
+                  6,
+                  4,
+                  27,
+                  27,
+                  4,
+                  3,
+                  6,
+                  5,
+                  4,
+                  26,
+                  2,
+                  1,
+                  26,
+                  27,
+                  2,
+                  13,
+                  17,
+                  16,
+                  16,
+                  15,
+                  14,
+                  16,
+                  14,
+                  13,
+                  13,
+                  24,
+                  17,
+                  17,
+                  24,
+                  18,
+                  13,
+                  25,
+                  24,
+                  24,
+                  23,
+                  18,
+                  18,
+                  23,
+                  19,
+                  23,
+                  26,
+                  1,
+                  23,
+                  24,
+                  26,
+                  20,
+                  19,
+                  21,
+                  19,
+                  23,
+                  21,
+                  23,
+                  22,
+                  21,
+                  23,
+                  0,
+                  22,
+                  23,
+                  1,
+                  0
+                ],
+                "vertices": [
+                  2,
+                  5,
+                  -7.94,
+                  -28.66,
+                  0.99878,
+                  8,
+                  -62.98,
+                  -46.71,
+                  0.00122,
+                  3,
+                  5,
+                  56.34,
+                  -30.42,
+                  0.16541,
+                  6,
+                  7.89,
+                  -32.51,
+                  0.03359,
+                  8,
+                  -4.36,
+                  -20.28,
+                  0.80101,
+                  3,
+                  8,
+                  60.94,
+                  -26.6,
+                  0.13825,
+                  9,
+                  14.11,
+                  -24.97,
+                  0.85567,
+                  10,
+                  -29.52,
+                  -37.41,
+                  0.00609,
+                  2,
+                  9,
+                  69.77,
+                  -34.21,
+                  0.11684,
+                  10,
+                  25.92,
+                  -26.93,
+                  0.88316,
+                  1,
+                  10,
+                  68.52,
+                  -5.31,
+                  1,
+                  1,
+                  10,
+                  94.41,
+                  19.86,
+                  1,
+                  2,
+                  10,
+                  78.46,
+                  36.26,
+                  0.99059,
+                  12,
+                  53.34,
+                  -109.32,
+                  0.00941,
+                  3,
+                  9,
+                  105.75,
+                  39.73,
+                  0.00021,
+                  10,
+                  34.25,
+                  54.87,
+                  0.86202,
+                  12,
+                  52.54,
+                  -61.35,
+                  0.13777,
+                  4,
+                  9,
+                  55.67,
+                  50.67,
+                  0.05417,
+                  10,
+                  -16.54,
+                  47.91,
+                  0.13973,
+                  11,
+                  74.17,
+                  -11.48,
+                  0.00096,
+                  12,
+                  25.7,
+                  -17.68,
+                  0.80514,
+                  2,
+                  10,
+                  2.23,
+                  72.22,
+                  0.00018,
+                  12,
+                  55.51,
+                  -25.06,
+                  0.99982,
+                  1,
+                  12,
+                  72.76,
+                  -17.2,
+                  1,
+                  1,
+                  12,
+                  69.53,
+                  15.35,
+                  1,
+                  3,
+                  7,
+                  101.17,
+                  -34.7,
+                  0.00093,
+                  11,
+                  80.92,
+                  30.7,
+                  0.00668,
+                  12,
+                  41.73,
+                  21.91,
+                  0.99238,
+                  3,
+                  7,
+                  54.33,
+                  -13.78,
+                  0.60627,
+                  11,
+                  29.62,
+                  30.85,
+                  0.33329,
+                  12,
+                  -8.24,
+                  33.55,
+                  0.06044,
+                  3,
+                  7,
+                  72.48,
+                  -3.12,
+                  0.98676,
+                  11,
+                  41.89,
+                  47.95,
+                  0.0129,
+                  12,
+                  7.55,
+                  47.46,
+                  0.00034,
+                  1,
+                  7,
+                  74.08,
+                  11.31,
+                  1,
+                  1,
+                  7,
+                  53.43,
+                  24.72,
+                  1,
+                  2,
+                  6,
+                  57.54,
+                  28.63,
+                  0.1893,
+                  7,
+                  16.1,
+                  25.72,
+                  0.8107,
+                  3,
+                  5,
+                  49.89,
+                  33.01,
+                  0.28104,
+                  6,
+                  13.63,
+                  30.98,
+                  0.68525,
+                  7,
+                  -26.22,
+                  37.66,
+                  0.03371,
+                  2,
+                  5,
+                  -6.91,
+                  40.14,
+                  0.99527,
+                  6,
+                  -40.76,
+                  48.8,
+                  0.00473,
+                  1,
+                  5,
+                  -29.23,
+                  37.2,
+                  1,
+                  1,
+                  5,
+                  -31.93,
+                  20.77,
+                  1,
+                  1,
+                  5,
+                  -25.12,
+                  -8.23,
+                  1,
+                  3,
+                  5,
+                  51.27,
+                  1.23,
+                  0.00044,
+                  6,
+                  8.94,
+                  -0.48,
+                  0.99285,
+                  8,
+                  -22.72,
+                  6,
+                  0.00671,
+                  3,
+                  7,
+                  15.63,
+                  -1.6,
+                  0.97317,
+                  8,
+                  19.22,
+                  40.32,
+                  0.00134,
+                  11,
+                  -10.7,
+                  26.3,
+                  0.02548,
+                  3,
+                  7,
+                  54.04,
+                  -39.49,
+                  0.04025,
+                  11,
+                  39.77,
+                  7.23,
+                  0.85411,
+                  12,
+                  -3.64,
+                  8.25,
+                  0.10564,
+                  3,
+                  9,
+                  14.87,
+                  7.09,
+                  0.84198,
+                  11,
+                  16.18,
+                  -25.66,
+                  0.15785,
+                  12,
+                  -34,
+                  -18.51,
+                  0.00016,
+                  2,
+                  10,
+                  23.92,
+                  12.52,
+                  0.95695,
+                  12,
+                  9.62,
+                  -68.97,
+                  0.04305
+                ],
+                "edges": [
+                  0,
+                  2,
+                  2,
+                  4,
+                  4,
+                  6,
+                  6,
+                  8,
+                  8,
+                  10,
+                  10,
+                  12,
+                  12,
+                  14,
+                  14,
+                  16,
+                  16,
+                  18,
+                  18,
+                  20,
+                  20,
+                  22,
+                  22,
+                  24,
+                  24,
+                  26,
+                  26,
+                  28,
+                  28,
+                  30,
+                  30,
+                  32,
+                  32,
+                  34,
+                  34,
+                  36,
+                  36,
+                  38,
+                  38,
+                  40,
+                  40,
+                  42,
+                  42,
+                  44,
+                  0,
+                  44
+                ]
+              }
+            },
+            "Leaf 2": {
+              "Leaf 2": {
+                "type": "mesh",
+                "hull": 16,
+                "width": 299,
+                "height": 131,
+                "uvs": [
+                  0,
+                  0.80467,
+                  0.12659,
+                  0.3957,
+                  0.3082,
+                  0.20779,
+                  0.50433,
+                  0.18568,
+                  0.64719,
+                  0.12489,
+                  0.7949,
+                  0.12489,
+                  0.94745,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0.29069,
+                  0.95471,
+                  0.63887,
+                  0.807,
+                  0.73835,
+                  0.73921,
+                  0.92626,
+                  0.61571,
+                  1,
+                  0.40989,
+                  1,
+                  0.14838,
+                  1,
+                  0,
+                  0.94284,
+                  0.19923,
+                  0.73835,
+                  0.43895,
+                  0.57808,
+                  0.65445,
+                  0.57808,
+                  0.86512,
+                  0.36806
+                ],
+                "triangles": [
+                  6,
+                  7,
+                  8,
+                  5,
+                  6,
+                  8,
+                  19,
+                  5,
+                  8,
+                  4,
+                  5,
+                  19,
+                  9,
+                  19,
+                  8,
+                  18,
+                  19,
+                  9,
+                  10,
+                  18,
+                  9,
+                  3,
+                  4,
+                  19,
+                  18,
+                  3,
+                  19,
+                  17,
+                  3,
+                  18,
+                  11,
+                  18,
+                  10,
+                  18,
+                  12,
+                  17,
+                  18,
+                  11,
+                  12,
+                  13,
+                  16,
+                  17,
+                  17,
+                  12,
+                  13,
+                  17,
+                  2,
+                  3,
+                  1,
+                  2,
+                  17,
+                  14,
+                  16,
+                  13,
+                  16,
+                  1,
+                  17,
+                  0,
+                  1,
+                  16,
+                  14,
+                  15,
+                  0,
+                  16,
+                  14,
+                  0
+                ],
+                "vertices": [
+                  1,
+                  13,
+                  -18.17,
+                  16.42,
+                  1,
+                  2,
+                  13,
+                  41.52,
+                  43.63,
+                  0.75574,
+                  14,
+                  -31.46,
+                  36.49,
+                  0.24426,
+                  3,
+                  13,
+                  100.83,
+                  37.53,
+                  0.01616,
+                  14,
+                  27.29,
+                  46.63,
+                  0.96777,
+                  15,
+                  -47.48,
+                  38.99,
+                  0.01608,
+                  3,
+                  14,
+                  84.77,
+                  34.66,
+                  0.2182,
+                  15,
+                  11.21,
+                  37.17,
+                  0.78166,
+                  16,
+                  -44.65,
+                  61.88,
+                  0.00014,
+                  2,
+                  15,
+                  54.42,
+                  41.68,
+                  0.85145,
+                  16,
+                  -3.59,
+                  47.68,
+                  0.14855,
+                  2,
+                  15,
+                  98.45,
+                  38.14,
+                  0.11737,
+                  16,
+                  34.8,
+                  25.84,
+                  0.88263,
+                  1,
+                  16,
+                  82.53,
+                  17.51,
+                  1,
+                  1,
+                  16,
+                  96.19,
+                  9.73,
+                  1,
+                  2,
+                  19,
+                  147.83,
+                  24.8,
+                  0.00212,
+                  16,
+                  77.36,
+                  -23.36,
+                  0.99788,
+                  2,
+                  19,
+                  124.44,
+                  -16.63,
+                  0.08095,
+                  16,
+                  43.03,
+                  -56.31,
+                  0.91905,
+                  3,
+                  19,
+                  78.48,
+                  -19.47,
+                  0.52859,
+                  15,
+                  95.61,
+                  -42.25,
+                  0.01193,
+                  16,
+                  -1.8,
+                  -45.8,
+                  0.45948,
+                  3,
+                  18,
+                  119.92,
+                  -37.15,
+                  0.00051,
+                  19,
+                  53.22,
+                  -38.94,
+                  0.93787,
+                  16,
+                  -31.59,
+                  -57.17,
+                  0.06162,
+                  2,
+                  18,
+                  81.83,
+                  -39.58,
+                  0.16953,
+                  19,
+                  15.08,
+                  -40.1,
+                  0.83047,
+                  3,
+                  17,
+                  77.45,
+                  -24.96,
+                  0.0135,
+                  18,
+                  21.42,
+                  -27.83,
+                  0.98269,
+                  19,
+                  -44.91,
+                  -26.36,
+                  0.00381,
+                  2,
+                  13,
+                  7.26,
+                  -28.04,
+                  0.06593,
+                  17,
+                  -0.56,
+                  -19.67,
+                  0.93407,
+                  2,
+                  13,
+                  -27.29,
+                  0.79,
+                  0.99816,
+                  17,
+                  -44.32,
+                  -9.2,
+                  0.00184,
+                  2,
+                  13,
+                  37.66,
+                  -6.09,
+                  0.75894,
+                  17,
+                  16.93,
+                  13.5,
+                  0.24106,
+                  2,
+                  14,
+                  52.9,
+                  -10.16,
+                  0.75264,
+                  18,
+                  40.5,
+                  24.76,
+                  0.24736,
+                  2,
+                  19,
+                  38.71,
+                  11.18,
+                  0.62023,
+                  15,
+                  51.83,
+                  -17.67,
+                  0.37977,
+                  2,
+                  19,
+                  106.26,
+                  23.93,
+                  0.01794,
+                  16,
+                  37.29,
+                  -12.23,
+                  0.98206
+                ],
+                "edges": [
+                  0,
+                  2,
+                  2,
+                  4,
+                  4,
+                  6,
+                  6,
+                  8,
+                  8,
+                  10,
+                  10,
+                  12,
+                  12,
+                  14,
+                  14,
+                  16,
+                  16,
+                  18,
+                  18,
+                  20,
+                  20,
+                  22,
+                  22,
+                  24,
+                  24,
+                  26,
+                  26,
+                  28,
+                  28,
+                  30,
+                  0,
+                  30
+                ]
+              }
+            },
+            "Lon": {
+              "Lon": {
+                "x": 6.84,
+                "y": -13.25,
+                "width": 279,
+                "height": 191
+              }
+            },
+            "Lon Glow": {
+              "Lon Glow": {
+                "x": 6.84,
+                "y": -3.25,
+                "width": 261,
+                "height": 173
+              }
+            },
+            "Spear 1": {
+              "Spear 1": {
+                "x": 185.23,
+                "y": -1.33,
+                "rotation": -62.06,
+                "width": 209,
+                "height": 359
+              }
+            },
+            "Spear 2": {
+              "Spear 2": {
+                "x": 150.41,
+                "y": 0.02,
+                "rotation": -42.18,
+                "width": 250,
+                "height": 221
+              }
+            },
+            "Spear 3": {
+              "Spear 3": {
+                "x": 180.44,
+                "y": -3.55,
+                "rotation": -117.65,
+                "width": 208,
+                "height": 358
+              }
+            },
+            "Spear 4": {
+              "Spear 4": {
+                "x": 147.65,
+                "y": -1.4,
+                "rotation": -137.65,
+                "width": 251,
+                "height": 222
+              }
+            },
+            "Thang": {
+              "Thang": {
+                "x": -7.32,
+                "y": -5.25,
+                "width": 417,
+                "height": 199
+              }
+            },
+            "Thang Glow": {
+              "Thang Glow": {
+                "x": -6.82,
+                "y": 5.25,
+                "width": 400,
+                "height": 182
+              }
+            }
+          }
+        },
+        "animations": {
+          "Idle": {
+            "slots": {
+              "Glow Seq": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "Glow Seq"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "Glow Seq 2"
+                  },
+                  {
+                    "time": 1,
+                    "name": "Glow Seq 3"
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": "Glow Seq 4"
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": "Glow Seq 5"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "Glow Seq 6"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": null
+                  },
+                  {
+                    "time": 2.6333,
+                    "name": null
+                  },
+                  {
+                    "time": 2.7,
+                    "name": "Glow Seq"
+                  },
+                  {
+                    "time": 2.7667,
+                    "name": "Glow Seq 2"
+                  },
+                  {
+                    "time": 2.8333,
+                    "name": "Glow Seq 3"
+                  },
+                  {
+                    "time": 2.9,
+                    "name": "Glow Seq 4"
+                  },
+                  {
+                    "time": 2.9667,
+                    "name": "Glow Seq 5"
+                  },
+                  {
+                    "time": 3.0333,
+                    "name": "Glow Seq 6"
+                  },
+                  {
+                    "time": 3.1,
+                    "name": null
+                  },
+                  {
+                    "time": 4.4333,
+                    "name": null
+                  },
+                  {
+                    "time": 4.5,
+                    "name": "Glow Seq"
+                  },
+                  {
+                    "time": 4.5667,
+                    "name": "Glow Seq 2"
+                  },
+                  {
+                    "time": 4.6333,
+                    "name": "Glow Seq 3"
+                  },
+                  {
+                    "time": 4.7,
+                    "name": "Glow Seq 4"
+                  },
+                  {
+                    "time": 4.7667,
+                    "name": "Glow Seq 5"
+                  },
+                  {
+                    "time": 4.8333,
+                    "name": "Glow Seq 6"
+                  },
+                  {
+                    "time": 4.9,
+                    "name": null
+                  },
+                  {
+                    "time": 6,
+                    "name": null
+                  }
+                ]
+              },
+              "Lon Glow": {
+                "color": [
+                  {
+                    "time": 0,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.4333,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 1.4333,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 2.3667,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 3.3,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 4.2333,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 5.2,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 6,
+                    "color": "ffffff7b"
+                  }
+                ]
+              },
+              "Thang Glow": {
+                "color": [
+                  {
+                    "time": 0,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.4333,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 1.4333,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 2.3667,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 3.3,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 4.2333,
+                    "color": "ffffff7b"
+                  },
+                  {
+                    "time": 5.2,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 6,
+                    "color": "ffffff7b"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone2": {
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "time": 0.4333,
+                    "x": 0.958,
+                    "y": 0.912,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 1.4,
+                    "x": 1.137,
+                    "y": 1.137,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 2.3333,
+                    "x": 1.041,
+                    "y": 0.99,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 3.3,
+                    "x": 1.137,
+                    "y": 1.137,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 4.2333,
+                    "x": 1.041,
+                    "y": 0.99,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 5.2,
+                    "x": 1.137,
+                    "y": 1.137,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 6,
+                    "x": 1.041,
+                    "y": 0.99
+                  }
+                ]
+              },
+              "bone": {
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.199,
+                      0.1,
+                      0.541,
+                      1.68
+                    ]
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": 1,
+                    "y": 1,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 0.4333,
+                    "x": 0.95,
+                    "y": 0.95,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 1.4,
+                    "x": 1,
+                    "y": 1,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 2.3333,
+                    "x": 0.95,
+                    "y": 0.95,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 3.3,
+                    "x": 1,
+                    "y": 1,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 4.2333,
+                    "x": 0.95,
+                    "y": 0.95,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 5.2,
+                    "x": 1,
+                    "y": 1,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 6,
+                    "x": 0.95,
+                    "y": 0.95
+                  }
+                ]
+              },
+              "bone3": {
+                "translate": [
+                  {
+                    "time": 0,
+                    "x": 80.37,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 80.37,
+                    "y": 0
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone4": {
+                "translate": [
+                  {
+                    "time": 0,
+                    "x": -173.04,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": -173.04,
+                    "y": 0
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone20": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 0
+                  },
+                  {
+                    "time": 1.8667,
+                    "angle": 5.01
+                  },
+                  {
+                    "time": 3.2333,
+                    "angle": 0
+                  },
+                  {
+                    "time": 4.6333,
+                    "angle": 5.01
+                  },
+                  {
+                    "time": 6,
+                    "angle": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.199,
+                      0.1,
+                      0.541,
+                      1.68
+                    ]
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone22": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 0
+                  },
+                  {
+                    "time": 1.8667,
+                    "angle": 5.01
+                  },
+                  {
+                    "time": 3.2333,
+                    "angle": 0
+                  },
+                  {
+                    "time": 4.6333,
+                    "angle": 5.01
+                  },
+                  {
+                    "time": 6,
+                    "angle": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.199,
+                      0.1,
+                      0.541,
+                      1.68
+                    ]
+                  },
+                  {
+                    "time": 0.5,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone21": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 0
+                  },
+                  {
+                    "time": 1.8667,
+                    "angle": -6.84
+                  },
+                  {
+                    "time": 3.2333,
+                    "angle": 0
+                  },
+                  {
+                    "time": 4.6333,
+                    "angle": -6.84
+                  },
+                  {
+                    "time": 6,
+                    "angle": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.199,
+                      0.1,
+                      0.541,
+                      1.68
+                    ]
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone23": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": 0
+                  },
+                  {
+                    "time": 1.8667,
+                    "angle": -6.84
+                  },
+                  {
+                    "time": 3.2333,
+                    "angle": 0
+                  },
+                  {
+                    "time": 4.6333,
+                    "angle": -6.84
+                  },
+                  {
+                    "time": 6,
+                    "angle": 0
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0,
+                    "x": 0,
+                    "y": 0,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.3333,
+                    "x": 0,
+                    "y": 0,
+                    "curve": [
+                      0.199,
+                      0.1,
+                      0.541,
+                      1.68
+                    ]
+                  },
+                  {
+                    "time": 0.5,
+                    "x": 1,
+                    "y": 1,
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 6,
+                    "x": 1,
+                    "y": 1
+                  }
+                ]
+              },
+              "bone5": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 3.89,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 1.5,
+                    "angle": -1.69,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 3,
+                    "angle": 3.89,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 4.5,
+                    "angle": -1.69,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 6,
+                    "angle": 3.89
+                  }
+                ]
+              },
+              "bone6": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 3.27
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.6667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.1667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.6667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 3.27
+                  }
+                ]
+              },
+              "bone7": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 2.65
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.8333,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.3333,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.8333,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 2.65
+                  }
+                ]
+              },
+              "bone8": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 3.52
+                  },
+                  {
+                    "time": 0.1,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.6,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.1,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.6,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 3.52
+                  }
+                ]
+              },
+              "bone9": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 2.9
+                  },
+                  {
+                    "time": 0.2667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.7667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.2667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.7667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 2.9
+                  }
+                ]
+              },
+              "bone10": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 2.4
+                  },
+                  {
+                    "time": 0.4,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.9,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.4,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.9,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 2.4
+                  }
+                ]
+              },
+              "bone11": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 3.27
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.6667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.1667,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.6667,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 3.27
+                  }
+                ]
+              },
+              "bone12": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": 2.65
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 1.8333,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 3.3333,
+                    "angle": 3.89
+                  },
+                  {
+                    "time": 4.8333,
+                    "angle": -1.69
+                  },
+                  {
+                    "time": 6,
+                    "angle": 2.65
+                  }
+                ]
+              },
+              "bone13": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -2.09,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 1.5,
+                    "angle": 3.21,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 3,
+                    "angle": -2.09,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 4.5,
+                    "angle": 3.21,
+                    "curve": [
+                      0.25,
+                      0,
+                      0.75,
+                      1
+                    ]
+                  },
+                  {
+                    "time": 6,
+                    "angle": -2.09
+                  }
+                ]
+              },
+              "bone14": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -1.5
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 1.6667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.1667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 4.6667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -1.5
+                  }
+                ]
+              },
+              "bone15": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -0.91
+                  },
+                  {
+                    "time": 0.3333,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 1.8333,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.3333,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 4.8333,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -0.91
+                  }
+                ]
+              },
+              "bone16": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -0.32
+                  },
+                  {
+                    "time": 0.5,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 2,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.5,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 5,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -0.32
+                  }
+                ]
+              },
+              "bone17": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -1.5
+                  },
+                  {
+                    "time": 0.1667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 1.6667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.1667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 4.6667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -1.5
+                  }
+                ]
+              },
+              "bone18": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -1.15
+                  },
+                  {
+                    "time": 0.2667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 1.7667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.2667,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 4.7667,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -1.15
+                  }
+                ]
+              },
+              "bone19": {
+                "rotate": [
+                  {
+                    "time": 0,
+                    "angle": -0.68
+                  },
+                  {
+                    "time": 0.4,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 1.9,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 3.4,
+                    "angle": -2.09
+                  },
+                  {
+                    "time": 4.9,
+                    "angle": 3.21
+                  },
+                  {
+                    "time": 6,
+                    "angle": -0.68
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]
