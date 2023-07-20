@@ -1,7 +1,7 @@
 [
   1,
   [
-    "19d228c7b"
+    "184c3ced0"
   ],
   [
     "_textureSetter"
@@ -15,7 +15,7 @@
       "name": "l_block_blur",
       "rect": [
         1,
-        532,
+        705,
         175,
         175
       ],
