@@ -1,1 +1,51 @@
-[1,["e5HxMewrZK3aZrR40lE7zt"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"tool_tip_turbo_off","rect":[0,1,20,28],"offset":[-1,0],"originalSize":[22,30],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "e5HxMewrZK3aZrR40lE7zt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "tool_tip_turbo_off",
+      "rect": [
+        0,
+        1,
+        20,
+        28
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        22,
+        30
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,1 +1,258 @@
-[1,["deBkG2gShK0bp333XRCPp6"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"ib_bar_b","rect":[1,246,756,203],"offset":[0,0],"originalSize":[756,203],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ib_bar_c","rect":[1,451,756,249],"offset":[0,0],"originalSize":[756,249],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ib_bar_c_mask","rect":[237,1,81,128],"offset":[0,0],"originalSize":[81,128],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ib_bar_a_mask","rect":[1,1,54,109],"offset":[-3,0],"originalSize":[60,109],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ib_bar_b_mask","rect":[112,1,57,123],"offset":[0,0],"originalSize":[57,123],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"ib_bar_a","rect":[1,84,756,160],"offset":[0,0],"originalSize":[756,160],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "deBkG2gShK0bp333XRCPp6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "ib_bar_b",
+          "rect": [
+            1,
+            246,
+            756,
+            203
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            756,
+            203
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ib_bar_c",
+          "rect": [
+            1,
+            451,
+            756,
+            249
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            756,
+            249
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ib_bar_c_mask",
+          "rect": [
+            237,
+            1,
+            81,
+            128
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            81,
+            128
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ib_bar_a_mask",
+          "rect": [
+            1,
+            1,
+            54,
+            109
+          ],
+          "offset": [
+            -3,
+            0
+          ],
+          "originalSize": [
+            60,
+            109
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ib_bar_b_mask",
+          "rect": [
+            112,
+            1,
+            57,
+            123
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            57,
+            123
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "ib_bar_a",
+          "rect": [
+            1,
+            84,
+            756,
+            160
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            756,
+            160
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

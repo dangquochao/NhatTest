@@ -1,1 +1,51 @@
-[1,["128ef35c7"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"Number5","rect":[256,740,32,48],"offset":[0,0],"originalSize":[34,50],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "128ef35c7"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Number5",
+      "rect": [
+        256,
+        740,
+        32,
+        48
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        34,
+        50
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

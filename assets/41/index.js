@@ -1,1 +1,4237 @@
-window.__require=function t(e,i,n){function a(r,s){if(!i[r]){if(!e[r]){var c=r.split("/");if(c=c[c.length-1],!e[c]){var l="function"==typeof __require&&__require;if(!s&&l)return l(c,!0);if(o)return o(c,!0);throw new Error("Cannot find module '"+r+"'")}r=c}var p=i[r]={exports:{}};e[r][0].call(p.exports,function(t){return a(e[r][1][t]||t)},p,p.exports,t,e,i,n)}return i[r].exports}for(var o="function"==typeof __require&&__require,r=0;r<n.length;r++)a(n[r]);return a}({"Baccarat.Assets":[function(t,e,i){"use strict";cc._RF.push(e,"c3929B7DJJFJ56uustrPN2z","Baccarat.Assets");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Windown"),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.chipBetTemp=null,e.effectWin=null,e.chipBetSprites=[],e.listBetValue=[1,5,10,50,100,500,1e3,2e3,5e3,1e4,5e4,1e5,15e4,2e5],e.chipBetPool=null,e.cardAtlas=null,e.spriteCard=[],e.animDealCardData=null,e.animNanBaiData=null,e}return a(e,t),e.prototype.onLoad=function(){this.chipBetPool=new cc.NodePool("chipbet");for(var t=39;t<52;t++)this.spriteCard.push(this.cardAtlas.getSpriteFrame(t+""));for(t=26;t<39;t++)this.spriteCard.push(this.cardAtlas.getSpriteFrame(t+""));for(t=0;t<13;t++)this.spriteCard.push(this.cardAtlas.getSpriteFrame(t+""));for(t=13;t<26;t++)this.spriteCard.push(this.cardAtlas.getSpriteFrame(t+""))},e.prototype.start=function(){},e.prototype.getCardSprite=function(t){return this.spriteCard[t-1]},e.prototype.getCardBack=function(){return this.cardAtlas.getSpriteFrame("52")},e.prototype.getEffectWin=function(t,e){void 0===e&&(e=!1);var i=cc.instantiate(this.effectWin);return i.getChildByName("lbChipWin").getComponent(cc.Label).string=r.Windown.formatMoney(t),i.active=!0,i},e.prototype.getChipBet=function(t){var e=null;0==this.chipBetPool.size()&&this.chipBetPool.put(cc.instantiate(this.chipBetTemp)),(e=this.chipBetPool.get()).active=!0,e.opacity=255,e.scale=1,e.value=0,e.gate=-1,e.playerID=0,e.isChipPayOther=null;var i=this.listBetValue.indexOf(t/1e3);return e.getComponent(cc.Sprite).spriteFrame=-1!=i?this.chipBetSprites[i]:this.chipBetSprites[this.chipBetSprites.length-1],e},o([l(cc.Node)],e.prototype,"chipBetTemp",void 0),o([l(cc.Node)],e.prototype,"effectWin",void 0),o([l([cc.SpriteFrame])],e.prototype,"chipBetSprites",void 0),o([l(cc.SpriteAtlas)],e.prototype,"cardAtlas",void 0),o([l(sp.SkeletonData)],e.prototype,"animDealCardData",void 0),o([l(sp.SkeletonData)],e.prototype,"animNanBaiData",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.Audio":[function(t,e,i){"use strict";cc._RF.push(e,"8ca9efPaMxHzZsWZa9sBXbH","Baccarat.Audio");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Parent/AudioManager"),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.bgm_fs=null,e.click=null,e.flipCard=null,e.openCard=null,e.bankerWin=null,e.playerWin=null,e.youWin=null,e.gateWinEffect=null,e.dealer_startBet=null,e.dealer_endBet=null,e.getChip=null,e.chipMoveToPlayer_turn1=null,e.chipMoveToPlayer_turn2=null,e.throwChip=null,e.openPopup=null,e.fsSpin=null,e}return a(e,t),e.prototype.start=function(){},e.prototype.playClick=function(){this.playEffect(this.click)},e.prototype.playMusic=function(){cc.log("chay vao play music "+this.isActiveMusic),this.isActiveMusic&&this.backgroundMusicAudio&&(cc.audioEngine.playMusic(this.backgroundMusicAudio,!0),cc.audioEngine.setMusicVolume(1))},e.prototype.playIndexTakeLine=function(){},e.prototype.playSmalWin=function(){},e.prototype.playBkgfs=function(){this.stopMusic(),this.playEffect(this.bgm_fs,.6,!0)},e.prototype.stopBkgFs=function(){this.stopEffect(this.bgm_fs,!0),this.playMusic()},o([l(cc.AudioClip)],e.prototype,"bgm_fs",void 0),o([l(cc.AudioClip)],e.prototype,"click",void 0),o([l(cc.AudioClip)],e.prototype,"flipCard",void 0),o([l(cc.AudioClip)],e.prototype,"openCard",void 0),o([l(cc.AudioClip)],e.prototype,"bankerWin",void 0),o([l(cc.AudioClip)],e.prototype,"playerWin",void 0),o([l(cc.AudioClip)],e.prototype,"youWin",void 0),o([l(cc.AudioClip)],e.prototype,"gateWinEffect",void 0),o([l(cc.AudioClip)],e.prototype,"dealer_startBet",void 0),o([l(cc.AudioClip)],e.prototype,"dealer_endBet",void 0),o([l(cc.AudioClip)],e.prototype,"getChip",void 0),o([l(cc.AudioClip)],e.prototype,"chipMoveToPlayer_turn1",void 0),o([l(cc.AudioClip)],e.prototype,"chipMoveToPlayer_turn2",void 0),o([l(cc.AudioClip)],e.prototype,"throwChip",void 0),o([l(cc.AudioClip)],e.prototype,"openPopup",void 0),o([l(cc.AudioClip)],e.prototype,"fsSpin",void 0),o([c],e)}(r.default);i.default=p,cc._RF.pop()},{"../../../Scritps/Parent/AudioManager":void 0}],"Baccarat.BigRoad":[function(t,e,i){"use strict";cc._RF.push(e,"b11de7wPypMRIitreKWlaa4","Baccarat.BigRoad");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PP:14,PLAYER_BP:15,PLAYER_PBP:145,BANKER_PP:34,BANKER_BP:35,BANKER_PBP:345,TIE_PP:24,TIE_BP:25,TIE_PBP:245}),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.spfBanker=null,e.spfPlayer=null,e.spfTieBanker=null,e.spfTiePlayer=null,e.spfTie_BankerWinPlayerPair=null,e.spfTie_BankerWinBankerPair=null,e.spfTie_PlayerWinPlayerPair=null,e.spfBanker_BankerPair=null,e.spfBanker_PlayerPair=null,e.spfBanker_BankerPlayerPair=null,e.spfPlayer_BankerPair=null,e.spfPlayer_PlayerPair=null,e.spfPlayer_BankerPlayerPair=null,e.template=null,e.container=null,e.topRightPos=null,e.BacaratBetSite={PLAYER_PAIR:1,PLAYER:2,TIE:3,BANKER:4,BANKER_PAIR:5},e.dataHistory=[],e.deltaXCol=34,e.deltaYRow=34,e.currentIndex=0,e.currentCol=0,e.currentPosX=0,e}return a(e,t),e.prototype.start=function(){this.currentPosX=this.topRightPos.x},e.prototype.setInfo=function(t){for(var e=0,i=t.length;e<i-1;e++){var n=[];n.push(t[e]);var a=t[e];cc.log("idCheck="+a);for(var o=this.getGateWinNormal(a),s=e+1;s<i;s++){var c=t[s],l=this.getGateWinNormal(c);if(o!=r.TIE){if(o!=l&&o!=r.TIE){0!=n.length&&(e+=n.length-1);break}n.push(c)}else a=c}this.dataHistory.push(n)}for(e=0,i=this.dataHistory.length;e<i;e++){var p=this.dataHistory[e].reverse(),h=0;for(cc.log("dataCol=",p),s=0;s<p.length;s++){var u=p[s];if(this.getGateWinNormal(u)!=r.TIE){var d=cc.instantiate(this.template);d.parent=this.container,d.active=!0,d.getChildByName("spr").getComponent(cc.Sprite).spriteFrame=this.getSpf(u),d.setPosition(cc.v2(this.topRightPos.x-this.deltaXCol*this.currentCol,this.topRightPos.y-this.deltaYRow*h)),this.currentIndex++,h++}else cc.isValid(this.container.children[this.currentIndex-1])&&(this.container.children[this.currentIndex-1].getChildByName("tie").active=!0),s==p.length-1&&this.currentCol--}this.currentCol++}},e.prototype.getSpf=function(t){var e=null;switch(t){case r.BANKER:e=this.spfBanker;break;case r.BANKER_BP:e=this.spfBanker_BankerPair;break;case r.BANKER_PP:e=this.spfBanker_PlayerPair;break;case r.BANKER_PBP:e=this.spfBanker_BankerPlayerPair;break;case r.PLAYER:e=this.spfPlayer;break;case r.PLAYER_BP:e=this.spfPlayer_BankerPair;break;case r.PLAYER_PP:e=this.spfPlayer_PlayerPair;break;case r.PLAYER_PBP:e=this.spfPlayer_BankerPlayerPair;break;default:cc.log("BigRoad:ko vao case nao ca:"+t)}return e},e.prototype.getGateWinNormal=function(t){var e=0;switch(t){case r.PLAYER:case r.PLAYER_BP:case r.PLAYER_PP:case r.PLAYER_PBP:e=r.PLAYER;break;case r.BANKER:case r.BANKER_BP:case r.BANKER_PP:case r.BANKER_PBP:e=r.BANKER;break;case r.TIE:case r.TIE_BP:case r.TIE_PP:case r.TIE_PBP:e=r.TIE;break;default:cc.log("KO vao cAse nao getGateWinNormal:"+t)}return e},o([l(cc.SpriteFrame)],e.prototype,"spfBanker",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTieBanker",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTiePlayer",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_BankerWinPlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_BankerWinBankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_PlayerWinPlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_BankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_PlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_BankerPlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_BankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_PlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_BankerPlayerPair",void 0),o([l(cc.Node)],e.prototype,"template",void 0),o([l(cc.Node)],e.prototype,"container",void 0),o([l(cc.Vec2)],e.prototype,"topRightPos",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{}],"Baccarat.ButtonBet":[function(t,e,i){"use strict";cc._RF.push(e,"931e1pN48lEV4zRZ4h/Z0lo","Baccarat.ButtonBet");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Windown"),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.scrBtn=null,e.btnX2=null,e.btnRebet=null,e.btnBetB=null,e.currbetBtnBet=null,e.chipBorder=null,e.listBetValue=[1,5,10,50,100,500,1e3,2e3,5e3,1e4,5e4,15e4,2e5],e.currentBetValue=1,e}return a(e,t),e.prototype.start=function(){var t=this;this.scrBtn.content.children.forEach(function(e,i){var n=new cc.Component.EventHandler;n.target=t.node,n.component="Baccarat.ButtonBet",n.handler="onClickBet",n.customEventData=t.listBetValue[i]+"",e.getComponent(cc.Button).clickEvents.push(n)}),this.currbetBtnBet.y=10},e.prototype.onClickBet=function(t,e){cc.log("clickbet:"+e),r.Windown.BaccaratView.audio.playEffect(r.Windown.BaccaratView.audio.chipMoveToPlayer_turn1),cc.tween(this.currbetBtnBet).to(.1,{y:0}).start(),this.currbetBtnBet=t.target,this.chipBorder.parent=this.currbetBtnBet,this.currentBetValue=1e3*parseInt(e),r.Windown.BaccaratView.currentBetValue=this.currentBetValue,cc.tween(this.currbetBtnBet).to(.1,{y:10}).start()},e.prototype.onClickX2=function(){var t=r.Windown.BaccaratView.HistoryBet.getTotalHistoryBet(),e=r.Windown.BaccaratView.HistoryBet.ListGateBet;if(2*t>r.Windown.User.userAg)r.Windown.UIManager.showAlertMini("B\u1ea1n kh\xf4ng \u0111\u1ee7 ti\u1ec1n c\u01b0\u1ee3c X2!");else{for(var i=0;i<5;i++)e[i]>0&&(r.Windown.BaccaratController.sendBet(i+1,2*e[i]),r.Windown.BaccaratController.isCanSendData=!0);this.btnRebet.interactable=!1,this.btnX2.interactable=!1}},e.prototype.onClickRebet=function(){var t=r.Windown.BaccaratView.HistoryBet.getTotalHistoryBet(),e=r.Windown.BaccaratView.HistoryBet.ListGateBet;if(t>r.Windown.User.userAg)r.Windown.UIManager.showAlertMini("B\u1ea1n kh\xf4ng \u0111\u1ee7 ti\u1ec1n c\u01b0\u1ee3c l\u1ea1i!");else{for(var i=0;i<5;i++)e[i]>0&&(r.Windown.BaccaratController.sendBet(i+1,e[i]),r.Windown.BaccaratController.isCanSendData=!0);this.btnRebet.interactable=!1,this.btnX2.interactable=!1}},e.prototype.onChangeListChip=function(t,e){var i=this.scrBtn.getScrollOffset(),n=this.scrBtn.getMaxScrollOffset();"previous"==e?i.x<0&&cc.tween(this.scrBtn.content).to(.3,{x:this.scrBtn.content.x+100}).start():Math.abs(i.x)<n.x&&cc.tween(this.scrBtn.content).to(.3,{x:this.scrBtn.content.x-100}).start()},e.prototype.setStatusBtnBet=function(){var t=r.Windown.BaccaratView.HistoryBet.getTotalHistoryBet();cc.log("setStatusBtnBet:"+t),t>0?(this.btnRebet.interactable=t<=r.Windown.User.userAg,this.btnX2.interactable=2*t<r.Windown.User.userAg):this.btnRebet.interactable=this.btnX2.interactable=!1},o([l(cc.ScrollView)],e.prototype,"scrBtn",void 0),o([l(cc.Button)],e.prototype,"btnX2",void 0),o([l(cc.Button)],e.prototype,"btnRebet",void 0),o([l(cc.Button)],e.prototype,"btnBetB",void 0),o([l(cc.Node)],e.prototype,"currbetBtnBet",void 0),o([l(cc.Node)],e.prototype,"chipBorder",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.Card":[function(t,e,i){"use strict";cc._RF.push(e,"db539tYJPRGlYq+qbrxYgh0","Baccarat.Card");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0}),i.TYPE_ANIM=i.TYPE_CARD=void 0;var r,s,c=t("../../../Scritps/Windown"),l=cc._decorator,p=l.ccclass,h=l.property;(function(t){t[t.card_LEFT_1=0]="card_LEFT_1",t[t.card_LEFT_2=1]="card_LEFT_2",t[t.card_LEFT_3=2]="card_LEFT_3",t[t.card_RIGHT_1=3]="card_RIGHT_1",t[t.card_RIGHT_2=4]="card_RIGHT_2",t[t.card_RIGHT_3=5]="card_RIGHT_3"})(r=i.TYPE_CARD||(i.TYPE_CARD={})),function(t){t[t.NAN=0]="NAN",t[t.LAT=1]="LAT",t[t.SURE_WIN=2]="SURE_WIN",t[t.HIGHLIGHT=3]="HIGHLIGHT"}(s=i.TYPE_ANIM||(i.TYPE_ANIM={}));var u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.TYPE=r.card_LEFT_1,e.spineCard=null,e.id=-1,e}return a(e,t),e.prototype.start=function(){},e.prototype.dealCard=function(){this.spineCard.skeletonData=c.Windown.BaccaratView.assets.animDealCardData,this.spineCard.setAnimation(0,this.getAnimNameDealCard(),!1)},e.prototype.nanCard=function(){this.spineCard.skeletonData=c.Windown.BaccaratView.assets.animNanBaiData,this.spineCard.setSkin("card_"+(this.id-1<10?"0"+(this.id-1):this.id-1)),this.spineCard.setSlotsToSetupPose(),this.spineCard.setAnimation(0,this.getAnimCardNan(s.NAN),!1)},e.prototype.openCard=function(){this.spineCard.skeletonData=c.Windown.BaccaratView.assets.animNanBaiData,this.spineCard.setSkin("card_"+(this.id-1<10?"0"+(this.id-1):this.id-1)),this.spineCard.setSlotsToSetupPose(),this.spineCard.setAnimation(0,this.getAnimCardNan(s.LAT),!1)},e.prototype.setCard=function(){c.Windown.BaccaratView.assets.getCardSprite(this.id),this.spineCard.skeletonData=c.Windown.BaccaratView.assets.animNanBaiData,this.spineCard.setSkin("card_"+(this.id-1<10?"0"+(this.id-1):this.id-1)),this.spineCard.setSlotsToSetupPose(),this.spineCard.setAnimation(0,this.getAnimCardValue(),!1)},e.prototype.setCardBack=function(){cc.log("set card back"),this.spineCard.skeletonData=c.Windown.BaccaratView.assets.animNanBaiData,this.spineCard.setSkin("card_52"),this.spineCard.setSlotsToSetupPose(),this.spineCard.setAnimation(0,this.getAnimCardValue(),!1)},e.prototype.getAnimCardNan=function(t){var e,i;switch(t){case s.NAN:i="nan";break;case s.LAT:i="lat";break;case s.SURE_WIN:i="surewin";break;case s.HIGHLIGHT:i="highlight"}var n="anim_%s_vertical_%s";switch(this.TYPE){case r.card_LEFT_1:e=cc.js.formatStr(n,i,"left2");break;case r.card_LEFT_2:e=cc.js.formatStr(n,i,"left1");break;case r.card_LEFT_3:e="anim_"+i+"_horizontal_left";break;case r.card_RIGHT_1:e=e=cc.js.formatStr(n,i,"right1");break;case r.card_RIGHT_2:e=e=cc.js.formatStr(n,i,"right2");break;case r.card_RIGHT_3:e="anim_"+i+"_horizontal_right"}return e},e.prototype.getAnimCardValue=function(){var t;switch(this.TYPE){case r.card_LEFT_1:t="Open_vertical_left2";break;case r.card_LEFT_2:t="Open_vertical_left1";break;case r.card_LEFT_3:t="Open_horizontal_left";break;case r.card_RIGHT_1:t="Open_vertical_right1";break;case r.card_RIGHT_2:t="Open_vertical_right2";break;case r.card_RIGHT_3:t="Open__horizontal_right"}return t},e.prototype.getAnimNameDealCard=function(){var t;switch(this.TYPE){case r.card_LEFT_1:t="anim_flycard_vertical_left2";break;case r.card_LEFT_2:t="anim_flycard_vertical_left1";break;case r.card_LEFT_3:t="anim_flycard_horizontal_left";break;case r.card_RIGHT_1:t="anim_flycard_vertical_right1";break;case r.card_RIGHT_2:t="anim_flycard_vertical_right2";break;case r.card_RIGHT_3:t="anim_flycard_horizontal_right"}return t},o([h({type:cc.Enum(r)})],e.prototype,"TYPE",void 0),o([h(sp.Skeleton)],e.prototype,"spineCard",void 0),o([p],e)}(cc.Component);i.default=u,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.ChipBet":[function(t,e,i){"use strict";cc._RF.push(e,"b2c9dxWN1hHoKMW78LL6xzK","Baccarat.ChipBet");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=cc._decorator,s=r.ccclass,c=(r.property,function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.playerID=0,e.value=0,e.gate=-1,e}return a(e,t),o([s],e)}(cc.Component));i.default=c,cc._RF.pop()},{}],"Baccarat.DishRoadBoard":[function(t,e,i){"use strict";cc._RF.push(e,"8c845LrMoVADKOGcGrNxDL2","Baccarat.DishRoadBoard");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PP:14,PLAYER_BP:15,PLAYER_PBP:145,BANKER_PP:34,BANKER_BP:35,BANKER_PBP:345,TIE_PP:24,TIE_BP:25,TIE_PBP:245}),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.spfBanker=null,e.spfPlayer=null,e.spfTie=null,e.spfTie_BankerPair=null,e.spfTie_PlayerPair=null,e.spfTie_BankerPlayerPair=null,e.spfBanker_BankerPair=null,e.spfBanker_PlayerPair=null,e.spfBanker_BankerPlayerPair=null,e.spfPlayer_BankerPair=null,e.spfPlayer_PlayerPair=null,e.spfPlayer_BankerPlayerPair=null,e.template=null,e.container=null,e.markRecentMatch=null,e.history=[],e.BacaratBetSite={PLAYER_PAIR:1,PLAYER:2,TIE:3,BANKER:4,BANKER_PAIR:5},e}return a(e,t),e.prototype.start=function(){},e.prototype.setInfo=function(t){var e=this;this.history=t,this.markRecentMatch.active=!1,this.history.forEach(function(t,i){var n=null;n=e.container.childrenCount<72?cc.instantiate(e.template):e.container.children[e.history.indexOf(t)];var a=t,o=e.getSpf(a);n.getComponentInChildren(cc.Sprite).spriteFrame=o,n.parent=e.container,n.active=!0,cc.tween(n).set({opacity:0}).to(.3,{opacity:255}).call(function(){i==e.history.length-1&&(e.markRecentMatch.active=!0,cc.tween(e.markRecentMatch).sequence(cc.tween().to(.5,{scale:1}),cc.tween().to(.5,{scale:.8})).repeatForever().start())}).start()})},e.prototype.getSpf=function(t){var e=null;switch(t){case r.BANKER:case r.BANKER_PP:e=this.spfBanker;break;case r.BANKER_BP:e=this.spfBanker_BankerPair;break;case r.BANKER_PBP:e=this.spfBanker_BankerPlayerPair;break;case r.PLAYER:e=this.spfPlayer;break;case r.PLAYER_BP:e=this.spfPlayer_BankerPair;break;case r.PLAYER_PP:e=this.spfPlayer_PlayerPair;break;case r.PLAYER_PBP:e=this.spfPlayer_BankerPlayerPair;break;case r.TIE:e=this.spfTie;break;case r.TIE_BP:e=this.spfTie_BankerPair;break;case r.TIE_PP:e=this.spfTie_PlayerPair;break;case r.TIE_PBP:e=this.spfTie_BankerPlayerPair;break;default:cc.log("ko vao case nao:result= "+t)}return e},o([l(cc.SpriteFrame)],e.prototype,"spfBanker",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_BankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_PlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfTie_BankerPlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_BankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_PlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfBanker_BankerPlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_BankerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_PlayerPair",void 0),o([l(cc.SpriteFrame)],e.prototype,"spfPlayer_BankerPlayerPair",void 0),o([l(cc.Node)],e.prototype,"template",void 0),o([l(cc.Node)],e.prototype,"container",void 0),o([l(cc.Node)],e.prototype,"markRecentMatch",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{}],"Baccarat.HistoryBet":[function(t,e,i){"use strict";cc._RF.push(e,"e6d9eFbBkZBVYxeOPA7zija","Baccarat.HistoryBet");var n=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var a=cc._decorator,o=a.ccclass,r=(a.property,function(){function t(){this.BET_PLAYER=0,this.BET_TIE=0,this.BET_BANKER=0,this.BET_PLAYER_P=0,this.BET_BANKER_P=0,this.ListGateBet=[this.BET_PLAYER,this.BET_TIE,this.BET_BANKER,this.BET_PLAYER_P,this.BET_BANKER_P]}return t.prototype.resetHistory=function(){this.ListGateBet.forEach(function(){})},t.prototype.getTotalHistoryBet=function(){var t=0;return this.ListGateBet.forEach(function(e){t+=e}),t},n([o],t)}());i.default=r,cc._RF.pop()},{}],"Baccarat.HistoryMini":[function(t,e,i){"use strict";cc._RF.push(e,"882baXqUhlKe44bJM1ERT8b","Baccarat.HistoryMini");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PP:14,PLAYER_BP:15,PLAYER_PBP:145,BANKER_PP:34,BANKER_BP:35,BANKER_PBP:345,TIE_PP:24,TIE_BP:25,TIE_PBP:245}),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbTotalBanker=null,e.lbTotalPlayer=null,e.lbTotalTie=null,e.itemContainer=null,e.itemTemplate=null,e.markRecentMatch=null,e.sprResult=[],e.startPosItem=null,e.spacingY=18,e.spacingX=22,e.totalBanker=0,e.totalPlayer=0,e.totalTie=0,e}return a(e,t),e.prototype.onLoad=function(){this.startPosItem=cc.v2(98.26,28.12)},e.prototype.start=function(){},e.prototype.setInfo=function(t,e){void 0===e&&(e=!1),t.length>40&&(t=t.slice(0,40));for(var i=0,n=t.length;i<n;i++){var a=void 0,o=this.getPosItem(i);(a=cc.instantiate(this.itemTemplate)).parent=this.itemContainer,a.setPosition(o),a.active=!0,a.setSiblingIndex(i);var s=t[i],c=null;switch(this.getTypeGate(s)){case r.BANKER:this.totalBanker++,c=this.sprResult[2];break;case r.PLAYER:this.totalPlayer++,c=this.sprResult[0];break;case r.TIE:this.totalTie++,c=this.sprResult[1]}null==c&&cc.log(" bi null:"+s+"---gate=="+this.getTypeGate(s)),a.getComponent(cc.Sprite).spriteFrame=c}this.lbTotalBanker.string=this.totalBanker+"",this.lbTotalPlayer.string=this.totalPlayer+"",this.lbTotalTie.string=this.totalTie+"",cc.tween(this.markRecentMatch).sequence(cc.tween().to(.5,{scale:1}),cc.tween().to(.5,{scale:.8})).repeatForever().start()},e.prototype.addItemHistory=function(t){var e=this;this.markRecentMatch.active=!1,t.length>40&&(t=t.slice(0,40));var i,n=cc.instantiate(this.itemTemplate);switch(n.parent=this.itemContainer,n.setSiblingIndex(0),n.active=!0,n.setPosition(cc.v2(this.getPosItem(0).x+100,this.getPosItem(0).y)),this.getTypeGate(t[0])){case r.BANKER:this.totalBanker++,this.lbTotalBanker.string=this.totalBanker+"",i=this.sprResult[2];break;case r.PLAYER:this.totalPlayer++,i=this.sprResult[0],this.lbTotalPlayer.string=this.totalPlayer+"";break;case r.TIE:this.totalTie++,i=this.sprResult[1],this.lbTotalTie.string=this.totalTie+""}n.getComponent(cc.Sprite).spriteFrame=i;for(var a=function(t,i){var n=o.itemContainer.children[t],a=o.getPosItem(t);cc.tween(n).to(.3,{x:a.x,y:a.y}).call(function(){t==i-1&&(e.markRecentMatch.active=!0,cc.tween(e.markRecentMatch).sequence(cc.tween().to(.5,{scale:1}),cc.tween().to(.5,{scale:.8})).repeatForever().start())}).start()},o=this,s=0,c=t.length;s<c;s++)a(s,c);var l=this.itemContainer.children[this.itemContainer.childrenCount-1];cc.tween(l).to(.3,{x:l.x-100}).call(function(){l.destroy()}).start()},e.prototype.getPosItem=function(t){var e=cc.v2(0,0);if(t<4)e=cc.v2(this.startPosItem.x,this.startPosItem.y-t*this.spacingY);else{var i=Math.floor(t/4);e.x=this.startPosItem.x-i*this.spacingX,e.y=i%2==0?this.startPosItem.y-t%4*this.spacingY:this.startPosItem.y-(3-t%4)*this.spacingY}return e},e.prototype.getTypeGate=function(t){var e;switch(t){case r.BANKER:case r.BANKER_PP:case r.BANKER_BP:case r.BANKER_PBP:e=r.BANKER;break;case r.PLAYER:case r.PLAYER_PP:case r.PLAYER_BP:case r.PLAYER_PBP:e=r.PLAYER;break;case r.TIE:case r.TIE_PP:case r.TIE_BP:case r.TIE_PBP:e=r.TIE}return e},o([l(cc.Label)],e.prototype,"lbTotalBanker",void 0),o([l(cc.Label)],e.prototype,"lbTotalPlayer",void 0),o([l(cc.Label)],e.prototype,"lbTotalTie",void 0),o([l(cc.Node)],e.prototype,"itemContainer",void 0),o([l(cc.Node)],e.prototype,"itemTemplate",void 0),o([l(cc.Node)],e.prototype,"markRecentMatch",void 0),o([l([cc.SpriteFrame])],e.prototype,"sprResult",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{}],"Baccarat.MenuView":[function(t,e,i){"use strict";cc._RF.push(e,"6dda6oiz2lCWIhPjbSY5E8H","Baccarat.MenuView");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r},r=this&&this.__awaiter||function(t,e,i,n){return new(i||(i=Promise))(function(a,o){function r(t){try{c(n.next(t))}catch(e){o(e)}}function s(t){try{c(n.throw(t))}catch(e){o(e)}}function c(t){var e;t.done?a(t.value):(e=t.value,e instanceof i?e:new i(function(t){t(e)})).then(r,s)}c((n=n.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var i,n,a,o,r={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function s(t){return function(e){return c([t,e])}}function c(o){if(i)throw new TypeError("Generator is already executing.");for(;r;)try{if(i=1,n&&(a=2&o[0]?n.return:o[0]?n.throw||((a=n.return)&&a.call(n),0):n.next)&&!(a=a.call(n,o[1])).done)return a;switch(n=0,a&&(o=[2&o[0],a.value]),o[0]){case 0:case 1:a=o;break;case 4:return r.label++,{value:o[1],done:!1};case 5:r.label++,n=o[1],o=[0];continue;case 7:o=r.ops.pop(),r.trys.pop();continue;default:if(!(a=(a=r.trys).length>0&&a[a.length-1])&&(6===o[0]||2===o[0])){r=0;continue}if(3===o[0]&&(!a||o[1]>a[0]&&o[1]<a[3])){r.label=o[1];break}if(6===o[0]&&r.label<a[1]){r.label=a[1],a=o;break}if(a&&r.label<a[2]){r.label=a[2],r.ops.push(o);break}a[2]&&r.ops.pop(),r.trys.pop();continue}o=e.call(t,r)}catch(s){o=[6,s],n=0}finally{i=a=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}};Object.defineProperty(i,"__esModule",{value:!0});var c=t("../../../Scritps/Windown"),l=cc._decorator,p=l.ccclass,h=l.property,u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.container=null,e}return a(e,t),e.prototype.onLoad=function(){},e.prototype.start=function(){},e.prototype.onshow=function(){cc.tween(this.container).set({x:-cc.winSize.width/2-this.container.width/2-50}).to(.3,{x:-cc.winSize.width/2+this.container.width/2},{easing:cc.easing.sineIn}).start()},e.prototype.onHide=function(){cc.tween(this.container).set({x:-cc.winSize.width/2+this.container.width/2}).to(.3,{x:-cc.winSize.width/2-this.container.width/2-50},{easing:cc.easing.sineOut}).start()},e.prototype.onClickBack=function(){c.Windown.BaccaratView.audio.playClick(),c.Windown.BaccaratController.onClickBackToLobby()},e.prototype.onClickRule=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(i){switch(i.label){case 0:return c.Windown.BaccaratView.audio.playEffect(c.Windown.BaccaratView.audio.openPopup),[4,c.Windown.BaccaratController.loadPrefabBundle("PopupRule")];case 1:return t=i.sent(),(e=cc.instantiate(t)).parent=c.Windown.BaccaratView.node,c.Windown.actionEffectOpen(e),cc.find("Container/btnClose",e).once("click",function(){c.Windown.actionEffectClose(e,function(){e.destroy()})}),this.onHide(),[2]}})})},e.prototype.onClickHistoryBet=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(i){switch(i.label){case 0:return[4,c.Windown.BaccaratController.loadPrefabBundle("PopupHistory")];case 1:return t=i.sent(),(e=cc.instantiate(t)).parent=c.Windown.BaccaratView.node,c.Windown.actionEffectOpen(e),this.onHide(),[2]}})})},e.prototype.onClickSetting=function(){return r(this,void 0,void 0,function(){var t,e;return s(this,function(i){switch(i.label){case 0:return c.Windown.BaccaratView.audio.playEffect(c.Windown.BaccaratView.audio.openPopup),[4,c.Windown.BaccaratController.loadPrefabBundle("PopupSetting")];case 1:return t=i.sent(),(e=cc.instantiate(t)).parent=c.Windown.BaccaratView.node,c.Windown.actionEffectOpen(e),this.onHide(),[2]}})})},o([h(cc.Node)],e.prototype,"container",void 0),o([p],e)}(cc.Component);i.default=u,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.Player":[function(t,e,i){"use strict";cc._RF.push(e,"ad580J02flDJ5w8uubVmJFs","Baccarat.Player");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r},r=this&&this.__awaiter||function(t,e,i,n){return new(i||(i=Promise))(function(a,o){function r(t){try{c(n.next(t))}catch(e){o(e)}}function s(t){try{c(n.throw(t))}catch(e){o(e)}}function c(t){var e;t.done?a(t.value):(e=t.value,e instanceof i?e:new i(function(t){t(e)})).then(r,s)}c((n=n.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var i,n,a,o,r={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function s(t){return function(e){return c([t,e])}}function c(o){if(i)throw new TypeError("Generator is already executing.");for(;r;)try{if(i=1,n&&(a=2&o[0]?n.return:o[0]?n.throw||((a=n.return)&&a.call(n),0):n.next)&&!(a=a.call(n,o[1])).done)return a;switch(n=0,a&&(o=[2&o[0],a.value]),o[0]){case 0:case 1:a=o;break;case 4:return r.label++,{value:o[1],done:!1};case 5:r.label++,n=o[1],o=[0];continue;case 7:o=r.ops.pop(),r.trys.pop();continue;default:if(!(a=(a=r.trys).length>0&&a[a.length-1])&&(6===o[0]||2===o[0])){r=0;continue}if(3===o[0]&&(!a||o[1]>a[0]&&o[1]<a[3])){r.label=o[1];break}if(6===o[0]&&r.label<a[1]){r.label=a[1],a=o;break}if(a&&r.label<a[2]){r.label=a[2],r.ops.push(o);break}a[2]&&r.ops.pop(),r.trys.pop();continue}o=e.call(t,r)}catch(s){o=[6,s],n=0}finally{i=a=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}};Object.defineProperty(i,"__esModule",{value:!0});var c=t("../../../Scritps/DefineTs/PathResource"),l=t("../../../Scritps/Obs/LbMoneyChange"),p=t("../../../Scritps/Util"),h=t("../../../Scritps/Windown"),u=cc._decorator,d=u.ccclass,f=u.property,y=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbNickName=null,e.lbChips=null,e.avatar=null,e.lbChipWin=null,e.posPayChip=[],e.spineEffectWin=null,e.dynamicIndex=0,e.nickname="Player",e.currentChips=0,e.id=0,e.isThisPlayer=!1,e.listChipBet=[],e.listChipPay=[],e.gateBetted=[],e.effecWin=null,e}return a(e,t),e.prototype.start=function(){},e.prototype.setInfo=function(t,e,i,n){this.setName(e),this.setId(t),this.setChip(i),this.setAvatar(n)},e.prototype.setName=function(t){this.lbNickName.string=t,this.nickname=t,t.length>10&&(this.lbNickName.string=t.slice(0,7)+"...")},e.prototype.setChip=function(t,e){void 0===e&&(e=!0),this.isThisPlayer?this.lbChips.setMoney(t,!1):this.lbChips.setMoney(t,e),this.currentChips=t},e.prototype.setAvatar=function(t){return r(this,void 0,void 0,function(){var e,i;return s(this,function(n){switch(n.label){case 0:return e=c.PathResource.Avatar.replace("%d",t.toString()),[4,h.Windown.getSpFrameRes(e)];case 1:return i=n.sent(),this.avatar.spriteFrame=i,[2]}})})},e.prototype.setId=function(t){this.id=t},e.prototype.getChipBet=function(t){this.listChipBet.forEach(function(e){var i=t.parent.convertToWorldSpaceAR(t.position),n=e.parent.convertToNodeSpaceAR(i);cc.tween(e).to(1,{position:n},{easing:cc.easing.quintOut}).start(),cc.tween(e).to(1,{opacity:0},{easing:cc.easing.sineOut}).start()})},e.prototype.showWinEffect=function(t,e){return void 0===e&&(e=!1),r(this,void 0,void 0,function(){var i=this;return s(this,function(){return[2,new Promise(function(n){return r(i,void 0,void 0,function(){var i,a=this;return s(this,function(){try{null==this.effecWin&&(this.effecWin=h.Windown.BaccaratView.assets.getEffectWin(t),this.effecWin.y=20),(i=this.effecWin.getComponentInChildren(sp.Skeleton)).setCompleteListener(null),this.effecWin.parent=this.node,this.effecWin.active=!0,e||(i.setSkin("win"),i.setSlotsToSetupPose(),i.setAnimation(0,"appear",!1),i.setCompleteListener(function(){i.setAnimation(0,"idle",!1),i.setCompleteListener(function(){i.setCompleteListener(null)})}),this.scheduleOnce(function(){n(null),a.effecWin.active=!1},3))}catch(o){p.Util.ThrowErrProsime(o)}return[2]})})})]})})},e.prototype.showWinSpineEffect=function(t){var e=this;this.spineEffectWin.node.scale=1,this.spineEffectWin.node.active=!0,this.lbChipWin.string=h.Windown.formatMoney(t),this.lbChipWin.node.parent.active=!0,this.spineEffectWin.setSkin("win"),this.spineEffectWin.setSlotsToSetupPose(),this.spineEffectWin.setAnimation(0,"appear",!1),cc.tween(this.lbChipWin.node.parent).set({scaleX:0}).to(.3,{scaleX:.5},{easing:cc.easing.backOut}).start(),this.spineEffectWin.setCompleteListener(function(){e.spineEffectWin.setAnimation(0,"idle",!1),e.spineEffectWin.setCompleteListener(null)}),this.scheduleOnce(function(){e.hideSpineWin()},3)},e.prototype.hideSpineWin=function(){var t=this;cc.tween(this.spineEffectWin.node).to(.2,{scaleX:0},{easing:cc.easing.backIn}).call(function(){t.spineEffectWin.node.active=!1}).start()},e.prototype.showButtonBet=function(){this.node.getComponent(cc.Animation).play("EffectShowBtnBet"),h.Windown.BaccaratView.buttonBetController.setStatusBtnBet()},e.prototype.hideButtonBet=function(){this.node.getComponent(cc.Animation).play("EffectHideBtnBet")},e.prototype.resetPlayer=function(){cc.log("resetPlayer"),this.listChipBet=[],this.listChipPay=[],this.gateBetted=[]},o([f(cc.Label)],e.prototype,"lbNickName",void 0),o([f(l.default)],e.prototype,"lbChips",void 0),o([f(cc.Sprite)],e.prototype,"avatar",void 0),o([f(cc.Label)],e.prototype,"lbChipWin",void 0),o([f([cc.Vec2])],e.prototype,"posPayChip",void 0),o([f(sp.Skeleton)],e.prototype,"spineEffectWin",void 0),o([f],e.prototype,"isThisPlayer",void 0),o([d],e)}(cc.Component);i.default=y,cc._RF.pop()},{"../../../Scritps/DefineTs/PathResource":void 0,"../../../Scritps/Obs/LbMoneyChange":void 0,"../../../Scritps/Util":void 0,"../../../Scritps/Windown":void 0}],"Baccarat.PopupHistory":[function(t,e,i){"use strict";cc._RF.push(e,"12b70F/6IlPrKo5cjLpFF6w","Baccarat.PopupHistory");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Windown"),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.listCardPlayer=[],e.listCardBanker=[],e.sprGate=[],e.lbSession=null,e.lbScoreP=null,e.lbScoreB=null,e.lbPage=null,e.scrItemHis=null,e.itemHisTemp=null,e.currentIndexSession=0,e.historyData=[],e}return a(e,t),e.prototype.onLoad=function(){r.Windown.BaccaratView.popupHistoryBetView=this,r.Windown.BaccaratView.audio.playEffect(r.Windown.BaccaratView.audio.openPopup)},e.prototype.start=function(){r.Windown.BaccaratController.sendGetHistoryBet()},e.prototype.setInfo=function(t){this.historyData=JSON.parse(r.Windown.SFSObjToJson(t)).history,this.historyData.reverse(),cc.log("historyData===",this.historyData),this.setInfoSession(this.historyData[this.currentIndexSession]),this.lbPage.string="1/"+this.historyData.length},e.prototype.setInfoSession=function(t){var e=this,i=t.round,n=r.Windown.formatDate(new Date(t.time),"HH:mm:ss dd/MM/yyyy");this.lbSession.string=cc.js.formatStr("S\u1ed1 Phi\xean:#%s(%s)",i,n);var a=JSON.parse(t.vP),o=JSON.parse(t.vD);a.forEach(function(t,i){0!=t.I&&(e.listCardPlayer[i].node.active=!0,e.listCardPlayer[i].spriteFrame=r.Windown.BaccaratView.assets.getCardSprite(t.I))}),o.forEach(function(t,i){0!=t.I&&(e.listCardBanker[i].spriteFrame=r.Windown.BaccaratView.assets.getCardSprite(t.I),e.listCardBanker[i].node.active=!0)}),this.listCardBanker[2].node.active=3==o.length&&0!=o[2].I,this.listCardPlayer[2].node.active=3==a.length&&0!=a[2].I,this.lbScoreP.string=r.Windown.BaccaratView.getScore(a,a.length)+"",this.lbScoreB.string=r.Windown.BaccaratView.getScore(o,o.length)+"",this.lbPage.string=this.currentIndexSession+1+"/"+this.historyData.length;var s=t.bet;this.scrItemHis.content.children.forEach(function(t){t.active=!1});for(var c=0;c<s.length;c++){var l=s[c],p=this.scrItemHis.content.children[c];cc.isValid(p)||((p=cc.instantiate(this.itemHisTemp)).parent=this.scrItemHis.content),p.active=!0,p.getComponentInChildren(cc.Sprite).spriteFrame=this.sprGate[l.id-1],p.getChildByName("lbbetValue").getComponent(cc.Label).string=r.Windown.formatMoney(l.agBet,1,100),0==l.agWin?(p.getChildByName("lbWinValue").getComponent(cc.Label).string="-"+r.Windown.formatMoney(l.agBet,1,100),p.getChildByName("lbWinValue").color=cc.Color.RED):(p.getChildByName("lbWinValue").color=cc.Color.GREEN,p.getChildByName("lbWinValue").getComponent(cc.Label).string="+"+r.Windown.formatMoney(l.agWin,1,100))}},e.prototype.onClickClose=function(){var t=this;r.Windown.actionEffectClose(this.node,function(){t.node.destroy(),r.Windown.BaccaratView.popupHistoryBetView=null}),r.Windown.BaccaratView.audio.playClick()},e.prototype.onClickChangePage=function(t,e){"next"==e?this.currentIndexSession<=this.historyData.length-2&&this.currentIndexSession++:this.currentIndexSession>0&&this.currentIndexSession--,this.setInfoSession(this.historyData[this.currentIndexSession])},o([l([cc.Sprite])],e.prototype,"listCardPlayer",void 0),o([l([cc.Sprite])],e.prototype,"listCardBanker",void 0),o([l([cc.SpriteFrame])],e.prototype,"sprGate",void 0),o([l(cc.Label)],e.prototype,"lbSession",void 0),o([l(cc.Label)],e.prototype,"lbScoreP",void 0),o([l(cc.Label)],e.prototype,"lbScoreB",void 0),o([l(cc.Label)],e.prototype,"lbPage",void 0),o([l(cc.ScrollView)],e.prototype,"scrItemHis",void 0),o([l(cc.Node)],e.prototype,"itemHisTemp",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.ScoreBoard":[function(t,e,i){"use strict";cc._RF.push(e,"fcc79XVRDNDxZhD/f3VQlfC","Baccarat.ScoreBoard");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=cc._decorator,s=r.ccclass,c=r.property,l=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.sprBgItem=[],e.template=null,e.container=null,e.topRightPos=null,e.dataHistory=[],e.deltaXCol=38.85,e.deltaYRow=39.12,e.currentIndex=0,e.currentCol=0,e.BacaratBetSite={PLAYER_PAIR:1,PLAYER:2,TIE:3,BANKER:4,BANKER_PAIR:5},e}return a(e,t),e.prototype.setInfo=function(t){for(var e=0,i=t.length;e<i-1;e++){var n=[],a=t[e];n.push(a);for(var o=a.BigGateIDWin,r=e+1;r<i;r++){var s=t[r],c=s.BigGateIDWin;if(o!=this.BacaratBetSite.TIE){if(o!=c&&c!=this.BacaratBetSite.TIE){0!=n.length&&(e+=n.length-1);break}n.push(s)}else n.push(s),o=s.BigGateIDWin}this.dataHistory.push(n)}for(this.dataHistory.forEach(function(t){t.forEach(function(t){cc.log(t.BigGateIDWin)})}),e=0,i=this.dataHistory.length;e<i;e++){var l=this.dataHistory[e].reverse(),p=0;for(r=0;r<l.length;r++){a=l[r];var h=cc.instantiate(this.template);h.parent=this.container,h.active=!0,h.getComponent(cc.Sprite).spriteFrame=this.getSpf(a.BigGateIDWin,a.IsBankerPair,a.IsPlayerPair),h.setPosition(cc.v2(this.topRightPos.x-this.deltaXCol*this.currentCol,this.topRightPos.y-this.deltaYRow*p)),this.currentIndex++,p++,a.BigGateIDWin==this.BacaratBetSite.BANKER||a.BigGateIDWin==this.BacaratBetSite.PLAYER?h.getChildByName("lbScoreUp").getComponent(cc.Label).string=a.HandValue:h.getChildByName("lbScoreDown").getComponent(cc.Label).string=a.HandValue,h.position.x<-272&&(h.active=!1)}this.currentCol++}},e.prototype.getSpf=function(t){var e=null;switch(t){case this.BacaratBetSite.BANKER:e=this.sprBgItem[0];break;case this.BacaratBetSite.PLAYER:e=this.sprBgItem[1];break;case this.BacaratBetSite.TIE:e=this.sprBgItem[2]}return e},o([c([cc.SpriteFrame])],e.prototype,"sprBgItem",void 0),o([c(cc.Node)],e.prototype,"template",void 0),o([c(cc.Node)],e.prototype,"container",void 0),o([c(cc.Vec2)],e.prototype,"topRightPos",void 0),o([s],e)}(cc.Component);i.default=l,cc._RF.pop()},{}],"Baccarat.SettingView":[function(t,e,i){"use strict";cc._RF.push(e,"50329oJ33tAQaFdbELw/pGK","Baccarat.SettingView");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Windown"),s=cc._decorator,c=s.ccclass,l=s.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.tglSound=null,e.tglMusic=null,e}return a(e,t),e.prototype.start=function(){this.tglSound.isChecked=!r.Windown.BaccaratView.audio.isActiveSound,this.tglMusic.isChecked=!r.Windown.BaccaratView.audio.isActiveMusic},e.prototype.onClickTglSound=function(){r.Windown.BaccaratView.audio.isActiveSound=!this.tglSound.isChecked},e.prototype.onClickTglMusic=function(){r.Windown.BaccaratView.audio.isActiveMusic=!this.tglMusic.isChecked},e.prototype.onClickClose=function(){var t=this;r.Windown.actionEffectClose(this.node,function(){t.node.destroy()}),r.Windown.BaccaratView.audio.playClick()},o([l(cc.Toggle)],e.prototype,"tglSound",void 0),o([l(cc.Toggle)],e.prototype,"tglMusic",void 0),o([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{"../../../Scritps/Windown":void 0}],"Baccarat.SoiCauView":[function(t,e,i){"use strict";cc._RF.push(e,"724422/HvZHeoMg/O8YPLNr","Baccarat.SoiCauView");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r};Object.defineProperty(i,"__esModule",{value:!0});var r=t("../../../Scritps/Windown"),s=t("./Baccarat.BigRoad"),c=t("./Baccarat.DishRoadBoard"),l=t("./Baccarat.ScoreBoard"),p=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PP:14,PLAYER_BP:15,PLAYER_PBP:145,BANKER_PP:34,BANKER_BP:35,BANKER_PBP:345,TIE_PP:24,TIE_BP:25,TIE_PBP:245}),h=cc._decorator,u=h.ccclass,d=h.property,f=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.lbBankerWin=null,e.lbPlayerWin=null,e.lbTie=null,e.lbBankerPair=null,e.lbPlayerPair=null,e.lbBankerPercent=null,e.lbPlayerPercent=null,e.lbTiePercent=null,e.lbBankerPairPercent=null,e.lbPlayerPairPercent=null,e.dishRoad=null,e.bigRoad=null,e.scoreBoard=null,e.animation=null,e.listDataBankerWin=[],e.listDataPlayerWin=[],e.listDataTie=[],e.listDataBankerPair=[],e.listDataPlayerPair=[],e.dataHistory=[],e}return a(e,t),e.prototype.start=function(){},e.prototype.setInfo=function(){this.dataHistory=r.Windown.BaccaratView.historyTable.slice(0,72),this.listDataBankerWin=this.dataHistory.filter(function(t){return t==p.BANKER}),this.listDataPlayerWin=this.dataHistory.filter(function(t){return t==p.PLAYER}),this.listDataTie=this.dataHistory.filter(function(t){return t==p.TIE}),this.listDataBankerPair=this.dataHistory.filter(function(t){return t==p.PLAYER_BP||t==p.BANKER_BP||t==p.TIE_BP}),this.listDataPlayerPair=this.dataHistory.filter(function(t){return t==p.PLAYER_PP||t==p.BANKER_PP||t==p.TIE_PP}),this.lbBankerWin.string=this.listDataBankerWin.length+"",this.lbPlayerWin.string=this.listDataPlayerWin.length+"",this.lbBankerWin.string=this.listDataBankerWin.length+"",this.lbTie.string=this.listDataTie.length+"",this.lbBankerPair.string=this.listDataBankerPair.length+"",this.lbPlayerPair.string=this.listDataPlayerPair.length+"",this.lbBankerPercent.string=(this.listDataBankerWin.length/this.dataHistory.length*100).toFixed(2)+"%",this.lbPlayerPercent.string=(this.listDataPlayerWin.length/this.dataHistory.length*100).toFixed(2)+"%",this.lbTiePercent.string=(this.listDataTie.length/this.dataHistory.length*100).toFixed(2)+"%",this.lbBankerPairPercent.string=(this.listDataBankerPair.length/this.dataHistory.length*100).toFixed(2)+"%",this.lbPlayerPairPercent.string=(this.listDataPlayerPair.length/this.dataHistory.length*100).toFixed(2)+"%",this.dishRoad.setInfo(r.Windown.BaccaratView.historyTable.slice(0,72)),this.bigRoad.setInfo(r.Windown.BaccaratView.historyTable.slice(0,72)),cc.log("Windown.BaccaratView.historyTable size="+r.Windown.BaccaratView.historyTable.length)},e.prototype.onEnable=function(){this.setInfo()},e.prototype.show=function(){this.node.active=!0,r.Windown.actionEffectOpen(this.node)},e.prototype.hide=function(){var t=this;r.Windown.actionEffectClose(this.node,function(){t.node.active=!1})},o([d(cc.Label)],e.prototype,"lbBankerWin",void 0),o([d(cc.Label)],e.prototype,"lbPlayerWin",void 0),o([d(cc.Label)],e.prototype,"lbTie",void 0),o([d(cc.Label)],e.prototype,"lbBankerPair",void 0),o([d(cc.Label)],e.prototype,"lbPlayerPair",void 0),o([d(cc.Label)],e.prototype,"lbBankerPercent",void 0),o([d(cc.Label)],e.prototype,"lbPlayerPercent",void 0),o([d(cc.Label)],e.prototype,"lbTiePercent",void 0),o([d(cc.Label)],e.prototype,"lbBankerPairPercent",void 0),o([d(cc.Label)],e.prototype,"lbPlayerPairPercent",void 0),o([d(c.default)],e.prototype,"dishRoad",void 0),o([d(s.default)],e.prototype,"bigRoad",void 0),o([d(l.default)],e.prototype,"scoreBoard",void 0),o([d(cc.Animation)],e.prototype,"animation",void 0),o([u],e)}(cc.Component);i.default=f,cc._RF.pop()},{"../../../Scritps/Windown":void 0,"./Baccarat.BigRoad":"Baccarat.BigRoad","./Baccarat.DishRoadBoard":"Baccarat.DishRoadBoard","./Baccarat.ScoreBoard":"Baccarat.ScoreBoard"}],BaccaratController:[function(t,e,i){"use strict";cc._RF.push(e,"d65e4chFb9JX5TYXArxHQ4s","BaccaratController");var n=this&&this.__awaiter||function(t,e,i,n){return new(i||(i=Promise))(function(a,o){function r(t){try{c(n.next(t))}catch(e){o(e)}}function s(t){try{c(n.throw(t))}catch(e){o(e)}}function c(t){var e;t.done?a(t.value):(e=t.value,e instanceof i?e:new i(function(t){t(e)})).then(r,s)}c((n=n.apply(t,e||[])).next())})},a=this&&this.__generator||function(t,e){var i,n,a,o,r={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function s(t){return function(e){return c([t,e])}}function c(o){if(i)throw new TypeError("Generator is already executing.");for(;r;)try{if(i=1,n&&(a=2&o[0]?n.return:o[0]?n.throw||((a=n.return)&&a.call(n),0):n.next)&&!(a=a.call(n,o[1])).done)return a;switch(n=0,a&&(o=[2&o[0],a.value]),o[0]){case 0:case 1:a=o;break;case 4:return r.label++,{value:o[1],done:!1};case 5:r.label++,n=o[1],o=[0];continue;case 7:o=r.ops.pop(),r.trys.pop();continue;default:if(!(a=(a=r.trys).length>0&&a[a.length-1])&&(6===o[0]||2===o[0])){r=0;continue}if(3===o[0]&&(!a||o[1]>a[0]&&o[1]<a[3])){r.label=o[1];break}if(6===o[0]&&r.label<a[1]){r.label=a[1],a=o;break}if(a&&r.label<a[2]){r.label=a[2],r.ops.push(o);break}a[2]&&r.ops.pop(),r.trys.pop();continue}o=e.call(t,r)}catch(s){o=[6,s],n=0}finally{i=a=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}};Object.defineProperty(i,"__esModule",{value:!0});var o=t("../../../Scritps/DefineTs/EVENT_MANAGER"),r=t("../../../Scritps/DefineTs/REQUEST_CODE"),s=t("../../../Scritps/DefineTs/TextDefine"),c=t("../../../Scritps/Game/GAME_TYPE"),l=t("../../../Scritps/Network/ConectManager"),p=t("../../../Scritps/Windown"),h=function(){function t(){this.sfs=null,this.roomSFS=null,this.listTimeOut=[],this.objFinish=null,this.gameType=0,this.isCanSendData=!0,this.joinRoomData=null,this.infoRoom=null,this.startGameData=null,this.sfs=l.ConectManager.getIns().sfs,this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR,this.onCreateError,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom,this),this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr,this),this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse,this),p.Windown.BaccaratController=this,cc.systemEvent.on(o.EVENT_MANAGER.onDisconnect,this.onDisconnect,this)}return t.prototype.onDisconnect=function(){this.clear(),this.baccaratView.node.destroy()},t.prototype.clear=function(){cc.systemEvent.targetOff(this),this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr),this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse),this.objFinish&&(this.objFinish.get("agWin"),p.Windown.MoneyUser.removeDelay(this.gameType)),p.Windown.MoneyUser.endGameMOney(this.gameType)},t.prototype.userExitRoom=function(t){if("Baccarat"==t.room.groupId&&t.user.isItMe)return this.onDestroy(),void cc.director.loadScene("main")},t.prototype.onCreateError=function(){cc.log("creat err"),p.Windown.UIManager.hideLoading(),this.onDestroy(),p.Windown.Dialog.showLog(s.TextDefine.ERR_JOIN_ROOM)},t.prototype.onDestroy=function(){p.Windown.UIManager.hideLoadingData(),p.Windown.UIManager.hideLoading(),cc.systemEvent.removeAll(this),this.clearAllTimeOut(),this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM,this.userExitRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR,this.onCreateError),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN,this.onJoinRoom),this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR,this.onJoinRoomErr),this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE,this.extResponse),p.Windown.BaccaratController=null,this.roomSFS=null,p.Windown.MoneyUser.targetOff(this),p.Windown.MoneyUser.endGameMOney(c.default.Baccarat)},t.prototype.clearAllTimeOut=function(){this.listTimeOut.forEach(function(t){clearTimeout(t)})},t.prototype.onJoinRoom=function(t){return n(this,void 0,void 0,function(){return a(this,function(){return t.room,p.Windown.UIManager.hideLoadingData(),[2]})})},t.prototype.onJoinRoomErr=function(){p.Windown.UIManager.hideLoading(),p.Windown.Dialog.showLog(s.TextDefine.ERR_JOIN_ROOM),this.onDestroy()},t.prototype.extResponse=function(t){var e=t.cmd,i=t.params;switch(cc.log("Baccarat Code:"+e+"\n"+p.Windown.SFSObjToJson(i)),e){case r.REQUEST_CODE.BCRPlayerInfo:this.baccaratView.handlePlayerInfo(i);break;case r.REQUEST_CODE.BCRInfoRoom:this.baccaratView.handleRoomInfo(i);break;case r.REQUEST_CODE.BCRStartGame:null==this.baccaratView?this.startGameData=i:this.baccaratView.handleStartGame(i);break;case r.REQUEST_CODE.BCRBet:cc.log("handlePlayerbet"),this.baccaratView.handlePlayerBet(i);break;case r.REQUEST_CODE.BCREndGame:this.baccaratView.handleEndGame(i);break;case r.REQUEST_CODE.BCRHistoryBet:this.baccaratView.popupHistoryBetView.setInfo(i)}},t.prototype.sendJoinRoom=function(){var t=this;p.Windown.UIManager.showLoading();var e=this.sfs.roomManager.getRoomListFromGroup("Baccarat").find(function(t){return cc.log("value"+t.getVariable("cj").value),t.containsVariable("cj")&&t.getVariable("cj").value});e?(this.roomSFS=e,e.isJoined?this.sendGetInfoRoom():(cc.log("nhay vao send join rom: "+e),this.sfs.send(new SFS2X.JoinRoomRequest(e,null,-1)))):setTimeout(function(){t.sendJoinRoom()},3e3)},t.prototype.sendGetInfoRoom=function(){this.sendRequest(r.REQUEST_CODE.TXinfoRoom,l.ConectManager.getIns().getSFSObj())},t.prototype.sendRequest=function(t,e){l.ConectManager.getIns().sendRequest(t,e,this.roomSFS)},t.prototype.sendToServer=function(t,e){this.isCanSendData&&null!=this.roomSFS&&(this.isCanSendData=!1,l.ConectManager.getIns().sendRequest(t,e,this.roomSFS))},t.prototype.sendBet=function(t,e){var i=l.ConectManager.getIns().getSFSObj();i.putLong("bet",e),i.putInt("id",t),this.sendToServer("bet",i)},t.prototype.intiGame=function(){return n(this,void 0,void 0,function(){var t;return a(this,function(e){switch(e.label){case 0:return[4,p.Windown.loadBundle(c.default.Baccarat.toString())];case 1:return t=e.sent(),p.Windown.UIManager.showLoadingData(),t.preloadScene("Baccarat",{},function(t,e){p.Windown.UIManager.setPerData(t/e)},function(e){e?p.Windown.Dialog.showLog(s.TextDefine.Error):t.loadScene("Baccarat",function(t,e){if(t)return p.Windown.Dialog.showLog(s.TextDefine.Error),void p.Windown.UIManager.hideLoadingData();cc.director.runScene(e,null,function(){p.Windown.UIManager.hideLoadingData()})})}),[2]}})})},t.prototype.onClickBackToLobby=function(){this.roomSFS?l.ConectManager.getIns().sendLeaveRoom(this.roomSFS):cc.director.loadScene("main")},t.prototype.loadPrefabBundle=function(t){return n(this,void 0,void 0,function(){var e;return a(this,function(){return e=cc.assetManager.getBundle(c.default.Baccarat.toString()),[2,new Promise(function(i,n){e.load("Prefab/"+t,function(t,e){if(t)return n(t),null;i(e)})})]})})},t.prototype.sendGetHistoryBet=function(){var t=l.ConectManager.getIns().getSFSObj();this.sendToServer("historyBetBa",t),p.Windown.BaccaratController.isCanSendData=!0},t}();i.default=h,cc._RF.pop()},{"../../../Scritps/DefineTs/EVENT_MANAGER":void 0,"../../../Scritps/DefineTs/REQUEST_CODE":void 0,"../../../Scritps/DefineTs/TextDefine":void 0,"../../../Scritps/Game/GAME_TYPE":void 0,"../../../Scritps/Network/ConectManager":void 0,"../../../Scritps/Windown":void 0}],BaccaratView:[function(t,e,i){"use strict";cc._RF.push(e,"91133cyz0FNj4WIQhDdRhjP","BaccaratView");var n,a=this&&this.__extends||(n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),o=this&&this.__decorate||function(t,e,i,n){var a,o=arguments.length,r=o<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,i):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(t,e,i,n);else for(var s=t.length-1;s>=0;s--)(a=t[s])&&(r=(o<3?a(r):o>3?a(e,i,r):a(e,i))||r);return o>3&&r&&Object.defineProperty(e,i,r),r},r=this&&this.__awaiter||function(t,e,i,n){return new(i||(i=Promise))(function(a,o){function r(t){try{c(n.next(t))}catch(e){o(e)}}function s(t){try{c(n.throw(t))}catch(e){o(e)}}function c(t){var e;t.done?a(t.value):(e=t.value,e instanceof i?e:new i(function(t){t(e)})).then(r,s)}c((n=n.apply(t,e||[])).next())})},s=this&&this.__generator||function(t,e){var i,n,a,o,r={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function s(t){return function(e){return c([t,e])}}function c(o){if(i)throw new TypeError("Generator is already executing.");for(;r;)try{if(i=1,n&&(a=2&o[0]?n.return:o[0]?n.throw||((a=n.return)&&a.call(n),0):n.next)&&!(a=a.call(n,o[1])).done)return a;switch(n=0,a&&(o=[2&o[0],a.value]),o[0]){case 0:case 1:a=o;break;case 4:return r.label++,{value:o[1],done:!1};case 5:r.label++,n=o[1],o=[0];continue;case 7:o=r.ops.pop(),r.trys.pop();continue;default:if(!(a=(a=r.trys).length>0&&a[a.length-1])&&(6===o[0]||2===o[0])){r=0;continue}if(3===o[0]&&(!a||o[1]>a[0]&&o[1]<a[3])){r.label=o[1];break}if(6===o[0]&&r.label<a[1]){r.label=a[1],a=o;break}if(a&&r.label<a[2]){r.label=a[2],r.ops.push(o);break}a[2]&&r.ops.pop(),r.trys.pop();continue}o=e.call(t,r)}catch(s){o=[6,s],n=0}finally{i=a=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}};Object.defineProperty(i,"__esModule",{value:!0});var c=t("../../../Scritps/Obs/LbMoneyChange"),l=t("../../../Scritps/Other/MakeDelay"),p=t("../../../Scritps/Util"),h=t("../../../Scritps/Windown"),u=t("./Baccarat.Assets"),d=t("./Baccarat.Audio"),f=t("./Baccarat.ButtonBet"),y=t("./Baccarat.Card"),B=t("./Baccarat.HistoryBet"),P=t("./Baccarat.HistoryMini"),g=t("./Baccarat.MenuView"),v=t("./Baccarat.Player"),_=t("./Baccarat.PopupHistory"),b=t("./Baccarat.SoiCauView"),C=cc._decorator,m=C.ccclass,w=C.property,E=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PAIR:4,BANKER_PAIR:5}),S=cc.Enum({PLAYER:1,TIE:2,BANKER:3,PLAYER_PP:14,PLAYER_BP:15,PLAYER_PBP:145,BANKER_PP:34,BANKER_BP:35,BANKER_PBP:345,TIE_PP:24,TIE_BP:25,TIE_PBP:245}),R=cc.Enum({BETTING:1,FINISHED:2,WAITTING:3}),T=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.players=[],e.thisPlayer=null,e.assets=null,e.menu=null,e.buttonBetController=null,e.historyMini=null,e.popupHistoryBetView=null,e.audio=null,e.popupSoiCau=null,e.nodeGroupUser=null,e.nodeGateBet=[],e.listCardPlayer=[],e.listCardBanker=[],e.nodeGetChip=null,e.lbOtherPlayer=null,e.lbTimer=null,e.lbWaitting=null,e.lbSession=null,e.sprTimer=null,e.lbScoreP=null,e.lbScoreB=null,e.lbTotalBet=null,e.animDealer=null,e.animWinResult=null,e.posPayChipOther=[],e.lbTotalBetB=null,e.lbTotalBetP=null,e.lbTotalBetT=null,e.lbTotalBetBP=null,e.lbTotalBetPP=null,e.listPosChipOnTable=[],e.lbTotalGateBetUser=[],e.effectWinOther=null,e.currentTimer=60,e.totalBetB=0,e.totalBetP=0,e.totalBetBP=0,e.totalBetPP=0,e.totalBetT=0,e.totalBetAllGate=0,e.agUser=0,e.currentBetValue=1e3,e.listTotalBetValue=null,e.listTotalUserBetGate=null,e.listDataPlayerOther=[],e.listLbTotalBet=[],e.gateWin=null,e.gameState=R.BETTING,e.listValueChip=[.1,1,5,10,50,100,500,1e3,2e3,5e3,1e4,5e4,1e5,15e4,2e5],e.lastPlayerInfoData=null,e.makeDelay=null,e.infoCardOnTable_Player=[],e.infoCardOnTable_Banker=[],e.listChipBet=[],e.listChipbetOther=[],e.listBtnBet=[],e.isResetView=!1,e.isReconnect=!1,e.listGateWin=[],e.HistoryBet=null,e.historyTable=[],e.timeInBg=0,e}return a(e,t),e.prototype.onLoad=function(){var t=this;this.HistoryBet=new B.default,this.players.forEach(function(t,e){e>0&&(t.node.active=!1)}),this.nodeGateBet.forEach(function(e){t.listBtnBet.push(e.getComponent(cc.Button))});for(var e=0,i=this.listValueChip.length;e<i;e++)this.listValueChip[e]*=1e3;for(e=0;e<3;e++){var n=this.listCardPlayer[e],a={scaleX:n.node.scaleX,scaleY:n.node.scaleY,position:n.node.position};this.infoCardOnTable_Player.push(a);var o=this.listCardBanker[e],r={scaleX:o.node.scaleX,scaleY:o.node.scaleY,position:o.node.position};this.infoCardOnTable_Banker.push(r)}this.listTotalBetValue=[this.totalBetP,this.totalBetT,this.totalBetB,this.totalBetPP,this.totalBetBP],this.listTotalUserBetGate=[0,0,0,0,0],this.listLbTotalBet=[this.lbTotalBetP,this.lbTotalBetT,this.lbTotalBetB,this.lbTotalBetPP,this.lbTotalBetBP],h.Windown.BaccaratController.baccaratView=this,h.Windown.BaccaratView=this,this.makeDelay=new l.default(this)},e.prototype.start=function(){h.Windown.BaccaratController.sendJoinRoom(),this.audio.playMusic(),null!=h.Windown.BaccaratController.startGameData&&(this.handleStartGame(h.Windown.BaccaratController.startGameData),h.Windown.BaccaratController.startGameData=null),this.setupTimeRunInBg()},e.prototype.getMakeDelay=function(t){return this.makeDelay.getDelay(t)},e.prototype.handlePlayerInfo=function(t){if(this.gameState!=R.FINISHED){this.listDataPlayerOther=[];var e=JSON.parse(h.Windown.SFSArrToJson(t.get("data"))),i=e.find(function(t){return t.id==h.Windown.User.userId});null!=i&&(cc.log("Co this player trong listPlayer, xoa no di"),e.splice(e.indexOf(i),1)),7==e.length&&(this.listDataPlayerOther.push(e.pop()),cc.log("Co 7 player trong listPlayer, xoa 1 thang  di:"+e.length)),this.thisPlayer.setAvatar(h.Windown.User.avatrId),this.thisPlayer.setName(h.Windown.User.nickName),this.thisPlayer.setChip(h.Windown.User.userAg,!1),this.thisPlayer.setId(h.Windown.User.userId),this.agUser=h.Windown.User.userAg;for(var n=1,a=0,o=e.length;a<o;a++){var r=e[a],s=this.players[n];cc.isValid(s)&&s!=this.thisPlayer?(s.node.active=!0,s.resetPlayer(),s.setInfo(r.id,r.nn,r.ag,r.iv),n++):cc.error(" ko du player de hien thi")}for(a=n;a<this.players.length;a++)this.players[a].node.active=!1,this.players[a].resetPlayer();this.lbOtherPlayer.string=t.getInt("so")+this.listDataPlayerOther.length+""}else this.lastPlayerInfoData=t},e.prototype.handleRoomInfo=function(t){return r(this,void 0,void 0,function(){var e,i,n,a,o,r,c,l,p=this;return s(this,function(s){switch(s.label){case 0:return h.Windown.UIManager.hideLoading(),this.currentTimer=t.getInt("time"),this.sprTimer.fillRange=this.currentTimer/30,this.lbSession.string="#"+t.getInt("sision"),e=t.getBool("isG"),i=JSON.parse(h.Windown.SFSArrToJson(t.get("cur"))),this.gameState=e?R.BETTING:R.FINISHED,this.historyTable=JSON.parse(t.get("his")).reverse(),n=this.historyTable[0],this.gameState==R.FINISHED&&this.currentTimer>15&&this.historyTable.splice(0,1),this.historyMini.setInfo(this.historyTable),this.setStateBtnGate(this.gameState==R.BETTING),this.gameState==R.BETTING?this.onCountTimeRemain():this.onCountWaitting(),this.gameState!=R.BETTING?[3,1]:(this.thisPlayer.showButtonBet(),this.setCurBetInfo(i),[3,9]);case 1:if(h.Windown.UIManager.showAlertMini("Vui l\xf2ng ch\u1edd  v\xe1n ch\u01a1i k\u1ebft th\xfac!"),!(this.currentTimer>15))return[3,9];for(a=JSON.parse(t.getUtfString("vP")),o=JSON.parse(t.getUtfString("vD")),cc.log(" Card  Player = ",a),cc.log(" Card  Banker = ",o),r=0;r<a.length;r++)(c=this.listCardPlayer[r]).node.active=!0,c.id=a[r].I,c.setCard(),c.node.opacity=255,c.node.position=this.infoCardOnTable_Player[r].position;for(r=0;r<o.length;r++)(c=this.listCardBanker[r]).node.active=!0,c.id=o[r].I,c.setCard(),c.node.opacity=255,c.node.position=this.infoCardOnTable_Banker[r].position;return l=JSON.parse(h.Windown.SFSArrToJson(t.get("cur"))),this.setCurBetInfo(l),[4,h.Windown.BaccaratView.getMakeDelay(.5).prosime];case 2:return s.sent(),this.listGateWin=[],l.forEach(function(t){t.w&&p.listGateWin.push(t.id)}),this.showScore(E.BANKER,o,2==o.length),this.showScore(E.PLAYER,a,2==a.length),[4,h.Windown.BaccaratView.getMakeDelay(1.5).prosime];case 3:return s.sent(),this.gateWin=parseInt(this.listGateWin.toString().split(",").join("")),[4,this.showWinResult()];case 4:return s.sent(),this.getAllChipOnTable(),[4,this.getMakeDelay(1.5).prosime];case 5:return s.sent(),this.payChipWinOnTalbe(),[4,this.getMakeDelay(1.5).prosime];case 6:return s.sent(),this.moveChipToPlayer(),[4,this.getMakeDelay(1.5).prosime];case 7:return s.sent(),[4,this.showResultAgWinReconnect(l)];case 8:s.sent(),this.historyTable.unshift(n),this.resetView(),s.label=9;case 9:return[2]}})})},e.prototype.setCurBetInfo=function(t){for(var e=0;e<t.length;e++){for(var i=t[e],n=i.id,a=i.b,o=0;o<a.length;o++)for(var r=a[o].bet,s=this.getPlayerWithId(a[o].idP),c=this.getListChipValue(r),l=0,p=c.length;l<p;l++){var u=this.assets.getChipBet(c[l]);cc.isValid(s)?(s.id==h.Windown.User.userId&&(this.totalBetAllGate+=r,this.listTotalUserBetGate[n-1]+=r,this.lbTotalBet.setMoney(this.totalBetAllGate,!0),this.lbTotalGateBetUser[n-1].string=h.Windown.formatMoney(this.listTotalUserBetGate[n-1]),this.lbTotalGateBetUser[n-1].node.parent.active=!0),s.listChipBet.push(u),u.playerID=s.id):(this.listChipbetOther.push(u),u.playerID=-1),this.listChipBet.push(u),u.parent=this.nodeGateBet[n-1],u.gate=n,u.value=c[l];var d=n>3?20:30,f=h.Windown.RandomNumber(this.listPosChipOnTable[n-1].x-d,this.listPosChipOnTable[n-1].x+d),y=h.Windown.RandomNumber(this.listPosChipOnTable[n-1].y-d,this.listPosChipOnTable[n-1].y+d);u.setPosition(cc.v2(f,y))}switch(n){case E.BANKER:this.totalBetB=i.t;break;case E.PLAYER:this.totalBetP=i.t;break;case E.BANKER_PAIR:this.totalBetBP=i.t;break;case E.PLAYER_PAIR:this.totalBetPP=i.t;break;case E.TIE:this.totalBetT=i.t}this.lbTotalBetB.setMoney(this.totalBetB,!0),this.lbTotalBetP.setMoney(this.totalBetP,!0),this.lbTotalBetBP.setMoney(this.totalBetBP,!0),this.lbTotalBetPP.setMoney(this.totalBetPP,!0),this.lbTotalBetT.setMoney(this.totalBetT,!0)}},e.prototype.handleStartGame=function(t){cc.log("handleStartGame"),this.audio.playEffect(this.audio.dealer_startBet),this.setStateBtnGate(!0),this.isResetView=!1,this.lbSession.string="#"+t.getInt("sision"),this.currentTimer=t.getInt("time"),this.lbTimer.string=this.currentTimer+"",this.sprTimer.fillRange=1,this.onCountTimeRemain(),this.setDealerAnim("Start_Bet",!1),this.thisPlayer.showButtonBet()},e.prototype.handlePlayerBet=function(t){var e=t.getInt("pid");this.audio.playEffect(this.audio.throwChip);var i=t.getInt("id"),n=this.getPlayerWithId(e),a=t.getLong("bet");null!=n&&n==this.thisPlayer&&(this.totalBetAllGate+=a,this.listTotalUserBetGate[i-1]+=a,this.lbTotalBet.setMoney(this.totalBetAllGate,!0),this.lbTotalGateBetUser[i-1].string=h.Windown.formatMoney(this.listTotalUserBetGate[i-1]),this.lbTotalGateBetUser[i-1].node.parent.active=!0);for(var o=this.getListChipValue(a),r=0,s=o.length;r<s;r++){var c=this.assets.getChipBet(o[r]);this.listChipBet.push(c);var l=this.nodeGateBet[i-1],p=null;null!=n?(p=l.convertToNodeSpaceAR(n.node.parent.convertToWorldSpaceAR(n.node.position)),n.setChip(t.getLong("ag")),n.listChipBet.push(c),c.playerID=n.id,n.gateBetted.includes(i)||n.gateBetted.push(i)):(p=l.convertToNodeSpaceAR(this.nodeGroupUser.parent.convertToWorldSpaceAR(this.nodeGroupUser.position)),this.listChipbetOther.push(c),c.playerID=-1),c.parent=l,c.gate=i,c.value=o[r],c.setPosition(p);var u=i>3?20:30,d=h.Windown.RandomNumber(this.listPosChipOnTable[i-1].x-u,this.listPosChipOnTable[i-1].x+u),f=h.Windown.RandomNumber(this.listPosChipOnTable[i-1].y-u,this.listPosChipOnTable[i-1].y+u),y=cc.v2(d,f);cc.tween(c).set({position:p}).delay(.05*r).to(.3,{x:y.x,y:y.y},{easing:cc.easing.sineOut}).start()}this.listTotalBetValue[i-1]=t.getLong("ttB"),this.listLbTotalBet[i-1].setMoney(this.listTotalBetValue[i-1],!0)},e.prototype.setStateBtnGate=function(t){this.listBtnBet.forEach(function(e){e.interactable=t})},e.prototype.handleEndGame=function(t){return r(this,void 0,void 0,function(){var e,i,n,a,o,c,l,p,u,d,f,y,B=this;return s(this,function(P){switch(P.label){case 0:return cc.log("handleEndGame"),this.setStateBtnGate(!1),this.onCountWaitting(),this.sprTimer.fillRange=0,this.gameState=R.FINISHED,this.thisPlayer.hideButtonBet(),this.setDealerAnim("Stop_Bet"),this.audio.playEffect(this.audio.dealer_endBet),e=JSON.parse(t.getUtfString("vP")),i=JSON.parse(t.getUtfString("vD")),this.historyTable=JSON.parse(t.get("his")).reverse(),n=JSON.parse(h.Windown.SFSArrToJson(t.get("d7"))),a=t.getLong("agW"),this.agUser=t.getLong("ag"),o=JSON.parse(h.Windown.SFSArrToJson(t.get("w"))),this.listGateWin=[],o.forEach(function(t){B.listGateWin.push(t.id)}),cc.log("vp====",e),cc.log("vD====",i),c=this.animDealer.findAnimation("Stop_Bet").duration,[4,h.Windown.BaccaratView.getMakeDelay(c+.5).prosime];case 1:return P.sent(),this.setDealerAnim("DealCard"),this.gateWin=parseInt(this.listGateWin.toString().split(",").join("")),l=this.infoCardOnTable_Player[0],cc.tween(this.listCardPlayer[0].node).set({x:9,y:145}).delay(.9).call(function(){B.audio.playEffect(B.audio.flipCard),B.listCardPlayer[0].node.active=!0,B.listCardPlayer[0].node.opacity=255,B.listCardPlayer[0].dealCard()}).start(),p=this.infoCardOnTable_Banker[0],cc.tween(this.listCardBanker[0].node).set({x:-2,y:145}).delay(2.25).call(function(){B.audio.playEffect(B.audio.flipCard),B.listCardBanker[0].node.active=!0,B.listCardBanker[0].node.opacity=255,B.listCardBanker[0].dealCard(),B.animDealer.node.setSiblingIndex(B.listCardBanker[0].node.parent.getSiblingIndex()-1)}).delay(.5).call(function(){B.listCardPlayer[0].node.setPosition(l.position),B.listCardPlayer[0].id=e[0].I,B.listCardPlayer[0].nanCard()}).delay(1).call(function(){B.listCardPlayer[0].openCard()}).start(),u=this.infoCardOnTable_Player[1],cc.tween(this.listCardPlayer[1].node).set({x:9,y:145}).delay(3.5).call(function(){B.audio.playEffect(B.audio.flipCard),B.listCardPlayer[1].node.active=!0,B.listCardPlayer[1].node.opacity=255,B.listCardPlayer[1].dealCard()}).delay(.5).call(function(){B.listCardBanker[0].node.setPosition(p.position),B.listCardBanker[0].id=i[0].I,B.listCardBanker[0].nanCard()}).delay(1).call(function(){B.listCardBanker[0].openCard(),B.animDealer.node.setSiblingIndex(B.listCardBanker[0].node.getSiblingIndex()-1)}).start(),d=this.infoCardOnTable_Banker[1],cc.tween(this.listCardBanker[1].node).set({x:-2,y:145}).delay(4.85).call(function(){return r(B,void 0,void 0,function(){return s(this,function(){return this.audio.playEffect(this.audio.flipCard),this.listCardBanker[1].node.active=!0,this.listCardBanker[1].node.opacity=255,this.listCardBanker[1].dealCard(),this.animDealer.node.setSiblingIndex(this.listCardBanker[0].node.parent.getSiblingIndex()+1),[2]})})}).delay(.5).call(function(){return r(B,void 0,void 0,function(){return s(this,function(){return this.listCardPlayer[1].node.setPosition(u.position),this.listCardPlayer[1].id=e[1].I,this.listCardPlayer[1].nanCard(),[2]})})}).delay(1).call(function(){return r(B,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return this.listCardPlayer[1].openCard(),[4,this.getMakeDelay(.75).prosime];case 1:return t.sent(),this.showScore(E.PLAYER,e,!0),[2]}})})}).delay(.75).call(function(){return r(B,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return this.listCardBanker[1].node.setPosition(d.position),this.listCardBanker[1].id=i[1].I,this.listCardBanker[1].nanCard(),[4,this.getMakeDelay(1).prosime];case 1:return t.sent(),this.animDealer.node.setSiblingIndex(this.listCardBanker[1].node.parent.getSiblingIndex()-1),this.listCardBanker[1].openCard(),[4,this.getMakeDelay(.75).prosime];case 2:return t.sent(),[4,this.showScore(E.BANKER,i,!0)];case 3:return t.sent(),[2]}})})}).start(),[4,this.getMakeDelay(8.25).prosime];case 2:return P.sent(),2!=e.length||2!=i.length?[3,4]:[4,this.getMakeDelay(1.5).prosime];case 3:return P.sent(),[3,8];case 4:return 3!=e.length?[3,6]:(f=this.infoCardOnTable_Player[2],this.setDealerAnim("DealCard_Nan"),cc.tween(this.listCardPlayer[2].node).set({x:9,y:145}).delay(1.1).call(function(){B.audio.playEffect(B.audio.flipCard),B.listCardPlayer[2].node.active=!0,B.listCardPlayer[2].node.opacity=255,B.listCardPlayer[2].dealCard()}).delay(.5).call(function(){return r(B,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return this.listCardPlayer[2].node.setPosition(f.position),this.listCardPlayer[2].id=e[2].I,this.listCardPlayer[2].nanCard(),[4,this.getMakeDelay(1).prosime];case 1:return t.sent(),this.listCardPlayer[2].openCard(),[4,this.getMakeDelay(.75).prosime];case 2:return t.sent(),this.showScore(E.PLAYER,e,!1),[2]}})})}).start(),[4,this.getMakeDelay(3.4).prosime]);case 5:P.sent(),P.label=6;case 6:return 3!=i.length?[3,8]:(y=this.infoCardOnTable_Banker[2],this.setDealerAnim("DealCard_Table_Right"),cc.tween(this.listCardBanker[2].node).set({x:-4.6,y:145}).delay(1.1).call(function(){B.audio.playEffect(B.audio.flipCard),B.listCardBanker[2].node.active=!0,B.listCardBanker[2].node.opacity=255,B.listCardBanker[2].dealCard()}).delay(.5).call(function(){return r(B,void 0,void 0,function(){return s(this,function(t){switch(t.label){case 0:return this.listCardBanker[2].node.setPosition(y.position),this.listCardBanker[2].id=i[2].I,this.listCardBanker[2].nanCard(),[4,this.getMakeDelay(1).prosime];case 1:return t.sent(),this.listCardBanker[2].openCard(),[4,this.getMakeDelay(.75).prosime];case 2:return t.sent(),this.showScore(E.BANKER,i,!1),[2]}})})}).start(),[4,this.getMakeDelay(3.4).prosime]);case 7:P.sent(),P.label=8;case 8:return[4,this.showWinResult()];case 9:return P.sent(),this.getAllChipOnTable(),[4,this.getMakeDelay(1.5).prosime];case 10:return P.sent(),this.payChipWinOnTalbe(),[4,this.getMakeDelay(1.5).prosime];case 11:return P.sent(),this.moveChipToPlayer(),[4,this.getMakeDelay(1.5).prosime];case 12:return P.sent(),[4,this.showResultAgWin(n,a)];case 13:return P.sent(),this.resetView(),[2]}})})},e.prototype.getAllChipOnTable=function(){var t=this;cc.log("this.listGateWin="+this.listGateWin),this.audio.playEffect(this.audio.getChip),this.listChipBet.forEach(function(e){if(!t.listGateWin.includes(e.gate)){var i=t.nodeGetChip.parent.convertToWorldSpaceAR(t.nodeGetChip.position),n=e.parent.convertToNodeSpaceAR(i);cc.tween(e).delay(h.Windown.RandomNumber(0,3)/10).to(1.5,{position:n},{easing:cc.easing.quintOut}).to(.1,{opacity:0}).call(function(){t.assets.chipBetPool.put(e);var i=t.getPlayerWithId(e.playerID);null!=i&&i.listChipBet.splice(i.listChipBet.indexOf(e),1),t.listChipbetOther.includes(e)&&t.listChipbetOther.splice(t.listChipbetOther.indexOf(e),1)}).start()}})},e.prototype.payChipWinOnTalbe=function(){for(var t=this,e=!1,i=function(i){var a=n.listGateWin[i];n.players.forEach(function(i){i.listChipBet.forEach(function(n,o){if(n.gate==a){e=!0,n.value=t.getChipWinValueOnGate(n.value,a);for(var r=t.getListChipValue(n.value),s=0,c=r.length;s<c;s++)t.effectChipPay(r[s],a,.07*o,i.listChipPay)}})}),n.listChipbetOther.forEach(function(i,n){if(i.gate==a){e=!0,i.value=t.getChipWinValueOnGate(i.value,a);for(var o=t.getListChipValue(i.value),r=0,s=o.length;r<s;r++)t.effectChipPay(o[r],a,.07*n,t.listChipbetOther)}})},n=this,a=0;a<this.listGateWin.length;a++)i(a);e&&this.audio.playEffect(this.audio.chipMoveToPlayer_turn1)},e.prototype.getChipWinValueOnGate=function(t,e){return e!=E.PLAYER_PAIR&&e!=E.BANKER_PAIR||(t*=15),e==E.TIE&&(t*=9),t},e.prototype.moveChipToPlayer=function(){var t=this,e=cc.find("bg/playerContainer",this.node),i=!1;this.players.forEach(function(n){n.listChipBet.forEach(function(a,o){if(o<7){cc.log("playerBet ="+n.nickname),cc.isValid(a.parent)||(cc.log("Chip ko co cha:",a.playerID),a.parent=t.nodeGateBet[a.gate-1]);var r=h.Windown.convertNodeInOtherNode(a,e);a.parent=e,a.setPosition(r),i=!0,cc.tween(a).to(.6,{x:n.posPayChip[0].x,y:n.posPayChip[0].y+5*o,scale:.8*a.scale}).delay(1).to(.3,{position:n.node.position}).call(function(){t.assets.chipBetPool.put(a)}).start()}else cc.log("chip >7"),cc.tween(a).to(.3,{opacity:0},{easing:cc.easing.sineOut}).call(function(){t.assets.chipBetPool.put(a),cc.log("player listchipo bet size="+n.listChipBet.length)}).start()}),n.listChipPay.forEach(function(a,o){if(o<7){var r=h.Windown.convertNodeInOtherNode(a,e);a.parent=e,a.setPosition(r),i=!0,cc.tween(a).to(.6,{x:n.posPayChip[1].x,y:n.posPayChip[1].y+5*o,scale:.8*a.scale}).delay(.75).to(.3,{position:n.node.position}).call(function(){t.assets.chipBetPool.put(a)}).start()}else cc.tween(a).to(.3,{opacity:0},{easing:cc.easing.sineOut}).call(function(){t.assets.chipBetPool.put(a)}).start()})});var n=0;this.listChipbetOther.forEach(function(a,o){if(o<7){i=!0,n+=a.value,cc.log("Chip Parent="+a.parent.name);var r=h.Windown.convertNodeInOtherNode(a,e);a.parent=e,a.setPosition(r);var s=1==a.isChipPayOther?0:1;cc.tween(a).to(.6,{x:t.posPayChipOther[s].x,y:t.posPayChipOther[s].y+5*o,scale:.8*a.scale}).delay(.75).to(.3,{position:t.nodeGroupUser.position}).call(function(){t.assets.chipBetPool.put(a)}).start()}else n+=a.value,t.assets.chipBetPool.put(a);cc.log("total other win="+n)}),this.listChipbetOther.length>0&&cc.tween(this.node).delay(1.5).call(function(){t.showEffectWinOther(n)}).start(),this.listChipBet.forEach(function(e){cc.isValid(t.getPlayerWithId(e.playerID))||t.listChipbetOther.includes(e)||cc.tween(e).to(.3,{opacity:0},{easing:cc.easing.sineOut}).call(function(){t.assets.chipBetPool.put(e)}).start()}),i&&this.audio.playEffect(this.audio.chipMoveToPlayer_turn1)},e.prototype.showEffectWinOther=function(t){var e=this;null==this.effectWinOther?(cc.log("show effectWinOther"),this.effectWinOther=this.assets.getEffectWin(t),this.effectWinOther.parent=this.node,this.effectWinOther.position=this.nodeGroupUser.position):this.effectWinOther.getChildByName("lbChipWin").getComponent(cc.Label).string=h.Windown.formatMoney(t),this.effectWinOther.active=!0;var i=this.effectWinOther.getComponentInChildren(sp.Skeleton);i.setSkin("win"),i.setSlotsToSetupPose(),i.setAnimation(0,"appear",!1),i.setCompleteListener(function(){i.setAnimation(0,"idle",!1),i.setCompleteListener(null)}),this.scheduleOnce(function(){cc.tween(e.effectWinOther).to(.2,{scaleX:0},{easing:cc.easing.backIn}).call(function(){e.effectWinOther.active=!1}).start()},3)},e.prototype.showResultAgWin=function(t,e){return void 0===t&&(t=[]),r(this,void 0,void 0,function(){var i,n,a=this;return s(this,function(o){switch(o.label){case 0:return i=[],n=!1,t.forEach(function(t){var e=t.id,o=a.getPlayerWithId(e);cc.isValid(o)&&t.agw>0&&o!=a.thisPlayer&&(n=!0,i.push(o.showWinEffect(t.agw)),o.setChip(t.ag))}),0!=e&&(i.push(this.thisPlayer.showWinSpineEffect(e)),this.thisPlayer.setChip(this.agUser),this.audio.playEffect(this.audio.youWin)),n&&this.audio.playEffect(this.audio.chipMoveToPlayer_turn2),[4,Promise.all(i)];case 1:return o.sent(),[4,this.getMakeDelay(.25).prosime];case 2:return o.sent(),[2]}})})},e.prototype.showResultAgWinReconnect=function(t){return void 0===t&&(t=[]),r(this,void 0,void 0,function(){var e,i,n,a,o,r=this;return s(this,function(s){switch(s.label){case 0:return e=[],i=!1,n=0,a=[],o=function(t){a.forEach(function(e){return e.idP==t?e:null})},t.forEach(function(t){t.w&&t.b.forEach(function(t){var e=t.idP,i=o(e);null==i?(a.push(t),e==r.thisPlayer.id&&(n=t.agWin)):(i.agWin+=t.agWin,e==r.thisPlayer.id&&(n=i.agWin))})}),cc.log(" Player info=",a),a.forEach(function(t){var n=t.idP,a=r.getPlayerWithId(n);cc.isValid(a)&&t.agWin>0&&a!=r.thisPlayer&&(i=!0,e.push(a.showWinEffect(t.agWin)))}),cc.log(" Player agWinUser=",n),0!=n&&(e.push(this.thisPlayer.showWinSpineEffect(n)),this.thisPlayer.setChip(this.agUser),this.audio.playEffect(this.audio.youWin)),i&&this.audio.playEffect(this.audio.chipMoveToPlayer_turn2),[4,Promise.all(e)];case 1:return s.sent(),[4,this.getMakeDelay(.25).prosime];case 2:return s.sent(),[2]}})})},e.prototype.endResultAgWin=function(){},e.prototype.resetView=function(){var t=this;if(!this.isResetView){this.isResetView=!0,this.totalBetAllGate=0,this.lbTotalBet.setMoney(0),this.listChipBet.forEach(function(e){t.assets.chipBetPool.put(e)}),this.listChipBet=[],this.listChipbetOther.forEach(function(e){t.assets.chipBetPool.put(e)}),this.listChipbetOther=[],this.totalBetB=this.totalBetP=this.totalBetPP=this.totalBetBP=0,this.listBtnBet.forEach(function(t){t.getComponentInChildren(cc.Animation).node.active=!1}),this.animWinResult.node.active=!1,this.setDealerAnim("DiscardCard");for(var e=function(e){var n=i.listCardPlayer[e],a=i.listCardBanker[e];n.node.parent.getChildByName("cardBgWin"+(e+1)).active=!1,a.node.parent.getChildByName("cardBgWin"+(e+1)).active=!1,cc.tween(n.node).delay(.1*e).to(.3,{opacity:0},{easing:cc.easing.sineOut}).call(function(){cc.audioEngine.play(t.audio.flipCard,!1,1),n.getComponent(y.default).setCardBack(),n.node.active=!1}).start(),cc.tween(a.node).delay(.1*e).to(.3,{opacity:0},{easing:cc.easing.sineOut}).call(function(){t.audio.playEffect(t.audio.flipCard),n.getComponent(y.default).setCardBack(),a.node.active=!1}).start()},i=this,n=0;n<3;n++)e(n);this.lbScoreP.node.active=!1,this.lbScoreB.node.active=!1,this.players.forEach(function(t){t.resetPlayer()}),this.gameState=R.WAITTING,null!=this.lastPlayerInfoData&&(this.handlePlayerInfo(this.lastPlayerInfoData),this.lastPlayerInfoData=null),this.listLbTotalBet.forEach(function(t){t.setMoneyNoTime(0)}),this.lbTotalGateBetUser.forEach(function(e,i){e.node.parent.active=!1,t.HistoryBet.ListGateBet[i]=t.listTotalUserBetGate[i],t.listTotalUserBetGate[i]=0}),this.historyMini.addItemHistory(this.historyTable),cc.log("listTotalUserBetGate=",this.listTotalUserBetGate)}},e.prototype.effectChipPay=function(t,e,i,n,a){void 0===a&&(a=null);var o=this.assets.getChipBet(t);o.isChipPayOther=n==this.listChipbetOther,n.push(o);var r=this.nodeGateBet[e-1];o.parent=r;var s=e>3?20:30,c=h.Windown.RandomNumber(this.listPosChipOnTable[e-1].x-s,this.listPosChipOnTable[e-1].x+s),l=h.Windown.RandomNumber(this.listPosChipOnTable[e-1].y-s,this.listPosChipOnTable[e-1].y+s),p=cc.v2(c,l);i=i<.75?i:.75,o.opacity=0,cc.tween(o).set({x:p.x,y:p.y+50,opacity:0}).delay(i).to(.3,{x:p.x,y:p.y,opacity:255},{easing:cc.easing.sineIn}).call(function(){null!=a&&a()}).start()},e.prototype.showWinResult=function(){return r(this,void 0,void 0,function(){var t=this;return s(this,function(){return[2,new Promise(function(e){return r(t,void 0,void 0,function(){var t,i=this;return s(this,function(n){switch(n.label){case 0:return n.trys.push([0,2,,3]),this.animWinResult.node.active=!0,this.audio.playEffect(this.audio.gateWinEffect),this.getGateWinNormal()==E.TIE?(this.animWinResult.node.x=0,this.animWinResult.setSkin("tie"),this.animWinResult.setSlotsToSetupPose()):(this.animWinResult.node.x=this.getGateWinNormal()==E.PLAYER?-170:170,this.animWinResult.setSkin("win"),this.animWinResult.setSlotsToSetupPose(),this.getGateWinNormal()==E.BANKER?this.listCardBanker.forEach(function(t,e){t.node.active&&(t.node.parent.getChildByName("cardBgWin"+(e+1)).active=!0)}):this.listCardPlayer.forEach(function(t,e){t.node.active&&(t.node.parent.getChildByName("cardBgWin"+(e+1)).active=!0)})),this.animWinResult.setAnimation(0,"appear",!1),this.animWinResult.setCompleteListener(function(){i.animWinResult.setAnimation(0,"idle",!0)}),this.setDealerAnim(this.getGateWinNormal()==E.TIE?"Win_Draw":this.getGateWinNormal()==E.PLAYER?"Win_Player":"Win_Banker"),this.listGateWin.forEach(function(t){i.listBtnBet[t-1].getComponentInChildren(cc.Animation).node.active=!0}),[4,this.getMakeDelay(1.5).prosime];case 1:return n.sent(),e(null),[3,3];case 2:return t=n.sent(),p.Util.ThrowErrProsime(t),[3,3];case 3:return[2]}})})})]})})},e.prototype.setDealerAnim=function(t,e,i){var n=this;void 0===e&&(e=!1),void 0===i&&(i=null),this.animDealer.setAnimation(0,t,e),this.animDealer.setCompleteListener(null),null!=i?(this.animDealer.setCompleteListener(i),this.animDealer.setCompleteListener(null)):this.animDealer.setCompleteListener(function(){n.animDealer.setAnimation(0,"Idle_Tap",!0)})},e.prototype.showScore=function(t,e,i){cc.log("arrCArd= ",e);var n=i?2:3,a=this.getScore(e,n),o=cc.tween().set({scale:0}).to(.3,{scale:1},{easing:cc.easing.backOut});t==E.PLAYER?(this.lbScoreP.node.active=!0,i?(this.lbScoreP.setMoneyNoTime(a),o.clone(this.lbScoreP.node).start()):this.lbScoreP.setMoney(a)):(this.lbScoreB.node.active=!0,i?(this.lbScoreB.setMoneyNoTime(a),o.clone(this.lbScoreB.node).start()):this.lbScoreB.setMoney(a))},e.prototype.getScore=function(t,e){void 0===e&&(e=2);for(var i=0,n=0;n<e;n++){var a=t[n];i+=a.N>=10?0:a.N}return i%10},e.prototype.openCard=function(t,e,i){var n=this,a=0;a=t.x>0?10:-10,t.x,t.getPosition(),cc.tween(t).to(.55,{scaleX:.01,angle:i.angle+10,skewX:i.skew.x+a},{easing:cc.easing.cubicInOut}).call(function(){t.getComponent(cc.Sprite).spriteFrame=n.assets.getCardSprite(e),n.audio.playEffect(n.audio.openCard)}).to(.2,{scaleX:i.scaleX,angle:i.angle,skewX:i.skew.x},{easing:cc.easing.cubicInOut}).start()},e.prototype.onCountTimeRemain=function(){var t=this;this.lbTimer.node.active=!0,this.lbWaitting.node.active=!1,cc.Tween.stopAllByTarget(this.lbWaitting),this.lbTimer.string=this.currentTimer+"",this.schedule(function(){t.currentTimer>0?(t.currentTimer--,t.lbTimer.string=t.currentTimer+"",t.currentTimer<6&&cc.tween(t.lbTimer.node).to(.3,{scale:1.5},{easing:cc.easing.sineOut}).to(.3,{scale:1},{easing:cc.easing.sineIn}).start()):t.lbTimer.string="0"},1,this.currentTimer),cc.tween(this.sprTimer).to(this.currentTimer,{fillRange:0}).start()},e.prototype.onCountWaitting=function(){this.lbTimer.node.active=!1,this.lbWaitting.node.active=!0,this.sprTimer.fillRange=0,cc.tween(this.lbWaitting).repeatForever(cc.tween().set({string:""}).delay(.5).set({string:"."}).delay(.5).set({string:".."}).delay(.5).set({string:"..."}).delay(.5)).start()},e.prototype.getPlayerWithId=function(t){return t==h.Windown.User.userId?this.thisPlayer:this.players.find(function(e){return e.id==t})},e.prototype.getListChipValue=function(t){var e=[];return this.getNameChip(t,e),e},e.prototype.getNameChip=function(t,e){for(var i,n,a=0,o=0;o<this.listValueChip.length;o++)if(this.listValueChip[o]>t){a=this.listValueChip[o-1];break}if(0==a)for(o=this.listValueChip.length-1;o>=0;o++)if(t>=this.listValueChip[o]){a=this.listValueChip[o];break}if(i=Math.floor(t/a),t=n=t%a,a>=1e3)for(o=0;o<i;o++)e.push(a);n>0&&this.getNameChip(t,e)},e.prototype.getGateWinNormal=function(){var t=0;switch(this.gateWin){case S.PLAYER:case S.PLAYER_BP:case S.PLAYER_PP:case S.PLAYER_PBP:t=S.PLAYER;break;case S.BANKER:case S.BANKER_BP:case S.BANKER_PP:case S.BANKER_PBP:t=S.BANKER;break;case S.TIE:case S.TIE_BP:case S.TIE_PP:case S.TIE_PBP:t=S.TIE}return t},e.prototype.onClickSendBet=function(t,e){h.Windown.BaccaratController.sendBet(parseInt(e),this.currentBetValue),setTimeout(function(){h.Windown.BaccaratController.isCanSendData=!0},500)},e.prototype.onClickShowMenu=function(){this.audio.playClick(),this.menu.node.active=!0,this.menu.onshow()},e.prototype.onClickShowPopupSoiCau=function(){return r(this,void 0,void 0,function(){var t;return s(this,function(e){switch(e.label){case 0:return null!=this.popupSoiCau?[3,2]:(h.Windown.UIManager.showLoading(),[4,h.Windown.BaccaratController.loadPrefabBundle("PopupSoiCau")]);case 1:t=e.sent(),this.popupSoiCau=cc.instantiate(t).getComponent(b.default),this.popupSoiCau.node.parent=h.Windown.BaccaratView.node,h.Windown.UIManager.hideLoading(),e.label=2;case 2:return this.popupSoiCau.node.active=!0,this.popupSoiCau.show(),[2]}})})},e.prototype.setupTimeRunInBg=function(){var t=this;cc.game.on(cc.game.EVENT_HIDE,function(){t.timeInBg=cc.sys.now()}),cc.game.on(cc.game.EVENT_SHOW,function(){var e=cc.sys.now(),i=t.timeInBg;cc.director.getActionManager().update((e-i)/1e3),cc.Tween.stopAllByTag(1),(e-i)/1e3>15&&h.Windown.BaccaratController.onClickBackToLobby()})},o([w([v.default])],e.prototype,"players",void 0),o([w(v.default)],e.prototype,"thisPlayer",void 0),o([w(u.default)],e.prototype,"assets",void 0),o([w(g.default)],e.prototype,"menu",void 0),o([w(f.default)],e.prototype,"buttonBetController",void 0),o([w(P.default)],e.prototype,"historyMini",void 0),o([w(_.default)],e.prototype,"popupHistoryBetView",void 0),o([w(d.default)],e.prototype,"audio",void 0),o([w(b.default)],e.prototype,"popupSoiCau",void 0),o([w(cc.Node)],e.prototype,"nodeGroupUser",void 0),o([w([cc.Node])],e.prototype,"nodeGateBet",void 0),o([w([y.default])],e.prototype,"listCardPlayer",void 0),o([w([y.default])],e.prototype,"listCardBanker",void 0),o([w(cc.Node)],e.prototype,"nodeGetChip",void 0),o([w(cc.Label)],e.prototype,"lbOtherPlayer",void 0),o([w(cc.Label)],e.prototype,"lbTimer",void 0),o([w(cc.Label)],e.prototype,"lbWaitting",void 0),o([w(cc.Label)],e.prototype,"lbSession",void 0),o([w(cc.Sprite)],e.prototype,"sprTimer",void 0),o([w(c.default)],e.prototype,"lbScoreP",void 0),o([w(c.default)],e.prototype,"lbScoreB",void 0),o([w(c.default)],e.prototype,"lbTotalBet",void 0),o([w(sp.Skeleton)],e.prototype,"animDealer",void 0),o([w(sp.Skeleton)],e.prototype,"animWinResult",void 0),o([w([cc.Vec2])],e.prototype,"posPayChipOther",void 0),o([w(c.default)],e.prototype,"lbTotalBetB",void 0),o([w(c.default)],e.prototype,"lbTotalBetP",void 0),o([w(c.default)],e.prototype,"lbTotalBetT",void 0),o([w(c.default)],e.prototype,"lbTotalBetBP",void 0),o([w(c.default)],e.prototype,"lbTotalBetPP",void 0),o([w([cc.Vec2])],e.prototype,"listPosChipOnTable",void 0),o([w([cc.Label])],e.prototype,"lbTotalGateBetUser",void 0),o([m],e)}(cc.Component);i.default=T,cc._RF.pop()},{"../../../Scritps/Obs/LbMoneyChange":void 0,"../../../Scritps/Other/MakeDelay":void 0,"../../../Scritps/Util":void 0,"../../../Scritps/Windown":void 0,"./Baccarat.Assets":"Baccarat.Assets","./Baccarat.Audio":"Baccarat.Audio","./Baccarat.ButtonBet":"Baccarat.ButtonBet","./Baccarat.Card":"Baccarat.Card","./Baccarat.HistoryBet":"Baccarat.HistoryBet","./Baccarat.HistoryMini":"Baccarat.HistoryMini","./Baccarat.MenuView":"Baccarat.MenuView","./Baccarat.Player":"Baccarat.Player","./Baccarat.PopupHistory":"Baccarat.PopupHistory","./Baccarat.SoiCauView":"Baccarat.SoiCauView"}]},{},["Baccarat.Assets","Baccarat.Audio","Baccarat.BigRoad","Baccarat.ButtonBet","Baccarat.Card","Baccarat.ChipBet","Baccarat.DishRoadBoard","Baccarat.HistoryBet","Baccarat.HistoryMini","Baccarat.MenuView","Baccarat.Player","Baccarat.PopupHistory","Baccarat.ScoreBoard","Baccarat.SettingView","Baccarat.SoiCauView","BaccaratController","BaccaratView"]);
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+        o = b;
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  "Baccarat.Assets": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c3929B7DJJFJ56uustrPN2z", "Baccarat.Assets");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratAsset = function(_super) {
+      __extends(BaccaratAsset, _super);
+      function BaccaratAsset() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.chipBetTemp = null;
+        _this.effectWin = null;
+        _this.chipBetSprites = [];
+        _this.listBetValue = [ 1, 5, 10, 50, 100, 500, 1e3, 2e3, 5e3, 1e4, 5e4, 1e5, 15e4, 2e5 ];
+        _this.chipBetPool = null;
+        _this.cardAtlas = null;
+        _this.spriteCard = [];
+        _this.animDealCardData = null;
+        _this.animNanBaiData = null;
+        return _this;
+      }
+      BaccaratAsset.prototype.onLoad = function() {
+        this.chipBetPool = new cc.NodePool("chipbet");
+        for (var i = 39; i < 52; i++) this.spriteCard.push(this.cardAtlas.getSpriteFrame(i + ""));
+        for (var i = 26; i < 39; i++) this.spriteCard.push(this.cardAtlas.getSpriteFrame(i + ""));
+        for (var i = 0; i < 13; i++) this.spriteCard.push(this.cardAtlas.getSpriteFrame(i + ""));
+        for (var i = 13; i < 26; i++) this.spriteCard.push(this.cardAtlas.getSpriteFrame(i + ""));
+      };
+      BaccaratAsset.prototype.start = function() {};
+      BaccaratAsset.prototype.getCardSprite = function(id) {
+        return this.spriteCard[id - 1];
+      };
+      BaccaratAsset.prototype.getCardBack = function() {
+        return this.cardAtlas.getSpriteFrame("52");
+      };
+      BaccaratAsset.prototype.getEffectWin = function(value, isTie) {
+        void 0 === isTie && (isTie = false);
+        var efftWin = cc.instantiate(this.effectWin);
+        efftWin.getChildByName("lbChipWin").getComponent(cc.Label).string = Windown_1.Windown.formatMoney(value);
+        efftWin.active = true;
+        return efftWin;
+      };
+      BaccaratAsset.prototype.getChipBet = function(value) {
+        var chip = null;
+        0 == this.chipBetPool.size() && this.chipBetPool.put(cc.instantiate(this.chipBetTemp));
+        chip = this.chipBetPool.get();
+        chip.active = true;
+        chip.opacity = 255;
+        chip.scale = 1;
+        chip["value"] = 0;
+        chip["gate"] = -1;
+        chip["playerID"] = 0;
+        chip["isChipPayOther"] = null;
+        var indexChip = this.listBetValue.indexOf(value / 1e3);
+        chip.getComponent(cc.Sprite).spriteFrame = -1 != indexChip ? this.chipBetSprites[indexChip] : this.chipBetSprites[this.chipBetSprites.length - 1];
+        return chip;
+      };
+      __decorate([ property(cc.Node) ], BaccaratAsset.prototype, "chipBetTemp", void 0);
+      __decorate([ property(cc.Node) ], BaccaratAsset.prototype, "effectWin", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], BaccaratAsset.prototype, "chipBetSprites", void 0);
+      __decorate([ property(cc.SpriteAtlas) ], BaccaratAsset.prototype, "cardAtlas", void 0);
+      __decorate([ property(sp.SkeletonData) ], BaccaratAsset.prototype, "animDealCardData", void 0);
+      __decorate([ property(sp.SkeletonData) ], BaccaratAsset.prototype, "animNanBaiData", void 0);
+      BaccaratAsset = __decorate([ ccclass ], BaccaratAsset);
+      return BaccaratAsset;
+    }(cc.Component);
+    exports.default = BaccaratAsset;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.Audio": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8ca9efPaMxHzZsWZa9sBXbH", "Baccarat.Audio");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var AudioManager_1 = require("../../../Scritps/Parent/AudioManager");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratAudio = function(_super) {
+      __extends(BaccaratAudio, _super);
+      function BaccaratAudio() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.bgm_fs = null;
+        _this.click = null;
+        _this.flipCard = null;
+        _this.openCard = null;
+        _this.bankerWin = null;
+        _this.playerWin = null;
+        _this.youWin = null;
+        _this.gateWinEffect = null;
+        _this.dealer_startBet = null;
+        _this.dealer_endBet = null;
+        _this.getChip = null;
+        _this.chipMoveToPlayer_turn1 = null;
+        _this.chipMoveToPlayer_turn2 = null;
+        _this.throwChip = null;
+        _this.openPopup = null;
+        _this.fsSpin = null;
+        return _this;
+      }
+      BaccaratAudio.prototype.start = function() {};
+      BaccaratAudio.prototype.playClick = function() {
+        this.playEffect(this.click);
+      };
+      BaccaratAudio.prototype.playMusic = function() {
+        cc.log("chay vao play music " + this.isActiveMusic);
+        if (this.isActiveMusic && this.backgroundMusicAudio) {
+          cc.audioEngine.playMusic(this.backgroundMusicAudio, true);
+          cc.audioEngine.setMusicVolume(1);
+        }
+      };
+      BaccaratAudio.prototype.playIndexTakeLine = function() {};
+      BaccaratAudio.prototype.playSmalWin = function() {};
+      BaccaratAudio.prototype.playBkgfs = function() {
+        this.stopMusic();
+        this.playEffect(this.bgm_fs, .6, true);
+      };
+      BaccaratAudio.prototype.stopBkgFs = function() {
+        this.stopEffect(this.bgm_fs, true);
+        this.playMusic();
+      };
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "bgm_fs", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "click", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "flipCard", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "openCard", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "bankerWin", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "playerWin", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "youWin", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "gateWinEffect", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "dealer_startBet", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "dealer_endBet", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "getChip", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "chipMoveToPlayer_turn1", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "chipMoveToPlayer_turn2", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "throwChip", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "openPopup", void 0);
+      __decorate([ property(cc.AudioClip) ], BaccaratAudio.prototype, "fsSpin", void 0);
+      BaccaratAudio = __decorate([ ccclass ], BaccaratAudio);
+      return BaccaratAudio;
+    }(AudioManager_1.default);
+    exports.default = BaccaratAudio;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Parent/AudioManager": void 0
+  } ],
+  "Baccarat.BigRoad": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b11de7wPypMRIitreKWlaa4", "Baccarat.BigRoad");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BACCARAT_WIN_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PP: 14,
+      PLAYER_BP: 15,
+      PLAYER_PBP: 145,
+      BANKER_PP: 34,
+      BANKER_BP: 35,
+      BANKER_PBP: 345,
+      TIE_PP: 24,
+      TIE_BP: 25,
+      TIE_PBP: 245
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BacaratBigRoad = function(_super) {
+      __extends(BacaratBigRoad, _super);
+      function BacaratBigRoad() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.spfBanker = null;
+        _this.spfPlayer = null;
+        _this.spfTieBanker = null;
+        _this.spfTiePlayer = null;
+        _this.spfTie_BankerWinPlayerPair = null;
+        _this.spfTie_BankerWinBankerPair = null;
+        _this.spfTie_PlayerWinPlayerPair = null;
+        _this.spfBanker_BankerPair = null;
+        _this.spfBanker_PlayerPair = null;
+        _this.spfBanker_BankerPlayerPair = null;
+        _this.spfPlayer_BankerPair = null;
+        _this.spfPlayer_PlayerPair = null;
+        _this.spfPlayer_BankerPlayerPair = null;
+        _this.template = null;
+        _this.container = null;
+        _this.topRightPos = null;
+        _this.BacaratBetSite = {
+          PLAYER_PAIR: 1,
+          PLAYER: 2,
+          TIE: 3,
+          BANKER: 4,
+          BANKER_PAIR: 5
+        };
+        _this.dataHistory = [];
+        _this.deltaXCol = 34;
+        _this.deltaYRow = 34;
+        _this.currentIndex = 0;
+        _this.currentCol = 0;
+        _this.currentPosX = 0;
+        return _this;
+      }
+      BacaratBigRoad.prototype.start = function() {
+        this.currentPosX = this.topRightPos.x;
+      };
+      BacaratBigRoad.prototype.setInfo = function(history) {
+        for (var i = 0, l = history.length; i < l - 1; i++) {
+          var arrayCol = [];
+          arrayCol.push(history[i]);
+          var idCheck = history[i];
+          cc.log("idCheck=" + idCheck);
+          var gateWinNormal = this.getGateWinNormal(idCheck);
+          var isBreak = false;
+          for (var j = i + 1; j < l; j++) {
+            var idNext = history[j];
+            var gateWinNormalIdNext = this.getGateWinNormal(idNext);
+            if (gateWinNormal != BACCARAT_WIN_GATE.TIE) {
+              if (gateWinNormal != gateWinNormalIdNext && gateWinNormal != BACCARAT_WIN_GATE.TIE) {
+                0 != arrayCol.length && (i += arrayCol.length - 1);
+                break;
+              }
+              arrayCol.push(idNext);
+            } else idCheck = idNext;
+          }
+          this.dataHistory.push(arrayCol);
+        }
+        for (var i = 0, l = this.dataHistory.length; i < l; i++) {
+          var dataCol = this.dataHistory[i].reverse();
+          var indexRow = 0;
+          cc.log("dataCol=", dataCol);
+          for (var j = 0; j < dataCol.length; j++) {
+            var data = dataCol[j];
+            var gateWin = this.getGateWinNormal(data);
+            if (gateWin != BACCARAT_WIN_GATE.TIE) {
+              var item = cc.instantiate(this.template);
+              item.parent = this.container;
+              item.active = true;
+              item.getChildByName("spr").getComponent(cc.Sprite).spriteFrame = this.getSpf(data);
+              item.setPosition(cc.v2(this.topRightPos.x - this.deltaXCol * this.currentCol, this.topRightPos.y - this.deltaYRow * indexRow));
+              this.currentIndex++;
+              indexRow++;
+            } else {
+              cc.isValid(this.container.children[this.currentIndex - 1]) && (this.container.children[this.currentIndex - 1].getChildByName("tie").active = true);
+              j == dataCol.length - 1 && this.currentCol--;
+            }
+          }
+          this.currentCol++;
+        }
+      };
+      BacaratBigRoad.prototype.getSpf = function(BigGateIDWin) {
+        var spf = null;
+        switch (BigGateIDWin) {
+         case BACCARAT_WIN_GATE.BANKER:
+          spf = this.spfBanker;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER_BP:
+          spf = this.spfBanker_BankerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER_PP:
+          spf = this.spfBanker_PlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER_PBP:
+          spf = this.spfBanker_BankerPlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER:
+          spf = this.spfPlayer;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_BP:
+          spf = this.spfPlayer_BankerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_PP:
+          spf = this.spfPlayer_PlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_PBP:
+          spf = this.spfPlayer_BankerPlayerPair;
+          break;
+
+         default:
+          cc.log("BigRoad:ko vao case nao ca:" + BigGateIDWin);
+        }
+        return spf;
+      };
+      BacaratBigRoad.prototype.getGateWinNormal = function(gate) {
+        var gateW = 0;
+        switch (gate) {
+         case BACCARAT_WIN_GATE.PLAYER:
+         case BACCARAT_WIN_GATE.PLAYER_BP:
+         case BACCARAT_WIN_GATE.PLAYER_PP:
+         case BACCARAT_WIN_GATE.PLAYER_PBP:
+          gateW = BACCARAT_WIN_GATE.PLAYER;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER:
+         case BACCARAT_WIN_GATE.BANKER_BP:
+         case BACCARAT_WIN_GATE.BANKER_PP:
+         case BACCARAT_WIN_GATE.BANKER_PBP:
+          gateW = BACCARAT_WIN_GATE.BANKER;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE:
+         case BACCARAT_WIN_GATE.TIE_BP:
+         case BACCARAT_WIN_GATE.TIE_PP:
+         case BACCARAT_WIN_GATE.TIE_PBP:
+          gateW = BACCARAT_WIN_GATE.TIE;
+          break;
+
+         default:
+          cc.log("KO vao cAse nao getGateWinNormal:" + gate);
+        }
+        return gateW;
+      };
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfBanker", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfPlayer", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfTieBanker", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfTiePlayer", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfTie_BankerWinPlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfTie_BankerWinBankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfTie_PlayerWinPlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfBanker_BankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfBanker_PlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfBanker_BankerPlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfPlayer_BankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfPlayer_PlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratBigRoad.prototype, "spfPlayer_BankerPlayerPair", void 0);
+      __decorate([ property(cc.Node) ], BacaratBigRoad.prototype, "template", void 0);
+      __decorate([ property(cc.Node) ], BacaratBigRoad.prototype, "container", void 0);
+      __decorate([ property(cc.Vec2) ], BacaratBigRoad.prototype, "topRightPos", void 0);
+      BacaratBigRoad = __decorate([ ccclass ], BacaratBigRoad);
+      return BacaratBigRoad;
+    }(cc.Component);
+    exports.default = BacaratBigRoad;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.ButtonBet": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "931e1pN48lEV4zRZ4h/Z0lo", "Baccarat.ButtonBet");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratButtonBet = function(_super) {
+      __extends(BaccaratButtonBet, _super);
+      function BaccaratButtonBet() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.scrBtn = null;
+        _this.btnX2 = null;
+        _this.btnRebet = null;
+        _this.btnBetB = null;
+        _this.currbetBtnBet = null;
+        _this.chipBorder = null;
+        _this.listBetValue = [ 1, 5, 10, 50, 100, 500, 1e3, 2e3, 5e3, 1e4, 5e4, 15e4, 2e5 ];
+        _this.currentBetValue = 1;
+        return _this;
+      }
+      BaccaratButtonBet.prototype.start = function() {
+        var _this = this;
+        var content = this.scrBtn.content;
+        content.children.forEach(function(btn, index) {
+          var clickEventHandler = new cc.Component.EventHandler();
+          clickEventHandler.target = _this.node;
+          clickEventHandler.component = "Baccarat.ButtonBet";
+          clickEventHandler.handler = "onClickBet";
+          clickEventHandler.customEventData = _this.listBetValue[index] + "";
+          btn.getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        });
+        this.currbetBtnBet.y = 10;
+      };
+      BaccaratButtonBet.prototype.onClickBet = function(even, data) {
+        cc.log("clickbet:" + data);
+        Windown_1.Windown.BaccaratView.audio.playEffect(Windown_1.Windown.BaccaratView.audio.chipMoveToPlayer_turn1);
+        cc.tween(this.currbetBtnBet).to(.1, {
+          y: 0
+        }).start();
+        this.currbetBtnBet = even.target;
+        this.chipBorder.parent = this.currbetBtnBet;
+        this.currentBetValue = 1e3 * parseInt(data);
+        Windown_1.Windown.BaccaratView.currentBetValue = this.currentBetValue;
+        cc.tween(this.currbetBtnBet).to(.1, {
+          y: 10
+        }).start();
+      };
+      BaccaratButtonBet.prototype.onClickX2 = function() {
+        var totalHistoryBet = Windown_1.Windown.BaccaratView.HistoryBet.getTotalHistoryBet();
+        var listGateBet = Windown_1.Windown.BaccaratView.HistoryBet.ListGateBet;
+        if (2 * totalHistoryBet > Windown_1.Windown.User.userAg) {
+          Windown_1.Windown.UIManager.showAlertMini("B\u1ea1n kh\xf4ng \u0111\u1ee7 ti\u1ec1n c\u01b0\u1ee3c X2!");
+          return;
+        }
+        for (var i = 0; i < 5; i++) if (listGateBet[i] > 0) {
+          Windown_1.Windown.BaccaratController.sendBet(i + 1, 2 * listGateBet[i]);
+          Windown_1.Windown.BaccaratController.isCanSendData = true;
+        }
+        this.btnRebet.interactable = false;
+        this.btnX2.interactable = false;
+      };
+      BaccaratButtonBet.prototype.onClickRebet = function() {
+        var totalHistoryBet = Windown_1.Windown.BaccaratView.HistoryBet.getTotalHistoryBet();
+        var listGateBet = Windown_1.Windown.BaccaratView.HistoryBet.ListGateBet;
+        if (totalHistoryBet > Windown_1.Windown.User.userAg) {
+          Windown_1.Windown.UIManager.showAlertMini("B\u1ea1n kh\xf4ng \u0111\u1ee7 ti\u1ec1n c\u01b0\u1ee3c l\u1ea1i!");
+          return;
+        }
+        for (var i = 0; i < 5; i++) if (listGateBet[i] > 0) {
+          Windown_1.Windown.BaccaratController.sendBet(i + 1, listGateBet[i]);
+          Windown_1.Windown.BaccaratController.isCanSendData = true;
+        }
+        this.btnRebet.interactable = false;
+        this.btnX2.interactable = false;
+      };
+      BaccaratButtonBet.prototype.onChangeListChip = function(even, data) {
+        var currentOffset = this.scrBtn.getScrollOffset();
+        var maxScollOffset = this.scrBtn.getMaxScrollOffset();
+        "previous" == data ? currentOffset.x < 0 && cc.tween(this.scrBtn.content).to(.3, {
+          x: this.scrBtn.content.x + 100
+        }).start() : Math.abs(currentOffset.x) < maxScollOffset.x && cc.tween(this.scrBtn.content).to(.3, {
+          x: this.scrBtn.content.x - 100
+        }).start();
+      };
+      BaccaratButtonBet.prototype.setStatusBtnBet = function() {
+        var totalHistoryBet = Windown_1.Windown.BaccaratView.HistoryBet.getTotalHistoryBet();
+        cc.log("setStatusBtnBet:" + totalHistoryBet);
+        if (totalHistoryBet > 0) {
+          this.btnRebet.interactable = totalHistoryBet <= Windown_1.Windown.User.userAg;
+          this.btnX2.interactable = 2 * totalHistoryBet < Windown_1.Windown.User.userAg;
+        } else this.btnRebet.interactable = this.btnX2.interactable = false;
+      };
+      __decorate([ property(cc.ScrollView) ], BaccaratButtonBet.prototype, "scrBtn", void 0);
+      __decorate([ property(cc.Button) ], BaccaratButtonBet.prototype, "btnX2", void 0);
+      __decorate([ property(cc.Button) ], BaccaratButtonBet.prototype, "btnRebet", void 0);
+      __decorate([ property(cc.Button) ], BaccaratButtonBet.prototype, "btnBetB", void 0);
+      __decorate([ property(cc.Node) ], BaccaratButtonBet.prototype, "currbetBtnBet", void 0);
+      __decorate([ property(cc.Node) ], BaccaratButtonBet.prototype, "chipBorder", void 0);
+      BaccaratButtonBet = __decorate([ ccclass ], BaccaratButtonBet);
+      return BaccaratButtonBet;
+    }(cc.Component);
+    exports.default = BaccaratButtonBet;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.Card": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "db539tYJPRGlYq+qbrxYgh0", "Baccarat.Card");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.TYPE_ANIM = exports.TYPE_CARD = void 0;
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var TYPE_CARD;
+    (function(TYPE_CARD) {
+      TYPE_CARD[TYPE_CARD["card_LEFT_1"] = 0] = "card_LEFT_1";
+      TYPE_CARD[TYPE_CARD["card_LEFT_2"] = 1] = "card_LEFT_2";
+      TYPE_CARD[TYPE_CARD["card_LEFT_3"] = 2] = "card_LEFT_3";
+      TYPE_CARD[TYPE_CARD["card_RIGHT_1"] = 3] = "card_RIGHT_1";
+      TYPE_CARD[TYPE_CARD["card_RIGHT_2"] = 4] = "card_RIGHT_2";
+      TYPE_CARD[TYPE_CARD["card_RIGHT_3"] = 5] = "card_RIGHT_3";
+    })(TYPE_CARD = exports.TYPE_CARD || (exports.TYPE_CARD = {}));
+    var TYPE_ANIM;
+    (function(TYPE_ANIM) {
+      TYPE_ANIM[TYPE_ANIM["NAN"] = 0] = "NAN";
+      TYPE_ANIM[TYPE_ANIM["LAT"] = 1] = "LAT";
+      TYPE_ANIM[TYPE_ANIM["SURE_WIN"] = 2] = "SURE_WIN";
+      TYPE_ANIM[TYPE_ANIM["HIGHLIGHT"] = 3] = "HIGHLIGHT";
+    })(TYPE_ANIM = exports.TYPE_ANIM || (exports.TYPE_ANIM = {}));
+    var BaccaratCard = function(_super) {
+      __extends(BaccaratCard, _super);
+      function BaccaratCard() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.TYPE = TYPE_CARD.card_LEFT_1;
+        _this.spineCard = null;
+        _this.id = -1;
+        return _this;
+      }
+      BaccaratCard.prototype.start = function() {};
+      BaccaratCard.prototype.dealCard = function() {
+        this.spineCard.skeletonData = Windown_1.Windown.BaccaratView.assets.animDealCardData;
+        this.spineCard.setAnimation(0, this.getAnimNameDealCard(), false);
+      };
+      BaccaratCard.prototype.nanCard = function() {
+        this.spineCard.skeletonData = Windown_1.Windown.BaccaratView.assets.animNanBaiData;
+        this.spineCard.setSkin("card_" + (this.id - 1 < 10 ? "0" + (this.id - 1) : this.id - 1));
+        this.spineCard.setSlotsToSetupPose();
+        this.spineCard.setAnimation(0, this.getAnimCardNan(TYPE_ANIM.NAN), false);
+      };
+      BaccaratCard.prototype.openCard = function() {
+        this.spineCard.skeletonData = Windown_1.Windown.BaccaratView.assets.animNanBaiData;
+        this.spineCard.setSkin("card_" + (this.id - 1 < 10 ? "0" + (this.id - 1) : this.id - 1));
+        this.spineCard.setSlotsToSetupPose();
+        this.spineCard.setAnimation(0, this.getAnimCardNan(TYPE_ANIM.LAT), false);
+      };
+      BaccaratCard.prototype.setCard = function() {
+        Windown_1.Windown.BaccaratView.assets.getCardSprite(this.id);
+        this.spineCard.skeletonData = Windown_1.Windown.BaccaratView.assets.animNanBaiData;
+        this.spineCard.setSkin("card_" + (this.id - 1 < 10 ? "0" + (this.id - 1) : this.id - 1));
+        this.spineCard.setSlotsToSetupPose();
+        this.spineCard.setAnimation(0, this.getAnimCardValue(), false);
+      };
+      BaccaratCard.prototype.setCardBack = function() {
+        this.spineCard.skeletonData = Windown_1.Windown.BaccaratView.assets.animNanBaiData;
+        this.spineCard.setSkin("card_52");
+        this.spineCard.setSlotsToSetupPose();
+        this.spineCard.setAnimation(0, this.getAnimCardValue(), false);
+      };
+      BaccaratCard.prototype.getAnimCardNan = function(type) {
+        var animName;
+        var typeAnim;
+        switch (type) {
+         case TYPE_ANIM.NAN:
+          typeAnim = "nan";
+          break;
+
+         case TYPE_ANIM.LAT:
+          typeAnim = "lat";
+          break;
+
+         case TYPE_ANIM.SURE_WIN:
+          typeAnim = "surewin";
+          break;
+
+         case TYPE_ANIM.HIGHLIGHT:
+          typeAnim = "highlight";
+        }
+        var formatAnim = "anim_%s_vertical_%s";
+        switch (this.TYPE) {
+         case TYPE_CARD.card_LEFT_1:
+          animName = cc.js.formatStr(formatAnim, typeAnim, "left2");
+          break;
+
+         case TYPE_CARD.card_LEFT_2:
+          animName = cc.js.formatStr(formatAnim, typeAnim, "left1");
+          break;
+
+         case TYPE_CARD.card_LEFT_3:
+          animName = "anim_" + typeAnim + "_horizontal_left";
+          break;
+
+         case TYPE_CARD.card_RIGHT_1:
+          animName = animName = cc.js.formatStr(formatAnim, typeAnim, "right1");
+          break;
+
+         case TYPE_CARD.card_RIGHT_2:
+          animName = animName = cc.js.formatStr(formatAnim, typeAnim, "right2");
+          break;
+
+         case TYPE_CARD.card_RIGHT_3:
+          animName = "anim_" + typeAnim + "_horizontal_right";
+        }
+        return animName;
+      };
+      BaccaratCard.prototype.getAnimCardValue = function() {
+        var animName;
+        switch (this.TYPE) {
+         case TYPE_CARD.card_LEFT_1:
+          animName = "Open_vertical_left2";
+          break;
+
+         case TYPE_CARD.card_LEFT_2:
+          animName = "Open_vertical_left1";
+          break;
+
+         case TYPE_CARD.card_LEFT_3:
+          animName = "Open_horizontal_left";
+          break;
+
+         case TYPE_CARD.card_RIGHT_1:
+          animName = "Open_vertical_right1";
+          break;
+
+         case TYPE_CARD.card_RIGHT_2:
+          animName = "Open_vertical_right2";
+          break;
+
+         case TYPE_CARD.card_RIGHT_3:
+          animName = "Open__horizontal_right";
+        }
+        return animName;
+      };
+      BaccaratCard.prototype.getAnimNameDealCard = function() {
+        var animName;
+        switch (this.TYPE) {
+         case TYPE_CARD.card_LEFT_1:
+          animName = "anim_flycard_vertical_left2";
+          break;
+
+         case TYPE_CARD.card_LEFT_2:
+          animName = "anim_flycard_vertical_left1";
+          break;
+
+         case TYPE_CARD.card_LEFT_3:
+          animName = "anim_flycard_horizontal_left";
+          break;
+
+         case TYPE_CARD.card_RIGHT_1:
+          animName = "anim_flycard_vertical_right1";
+          break;
+
+         case TYPE_CARD.card_RIGHT_2:
+          animName = "anim_flycard_vertical_right2";
+          break;
+
+         case TYPE_CARD.card_RIGHT_3:
+          animName = "anim_flycard_horizontal_right";
+        }
+        return animName;
+      };
+      __decorate([ property({
+        type: cc.Enum(TYPE_CARD)
+      }) ], BaccaratCard.prototype, "TYPE", void 0);
+      __decorate([ property(sp.Skeleton) ], BaccaratCard.prototype, "spineCard", void 0);
+      BaccaratCard = __decorate([ ccclass ], BaccaratCard);
+      return BaccaratCard;
+    }(cc.Component);
+    exports.default = BaccaratCard;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.ChipBet": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b2c9dxWN1hHoKMW78LL6xzK", "Baccarat.ChipBet");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratChipBet = function(_super) {
+      __extends(BaccaratChipBet, _super);
+      function BaccaratChipBet() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.playerID = 0;
+        _this.value = 0;
+        _this.gate = -1;
+        return _this;
+      }
+      BaccaratChipBet = __decorate([ ccclass ], BaccaratChipBet);
+      return BaccaratChipBet;
+    }(cc.Component);
+    exports.default = BaccaratChipBet;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.DishRoadBoard": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "8c845LrMoVADKOGcGrNxDL2", "Baccarat.DishRoadBoard");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BACCARAT_WIN_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PP: 14,
+      PLAYER_BP: 15,
+      PLAYER_PBP: 145,
+      BANKER_PP: 34,
+      BANKER_BP: 35,
+      BANKER_PBP: 345,
+      TIE_PP: 24,
+      TIE_BP: 25,
+      TIE_PBP: 245
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BacaratDishRoadBoard = function(_super) {
+      __extends(BacaratDishRoadBoard, _super);
+      function BacaratDishRoadBoard() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.spfBanker = null;
+        _this.spfPlayer = null;
+        _this.spfTie = null;
+        _this.spfTie_BankerPair = null;
+        _this.spfTie_PlayerPair = null;
+        _this.spfTie_BankerPlayerPair = null;
+        _this.spfBanker_BankerPair = null;
+        _this.spfBanker_PlayerPair = null;
+        _this.spfBanker_BankerPlayerPair = null;
+        _this.spfPlayer_BankerPair = null;
+        _this.spfPlayer_PlayerPair = null;
+        _this.spfPlayer_BankerPlayerPair = null;
+        _this.template = null;
+        _this.container = null;
+        _this.markRecentMatch = null;
+        _this.history = [];
+        _this.BacaratBetSite = {
+          PLAYER_PAIR: 1,
+          PLAYER: 2,
+          TIE: 3,
+          BANKER: 4,
+          BANKER_PAIR: 5
+        };
+        return _this;
+      }
+      BacaratDishRoadBoard.prototype.start = function() {};
+      BacaratDishRoadBoard.prototype.setInfo = function(histortyData) {
+        var _this = this;
+        this.history = histortyData;
+        this.markRecentMatch.active = false;
+        this.history.forEach(function(data, index) {
+          var item = null;
+          item = _this.container.childrenCount < 72 ? cc.instantiate(_this.template) : _this.container.children[_this.history.indexOf(data)];
+          var BigGateIDWin = data;
+          var spf = _this.getSpf(BigGateIDWin);
+          item.getComponentInChildren(cc.Sprite).spriteFrame = spf;
+          item.parent = _this.container;
+          item.active = true;
+          cc.tween(item).set({
+            opacity: 0
+          }).to(.3, {
+            opacity: 255
+          }).call(function() {
+            if (index == _this.history.length - 1) {
+              _this.markRecentMatch.active = true;
+              cc.tween(_this.markRecentMatch).sequence(cc.tween().to(.5, {
+                scale: 1
+              }), cc.tween().to(.5, {
+                scale: .8
+              })).repeatForever().start();
+            }
+          }).start();
+        });
+      };
+      BacaratDishRoadBoard.prototype.getSpf = function(BigGateIDWin) {
+        var spf = null;
+        switch (BigGateIDWin) {
+         case BACCARAT_WIN_GATE.BANKER:
+         case BACCARAT_WIN_GATE.BANKER_PP:
+          spf = this.spfBanker;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER_BP:
+          spf = this.spfBanker_BankerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER_PBP:
+          spf = this.spfBanker_BankerPlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER:
+          spf = this.spfPlayer;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_BP:
+          spf = this.spfPlayer_BankerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_PP:
+          spf = this.spfPlayer_PlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER_PBP:
+          spf = this.spfPlayer_BankerPlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE:
+          spf = this.spfTie;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE_BP:
+          spf = this.spfTie_BankerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE_PP:
+          spf = this.spfTie_PlayerPair;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE_PBP:
+          spf = this.spfTie_BankerPlayerPair;
+          break;
+
+         default:
+          cc.log("ko vao case nao:result= " + BigGateIDWin);
+        }
+        return spf;
+      };
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfBanker", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfPlayer", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfTie", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfTie_BankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfTie_PlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfTie_BankerPlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfBanker_BankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfBanker_PlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfBanker_BankerPlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfPlayer_BankerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfPlayer_PlayerPair", void 0);
+      __decorate([ property(cc.SpriteFrame) ], BacaratDishRoadBoard.prototype, "spfPlayer_BankerPlayerPair", void 0);
+      __decorate([ property(cc.Node) ], BacaratDishRoadBoard.prototype, "template", void 0);
+      __decorate([ property(cc.Node) ], BacaratDishRoadBoard.prototype, "container", void 0);
+      __decorate([ property(cc.Node) ], BacaratDishRoadBoard.prototype, "markRecentMatch", void 0);
+      BacaratDishRoadBoard = __decorate([ ccclass ], BacaratDishRoadBoard);
+      return BacaratDishRoadBoard;
+    }(cc.Component);
+    exports.default = BacaratDishRoadBoard;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.HistoryBet": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "e6d9eFbBkZBVYxeOPA7zija", "Baccarat.HistoryBet");
+    "use strict";
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratHistoryBet = function() {
+      function BaccaratHistoryBet() {
+        this.BET_PLAYER = 0;
+        this.BET_TIE = 0;
+        this.BET_BANKER = 0;
+        this.BET_PLAYER_P = 0;
+        this.BET_BANKER_P = 0;
+        this.ListGateBet = [ this.BET_PLAYER, this.BET_TIE, this.BET_BANKER, this.BET_PLAYER_P, this.BET_BANKER_P ];
+      }
+      BaccaratHistoryBet.prototype.resetHistory = function() {
+        this.ListGateBet.forEach(function(value) {
+          value = 0;
+        });
+      };
+      BaccaratHistoryBet.prototype.getTotalHistoryBet = function() {
+        var totalBet = 0;
+        this.ListGateBet.forEach(function(value) {
+          totalBet += value;
+        });
+        return totalBet;
+      };
+      BaccaratHistoryBet = __decorate([ ccclass ], BaccaratHistoryBet);
+      return BaccaratHistoryBet;
+    }();
+    exports.default = BaccaratHistoryBet;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.HistoryMini": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "882baXqUhlKe44bJM1ERT8b", "Baccarat.HistoryMini");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var BACCARAT_WIN_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PP: 14,
+      PLAYER_BP: 15,
+      PLAYER_PBP: 145,
+      BANKER_PP: 34,
+      BANKER_BP: 35,
+      BANKER_PBP: 345,
+      TIE_PP: 24,
+      TIE_BP: 25,
+      TIE_PBP: 245
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratHistoryMini = function(_super) {
+      __extends(BaccaratHistoryMini, _super);
+      function BaccaratHistoryMini() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbTotalBanker = null;
+        _this.lbTotalPlayer = null;
+        _this.lbTotalTie = null;
+        _this.itemContainer = null;
+        _this.itemTemplate = null;
+        _this.markRecentMatch = null;
+        _this.sprResult = [];
+        _this.startPosItem = null;
+        _this.spacingY = 18;
+        _this.spacingX = 22;
+        _this.totalBanker = 0;
+        _this.totalPlayer = 0;
+        _this.totalTie = 0;
+        return _this;
+      }
+      BaccaratHistoryMini.prototype.onLoad = function() {
+        this.startPosItem = cc.v2(98.26, 28.12);
+      };
+      BaccaratHistoryMini.prototype.start = function() {};
+      BaccaratHistoryMini.prototype.setInfo = function(data, isAddItem) {
+        void 0 === isAddItem && (isAddItem = false);
+        data.length > 40 && (data = data.slice(0, 40));
+        for (var i = 0, l = data.length; i < l; i++) {
+          var item = void 0;
+          var posItem = this.getPosItem(i);
+          item = cc.instantiate(this.itemTemplate);
+          item.parent = this.itemContainer;
+          item.setPosition(posItem);
+          item.active = true;
+          item.setSiblingIndex(i);
+          var hisNum = data[i];
+          var sprRes = null;
+          switch (this.getTypeGate(hisNum)) {
+           case BACCARAT_WIN_GATE.BANKER:
+            this.totalBanker++;
+            sprRes = this.sprResult[2];
+            break;
+
+           case BACCARAT_WIN_GATE.PLAYER:
+            this.totalPlayer++;
+            sprRes = this.sprResult[0];
+            break;
+
+           case BACCARAT_WIN_GATE.TIE:
+            this.totalTie++;
+            sprRes = this.sprResult[1];
+          }
+          null == sprRes && cc.log(" bi null:" + hisNum + "---gate==" + this.getTypeGate(hisNum));
+          item.getComponent(cc.Sprite).spriteFrame = sprRes;
+        }
+        this.lbTotalBanker.string = this.totalBanker + "";
+        this.lbTotalPlayer.string = this.totalPlayer + "";
+        this.lbTotalTie.string = this.totalTie + "";
+        cc.tween(this.markRecentMatch).sequence(cc.tween().to(.5, {
+          scale: 1
+        }), cc.tween().to(.5, {
+          scale: .8
+        })).repeatForever().start();
+      };
+      BaccaratHistoryMini.prototype.addItemHistory = function(dataHis) {
+        var _this = this;
+        this.markRecentMatch.active = false;
+        dataHis.length > 40 && (dataHis = dataHis.slice(0, 40));
+        var firsItem = cc.instantiate(this.itemTemplate);
+        firsItem.parent = this.itemContainer;
+        firsItem.setSiblingIndex(0);
+        firsItem.active = true;
+        firsItem.setPosition(cc.v2(this.getPosItem(0).x + 100, this.getPosItem(0).y));
+        var sprRes;
+        switch (this.getTypeGate(dataHis[0])) {
+         case BACCARAT_WIN_GATE.BANKER:
+          this.totalBanker++;
+          this.lbTotalBanker.string = this.totalBanker + "";
+          sprRes = this.sprResult[2];
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER:
+          this.totalPlayer++;
+          sprRes = this.sprResult[0];
+          this.lbTotalPlayer.string = this.totalPlayer + "";
+          break;
+
+         case BACCARAT_WIN_GATE.TIE:
+          this.totalTie++;
+          sprRes = this.sprResult[1];
+          this.lbTotalTie.string = this.totalTie + "";
+        }
+        firsItem.getComponent(cc.Sprite).spriteFrame = sprRes;
+        var _loop_1 = function(i, l) {
+          var item = this_1.itemContainer.children[i];
+          var posItem = this_1.getPosItem(i);
+          cc.tween(item).to(.3, {
+            x: posItem.x,
+            y: posItem.y
+          }).call(function() {
+            if (i == l - 1) {
+              _this.markRecentMatch.active = true;
+              cc.tween(_this.markRecentMatch).sequence(cc.tween().to(.5, {
+                scale: 1
+              }), cc.tween().to(.5, {
+                scale: .8
+              })).repeatForever().start();
+            }
+          }).start();
+        };
+        var this_1 = this;
+        for (var i = 0, l = dataHis.length; i < l; i++) _loop_1(i, l);
+        var lastItem = this.itemContainer.children[this.itemContainer.childrenCount - 1];
+        cc.tween(lastItem).to(.3, {
+          x: lastItem.x - 100
+        }).call(function() {
+          lastItem.destroy();
+        }).start();
+      };
+      BaccaratHistoryMini.prototype.getPosItem = function(index) {
+        var posItem = cc.v2(0, 0);
+        if (index < 4) posItem = cc.v2(this.startPosItem.x, this.startPosItem.y - index * this.spacingY); else {
+          var indexCol = Math.floor(index / 4);
+          posItem.x = this.startPosItem.x - indexCol * this.spacingX;
+          posItem.y = indexCol % 2 == 0 ? this.startPosItem.y - index % 4 * this.spacingY : this.startPosItem.y - (3 - index % 4) * this.spacingY;
+        }
+        return posItem;
+      };
+      BaccaratHistoryMini.prototype.getTypeGate = function(hisNum) {
+        var typeGate;
+        switch (hisNum) {
+         case BACCARAT_WIN_GATE.BANKER:
+         case BACCARAT_WIN_GATE.BANKER_PP:
+         case BACCARAT_WIN_GATE.BANKER_BP:
+         case BACCARAT_WIN_GATE.BANKER_PBP:
+          typeGate = BACCARAT_WIN_GATE.BANKER;
+          break;
+
+         case BACCARAT_WIN_GATE.PLAYER:
+         case BACCARAT_WIN_GATE.PLAYER_PP:
+         case BACCARAT_WIN_GATE.PLAYER_BP:
+         case BACCARAT_WIN_GATE.PLAYER_PBP:
+          typeGate = BACCARAT_WIN_GATE.PLAYER;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE:
+         case BACCARAT_WIN_GATE.TIE_PP:
+         case BACCARAT_WIN_GATE.TIE_BP:
+         case BACCARAT_WIN_GATE.TIE_PBP:
+          typeGate = BACCARAT_WIN_GATE.TIE;
+        }
+        return typeGate;
+      };
+      __decorate([ property(cc.Label) ], BaccaratHistoryMini.prototype, "lbTotalBanker", void 0);
+      __decorate([ property(cc.Label) ], BaccaratHistoryMini.prototype, "lbTotalPlayer", void 0);
+      __decorate([ property(cc.Label) ], BaccaratHistoryMini.prototype, "lbTotalTie", void 0);
+      __decorate([ property(cc.Node) ], BaccaratHistoryMini.prototype, "itemContainer", void 0);
+      __decorate([ property(cc.Node) ], BaccaratHistoryMini.prototype, "itemTemplate", void 0);
+      __decorate([ property(cc.Node) ], BaccaratHistoryMini.prototype, "markRecentMatch", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], BaccaratHistoryMini.prototype, "sprResult", void 0);
+      BaccaratHistoryMini = __decorate([ ccclass ], BaccaratHistoryMini);
+      return BaccaratHistoryMini;
+    }(cc.Component);
+    exports.default = BaccaratHistoryMini;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.MenuView": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "6dda6oiz2lCWIhPjbSY5E8H", "Baccarat.MenuView");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratMenuView = function(_super) {
+      __extends(BaccaratMenuView, _super);
+      function BaccaratMenuView() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.container = null;
+        return _this;
+      }
+      BaccaratMenuView.prototype.onLoad = function() {};
+      BaccaratMenuView.prototype.start = function() {};
+      BaccaratMenuView.prototype.onshow = function() {
+        cc.tween(this.container).set({
+          x: -cc.winSize.width / 2 - this.container.width / 2 - 50
+        }).to(.3, {
+          x: -cc.winSize.width / 2 + this.container.width / 2
+        }, {
+          easing: cc.easing.sineIn
+        }).start();
+      };
+      BaccaratMenuView.prototype.onHide = function() {
+        cc.tween(this.container).set({
+          x: -cc.winSize.width / 2 + this.container.width / 2
+        }).to(.3, {
+          x: -cc.winSize.width / 2 - this.container.width / 2 - 50
+        }, {
+          easing: cc.easing.sineOut
+        }).start();
+      };
+      BaccaratMenuView.prototype.onClickBack = function() {
+        Windown_1.Windown.BaccaratView.audio.playClick();
+        Windown_1.Windown.BaccaratController.onClickBackToLobby();
+      };
+      BaccaratMenuView.prototype.onClickRule = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var prfabRule, nodeRule;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.BaccaratView.audio.playEffect(Windown_1.Windown.BaccaratView.audio.openPopup);
+              return [ 4, Windown_1.Windown.BaccaratController.loadPrefabBundle("PopupRule") ];
+
+             case 1:
+              prfabRule = _a.sent();
+              nodeRule = cc.instantiate(prfabRule);
+              nodeRule.parent = Windown_1.Windown.BaccaratView.node;
+              Windown_1.Windown.actionEffectOpen(nodeRule);
+              cc.find("Container/btnClose", nodeRule).once("click", function() {
+                Windown_1.Windown.actionEffectClose(nodeRule, function() {
+                  nodeRule.destroy();
+                });
+              });
+              this.onHide();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratMenuView.prototype.onClickHistoryBet = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var prfabHistory, nodeHistory;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              return [ 4, Windown_1.Windown.BaccaratController.loadPrefabBundle("PopupHistory") ];
+
+             case 1:
+              prfabHistory = _a.sent();
+              nodeHistory = cc.instantiate(prfabHistory);
+              nodeHistory.parent = Windown_1.Windown.BaccaratView.node;
+              Windown_1.Windown.actionEffectOpen(nodeHistory);
+              this.onHide();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratMenuView.prototype.onClickSetting = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var prfabSetting, nodeSetting;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.BaccaratView.audio.playEffect(Windown_1.Windown.BaccaratView.audio.openPopup);
+              return [ 4, Windown_1.Windown.BaccaratController.loadPrefabBundle("PopupSetting") ];
+
+             case 1:
+              prfabSetting = _a.sent();
+              nodeSetting = cc.instantiate(prfabSetting);
+              nodeSetting.parent = Windown_1.Windown.BaccaratView.node;
+              Windown_1.Windown.actionEffectOpen(nodeSetting);
+              this.onHide();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      __decorate([ property(cc.Node) ], BaccaratMenuView.prototype, "container", void 0);
+      BaccaratMenuView = __decorate([ ccclass ], BaccaratMenuView);
+      return BaccaratMenuView;
+    }(cc.Component);
+    exports.default = BaccaratMenuView;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.Player": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ad580J02flDJ5w8uubVmJFs", "Baccarat.Player");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var PathResource_1 = require("../../../Scritps/DefineTs/PathResource");
+    var LbMoneyChange_1 = require("../../../Scritps/Obs/LbMoneyChange");
+    var Util_1 = require("../../../Scritps/Util");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratPlayer = function(_super) {
+      __extends(BaccaratPlayer, _super);
+      function BaccaratPlayer() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbNickName = null;
+        _this.lbChips = null;
+        _this.avatar = null;
+        _this.lbChipWin = null;
+        _this.posPayChip = [];
+        _this.spineEffectWin = null;
+        _this.dynamicIndex = 0;
+        _this.nickname = "Player";
+        _this.currentChips = 0;
+        _this.id = 0;
+        _this.isThisPlayer = false;
+        _this.listChipBet = [];
+        _this.listChipPay = [];
+        _this.gateBetted = [];
+        _this.effecWin = null;
+        return _this;
+      }
+      BaccaratPlayer.prototype.start = function() {};
+      BaccaratPlayer.prototype.setInfo = function(id, name, chip, idAvt) {
+        this.setName(name);
+        this.setId(id);
+        this.setChip(chip);
+        this.setAvatar(idAvt);
+      };
+      BaccaratPlayer.prototype.setName = function(name) {
+        this.lbNickName.string = name;
+        this.nickname = name;
+        name.length > 10 && (this.lbNickName.string = name.slice(0, 7) + "...");
+      };
+      BaccaratPlayer.prototype.setChip = function(value, isFormatMoney) {
+        void 0 === isFormatMoney && (isFormatMoney = true);
+        cc.log("player setChip:" + this.nickname + ":" + value);
+        this.isThisPlayer ? this.lbChips.setMoney(value, false) : this.lbChips.setMoney(value, isFormatMoney);
+        this.currentChips = value;
+      };
+      BaccaratPlayer.prototype.setAvatar = function(idava) {
+        return __awaiter(this, void 0, void 0, function() {
+          var str, spFrame;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              str = PathResource_1.PathResource.Avatar.replace("%d", idava.toString());
+              return [ 4, Windown_1.Windown.getSpFrameRes(str) ];
+
+             case 1:
+              spFrame = _a.sent();
+              this.avatar.spriteFrame = spFrame;
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratPlayer.prototype.setId = function(idPl) {
+        this.id = idPl;
+      };
+      BaccaratPlayer.prototype.getChipBet = function(nodePutChip) {
+        this.listChipBet.forEach(function(chip, index) {
+          var posOut = nodePutChip.parent.convertToWorldSpaceAR(nodePutChip.position);
+          var posIn = chip.parent.convertToNodeSpaceAR(posOut);
+          cc.tween(chip).to(1, {
+            position: posIn
+          }, {
+            easing: cc.easing.quintOut
+          }).start();
+          cc.tween(chip).to(1, {
+            opacity: 0
+          }, {
+            easing: cc.easing.sineOut
+          }).start();
+        });
+      };
+      BaccaratPlayer.prototype.showWinEffect = function(agWin, isTie) {
+        void 0 === isTie && (isTie = false);
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var spineWin_1;
+                var _this = this;
+                return __generator(this, function(_a) {
+                  try {
+                    if (null == this.effecWin) {
+                      this.effecWin = Windown_1.Windown.BaccaratView.assets.getEffectWin(agWin);
+                      this.effecWin.y = 20;
+                    }
+                    spineWin_1 = this.effecWin.getComponentInChildren(sp.Skeleton);
+                    spineWin_1.setCompleteListener(null);
+                    this.effecWin.parent = this.node;
+                    this.effecWin.active = true;
+                    if (!isTie) {
+                      spineWin_1.setSkin("win");
+                      spineWin_1.setSlotsToSetupPose();
+                      spineWin_1.setAnimation(0, "appear", false);
+                      spineWin_1.setCompleteListener(function() {
+                        spineWin_1.setAnimation(0, "idle", false);
+                        spineWin_1.setCompleteListener(function() {
+                          spineWin_1.setCompleteListener(null);
+                        });
+                      });
+                      this.scheduleOnce(function() {
+                        resolve(null);
+                        _this.effecWin.active = false;
+                      }, 3);
+                    }
+                  } catch (error) {
+                    Util_1.Util.ThrowErrProsime(error);
+                  }
+                  return [ 2 ];
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      BaccaratPlayer.prototype.showWinSpineEffect = function(agWin) {
+        var _this = this;
+        this.spineEffectWin.node.scale = 1;
+        this.spineEffectWin.node.active = true;
+        this.lbChipWin.string = Windown_1.Windown.formatMoney(agWin);
+        this.lbChipWin.node.parent.active = true;
+        this.spineEffectWin.setSkin("win");
+        this.spineEffectWin.setSlotsToSetupPose();
+        this.spineEffectWin.setAnimation(0, "appear", false);
+        cc.tween(this.lbChipWin.node.parent).set({
+          scaleX: 0
+        }).to(.3, {
+          scaleX: .5
+        }, {
+          easing: cc.easing.backOut
+        }).start();
+        this.spineEffectWin.setCompleteListener(function() {
+          _this.spineEffectWin.setAnimation(0, "idle", false);
+          _this.spineEffectWin.setCompleteListener(null);
+        });
+        this.scheduleOnce(function() {
+          _this.hideSpineWin();
+        }, 3);
+      };
+      BaccaratPlayer.prototype.hideSpineWin = function() {
+        var _this = this;
+        cc.tween(this.spineEffectWin.node).to(.2, {
+          scaleX: 0
+        }, {
+          easing: cc.easing.backIn
+        }).call(function() {
+          _this.spineEffectWin.node.active = false;
+        }).start();
+      };
+      BaccaratPlayer.prototype.showButtonBet = function() {
+        this.node.getComponent(cc.Animation).play("EffectShowBtnBet");
+        Windown_1.Windown.BaccaratView.buttonBetController.setStatusBtnBet();
+      };
+      BaccaratPlayer.prototype.hideButtonBet = function() {
+        this.node.getComponent(cc.Animation).play("EffectHideBtnBet");
+      };
+      BaccaratPlayer.prototype.resetPlayer = function() {
+        this.listChipBet = [];
+        this.listChipPay = [];
+        this.gateBetted = [];
+      };
+      __decorate([ property(cc.Label) ], BaccaratPlayer.prototype, "lbNickName", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratPlayer.prototype, "lbChips", void 0);
+      __decorate([ property(cc.Sprite) ], BaccaratPlayer.prototype, "avatar", void 0);
+      __decorate([ property(cc.Label) ], BaccaratPlayer.prototype, "lbChipWin", void 0);
+      __decorate([ property([ cc.Vec2 ]) ], BaccaratPlayer.prototype, "posPayChip", void 0);
+      __decorate([ property(sp.Skeleton) ], BaccaratPlayer.prototype, "spineEffectWin", void 0);
+      __decorate([ property ], BaccaratPlayer.prototype, "isThisPlayer", void 0);
+      BaccaratPlayer = __decorate([ ccclass ], BaccaratPlayer);
+      return BaccaratPlayer;
+    }(cc.Component);
+    exports.default = BaccaratPlayer;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/PathResource": void 0,
+    "../../../Scritps/Obs/LbMoneyChange": void 0,
+    "../../../Scritps/Util": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.PopupHistory": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "12b70F/6IlPrKo5cjLpFF6w", "Baccarat.PopupHistory");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratPopupHistory = function(_super) {
+      __extends(BaccaratPopupHistory, _super);
+      function BaccaratPopupHistory() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.listCardPlayer = [];
+        _this.listCardBanker = [];
+        _this.sprGate = [];
+        _this.lbSession = null;
+        _this.lbScoreP = null;
+        _this.lbScoreB = null;
+        _this.lbPage = null;
+        _this.scrItemHis = null;
+        _this.itemHisTemp = null;
+        _this.currentIndexSession = 0;
+        _this.historyData = [];
+        return _this;
+      }
+      BaccaratPopupHistory.prototype.onLoad = function() {
+        Windown_1.Windown.BaccaratView.popupHistoryBetView = this;
+        Windown_1.Windown.BaccaratView.audio.playEffect(Windown_1.Windown.BaccaratView.audio.openPopup);
+      };
+      BaccaratPopupHistory.prototype.start = function() {
+        Windown_1.Windown.BaccaratController.sendGetHistoryBet();
+      };
+      BaccaratPopupHistory.prototype.setInfo = function(data) {
+        this.historyData = JSON.parse(Windown_1.Windown.SFSObjToJson(data))["history"];
+        this.historyData.reverse();
+        cc.log("historyData===", this.historyData);
+        this.setInfoSession(this.historyData[this.currentIndexSession]);
+        this.lbPage.string = "1/" + this.historyData.length;
+      };
+      BaccaratPopupHistory.prototype.setInfoSession = function(data) {
+        var _this = this;
+        var sesstion = data["round"];
+        var time = Windown_1.Windown.formatDate(new Date(data.time), "HH:mm:ss dd/MM/yyyy");
+        this.lbSession.string = cc.js.formatStr("S\u1ed1 Phi\xean:#%s(%s)", sesstion, time);
+        var vP = JSON.parse(data["vP"]);
+        var vD = JSON.parse(data["vD"]);
+        vP.forEach(function(carData, index) {
+          if (0 != carData["I"]) {
+            _this.listCardPlayer[index].node.active = true;
+            _this.listCardPlayer[index].spriteFrame = Windown_1.Windown.BaccaratView.assets.getCardSprite(carData["I"]);
+          }
+        });
+        vD.forEach(function(carData, index) {
+          if (0 != carData["I"]) {
+            _this.listCardBanker[index].spriteFrame = Windown_1.Windown.BaccaratView.assets.getCardSprite(carData["I"]);
+            _this.listCardBanker[index].node.active = true;
+          }
+        });
+        this.listCardBanker[2].node.active = 3 == vD.length && 0 != vD[2]["I"];
+        this.listCardPlayer[2].node.active = 3 == vP.length && 0 != vP[2]["I"];
+        this.lbScoreP.string = Windown_1.Windown.BaccaratView.getScore(vP, vP.length) + "";
+        this.lbScoreB.string = Windown_1.Windown.BaccaratView.getScore(vD, vD.length) + "";
+        this.lbPage.string = this.currentIndexSession + 1 + "/" + this.historyData.length;
+        var listBet = data["bet"];
+        this.scrItemHis.content.children.forEach(function(child) {
+          child.active = false;
+        });
+        for (var i = 0; i < listBet.length; i++) {
+          var bet = listBet[i];
+          var item = this.scrItemHis.content.children[i];
+          if (!cc.isValid(item)) {
+            item = cc.instantiate(this.itemHisTemp);
+            item.parent = this.scrItemHis.content;
+          }
+          item.active = true;
+          item.getComponentInChildren(cc.Sprite).spriteFrame = this.sprGate[bet["id"] - 1];
+          item.getChildByName("lbbetValue").getComponent(cc.Label).string = Windown_1.Windown.formatMoney(bet["agBet"], 1, 100);
+          if (0 == bet["agWin"]) {
+            item.getChildByName("lbWinValue").getComponent(cc.Label).string = "-" + Windown_1.Windown.formatMoney(bet["agBet"], 1, 100);
+            item.getChildByName("lbWinValue").color = cc.Color.RED;
+          } else {
+            item.getChildByName("lbWinValue").color = cc.Color.GREEN;
+            item.getChildByName("lbWinValue").getComponent(cc.Label).string = "+" + Windown_1.Windown.formatMoney(bet["agWin"], 1, 100);
+          }
+        }
+      };
+      BaccaratPopupHistory.prototype.onClickClose = function() {
+        var _this = this;
+        Windown_1.Windown.actionEffectClose(this.node, function() {
+          _this.node.destroy();
+          Windown_1.Windown.BaccaratView.popupHistoryBetView = null;
+        });
+        Windown_1.Windown.BaccaratView.audio.playClick();
+      };
+      BaccaratPopupHistory.prototype.onClickChangePage = function(even, data) {
+        "next" == data ? this.currentIndexSession <= this.historyData.length - 2 && this.currentIndexSession++ : this.currentIndexSession > 0 && this.currentIndexSession--;
+        this.setInfoSession(this.historyData[this.currentIndexSession]);
+      };
+      __decorate([ property([ cc.Sprite ]) ], BaccaratPopupHistory.prototype, "listCardPlayer", void 0);
+      __decorate([ property([ cc.Sprite ]) ], BaccaratPopupHistory.prototype, "listCardBanker", void 0);
+      __decorate([ property([ cc.SpriteFrame ]) ], BaccaratPopupHistory.prototype, "sprGate", void 0);
+      __decorate([ property(cc.Label) ], BaccaratPopupHistory.prototype, "lbSession", void 0);
+      __decorate([ property(cc.Label) ], BaccaratPopupHistory.prototype, "lbScoreP", void 0);
+      __decorate([ property(cc.Label) ], BaccaratPopupHistory.prototype, "lbScoreB", void 0);
+      __decorate([ property(cc.Label) ], BaccaratPopupHistory.prototype, "lbPage", void 0);
+      __decorate([ property(cc.ScrollView) ], BaccaratPopupHistory.prototype, "scrItemHis", void 0);
+      __decorate([ property(cc.Node) ], BaccaratPopupHistory.prototype, "itemHisTemp", void 0);
+      BaccaratPopupHistory = __decorate([ ccclass ], BaccaratPopupHistory);
+      return BaccaratPopupHistory;
+    }(cc.Component);
+    exports.default = BaccaratPopupHistory;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.ScoreBoard": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "fcc79XVRDNDxZhD/f3VQlfC", "Baccarat.ScoreBoard");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BacaratScoreBoard = function(_super) {
+      __extends(BacaratScoreBoard, _super);
+      function BacaratScoreBoard() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.sprBgItem = [];
+        _this.template = null;
+        _this.container = null;
+        _this.topRightPos = null;
+        _this.dataHistory = [];
+        _this.deltaXCol = 38.85;
+        _this.deltaYRow = 39.12;
+        _this.currentIndex = 0;
+        _this.currentCol = 0;
+        _this.BacaratBetSite = {
+          PLAYER_PAIR: 1,
+          PLAYER: 2,
+          TIE: 3,
+          BANKER: 4,
+          BANKER_PAIR: 5
+        };
+        return _this;
+      }
+      BacaratScoreBoard.prototype.setInfo = function(history) {
+        for (var i = 0, l = history.length; i < l - 1; i++) {
+          var arrayCol = [];
+          var data = history[i];
+          arrayCol.push(data);
+          var idCheck = data["BigGateIDWin"];
+          for (var j = i + 1; j < l; j++) {
+            var data2 = history[j];
+            var idNext = data2["BigGateIDWin"];
+            if (idCheck != this.BacaratBetSite.TIE) {
+              if (idCheck != idNext && idNext != this.BacaratBetSite.TIE) {
+                0 != arrayCol.length && (i += arrayCol.length - 1);
+                break;
+              }
+              arrayCol.push(data2);
+            } else {
+              arrayCol.push(data2);
+              idCheck = data2["BigGateIDWin"];
+            }
+          }
+          this.dataHistory.push(arrayCol);
+        }
+        this.dataHistory.forEach(function(data) {
+          data.forEach(function(item) {
+            cc.log(item["BigGateIDWin"]);
+          });
+        });
+        for (var i = 0, l = this.dataHistory.length; i < l; i++) {
+          var dataCol = this.dataHistory[i].reverse();
+          var indexRow = 0;
+          for (var j = 0; j < dataCol.length; j++) {
+            var data = dataCol[j];
+            var item = cc.instantiate(this.template);
+            item.parent = this.container;
+            item.active = true;
+            item.getComponent(cc.Sprite).spriteFrame = this.getSpf(data["BigGateIDWin"], data["IsBankerPair"], data["IsPlayerPair"]);
+            item.setPosition(cc.v2(this.topRightPos.x - this.deltaXCol * this.currentCol, this.topRightPos.y - this.deltaYRow * indexRow));
+            this.currentIndex++;
+            indexRow++;
+            data["BigGateIDWin"] == this.BacaratBetSite.BANKER || data["BigGateIDWin"] == this.BacaratBetSite.PLAYER ? item.getChildByName("lbScoreUp").getComponent(cc.Label).string = data["HandValue"] : item.getChildByName("lbScoreDown").getComponent(cc.Label).string = data["HandValue"];
+            item.position.x < -272 && (item.active = false);
+          }
+          this.currentCol++;
+        }
+      };
+      BacaratScoreBoard.prototype.getSpf = function(BigGateIDWin, isBankerPair, isPlayerPair) {
+        var spf = null;
+        switch (BigGateIDWin) {
+         case this.BacaratBetSite.BANKER:
+          spf = this.sprBgItem[0];
+          break;
+
+         case this.BacaratBetSite.PLAYER:
+          spf = this.sprBgItem[1];
+          break;
+
+         case this.BacaratBetSite.TIE:
+          spf = this.sprBgItem[2];
+        }
+        return spf;
+      };
+      __decorate([ property([ cc.SpriteFrame ]) ], BacaratScoreBoard.prototype, "sprBgItem", void 0);
+      __decorate([ property(cc.Node) ], BacaratScoreBoard.prototype, "template", void 0);
+      __decorate([ property(cc.Node) ], BacaratScoreBoard.prototype, "container", void 0);
+      __decorate([ property(cc.Vec2) ], BacaratScoreBoard.prototype, "topRightPos", void 0);
+      BacaratScoreBoard = __decorate([ ccclass ], BacaratScoreBoard);
+      return BacaratScoreBoard;
+    }(cc.Component);
+    exports.default = BacaratScoreBoard;
+    cc._RF.pop();
+  }, {} ],
+  "Baccarat.SettingView": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "50329oJ33tAQaFdbELw/pGK", "Baccarat.SettingView");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratSetting = function(_super) {
+      __extends(BaccaratSetting, _super);
+      function BaccaratSetting() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.tglSound = null;
+        _this.tglMusic = null;
+        return _this;
+      }
+      BaccaratSetting.prototype.start = function() {
+        this.tglSound.isChecked = !Windown_1.Windown.BaccaratView.audio.isActiveSound;
+        this.tglMusic.isChecked = !Windown_1.Windown.BaccaratView.audio.isActiveMusic;
+      };
+      BaccaratSetting.prototype.onClickTglSound = function() {
+        Windown_1.Windown.BaccaratView.audio.isActiveSound = !this.tglSound.isChecked;
+      };
+      BaccaratSetting.prototype.onClickTglMusic = function() {
+        Windown_1.Windown.BaccaratView.audio.isActiveMusic = !this.tglMusic.isChecked;
+      };
+      BaccaratSetting.prototype.onClickClose = function() {
+        var _this = this;
+        Windown_1.Windown.actionEffectClose(this.node, function() {
+          _this.node.destroy();
+        });
+        Windown_1.Windown.BaccaratView.audio.playClick();
+      };
+      __decorate([ property(cc.Toggle) ], BaccaratSetting.prototype, "tglSound", void 0);
+      __decorate([ property(cc.Toggle) ], BaccaratSetting.prototype, "tglMusic", void 0);
+      BaccaratSetting = __decorate([ ccclass ], BaccaratSetting);
+      return BaccaratSetting;
+    }(cc.Component);
+    exports.default = BaccaratSetting;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0
+  } ],
+  "Baccarat.SoiCauView": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "724422/HvZHeoMg/O8YPLNr", "Baccarat.SoiCauView");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Windown_1 = require("../../../Scritps/Windown");
+    var Baccarat_BigRoad_1 = require("./Baccarat.BigRoad");
+    var Baccarat_DishRoadBoard_1 = require("./Baccarat.DishRoadBoard");
+    var Baccarat_ScoreBoard_1 = require("./Baccarat.ScoreBoard");
+    var BACCARAT_WIN_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PP: 14,
+      PLAYER_BP: 15,
+      PLAYER_PBP: 145,
+      BANKER_PP: 34,
+      BANKER_BP: 35,
+      BANKER_PBP: 345,
+      TIE_PP: 24,
+      TIE_BP: 25,
+      TIE_PBP: 245
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BaccaratSoiCauView = function(_super) {
+      __extends(BaccaratSoiCauView, _super);
+      function BaccaratSoiCauView() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.lbBankerWin = null;
+        _this.lbPlayerWin = null;
+        _this.lbTie = null;
+        _this.lbBankerPair = null;
+        _this.lbPlayerPair = null;
+        _this.lbBankerPercent = null;
+        _this.lbPlayerPercent = null;
+        _this.lbTiePercent = null;
+        _this.lbBankerPairPercent = null;
+        _this.lbPlayerPairPercent = null;
+        _this.dishRoad = null;
+        _this.bigRoad = null;
+        _this.scoreBoard = null;
+        _this.animation = null;
+        _this.listDataBankerWin = [];
+        _this.listDataPlayerWin = [];
+        _this.listDataTie = [];
+        _this.listDataBankerPair = [];
+        _this.listDataPlayerPair = [];
+        _this.dataHistory = [];
+        return _this;
+      }
+      BaccaratSoiCauView.prototype.start = function() {};
+      BaccaratSoiCauView.prototype.setInfo = function() {
+        this.dataHistory = Windown_1.Windown.BaccaratView.historyTable.slice(0, 72);
+        this.listDataBankerWin = this.dataHistory.filter(function(data) {
+          return data == BACCARAT_WIN_GATE.BANKER;
+        });
+        this.listDataPlayerWin = this.dataHistory.filter(function(data) {
+          return data == BACCARAT_WIN_GATE.PLAYER;
+        });
+        this.listDataTie = this.dataHistory.filter(function(data) {
+          return data == BACCARAT_WIN_GATE.TIE;
+        });
+        this.listDataBankerPair = this.dataHistory.filter(function(data) {
+          return data == BACCARAT_WIN_GATE.PLAYER_BP || data == BACCARAT_WIN_GATE.BANKER_BP || data == BACCARAT_WIN_GATE.TIE_BP;
+        });
+        this.listDataPlayerPair = this.dataHistory.filter(function(data) {
+          return data == BACCARAT_WIN_GATE.PLAYER_PP || data == BACCARAT_WIN_GATE.BANKER_PP || data == BACCARAT_WIN_GATE.TIE_PP;
+        });
+        this.lbBankerWin.string = this.listDataBankerWin.length + "";
+        this.lbPlayerWin.string = this.listDataPlayerWin.length + "";
+        this.lbBankerWin.string = this.listDataBankerWin.length + "";
+        this.lbTie.string = this.listDataTie.length + "";
+        this.lbBankerPair.string = this.listDataBankerPair.length + "";
+        this.lbPlayerPair.string = this.listDataPlayerPair.length + "";
+        this.lbBankerPercent.string = (this.listDataBankerWin.length / this.dataHistory.length * 100).toFixed(2) + "%";
+        this.lbPlayerPercent.string = (this.listDataPlayerWin.length / this.dataHistory.length * 100).toFixed(2) + "%";
+        this.lbTiePercent.string = (this.listDataTie.length / this.dataHistory.length * 100).toFixed(2) + "%";
+        this.lbBankerPairPercent.string = (this.listDataBankerPair.length / this.dataHistory.length * 100).toFixed(2) + "%";
+        this.lbPlayerPairPercent.string = (this.listDataPlayerPair.length / this.dataHistory.length * 100).toFixed(2) + "%";
+        this.dishRoad.setInfo(Windown_1.Windown.BaccaratView.historyTable.slice(0, 72));
+        this.bigRoad.setInfo(Windown_1.Windown.BaccaratView.historyTable.slice(0, 72));
+        cc.log("Windown.BaccaratView.historyTable size=" + Windown_1.Windown.BaccaratView.historyTable.length);
+      };
+      BaccaratSoiCauView.prototype.onEnable = function() {
+        this.setInfo();
+      };
+      BaccaratSoiCauView.prototype.show = function() {
+        this.node.active = true;
+        Windown_1.Windown.actionEffectOpen(this.node);
+      };
+      BaccaratSoiCauView.prototype.hide = function() {
+        var _this = this;
+        Windown_1.Windown.actionEffectClose(this.node, function() {
+          _this.node.active = false;
+        });
+      };
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbBankerWin", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbPlayerWin", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbTie", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbBankerPair", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbPlayerPair", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbBankerPercent", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbPlayerPercent", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbTiePercent", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbBankerPairPercent", void 0);
+      __decorate([ property(cc.Label) ], BaccaratSoiCauView.prototype, "lbPlayerPairPercent", void 0);
+      __decorate([ property(Baccarat_DishRoadBoard_1.default) ], BaccaratSoiCauView.prototype, "dishRoad", void 0);
+      __decorate([ property(Baccarat_BigRoad_1.default) ], BaccaratSoiCauView.prototype, "bigRoad", void 0);
+      __decorate([ property(Baccarat_ScoreBoard_1.default) ], BaccaratSoiCauView.prototype, "scoreBoard", void 0);
+      __decorate([ property(cc.Animation) ], BaccaratSoiCauView.prototype, "animation", void 0);
+      BaccaratSoiCauView = __decorate([ ccclass ], BaccaratSoiCauView);
+      return BaccaratSoiCauView;
+    }(cc.Component);
+    exports.default = BaccaratSoiCauView;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Windown": void 0,
+    "./Baccarat.BigRoad": "Baccarat.BigRoad",
+    "./Baccarat.DishRoadBoard": "Baccarat.DishRoadBoard",
+    "./Baccarat.ScoreBoard": "Baccarat.ScoreBoard"
+  } ],
+  BaccaratController: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "d65e4chFb9JX5TYXArxHQ4s", "BaccaratController");
+    "use strict";
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var EVENT_MANAGER_1 = require("../../../Scritps/DefineTs/EVENT_MANAGER");
+    var REQUEST_CODE_1 = require("../../../Scritps/DefineTs/REQUEST_CODE");
+    var TextDefine_1 = require("../../../Scritps/DefineTs/TextDefine");
+    var GAME_TYPE_1 = require("../../../Scritps/Game/GAME_TYPE");
+    var ConectManager_1 = require("../../../Scritps/Network/ConectManager");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var BaccaratController = function() {
+      function BaccaratController() {
+        this.sfs = null;
+        this.roomSFS = null;
+        this.listTimeOut = [];
+        this.objFinish = null;
+        this.gameType = 0;
+        this.isCanSendData = true;
+        this.joinRoomData = null;
+        this.infoRoom = null;
+        this.startGameData = null;
+        this.sfs = ConectManager_1.ConectManager.getIns().sfs;
+        this.sfs.addEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR, this.onCreateError, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr, this);
+        this.sfs.addEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse, this);
+        Windown_1.Windown.BaccaratController = this;
+        cc.systemEvent.on(EVENT_MANAGER_1.EVENT_MANAGER.onDisconnect, this.onDisconnect, this);
+      }
+      BaccaratController.prototype.onDisconnect = function() {
+        this.clear();
+        this.baccaratView.node.destroy();
+      };
+      BaccaratController.prototype.clear = function() {
+        cc.systemEvent.targetOff(this);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse);
+        if (this.objFinish) {
+          var agWin = this.objFinish.get("agWin");
+          Windown_1.Windown.MoneyUser.removeDelay(this.gameType);
+        }
+        Windown_1.Windown.MoneyUser.endGameMOney(this.gameType);
+      };
+      BaccaratController.prototype.userExitRoom = function(event) {
+        var room = event.room;
+        if ("Baccarat" == room.groupId) {
+          var user = event.user;
+          if (user.isItMe) {
+            this.onDestroy();
+            cc.director.loadScene("main");
+            return;
+          }
+        }
+      };
+      BaccaratController.prototype.onCreateError = function(event) {
+        cc.log("creat err");
+        Windown_1.Windown.UIManager.hideLoading();
+        this.onDestroy();
+        Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.ERR_JOIN_ROOM);
+      };
+      BaccaratController.prototype.onDestroy = function() {
+        Windown_1.Windown.UIManager.hideLoadingData();
+        Windown_1.Windown.UIManager.hideLoading();
+        cc.systemEvent.removeAll(this);
+        this.clearAllTimeOut();
+        this.sfs.removeEventListener(SFS2X.SFSEvent.USER_EXIT_ROOM, this.userExitRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_CREATION_ERROR, this.onCreateError);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN, this.onJoinRoom);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.ROOM_JOIN_ERROR, this.onJoinRoomErr);
+        this.sfs.removeEventListener(SFS2X.SFSEvent.EXTENSION_RESPONSE, this.extResponse);
+        Windown_1.Windown.BaccaratController = null;
+        this.roomSFS = null;
+        Windown_1.Windown.MoneyUser.targetOff(this);
+        Windown_1.Windown.MoneyUser.endGameMOney(GAME_TYPE_1.default.Baccarat);
+      };
+      BaccaratController.prototype.clearAllTimeOut = function() {
+        this.listTimeOut.forEach(function(v) {
+          clearTimeout(v);
+        });
+      };
+      BaccaratController.prototype.onJoinRoom = function(event) {
+        return __awaiter(this, void 0, void 0, function() {
+          var room;
+          return __generator(this, function(_a) {
+            room = event.room;
+            Windown_1.Windown.UIManager.hideLoadingData();
+            return [ 2 ];
+          });
+        });
+      };
+      BaccaratController.prototype.onJoinRoomErr = function(event) {
+        Windown_1.Windown.UIManager.hideLoading();
+        Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.ERR_JOIN_ROOM);
+        this.onDestroy();
+      };
+      BaccaratController.prototype.extResponse = function(packet) {
+        var code = packet.cmd;
+        var SFSObject = packet.params;
+        cc.log("Baccarat Code:" + code + "\n" + Windown_1.Windown.SFSObjToJson(SFSObject));
+        switch (code) {
+         case REQUEST_CODE_1.REQUEST_CODE.BCRPlayerInfo:
+          this.baccaratView.handlePlayerInfo(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.BCRInfoRoom:
+          this.baccaratView.handleRoomInfo(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.BCRStartGame:
+          null == this.baccaratView ? this.startGameData = SFSObject : this.baccaratView.handleStartGame(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.BCRBet:
+          cc.log("handlePlayerbet");
+          this.baccaratView.handlePlayerBet(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.BCREndGame:
+          this.baccaratView.handleEndGame(SFSObject);
+          break;
+
+         case REQUEST_CODE_1.REQUEST_CODE.BCRHistoryBet:
+          this.baccaratView.popupHistoryBetView.setInfo(SFSObject);
+        }
+      };
+      BaccaratController.prototype.sendJoinRoom = function() {
+        var _this = this;
+        Windown_1.Windown.UIManager.showLoading();
+        var rooms = this.sfs.roomManager.getRoomListFromGroup("Baccarat");
+        var room = rooms.find(function(roomTemp) {
+          cc.log("value" + roomTemp.getVariable("cj").value);
+          return roomTemp.containsVariable("cj") && roomTemp.getVariable("cj").value;
+        });
+        if (room) {
+          this.roomSFS = room;
+          if (room.isJoined) this.sendGetInfoRoom(); else {
+            cc.log("nhay vao send join rom: " + room);
+            this.sfs.send(new SFS2X.JoinRoomRequest(room, null, -1));
+          }
+        } else setTimeout(function() {
+          _this.sendJoinRoom();
+        }, 3e3);
+      };
+      BaccaratController.prototype.sendGetInfoRoom = function() {
+        this.sendRequest(REQUEST_CODE_1.REQUEST_CODE.TXinfoRoom, ConectManager_1.ConectManager.getIns().getSFSObj());
+      };
+      BaccaratController.prototype.sendRequest = function(code, sfsObj) {
+        ConectManager_1.ConectManager.getIns().sendRequest(code, sfsObj, this.roomSFS);
+      };
+      BaccaratController.prototype.sendToServer = function(event, data) {
+        if (!this.isCanSendData || null == this.roomSFS) return;
+        this.isCanSendData = false;
+        ConectManager_1.ConectManager.getIns().sendRequest(event, data, this.roomSFS);
+      };
+      BaccaratController.prototype.sendBet = function(gateId, vaueBet) {
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        obj.putLong("bet", vaueBet);
+        obj.putInt("id", gateId);
+        this.sendToServer("bet", obj);
+      };
+      BaccaratController.prototype.intiGame = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var bundle;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              return [ 4, Windown_1.Windown.loadBundle(GAME_TYPE_1.default.Baccarat.toString()) ];
+
+             case 1:
+              bundle = _a.sent();
+              Windown_1.Windown.UIManager.showLoadingData();
+              bundle.preloadScene("Baccarat", {}, function(count, total) {
+                Windown_1.Windown.UIManager.setPerData(count / total);
+              }, function(err) {
+                if (err) {
+                  Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.Error);
+                  return;
+                }
+                bundle.loadScene("Baccarat", function(err, scence) {
+                  if (err) {
+                    Windown_1.Windown.Dialog.showLog(TextDefine_1.TextDefine.Error);
+                    Windown_1.Windown.UIManager.hideLoadingData();
+                    return;
+                  }
+                  cc.director.runScene(scence, null, function() {
+                    Windown_1.Windown.UIManager.hideLoadingData();
+                  });
+                });
+              });
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratController.prototype.onClickBackToLobby = function() {
+        this.roomSFS ? ConectManager_1.ConectManager.getIns().sendLeaveRoom(this.roomSFS) : cc.director.loadScene("main");
+      };
+      BaccaratController.prototype.loadPrefabBundle = function(name) {
+        return __awaiter(this, void 0, void 0, function() {
+          var baccaratBundle;
+          return __generator(this, function(_a) {
+            baccaratBundle = cc.assetManager.getBundle(GAME_TYPE_1.default.Baccarat.toString());
+            return [ 2, new Promise(function(resolve, reject) {
+              baccaratBundle.load("Prefab/" + name, function(err, pref) {
+                if (err) {
+                  reject(err);
+                  return null;
+                }
+                resolve(pref);
+              });
+            }) ];
+          });
+        });
+      };
+      BaccaratController.prototype.sendGetHistoryBet = function() {
+        var obj = ConectManager_1.ConectManager.getIns().getSFSObj();
+        this.sendToServer("historyBetBa", obj);
+        Windown_1.Windown.BaccaratController.isCanSendData = true;
+      };
+      return BaccaratController;
+    }();
+    exports.default = BaccaratController;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/DefineTs/EVENT_MANAGER": void 0,
+    "../../../Scritps/DefineTs/REQUEST_CODE": void 0,
+    "../../../Scritps/DefineTs/TextDefine": void 0,
+    "../../../Scritps/Game/GAME_TYPE": void 0,
+    "../../../Scritps/Network/ConectManager": void 0,
+    "../../../Scritps/Windown": void 0
+  } ],
+  BaccaratView: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "91133cyz0FNj4WIQhDdRhjP", "BaccaratView");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __generator = this && this.__generator || function(thisArg, body) {
+      var _ = {
+        label: 0,
+        sent: function() {
+          if (1 & t[0]) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: []
+      }, f, y, t, g;
+      return g = {
+        next: verb(0),
+        throw: verb(1),
+        return: verb(2)
+      }, "function" === typeof Symbol && (g[Symbol.iterator] = function() {
+        return this;
+      }), g;
+      function verb(n) {
+        return function(v) {
+          return step([ n, v ]);
+        };
+      }
+      function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+          if (f = 1, y && (t = 2 & op[0] ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
+          0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+          (y = 0, t) && (op = [ 2 & op[0], t.value ]);
+          switch (op[0]) {
+           case 0:
+           case 1:
+            t = op;
+            break;
+
+           case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+           case 5:
+            _.label++;
+            y = op[1];
+            op = [ 0 ];
+            continue;
+
+           case 7:
+            op = _.ops.pop();
+            _.trys.pop();
+            continue;
+
+           default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (6 === op[0] || 2 === op[0])) {
+              _ = 0;
+              continue;
+            }
+            if (3 === op[0] && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+            if (6 === op[0] && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+              _.ops.push(op);
+              break;
+            }
+            t[2] && _.ops.pop();
+            _.trys.pop();
+            continue;
+          }
+          op = body.call(thisArg, _);
+        } catch (e) {
+          op = [ 6, e ];
+          y = 0;
+        } finally {
+          f = t = 0;
+        }
+        if (5 & op[0]) throw op[1];
+        return {
+          value: op[0] ? op[1] : void 0,
+          done: true
+        };
+      }
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var LbMoneyChange_1 = require("../../../Scritps/Obs/LbMoneyChange");
+    var MakeDelay_1 = require("../../../Scritps/Other/MakeDelay");
+    var Util_1 = require("../../../Scritps/Util");
+    var Windown_1 = require("../../../Scritps/Windown");
+    var Baccarat_Assets_1 = require("./Baccarat.Assets");
+    var Baccarat_Audio_1 = require("./Baccarat.Audio");
+    var Baccarat_ButtonBet_1 = require("./Baccarat.ButtonBet");
+    var Baccarat_Card_1 = require("./Baccarat.Card");
+    var Baccarat_HistoryBet_1 = require("./Baccarat.HistoryBet");
+    var Baccarat_HistoryMini_1 = require("./Baccarat.HistoryMini");
+    var Baccarat_MenuView_1 = require("./Baccarat.MenuView");
+    var Baccarat_Player_1 = require("./Baccarat.Player");
+    var Baccarat_PopupHistory_1 = require("./Baccarat.PopupHistory");
+    var Baccarat_SoiCauView_1 = require("./Baccarat.SoiCauView");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BACCARAT_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PAIR: 4,
+      BANKER_PAIR: 5
+    });
+    var BACCARAT_WIN_GATE = cc.Enum({
+      PLAYER: 1,
+      TIE: 2,
+      BANKER: 3,
+      PLAYER_PP: 14,
+      PLAYER_BP: 15,
+      PLAYER_PBP: 145,
+      BANKER_PP: 34,
+      BANKER_BP: 35,
+      BANKER_PBP: 345,
+      TIE_PP: 24,
+      TIE_BP: 25,
+      TIE_PBP: 245
+    });
+    var GAME_STATE = cc.Enum({
+      BETTING: 1,
+      FINISHED: 2,
+      WAITTING: 3
+    });
+    var BaccaratView = function(_super) {
+      __extends(BaccaratView, _super);
+      function BaccaratView() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.players = [];
+        _this.thisPlayer = null;
+        _this.assets = null;
+        _this.menu = null;
+        _this.buttonBetController = null;
+        _this.historyMini = null;
+        _this.popupHistoryBetView = null;
+        _this.audio = null;
+        _this.popupSoiCau = null;
+        _this.nodeGroupUser = null;
+        _this.nodeGateBet = [];
+        _this.listCardPlayer = [];
+        _this.listCardBanker = [];
+        _this.nodeGetChip = null;
+        _this.lbOtherPlayer = null;
+        _this.lbTimer = null;
+        _this.lbWaitting = null;
+        _this.lbSession = null;
+        _this.sprTimer = null;
+        _this.lbScoreP = null;
+        _this.lbScoreB = null;
+        _this.lbTotalBet = null;
+        _this.animDealer = null;
+        _this.animWinResult = null;
+        _this.posPayChipOther = [];
+        _this.lbTotalBetB = null;
+        _this.lbTotalBetP = null;
+        _this.lbTotalBetT = null;
+        _this.lbTotalBetBP = null;
+        _this.lbTotalBetPP = null;
+        _this.listPosChipOnTable = [];
+        _this.lbTotalGateBetUser = [];
+        _this.effectWinOther = null;
+        _this.currentTimer = 60;
+        _this.totalBetB = 0;
+        _this.totalBetP = 0;
+        _this.totalBetBP = 0;
+        _this.totalBetPP = 0;
+        _this.totalBetT = 0;
+        _this.totalBetAllGate = 0;
+        _this.agUser = 0;
+        _this.currentBetValue = 1e3;
+        _this.listTotalBetValue = null;
+        _this.listTotalUserBetGate = null;
+        _this.listDataPlayerOther = [];
+        _this.listLbTotalBet = [];
+        _this.gateWin = null;
+        _this.gameState = GAME_STATE.BETTING;
+        _this.listValueChip = [ .1, 1, 5, 10, 50, 100, 500, 1e3, 2e3, 5e3, 1e4, 5e4, 1e5, 15e4, 2e5 ];
+        _this.lastPlayerInfoData = null;
+        _this.makeDelay = null;
+        _this.infoCardOnTable_Player = [];
+        _this.infoCardOnTable_Banker = [];
+        _this.listChipBet = [];
+        _this.listChipbetOther = [];
+        _this.listBtnBet = [];
+        _this.isResetView = false;
+        _this.isReconnect = false;
+        _this.listGateWin = [];
+        _this.HistoryBet = null;
+        _this.historyTable = [];
+        _this.timeInBg = 0;
+        return _this;
+      }
+      BaccaratView.prototype.onLoad = function() {
+        var _this = this;
+        this.HistoryBet = new Baccarat_HistoryBet_1.default();
+        this.players.forEach(function(player, index) {
+          index > 0 && (player.node.active = false);
+        });
+        this.nodeGateBet.forEach(function(btn) {
+          _this.listBtnBet.push(btn.getComponent(cc.Button));
+        });
+        for (var i = 0, l = this.listValueChip.length; i < l; i++) this.listValueChip[i] *= 1e3;
+        for (var i = 0; i < 3; i++) {
+          var cardPlayer = this.listCardPlayer[i];
+          var dataPlayer = {
+            scaleX: cardPlayer.node.scaleX,
+            scaleY: cardPlayer.node.scaleY,
+            position: cardPlayer.node.position
+          };
+          this.infoCardOnTable_Player.push(dataPlayer);
+          var cardBanker = this.listCardBanker[i];
+          var dataBanker = {
+            scaleX: cardBanker.node.scaleX,
+            scaleY: cardBanker.node.scaleY,
+            position: cardBanker.node.position
+          };
+          this.infoCardOnTable_Banker.push(dataBanker);
+        }
+        this.listTotalBetValue = [ this.totalBetP, this.totalBetT, this.totalBetB, this.totalBetPP, this.totalBetBP ];
+        this.listTotalUserBetGate = [ 0, 0, 0, 0, 0 ];
+        this.listLbTotalBet = [ this.lbTotalBetP, this.lbTotalBetT, this.lbTotalBetB, this.lbTotalBetPP, this.lbTotalBetBP ];
+        Windown_1.Windown.BaccaratController.baccaratView = this;
+        Windown_1.Windown.BaccaratView = this;
+        this.makeDelay = new MakeDelay_1.default(this);
+        this.agUser = Windown_1.Windown.User.userAg;
+      };
+      BaccaratView.prototype.start = function() {
+        Windown_1.Windown.BaccaratController.sendJoinRoom();
+        this.audio.playMusic();
+        if (null != Windown_1.Windown.BaccaratController.startGameData) {
+          this.handleStartGame(Windown_1.Windown.BaccaratController.startGameData);
+          Windown_1.Windown.BaccaratController.startGameData = null;
+        }
+        this.setupTimeRunInBg();
+      };
+      BaccaratView.prototype.getMakeDelay = function(time) {
+        return this.makeDelay.getDelay(time);
+      };
+      BaccaratView.prototype.handlePlayerInfo = function(data) {
+        if (this.gameState == GAME_STATE.FINISHED) {
+          this.lastPlayerInfoData = data;
+          return;
+        }
+        this.listDataPlayerOther = [];
+        var listPlayer = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("data")));
+        var thisPldata = listPlayer.find(function(dataPl) {
+          return dataPl["id"] == Windown_1.Windown.User.userId;
+        });
+        if (null != thisPldata) {
+          cc.log("Co this player trong listPlayer, xoa no di");
+          listPlayer.splice(listPlayer.indexOf(thisPldata), 1);
+        }
+        if (7 == listPlayer.length) {
+          this.listDataPlayerOther.push(listPlayer.pop());
+          cc.log("Co 7 player trong listPlayer, xoa 1 thang  di:" + listPlayer.length);
+        }
+        this.thisPlayer.setAvatar(Windown_1.Windown.User.avatrId);
+        this.thisPlayer.setName(Windown_1.Windown.User.nickName);
+        this.thisPlayer.setChip(this.agUser, false);
+        this.thisPlayer.setId(Windown_1.Windown.User.userId);
+        var indexPlayer = 1;
+        for (var i = 0, l = listPlayer.length; i < l; i++) {
+          var dataPl = listPlayer[i];
+          var player = this.players[indexPlayer];
+          if (cc.isValid(player) && player != this.thisPlayer) {
+            player.node.active = true;
+            player.resetPlayer();
+            player.setInfo(dataPl["id"], dataPl["nn"], dataPl["ag"], dataPl["iv"]);
+            indexPlayer++;
+          } else cc.error(" ko du player de hien thi");
+        }
+        for (var i = indexPlayer; i < this.players.length; i++) {
+          this.players[i].node.active = false;
+          this.players[i].resetPlayer();
+        }
+        this.lbOtherPlayer.string = data.getInt("so") + this.listDataPlayerOther.length + "";
+      };
+      BaccaratView.prototype.handleRoomInfo = function(data) {
+        return __awaiter(this, void 0, void 0, function() {
+          var isGame, currenBetInfo, firstHistory, vP, vD, i, card, i, card, currenBetInfo_1;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              Windown_1.Windown.UIManager.hideLoading();
+              this.currentTimer = data.getInt("time");
+              this.sprTimer.fillRange = this.currentTimer / 30;
+              this.lbSession.string = "#" + data.getInt("sision");
+              isGame = data.getBool("isG");
+              currenBetInfo = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("cur")));
+              this.gameState = isGame ? GAME_STATE.BETTING : GAME_STATE.FINISHED;
+              this.historyTable = JSON.parse(data.get("his")).reverse();
+              firstHistory = this.historyTable[0];
+              this.gameState == GAME_STATE.FINISHED && this.currentTimer > 15 && this.historyTable.splice(0, 1);
+              this.historyMini.setInfo(this.historyTable);
+              this.setStateBtnGate(this.gameState == GAME_STATE.BETTING);
+              this.gameState == GAME_STATE.BETTING ? this.onCountTimeRemain() : this.onCountWaitting();
+              if (!(this.gameState == GAME_STATE.BETTING)) return [ 3, 1 ];
+              this.thisPlayer.showButtonBet();
+              this.setCurBetInfo(currenBetInfo);
+              return [ 3, 9 ];
+
+             case 1:
+              Windown_1.Windown.UIManager.showAlertMini("Vui l\xf2ng ch\u1edd  v\xe1n ch\u01a1i k\u1ebft th\xfac!");
+              if (!(this.currentTimer > 15)) return [ 3, 9 ];
+              vP = JSON.parse(data.getUtfString("vP"));
+              vD = JSON.parse(data.getUtfString("vD"));
+              cc.log(" Card  Player = ", vP);
+              cc.log(" Card  Banker = ", vD);
+              for (i = 0; i < vP.length; i++) {
+                card = this.listCardPlayer[i];
+                card.node.active = true;
+                card.id = vP[i]["I"];
+                card.setCard();
+                card.node.opacity = 255;
+                card.node.position = this.infoCardOnTable_Player[i].position;
+              }
+              for (i = 0; i < vD.length; i++) {
+                card = this.listCardBanker[i];
+                card.node.active = true;
+                card.id = vD[i]["I"];
+                card.setCard();
+                card.node.opacity = 255;
+                card.node.position = this.infoCardOnTable_Banker[i].position;
+              }
+              currenBetInfo_1 = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("cur")));
+              this.setCurBetInfo(currenBetInfo_1);
+              return [ 4, Windown_1.Windown.BaccaratView.getMakeDelay(.5).prosime ];
+
+             case 2:
+              _a.sent();
+              this.listGateWin = [];
+              currenBetInfo_1.forEach(function(betInfo) {
+                betInfo["w"] && _this.listGateWin.push(betInfo["id"]);
+              });
+              this.showScore(BACCARAT_GATE.BANKER, vD, 2 == vD.length);
+              this.showScore(BACCARAT_GATE.PLAYER, vP, 2 == vP.length);
+              return [ 4, Windown_1.Windown.BaccaratView.getMakeDelay(1.5).prosime ];
+
+             case 3:
+              _a.sent();
+              this.gateWin = parseInt(this.listGateWin.toString().split(",").join(""));
+              return [ 4, this.showWinResult() ];
+
+             case 4:
+              _a.sent();
+              this.getAllChipOnTable();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 5:
+              _a.sent();
+              this.payChipWinOnTalbe();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 6:
+              _a.sent();
+              this.moveChipToPlayer();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 7:
+              _a.sent();
+              return [ 4, this.showResultAgWinReconnect(currenBetInfo_1) ];
+
+             case 8:
+              _a.sent();
+              this.historyTable.unshift(firstHistory);
+              this.resetView();
+              _a.label = 9;
+
+             case 9:
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratView.prototype.setCurBetInfo = function(currenBetInfo) {
+        for (var i = 0; i < currenBetInfo.length; i++) {
+          var dataBet = currenBetInfo[i];
+          var gateBet = dataBet["id"];
+          var listBet = dataBet["b"];
+          for (var i_1 = 0; i_1 < listBet.length; i_1++) {
+            var valueBet = listBet[i_1]["bet"];
+            var playerBet = this.getPlayerWithId(listBet[i_1]["idP"]);
+            var listChipBet = this.getListChipValue(valueBet);
+            for (var i_2 = 0, l = listChipBet.length; i_2 < l; i_2++) {
+              var chipbet = this.assets.getChipBet(listChipBet[i_2]);
+              if (cc.isValid(playerBet)) {
+                if (playerBet.id == Windown_1.Windown.User.userId) {
+                  this.totalBetAllGate += valueBet;
+                  this.listTotalUserBetGate[gateBet - 1] += valueBet;
+                  this.lbTotalBet.setMoney(this.totalBetAllGate, true);
+                  this.lbTotalGateBetUser[gateBet - 1].string = Windown_1.Windown.formatMoney(this.listTotalUserBetGate[gateBet - 1]);
+                  this.lbTotalGateBetUser[gateBet - 1].node.parent.active = true;
+                }
+                playerBet.listChipBet.push(chipbet);
+                chipbet["playerID"] = playerBet.id;
+              } else {
+                this.listChipbetOther.push(chipbet);
+                chipbet["playerID"] = -1;
+              }
+              this.listChipBet.push(chipbet);
+              chipbet.parent = this.nodeGateBet[gateBet - 1];
+              chipbet["gate"] = gateBet;
+              chipbet["value"] = listChipBet[i_2];
+              var deltaRandom = gateBet > 3 ? 20 : 30;
+              var ranPosX = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gateBet - 1].x - deltaRandom, this.listPosChipOnTable[gateBet - 1].x + deltaRandom);
+              var ranPosY = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gateBet - 1].y - deltaRandom, this.listPosChipOnTable[gateBet - 1].y + deltaRandom);
+              chipbet.setPosition(cc.v2(ranPosX, ranPosY));
+            }
+          }
+          switch (gateBet) {
+           case BACCARAT_GATE.BANKER:
+            this.totalBetB = dataBet["t"];
+            break;
+
+           case BACCARAT_GATE.PLAYER:
+            this.totalBetP = dataBet["t"];
+            break;
+
+           case BACCARAT_GATE.BANKER_PAIR:
+            this.totalBetBP = dataBet["t"];
+            break;
+
+           case BACCARAT_GATE.PLAYER_PAIR:
+            this.totalBetPP = dataBet["t"];
+            break;
+
+           case BACCARAT_GATE.TIE:
+            this.totalBetT = dataBet["t"];
+          }
+          this.lbTotalBetB.setMoney(this.totalBetB, true);
+          this.lbTotalBetP.setMoney(this.totalBetP, true);
+          this.lbTotalBetBP.setMoney(this.totalBetBP, true);
+          this.lbTotalBetPP.setMoney(this.totalBetPP, true);
+          this.lbTotalBetT.setMoney(this.totalBetT, true);
+        }
+      };
+      BaccaratView.prototype.handleStartGame = function(data) {
+        cc.log("handleStartGame");
+        this.audio.playEffect(this.audio.dealer_startBet);
+        this.setStateBtnGate(true);
+        this.isResetView = false;
+        this.lbSession.string = "#" + data.getInt("sision");
+        this.currentTimer = data.getInt("time");
+        this.lbTimer.string = this.currentTimer + "";
+        this.sprTimer.fillRange = 1;
+        this.onCountTimeRemain();
+        this.setDealerAnim("Start_Bet", false);
+        this.thisPlayer.showButtonBet();
+      };
+      BaccaratView.prototype.handlePlayerBet = function(data) {
+        var idPl = data.getInt("pid");
+        this.audio.playEffect(this.audio.throwChip);
+        var gateBet = data.getInt("id");
+        var playerBet = this.getPlayerWithId(idPl);
+        var valueBet = data.getLong("bet");
+        if (null != playerBet && playerBet == this.thisPlayer) {
+          this.totalBetAllGate += valueBet;
+          this.listTotalUserBetGate[gateBet - 1] += valueBet;
+          this.lbTotalBet.setMoney(this.totalBetAllGate, true);
+          this.lbTotalGateBetUser[gateBet - 1].string = Windown_1.Windown.formatMoney(this.listTotalUserBetGate[gateBet - 1]);
+          this.lbTotalGateBetUser[gateBet - 1].node.parent.active = true;
+        }
+        var listChipBet = this.getListChipValue(valueBet);
+        for (var i = 0, l = listChipBet.length; i < l; i++) {
+          var chipbet = this.assets.getChipBet(listChipBet[i]);
+          this.listChipBet.push(chipbet);
+          var parentChipGate = this.nodeGateBet[gateBet - 1];
+          var posFromPlayer = null;
+          if (null != playerBet) {
+            posFromPlayer = parentChipGate.convertToNodeSpaceAR(playerBet.node.parent.convertToWorldSpaceAR(playerBet.node.position));
+            playerBet.setChip(data.getLong("ag"));
+            playerBet.listChipBet.push(chipbet);
+            chipbet["playerID"] = playerBet.id;
+            playerBet.gateBetted.includes(gateBet) || playerBet.gateBetted.push(gateBet);
+          } else {
+            posFromPlayer = parentChipGate.convertToNodeSpaceAR(this.nodeGroupUser.parent.convertToWorldSpaceAR(this.nodeGroupUser.position));
+            this.listChipbetOther.push(chipbet);
+            chipbet["playerID"] = -1;
+          }
+          chipbet.parent = parentChipGate;
+          chipbet["gate"] = gateBet;
+          chipbet["value"] = listChipBet[i];
+          chipbet.setPosition(posFromPlayer);
+          var deltaRandom = gateBet > 3 ? 20 : 30;
+          var ranPosX = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gateBet - 1].x - deltaRandom, this.listPosChipOnTable[gateBet - 1].x + deltaRandom);
+          var ranPosY = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gateBet - 1].y - deltaRandom, this.listPosChipOnTable[gateBet - 1].y + deltaRandom);
+          var randomPosTo = cc.v2(ranPosX, ranPosY);
+          cc.tween(chipbet).set({
+            position: posFromPlayer
+          }).delay(.05 * i).to(.3, {
+            x: randomPosTo.x,
+            y: randomPosTo.y
+          }, {
+            easing: cc.easing.sineOut
+          }).start();
+        }
+        this.listTotalBetValue[gateBet - 1] = data.getLong("ttB");
+        this.listLbTotalBet[gateBet - 1].setMoney(this.listTotalBetValue[gateBet - 1], true);
+      };
+      BaccaratView.prototype.setStateBtnGate = function(state) {
+        this.listBtnBet.forEach(function(btnBet) {
+          btnBet.interactable = state;
+        });
+      };
+      BaccaratView.prototype.handleEndGame = function(data) {
+        return __awaiter(this, void 0, void 0, function() {
+          var vP, vD, playerInfo, agWinUser, listW, timeDelay1, infoCardPlayer1, infoCardBanker1, infoCardPlayer2, infoCardBanker2, infoCardPlayer3_1, infoCardBanker3_1;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              cc.log("handleEndGame");
+              this.setStateBtnGate(false);
+              this.onCountWaitting();
+              this.sprTimer.fillRange = 0;
+              this.gameState = GAME_STATE.FINISHED;
+              this.thisPlayer.hideButtonBet();
+              this.setDealerAnim("Stop_Bet");
+              this.audio.playEffect(this.audio.dealer_endBet);
+              vP = JSON.parse(data.getUtfString("vP"));
+              vD = JSON.parse(data.getUtfString("vD"));
+              this.historyTable = JSON.parse(data.get("his")).reverse();
+              playerInfo = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("d7")));
+              agWinUser = data.getLong("agW");
+              this.agUser = data.getLong("ag");
+              Windown_1.Windown.User.userAg = this.agUser;
+              listW = JSON.parse(Windown_1.Windown.SFSArrToJson(data.get("w")));
+              this.listGateWin = [];
+              listW.forEach(function(win) {
+                _this.listGateWin.push(win["id"]);
+              });
+              cc.log("vp====", vP);
+              cc.log("vD====", vD);
+              timeDelay1 = this.animDealer.findAnimation("Stop_Bet").duration;
+              return [ 4, Windown_1.Windown.BaccaratView.getMakeDelay(timeDelay1 + .5).prosime ];
+
+             case 1:
+              _a.sent();
+              this.setDealerAnim("DealCard");
+              this.gateWin = parseInt(this.listGateWin.toString().split(",").join(""));
+              infoCardPlayer1 = this.infoCardOnTable_Player[0];
+              cc.tween(this.listCardPlayer[0].node).set({
+                x: 9,
+                y: 145
+              }).delay(.9).call(function() {
+                _this.audio.playEffect(_this.audio.flipCard);
+                _this.listCardPlayer[0].node.active = true;
+                _this.listCardPlayer[0].node.opacity = 255;
+                _this.listCardPlayer[0].dealCard();
+              }).start();
+              infoCardBanker1 = this.infoCardOnTable_Banker[0];
+              cc.tween(this.listCardBanker[0].node).set({
+                x: -2,
+                y: 145
+              }).delay(2.25).call(function() {
+                _this.audio.playEffect(_this.audio.flipCard);
+                _this.listCardBanker[0].node.active = true;
+                _this.listCardBanker[0].node.opacity = 255;
+                _this.listCardBanker[0].dealCard();
+                _this.animDealer.node.setSiblingIndex(_this.listCardBanker[0].node.parent.getSiblingIndex() - 1);
+              }).delay(.5).call(function() {
+                _this.listCardPlayer[0].node.setPosition(infoCardPlayer1.position);
+                _this.listCardPlayer[0].id = vP[0]["I"];
+                _this.listCardPlayer[0].nanCard();
+              }).delay(1).call(function() {
+                _this.listCardPlayer[0].openCard();
+                _this.audio.playEffect(_this.audio.openCard);
+              }).start();
+              infoCardPlayer2 = this.infoCardOnTable_Player[1];
+              cc.tween(this.listCardPlayer[1].node).set({
+                x: 9,
+                y: 145
+              }).delay(3.5).call(function() {
+                _this.audio.playEffect(_this.audio.flipCard);
+                _this.listCardPlayer[1].node.active = true;
+                _this.listCardPlayer[1].node.opacity = 255;
+                _this.listCardPlayer[1].dealCard();
+              }).delay(.5).call(function() {
+                _this.listCardBanker[0].node.setPosition(infoCardBanker1.position);
+                _this.listCardBanker[0].id = vD[0]["I"];
+                _this.listCardBanker[0].nanCard();
+              }).delay(1).call(function() {
+                _this.listCardBanker[0].openCard();
+                _this.audio.playEffect(_this.audio.openCard);
+                _this.animDealer.node.setSiblingIndex(_this.listCardBanker[0].node.getSiblingIndex() - 1);
+              }).start();
+              infoCardBanker2 = this.infoCardOnTable_Banker[1];
+              cc.tween(this.listCardBanker[1].node).set({
+                x: -2,
+                y: 145
+              }).delay(4.85).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    this.audio.playEffect(this.audio.flipCard);
+                    this.listCardBanker[1].node.active = true;
+                    this.listCardBanker[1].node.opacity = 255;
+                    this.listCardBanker[1].dealCard();
+                    this.animDealer.node.setSiblingIndex(this.listCardBanker[0].node.parent.getSiblingIndex() + 1);
+                    return [ 2 ];
+                  });
+                });
+              }).delay(.5).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    this.listCardPlayer[1].node.setPosition(infoCardPlayer2.position);
+                    this.listCardPlayer[1].id = vP[1]["I"];
+                    this.listCardPlayer[1].nanCard();
+                    return [ 2 ];
+                  });
+                });
+              }).delay(1).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    switch (_a.label) {
+                     case 0:
+                      this.listCardPlayer[1].openCard();
+                      this.audio.playEffect(this.audio.openCard);
+                      return [ 4, this.getMakeDelay(.75).prosime ];
+
+                     case 1:
+                      _a.sent();
+                      this.showScore(BACCARAT_GATE.PLAYER, vP, true);
+                      return [ 2 ];
+                    }
+                  });
+                });
+              }).delay(.75).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    switch (_a.label) {
+                     case 0:
+                      this.listCardBanker[1].node.setPosition(infoCardBanker2.position);
+                      this.listCardBanker[1].id = vD[1]["I"];
+                      this.listCardBanker[1].nanCard();
+                      return [ 4, this.getMakeDelay(1).prosime ];
+
+                     case 1:
+                      _a.sent();
+                      this.animDealer.node.setSiblingIndex(this.listCardBanker[1].node.parent.getSiblingIndex() - 1);
+                      this.listCardBanker[1].openCard();
+                      this.audio.playEffect(this.audio.openCard);
+                      return [ 4, this.getMakeDelay(.75).prosime ];
+
+                     case 2:
+                      _a.sent();
+                      return [ 4, this.showScore(BACCARAT_GATE.BANKER, vD, true) ];
+
+                     case 3:
+                      _a.sent();
+                      return [ 2 ];
+                    }
+                  });
+                });
+              }).start();
+              return [ 4, this.getMakeDelay(8.25).prosime ];
+
+             case 2:
+              _a.sent();
+              if (!(2 == vP.length && 2 == vD.length)) return [ 3, 4 ];
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 3:
+              _a.sent();
+              return [ 3, 8 ];
+
+             case 4:
+              if (!(3 == vP.length)) return [ 3, 6 ];
+              infoCardPlayer3_1 = this.infoCardOnTable_Player[2];
+              this.setDealerAnim("DealCard_Nan");
+              cc.tween(this.listCardPlayer[2].node).set({
+                x: 9,
+                y: 145
+              }).delay(1.1).call(function() {
+                _this.audio.playEffect(_this.audio.flipCard);
+                _this.listCardPlayer[2].node.active = true;
+                _this.listCardPlayer[2].node.opacity = 255;
+                _this.listCardPlayer[2].dealCard();
+              }).delay(.5).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    switch (_a.label) {
+                     case 0:
+                      this.listCardPlayer[2].node.setPosition(infoCardPlayer3_1.position);
+                      this.listCardPlayer[2].id = vP[2]["I"];
+                      this.listCardPlayer[2].nanCard();
+                      return [ 4, this.getMakeDelay(1).prosime ];
+
+                     case 1:
+                      _a.sent();
+                      this.listCardPlayer[2].openCard();
+                      this.audio.playEffect(this.audio.openCard);
+                      return [ 4, this.getMakeDelay(.75).prosime ];
+
+                     case 2:
+                      _a.sent();
+                      this.showScore(BACCARAT_GATE.PLAYER, vP, false);
+                      return [ 2 ];
+                    }
+                  });
+                });
+              }).start();
+              return [ 4, this.getMakeDelay(1.1 + .3 + .5 + 1.5).prosime ];
+
+             case 5:
+              _a.sent();
+              _a.label = 6;
+
+             case 6:
+              if (!(3 == vD.length)) return [ 3, 8 ];
+              infoCardBanker3_1 = this.infoCardOnTable_Banker[2];
+              this.setDealerAnim("DealCard_Table_Right");
+              cc.tween(this.listCardBanker[2].node).set({
+                x: -4.6,
+                y: 145
+              }).delay(1.1).call(function() {
+                _this.audio.playEffect(_this.audio.flipCard);
+                _this.listCardBanker[2].node.active = true;
+                _this.listCardBanker[2].node.opacity = 255;
+                _this.listCardBanker[2].dealCard();
+              }).delay(.5).call(function() {
+                return __awaiter(_this, void 0, void 0, function() {
+                  return __generator(this, function(_a) {
+                    switch (_a.label) {
+                     case 0:
+                      this.listCardBanker[2].node.setPosition(infoCardBanker3_1.position);
+                      this.listCardBanker[2].id = vD[2]["I"];
+                      this.listCardBanker[2].nanCard();
+                      return [ 4, this.getMakeDelay(1).prosime ];
+
+                     case 1:
+                      _a.sent();
+                      this.listCardBanker[2].openCard();
+                      this.audio.playEffect(this.audio.openCard);
+                      return [ 4, this.getMakeDelay(.75).prosime ];
+
+                     case 2:
+                      _a.sent();
+                      this.showScore(BACCARAT_GATE.BANKER, vD, false);
+                      return [ 2 ];
+                    }
+                  });
+                });
+              }).start();
+              return [ 4, this.getMakeDelay(1.1 + .3 + .5 + 1.5).prosime ];
+
+             case 7:
+              _a.sent();
+              _a.label = 8;
+
+             case 8:
+              return [ 4, this.showWinResult() ];
+
+             case 9:
+              _a.sent();
+              this.getAllChipOnTable();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 10:
+              _a.sent();
+              this.payChipWinOnTalbe();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 11:
+              _a.sent();
+              this.moveChipToPlayer();
+              return [ 4, this.getMakeDelay(1.5).prosime ];
+
+             case 12:
+              _a.sent();
+              return [ 4, this.showResultAgWin(playerInfo, agWinUser) ];
+
+             case 13:
+              _a.sent();
+              this.resetView();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratView.prototype.getAllChipOnTable = function() {
+        var _this = this;
+        cc.log("this.listGateWin=" + this.listGateWin);
+        this.audio.playEffect(this.audio.getChip);
+        this.listChipBet.forEach(function(chip) {
+          if (!_this.listGateWin.includes(chip["gate"])) {
+            var posOut = _this.nodeGetChip.parent.convertToWorldSpaceAR(_this.nodeGetChip.position);
+            var posIn = chip.parent.convertToNodeSpaceAR(posOut);
+            cc.tween(chip).delay(Windown_1.Windown.RandomNumber(0, 3) / 10).to(1.5, {
+              position: posIn
+            }, {
+              easing: cc.easing.quintOut
+            }).to(.1, {
+              opacity: 0
+            }).call(function() {
+              _this.assets.chipBetPool.put(chip);
+              var playerOwn = _this.getPlayerWithId(chip["playerID"]);
+              null != playerOwn && playerOwn.listChipBet.splice(playerOwn.listChipBet.indexOf(chip), 1);
+              _this.listChipbetOther.includes(chip) && _this.listChipbetOther.splice(_this.listChipbetOther.indexOf(chip), 1);
+            }).start();
+          }
+        });
+      };
+      BaccaratView.prototype.payChipWinOnTalbe = function() {
+        var _this = this;
+        var isGateWin = false;
+        var _loop_1 = function(i) {
+          var gate = this_1.listGateWin[i];
+          this_1.players.forEach(function(playerBet) {
+            var listChipPl = playerBet.listChipBet;
+            listChipPl.forEach(function(chip, index) {
+              if (chip["gate"] == gate) {
+                isGateWin = true;
+                chip["value"] = _this.getChipWinValueOnGate(chip["value"], gate);
+                var listChipBet = _this.getListChipValue(chip["value"]);
+                for (var j = 0, size = listChipBet.length; j < size; j++) _this.effectChipPay(listChipBet[j], gate, .07 * index, playerBet.listChipPay);
+              }
+            });
+          });
+          this_1.listChipbetOther.forEach(function(chip, index) {
+            if (chip["gate"] == gate) {
+              isGateWin = true;
+              chip["value"] = _this.getChipWinValueOnGate(chip["value"], gate);
+              var listChipBet = _this.getListChipValue(chip["value"]);
+              for (var i_3 = 0, l = listChipBet.length; i_3 < l; i_3++) _this.effectChipPay(listChipBet[i_3], gate, .07 * index, _this.listChipbetOther);
+            }
+          });
+        };
+        var this_1 = this;
+        for (var i = 0; i < this.listGateWin.length; i++) _loop_1(i);
+        isGateWin && this.audio.playEffect(this.audio.chipMoveToPlayer_turn1);
+      };
+      BaccaratView.prototype.getChipWinValueOnGate = function(value, gate) {
+        gate != BACCARAT_GATE.PLAYER_PAIR && gate != BACCARAT_GATE.BANKER_PAIR || (value *= 15);
+        gate == BACCARAT_GATE.TIE && (value *= 9);
+        return value;
+      };
+      BaccaratView.prototype.moveChipToPlayer = function() {
+        var _this = this;
+        var playerContainer = cc.find("bg/playerContainer", this.node);
+        var isWinChip = false;
+        this.players.forEach(function(playerBet) {
+          playerBet.listChipBet.forEach(function(chip, index) {
+            if (index < 7) {
+              if (!cc.isValid(chip.parent)) {
+                cc.log("Chip ko co cha:", chip["playerID"]);
+                chip.parent = _this.nodeGateBet[chip["gate"] - 1];
+              }
+              var posIn = Windown_1.Windown.convertNodeInOtherNode(chip, playerContainer);
+              chip.parent = playerContainer;
+              chip.setPosition(posIn);
+              isWinChip = true;
+              cc.tween(chip).to(.6, {
+                x: playerBet.posPayChip[0].x,
+                y: playerBet.posPayChip[0].y + 5 * index,
+                scale: .8 * chip.scale
+              }).delay(1).to(.3, {
+                position: playerBet.node.position
+              }).call(function() {
+                _this.assets.chipBetPool.put(chip);
+              }).start();
+            } else {
+              cc.log("chip >7");
+              cc.tween(chip).to(.3, {
+                opacity: 0
+              }, {
+                easing: cc.easing.sineOut
+              }).call(function() {
+                _this.assets.chipBetPool.put(chip);
+                cc.log("player listchipo bet size=" + playerBet.listChipBet.length);
+              }).start();
+            }
+          });
+          playerBet.listChipPay.forEach(function(chip, index) {
+            if (index < 7) {
+              var posIn = Windown_1.Windown.convertNodeInOtherNode(chip, playerContainer);
+              chip.parent = playerContainer;
+              chip.setPosition(posIn);
+              isWinChip = true;
+              cc.tween(chip).to(.6, {
+                x: playerBet.posPayChip[1].x,
+                y: playerBet.posPayChip[1].y + 5 * index,
+                scale: .8 * chip.scale
+              }).delay(.75).to(.3, {
+                position: playerBet.node.position
+              }).call(function() {
+                _this.assets.chipBetPool.put(chip);
+              }).start();
+            } else cc.tween(chip).to(.3, {
+              opacity: 0
+            }, {
+              easing: cc.easing.sineOut
+            }).call(function() {
+              _this.assets.chipBetPool.put(chip);
+            }).start();
+          });
+        });
+        var totalOtherWin = 0;
+        this.listChipbetOther.forEach(function(chip, index) {
+          if (index < 7) {
+            isWinChip = true;
+            totalOtherWin += chip["value"];
+            cc.log("Chip Parent=" + chip.parent.name);
+            var posIn = Windown_1.Windown.convertNodeInOtherNode(chip, playerContainer);
+            chip.parent = playerContainer;
+            chip.setPosition(posIn);
+            var indexPos = true == chip["isChipPayOther"] ? 0 : 1;
+            cc.tween(chip).to(.6, {
+              x: _this.posPayChipOther[indexPos].x,
+              y: _this.posPayChipOther[indexPos].y + 5 * index,
+              scale: .8 * chip.scale
+            }).delay(.75).to(.3, {
+              position: _this.nodeGroupUser.position
+            }).call(function() {
+              _this.assets.chipBetPool.put(chip);
+            }).start();
+          } else {
+            totalOtherWin += chip["value"];
+            _this.assets.chipBetPool.put(chip);
+          }
+        });
+        this.listChipbetOther.length > 0 && cc.tween(this.node).delay(1.5).call(function() {
+          _this.showEffectWinOther(totalOtherWin);
+        }).start();
+        this.listChipBet.forEach(function(chip, index) {
+          cc.isValid(_this.getPlayerWithId(chip["playerID"])) || _this.listChipbetOther.includes(chip) || cc.tween(chip).to(.3, {
+            opacity: 0
+          }, {
+            easing: cc.easing.sineOut
+          }).call(function() {
+            _this.assets.chipBetPool.put(chip);
+          }).start();
+        });
+        isWinChip && this.audio.playEffect(this.audio.chipMoveToPlayer_turn1);
+      };
+      BaccaratView.prototype.showEffectWinOther = function(totalOtherWin) {
+        var _this = this;
+        if (null == this.effectWinOther) {
+          cc.log("show effectWinOther");
+          this.effectWinOther = this.assets.getEffectWin(totalOtherWin);
+          this.effectWinOther.parent = this.node;
+          this.effectWinOther.position = this.nodeGroupUser.position;
+        } else this.effectWinOther.getChildByName("lbChipWin").getComponent(cc.Label).string = Windown_1.Windown.formatMoney(totalOtherWin);
+        this.effectWinOther.active = true;
+        var spineEffWinOther = this.effectWinOther.getComponentInChildren(sp.Skeleton);
+        spineEffWinOther.setSkin("win");
+        spineEffWinOther.setSlotsToSetupPose();
+        spineEffWinOther.setAnimation(0, "appear", false);
+        spineEffWinOther.setCompleteListener(function() {
+          spineEffWinOther.setAnimation(0, "idle", false);
+          spineEffWinOther.setCompleteListener(null);
+        });
+        this.scheduleOnce(function() {
+          cc.tween(_this.effectWinOther).to(.2, {
+            scaleX: 0
+          }, {
+            easing: cc.easing.backIn
+          }).call(function() {
+            _this.effectWinOther.active = false;
+          }).start();
+        }, 3);
+      };
+      BaccaratView.prototype.showResultAgWin = function(dataResult, agWinUser) {
+        void 0 === dataResult && (dataResult = []);
+        return __awaiter(this, void 0, void 0, function() {
+          var listPromise, isWin;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              listPromise = [];
+              isWin = false;
+              dataResult.forEach(function(data) {
+                var idPl = data["id"];
+                var player = _this.getPlayerWithId(idPl);
+                if (cc.isValid(player) && data["agw"] > 0 && player != _this.thisPlayer) {
+                  isWin = true;
+                  listPromise.push(player.showWinEffect(data["agw"]));
+                  player.setChip(data["ag"]);
+                }
+              });
+              if (0 != agWinUser) {
+                listPromise.push(this.thisPlayer.showWinSpineEffect(agWinUser));
+                this.thisPlayer.setChip(this.agUser);
+                this.audio.playEffect(this.audio.youWin);
+              }
+              isWin && this.audio.playEffect(this.audio.chipMoveToPlayer_turn2);
+              return [ 4, Promise.all(listPromise) ];
+
+             case 1:
+              _a.sent();
+              return [ 4, this.getMakeDelay(.25).prosime ];
+
+             case 2:
+              _a.sent();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratView.prototype.showResultAgWinReconnect = function(dataBet) {
+        void 0 === dataBet && (dataBet = []);
+        return __awaiter(this, void 0, void 0, function() {
+          var listPromise, isWin, agWinUser, playerInfo, checkPl;
+          var _this = this;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              listPromise = [];
+              isWin = false;
+              agWinUser = 0;
+              playerInfo = [];
+              checkPl = function(playerId) {
+                playerInfo.forEach(function(pl) {
+                  if (pl["idP"] == playerId) return pl;
+                  return null;
+                });
+              };
+              dataBet.forEach(function(data) {
+                if (data["w"]) {
+                  var dataB = data["b"];
+                  dataB.forEach(function(bet) {
+                    var idPl = bet["idP"];
+                    var playerBet = checkPl(idPl);
+                    if (null == playerBet) {
+                      playerInfo.push(bet);
+                      idPl == _this.thisPlayer.id && (agWinUser = bet["agWin"]);
+                    } else {
+                      playerBet["agWin"] += bet["agWin"];
+                      idPl == _this.thisPlayer.id && (agWinUser = playerBet["agWin"]);
+                    }
+                  });
+                }
+              });
+              cc.log(" Player info=", playerInfo);
+              playerInfo.forEach(function(plInfo) {
+                var idPl = plInfo["idP"];
+                var player = _this.getPlayerWithId(idPl);
+                if (cc.isValid(player) && plInfo["agWin"] > 0 && player != _this.thisPlayer) {
+                  isWin = true;
+                  listPromise.push(player.showWinEffect(plInfo["agWin"]));
+                }
+              });
+              cc.log(" Player agWinUser=", agWinUser);
+              if (0 != agWinUser) {
+                listPromise.push(this.thisPlayer.showWinSpineEffect(agWinUser));
+                this.thisPlayer.setChip(this.agUser);
+                this.audio.playEffect(this.audio.youWin);
+              }
+              isWin && this.audio.playEffect(this.audio.chipMoveToPlayer_turn2);
+              return [ 4, Promise.all(listPromise) ];
+
+             case 1:
+              _a.sent();
+              return [ 4, this.getMakeDelay(.25).prosime ];
+
+             case 2:
+              _a.sent();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratView.prototype.endResultAgWin = function() {};
+      BaccaratView.prototype.resetView = function() {
+        var _this = this;
+        if (!this.isResetView) {
+          this.isResetView = true;
+          this.totalBetAllGate = 0;
+          this.lbTotalBet.setMoney(0);
+          this.listChipBet.forEach(function(chip) {
+            _this.assets.chipBetPool.put(chip);
+          });
+          this.listChipBet = [];
+          this.listChipbetOther.forEach(function(chip) {
+            _this.assets.chipBetPool.put(chip);
+          });
+          this.listChipbetOther = [];
+          this.totalBetB = this.totalBetP = this.totalBetPP = this.totalBetBP = 0;
+          this.listBtnBet.forEach(function(btnBet) {
+            btnBet.getComponentInChildren(cc.Animation).node.active = false;
+          });
+          this.animWinResult.node.active = false;
+          this.setDealerAnim("DiscardCard");
+          var _loop_2 = function(i) {
+            var cardP = this_2.listCardPlayer[i];
+            var cardB = this_2.listCardBanker[i];
+            cardP.node.parent.getChildByName("cardBgWin" + (i + 1)).active = false;
+            cardB.node.parent.getChildByName("cardBgWin" + (i + 1)).active = false;
+            cc.tween(cardP.node).delay(.1 * i).to(.3, {
+              opacity: 0
+            }, {
+              easing: cc.easing.sineOut
+            }).call(function() {
+              cc.audioEngine.play(_this.audio.flipCard, false, 1);
+              cardP.getComponent(Baccarat_Card_1.default).setCardBack();
+              cardP.node.active = false;
+            }).start();
+            cc.tween(cardB.node).delay(.1 * i).to(.3, {
+              opacity: 0
+            }, {
+              easing: cc.easing.sineOut
+            }).call(function() {
+              _this.audio.playEffect(_this.audio.flipCard);
+              cardP.getComponent(Baccarat_Card_1.default).setCardBack();
+              cardB.node.active = false;
+            }).start();
+          };
+          var this_2 = this;
+          for (var i = 0; i < 3; i++) _loop_2(i);
+          this.lbScoreP.node.active = false;
+          this.lbScoreB.node.active = false;
+          this.players.forEach(function(player) {
+            player.resetPlayer();
+          });
+          this.gameState = GAME_STATE.WAITTING;
+          if (null != this.lastPlayerInfoData) {
+            this.handlePlayerInfo(this.lastPlayerInfoData);
+            this.lastPlayerInfoData = null;
+          }
+          this.listLbTotalBet.forEach(function(lb) {
+            lb.setMoneyNoTime(0);
+          });
+          this.lbTotalGateBetUser.forEach(function(lb, index) {
+            lb.node.parent.active = false;
+            _this.HistoryBet.ListGateBet[index] = _this.listTotalUserBetGate[index];
+            _this.listTotalUserBetGate[index] = 0;
+          });
+          this.historyMini.addItemHistory(this.historyTable);
+        }
+      };
+      BaccaratView.prototype.effectChipPay = function(value, gate, timedel, arrPutChip, cb) {
+        void 0 === cb && (cb = null);
+        var chipPay = this.assets.getChipBet(value);
+        chipPay["isChipPayOther"] = arrPutChip == this.listChipbetOther;
+        arrPutChip.push(chipPay);
+        var parentChipGate = this.nodeGateBet[gate - 1];
+        chipPay.parent = parentChipGate;
+        var deltaRandom = gate > 3 ? 20 : 30;
+        var ranPosX = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gate - 1].x - deltaRandom, this.listPosChipOnTable[gate - 1].x + deltaRandom);
+        var ranPosY = Windown_1.Windown.RandomNumber(this.listPosChipOnTable[gate - 1].y - deltaRandom, this.listPosChipOnTable[gate - 1].y + deltaRandom);
+        var randomPosTo = cc.v2(ranPosX, ranPosY);
+        timedel = timedel < .75 ? timedel : .75;
+        chipPay.opacity = 0;
+        cc.tween(chipPay).set({
+          x: randomPosTo.x,
+          y: randomPosTo.y + 50,
+          opacity: 0
+        }).delay(timedel).to(.3, {
+          x: randomPosTo.x,
+          y: randomPosTo.y,
+          opacity: 255
+        }, {
+          easing: cc.easing.sineIn
+        }).call(function() {
+          null != cb && cb();
+        }).start();
+      };
+      BaccaratView.prototype.showWinResult = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var _this = this;
+          return __generator(this, function(_a) {
+            return [ 2, new Promise(function(resolve, reject) {
+              return __awaiter(_this, void 0, void 0, function() {
+                var e_1;
+                var _this = this;
+                return __generator(this, function(_a) {
+                  switch (_a.label) {
+                   case 0:
+                    _a.trys.push([ 0, 2, , 3 ]);
+                    this.animWinResult.node.active = true;
+                    this.audio.playEffect(this.audio.gateWinEffect);
+                    if (this.getGateWinNormal() == BACCARAT_GATE.TIE) {
+                      this.animWinResult.node.x = 0;
+                      this.animWinResult.setSkin("tie");
+                      this.animWinResult.setSlotsToSetupPose();
+                    } else {
+                      this.animWinResult.node.x = this.getGateWinNormal() == BACCARAT_GATE.PLAYER ? -170 : 170;
+                      this.animWinResult.setSkin("win");
+                      this.animWinResult.setSlotsToSetupPose();
+                      this.getGateWinNormal() == BACCARAT_GATE.BANKER ? this.listCardBanker.forEach(function(card, index) {
+                        card.node.active && (card.node.parent.getChildByName("cardBgWin" + (index + 1)).active = true);
+                      }) : this.listCardPlayer.forEach(function(card, index) {
+                        card.node.active && (card.node.parent.getChildByName("cardBgWin" + (index + 1)).active = true);
+                      });
+                    }
+                    this.animWinResult.setAnimation(0, "appear", false);
+                    this.animWinResult.setCompleteListener(function() {
+                      _this.animWinResult.setAnimation(0, "idle", true);
+                    });
+                    this.setDealerAnim(this.getGateWinNormal() == BACCARAT_GATE.TIE ? "Win_Draw" : this.getGateWinNormal() == BACCARAT_GATE.PLAYER ? "Win_Player" : "Win_Banker");
+                    this.listGateWin.forEach(function(gateId) {
+                      _this.listBtnBet[gateId - 1].getComponentInChildren(cc.Animation).node.active = true;
+                    });
+                    return [ 4, this.getMakeDelay(1.5).prosime ];
+
+                   case 1:
+                    _a.sent();
+                    resolve(null);
+                    return [ 3, 3 ];
+
+                   case 2:
+                    e_1 = _a.sent();
+                    Util_1.Util.ThrowErrProsime(e_1);
+                    return [ 3, 3 ];
+
+                   case 3:
+                    return [ 2 ];
+                  }
+                });
+              });
+            }) ];
+          });
+        });
+      };
+      BaccaratView.prototype.setDealerAnim = function(animName, isLoop, endListener) {
+        var _this = this;
+        void 0 === isLoop && (isLoop = false);
+        void 0 === endListener && (endListener = null);
+        this.animDealer.setAnimation(0, animName, isLoop);
+        this.animDealer.setCompleteListener(null);
+        if (null != endListener) {
+          this.animDealer.setCompleteListener(endListener);
+          this.animDealer.setCompleteListener(null);
+        } else this.animDealer.setCompleteListener(function() {
+          _this.animDealer.setAnimation(0, "Idle_Tap", true);
+        });
+      };
+      BaccaratView.prototype.showScore = function(gate, arrCard, isFirstTurn) {
+        cc.log("arrCArd= ", arrCard);
+        var size = isFirstTurn ? 2 : 3;
+        var score = this.getScore(arrCard, size);
+        var showAc = cc.tween().set({
+          scale: 0
+        }).to(.3, {
+          scale: 1
+        }, {
+          easing: cc.easing.backOut
+        });
+        if (gate == BACCARAT_GATE.PLAYER) {
+          this.lbScoreP.node.active = true;
+          if (isFirstTurn) {
+            this.lbScoreP.setMoneyNoTime(score);
+            showAc.clone(this.lbScoreP.node).start();
+          } else this.lbScoreP.setMoney(score);
+        } else {
+          this.lbScoreB.node.active = true;
+          if (isFirstTurn) {
+            this.lbScoreB.setMoneyNoTime(score);
+            showAc.clone(this.lbScoreB.node).start();
+          } else this.lbScoreB.setMoney(score);
+        }
+      };
+      BaccaratView.prototype.getScore = function(arrCard, size) {
+        void 0 === size && (size = 2);
+        var score = 0;
+        for (var i = 0; i < size; i++) {
+          var card = arrCard[i];
+          var N = card["N"] >= 10 ? 0 : card["N"];
+          score += N;
+        }
+        return score % 10;
+      };
+      BaccaratView.prototype.openCard = function(cardNode, id, infoCard) {
+        var _this = this;
+        var sk1 = 0;
+        var sk2 = 0;
+        if (cardNode.x > 0) {
+          sk1 = 10;
+          sk2 = 15;
+        } else {
+          sk1 = -10;
+          sk2 = -15;
+        }
+        var deltaX = cardNode.x > 0 ? -30 : 30;
+        var posCard = cardNode.getPosition();
+        cc.tween(cardNode).to(.55, {
+          scaleX: .01,
+          angle: infoCard.angle + 10,
+          skewX: infoCard.skew.x + sk1
+        }, {
+          easing: cc.easing.cubicInOut
+        }).call(function() {
+          cardNode.getComponent(cc.Sprite).spriteFrame = _this.assets.getCardSprite(id);
+          _this.audio.playEffect(_this.audio.openCard);
+        }).to(.2, {
+          scaleX: infoCard.scaleX,
+          angle: infoCard.angle,
+          skewX: infoCard.skew.x
+        }, {
+          easing: cc.easing.cubicInOut
+        }).start();
+      };
+      BaccaratView.prototype.onCountTimeRemain = function() {
+        var _this = this;
+        this.lbTimer.node.active = true;
+        this.lbWaitting.node.active = false;
+        cc.Tween.stopAllByTarget(this.lbWaitting);
+        this.lbTimer.string = this.currentTimer + "";
+        this.schedule(function() {
+          if (_this.currentTimer > 0) {
+            _this.currentTimer--;
+            _this.lbTimer.string = _this.currentTimer + "";
+            _this.currentTimer < 6 && cc.tween(_this.lbTimer.node).to(.3, {
+              scale: 1.5
+            }, {
+              easing: cc.easing.sineOut
+            }).to(.3, {
+              scale: 1
+            }, {
+              easing: cc.easing.sineIn
+            }).start();
+          } else _this.lbTimer.string = "0";
+        }, 1, this.currentTimer);
+        cc.tween(this.sprTimer).to(this.currentTimer, {
+          fillRange: 0
+        }).start();
+      };
+      BaccaratView.prototype.onCountWaitting = function() {
+        this.lbTimer.node.active = false;
+        this.lbWaitting.node.active = true;
+        this.sprTimer.fillRange = 0;
+        cc.tween(this.lbWaitting).repeatForever(cc.tween().set({
+          string: ""
+        }).delay(.5).set({
+          string: "."
+        }).delay(.5).set({
+          string: ".."
+        }).delay(.5).set({
+          string: "..."
+        }).delay(.5)).start();
+      };
+      BaccaratView.prototype.getPlayerWithId = function(idPl) {
+        var player = null;
+        player = idPl == Windown_1.Windown.User.userId ? this.thisPlayer : this.players.find(function(player) {
+          return player.id == idPl;
+        });
+        "";
+        return player;
+      };
+      BaccaratView.prototype.getListChipValue = function(valueBet) {
+        var listValueChipSplit = [];
+        this.getNameChip(valueBet, listValueChipSplit);
+        return listValueChipSplit;
+      };
+      BaccaratView.prototype.getNameChip = function(value, listDataChip) {
+        var numbOfChip = 0;
+        var soDu = 0;
+        var valueChip = 0;
+        for (var i = 0; i < this.listValueChip.length; i++) if (this.listValueChip[i] > value) {
+          valueChip = this.listValueChip[i - 1];
+          break;
+        }
+        if (0 == valueChip) for (var i = this.listValueChip.length - 1; i >= 0; i++) if (value >= this.listValueChip[i]) {
+          valueChip = this.listValueChip[i];
+          break;
+        }
+        numbOfChip = Math.floor(value / valueChip);
+        soDu = value % valueChip;
+        value = soDu;
+        var dataChip = {
+          value: valueChip,
+          num: numbOfChip
+        };
+        if (valueChip >= 1e3) for (var i = 0; i < numbOfChip; i++) listDataChip.push(valueChip);
+        soDu > 0 && this.getNameChip(value, listDataChip);
+      };
+      BaccaratView.prototype.getGateWinNormal = function() {
+        var gateW = 0;
+        switch (this.gateWin) {
+         case BACCARAT_WIN_GATE.PLAYER:
+         case BACCARAT_WIN_GATE.PLAYER_BP:
+         case BACCARAT_WIN_GATE.PLAYER_PP:
+         case BACCARAT_WIN_GATE.PLAYER_PBP:
+          gateW = BACCARAT_WIN_GATE.PLAYER;
+          break;
+
+         case BACCARAT_WIN_GATE.BANKER:
+         case BACCARAT_WIN_GATE.BANKER_BP:
+         case BACCARAT_WIN_GATE.BANKER_PP:
+         case BACCARAT_WIN_GATE.BANKER_PBP:
+          gateW = BACCARAT_WIN_GATE.BANKER;
+          break;
+
+         case BACCARAT_WIN_GATE.TIE:
+         case BACCARAT_WIN_GATE.TIE_BP:
+         case BACCARAT_WIN_GATE.TIE_PP:
+         case BACCARAT_WIN_GATE.TIE_PBP:
+          gateW = BACCARAT_WIN_GATE.TIE;
+        }
+        return gateW;
+      };
+      BaccaratView.prototype.onClickSendBet = function(even, data) {
+        Windown_1.Windown.BaccaratController.sendBet(parseInt(data), this.currentBetValue);
+        setTimeout(function() {
+          Windown_1.Windown.BaccaratController.isCanSendData = true;
+        }, 500);
+      };
+      BaccaratView.prototype.onClickShowMenu = function() {
+        this.audio.playClick();
+        this.menu.node.active = true;
+        this.menu.onshow();
+      };
+      BaccaratView.prototype.onClickShowPopupSoiCau = function() {
+        return __awaiter(this, void 0, void 0, function() {
+          var prfabSoiCau;
+          return __generator(this, function(_a) {
+            switch (_a.label) {
+             case 0:
+              if (!(null == this.popupSoiCau)) return [ 3, 2 ];
+              Windown_1.Windown.UIManager.showLoading();
+              return [ 4, Windown_1.Windown.BaccaratController.loadPrefabBundle("PopupSoiCau") ];
+
+             case 1:
+              prfabSoiCau = _a.sent();
+              this.popupSoiCau = cc.instantiate(prfabSoiCau).getComponent(Baccarat_SoiCauView_1.default);
+              this.popupSoiCau.node.parent = Windown_1.Windown.BaccaratView.node;
+              Windown_1.Windown.UIManager.hideLoading();
+              _a.label = 2;
+
+             case 2:
+              this.popupSoiCau.node.active = true;
+              this.popupSoiCau.show();
+              return [ 2 ];
+            }
+          });
+        });
+      };
+      BaccaratView.prototype.setupTimeRunInBg = function() {
+        var _this = this;
+        cc.game.on(cc.game.EVENT_HIDE, function() {
+          _this.timeInBg = cc.sys.now();
+        });
+        cc.game.on(cc.game.EVENT_SHOW, function() {
+          var timeNow = cc.sys.now();
+          var timeHide = _this.timeInBg;
+          cc.director.getActionManager().update((timeNow - timeHide) / 1e3);
+          cc.Tween.stopAllByTag(1);
+          (timeNow - timeHide) / 1e3 > 15 && Windown_1.Windown.BaccaratController.onClickBackToLobby();
+        });
+      };
+      __decorate([ property([ Baccarat_Player_1.default ]) ], BaccaratView.prototype, "players", void 0);
+      __decorate([ property(Baccarat_Player_1.default) ], BaccaratView.prototype, "thisPlayer", void 0);
+      __decorate([ property(Baccarat_Assets_1.default) ], BaccaratView.prototype, "assets", void 0);
+      __decorate([ property(Baccarat_MenuView_1.default) ], BaccaratView.prototype, "menu", void 0);
+      __decorate([ property(Baccarat_ButtonBet_1.default) ], BaccaratView.prototype, "buttonBetController", void 0);
+      __decorate([ property(Baccarat_HistoryMini_1.default) ], BaccaratView.prototype, "historyMini", void 0);
+      __decorate([ property(Baccarat_PopupHistory_1.default) ], BaccaratView.prototype, "popupHistoryBetView", void 0);
+      __decorate([ property(Baccarat_Audio_1.default) ], BaccaratView.prototype, "audio", void 0);
+      __decorate([ property(Baccarat_SoiCauView_1.default) ], BaccaratView.prototype, "popupSoiCau", void 0);
+      __decorate([ property(cc.Node) ], BaccaratView.prototype, "nodeGroupUser", void 0);
+      __decorate([ property([ cc.Node ]) ], BaccaratView.prototype, "nodeGateBet", void 0);
+      __decorate([ property([ Baccarat_Card_1.default ]) ], BaccaratView.prototype, "listCardPlayer", void 0);
+      __decorate([ property([ Baccarat_Card_1.default ]) ], BaccaratView.prototype, "listCardBanker", void 0);
+      __decorate([ property(cc.Node) ], BaccaratView.prototype, "nodeGetChip", void 0);
+      __decorate([ property(cc.Label) ], BaccaratView.prototype, "lbOtherPlayer", void 0);
+      __decorate([ property(cc.Label) ], BaccaratView.prototype, "lbTimer", void 0);
+      __decorate([ property(cc.Label) ], BaccaratView.prototype, "lbWaitting", void 0);
+      __decorate([ property(cc.Label) ], BaccaratView.prototype, "lbSession", void 0);
+      __decorate([ property(cc.Sprite) ], BaccaratView.prototype, "sprTimer", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbScoreP", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbScoreB", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBet", void 0);
+      __decorate([ property(sp.Skeleton) ], BaccaratView.prototype, "animDealer", void 0);
+      __decorate([ property(sp.Skeleton) ], BaccaratView.prototype, "animWinResult", void 0);
+      __decorate([ property([ cc.Vec2 ]) ], BaccaratView.prototype, "posPayChipOther", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBetB", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBetP", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBetT", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBetBP", void 0);
+      __decorate([ property(LbMoneyChange_1.default) ], BaccaratView.prototype, "lbTotalBetPP", void 0);
+      __decorate([ property([ cc.Vec2 ]) ], BaccaratView.prototype, "listPosChipOnTable", void 0);
+      __decorate([ property([ cc.Label ]) ], BaccaratView.prototype, "lbTotalGateBetUser", void 0);
+      BaccaratView = __decorate([ ccclass ], BaccaratView);
+      return BaccaratView;
+    }(cc.Component);
+    exports.default = BaccaratView;
+    cc._RF.pop();
+  }, {
+    "../../../Scritps/Obs/LbMoneyChange": void 0,
+    "../../../Scritps/Other/MakeDelay": void 0,
+    "../../../Scritps/Util": void 0,
+    "../../../Scritps/Windown": void 0,
+    "./Baccarat.Assets": "Baccarat.Assets",
+    "./Baccarat.Audio": "Baccarat.Audio",
+    "./Baccarat.ButtonBet": "Baccarat.ButtonBet",
+    "./Baccarat.Card": "Baccarat.Card",
+    "./Baccarat.HistoryBet": "Baccarat.HistoryBet",
+    "./Baccarat.HistoryMini": "Baccarat.HistoryMini",
+    "./Baccarat.MenuView": "Baccarat.MenuView",
+    "./Baccarat.Player": "Baccarat.Player",
+    "./Baccarat.PopupHistory": "Baccarat.PopupHistory",
+    "./Baccarat.SoiCauView": "Baccarat.SoiCauView"
+  } ]
+}, {}, [ "Baccarat.Assets", "Baccarat.Audio", "Baccarat.BigRoad", "Baccarat.ButtonBet", "Baccarat.Card", "Baccarat.ChipBet", "Baccarat.DishRoadBoard", "Baccarat.HistoryBet", "Baccarat.HistoryMini", "Baccarat.MenuView", "Baccarat.Player", "Baccarat.PopupHistory", "Baccarat.ScoreBoard", "Baccarat.SettingView", "Baccarat.SoiCauView", "BaccaratController", "BaccaratView" ]);

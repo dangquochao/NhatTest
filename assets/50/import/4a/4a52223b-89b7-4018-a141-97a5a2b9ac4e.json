@@ -1,1 +1,618 @@
-[1,["b0cUP2LwZH9o5MFBj9cU/I"],0,[["sp.SkeletonData",["_name","_atlasText","textureNames","_skeletonJson","textures"],-1,3]],[[0,0,1,2,3,4,5]],[[0,"skeleton","\r\nskeleton.png\r\nsize: 1024,512\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nanim_lost_leaf_1\r\n  rotate: false\r\n  xy: 2, 381\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_10\r\n  rotate: false\r\n  xy: 608, 381\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_11\r\n  rotate: false\r\n  xy: 2, 113\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_12\r\n  rotate: false\r\n  xy: 204, 180\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_13\r\n  rotate: false\r\n  xy: 406, 247\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_14\r\n  rotate: false\r\n  xy: 608, 314\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_15\r\n  rotate: false\r\n  xy: 810, 381\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_16\r\n  rotate: false\r\n  xy: 2, 46\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_17\r\n  rotate: false\r\n  xy: 204, 113\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_18\r\n  rotate: false\r\n  xy: 406, 180\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_19\r\n  rotate: false\r\n  xy: 608, 247\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_2\r\n  rotate: false\r\n  xy: 2, 314\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_20\r\n  rotate: false\r\n  xy: 810, 314\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_3\r\n  rotate: false\r\n  xy: 204, 381\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_4\r\n  rotate: false\r\n  xy: 2, 247\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_5\r\n  rotate: false\r\n  xy: 204, 314\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_6\r\n  rotate: false\r\n  xy: 406, 381\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_7\r\n  rotate: false\r\n  xy: 2, 180\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_8\r\n  rotate: false\r\n  xy: 204, 247\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nanim_lost_leaf_9\r\n  rotate: false\r\n  xy: 406, 314\r\n  size: 200, 65\r\n  orig: 200, 65\r\n  offset: 0, 0\r\n  index: -1\r\nthua\r\n  rotate: false\r\n  xy: 2, 2\r\n  size: 116, 42\r\n  orig: 116, 42\r\n  offset: 0, 0\r\n  index: -1\r\n",["skeleton.png"],{"skeleton":{"hash":"c2ypuG0Vs5COf9uv12fH9EwQvTs","spine":"3.6.46","width":220.71,"height":71.73,"images":""},"bones":[{"name":"root"},{"name":"bone","parent":"root","x":1},{"name":"bone2","parent":"bone","length":61.01,"rotation":90.9,"x":-1},{"name":"bone3","parent":"root","x":-18.64,"y":-5.93,"scaleX":2,"scaleY":2},{"name":"bone4","parent":"root","x":-18.64,"y":-5.93,"scaleX":2,"scaleY":2}],"slots":[{"name":"thua","bone":"bone2","attachment":"thua"},{"name":"anim_lost_leaf_1","bone":"bone3","attachment":"anim_lost_leaf_1"},{"name":"anim_lost_leaf_2","bone":"bone4","attachment":"anim_lost_leaf_1"}],"skins":{"default":{"anim_lost_leaf_1":{"anim_lost_leaf_1":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_2":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_3":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_4":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_5":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_6":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_7":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_8":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_9":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_10":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_11":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_12":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_13":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_14":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_15":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_16":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_17":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_18":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_19":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_20":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65}},"anim_lost_leaf_2":{"anim_lost_leaf_1":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_2":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_3":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_4":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_5":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_6":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_7":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_8":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_9":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_10":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_11":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_12":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_13":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_14":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_15":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_16":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_17":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_18":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_19":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65},"anim_lost_leaf_20":{"scaleX":0.552,"scaleY":0.552,"width":200,"height":65}},"thua":{"thua":{"x":-2,"y":0.03,"rotation":-90.9,"width":116,"height":42}}}},"animations":{"animation":{"slots":{"anim_lost_leaf_1":{"attachment":[{"time":0,"name":null},{"time":0.2333,"name":"anim_lost_leaf_1"},{"time":0.2667,"name":"anim_lost_leaf_2"},{"time":0.3,"name":"anim_lost_leaf_3"},{"time":0.3333,"name":"anim_lost_leaf_4"},{"time":0.3667,"name":"anim_lost_leaf_5"},{"time":0.4,"name":"anim_lost_leaf_6"},{"time":0.4333,"name":"anim_lost_leaf_7"},{"time":0.4667,"name":"anim_lost_leaf_8"},{"time":0.5,"name":"anim_lost_leaf_9"},{"time":0.5333,"name":"anim_lost_leaf_10"},{"time":0.5667,"name":"anim_lost_leaf_11"},{"time":0.6,"name":"anim_lost_leaf_12"},{"time":0.6333,"name":"anim_lost_leaf_13"},{"time":0.6667,"name":"anim_lost_leaf_14"},{"time":0.7,"name":"anim_lost_leaf_15"},{"time":0.7333,"name":"anim_lost_leaf_16"},{"time":0.7667,"name":"anim_lost_leaf_17"},{"time":0.8,"name":"anim_lost_leaf_18"},{"time":0.8333,"name":"anim_lost_leaf_19"},{"time":0.8667,"name":"anim_lost_leaf_20"},{"time":0.9,"name":null},{"time":1.6667,"name":null}]},"anim_lost_leaf_2":{"attachment":[{"time":0,"name":null},{"time":0.2333,"name":"anim_lost_leaf_1"},{"time":0.2667,"name":"anim_lost_leaf_2"},{"time":0.3,"name":"anim_lost_leaf_3"},{"time":0.3333,"name":"anim_lost_leaf_4"},{"time":0.3667,"name":"anim_lost_leaf_5"},{"time":0.4,"name":"anim_lost_leaf_6"},{"time":0.4333,"name":"anim_lost_leaf_7"},{"time":0.4667,"name":"anim_lost_leaf_8"},{"time":0.5,"name":"anim_lost_leaf_9"},{"time":0.5333,"name":"anim_lost_leaf_10"},{"time":0.5667,"name":"anim_lost_leaf_11"},{"time":0.6,"name":"anim_lost_leaf_12"},{"time":0.6333,"name":"anim_lost_leaf_13"},{"time":0.6667,"name":"anim_lost_leaf_14"},{"time":0.7,"name":"anim_lost_leaf_15"},{"time":0.7333,"name":"anim_lost_leaf_16"},{"time":0.7667,"name":"anim_lost_leaf_17"},{"time":0.8,"name":"anim_lost_leaf_18"},{"time":0.8333,"name":"anim_lost_leaf_19"},{"time":0.8667,"name":"anim_lost_leaf_20"},{"time":0.9,"name":null},{"time":1.6667,"name":null}]},"thua":{"attachment":[{"time":0,"name":null},{"time":0.0333,"name":"thua"}]}},"bones":{"bone2":{"translate":[{"time":0,"x":-1.91,"y":119.91},{"time":0.1,"x":0,"y":0},{"time":0.1333,"x":-0.21,"y":12.95},{"time":0.1667,"x":0,"y":0},{"time":0.2333,"x":-0.18,"y":11},{"time":0.3,"x":0,"y":0}]}}}}},[0]]],0,0,[0],[-1],[0]]
+[
+  1,
+  [
+    "b0cUP2LwZH9o5MFBj9cU/I"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "skeleton",
+      "\nskeleton.png\nsize: 1024,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nanim_lost_leaf_1\n  rotate: false\n  xy: 2, 381\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_10\n  rotate: false\n  xy: 608, 381\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_11\n  rotate: false\n  xy: 2, 113\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_12\n  rotate: false\n  xy: 204, 180\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_13\n  rotate: false\n  xy: 406, 247\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_14\n  rotate: false\n  xy: 608, 314\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_15\n  rotate: false\n  xy: 810, 381\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_16\n  rotate: false\n  xy: 2, 46\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_17\n  rotate: false\n  xy: 204, 113\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_18\n  rotate: false\n  xy: 406, 180\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_19\n  rotate: false\n  xy: 608, 247\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_2\n  rotate: false\n  xy: 2, 314\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_20\n  rotate: false\n  xy: 810, 314\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_3\n  rotate: false\n  xy: 204, 381\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_4\n  rotate: false\n  xy: 2, 247\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_5\n  rotate: false\n  xy: 204, 314\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_6\n  rotate: false\n  xy: 406, 381\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_7\n  rotate: false\n  xy: 2, 180\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_8\n  rotate: false\n  xy: 204, 247\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nanim_lost_leaf_9\n  rotate: false\n  xy: 406, 314\n  size: 200, 65\n  orig: 200, 65\n  offset: 0, 0\n  index: -1\nthua\n  rotate: false\n  xy: 2, 2\n  size: 116, 42\n  orig: 116, 42\n  offset: 0, 0\n  index: -1\n",
+      [
+        "skeleton.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "c2ypuG0Vs5COf9uv12fH9EwQvTs",
+          "spine": "3.6.46",
+          "width": 220.71,
+          "height": 71.73,
+          "images": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "bone",
+            "parent": "root",
+            "x": 1
+          },
+          {
+            "name": "bone2",
+            "parent": "bone",
+            "length": 61.01,
+            "rotation": 90.9,
+            "x": -1
+          },
+          {
+            "name": "bone3",
+            "parent": "root",
+            "x": -18.64,
+            "y": -5.93,
+            "scaleX": 2,
+            "scaleY": 2
+          },
+          {
+            "name": "bone4",
+            "parent": "root",
+            "x": -18.64,
+            "y": -5.93,
+            "scaleX": 2,
+            "scaleY": 2
+          }
+        ],
+        "slots": [
+          {
+            "name": "thua",
+            "bone": "bone2",
+            "attachment": "thua"
+          },
+          {
+            "name": "anim_lost_leaf_1",
+            "bone": "bone3",
+            "attachment": "anim_lost_leaf_1"
+          },
+          {
+            "name": "anim_lost_leaf_2",
+            "bone": "bone4",
+            "attachment": "anim_lost_leaf_1"
+          }
+        ],
+        "skins": {
+          "default": {
+            "anim_lost_leaf_1": {
+              "anim_lost_leaf_1": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_2": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_3": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_4": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_5": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_6": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_7": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_8": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_9": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_10": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_11": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_12": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_13": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_14": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_15": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_16": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_17": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_18": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_19": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_20": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              }
+            },
+            "anim_lost_leaf_2": {
+              "anim_lost_leaf_1": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_2": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_3": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_4": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_5": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_6": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_7": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_8": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_9": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_10": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_11": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_12": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_13": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_14": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_15": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_16": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_17": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_18": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_19": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              },
+              "anim_lost_leaf_20": {
+                "scaleX": 0.552,
+                "scaleY": 0.552,
+                "width": 200,
+                "height": 65
+              }
+            },
+            "thua": {
+              "thua": {
+                "x": -2,
+                "y": 0.03,
+                "rotation": -90.9,
+                "width": 116,
+                "height": 42
+              }
+            }
+          }
+        },
+        "animations": {
+          "animation": {
+            "slots": {
+              "anim_lost_leaf_1": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": null
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "anim_lost_leaf_1"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "anim_lost_leaf_2"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "anim_lost_leaf_3"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "anim_lost_leaf_4"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "anim_lost_leaf_5"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "anim_lost_leaf_6"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "anim_lost_leaf_7"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "anim_lost_leaf_8"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "anim_lost_leaf_9"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "anim_lost_leaf_10"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "anim_lost_leaf_11"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "anim_lost_leaf_12"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "anim_lost_leaf_13"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "anim_lost_leaf_14"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "anim_lost_leaf_15"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "anim_lost_leaf_16"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "anim_lost_leaf_17"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "anim_lost_leaf_18"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "anim_lost_leaf_19"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "anim_lost_leaf_20"
+                  },
+                  {
+                    "time": 0.9,
+                    "name": null
+                  },
+                  {
+                    "time": 1.6667,
+                    "name": null
+                  }
+                ]
+              },
+              "anim_lost_leaf_2": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": null
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "anim_lost_leaf_1"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "anim_lost_leaf_2"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "anim_lost_leaf_3"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "anim_lost_leaf_4"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "anim_lost_leaf_5"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "anim_lost_leaf_6"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "anim_lost_leaf_7"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "anim_lost_leaf_8"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "anim_lost_leaf_9"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "anim_lost_leaf_10"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "anim_lost_leaf_11"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "anim_lost_leaf_12"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "anim_lost_leaf_13"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "anim_lost_leaf_14"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "anim_lost_leaf_15"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "anim_lost_leaf_16"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "anim_lost_leaf_17"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "anim_lost_leaf_18"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "anim_lost_leaf_19"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "anim_lost_leaf_20"
+                  },
+                  {
+                    "time": 0.9,
+                    "name": null
+                  },
+                  {
+                    "time": 1.6667,
+                    "name": null
+                  }
+                ]
+              },
+              "thua": {
+                "attachment": [
+                  {
+                    "time": 0,
+                    "name": null
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "thua"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone2": {
+                "translate": [
+                  {
+                    "time": 0,
+                    "x": -1.91,
+                    "y": 119.91
+                  },
+                  {
+                    "time": 0.1,
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "time": 0.1333,
+                    "x": -0.21,
+                    "y": 12.95
+                  },
+                  {
+                    "time": 0.1667,
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": -0.18,
+                    "y": 11
+                  },
+                  {
+                    "time": 0.3,
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

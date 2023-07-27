@@ -1,1 +1,380 @@
-[1,["10z55UeqpImrvwW57q38NQ"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"tw_vfx_a_add_08","rect":[1256,1,536,705],"offset":[2,19],"originalSize":[540,763],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_02","rect":[1286,539,536,593],"offset":[2,-15],"originalSize":[540,763],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_09","rect":[748,1246,532,697],"offset":[4,12],"originalSize":[540,763],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_06","rect":[1,1,536,755],"offset":[2,-4],"originalSize":[540,763],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_03","rect":[1,1296,536,669],"offset":[2,-12],"originalSize":[540,763],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_05","rect":[1,758,536,745],"offset":[2,-9],"originalSize":[540,763],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_10","rect":[1447,1134,528,689],"offset":[6,5],"originalSize":[540,763],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_04","rect":[539,1,536,715],"offset":[2,-10],"originalSize":[540,763],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw_vfx_a_add_07","rect":[748,539,536,705],"offset":[2,23],"originalSize":[540,763],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "10z55UeqpImrvwW57q38NQ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_08",
+          "rect": [
+            1256,
+            1,
+            536,
+            705
+          ],
+          "offset": [
+            2,
+            19
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_02",
+          "rect": [
+            1286,
+            539,
+            536,
+            593
+          ],
+          "offset": [
+            2,
+            -15
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_09",
+          "rect": [
+            748,
+            1246,
+            532,
+            697
+          ],
+          "offset": [
+            4,
+            12
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_06",
+          "rect": [
+            1,
+            1,
+            536,
+            755
+          ],
+          "offset": [
+            2,
+            -4
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_03",
+          "rect": [
+            1,
+            1296,
+            536,
+            669
+          ],
+          "offset": [
+            2,
+            -12
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_05",
+          "rect": [
+            1,
+            758,
+            536,
+            745
+          ],
+          "offset": [
+            2,
+            -9
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_10",
+          "rect": [
+            1447,
+            1134,
+            528,
+            689
+          ],
+          "offset": [
+            6,
+            5
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_04",
+          "rect": [
+            539,
+            1,
+            536,
+            715
+          ],
+          "offset": [
+            2,
+            -10
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw_vfx_a_add_07",
+          "rect": [
+            748,
+            539,
+            536,
+            705
+          ],
+          "offset": [
+            2,
+            23
+          ],
+          "originalSize": [
+            540,
+            763
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

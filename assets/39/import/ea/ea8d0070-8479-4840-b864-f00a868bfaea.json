@@ -1,1 +1,51 @@
-[1,["70OJLxCOtHtZr7I0zJe7uP"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"7510f836-342d-4719-9b0f-da041bbcccf6","rect":[0,0,103,233],"offset":[0,0],"originalSize":[103,233],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "70OJLxCOtHtZr7I0zJe7uP"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "7510f836-342d-4719-9b0f-da041bbcccf6",
+      "rect": [
+        0,
+        0,
+        103,
+        233
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        103,
+        233
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

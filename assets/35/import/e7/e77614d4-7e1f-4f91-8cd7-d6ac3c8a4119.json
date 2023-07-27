@@ -1,1 +1,51 @@
-[1,["7fhma3kk9OTrnIE2OZmpg4"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"h_erlang","rect":[2,17,662,647],"offset":[0,-7.5],"originalSize":[666,666],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "7fhma3kk9OTrnIE2OZmpg4"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "h_erlang",
+      "rect": [
+        2,
+        17,
+        662,
+        647
+      ],
+      "offset": [
+        0,
+        -7.5
+      ],
+      "originalSize": [
+        666,
+        666
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

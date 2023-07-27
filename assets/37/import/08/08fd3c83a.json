@@ -1,1 +1,618 @@
-[1,["5enpYaPchMS6RIKU8Kzdsa"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"Alats6-sd_vfx_a_add_05","rect":[432,432,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_09","rect":[432,864,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_04","rect":[0,432,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_02","rect":[0,216,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_01","rect":[432,0,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_11","rect":[0,1512,432,216],"offset":[0,0],"originalSize":[432,216],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_06","rect":[0,648,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_03","rect":[432,216,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_10","rect":[0,1080,432,216],"offset":[0,0],"originalSize":[432,216],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_12","rect":[216,1080,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_07","rect":[432,648,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_00","rect":[0,0,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_08","rect":[0,864,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_13","rect":[648,1080,432,216],"offset":[0,0],"originalSize":[432,216],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"Alats6-sd_vfx_a_add_14","rect":[216,1296,432,216],"offset":[0,0],"originalSize":[432,216],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "5enpYaPchMS6RIKU8Kzdsa"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_05",
+          "rect": [
+            432,
+            432,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_09",
+          "rect": [
+            432,
+            864,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_04",
+          "rect": [
+            0,
+            432,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_02",
+          "rect": [
+            0,
+            216,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_01",
+          "rect": [
+            432,
+            0,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_11",
+          "rect": [
+            0,
+            1512,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_06",
+          "rect": [
+            0,
+            648,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_03",
+          "rect": [
+            432,
+            216,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_10",
+          "rect": [
+            0,
+            1080,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_12",
+          "rect": [
+            216,
+            1080,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_07",
+          "rect": [
+            432,
+            648,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_00",
+          "rect": [
+            0,
+            0,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_08",
+          "rect": [
+            0,
+            864,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_13",
+          "rect": [
+            648,
+            1080,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alats6-sd_vfx_a_add_14",
+          "rect": [
+            216,
+            1296,
+            432,
+            216
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            432,
+            216
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

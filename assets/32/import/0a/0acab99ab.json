@@ -1,1 +1,267 @@
-[1,["f6ipHG6oNG/5JP1CCOL0zY","38EMJmH7ZLw6EedyzxDAP5"],["spriteFrame","_textureSetter"],["cc.SpriteFrame",["cc.BitmapFont",["_name","fontSize","_fntConfig"],0]],[[1,0,1,2,4]],[[[[0,"CoinWin",74,{"commonHeight":74,"fontSize":74,"atlasName":"CoinWin.png","fontDefDictionary":{"9":{"xOffset":0,"yOffset":0,"xAdvance":720,"rect":{"x":0,"y":0,"width":0,"height":0}},"32":{"xOffset":0,"yOffset":0,"xAdvance":90,"rect":{"x":0,"y":0,"width":0,"height":0}},"43":{"xOffset":0,"yOffset":0,"xAdvance":74,"rect":{"x":0,"y":0,"width":67,"height":74}},"45":{"xOffset":0,"yOffset":20,"xAdvance":50,"rect":{"x":193,"y":0,"width":43,"height":35}},"48":{"xOffset":0,"yOffset":0,"xAdvance":68,"rect":{"x":126,"y":150,"width":61,"height":74}},"49":{"xOffset":0,"yOffset":0,"xAdvance":52,"rect":{"x":188,"y":150,"width":45,"height":71}},"50":{"xOffset":0,"yOffset":0,"xAdvance":68,"rect":{"x":126,"y":75,"width":61,"height":74}},"51":{"xOffset":0,"yOffset":0,"xAdvance":69,"rect":{"x":63,"y":150,"width":62,"height":74}},"52":{"xOffset":0,"yOffset":0,"xAdvance":69,"rect":{"x":63,"y":75,"width":62,"height":74}},"53":{"xOffset":0,"yOffset":0,"xAdvance":69,"rect":{"x":68,"y":0,"width":62,"height":74}},"54":{"xOffset":0,"yOffset":0,"xAdvance":68,"rect":{"x":131,"y":0,"width":61,"height":74}},"55":{"xOffset":0,"yOffset":0,"xAdvance":60,"rect":{"x":188,"y":75,"width":53,"height":74}},"56":{"xOffset":0,"yOffset":0,"xAdvance":69,"rect":{"x":0,"y":150,"width":62,"height":74}},"57":{"xOffset":0,"yOffset":0,"xAdvance":69,"rect":{"x":0,"y":75,"width":62,"height":74}},"120":{"xOffset":0,"yOffset":0,"xAdvance":74,"rect":{"x":0,"y":225,"width":67,"height":67}}},"kerningDict":{}}]],0,0,[0],[0],[0]],[[{"name":"CoinWin","rect":[0,0,240,295],"offset":[-8,0.5],"originalSize":[256,296],"capInsets":[0,0,0,0]}],[0],0,[0],[1],[1]]]]
+[
+  1,
+  [
+    "f6ipHG6oNG/5JP1CCOL0zY",
+    "38EMJmH7ZLw6EedyzxDAP5"
+  ],
+  [
+    "spriteFrame",
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.BitmapFont",
+      [
+        "_name",
+        "fontSize",
+        "_fntConfig"
+      ],
+      0
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2,
+      4
+    ]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "CoinWin",
+          74,
+          {
+            "commonHeight": 74,
+            "fontSize": 74,
+            "atlasName": "CoinWin.png",
+            "fontDefDictionary": {
+              "9": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 720,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              "32": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 90,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              "43": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 74,
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 67,
+                  "height": 74
+                }
+              },
+              "45": {
+                "xOffset": 0,
+                "yOffset": 20,
+                "xAdvance": 50,
+                "rect": {
+                  "x": 193,
+                  "y": 0,
+                  "width": 43,
+                  "height": 35
+                }
+              },
+              "48": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 68,
+                "rect": {
+                  "x": 126,
+                  "y": 150,
+                  "width": 61,
+                  "height": 74
+                }
+              },
+              "49": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 52,
+                "rect": {
+                  "x": 188,
+                  "y": 150,
+                  "width": 45,
+                  "height": 71
+                }
+              },
+              "50": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 68,
+                "rect": {
+                  "x": 126,
+                  "y": 75,
+                  "width": 61,
+                  "height": 74
+                }
+              },
+              "51": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 69,
+                "rect": {
+                  "x": 63,
+                  "y": 150,
+                  "width": 62,
+                  "height": 74
+                }
+              },
+              "52": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 69,
+                "rect": {
+                  "x": 63,
+                  "y": 75,
+                  "width": 62,
+                  "height": 74
+                }
+              },
+              "53": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 69,
+                "rect": {
+                  "x": 68,
+                  "y": 0,
+                  "width": 62,
+                  "height": 74
+                }
+              },
+              "54": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 68,
+                "rect": {
+                  "x": 131,
+                  "y": 0,
+                  "width": 61,
+                  "height": 74
+                }
+              },
+              "55": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 60,
+                "rect": {
+                  "x": 188,
+                  "y": 75,
+                  "width": 53,
+                  "height": 74
+                }
+              },
+              "56": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 69,
+                "rect": {
+                  "x": 0,
+                  "y": 150,
+                  "width": 62,
+                  "height": 74
+                }
+              },
+              "57": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 69,
+                "rect": {
+                  "x": 0,
+                  "y": 75,
+                  "width": 62,
+                  "height": 74
+                }
+              },
+              "120": {
+                "xOffset": 0,
+                "yOffset": 0,
+                "xAdvance": 74,
+                "rect": {
+                  "x": 0,
+                  "y": 225,
+                  "width": 67,
+                  "height": 67
+                }
+              }
+            },
+            "kerningDict": {}
+          }
+        ]
+      ],
+      0,
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "CoinWin",
+          "rect": [
+            0,
+            0,
+            240,
+            295
+          ],
+          "offset": [
+            -8,
+            0.5
+          ],
+          "originalSize": [
+            256,
+            296
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

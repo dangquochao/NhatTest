@@ -1,1 +1,51 @@
-[1,["3cMClR0TNBMLMC8NCkTsFU"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"btn_dan","rect":[0,0,144,82],"offset":[0,0],"originalSize":[144,82],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "3cMClR0TNBMLMC8NCkTsFU"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "btn_dan",
+      "rect": [
+        0,
+        0,
+        144,
+        82
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        144,
+        82
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

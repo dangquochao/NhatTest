@@ -1,1 +1,51 @@
-[1,["fbXBtpnetCTKOZfM8VkICu"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"bomb","rect":[3,3,956,488],"offset":[-31,9],"originalSize":[1024,512],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "fbXBtpnetCTKOZfM8VkICu"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bomb",
+      "rect": [
+        3,
+        3,
+        956,
+        488
+      ],
+      "offset": [
+        -31,
+        9
+      ],
+      "originalSize": [
+        1024,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

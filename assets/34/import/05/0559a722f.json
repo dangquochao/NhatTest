@@ -1,1 +1,770 @@
-[1,["a0mOvW9K5LSqhMVGYugTpT","b7jwj2DrpLjq9rRWCc8qd5","f45BEUipZC6YlM/dTOUSxg","c7cRFuQDtO9o78Un+97Xg3","9aV0ZuBDZDHrEgzbHp7UCB","2dDvpmqs1ErIm6AH+knk0h","68STikzMJI976CIfZmaOep","5dxC7LcTxH2Jxg9Sxg7qED","cdbjFWFAFCcK3p72vCfzQ/","22uuOvlxxPnqugLbfimQgL","20/+1B71pDa5NVDL+Fmcrc","c6+WJPqNVBU5nOmh8/XoVD","98tbvVlvtNoYV+m7GQfqLG","4bHuKyAElIy4YjnKx3aixd","e24wRjgxdDCpNyyoj4VAcH","fcR1t+u5VBK48wFVv1Ve9K","cd6Z9AuH9IsIczTOQGxRAF","b5IDdJqp9L/7c68ChR/Nr9","526PKcoqxCEL++ymhGdvfT","9dLWnO9PNLbJ9LpfttFLE3","0e/5jJBbtJaZKhHx0RsCkq","0a2xM1Sw5HAbdONpDIc3Qe","22FmTOPqlF8oid4qCEPW3E","ca3MH1NTxNAZglwWJ5iji6","9fXILEeaVOBbLzDKHe1Yr4"],["_textureSetter","multikill_10","multikill_16","multikill_04","multikill_08","multikill_06","multikill_07","multikill_12","multikill_15","multikill_14","multikill_20","multikill_11","multikill_02","multikill_00","multikill_19","multikill_13","multikill_01","multikill_03","multikill_05","multikill_09","multikill_17","multikill_21","multikill_18","multikill_22","multikill_23"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[{"name":"multikill_21","rect":[1514,914,113,152],"offset":[89,-24],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_17","rect":[1917,1,99,132],"offset":[77,-26],"originalSize":[735,630],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_20","rect":[1668,914,117,146],"offset":[89,-25],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_18","rect":[1642,1033,105,136],"offset":[81,-26],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_14","rect":[1917,269,89,128],"offset":[65,-24],"originalSize":[735,630],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"Alats31.plist",[{},"multikill_10",6,0,"multikill_16",6,1,"multikill_04",6,2,"multikill_08",6,3,"multikill_06",6,4,"multikill_07",6,5,"multikill_12",6,6,"multikill_15",6,7,"multikill_14",6,8,"multikill_20",6,9,"multikill_11",6,10,"multikill_02",6,11,"multikill_00",6,12,"multikill_19",6,13,"multikill_13",6,14,"multikill_01",6,15,"multikill_03",6,16,"multikill_05",6,17,"multikill_09",6,18,"multikill_17",6,19,"multikill_21",6,20,"multikill_18",6,21,"multikill_22",6,22,"multikill_23",6,23]]],0,0,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]],[[{"name":"multikill_12","rect":[1780,1058,103,124],"offset":[47,-26],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_23","rect":[1829,642,51,98],"offset":[127,-55],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_11","rect":[959,1009,161,126],"offset":[19,-25],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_22","rect":[1729,642,51,98],"offset":[124,-53],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_15","rect":[1917,135,91,132],"offset":[69,-23],"originalSize":[735,630],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_19","rect":[1816,914,111,142],"offset":[85,-25],"originalSize":[735,630],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_16","rect":[1259,615,95,134],"offset":[73,-23],"originalSize":[735,630],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"multikill_13","rect":[1917,399,85,126],"offset":[62,-25],"originalSize":[735,630],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "a0mOvW9K5LSqhMVGYugTpT",
+    "b7jwj2DrpLjq9rRWCc8qd5",
+    "f45BEUipZC6YlM/dTOUSxg",
+    "c7cRFuQDtO9o78Un+97Xg3",
+    "9aV0ZuBDZDHrEgzbHp7UCB",
+    "2dDvpmqs1ErIm6AH+knk0h",
+    "68STikzMJI976CIfZmaOep",
+    "5dxC7LcTxH2Jxg9Sxg7qED",
+    "cdbjFWFAFCcK3p72vCfzQ/",
+    "22uuOvlxxPnqugLbfimQgL",
+    "20/+1B71pDa5NVDL+Fmcrc",
+    "c6+WJPqNVBU5nOmh8/XoVD",
+    "98tbvVlvtNoYV+m7GQfqLG",
+    "4bHuKyAElIy4YjnKx3aixd",
+    "e24wRjgxdDCpNyyoj4VAcH",
+    "fcR1t+u5VBK48wFVv1Ve9K",
+    "cd6Z9AuH9IsIczTOQGxRAF",
+    "b5IDdJqp9L/7c68ChR/Nr9",
+    "526PKcoqxCEL++ymhGdvfT",
+    "9dLWnO9PNLbJ9LpfttFLE3",
+    "0e/5jJBbtJaZKhHx0RsCkq",
+    "0a2xM1Sw5HAbdONpDIc3Qe",
+    "22FmTOPqlF8oid4qCEPW3E",
+    "ca3MH1NTxNAZglwWJ5iji6",
+    "9fXILEeaVOBbLzDKHe1Yr4"
+  ],
+  [
+    "_textureSetter",
+    "multikill_10",
+    "multikill_16",
+    "multikill_04",
+    "multikill_08",
+    "multikill_06",
+    "multikill_07",
+    "multikill_12",
+    "multikill_15",
+    "multikill_14",
+    "multikill_20",
+    "multikill_11",
+    "multikill_02",
+    "multikill_00",
+    "multikill_19",
+    "multikill_13",
+    "multikill_01",
+    "multikill_03",
+    "multikill_05",
+    "multikill_09",
+    "multikill_17",
+    "multikill_21",
+    "multikill_18",
+    "multikill_22",
+    "multikill_23"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "multikill_21",
+          "rect": [
+            1514,
+            914,
+            113,
+            152
+          ],
+          "offset": [
+            89,
+            -24
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_17",
+          "rect": [
+            1917,
+            1,
+            99,
+            132
+          ],
+          "offset": [
+            77,
+            -26
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_20",
+          "rect": [
+            1668,
+            914,
+            117,
+            146
+          ],
+          "offset": [
+            89,
+            -25
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_18",
+          "rect": [
+            1642,
+            1033,
+            105,
+            136
+          ],
+          "offset": [
+            81,
+            -26
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_14",
+          "rect": [
+            1917,
+            269,
+            89,
+            128
+          ],
+          "offset": [
+            65,
+            -24
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Alats31.plist",
+          [
+            {},
+            "multikill_10",
+            6,
+            0,
+            "multikill_16",
+            6,
+            1,
+            "multikill_04",
+            6,
+            2,
+            "multikill_08",
+            6,
+            3,
+            "multikill_06",
+            6,
+            4,
+            "multikill_07",
+            6,
+            5,
+            "multikill_12",
+            6,
+            6,
+            "multikill_15",
+            6,
+            7,
+            "multikill_14",
+            6,
+            8,
+            "multikill_20",
+            6,
+            9,
+            "multikill_11",
+            6,
+            10,
+            "multikill_02",
+            6,
+            11,
+            "multikill_00",
+            6,
+            12,
+            "multikill_19",
+            6,
+            13,
+            "multikill_13",
+            6,
+            14,
+            "multikill_01",
+            6,
+            15,
+            "multikill_03",
+            6,
+            16,
+            "multikill_05",
+            6,
+            17,
+            "multikill_09",
+            6,
+            18,
+            "multikill_17",
+            6,
+            19,
+            "multikill_21",
+            6,
+            20,
+            "multikill_18",
+            6,
+            21,
+            "multikill_22",
+            6,
+            22,
+            "multikill_23",
+            6,
+            23
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_12",
+          "rect": [
+            1780,
+            1058,
+            103,
+            124
+          ],
+          "offset": [
+            47,
+            -26
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_23",
+          "rect": [
+            1829,
+            642,
+            51,
+            98
+          ],
+          "offset": [
+            127,
+            -55
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_11",
+          "rect": [
+            959,
+            1009,
+            161,
+            126
+          ],
+          "offset": [
+            19,
+            -25
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_22",
+          "rect": [
+            1729,
+            642,
+            51,
+            98
+          ],
+          "offset": [
+            124,
+            -53
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_15",
+          "rect": [
+            1917,
+            135,
+            91,
+            132
+          ],
+          "offset": [
+            69,
+            -23
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_19",
+          "rect": [
+            1816,
+            914,
+            111,
+            142
+          ],
+          "offset": [
+            85,
+            -25
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_16",
+          "rect": [
+            1259,
+            615,
+            95,
+            134
+          ],
+          "offset": [
+            73,
+            -23
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "multikill_13",
+          "rect": [
+            1917,
+            399,
+            85,
+            126
+          ],
+          "offset": [
+            62,
+            -25
+          ],
+          "originalSize": [
+            735,
+            630
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

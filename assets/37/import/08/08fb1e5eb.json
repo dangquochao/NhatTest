@@ -1,1 +1,136 @@
-[1,["f6ANrGARJLho0S5J4XWY8M"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"fs","rect":[1815,134,515,78],"offset":[0,0],"originalSize":[515,78],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"tw","rect":[0,359,610,148],"offset":[0,0],"originalSize":[610,148],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"collect_btn","rect":[1585,134,197,60],"offset":[0,0],"originalSize":[197,60],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "f6ANrGARJLho0S5J4XWY8M"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "fs",
+          "rect": [
+            1815,
+            134,
+            515,
+            78
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            515,
+            78
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "tw",
+          "rect": [
+            0,
+            359,
+            610,
+            148
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            610,
+            148
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "collect_btn",
+          "rect": [
+            1585,
+            134,
+            197,
+            60
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            197,
+            60
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

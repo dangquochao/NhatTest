@@ -1,1 +1,51 @@
-[1,["61yttLB4ZAnaUMp6g7nDs5"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"btn_back_menu","rect":[0,0,88,86],"offset":[0,0],"originalSize":[88,86],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]
+[
+  1,
+  [
+    "61yttLB4ZAnaUMp6g7nDs5"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "btn_back_menu",
+      "rect": [
+        0,
+        0,
+        88,
+        86
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        88,
+        86
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

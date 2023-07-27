@@ -1,1 +1,95 @@
-[1,["cdiJ11kr9DiLebuQwy0eTr"],["_textureSetter"],["cc.SpriteFrame"],0,[[[{"name":"bns_reel_bg","rect":[759,571,741,556],"offset":[0,0],"originalSize":[741,556],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"bns_reel_frame","rect":[759,1,753,568],"offset":[0,0],"originalSize":[753,568],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "cdiJ11kr9DiLebuQwy0eTr"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "bns_reel_bg",
+          "rect": [
+            759,
+            571,
+            741,
+            556
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            741,
+            556
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bns_reel_frame",
+          "rect": [
+            759,
+            1,
+            753,
+            568
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            753,
+            568
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

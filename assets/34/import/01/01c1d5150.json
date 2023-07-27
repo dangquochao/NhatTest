@@ -1,1 +1,589 @@
-[1,["8fgZnWwiZMPZIvX91SPDAp","d0l5LcBCZBa5gg/5vyjKQh","43Uh3qq+RHWKJoT6TYC/1L","fcWKm5IuJM+5/y6RtwVWVb","c4E+RVtAhGsZQUkyn4Vija","139RXrXwhIt4oivKvP+75y","1aqMeh5upPtKrUuCy/83Yw","dcvqtzVP5BLZ1m724QOqNO","1fUMFGxthFjbnSAXvKLZt+","656m16fxlHNrnVVlK0wTiW","d5+EsxC75LkafNbj/zu8te","44ljeIC1tFeZwcJomjnRlI"],["_textureSetter","FireShine_02","FireShine_03","FireShine_04","FireShine_05","FireShine_01","FireShine_09","FireShine_00","FireShine_10","FireShine_07","FireShine_08","FireShine_06"],["cc.SpriteFrame",["cc.SpriteAtlas",["_name","_spriteFrames"],2,11]],[[1,0,1,2]],[[[{"name":"FireShine_01","rect":[577,1,249,270],"offset":[0,-4],"originalSize":[249,270],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_09","rect":[295,754,249,292],"offset":[0,-4],"originalSize":[249,292],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_10","rect":[565,503,249,290],"offset":[0,-5],"originalSize":[249,290],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_03","rect":[265,252,249,278],"offset":[0,-4],"originalSize":[249,278],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_06","rect":[1,503,249,272],"offset":[0,-24],"originalSize":[249,272],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[[0,"Alats24.plist",[{},"FireShine_02",6,0,"FireShine_03",6,1,"FireShine_04",6,2,"FireShine_05",6,3,"FireShine_01",6,4,"FireShine_09",6,5,"FireShine_00",6,6,"FireShine_10",6,7,"FireShine_07",6,8,"FireShine_08",6,9,"FireShine_06",6,10]]],0,0,[0,0,0,0,0,0,0,0,0,0,0],[1,2,3,4,5,6,7,8,9,10,11],[1,2,3,4,5,6,7,8,9,10,11]],[[{"name":"FireShine_07","rect":[275,503,249,288],"offset":[0,-8],"originalSize":[249,288],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_05","rect":[1,1,247,282],"offset":[2,-13],"originalSize":[247,282],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_02","rect":[1,250,249,262],"offset":[0,-4],"originalSize":[249,262],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_08","rect":[1,754,249,292],"offset":[0,-4],"originalSize":[249,292],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_00","rect":[285,1,249,290],"offset":[0,-4],"originalSize":[249,290],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]],[[{"name":"FireShine_04","rect":[545,252,249,284],"offset":[0,-8],"originalSize":[249,284],"rotated":1,"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "8fgZnWwiZMPZIvX91SPDAp",
+    "d0l5LcBCZBa5gg/5vyjKQh",
+    "43Uh3qq+RHWKJoT6TYC/1L",
+    "fcWKm5IuJM+5/y6RtwVWVb",
+    "c4E+RVtAhGsZQUkyn4Vija",
+    "139RXrXwhIt4oivKvP+75y",
+    "1aqMeh5upPtKrUuCy/83Yw",
+    "dcvqtzVP5BLZ1m724QOqNO",
+    "1fUMFGxthFjbnSAXvKLZt+",
+    "656m16fxlHNrnVVlK0wTiW",
+    "d5+EsxC75LkafNbj/zu8te",
+    "44ljeIC1tFeZwcJomjnRlI"
+  ],
+  [
+    "_textureSetter",
+    "FireShine_02",
+    "FireShine_03",
+    "FireShine_04",
+    "FireShine_05",
+    "FireShine_01",
+    "FireShine_09",
+    "FireShine_00",
+    "FireShine_10",
+    "FireShine_07",
+    "FireShine_08",
+    "FireShine_06"
+  ],
+  [
+    "cc.SpriteFrame",
+    [
+      "cc.SpriteAtlas",
+      [
+        "_name",
+        "_spriteFrames"
+      ],
+      2,
+      11
+    ]
+  ],
+  [
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "FireShine_01",
+          "rect": [
+            577,
+            1,
+            249,
+            270
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            270
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_09",
+          "rect": [
+            295,
+            754,
+            249,
+            292
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            292
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_10",
+          "rect": [
+            565,
+            503,
+            249,
+            290
+          ],
+          "offset": [
+            0,
+            -5
+          ],
+          "originalSize": [
+            249,
+            290
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_03",
+          "rect": [
+            265,
+            252,
+            249,
+            278
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            278
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_06",
+          "rect": [
+            1,
+            503,
+            249,
+            272
+          ],
+          "offset": [
+            0,
+            -24
+          ],
+          "originalSize": [
+            249,
+            272
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        [
+          0,
+          "Alats24.plist",
+          [
+            {},
+            "FireShine_02",
+            6,
+            0,
+            "FireShine_03",
+            6,
+            1,
+            "FireShine_04",
+            6,
+            2,
+            "FireShine_05",
+            6,
+            3,
+            "FireShine_01",
+            6,
+            4,
+            "FireShine_09",
+            6,
+            5,
+            "FireShine_00",
+            6,
+            6,
+            "FireShine_10",
+            6,
+            7,
+            "FireShine_07",
+            6,
+            8,
+            "FireShine_08",
+            6,
+            9,
+            "FireShine_06",
+            6,
+            10
+          ]
+        ]
+      ],
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_07",
+          "rect": [
+            275,
+            503,
+            249,
+            288
+          ],
+          "offset": [
+            0,
+            -8
+          ],
+          "originalSize": [
+            249,
+            288
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_05",
+          "rect": [
+            1,
+            1,
+            247,
+            282
+          ],
+          "offset": [
+            2,
+            -13
+          ],
+          "originalSize": [
+            247,
+            282
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_02",
+          "rect": [
+            1,
+            250,
+            249,
+            262
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            262
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_08",
+          "rect": [
+            1,
+            754,
+            249,
+            292
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            292
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_00",
+          "rect": [
+            285,
+            1,
+            249,
+            290
+          ],
+          "offset": [
+            0,
+            -4
+          ],
+          "originalSize": [
+            249,
+            290
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "FireShine_04",
+          "rect": [
+            545,
+            252,
+            249,
+            284
+          ],
+          "offset": [
+            0,
+            -8
+          ],
+          "originalSize": [
+            249,
+            284
+          ],
+          "rotated": 1,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]
