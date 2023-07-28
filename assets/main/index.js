@@ -7505,6 +7505,80 @@ window.__require = function e(t, n, r) {
     exports.EVENT_MANAGER = EVENT_MANAGER;
     cc._RF.pop();
   }, {} ],
+  EditboxFormatter: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "88666e4iVxOlLZtZX7ISJ1w", "EditboxFormatter");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.TYPE_EDB = void 0;
+    var Windown_1 = require("../Windown");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var TYPE_EDB;
+    (function(TYPE_EDB) {
+      TYPE_EDB[TYPE_EDB["NONE"] = 0] = "NONE";
+      TYPE_EDB[TYPE_EDB["MONEY"] = 1] = "MONEY";
+      TYPE_EDB[TYPE_EDB["NUMBER"] = 2] = "NUMBER";
+      TYPE_EDB[TYPE_EDB["NAME"] = 3] = "NAME";
+    })(TYPE_EDB = exports.TYPE_EDB || (exports.TYPE_EDB = {}));
+    var EditboxFormatter = function(_super) {
+      __extends(EditboxFormatter, _super);
+      function EditboxFormatter() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.edb = null;
+        _this.TYPE = TYPE_EDB.NONE;
+        _this.isCheckWithBalance = false;
+        return _this;
+      }
+      EditboxFormatter.prototype.start = function() {};
+      EditboxFormatter.prototype.onEdbChange = function() {
+        var temp = Windown_1.Windown.splitToInt(this.edb.string);
+        temp = Math.abs(temp);
+        if (this.TYPE == TYPE_EDB.NUMBER || this.TYPE == TYPE_EDB.MONEY) {
+          var Number = Windown_1.Windown.ToVND(temp);
+          this.isCheckWithBalance && Windown_1.Windown.User.userAg < temp && (Number = Windown_1.Windown.ToVND(Windown_1.Windown.User.userAg));
+          this.TYPE == TYPE_EDB.NUMBER ? this.edb.string = Windown_1.Windown.formatNumber(Number) : this.edb.string = Windown_1.Windown.formatMoney(Number);
+        } else this.TYPE == TYPE_EDB.NAME;
+        cc.sys.isBrowser && this.edb.focus();
+      };
+      __decorate([ property(cc.EditBox) ], EditboxFormatter.prototype, "edb", void 0);
+      __decorate([ property({
+        type: cc.Enum(TYPE_EDB)
+      }) ], EditboxFormatter.prototype, "TYPE", void 0);
+      __decorate([ property ], EditboxFormatter.prototype, "isCheckWithBalance", void 0);
+      EditboxFormatter = __decorate([ ccclass ], EditboxFormatter);
+      return EditboxFormatter;
+    }(cc.Component);
+    exports.default = EditboxFormatter;
+    cc._RF.pop();
+  }, {
+    "../Windown": "Windown"
+  } ],
   Editboxcontroller: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "1fffc6BzktOBKYLD1N1DxYY", "Editboxcontroller");
@@ -11798,6 +11872,7 @@ window.__require = function e(t, n, r) {
         cc.systemEvent.off(EVENT_MANAGER_1.EVENT_MANAGER.onCloseXepHang, this.onClose, this);
       };
       ItemRankWeek.prototype.initItem = function(SFSObject) {
+        cc.log("ItemRank:", Windown_1.Windown.SFSObjToJson(SFSObject));
         this.idPlayer = SFSObject.getInt("id");
         this.lbName.string = SFSObject.getUtfString("nickname");
         this.lbMoney.string = Windown_1.Windown.formatNumber(SFSObject.getLong("gold"));
@@ -17283,7 +17358,7 @@ window.__require = function e(t, n, r) {
         null != Windown_1.Windown.ShopView.cardAmountShow && (this.edbMoney.string = Windown_1.Windown.ShopView.cardAmountShow.toString());
       };
       StateNapMomo.prototype.onClickNap = function() {
-        var money = Number(this.edbMoney.string);
+        var money = Windown_1.Windown.splitToInt(this.edbMoney.string);
         var captcha = this.edbCaptcha.string;
         try {
           if (isNaN(money)) throw new InfoERR_1.InfoErr(TextDefine_1.TextDefine.NullMenhGia);
@@ -23907,6 +23982,16 @@ window.__require = function e(t, n, r) {
           }
           return Windown.deviceId;
         };
+        Windown.splitToInt = function(vnd) {
+          if ("" == vnd) return 0;
+          var vndtmp = vnd.split(".").join("");
+          return parseInt(vndtmp);
+        };
+        Windown.ToVND = function(number) {
+          var result = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+          null != result && "NaN" != result || (result = 0);
+          return result;
+        };
         Windown.getOS = function() {
           if (!cc.sys.isNative) return cc.sys.isMobile ? OSDefine_1.default.WEB_MOBILE : OSDefine_1.default.WEB_PC;
           switch (cc.sys.os) {
@@ -24687,4 +24772,4 @@ window.__require = function e(t, n, r) {
     cc.RotateBy._reverse = true;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "mesh-texture-flag", "BotControler", "CreatBot", "DownloadProgress", "UpdateAssetManager", "ClearCacheBase64", "ConfigScence", "BUNDLE", "EVENT_MANAGER", "FIREBASE_CODE", "REQUEST_BONG_DEM", "ModelLevel", "OSDefine", "PathResource", "PathSound", "PlayerPP", "REQUEST_CODE", "StateReelSlot", "TextDefine", "FirebaseController", "FullSize", "GAME_TYPE", "SYSTEM_EVENT", "InfoERR", "ActiveChildren", "BhvButtonGroup", "BhvFrameIndex", "BhvRollNumber", "BhvSwitchPage", "CanvasControl", "FromDataNative", "JsonOb", "StringFormat", "VMBase", "VMCompsEdit", "VMCustom", "VMEvent", "VMLabel", "VMModify", "VMParent", "VMProgress", "VMState", "ViewModel", "CheckPass", "CreateTable", "ItemBetRoom", "ItemBtnGame", "LobbyView", "MainView", "ConectManager", "NotiNoHu", "CaptchaController", "CaptchaItem", "Editboxcontroller", "ItemCoppy", "ItemLevelController", "JackpotItem", "JackpotManager", "LbMoneyChange", "MoneyUser", "MoneyUserController", "BtnMiniGame", "DragMiniGame", "ItemSafe", "LayoutScale", "LbMonoSpace", "MakeDelay", "ObjMakeDelay", "OffMiniGame", "OpenDefaultAnimClip", "AudioManager", "BaseEditbox", "BaseScrollView", "ItemHangLobby", "ItemLichSuTraoThuong", "ItemRankMonth", "ItemRankWeek", "LichSuTraoThuong", "TopThang", "TopTuan", "XepHang", "BigWinLobby", "BigWinLobbyView", "ItemBigWin", "BonusNap", "CaiDat", "HoTro", "ItemAdminOnline", "XacThucTele", "ChanSuKien", "ChatAdminController", "ItemChat", "ItemIconAdmin", "ItemMoveIconChat", "ItemRemoveIconChat", "WindownChat", "CropImgAva", "CapNhatTaiKhoan", "DangKy", "DangNhap", "Dialog", "EffectTakeCoin", "HomThu", "HomThuController", "ItemHomThu", "ImgChat", "ItemLichSuGiaoDich", "LichSuGiaoDich", "Loading", "MenuInGame", "ItemNhiemVu", "NhiemVu", "NhiemVuConTroller", "NotiTopMesage", "ItemIndicator", "PageData", "PageViewEvent", "BaseItemQuick", "ItemCard", "ItemMomo", "QuickShop", "ReviceItem", "DoiTab", "DoiBank", "ItemIAP", "NapBank", "NapTab", "ShopView", "BaseStateNap", "StateNapCard", "StateNapMomo", "ItemSuKien", "SuKien", "TabGiftCode", "TabSuKien", "ItemMoKhoa", "ItemTangCap", "TangCap", "DoiAva", "DoiThangThai", "ItemDoiAva", "ThongTin", "TietKiem", "VongQuay", "SceneFish", "SoundLobby", "SoundManager1", "TestTS", "GenDataTest", "InfoSpin", "ItemSpin", "Test - 001", "BaseCuaHang", "CuaHang", "TuiDo", "UIManager", "UserModel", "Util", "Windown", "use_reversed_rotateBy" ]);
+}, {}, [ "mesh-texture-flag", "BotControler", "CreatBot", "DownloadProgress", "UpdateAssetManager", "ClearCacheBase64", "ConfigScence", "BUNDLE", "EVENT_MANAGER", "FIREBASE_CODE", "REQUEST_BONG_DEM", "ModelLevel", "OSDefine", "PathResource", "PathSound", "PlayerPP", "REQUEST_CODE", "StateReelSlot", "TextDefine", "FirebaseController", "FullSize", "GAME_TYPE", "SYSTEM_EVENT", "InfoERR", "ActiveChildren", "BhvButtonGroup", "BhvFrameIndex", "BhvRollNumber", "BhvSwitchPage", "CanvasControl", "FromDataNative", "JsonOb", "StringFormat", "VMBase", "VMCompsEdit", "VMCustom", "VMEvent", "VMLabel", "VMModify", "VMParent", "VMProgress", "VMState", "ViewModel", "CheckPass", "CreateTable", "ItemBetRoom", "ItemBtnGame", "LobbyView", "MainView", "ConectManager", "NotiNoHu", "CaptchaController", "CaptchaItem", "EditboxFormatter", "Editboxcontroller", "ItemCoppy", "ItemLevelController", "JackpotItem", "JackpotManager", "LbMoneyChange", "MoneyUser", "MoneyUserController", "BtnMiniGame", "DragMiniGame", "ItemSafe", "LayoutScale", "LbMonoSpace", "MakeDelay", "ObjMakeDelay", "OffMiniGame", "OpenDefaultAnimClip", "AudioManager", "BaseEditbox", "BaseScrollView", "ItemHangLobby", "ItemLichSuTraoThuong", "ItemRankMonth", "ItemRankWeek", "LichSuTraoThuong", "TopThang", "TopTuan", "XepHang", "BigWinLobby", "BigWinLobbyView", "ItemBigWin", "BonusNap", "CaiDat", "HoTro", "ItemAdminOnline", "XacThucTele", "ChanSuKien", "ChatAdminController", "ItemChat", "ItemIconAdmin", "ItemMoveIconChat", "ItemRemoveIconChat", "WindownChat", "CropImgAva", "CapNhatTaiKhoan", "DangKy", "DangNhap", "Dialog", "EffectTakeCoin", "HomThu", "HomThuController", "ItemHomThu", "ImgChat", "ItemLichSuGiaoDich", "LichSuGiaoDich", "Loading", "MenuInGame", "ItemNhiemVu", "NhiemVu", "NhiemVuConTroller", "NotiTopMesage", "ItemIndicator", "PageData", "PageViewEvent", "BaseItemQuick", "ItemCard", "ItemMomo", "QuickShop", "ReviceItem", "DoiTab", "DoiBank", "ItemIAP", "NapBank", "NapTab", "ShopView", "BaseStateNap", "StateNapCard", "StateNapMomo", "ItemSuKien", "SuKien", "TabGiftCode", "TabSuKien", "ItemMoKhoa", "ItemTangCap", "TangCap", "DoiAva", "DoiThangThai", "ItemDoiAva", "ThongTin", "TietKiem", "VongQuay", "SceneFish", "SoundLobby", "SoundManager1", "TestTS", "GenDataTest", "InfoSpin", "ItemSpin", "Test - 001", "BaseCuaHang", "CuaHang", "TuiDo", "UIManager", "UserModel", "Util", "Windown", "use_reversed_rotateBy" ]);

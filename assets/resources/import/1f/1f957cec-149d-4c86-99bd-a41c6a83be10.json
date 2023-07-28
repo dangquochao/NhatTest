@@ -1,7 +1,7 @@
 [
   1,
   [
-    "f8WftIFGNHkKoVAsMCBfER"
+    "f2uYios/tFkZMg3O0dvygm"
   ],
   [
     "_textureSetter"
@@ -12,26 +12,26 @@
   0,
   [
     {
-      "name": "Frame_Yellow_Pick",
+      "name": "bkg_Popup",
       "rect": [
-        0,
-        3,
-        36,
-        34
+        1,
+        1,
+        973,
+        618
       ],
       "offset": [
         0,
-        -1.5
+        -0.5
       ],
       "originalSize": [
-        36,
-        37
+        975,
+        619
       ],
       "capInsets": [
-        9,
-        11,
-        11,
-        12
+        0,
+        0,
+        0,
+        0
       ]
     }
   ],

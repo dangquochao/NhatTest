@@ -1,8 +1,8 @@
 [
   1,
   [
-    "1aerfhdeBL7IuogOsep1k0",
-    "81adpHmrBG4rHDobmI0ui5"
+    "43YisHgMpEz5dpwrXtNdI8",
+    "71BboqgL1PZI2TLeHkywsc"
   ],
   [
     "_textureSetter"
@@ -15,26 +15,26 @@
     [
       [
         {
-          "name": "o2",
+          "name": "Btn_Close_pressed",
           "rect": [
+            1,
             0,
-            0,
-            556,
-            574
+            61,
+            130
           ],
           "offset": [
             0,
-            0
+            0.5
           ],
           "originalSize": [
-            556,
-            574
+            63,
+            131
           ],
           "capInsets": [
-            70,
-            80,
-            78,
-            65
+            0,
+            0,
+            0,
+            0
           ]
         }
       ],
@@ -55,20 +55,20 @@
     [
       [
         {
-          "name": "bt_history",
+          "name": "bgPopupNormal",
           "rect": [
             0,
             0,
-            72,
-            72
+            1238,
+            681
           ],
           "offset": [
             0,
             0
           ],
           "originalSize": [
-            72,
-            72
+            1238,
+            681
           ],
           "capInsets": [
             0,
