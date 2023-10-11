@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 777,777
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 2
+  rotate: false
+  xy: 2, 612
+  size: 163, 163
+  orig: 163, 163
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 167, 586
+  size: 200, 189
+  orig: 202, 191
+  offset: 1, 1
+  index: -1
+bg_blue
+  rotate: false
+  xy: 369, 586
+  size: 199, 189
+  orig: 201, 191
+  offset: 1, 1
+  index: -1
+ef
+  rotate: false
+  xy: 570, 580
+  size: 205, 195
+  orig: 207, 197
+  offset: 1, 1
+  index: -1
