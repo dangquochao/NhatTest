@@ -1,0 +1,125 @@
+
+fly_scatter_spine.png
+size: 804,154
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/a_lii
+  rotate: false
+  xy: 407, 72
+  size: 78, 80
+  orig: 78, 80
+  offset: 0, 0
+  index: -1
+image/ef_new3
+  rotate: true
+  xy: 306, 52
+  size: 100, 99
+  orig: 100, 99
+  offset: 0, 0
+  index: -1
+image/image1/w_1
+  rotate: false
+  xy: 2, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+image/le_1
+  rotate: false
+  xy: 487, 78
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_10
+  rotate: false
+  xy: 741, 2
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_2
+  rotate: false
+  xy: 489, 2
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_3
+  rotate: false
+  xy: 550, 78
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_4
+  rotate: false
+  xy: 552, 2
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_5
+  rotate: false
+  xy: 613, 78
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_6
+  rotate: false
+  xy: 615, 2
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_7
+  rotate: false
+  xy: 676, 78
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_8
+  rotate: false
+  xy: 678, 2
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/le_9
+  rotate: false
+  xy: 739, 78
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+image/skill_tubu
+  rotate: false
+  xy: 154, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+image/special_light
+  rotate: false
+  xy: 407, 3
+  size: 80, 67
+  orig: 100, 76
+  offset: 9, 0
+  index: -1
+image/star
+  rotate: false
+  xy: 306, 29
+  size: 20, 21
+  orig: 20, 22
+  offset: 0, 1
+  index: -1
+image/star_1
+  rotate: true
+  xy: 306, 17
+  size: 10, 8
+  orig: 10, 8
+  offset: 0, 0
+  index: -1

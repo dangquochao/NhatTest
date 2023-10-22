@@ -1,0 +1,111 @@
+
+ef_symbol_jp.jpg
+size: 595,353
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Symboy_JP/Symboy_JP_00000
+  rotate: false
+  xy: 473, 120
+  size: 116, 115
+  orig: 125, 125
+  offset: 6, 5
+  index: -1
+Symboy_JP/Symboy_JP_00001
+  rotate: true
+  xy: 474, 2
+  size: 116, 119
+  orig: 125, 125
+  offset: 5, 2
+  index: -1
+Symboy_JP/Symboy_JP_00002
+  rotate: false
+  xy: 2, 5
+  size: 116, 115
+  orig: 125, 125
+  offset: 4, 6
+  index: -1
+Symboy_JP/Symboy_JP_00003
+  rotate: false
+  xy: 120, 5
+  size: 115, 115
+  orig: 125, 125
+  offset: 5, 6
+  index: -1
+Symboy_JP/Symboy_JP_00004
+  rotate: false
+  xy: 354, 237
+  size: 115, 114
+  orig: 125, 125
+  offset: 5, 7
+  index: -1
+Symboy_JP/Symboy_JP_00005
+  rotate: false
+  xy: 237, 4
+  size: 116, 115
+  orig: 125, 125
+  offset: 5, 6
+  index: -1
+Symboy_JP/Symboy_JP_00006
+  rotate: false
+  xy: 471, 237
+  size: 114, 114
+  orig: 125, 125
+  offset: 6, 7
+  index: -1
+Symboy_JP/Symboy_JP_00007
+  rotate: true
+  xy: 2, 122
+  size: 114, 115
+  orig: 125, 125
+  offset: 6, 6
+  index: -1
+Symboy_JP/Symboy_JP_00008
+  rotate: false
+  xy: 119, 122
+  size: 114, 114
+  orig: 125, 125
+  offset: 6, 7
+  index: -1
+Symboy_JP/Symboy_JP_00009
+  rotate: true
+  xy: 2, 238
+  size: 113, 115
+  orig: 125, 125
+  offset: 7, 6
+  index: -1
+Symboy_JP/Symboy_JP_00010
+  rotate: true
+  xy: 355, 3
+  size: 115, 117
+  orig: 125, 125
+  offset: 5, 4
+  index: -1
+Symboy_JP/Symboy_JP_00011
+  rotate: true
+  xy: 119, 238
+  size: 113, 116
+  orig: 125, 125
+  offset: 7, 5
+  index: -1
+Symboy_JP/Symboy_JP_00012
+  rotate: true
+  xy: 237, 238
+  size: 113, 115
+  orig: 125, 125
+  offset: 7, 5
+  index: -1
+Symboy_JP/Symboy_JP_00013
+  rotate: true
+  xy: 353, 121
+  size: 114, 118
+  orig: 125, 125
+  offset: 7, 2
+  index: -1
+Symboy_JP/Symboy_JP_00014
+  rotate: false
+  xy: 235, 122
+  size: 116, 114
+  orig: 125, 125
+  offset: 5, 6
+  index: -1

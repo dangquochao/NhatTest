@@ -1,0 +1,390 @@
+
+ef_free_game_spine.png
+size: 1364,315
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+font_A
+  rotate: false
+  xy: 832, 46
+  size: 530, 267
+  orig: 530, 267
+  offset: 0, 0
+  index: -1
+kiem_a
+  rotate: true
+  xy: 2, 2
+  size: 311, 828
+  orig: 313, 828
+  offset: 1, 0
+  index: -1
+
+ef_free_game_spine2.jpg
+size: 2363,1051
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effects/Cir_explosive_00015
+  rotate: false
+  xy: 2043, 3
+  size: 104, 99
+  orig: 480, 270
+  offset: 185, 85
+  index: -1
+effects/Cir_explosive_00016
+  rotate: false
+  xy: 2052, 104
+  size: 107, 108
+  orig: 480, 270
+  offset: 185, 82
+  index: -1
+effects/Cir_explosive_00017
+  rotate: true
+  xy: 2251, 941
+  size: 108, 110
+  orig: 480, 270
+  offset: 186, 83
+  index: -1
+effects/Cir_explosive_00018
+  rotate: true
+  xy: 2251, 832
+  size: 107, 110
+  orig: 480, 270
+  offset: 187, 84
+  index: -1
+effects/Cir_explosive_00019
+  rotate: false
+  xy: 1386, 35
+  size: 104, 111
+  orig: 480, 270
+  offset: 188, 82
+  index: -1
+effects/Cir_explosive_00020
+  rotate: false
+  xy: 1942, 104
+  size: 108, 108
+  orig: 480, 270
+  offset: 187, 83
+  index: -1
+effects/Cir_explosive_00021
+  rotate: true
+  xy: 2251, 724
+  size: 106, 110
+  orig: 480, 270
+  offset: 188, 84
+  index: -1
+effects/Cir_explosive_00022
+  rotate: false
+  xy: 1278, 33
+  size: 106, 113
+  orig: 480, 270
+  offset: 187, 83
+  index: -1
+effects/Cir_explosive_00023
+  rotate: false
+  xy: 1492, 35
+  size: 104, 111
+  orig: 480, 270
+  offset: 188, 82
+  index: -1
+effects/Cir_explosive_00024
+  rotate: false
+  xy: 1167, 29
+  size: 109, 117
+  orig: 480, 270
+  offset: 185, 82
+  index: -1
+effects/Cir_explosive_00025
+  rotate: true
+  xy: 1854, 263
+  size: 99, 109
+  orig: 480, 270
+  offset: 188, 84
+  index: -1
+effects/DiemSang
+  rotate: true
+  xy: 437, 675
+  size: 374, 138
+  orig: 386, 140
+  offset: 6, 1
+  index: -1
+effects/HieuUng2
+  rotate: true
+  xy: 950, 50
+  size: 263, 215
+  orig: 265, 217
+  offset: 1, 1
+  index: -1
+effects/SangNoB
+  rotate: true
+  xy: 2, 599
+  size: 450, 433
+  orig: 450, 434
+  offset: 0, 0
+  index: -1
+effects/attack_core
+  rotate: false
+  xy: 2149, 6
+  size: 96, 96
+  orig: 128, 128
+  offset: 16, 17
+  index: -1
+effects/ef_new3
+  rotate: true
+  xy: 1942, 2
+  size: 100, 99
+  orig: 100, 99
+  offset: 0, 0
+  index: -1
+effects/font_B
+  rotate: false
+  xy: 2, 2
+  size: 70, 37
+  orig: 70, 37
+  offset: 0, 0
+  index: -1
+effects/kiem_a1
+  rotate: true
+  xy: 588, 637
+  size: 41, 106
+  orig: 41, 106
+  offset: 0, 0
+  index: -1
+effects/kiem_a11
+  rotate: true
+  xy: 696, 637
+  size: 41, 76
+  orig: 57, 106
+  offset: 8, 2
+  index: -1
+effects/sao
+  rotate: true
+  xy: 437, 605
+  size: 68, 67
+  orig: 70, 70
+  offset: 1, 1
+  index: -1
+effects/skill_tubu
+  rotate: false
+  xy: 688, 4
+  size: 260, 260
+  orig: 260, 260
+  offset: 0, 0
+  index: -1
+effects/special_light
+  rotate: false
+  xy: 506, 606
+  size: 80, 67
+  orig: 100, 76
+  offset: 9, 0
+  index: -1
+effects/sword_fire_00000
+  rotate: false
+  xy: 1505, 339
+  size: 169, 350
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00001
+  rotate: false
+  xy: 1003, 322
+  size: 168, 359
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00002
+  rotate: false
+  xy: 503, 234
+  size: 165, 369
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00003
+  rotate: false
+  xy: 337, 216
+  size: 164, 381
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00004
+  rotate: false
+  xy: 1416, 691
+  size: 161, 358
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00005
+  rotate: false
+  xy: 916, 683
+  size: 161, 366
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00006
+  rotate: true
+  xy: 2014, 377
+  size: 161, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00007
+  rotate: false
+  xy: 2087, 708
+  size: 162, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00008
+  rotate: true
+  xy: 2014, 214
+  size: 161, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00009
+  rotate: true
+  xy: 1598, 2
+  size: 163, 342
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00010
+  rotate: false
+  xy: 1676, 347
+  size: 165, 350
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00011
+  rotate: false
+  xy: 1079, 690
+  size: 165, 359
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00012
+  rotate: false
+  xy: 577, 680
+  size: 165, 369
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00013
+  rotate: false
+  xy: 2, 216
+  size: 166, 381
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00014
+  rotate: false
+  xy: 1246, 691
+  size: 168, 358
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00015
+  rotate: false
+  xy: 744, 683
+  size: 170, 366
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00016
+  rotate: true
+  xy: 345, 42
+  size: 172, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00017
+  rotate: true
+  xy: 1167, 148
+  size: 172, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00018
+  rotate: true
+  xy: 2, 41
+  size: 173, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00019
+  rotate: true
+  xy: 1510, 167
+  size: 170, 342
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00020
+  rotate: false
+  xy: 1579, 699
+  size: 166, 350
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00021
+  rotate: false
+  xy: 1173, 329
+  size: 164, 359
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00022
+  rotate: false
+  xy: 670, 266
+  size: 163, 369
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00023
+  rotate: false
+  xy: 170, 216
+  size: 165, 381
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00024
+  rotate: false
+  xy: 1339, 331
+  size: 164, 358
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00025
+  rotate: false
+  xy: 835, 315
+  size: 166, 366
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00026
+  rotate: true
+  xy: 2014, 540
+  size: 166, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00027
+  rotate: false
+  xy: 1918, 708
+  size: 167, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00028
+  rotate: false
+  xy: 1843, 364
+  size: 169, 341
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
+effects/sword_fire_00029
+  rotate: false
+  xy: 1747, 707
+  size: 169, 342
+  orig: 250, 500
+  offset: 45, 78
+  index: -1
