@@ -1,0 +1,20 @@
+
+GEM4.png
+size: 231,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gem_4BG
+  rotate: false
+  xy: 2, 2
+  size: 132, 115
+  orig: 132, 115
+  offset: 0, 0
+  index: -1
+Gem_4RB
+  rotate: false
+  xy: 136, 11
+  size: 93, 106
+  orig: 93, 106
+  offset: 0, 0
+  index: -1

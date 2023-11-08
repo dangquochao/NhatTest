@@ -1,0 +1,27 @@
+
+GEM_W.png
+size: 338,136
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gem_WBG
+  rotate: true
+  xy: 2, 2
+  size: 132, 115
+  orig: 132, 115
+  offset: 0, 0
+  index: -1
+Gem_WRB
+  rotate: true
+  xy: 241, 27
+  size: 107, 95
+  orig: 107, 95
+  offset: 0, 0
+  index: -1
+star1
+  rotate: false
+  xy: 119, 14
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1

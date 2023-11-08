@@ -1,0 +1,20 @@
+
+GEM5.png
+size: 253,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gem_5BG
+  rotate: false
+  xy: 2, 2
+  size: 132, 115
+  orig: 132, 115
+  offset: 0, 0
+  index: -1
+Gem_5RB
+  rotate: false
+  xy: 136, 10
+  size: 115, 107
+  orig: 115, 107
+  offset: 0, 0
+  index: -1

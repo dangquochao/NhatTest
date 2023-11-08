@@ -1,0 +1,20 @@
+
+GEM3.png
+size: 252,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gem_3BG
+  rotate: false
+  xy: 2, 2
+  size: 132, 115
+  orig: 132, 115
+  offset: 0, 0
+  index: -1
+Gem_3RB
+  rotate: false
+  xy: 136, 2
+  size: 114, 115
+  orig: 114, 115
+  offset: 0, 0
+  index: -1
