@@ -1,0 +1,62 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+23/Dorsal Fin Big Top_350
+  rotate: true
+  xy: 807, 5
+  size: 4, 64
+  orig: 4, 64
+  offset: 0, 0
+  index: -1
+23/Dorsal Fin Big_350
+  rotate: true
+  xy: 1612, 2
+  size: 20, 61
+  orig: 20, 61
+  offset: 0, 0
+  index: -1
+23/body_350
+  rotate: true
+  xy: 1418, 762
+  size: 73, 284
+  orig: 74, 284
+  offset: 0, 0
+  index: -1
+23/fin_350
+  rotate: true
+  xy: 1977, 757
+  size: 68, 43
+  orig: 68, 43
+  offset: 0, 0
+  index: -1
+23/shadow
+  rotate: false
+  xy: 289, 249
+  size: 162, 322
+  orig: 162, 322
+  offset: 0, 0
+  index: -1
+23/shadow_body
+  rotate: true
+  xy: 1267, 147
+  size: 68, 154
+  orig: 74, 284
+  offset: 3, 0
+  index: -1
+23/shadow_tail
+  rotate: false
+  xy: 1639, 24
+  size: 60, 52
+  orig: 60, 52
+  offset: 0, 0
+  index: -1
+23/tail_350
+  rotate: false
+  xy: 1701, 6
+  size: 59, 52
+  orig: 60, 52
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5/CanhLon
+  rotate: true
+  xy: 1535, 10
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+5/CanhNho
+  rotate: true
+  xy: 1988, 483
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+5/CanhVua
+  rotate: false
+  xy: 2, 2
+  size: 34, 21
+  orig: 34, 22
+  offset: 0, 1
+  index: -1
+5/Than
+  rotate: false
+  xy: 1983, 652
+  size: 25, 103
+  orig: 25, 103
+  offset: 0, 0
+  index: -1
+5/VayLung
+  rotate: true
+  xy: 1944, 482
+  size: 15, 42
+  orig: 15, 42
+  offset: 0, 0
+  index: -1

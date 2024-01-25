@@ -1,0 +1,104 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4/cang
+  rotate: true
+  xy: 1996, 548
+  size: 28, 35
+  orig: 32, 35
+  offset: 4, 0
+  index: -1
+4/cang1
+  rotate: false
+  xy: 566, 147
+  size: 22, 16
+  orig: 22, 16
+  offset: 0, 0
+  index: -1
+4/cang2
+  rotate: false
+  xy: 1872, 3
+  size: 36, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+4/cang3
+  rotate: false
+  xy: 1074, 105
+  size: 29, 18
+  orig: 29, 18
+  offset: 0, 0
+  index: -1
+4/chan
+  rotate: false
+  xy: 1711, 289
+  size: 13, 4
+  orig: 13, 4
+  offset: 0, 0
+  index: -1
+4/chan1
+  rotate: true
+  xy: 1704, 198
+  size: 18, 5
+  orig: 18, 5
+  offset: 0, 0
+  index: -1
+4/chan2
+  rotate: true
+  xy: 555, 581
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+4/chan3
+  rotate: false
+  xy: 1267, 217
+  size: 13, 6
+  orig: 13, 6
+  offset: 0, 0
+  index: -1
+4/chan4
+  rotate: false
+  xy: 1762, 54
+  size: 13, 4
+  orig: 13, 4
+  offset: 0, 0
+  index: -1
+4/chan5
+  rotate: true
+  xy: 590, 156
+  size: 17, 5
+  orig: 17, 5
+  offset: 0, 0
+  index: -1
+4/chan6
+  rotate: false
+  xy: 873, 2
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+4/chan7
+  rotate: true
+  xy: 1097, 160
+  size: 13, 6
+  orig: 13, 6
+  offset: 0, 0
+  index: -1
+4/rau
+  rotate: false
+  xy: 1911, 97
+  size: 71, 18
+  orig: 71, 18
+  offset: 0, 0
+  index: -1
+4/than
+  rotate: true
+  xy: 1562, 38
+  size: 38, 75
+  orig: 50, 75
+  offset: 5, 0
+  index: -1

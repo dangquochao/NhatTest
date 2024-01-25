@@ -1,0 +1,90 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+30/DuoiCa
+  rotate: false
+  xy: 564, 249
+  size: 48, 50
+  orig: 48, 50
+  offset: 0, 0
+  index: -1
+30/GlowCa
+  rotate: true
+  xy: 1086, 835
+  size: 115, 330
+  orig: 115, 358
+  offset: 0, 17
+  index: -1
+30/GlowDuoiCa
+  rotate: true
+  xy: 289, 148
+  size: 99, 159
+  orig: 99, 159
+  offset: 0, 0
+  index: -1
+30/GlowVayCa
+  rotate: false
+  xy: 1984, 129
+  size: 47, 66
+  orig: 49, 76
+  offset: 2, 9
+  index: -1
+30/GlowVayDuoiCa
+  rotate: false
+  xy: 1910, 16
+  size: 42, 43
+  orig: 48, 50
+  offset: 6, 7
+  index: -1
+30/ThanCa
+  rotate: false
+  xy: 493, 601
+  size: 115, 349
+  orig: 115, 351
+  offset: 0, 0
+  index: -1
+30/TopVay
+  rotate: false
+  xy: 2022, 721
+  size: 9, 104
+  orig: 11, 108
+  offset: 1, 0
+  index: -1
+30/VayCaTren
+  rotate: false
+  xy: 566, 165
+  size: 22, 82
+  orig: 22, 95
+  offset: 0, 6
+  index: -1
+30/Vayca
+  rotate: false
+  xy: 1945, 556
+  size: 49, 76
+  orig: 49, 76
+  offset: 0, 0
+  index: -1
+30/bongca
+  rotate: false
+  xy: 289, 573
+  size: 202, 377
+  orig: 202, 377
+  offset: 0, 0
+  index: -1
+30/eff
+  rotate: false
+  xy: 1996, 578
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+30/eff_particle
+  rotate: false
+  xy: 1013, 7
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1

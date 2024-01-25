@@ -1,0 +1,20 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+12/Body
+  rotate: true
+  xy: 1084, 358
+  size: 165, 219
+  orig: 165, 219
+  offset: 0, 0
+  index: -1
+12/mat
+  rotate: false
+  xy: 923, 99
+  size: 10, 9
+  orig: 12, 11
+  offset: 0, 2
+  index: -1

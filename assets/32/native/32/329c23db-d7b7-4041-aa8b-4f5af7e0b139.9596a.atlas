@@ -1,0 +1,90 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+24_25/Body
+  rotate: true
+  xy: 1418, 837
+  size: 113, 326
+  orig: 113, 326
+  offset: 0, 0
+  index: -1
+24_25/Dorsal Fin Big
+  rotate: false
+  xy: 1394, 558
+  size: 13, 64
+  orig: 13, 68
+  offset: 0, 4
+  index: -1
+24_25/Dorsal Fin Big Top
+  rotate: true
+  xy: 1669, 530
+  size: 4, 64
+  orig: 4, 64
+  offset: 0, 0
+  index: -1
+24_25/Dorsal Fin Small
+  rotate: true
+  xy: 224, 13
+  size: 10, 29
+  orig: 10, 29
+  offset: 0, 0
+  index: -1
+24_25/Dorsal Fin Small Top
+  rotate: true
+  xy: 1944, 476
+  size: 4, 30
+  orig: 4, 30
+  offset: 0, 0
+  index: -1
+24_25/Pectoral Fin
+  rotate: true
+  xy: 1931, 417
+  size: 57, 28
+  orig: 57, 29
+  offset: 0, 1
+  index: -1
+24_25/Pelvic Fin
+  rotate: false
+  xy: 783, 428
+  size: 23, 19
+  orig: 23, 19
+  offset: 0, 0
+  index: -1
+24_25/Shadow
+  rotate: true
+  xy: 1097, 175
+  size: 70, 168
+  orig: 71, 170
+  offset: 0, 2
+  index: -1
+24_25/Tail Shadow
+  rotate: false
+  xy: 1282, 319
+  size: 21, 37
+  orig: 21, 37
+  offset: 0, 0
+  index: -1
+24_25/Tail Small
+  rotate: false
+  xy: 1976, 450
+  size: 17, 30
+  orig: 17, 30
+  offset: 0, 0
+  index: -1
+24_25/eff
+  rotate: false
+  xy: 1996, 578
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+24_25/eff_particle
+  rotate: false
+  xy: 1013, 7
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1

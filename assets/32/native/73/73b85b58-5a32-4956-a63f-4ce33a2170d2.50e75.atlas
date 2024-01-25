@@ -1,0 +1,41 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+9/body
+  rotate: true
+  xy: 418, 2
+  size: 144, 42
+  orig: 144, 42
+  offset: 0, 0
+  index: -1
+9/bong
+  rotate: true
+  xy: 363, 2
+  size: 144, 53
+  orig: 144, 53
+  offset: 0, 0
+  index: -1
+9/vayduoi
+  rotate: true
+  xy: 1267, 225
+  size: 20, 13
+  orig: 20, 13
+  offset: 0, 0
+  index: -1
+9/vaytrc
+  rotate: false
+  xy: 1973, 417
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+9/vaytren
+  rotate: true
+  xy: 960, 355
+  size: 92, 20
+  orig: 92, 20
+  offset: 0, 0
+  index: -1

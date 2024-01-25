@@ -1,0 +1,41 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+22/Body
+  rotate: true
+  xy: 1704, 757
+  size: 68, 271
+  orig: 68, 271
+  offset: 0, 0
+  index: -1
+22/Dolsal Fin Top
+  rotate: true
+  xy: 702, 75
+  size: 4, 60
+  orig: 4, 60
+  offset: 0, 0
+  index: -1
+22/Dorsal Fin
+  rotate: true
+  xy: 102, 10
+  size: 13, 60
+  orig: 13, 60
+  offset: 0, 0
+  index: -1
+22/Fin
+  rotate: false
+  xy: 1944, 499
+  size: 41, 55
+  orig: 41, 55
+  offset: 0, 0
+  index: -1
+22/shadowwww
+  rotate: true
+  xy: 1688, 640
+  size: 115, 258
+  orig: 115, 258
+  offset: 0, 0
+  index: -1

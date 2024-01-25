@@ -1,0 +1,104 @@
+
+1998_Fish_2.png
+size: 2033,952
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+14_15/Beard
+  rotate: true
+  xy: 1562, 2
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+14_15/Body
+  rotate: true
+  xy: 807, 11
+  size: 97, 114
+  orig: 97, 114
+  offset: 0, 0
+  index: -1
+14_15/Bulb
+  rotate: false
+  xy: 655, 181
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+14_15/Dorsal Spike 1
+  rotate: false
+  xy: 164, 12
+  size: 58, 11
+  orig: 58, 11
+  offset: 0, 0
+  index: -1
+14_15/Dorsal Spike 2
+  rotate: false
+  xy: 164, 2
+  size: 36, 8
+  orig: 36, 8
+  offset: 0, 0
+  index: -1
+14_15/Dorsal Spike 3
+  rotate: true
+  xy: 2010, 723
+  size: 32, 10
+  orig: 32, 10
+  offset: 0, 0
+  index: -1
+14_15/Dorsal Spike 4
+  rotate: false
+  xy: 1612, 24
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+14_15/Fin
+  rotate: false
+  xy: 590, 227
+  size: 18, 20
+  orig: 18, 20
+  offset: 0, 0
+  index: -1
+14_15/Lateral Spike 1
+  rotate: false
+  xy: 1971, 407
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
+14_15/Lateral Spike 2
+  rotate: false
+  xy: 1931, 2
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+14_15/Pectoral Spike
+  rotate: false
+  xy: 1931, 407
+  size: 18, 8
+  orig: 18, 8
+  offset: 0, 0
+  index: -1
+14_15/Pelvic Spike
+  rotate: false
+  xy: 2010, 668
+  size: 13, 19
+  orig: 13, 19
+  offset: 0, 0
+  index: -1
+14_15/bong
+  rotate: false
+  xy: 1105, 50
+  size: 108, 123
+  orig: 108, 123
+  offset: 0, 0
+  index: -1
+14_15/traicau
+  rotate: false
+  xy: 1258, 68
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
