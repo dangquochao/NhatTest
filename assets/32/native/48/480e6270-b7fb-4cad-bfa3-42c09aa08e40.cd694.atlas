@@ -1,0 +1,13 @@
+
+anim_ca.png
+size: 128,133
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung1
+  rotate: false
+  xy: 2, 2
+  size: 93, 129
+  orig: 93, 129
+  offset: 0, 0
+  index: -1

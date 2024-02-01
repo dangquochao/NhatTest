@@ -1,0 +1,13 @@
+
+sung4.png
+size: 142,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sung4
+  rotate: false
+  xy: 2, 2
+  size: 138, 136
+  orig: 138, 136
+  offset: 0, 0
+  index: -1
