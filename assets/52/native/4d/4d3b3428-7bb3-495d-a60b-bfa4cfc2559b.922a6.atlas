@@ -1,0 +1,160 @@
+
+dealer.png
+size: 545,267
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Dat Cuoc
+  rotate: false
+  xy: 2, 178
+  size: 224, 87
+  orig: 224, 87
+  offset: 0, 0
+  index: -1
+Dau
+  rotate: false
+  xy: 448, 187
+  size: 62, 78
+  orig: 62, 78
+  offset: 0, 0
+  index: -1
+Dung Cuoc
+  rotate: false
+  xy: 2, 89
+  size: 224, 87
+  orig: 224, 87
+  offset: 0, 0
+  index: -1
+Hand_R3
+  rotate: true
+  xy: 2, 11
+  size: 30, 110
+  orig: 30, 110
+  offset: 0, 0
+  index: -1
+Hand_R4
+  rotate: true
+  xy: 2, 43
+  size: 44, 119
+  orig: 44, 119
+  offset: 0, 0
+  index: -1
+Than
+  rotate: false
+  xy: 345, 126
+  size: 101, 139
+  orig: 101, 139
+  offset: 0, 0
+  index: -1
+Toc
+  rotate: true
+  xy: 340, 6
+  size: 111, 117
+  orig: 111, 117
+  offset: 0, 0
+  index: -1
+Vongco
+  rotate: false
+  xy: 515, 122
+  size: 28, 33
+  orig: 28, 33
+  offset: 0, 0
+  index: -1
+arm2_r
+  rotate: true
+  xy: 114, 13
+  size: 28, 65
+  orig: 28, 65
+  offset: 0, 0
+  index: -1
+arm_l
+  rotate: false
+  xy: 448, 119
+  size: 29, 66
+  orig: 29, 66
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 512, 199
+  size: 29, 66
+  orig: 29, 66
+  offset: 0, 0
+  index: -1
+bat
+  rotate: true
+  xy: 228, 2
+  size: 115, 110
+  orig: 115, 110
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 228, 119
+  size: 115, 146
+  orig: 115, 146
+  offset: 0, 0
+  index: -1
+finger2_l
+  rotate: false
+  xy: 494, 100
+  size: 14, 22
+  orig: 14, 22
+  offset: 0, 0
+  index: -1
+finger2_r
+  rotate: true
+  xy: 459, 10
+  size: 16, 31
+  orig: 16, 31
+  offset: 0, 0
+  index: -1
+finger2_r2
+  rotate: true
+  xy: 494, 80
+  size: 18, 10
+  orig: 18, 10
+  offset: 0, 0
+  index: -1
+forearm_r
+  rotate: true
+  xy: 123, 43
+  size: 44, 103
+  orig: 44, 103
+  offset: 0, 0
+  index: -1
+hand2_l
+  rotate: true
+  xy: 181, 13
+  size: 28, 45
+  orig: 28, 45
+  offset: 0, 0
+  index: -1
+hand2_r
+  rotate: false
+  xy: 459, 69
+  size: 33, 48
+  orig: 33, 48
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 479, 124
+  size: 34, 61
+  orig: 34, 61
+  offset: 0, 0
+  index: -1
+item_do
+  rotate: true
+  xy: 515, 157
+  size: 40, 26
+  orig: 40, 26
+  offset: 0, 0
+  index: -1
+item_trang2
+  rotate: true
+  xy: 459, 28
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1

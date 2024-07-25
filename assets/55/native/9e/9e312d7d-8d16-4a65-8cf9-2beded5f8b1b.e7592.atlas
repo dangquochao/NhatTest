@@ -1,0 +1,216 @@
+
+MainGame_v6 (1).png
+size: 980,1088
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+drum1
+  rotate: false
+  xy: 785, 298
+  size: 117, 75
+  orig: 117, 75
+  offset: 0, 0
+  index: -1
+drum2
+  rotate: false
+  xy: 319, 2
+  size: 133, 87
+  orig: 133, 87
+  offset: 0, 0
+  index: -1
+drum3
+  rotate: false
+  xy: 338, 523
+  size: 310, 265
+  orig: 310, 265
+  offset: 0, 0
+  index: -1
+drum_shadow
+  rotate: false
+  xy: 2, 730
+  size: 334, 356
+  orig: 334, 356
+  offset: 0, 0
+  index: -1
+fish1
+  rotate: true
+  xy: 703, 727
+  size: 359, 275
+  orig: 359, 275
+  offset: 0, 0
+  index: -1
+lucky
+  rotate: true
+  xy: 335, 331
+  size: 190, 249
+  orig: 190, 249
+  offset: 0, 0
+  index: -1
+lucky11
+  rotate: false
+  xy: 319, 91
+  size: 244, 238
+  orig: 244, 238
+  offset: 0, 0
+  index: -1
+lucky12
+  rotate: false
+  xy: 785, 375
+  size: 131, 91
+  orig: 131, 91
+  offset: 0, 0
+  index: -1
+lucky_shadow
+  rotate: true
+  xy: 338, 790
+  size: 296, 363
+  orig: 296, 363
+  offset: 0, 0
+  index: -1
+lucky_tien1
+  rotate: false
+  xy: 935, 688
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+lucky_tien2
+  rotate: false
+  xy: 2, 10
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+lucky_tien3
+  rotate: false
+  xy: 586, 484
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+lucky_tien4
+  rotate: false
+  xy: 661, 4
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+lucky_tien5
+  rotate: false
+  xy: 935, 649
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+lucky_tien6
+  rotate: false
+  xy: 41, 10
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+orange1
+  rotate: false
+  xy: 565, 136
+  size: 181, 160
+  orig: 181, 160
+  offset: 0, 0
+  index: -1
+orange2
+  rotate: false
+  xy: 650, 468
+  size: 283, 257
+  orig: 283, 257
+  offset: 0, 0
+  index: -1
+organe_shadow
+  rotate: false
+  xy: 2, 49
+  size: 315, 324
+  orig: 315, 324
+  offset: 0, 0
+  index: -1
+phao_1
+  rotate: true
+  xy: 661, 43
+  size: 91, 85
+  orig: 91, 85
+  offset: 0, 0
+  index: -1
+phao_2
+  rotate: false
+  xy: 862, 181
+  size: 47, 115
+  orig: 47, 115
+  offset: 0, 0
+  index: -1
+phao_3
+  rotate: true
+  xy: 566, 2
+  size: 108, 93
+  orig: 108, 93
+  offset: 0, 0
+  index: -1
+phao_4
+  rotate: false
+  xy: 748, 5
+  size: 114, 46
+  orig: 114, 46
+  offset: 0, 0
+  index: -1
+phao_5
+  rotate: true
+  xy: 748, 53
+  size: 57, 113
+  orig: 57, 113
+  offset: 0, 0
+  index: -1
+phao_6
+  rotate: true
+  xy: 454, 21
+  size: 68, 110
+  orig: 68, 110
+  offset: 0, 0
+  index: -1
+phao_7
+  rotate: true
+  xy: 863, 84
+  size: 95, 92
+  orig: 95, 92
+  offset: 0, 0
+  index: -1
+phao_8
+  rotate: true
+  xy: 586, 298
+  size: 168, 197
+  orig: 168, 197
+  offset: 0, 0
+  index: -1
+phao_shadow
+  rotate: false
+  xy: 2, 375
+  size: 331, 353
+  orig: 331, 353
+  offset: 0, 0
+  index: -1
+phaofx1
+  rotate: true
+  xy: 650, 728
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+phaofx2
+  rotate: false
+  xy: 748, 205
+  size: 112, 91
+  orig: 112, 91
+  offset: 0, 0
+  index: -1
+phaofx3
+  rotate: false
+  xy: 748, 112
+  size: 111, 91
+  orig: 111, 91
+  offset: 0, 0
+  index: -1

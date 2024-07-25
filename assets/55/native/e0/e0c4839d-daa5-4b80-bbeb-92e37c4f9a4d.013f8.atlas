@@ -1,0 +1,69 @@
+
+intro.png
+size: 1479,570
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle1
+  rotate: true
+  xy: 1203, 280
+  size: 288, 274
+  orig: 294, 281
+  offset: 2, 3
+  index: -1
+circle4
+  rotate: false
+  xy: 655, 21
+  size: 169, 169
+  orig: 169, 169
+  offset: 0, 0
+  index: -1
+drum
+  rotate: true
+  xy: 2, 2
+  size: 566, 651
+  orig: 566, 651
+  offset: 0, 0
+  index: -1
+duitrong1
+  rotate: false
+  xy: 1334, 97
+  size: 136, 181
+  orig: 136, 181
+  offset: 0, 0
+  index: -1
+lightout1
+  rotate: false
+  xy: 655, 192
+  size: 376, 376
+  orig: 376, 376
+  offset: 0, 0
+  index: -1
+moneybackk1
+  rotate: false
+  xy: 826, 63
+  size: 191, 127
+  orig: 540, 158
+  offset: 0, 31
+  index: -1
+moneybackk2
+  rotate: true
+  xy: 1203, 53
+  size: 225, 129
+  orig: 540, 158
+  offset: 315, 0
+  index: -1
+moneyfront2
+  rotate: true
+  xy: 1033, 28
+  size: 540, 168
+  orig: 540, 168
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 1203, 6
+  size: 47, 45
+  orig: 60, 57
+  offset: 6, 6
+  index: -1

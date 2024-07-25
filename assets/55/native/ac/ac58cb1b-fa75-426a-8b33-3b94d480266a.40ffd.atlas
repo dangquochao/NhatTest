@@ -1,0 +1,174 @@
+
+ChineseNewYear_Wild.png
+size: 1673,372
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Scatter_1
+  rotate: false
+  xy: 700, 154
+  size: 245, 216
+  orig: 245, 216
+  offset: 0, 0
+  index: -1
+Scatter_2
+  rotate: true
+  xy: 1148, 26
+  size: 66, 40
+  orig: 66, 40
+  offset: 0, 0
+  index: -1
+Scatter_3
+  rotate: true
+  xy: 1621, 256
+  size: 65, 40
+  orig: 65, 40
+  offset: 0, 0
+  index: -1
+Scatter_4
+  rotate: false
+  xy: 381, 166
+  size: 317, 204
+  orig: 317, 204
+  offset: 0, 0
+  index: -1
+Scatter_5
+  rotate: false
+  xy: 938, 29
+  size: 115, 63
+  orig: 115, 63
+  offset: 0, 0
+  index: -1
+Scatter_6
+  rotate: true
+  xy: 854, 9
+  size: 143, 82
+  orig: 143, 82
+  offset: 0, 0
+  index: -1
+Scatter_7
+  rotate: false
+  xy: 669, 7
+  size: 183, 145
+  orig: 183, 145
+  offset: 0, 0
+  index: -1
+Scatter_8
+  rotate: false
+  xy: 947, 226
+  size: 259, 144
+  orig: 259, 144
+  offset: 0, 0
+  index: -1
+Scatter_text
+  rotate: false
+  xy: 1208, 270
+  size: 279, 100
+  orig: 279, 100
+  offset: 0, 0
+  index: -1
+Wild_1
+  rotate: false
+  xy: 2, 6
+  size: 377, 364
+  orig: 377, 364
+  offset: 0, 0
+  index: -1
+Wild_text
+  rotate: false
+  xy: 381, 30
+  size: 286, 134
+  orig: 286, 134
+  offset: 0, 0
+  index: -1
+fx_scatter/1
+  rotate: false
+  xy: 1489, 240
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/2
+  rotate: false
+  xy: 947, 94
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/3
+  rotate: false
+  xy: 1079, 94
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/4
+  rotate: false
+  xy: 1211, 138
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/5
+  rotate: false
+  xy: 1343, 138
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/6
+  rotate: false
+  xy: 1475, 108
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/7
+  rotate: false
+  xy: 1211, 6
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+fx_scatter/8
+  rotate: false
+  xy: 1343, 6
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+scatter_eyes1
+  rotate: false
+  xy: 1621, 323
+  size: 50, 47
+  orig: 50, 47
+  offset: 0, 0
+  index: -1
+scatter_eyes2
+  rotate: false
+  xy: 1607, 192
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+scatter_fx
+  rotate: false
+  xy: 1475, 4
+  size: 102, 102
+  orig: 102, 102
+  offset: 0, 0
+  index: -1
+w1
+  rotate: true
+  xy: 1579, 18
+  size: 88, 63
+  orig: 88, 63
+  offset: 0, 0
+  index: -1
+w2
+  rotate: true
+  xy: 1055, 2
+  size: 90, 91
+  orig: 90, 91
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 414,466
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/drum
+  rotate: false
+  xy: 2, 2
+  size: 237, 210
+  orig: 237, 210
+  offset: 0, 0
+  index: -1
+images/light_circle
+  rotate: false
+  xy: 241, 50
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+images/light_star
+  rotate: false
+  xy: 2, 214
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+images/star_yellow
+  rotate: false
+  xy: 343, 100
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+images/vector
+  rotate: true
+  xy: 254, 309
+  size: 155, 158
+  orig: 155, 158
+  offset: 0, 0
+  index: -1
+images/vector_twirl
+  rotate: false
+  xy: 254, 152
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1

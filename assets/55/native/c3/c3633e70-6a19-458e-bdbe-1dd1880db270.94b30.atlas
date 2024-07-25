@@ -1,0 +1,377 @@
+
+ChineseNewYear_Freespin.png
+size: 585,1031
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2_head
+  rotate: false
+  xy: 528, 358
+  size: 51, 51
+  orig: 58, 58
+  offset: 0, 1
+  index: -1
+ball
+  rotate: true
+  xy: 2, 102
+  size: 122, 234
+  orig: 122, 234
+  offset: 0, 0
+  index: -1
+beard1
+  rotate: true
+  xy: 528, 411
+  size: 60, 52
+  orig: 61, 52
+  offset: 1, 0
+  index: -1
+beard2
+  rotate: false
+  xy: 528, 473
+  size: 55, 72
+  orig: 55, 72
+  offset: 0, 0
+  index: -1
+body_detail1
+  rotate: false
+  xy: 2, 226
+  size: 430, 130
+  orig: 430, 130
+  offset: 0, 0
+  index: -1
+body_detail2
+  rotate: false
+  xy: 2, 358
+  size: 524, 146
+  orig: 524, 146
+  offset: 0, 0
+  index: -1
+bodydragon
+  rotate: true
+  xy: 2, 506
+  size: 523, 203
+  orig: 523, 206
+  offset: 0, 0
+  index: -1
+character1/3_body
+  rotate: true
+  xy: 238, 124
+  size: 100, 115
+  orig: 100, 183
+  offset: 0, 0
+  index: -1
+character1/3_gay
+  rotate: false
+  xy: 207, 732
+  size: 82, 205
+  orig: 82, 205
+  offset: 0, 0
+  index: -1
+character1/3_hand1
+  rotate: false
+  xy: 464, 554
+  size: 25, 24
+  orig: 25, 29
+  offset: 0, 3
+  index: -1
+character1/3_hand2
+  rotate: false
+  xy: 94, 2
+  size: 74, 37
+  orig: 75, 37
+  offset: 1, 0
+  index: -1
+character1/3_hand4
+  rotate: true
+  xy: 207, 512
+  size: 40, 44
+  orig: 41, 45
+  offset: 1, 0
+  index: -1
+character1/3_hand5
+  rotate: false
+  xy: 170, 10
+  size: 36, 29
+  orig: 40, 32
+  offset: 3, 3
+  index: -1
+character1/3_hand6
+  rotate: false
+  xy: 464, 518
+  size: 39, 27
+  orig: 40, 27
+  offset: 1, 0
+  index: -1
+character1/3_head
+  rotate: false
+  xy: 289, 510
+  size: 70, 60
+  orig: 78, 61
+  offset: 7, 0
+  index: -1
+character2/2_body
+  rotate: false
+  xy: 511, 625
+  size: 72, 80
+  orig: 72, 83
+  offset: 0, 0
+  index: -1
+character2/2_gay
+  rotate: false
+  xy: 355, 116
+  size: 22, 108
+  orig: 23, 116
+  offset: 0, 0
+  index: -1
+character2/2_hand1
+  rotate: true
+  xy: 414, 524
+  size: 20, 40
+  orig: 20, 56
+  offset: 0, 0
+  index: -1
+character2/2_hand2
+  rotate: false
+  xy: 379, 132
+  size: 51, 26
+  orig: 51, 27
+  offset: 0, 1
+  index: -1
+character2/2_hand3
+  rotate: false
+  xy: 387, 521
+  size: 25, 23
+  orig: 25, 24
+  offset: 0, 1
+  index: -1
+character2/2_hand4
+  rotate: false
+  xy: 379, 109
+  size: 28, 21
+  orig: 29, 22
+  offset: 1, 0
+  index: -1
+character3/1_body
+  rotate: false
+  xy: 379, 160
+  size: 48, 64
+  orig: 54, 91
+  offset: 6, 0
+  index: -1
+character3/1_gay
+  rotate: true
+  xy: 291, 750
+  size: 16, 119
+  orig: 26, 121
+  offset: 1, 1
+  index: -1
+character3/1_hand
+  rotate: true
+  xy: 384, 702
+  size: 46, 24
+  orig: 46, 25
+  offset: 0, 1
+  index: -1
+character3/1_hand2
+  rotate: false
+  xy: 569, 94
+  size: 12, 13
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+character3/1_hand3
+  rotate: true
+  xy: 208, 9
+  size: 30, 27
+  orig: 31, 27
+  offset: 1, 0
+  index: -1
+character3/1_head
+  rotate: true
+  xy: 464, 580
+  size: 44, 39
+  orig: 45, 43
+  offset: 1, 0
+  index: -1
+firework/firework_14
+  rotate: false
+  xy: 477, 17
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+firework/firework_15
+  rotate: false
+  xy: 2, 10
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+firework/firework_16
+  rotate: false
+  xy: 207, 939
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+firework/firework_17
+  rotate: false
+  xy: 207, 640
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+firework/firework_18
+  rotate: true
+  xy: 505, 547
+  size: 76, 72
+  orig: 90, 90
+  offset: 8, 15
+  index: -1
+firework/firework_20
+  rotate: false
+  xy: 382, 546
+  size: 80, 78
+  orig: 90, 90
+  offset: 6, 12
+  index: -1
+firework/firework_22
+  rotate: true
+  xy: 207, 554
+  size: 84, 80
+  orig: 90, 90
+  offset: 4, 10
+  index: -1
+firework/firework_24
+  rotate: true
+  xy: 299, 572
+  size: 88, 81
+  orig: 90, 90
+  offset: 2, 9
+  index: -1
+firework/firework_26
+  rotate: false
+  xy: 291, 768
+  size: 89, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_28
+  rotate: false
+  xy: 381, 860
+  size: 88, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_30
+  rotate: false
+  xy: 299, 945
+  size: 87, 84
+  orig: 90, 90
+  offset: 1, 6
+  index: -1
+firework/firework_32
+  rotate: false
+  xy: 291, 853
+  size: 88, 84
+  orig: 90, 90
+  offset: 1, 6
+  index: -1
+firework/firework_34
+  rotate: false
+  xy: 388, 946
+  size: 87, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_36
+  rotate: false
+  xy: 382, 775
+  size: 87, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_38
+  rotate: true
+  xy: 412, 687
+  size: 86, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_40
+  rotate: false
+  xy: 477, 946
+  size: 86, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_42
+  rotate: true
+  xy: 299, 662
+  size: 86, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+firework/firework_44
+  rotate: true
+  xy: 497, 707
+  size: 86, 83
+  orig: 90, 90
+  offset: 1, 7
+  index: -1
+head
+  rotate: true
+  xy: 434, 109
+  size: 247, 136
+  orig: 248, 136
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 471, 795
+  size: 149, 80
+  orig: 149, 80
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 361, 520
+  size: 24, 24
+  orig: 50, 50
+  offset: 13, 13
+  index: -1
+star_yellow
+  rotate: false
+  xy: 409, 112
+  size: 18, 18
+  orig: 50, 50
+  offset: 16, 16
+  index: -1
+tail
+  rotate: false
+  xy: 238, 11
+  size: 237, 96
+  orig: 237, 97
+  offset: 0, 0
+  index: -1
+tail_detail1
+  rotate: false
+  xy: 94, 41
+  size: 140, 59
+  orig: 140, 59
+  offset: 0, 0
+  index: -1
+tail_detail2
+  rotate: false
+  xy: 384, 626
+  size: 125, 59
+  orig: 125, 60
+  offset: 0, 1
+  index: -1
+tooth
+  rotate: true
+  xy: 253, 506
+  size: 46, 22
+  orig: 46, 22
+  offset: 0, 0
+  index: -1

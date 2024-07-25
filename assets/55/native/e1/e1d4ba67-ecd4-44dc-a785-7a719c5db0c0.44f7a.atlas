@@ -1,0 +1,69 @@
+
+ChineseNewYear_Outro (1).png
+size: 1927,1445
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ball
+  rotate: false
+  xy: 2, 483
+  size: 540, 960
+  orig: 540, 960
+  offset: 0, 0
+  index: -1
+fx1
+  rotate: false
+  xy: 2, 11
+  size: 540, 470
+  orig: 540, 470
+  offset: 0, 0
+  index: -1
+fx2
+  rotate: true
+  xy: 1283, 903
+  size: 540, 642
+  orig: 540, 642
+  offset: 0, 0
+  index: -1
+fx3
+  rotate: false
+  xy: 1086, 410
+  size: 540, 491
+  orig: 540, 491
+  offset: 0, 0
+  index: -1
+fx4
+  rotate: true
+  xy: 544, 903
+  size: 540, 737
+  orig: 540, 737
+  offset: 0, 0
+  index: -1
+fx5
+  rotate: false
+  xy: 544, 164
+  size: 540, 737
+  orig: 540, 737
+  offset: 0, 0
+  index: -1
+fx6
+  rotate: true
+  xy: 1442, 24
+  size: 384, 441
+  orig: 384, 441
+  offset: 0, 0
+  index: -1
+fx7
+  rotate: false
+  xy: 1086, 2
+  size: 354, 406
+  orig: 354, 406
+  offset: 0, 0
+  index: -1
+fx8
+  rotate: true
+  xy: 1628, 652
+  size: 249, 267
+  orig: 249, 267
+  offset: 0, 0
+  index: -1

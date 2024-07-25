@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 316,972
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/lens
+  rotate: false
+  xy: 2, 787
+  size: 195, 183
+  orig: 195, 183
+  offset: 0, 0
+  index: -1
+images/star_yellow
+  rotate: false
+  xy: 199, 870
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+images/symbol_01
+  rotate: false
+  xy: 2, 630
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_02
+  rotate: false
+  xy: 2, 473
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_03
+  rotate: false
+  xy: 2, 316
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_04
+  rotate: false
+  xy: 2, 159
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_05
+  rotate: false
+  xy: 2, 2
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_06
+  rotate: false
+  xy: 159, 630
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_07
+  rotate: false
+  xy: 159, 473
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_08
+  rotate: false
+  xy: 159, 316
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_09
+  rotate: false
+  xy: 159, 159
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
+images/symbol_10
+  rotate: false
+  xy: 159, 2
+  size: 155, 155
+  orig: 155, 155
+  offset: 0, 0
+  index: -1
